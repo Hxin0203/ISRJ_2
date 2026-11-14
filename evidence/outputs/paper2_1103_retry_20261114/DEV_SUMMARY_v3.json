@@ -1,0 +1,124 @@
+{
+  "stage": "DEV_ONLY",
+  "note": "v3 uses each parent target-only matched-filter peak for SJRIF/Pd; v2 used generator start delay and is superseded for target-range radar metrics.",
+  "source_data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "checkpoint_seed": 17,
+  "results": [
+    {
+      "epoch": 32,
+      "file": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_032_bootstrap_v3.json",
+      "sha256": "db6a2e4445d75217e51495221f60166fbc281bc25e81127f60b66f9e40afc101",
+      "u_nmse_mean": 0.3865470657097676,
+      "u_nmse_ci95": [
+        0.3072163453417864,
+        0.48421012539346886
+      ],
+      "target_damage_mean": 0.10017053430229073,
+      "target_damage_ci95": [
+        0.0918406262113594,
+        0.10891559402020518
+      ],
+      "sjrif_db_mean": 9.719041742510601,
+      "sjrif_ci95": [
+        9.003819298374795,
+        10.44434134249857
+      ],
+      "pd_keep": 0.5950520833333333,
+      "pd_restored": 0.8020833333333333,
+      "pd_delta": 0.20703125,
+      "pd_delta_ci95": [
+        0.16927083333333334,
+        0.24348958333333337
+      ],
+      "frame_pfa_keep": 0.00390625,
+      "frame_pfa_restored": 0.00390625
+    },
+    {
+      "epoch": 64,
+      "file": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_064_bootstrap_v3.json",
+      "sha256": "a83daa1bec8d050a163c340a2d3274c6df055c16181c086071fbdddf54625870",
+      "u_nmse_mean": 0.21966926135271259,
+      "u_nmse_ci95": [
+        0.1850869655120542,
+        0.26281744703074905
+      ],
+      "target_damage_mean": 0.07365686580654232,
+      "target_damage_ci95": [
+        0.06741335926678926,
+        0.08040276329260337
+      ],
+      "sjrif_db_mean": 10.104521659562657,
+      "sjrif_ci95": [
+        9.344861013594212,
+        10.829968024806224
+      ],
+      "pd_keep": 0.5950520833333333,
+      "pd_restored": 0.8177083333333333,
+      "pd_delta": 0.22265625000000003,
+      "pd_delta_ci95": [
+        0.18750000000000003,
+        0.25914713541666684
+      ],
+      "frame_pfa_keep": 0.00390625,
+      "frame_pfa_restored": 0.00390625
+    },
+    {
+      "epoch": 96,
+      "file": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_096_bootstrap_v3.json",
+      "sha256": "90c067a70c176dd63b21c612932b6e2d6cc4bfd13760f8d73407dd29710d3fef",
+      "u_nmse_mean": 0.16630268464643871,
+      "u_nmse_ci95": [
+        0.1421579135164533,
+        0.1939154798164381
+      ],
+      "target_damage_mean": 0.06497479681030169,
+      "target_damage_ci95": [
+        0.05918690206323377,
+        0.0710360999769188
+      ],
+      "sjrif_db_mean": 10.272074726169084,
+      "sjrif_ci95": [
+        9.540161089601924,
+        10.99602682348267
+      ],
+      "pd_keep": 0.5950520833333333,
+      "pd_restored": 0.8190104166666667,
+      "pd_delta": 0.22395833333333337,
+      "pd_delta_ci95": [
+        0.18880208333333337,
+        0.26302083333333337
+      ],
+      "frame_pfa_keep": 0.00390625,
+      "frame_pfa_restored": 0.00390625
+    },
+    {
+      "epoch": 128,
+      "file": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_128_bootstrap_v3.json",
+      "sha256": "8c1738db58725275b43820b78842960ad0c1d8dbeafd87923b9a4010218d72eb",
+      "u_nmse_mean": 0.17873618363521937,
+      "u_nmse_ci95": [
+        0.14733313918313964,
+        0.21870899283132192
+      ],
+      "target_damage_mean": 0.059034601842071766,
+      "target_damage_ci95": [
+        0.05380750726833707,
+        0.06442465621541495
+      ],
+      "sjrif_db_mean": 10.326625916465108,
+      "sjrif_ci95": [
+        9.546308761030646,
+        11.066950912294875
+      ],
+      "pd_keep": 0.5950520833333333,
+      "pd_restored": 0.82421875,
+      "pd_delta": 0.22916666666666669,
+      "pd_delta_ci95": [
+        0.19397786458333335,
+        0.26562500000000006
+      ],
+      "frame_pfa_keep": 0.00390625,
+      "frame_pfa_restored": 0.00390625
+    }
+  ]
+}

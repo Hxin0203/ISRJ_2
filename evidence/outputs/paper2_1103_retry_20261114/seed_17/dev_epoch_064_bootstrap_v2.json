@@ -1,0 +1,128 @@
+{
+  "stage": "DEV_ONLY",
+  "created_utc": "2026-11-14T07:16:58.530259+00:00",
+  "seed": 17,
+  "epoch": 64,
+  "parents": 256,
+  "device": "cuda",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "checkpoint_sha256": "89e7f663f72ac375e1ec4b6d4c0b6af3bfa65cb231583fc28840167396fcb29f",
+  "source_sha256": {
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd"
+  },
+  "evaluator_source_sha256": {
+    "paper2/evaluate_1103.py": "4b8abb55c24f306cb69667db51706579579eb8784f100f3fafe431b4d5f0eabe",
+    "paper2/radar_eval.py": "2d1cbf3ae5c744edcf84c93054ac18b8f40f02790c8a1441b173c71e292e3b4f"
+  },
+  "continuous": {
+    "u_nmse": {
+      "mean": 0.21966926135271259,
+      "parent_median": 0.1415851504635378,
+      "parent_p95": 0.6557985749376218,
+      "parent_bootstrap_ci95": [
+        0.1850869655120542,
+        0.26281744703074905
+      ],
+      "parents": 256
+    },
+    "damage": {
+      "mean": 0.07365686580654232,
+      "parent_median": 0.06368107041208432,
+      "parent_p95": 0.1669467485024682,
+      "parent_bootstrap_ci95": [
+        0.06741335926678926,
+        0.08040276329260337
+      ],
+      "parents": 256
+    },
+    "background_nmse": {
+      "mean": 0.6466003299647278,
+      "parent_median": 0.1745931182707997,
+      "parent_p95": 2.8247590829953104,
+      "parent_bootstrap_ci95": [
+        0.48186394168672686,
+        0.8458816657855202
+      ],
+      "parents": 256
+    },
+    "h0_nmse": {
+      "mean": 0.0004316106234643564,
+      "parent_median": 0.00032773361345393986,
+      "parent_p95": 0.001007792026945377,
+      "parent_bootstrap_ci95": [
+        0.0003896818344443347,
+        0.0004795321166599739
+      ],
+      "parents": 256
+    },
+    "noise_nmse": {
+      "mean": 0.0001817760521868754,
+      "parent_median": 0.0001815085195947943,
+      "parent_p95": 0.00018946113167977232,
+      "parent_bootstrap_ci95": [
+        0.00018119775659547433,
+        0.00018236405078985135
+      ],
+      "parents": 256
+    },
+    "amplitude": {
+      "mean": 0.910962807323045,
+      "parent_median": 0.918454823826381,
+      "parent_p95": 0.9944203762873891,
+      "parent_bootstrap_ci95": [
+        0.9029926663044416,
+        0.9184112337689977
+      ],
+      "parents": 256
+    },
+    "phase_deg": {
+      "mean": -0.09722313568926352,
+      "parent_median": -0.08022179741008155,
+      "parent_p95": 0.1884371136294526,
+      "parent_bootstrap_ci95": [
+        -0.11941774972838519,
+        -0.0757815866505238
+      ],
+      "parents": 256
+    }
+  },
+  "radar": {
+    "mainlobe_guard_samples": 2,
+    "sjrif_db_mean": 8.802264216023133,
+    "sjrif_db_parent_median": 8.751127558502693,
+    "sjrif_db_parent_bootstrap_ci95": [
+      8.138193497084615,
+      9.468942807801866
+    ],
+    "false_peak_suppression_db_mean": 11.566910762662253,
+    "false_peak_suppression_db_parent_bootstrap_ci95": [
+      10.726123320699921,
+      12.424996778617922
+    ],
+    "pd_keep": 0.29427083333333337,
+    "pd_restored": 0.4114583333333333,
+    "pd_delta": 0.11718750000000001,
+    "pd_delta_parent_bootstrap_ci95": [
+      0.08854166666666666,
+      0.14713541666666669
+    ],
+    "cell_pfa_keep": 4.324900354295837e-07,
+    "cell_pfa_restored": 4.324900354295837e-07,
+    "frame_pfa_keep": 0.00390625,
+    "frame_pfa_restored": 0.00390625,
+    "frame_pfa_keep_parent_bootstrap_ci95": [
+      0.0,
+      0.01171875
+    ],
+    "frame_pfa_restored_parent_bootstrap_ci95": [
+      0.0,
+      0.01171875
+    ],
+    "frames_per_method": 768
+  },
+  "selection_note": "DEV describes checkpoint performance only; it is not an independent TEST result."
+}

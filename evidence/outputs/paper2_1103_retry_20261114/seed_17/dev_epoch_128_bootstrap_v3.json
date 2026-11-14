@@ -1,0 +1,128 @@
+{
+  "stage": "DEV_ONLY",
+  "created_utc": "2026-11-14T07:48:33.790169+00:00",
+  "seed": 17,
+  "epoch": 128,
+  "parents": 256,
+  "device": "cuda",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "checkpoint_sha256": "2a91655b3535ab2363271b45e04a9363e7240aa0535742ddfd404b3203720056",
+  "source_sha256": {
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd"
+  },
+  "evaluator_source_sha256": {
+    "paper2/evaluate_1103.py": "0cbd5e53ce835d38be4938e7de1c559a1e2f6953220619bec4909baad940c7ae",
+    "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea"
+  },
+  "continuous": {
+    "u_nmse": {
+      "mean": 0.17873618363521937,
+      "parent_median": 0.11418123762251439,
+      "parent_p95": 0.4621370426026338,
+      "parent_bootstrap_ci95": [
+        0.14733313918313964,
+        0.21870899283132192
+      ],
+      "parents": 256
+    },
+    "damage": {
+      "mean": 0.059034601842071766,
+      "parent_median": 0.05077418702864274,
+      "parent_p95": 0.1382052473772304,
+      "parent_bootstrap_ci95": [
+        0.05380750726833707,
+        0.06442465621541495
+      ],
+      "parents": 256
+    },
+    "background_nmse": {
+      "mean": 0.5056879651524063,
+      "parent_median": 0.14687999400408963,
+      "parent_p95": 2.0931844749385493,
+      "parent_bootstrap_ci95": [
+        0.36324286075272905,
+        0.6938652166628823
+      ],
+      "parents": 256
+    },
+    "h0_nmse": {
+      "mean": 0.0003000846765559938,
+      "parent_median": 0.0002475553841861076,
+      "parent_p95": 0.0005617428810102083,
+      "parent_bootstrap_ci95": [
+        0.0002761987567147186,
+        0.00033040696203413605
+      ],
+      "parents": 256
+    },
+    "noise_nmse": {
+      "mean": 0.00011596013365361248,
+      "parent_median": 0.00011546721338987429,
+      "parent_p95": 0.0001243400869304435,
+      "parent_bootstrap_ci95": [
+        0.00011545016221173404,
+        0.00011648456804558826
+      ],
+      "parents": 256
+    },
+    "amplitude": {
+      "mean": 0.925736791449161,
+      "parent_median": 0.9326857901799532,
+      "parent_p95": 0.9958325191060439,
+      "parent_bootstrap_ci95": [
+        0.9192942222858472,
+        0.932056582286745
+      ],
+      "parents": 256
+    },
+    "phase_deg": {
+      "mean": -0.07357251553131716,
+      "parent_median": -0.07147616420769706,
+      "parent_p95": 0.22243304747151543,
+      "parent_bootstrap_ci95": [
+        -0.09484321084060508,
+        -0.052421822913694786
+      ],
+      "parents": 256
+    }
+  },
+  "radar": {
+    "mainlobe_guard_samples": 2,
+    "sjrif_db_mean": 10.326625916465108,
+    "sjrif_db_parent_median": 10.284077922993726,
+    "sjrif_db_parent_bootstrap_ci95": [
+      9.546308761030646,
+      11.066950912294875
+    ],
+    "false_peak_suppression_db_mean": 12.28496291902913,
+    "false_peak_suppression_db_parent_bootstrap_ci95": [
+      11.421957430279061,
+      13.168594483307427
+    ],
+    "pd_keep": 0.5950520833333333,
+    "pd_restored": 0.82421875,
+    "pd_delta": 0.22916666666666669,
+    "pd_delta_parent_bootstrap_ci95": [
+      0.19397786458333335,
+      0.26562500000000006
+    ],
+    "cell_pfa_keep": 4.324900354295837e-07,
+    "cell_pfa_restored": 4.324900354295837e-07,
+    "frame_pfa_keep": 0.00390625,
+    "frame_pfa_restored": 0.00390625,
+    "frame_pfa_keep_parent_bootstrap_ci95": [
+      0.0,
+      0.01171875
+    ],
+    "frame_pfa_restored_parent_bootstrap_ci95": [
+      0.0,
+      0.01171875
+    ],
+    "frames_per_method": 768
+  },
+  "selection_note": "DEV describes checkpoint performance only; it is not an independent TEST result."
+}

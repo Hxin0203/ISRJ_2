@@ -1,0 +1,55 @@
+{
+  "updated_utc": "2026-11-14T07:53:25.336671+00:00",
+  "files": [
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/baseline_smoke.json",
+      "bytes": 2167,
+      "sha256": "1d6531ffe594aabbd7b11aa84ae26890bd829b614ad62a5e9b3b5eb31ba9ab3c"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/DEV_SUMMARY_v3.json",
+      "bytes": 4036,
+      "sha256": "58f2c4a61b91540ab23c1d15e0fcf826a4e70196f76254fc234b012376fa8c83"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_032_bootstrap_v2.json",
+      "bytes": 4133,
+      "sha256": "c43abac3a5e796a36ac4bd79f6c5e3e0e835120cf509e2354e14a3264dbcbcb8"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_032_bootstrap_v3.json",
+      "bytes": 4125,
+      "sha256": "db6a2e4445d75217e51495221f60166fbc281bc25e81127f60b66f9e40afc101"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_064_bootstrap_v2.json",
+      "bytes": 4145,
+      "sha256": "4a232d8f1dae84ead394889b92dd198bc710a68ae230d58bc688b7897cdb1bbf"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_064_bootstrap_v3.json",
+      "bytes": 4147,
+      "sha256": "a83daa1bec8d050a163c340a2d3274c6df055c16181c086071fbdddf54625870"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_096_bootstrap_v2.json",
+      "bytes": 4140,
+      "sha256": "64bfe7ed59c0305ab4070c53b74b0b56eb7ff18cdef94ae8b634388d0555ea49"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_096_bootstrap_v3.json",
+      "bytes": 4151,
+      "sha256": "90c067a70c176dd63b21c612932b6e2d6cc4bfd13760f8d73407dd29710d3fef"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_128_bootstrap_v2.json",
+      "bytes": 4132,
+      "sha256": "6360eadf40343e1f12a5ac9661fce01fe4da8bcb4208c2b582a1942ffdf39596"
+    },
+    {
+      "path": "evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_128_bootstrap_v3.json",
+      "bytes": 4148,
+      "sha256": "8c1738db58725275b43820b78842960ad0c1d8dbeafd87923b9a4010218d72eb"
+    }
+  ]
+}

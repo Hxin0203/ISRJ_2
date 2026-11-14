@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-11-14T08:12:06.059700+00:00",
+  "running_experiments": [
+    {
+      "name": "paper2_1103_retry_20261114",
+      "stage": "TRAINING",
+      "pid": 41024,
+      "seed": 29,
+      "epoch": 91,
+      "epochs": 128,
+      "step": 4350,
+      "steps": 6144,
+      "latest_loss_total": 0.06953498721122742,
+      "status_updated_utc": "2026-11-14T08:12:06.059700+00:00",
+      "checkpoint_epochs_saved": {
+        "17": [
+          32,
+          64,
+          96,
+          128
+        ],
+        "29": [
+          32,
+          64
+        ],
+        "41": []
+      },
+      "checkpoint_epochs_dev_evaluated_v3": {
+        "17": [
+          32,
+          64,
+          96,
+          128
+        ],
+        "29": [],
+        "41": []
+      },
+      "seeds_not_started": [
+        41
+      ],
+      "note": "Seed 29 is in progress. Seed 17 checkpoint DEV results use target-only compressed peak range; v2 target-range Pd/SJRIF values are superseded."
+    }
+  ],
+  "status": "RUNNING",
+  "test_status": "not generated; no placeholder scientific values",
+  "old_gate_arrays_accessed": false,
+  "external_migration": "No push performed"
+}

@@ -1,0 +1,80 @@
+{
+  "status": "SMOKE_TEST_ONLY",
+  "dev_data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "sample_parent_index": 0,
+  "pulses": 2,
+  "target_only_peak_lag": 816,
+  "methods": {
+    "Max-TF": {
+      "shape": [
+        2,
+        1800
+      ],
+      "finite": true,
+      "compressed_peak_lag": 816,
+      "oracle_support": false,
+      "diagnostics": {}
+    },
+    "GMM-OMP": {
+      "shape": [
+        2,
+        1800
+      ],
+      "finite": true,
+      "compressed_peak_lag": 816,
+      "oracle_support": false,
+      "diagnostics": {}
+    },
+    "BCS-oracle": {
+      "shape": [
+        2,
+        1800
+      ],
+      "finite": true,
+      "compressed_peak_lag": 816,
+      "oracle_support": true,
+      "diagnostics": {
+        "oracle_support": true,
+        "converged_pulses": 2,
+        "pulse_count": 2,
+        "outer_iterations": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "method_config": {
+    "Max-TF": {
+      "fs_hz": 60000000.0,
+      "window_length": 51,
+      "hop_length": 12,
+      "n_fft": 128,
+      "min_clean_frames": 2,
+      "smoothing_bins": 3,
+      "peak_quantile": 0.7
+    },
+    "GMM-OMP": {
+      "gmm_components": 2,
+      "gmm_max_iterations": 100,
+      "omp_sparsity": 8,
+      "omp_tolerance": 0.001,
+      "omp_ridge": 1e-06
+    },
+    "BCS-oracle": {
+      "lambda": 0.01,
+      "tau": 1e-08,
+      "outer_tolerance": 0.01,
+      "inner_tolerance": 0.001,
+      "outer_max_iterations": 40,
+      "inner_max_iterations": 200,
+      "support": "exact non-jammer samples from simulator; oracle upper-bound reference"
+    }
+  },
+  "source_sha256": {
+    "paper2/baselines_1103.py": "a466597a2f65bee6bd9abdb023289583d4a91fd87195d3ae0317b2bf2b9c32c0",
+    "paper2/vendor/baselines_1103/max_tf.py": "2d25fb9e4e3a1fc6973a4bfc40606b37f06d49e9c9042f3168f474c9b2f81576",
+    "paper2/vendor/baselines_1103/bcs.py": "23331aeb39205a7f2c321e5a4d293380e8f3aaeb8d087f09dee7f4168b0ba4b2",
+    "paper2/vendor/baselines_1103/paper_gmm_omp.py": "e1dafac0faa31d1f424853500425e7bda88db5262d14160d7512c3e78abda1f5"
+  }
+}

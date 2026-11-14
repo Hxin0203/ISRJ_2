@@ -1,0 +1,128 @@
+{
+  "stage": "DEV_ONLY",
+  "created_utc": "2026-11-14T07:19:35.285981+00:00",
+  "seed": 17,
+  "epoch": 32,
+  "parents": 256,
+  "device": "cuda",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "checkpoint_sha256": "15ed771f20752bb0078d41031412d290f01c64b9a1b079b4dbf5c2a88b302ba9",
+  "source_sha256": {
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd"
+  },
+  "evaluator_source_sha256": {
+    "paper2/evaluate_1103.py": "4b8abb55c24f306cb69667db51706579579eb8784f100f3fafe431b4d5f0eabe",
+    "paper2/radar_eval.py": "2d1cbf3ae5c744edcf84c93054ac18b8f40f02790c8a1441b173c71e292e3b4f"
+  },
+  "continuous": {
+    "u_nmse": {
+      "mean": 0.3865470657097676,
+      "parent_median": 0.1865484931887323,
+      "parent_p95": 1.3094557459245026,
+      "parent_bootstrap_ci95": [
+        0.3072163453417864,
+        0.48421012539346886
+      ],
+      "parents": 256
+    },
+    "damage": {
+      "mean": 0.10017053430229073,
+      "parent_median": 0.0888010561908627,
+      "parent_p95": 0.21838367487961013,
+      "parent_bootstrap_ci95": [
+        0.0918406262113594,
+        0.10891559402020518
+      ],
+      "parents": 256
+    },
+    "background_nmse": {
+      "mean": 1.316900293364254,
+      "parent_median": 0.23163874176559618,
+      "parent_p95": 5.940381824593612,
+      "parent_bootstrap_ci95": [
+        0.95260955262869,
+        1.744768602935308
+      ],
+      "parents": 256
+    },
+    "h0_nmse": {
+      "mean": 0.0015718488933321455,
+      "parent_median": 0.0010426538678048394,
+      "parent_p95": 0.003663266179803664,
+      "parent_bootstrap_ci95": [
+        0.0013532185670272316,
+        0.001826966839653808
+      ],
+      "parents": 256
+    },
+    "noise_nmse": {
+      "mean": 0.00035284695578514724,
+      "parent_median": 0.00035138727191501187,
+      "parent_p95": 0.00038549894021679734,
+      "parent_bootstrap_ci95": [
+        0.000350660111566853,
+        0.00035497173435660676
+      ],
+      "parents": 256
+    },
+    "amplitude": {
+      "mean": 0.8730633680609993,
+      "parent_median": 0.8900164852308984,
+      "parent_p95": 0.9801903935335963,
+      "parent_bootstrap_ci95": [
+        0.8631272109624941,
+        0.8825500999738569
+      ],
+      "parents": 256
+    },
+    "phase_deg": {
+      "mean": 0.06584395141000443,
+      "parent_median": -0.005932764056683132,
+      "parent_p95": 0.5195453757041046,
+      "parent_bootstrap_ci95": [
+        0.03545604780854513,
+        0.09714264312413338
+      ],
+      "parents": 256
+    }
+  },
+  "radar": {
+    "mainlobe_guard_samples": 2,
+    "sjrif_db_mean": 8.58910361251709,
+    "sjrif_db_parent_median": 8.571072817015757,
+    "sjrif_db_parent_bootstrap_ci95": [
+      7.950999843711648,
+      9.25274108272211
+    ],
+    "false_peak_suppression_db_mean": 11.426666419451562,
+    "false_peak_suppression_db_parent_bootstrap_ci95": [
+      10.581088140509094,
+      12.2427183214201
+    ],
+    "pd_keep": 0.29427083333333337,
+    "pd_restored": 0.3919270833333333,
+    "pd_delta": 0.09765625000000001,
+    "pd_delta_parent_bootstrap_ci95": [
+      0.06901041666666667,
+      0.12760416666666669
+    ],
+    "cell_pfa_keep": 4.324900354295837e-07,
+    "cell_pfa_restored": 4.324900354295837e-07,
+    "frame_pfa_keep": 0.00390625,
+    "frame_pfa_restored": 0.00390625,
+    "frame_pfa_keep_parent_bootstrap_ci95": [
+      0.0,
+      0.01171875
+    ],
+    "frame_pfa_restored_parent_bootstrap_ci95": [
+      0.0,
+      0.01171875
+    ],
+    "frames_per_method": 768
+  },
+  "selection_note": "DEV describes checkpoint performance only; it is not an independent TEST result."
+}
