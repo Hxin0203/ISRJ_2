@@ -1,6 +1,6 @@
 # Output evidence index
 
-Updated UTC: 2026-11-14T12:08:12.588667+00:00
+Updated UTC: 2026-11-14T12:21:33.839443+00:00
 
 Current TEST coverage: `evidence/outputs/TEST_COVERAGE_1103.json`; condition table: `evidence/outputs/TEST_CONDITION_TABLE_1103.csv` (only when results exist).
 
@@ -10,7 +10,7 @@ Local raw parent blocks and checkpoints are intentionally excluded. A missing co
 
 | Suite | Expected conditions | Completed method counts |
 |---|---:|---|
-| main | 168 | model=124, keep=124, reference=124, max_tf=66, gmm_omp=65, bcs_oracle=65 |
+| main | 168 | model=154, keep=154, reference=154, max_tf=82, gmm_omp=81, bcs_oracle=81 |
 | pd | 310 | model=0, keep=0, reference=0 |
 | retention | 42 | model=0, keep=0, reference=0 |
 | coherent | 3 | model=0, keep=0, reference=0 |

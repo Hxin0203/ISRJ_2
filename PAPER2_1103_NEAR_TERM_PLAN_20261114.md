@@ -1,12 +1,12 @@
 # ISRJ_2 近期执行安排（替代旧进度）
 
-更新时间（UTC）：2026-11-14T12:08:12.588667+00:00。
+更新时间（UTC）：2026-11-14T12:21:33.839443+00:00。
 
 训练三 seed × 128 轮、12 个 checkpoint 和全部 DEV v4 评价已经完成。当前直接执行冻结后的独立 TEST 全网格，不再重复一套全 DEV 网格。该安排为 DEV 后确定的执行决策，不能称作 DEV 前预注册。全部数值、选择依据、指标公式和限制见 `PAPER2_1103_PROGRESS_20261114.md`。
 
 | 实验 | 完整网格条件数 | 当前已完成条件数（按方法） |
 |---|---:|---|
-| main | 168 | model: 124；keep: 124；reference: 124；max_tf: 66；gmm_omp: 65；bcs_oracle: 65 |
+| main | 168 | model: 154；keep: 154；reference: 154；max_tf: 82；gmm_omp: 81；bcs_oracle: 81 |
 | pd | 310 | model: 0；keep: 0；reference: 0 |
 | retention | 42 | model: 0；keep: 0；reference: 0 |
 | coherent | 3 | model: 0；keep: 0；reference: 0 |
