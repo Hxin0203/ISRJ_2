@@ -1,17 +1,17 @@
 {
-  "checked_utc": "2026-11-14T08:12:06.059700+00:00",
+  "checked_utc": "2026-11-14T08:13:11.458986+00:00",
   "running_experiments": [
     {
       "name": "paper2_1103_retry_20261114",
       "stage": "TRAINING",
       "pid": 41024,
       "seed": 29,
-      "epoch": 91,
+      "epoch": 94,
       "epochs": 128,
-      "step": 4350,
+      "step": 4500,
       "steps": 6144,
-      "latest_loss_total": 0.06953498721122742,
-      "status_updated_utc": "2026-11-14T08:12:06.059700+00:00",
+      "latest_loss_total": 0.08757930994033813,
+      "status_updated_utc": "2026-11-14T08:13:11.458986+00:00",
       "checkpoint_epochs_saved": {
         "17": [
           32,
