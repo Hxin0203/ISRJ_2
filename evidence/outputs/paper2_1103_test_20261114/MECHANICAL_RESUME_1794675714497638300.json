@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-11-14T17:01:54.554696+00:00",
+  "pid": 5016,
+  "freeze_sha256": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930",
+  "all_original_sources_unchanged": true,
+  "additive_continuation_sources": {
+    "paper2/dev_256_8seed_v4.py": "c796c437fbe096747701af343e8f58d8a3c0585a9f7daf5a7257033ad048465c",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab"
+  },
+  "mechanical_sources": {
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+    "tools/resume_scan_1103.py": "ed0b2c7919615235f9155bff99b581c3d036c4c751f3248fc123126af6315ab7"
+  },
+  "change": "JSON writes only: unique temporary file, fsync, bounded Windows sharing retry; original scientific code unchanged"
+}

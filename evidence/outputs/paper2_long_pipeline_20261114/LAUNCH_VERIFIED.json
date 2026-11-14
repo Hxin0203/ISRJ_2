@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-11-14T17:05:41.646597+00:00",
+  "controller": {
+    "stage": "frozen_test_resume",
+    "stage_index": 1,
+    "stages": 7,
+    "attempt": 1,
+    "child_pid": 5016,
+    "child_running": true,
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.resume_scan_1103"
+    ],
+    "completed_stages": [],
+    "updated_utc": "2026-11-14T17:05:23.612580+00:00",
+    "controller_pid": 21220,
+    "pipeline_id": "paper2_long_pipeline_20261114",
+    "config_sha256": "3ea373439c1fe0663de8ae3c3d5d3362ce67848ff0589cdbd3688a20775bc513"
+  },
+  "scanner": {
+    "stage": "RUNNING",
+    "suite": "pd",
+    "index": 208,
+    "method": "model",
+    "parents_done": 408,
+    "parents": 512,
+    "pid": 5016,
+    "updated_utc": "2026-11-14T17:05:41.269642+00:00"
+  },
+  "live_pids_verified": true,
+  "progress_beyond_original_failure": true,
+  "original_freeze_sha256": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930",
+  "eight_seed_stage": "PREPARED_NOT_TRAINING",
+  "engineering_tests_passed": 42
+}

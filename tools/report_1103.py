@@ -9,6 +9,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from paper2.io import now, read, sha, write
+from tools.durable_io import atomic_json as write, process_alive
 
 TRAIN=ROOT/'outputs/paper2_1103_retry_20261114'
 LIGHT=ROOT/'evidence/outputs/paper2_1103_retry_20261114'
@@ -60,7 +61,10 @@ def main():
         out=ROOT/'outputs'/run
         status=read(out/'STATUS.json') if (out/'STATUS.json').exists() else {'stage':'NOT_STARTED'}
         invoke=read(out/'INVOCATION.json') if (out/'INVOCATION.json').exists() else {}
-        active.append(dict(name=run,status=status,invocation=invoke))
+        pid=status.get('pid',invoke.get('pid'))
+        failures=sorted(out.glob('FAILURE_*.json'))
+        active.append(dict(name=run,status=status,invocation=invoke,
+                           process_alive=process_alive(pid),last_failure=str(failures[-1].relative_to(ROOT)) if failures else None))
         if (out/'STATUS.json').exists():
             write(ROOT/'evidence/outputs'/run/'STATUS.json',status)
         if (out/'INVOCATION.json').exists():
@@ -93,6 +97,26 @@ def main():
     for suite,methods in coverage.items():
         covtable+=f"| {suite} | {len(frozen['grids'][suite])} | "+'；'.join(f'{m}: {n}' for m,n in methods.items())+' |\n'
     training='；'.join(f"seed {r['seed']}: {r['elapsed_seconds']/60:.2f} min" for r in train['runs'])
+    pipeline_path=ROOT/'outputs/paper2_long_pipeline_20261114/STATUS.json'
+    pipeline=read(pipeline_path) if pipeline_path.exists() else {'stage':'NOT_STARTED'}
+    live_note='；'.join(f"{r['name']}: {'进程存活' if r['process_alive'] else '无活动进程'}，磁盘状态 {r['status']['stage']}" for r in active)
+    test_summary='完整 TEST 配对汇总尚未产生；不据当前部分结果补写全网格结论。'
+    paired_path=ROOT/'evidence/outputs/TEST_PAIRED_AGGREGATES_1103.json'
+    if paired_path.exists():
+        paired=read(paired_path)
+        test_summary=f"完整覆盖审计：{paired['all_expected_complete']}；已核对 {paired['blocks_verified']} 个 parent block。下表为主网格各条件等权后，按 physical parent 配对重采样的模型减对照差值。括号内为逐比较 95% parent bootstrap 区间。eU/eS/虚警越低越好，SJRIF/Pd 越高越好；各项需联合解读。\n\n"
+        test_summary+='| 对照 | eU 差 | eS 差 | SJRIF 差 (dB) | Pd 差 | Frame Pfa J+E 差 |\n|---|---:|---:|---:|---:|---:|\n'
+        for other in ('keep','reference','max_tf','gmm_omp','bcs_oracle'):
+            group=paired['groups'].get(f'main_all_model_vs_{other}')
+            if group is None:
+                continue
+            stats=group['paired_differences'][f'model_minus_{other}']
+            cells=[]
+            for key in ('u_nmse','damage','sjrif_db','pd','frame_pfa_jammer'):
+                item=stats[key];lo,hi=item['parent_bootstrap_ci95']
+                cells.append(f"{item['mean']:.6g} [{lo:.6g}, {hi:.6g}]")
+            test_summary+='| '+other+' | '+' | '.join(cells)+' |\n'
+        test_summary+='\n该表为描述性共同网格比较，不是多重比较校正后的全面优越性检验；BCS-oracle 的真实支撑信息优势和去噪方法的 eU 口径限制仍适用。'
     report=f'''# ISRJ_2 按 1103 路线执行的训练与实验进展
 
 更新时间（UTC）：{timestamp}。本报告以当前磁盘回执为准，旧版本保存在本机 `outputs/report_history/`。
@@ -122,6 +146,10 @@ DEV v4 的全部结果如下。每项先用完整 8 脉冲组计算，再在同�
 {covtable}
 
 表内只统计具有完成回执的完整条件，不把运行中的 parent block 计为整条件完成。工程试跑不计入独立 TEST。当前任务状态见 `handoff/RUNNING_EXPERIMENTS.json`；逐条件数值见 `evidence/outputs/TEST_CONDITION_TABLE_1103.csv`。覆盖未齐时不宣称全部实验完成。
+
+本次进程核对：{live_note}。长期流水线磁盘阶段：{pipeline['stage']}。先完成 TEST、SHA 审计、配对统计与图表，再续训原有 seed 17/29/41 至 256 轮，最后新增 seed 53/67/79/97/109 至 256 轮。每轮完整恢复档、每 32 轮模型检查点和原模型均保留；扩展只用 DEV 判断收敛，不能根据本次 TEST 调参或筛选 seed。
+
+{test_summary}
 
 ## 与 1103 对齐的设置
 
@@ -169,6 +197,8 @@ v4 修正了逐脉冲能量比平均及 Nyquist 边界评分问题。旧 v2/v3 �
 
 执行顺序为：训练/DEV 完成 → 工程核验与完整条件吞吐试跑 → TEST 前冻结 → 主比较与相参评价 → 310 格 Pd/Pfa → 无干扰保持 → A/B 切片扫描 → 典型脉压/多普勒图与完整论文实验章。CPU 经典方法和 GPU 模型可并行，均使用同一冻结场景，保存 parent block 与条件完成回执；重启只续接身份相同的结果。MCA-ADMM、FNet 和消融暂停。
 
+后续已安排：TEST 审计/统计/图表/结果报告 → 原有三 seed 128→256 → 新增五 seed 0→256 → 八 seed 全轨迹与 DEV 收敛汇总。每轮保存完整恢复档、每 32 轮冻结模型，保留训练数组、结构快照、原模型和失败记录。执行入口为 `tools/start_long_pipeline.ps1`，详见 `PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md`。当前：{live_note}；长期流水线阶段 {pipeline['stage']}。完整论文实验章的定稿仍需结合最终结果审核。
+
 主比较检验三类干扰和强度变化下的相对恢复、目标保持和检测表现；Pd/Pfa 扫描检验检测过渡区及虚警代价；相参评价检验脉间相位和功率保持；切片扫描检验窄/宽切片及实际覆盖变化；无干扰评价检验错误改动。它们是规定仿真范围内的证据，不替代新颖性核验或实测验证。
 
 网格、步长和每格样本数按 1103：主比较 168×256，Pd 310×512，保持 42×512，切片 A 21×256、B 20×128，相参 3×16。完整训练指已完成的每轮 48 次更新方案；第一篇每轮 512 次更新的差异须披露。选择 128 轮 seed 29 后不依据 TEST 换模型。未完成条件不作完整结果，失败及负结果全部保留。
@@ -176,7 +206,7 @@ v4 修正了逐脉冲能量比平均及 Nyquist 边界评分问题。旧 v2/v3 �
     save(ROOT/'PAPER2_1103_NEAR_TERM_PLAN_20261114.md',plan)
     write(ROOT/'handoff/RUNNING_EXPERIMENTS.json',dict(checked_utc=timestamp,
           training_status='COMPLETE_3_SEEDS_12_CHECKPOINTS',dev_status='COMPLETE_V4_12_CHECKPOINTS',
-          test_runs=active,coverage=coverage,old_gate_arrays_accessed=False,
+          test_runs=active,coverage=coverage,long_pipeline=pipeline,old_gate_arrays_accessed=False,
           frozen_model_sha256=frozen['checkpoint_sha256'],
           note='Use condition receipts and live STATUS timestamps; INVOCATION_COMPLETE need not mean every suite/method is complete.'))
     save(ROOT/'handoff/CURRENT_STATE.md',f'''# Current state
@@ -193,7 +223,9 @@ Only paper2 remote may be pushed. No ChatGPT collaboration; no old Gate access; 
 
 Updated UTC: {timestamp}.
 
-Verified 12 checkpoint SHA values and DEV v4 bindings; 36 tests passed. Engineering 20 method/condition results agree before/after control-cache optimization. Complete 256-parent engineering main condition finished. Implemented parent-block resume, identity/SHA validation, oracle-state support checks, paired differences and parent-aware probability intervals. Frozen independent TEST scans launched with one GPU model process and a separate CPU classic-method pool.
+Current coverage is refreshed from completed condition receipts. Process liveness: {live_note}. Long pipeline disk stage: {pipeline['stage']}. Historical failure receipts are retained; a stale RUNNING status never establishes liveness. The separately recorded JSON I/O repair verifies all original frozen source hashes and permits only the two additive continuation modules. No frozen model, source file or grid is changed.
+
+Pipeline order: frozen TEST resume; classical receipt verification; full block SHA/coverage audit; plots and report; original three seeds 128 to 256; five new seeds 0 to 256; DEV convergence aggregation. Full recovery archives every epoch, immutable checkpoints every 32 epochs, source/data/architecture snapshots, and failure receipts remain local. Engineering test evidence is stored separately and is not a scientific result.
 
 No old Gate arrays accessed. No TEST tuning. Coverage and current run status are generated from actual receipts, not estimates. Report text is audited offline; protected formulas, values, paths and citations retained. No external manuscript service or ChatGPT collaboration used.
 ''')

@@ -1,25 +1,56 @@
-Snapshot UTC 2026-11-14T12:26:15.303982+00:00
- M PAPER2_1103_NEAR_TERM_PLAN_20261114.md
- M PAPER2_1103_PROGRESS_20261114.md
- M evidence/outputs/TEST_CONDITION_TABLE_1103.csv
- M evidence/outputs/TEST_COVERAGE_1103.json
- M evidence/outputs/TEST_PAIRED_AGGREGATES_1103.json
- M evidence/outputs/TEST_PAIRED_DIFFERENCES_1103.csv
- M handoff/CURRENT_STATE.md
- M handoff/LAST_CODEX_EXECUTION.md
- M handoff/OUTPUT_EVIDENCE_INDEX.md
- M handoff/RUNNING_EXPERIMENTS.json
-?? evidence/outputs/CLEAN_TEXT_AUDIT_PLAN_20261114.json
-?? evidence/outputs/CLEAN_TEXT_AUDIT_PROGRESS_20261114.json
-?? evidence/outputs/paper2_1103_engineering_full_condition_v1/
-?? evidence/outputs/paper2_1103_engineering_smoke_v1/
-?? evidence/outputs/paper2_1103_engineering_smoke_v2/
-?? evidence/outputs/paper2_1103_retry_20261114/PRE_ENGINEERING_FREEZE_SUPERSEDED.json
-?? evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_032_v4.json
-?? evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_064_v4.json
-?? evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_096_v4.json
-?? evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_128_v4.json
-?? evidence/outputs/paper2_1103_retry_20261114/seed_29/
-?? evidence/outputs/paper2_1103_retry_20261114/seed_41/
-?? evidence/outputs/paper2_1103_test_20261114/
-?? evidence/outputs/paper2_1103_test_classical_20261114/
+Snapshot UTC: 2026-11-14T17:09:07.250420+00:00
+Branch: codex/1103-experiment
+Only the explicitly reviewed staged files are selected for this commit.
+Untracked files retained locally and excluded from this snapshot: 1748
+
+M  PAPER2_1103_NEAR_TERM_PLAN_20261114.md
+M  PAPER2_1103_PROGRESS_20261114.md
+M  PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md
+A  configs/paper2_long_pipeline_20261114.json
+A  evidence/outputs/LONG_PIPELINE_ENGINEERING_VERIFICATION_20261114.json
+A  evidence/outputs/LONG_PIPELINE_PLAN_TEXT_AUDIT_20261114.json
+A  evidence/outputs/LONG_PIPELINE_TEXT_AUDIT_FINAL_20261114.json
+M  evidence/outputs/TEST_CONDITION_TABLE_1103.csv
+M  evidence/outputs/TEST_COVERAGE_1103.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_032_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_064_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_096_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_17/dev_epoch_128_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_29/dev_epoch_032_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_29/dev_epoch_064_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_29/dev_epoch_096_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_29/dev_epoch_128_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_41/dev_epoch_032_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_41/dev_epoch_064_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_41/dev_epoch_096_v4.json
+A  evidence/outputs/paper2_1103_retry_20261114/seed_41/dev_epoch_128_v4.json
+A  evidence/outputs/paper2_1103_test_20261114/FAILED_STATUS_PENDING_WRITE.json
+A  evidence/outputs/paper2_1103_test_20261114/FAILURE_1794673936839859100.json
+A  evidence/outputs/paper2_1103_test_20261114/INVOCATION.json
+A  evidence/outputs/paper2_1103_test_20261114/MECHANICAL_RESUME_1794675714497638300.json
+A  evidence/outputs/paper2_1103_test_20261114/STATUS.json
+A  evidence/outputs/paper2_1103_test_classical_20261114/INVOCATION.json
+A  evidence/outputs/paper2_1103_test_classical_20261114/STATUS.json
+A  evidence/outputs/paper2_256_epoch_8seed_20261114/ARCHITECTURE.json
+A  evidence/outputs/paper2_256_epoch_8seed_20261114/CONFIG.json
+A  evidence/outputs/paper2_256_epoch_8seed_20261114/INPUT_SNAPSHOT.json
+A  evidence/outputs/paper2_256_epoch_8seed_20261114/PREPARATION_VERIFIED.json
+A  evidence/outputs/paper2_256_epoch_8seed_20261114/RUN_MANIFEST.json
+A  evidence/outputs/paper2_long_pipeline_20261114/LAUNCH_VERIFIED.json
+AM evidence/outputs/paper2_long_pipeline_20261114/STATUS.json
+M  handoff/CURRENT_STATE.md
+M  handoff/LAST_CODEX_EXECUTION.md
+M  handoff/OUTPUT_EVIDENCE_INDEX.md
+M  handoff/RUNNING_EXPERIMENTS.json
+M  paper2/dev_256_8seed_v4.py
+M  paper2/train_256_8seed.py
+A  tests/test_long_pipeline.py
+M  tools/aggregate_1103.py
+M  tools/aggregate_convergence_256_8seed.py
+A  tools/durable_io.py
+M  tools/plot_1103.py
+M  tools/report_1103.py
+A  tools/resume_scan_1103.py
+A  tools/run_long_pipeline.py
+A  tools/start_long_pipeline.ps1
+A  tools/training_progress_256.py

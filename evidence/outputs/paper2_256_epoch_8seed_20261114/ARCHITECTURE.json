@@ -1,0 +1,280 @@
+{
+  "class": "paper2.network.CorrectionNet",
+  "objective": "B4",
+  "parameter_count": 112756,
+  "module_repr": "CorrectionNet(\n  (rotate): FixedDechirp()\n  (core): ReliabilityGuidedUNet1D(\n    (enc0): ConvBlock(\n      (projection): Conv1d(2, 16, kernel_size=(1,), stride=(1,))\n      (body): Sequential(\n        (0): Conv1d(2, 16, kernel_size=(5,), stride=(1,), padding=(2,))\n        (1): GroupNorm(8, 16, eps=1e-05, affine=True)\n        (2): GELU(approximate='none')\n        (3): Conv1d(16, 16, kernel_size=(3,), stride=(1,), padding=(1,))\n        (4): GroupNorm(8, 16, eps=1e-05, affine=True)\n      )\n    )\n    (enc1): ConvBlock(\n      (projection): Conv1d(16, 32, kernel_size=(1,), stride=(2,))\n      (body): Sequential(\n        (0): Conv1d(16, 32, kernel_size=(5,), stride=(2,), padding=(2,))\n        (1): GroupNorm(8, 32, eps=1e-05, affine=True)\n        (2): GELU(approximate='none')\n        (3): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))\n        (4): GroupNorm(8, 32, eps=1e-05, affine=True)\n      )\n    )\n    (enc2): ConvBlock(\n      (projection): Conv1d(32, 64, kernel_size=(1,), stride=(2,))\n      (body): Sequential(\n        (0): Conv1d(32, 64, kernel_size=(5,), stride=(2,), padding=(2,))\n        (1): GroupNorm(8, 64, eps=1e-05, affine=True)\n        (2): GELU(approximate='none')\n        (3): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))\n        (4): GroupNorm(8, 64, eps=1e-05, affine=True)\n      )\n    )\n    (gate0): ConfidenceGate(\n      (gate): Conv1d(17, 16, kernel_size=(1,), stride=(1,))\n      (correction): Sequential(\n        (0): Conv1d(16, 16, kernel_size=(3,), stride=(1,), padding=(1,))\n        (1): GELU(approximate='none')\n      )\n      (rel_adapter): Identity()\n    )\n    (gate1): ConfidenceGate(\n      (gate): Conv1d(33, 32, kernel_size=(1,), stride=(1,))\n      (correction): Sequential(\n        (0): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))\n        (1): GELU(approximate='none')\n      )\n      (rel_adapter): Identity()\n    )\n    (gate2): ConfidenceGate(\n      (gate): Conv1d(65, 64, kernel_size=(1,), stride=(1,))\n      (correction): Sequential(\n        (0): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))\n        (1): GELU(approximate='none')\n      )\n      (rel_adapter): Identity()\n    )\n    (decode1): ConvBlock(\n      (projection): Conv1d(96, 32, kernel_size=(1,), stride=(1,))\n      (body): Sequential(\n        (0): Conv1d(96, 32, kernel_size=(5,), stride=(1,), padding=(2,))\n        (1): GroupNorm(8, 32, eps=1e-05, affine=True)\n        (2): GELU(approximate='none')\n        (3): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))\n        (4): GroupNorm(8, 32, eps=1e-05, affine=True)\n      )\n    )\n    (decode0): ConvBlock(\n      (projection): Conv1d(48, 16, kernel_size=(1,), stride=(1,))\n      (body): Sequential(\n        (0): Conv1d(48, 16, kernel_size=(5,), stride=(1,), padding=(2,))\n        (1): GroupNorm(8, 16, eps=1e-05, affine=True)\n        (2): GELU(approximate='none')\n        (3): Conv1d(16, 16, kernel_size=(3,), stride=(1,), padding=(1,))\n        (4): GroupNorm(8, 16, eps=1e-05, affine=True)\n      )\n    )\n    (out): Conv1d(16, 2, kernel_size=(1,), stride=(1,))\n    (prop1): ReliabilityPropagator(\n      (update): Sequential(\n        (0): Conv1d(65, 32, kernel_size=(3,), stride=(1,), padding=(1,))\n        (1): GELU(approximate='none')\n        (2): Conv1d(32, 1, kernel_size=(1,), stride=(1,))\n      )\n    )\n    (prop2): ReliabilityPropagator(\n      (update): Sequential(\n        (0): Conv1d(129, 64, kernel_size=(3,), stride=(1,), padding=(1,))\n        (1): GELU(approximate='none')\n        (2): Conv1d(64, 1, kernel_size=(1,), stride=(1,))\n      )\n    )\n  )\n)",
+  "state_shapes": {
+    "rotate.reference": [
+      2,
+      1800
+    ],
+    "core.enc0.projection.weight": [
+      16,
+      2,
+      1
+    ],
+    "core.enc0.projection.bias": [
+      16
+    ],
+    "core.enc0.body.0.weight": [
+      16,
+      2,
+      5
+    ],
+    "core.enc0.body.0.bias": [
+      16
+    ],
+    "core.enc0.body.1.weight": [
+      16
+    ],
+    "core.enc0.body.1.bias": [
+      16
+    ],
+    "core.enc0.body.3.weight": [
+      16,
+      16,
+      3
+    ],
+    "core.enc0.body.3.bias": [
+      16
+    ],
+    "core.enc0.body.4.weight": [
+      16
+    ],
+    "core.enc0.body.4.bias": [
+      16
+    ],
+    "core.enc1.projection.weight": [
+      32,
+      16,
+      1
+    ],
+    "core.enc1.projection.bias": [
+      32
+    ],
+    "core.enc1.body.0.weight": [
+      32,
+      16,
+      5
+    ],
+    "core.enc1.body.0.bias": [
+      32
+    ],
+    "core.enc1.body.1.weight": [
+      32
+    ],
+    "core.enc1.body.1.bias": [
+      32
+    ],
+    "core.enc1.body.3.weight": [
+      32,
+      32,
+      3
+    ],
+    "core.enc1.body.3.bias": [
+      32
+    ],
+    "core.enc1.body.4.weight": [
+      32
+    ],
+    "core.enc1.body.4.bias": [
+      32
+    ],
+    "core.enc2.projection.weight": [
+      64,
+      32,
+      1
+    ],
+    "core.enc2.projection.bias": [
+      64
+    ],
+    "core.enc2.body.0.weight": [
+      64,
+      32,
+      5
+    ],
+    "core.enc2.body.0.bias": [
+      64
+    ],
+    "core.enc2.body.1.weight": [
+      64
+    ],
+    "core.enc2.body.1.bias": [
+      64
+    ],
+    "core.enc2.body.3.weight": [
+      64,
+      64,
+      3
+    ],
+    "core.enc2.body.3.bias": [
+      64
+    ],
+    "core.enc2.body.4.weight": [
+      64
+    ],
+    "core.enc2.body.4.bias": [
+      64
+    ],
+    "core.gate0.gate.weight": [
+      16,
+      17,
+      1
+    ],
+    "core.gate0.gate.bias": [
+      16
+    ],
+    "core.gate0.correction.0.weight": [
+      16,
+      16,
+      3
+    ],
+    "core.gate0.correction.0.bias": [
+      16
+    ],
+    "core.gate1.gate.weight": [
+      32,
+      33,
+      1
+    ],
+    "core.gate1.gate.bias": [
+      32
+    ],
+    "core.gate1.correction.0.weight": [
+      32,
+      32,
+      3
+    ],
+    "core.gate1.correction.0.bias": [
+      32
+    ],
+    "core.gate2.gate.weight": [
+      64,
+      65,
+      1
+    ],
+    "core.gate2.gate.bias": [
+      64
+    ],
+    "core.gate2.correction.0.weight": [
+      64,
+      64,
+      3
+    ],
+    "core.gate2.correction.0.bias": [
+      64
+    ],
+    "core.decode1.projection.weight": [
+      32,
+      96,
+      1
+    ],
+    "core.decode1.projection.bias": [
+      32
+    ],
+    "core.decode1.body.0.weight": [
+      32,
+      96,
+      5
+    ],
+    "core.decode1.body.0.bias": [
+      32
+    ],
+    "core.decode1.body.1.weight": [
+      32
+    ],
+    "core.decode1.body.1.bias": [
+      32
+    ],
+    "core.decode1.body.3.weight": [
+      32,
+      32,
+      3
+    ],
+    "core.decode1.body.3.bias": [
+      32
+    ],
+    "core.decode1.body.4.weight": [
+      32
+    ],
+    "core.decode1.body.4.bias": [
+      32
+    ],
+    "core.decode0.projection.weight": [
+      16,
+      48,
+      1
+    ],
+    "core.decode0.projection.bias": [
+      16
+    ],
+    "core.decode0.body.0.weight": [
+      16,
+      48,
+      5
+    ],
+    "core.decode0.body.0.bias": [
+      16
+    ],
+    "core.decode0.body.1.weight": [
+      16
+    ],
+    "core.decode0.body.1.bias": [
+      16
+    ],
+    "core.decode0.body.3.weight": [
+      16,
+      16,
+      3
+    ],
+    "core.decode0.body.3.bias": [
+      16
+    ],
+    "core.decode0.body.4.weight": [
+      16
+    ],
+    "core.decode0.body.4.bias": [
+      16
+    ],
+    "core.out.weight": [
+      2,
+      16,
+      1
+    ],
+    "core.out.bias": [
+      2
+    ],
+    "core.prop1.update.0.weight": [
+      32,
+      65,
+      3
+    ],
+    "core.prop1.update.0.bias": [
+      32
+    ],
+    "core.prop1.update.2.weight": [
+      1,
+      32,
+      1
+    ],
+    "core.prop1.update.2.bias": [
+      1
+    ],
+    "core.prop2.update.0.weight": [
+      64,
+      129,
+      3
+    ],
+    "core.prop2.update.0.bias": [
+      64
+    ],
+    "core.prop2.update.2.weight": [
+      1,
+      64,
+      1
+    ],
+    "core.prop2.update.2.bias": [
+      1
+    ]
+  }
+}

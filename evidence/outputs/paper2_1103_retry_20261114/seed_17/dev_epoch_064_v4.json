@@ -1,0 +1,669 @@
+{
+  "stage": "DEV_ONLY_V4",
+  "seed": 17,
+  "epoch": 64,
+  "parents": 256,
+  "created_utc": "2026-11-14T10:56:45.352452+00:00",
+  "elapsed_seconds": 25.252467999933288,
+  "device": "cuda",
+  "checkpoint_sha256": "89e7f663f72ac375e1ec4b6d4c0b6af3bfa65cb231583fc28840167396fcb29f",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "evaluator_source_sha256": {
+    "paper2/dev_1103_v4.py": "da9f773bbaa34137b73e1a43eea0850d540814706f2951fe554964a43e2ead86",
+    "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+    "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30"
+  },
+  "metrics": {
+    "model": {
+      "u_nmse": {
+        "mean": 0.06642834481932998,
+        "median": 0.0444750573912992,
+        "p95": 0.2254675977843424,
+        "parent_bootstrap_ci95": [
+          0.05738451552348931,
+          0.07599278671923743
+        ],
+        "parents": 256
+      },
+      "damage": {
+        "mean": 0.07365675242789849,
+        "median": 0.06368155872270542,
+        "p95": 0.16694764032516057,
+        "parent_bootstrap_ci95": [
+          0.0669918655752569,
+          0.0801857752313928
+        ],
+        "parents": 256
+      },
+      "background_nmse": {
+        "mean": 0.06656831986788192,
+        "median": 0.0445132893294006,
+        "p95": 0.22881878603750008,
+        "parent_bootstrap_ci95": [
+          0.057434048204927125,
+          0.0762120108491334
+        ],
+        "parents": 256
+      },
+      "h0_nmse": {
+        "mean": 0.0001883676621231972,
+        "median": 0.00018326610605582972,
+        "p95": 0.00020758833744506934,
+        "parent_bootstrap_ci95": [
+          0.000185240376184999,
+          0.00019234949160301857
+        ],
+        "parents": 256
+      },
+      "noise_nmse": {
+        "mean": 0.00018204085429088048,
+        "median": 0.00018018429951869802,
+        "p95": 0.000196702131807906,
+        "parent_bootstrap_ci95": [
+          0.000180744461748476,
+          0.00018349122539848496
+        ],
+        "parents": 256
+      },
+      "no_jammer_pooled_nmse": {
+        "mean": 0.0001853413141777235,
+        "median": 0.00018210700010961987,
+        "p95": 0.0002045519526473741,
+        "parent_bootstrap_ci95": [
+          0.0001832328120951428,
+          0.00018780020419236688
+        ],
+        "parents": 256
+      },
+      "amplitude": {
+        "mean": 0.9109454661449667,
+        "median": 0.9184061956870666,
+        "p95": 0.994417910423054,
+        "parent_bootstrap_ci95": [
+          0.9030638303465743,
+          0.9188168433143189
+        ],
+        "parents": 256
+      },
+      "phase_deg": {
+        "mean": -0.06258208390765554,
+        "median": -0.06272080690969258,
+        "p95": 0.18182017820784319,
+        "parent_bootstrap_ci95": [
+          -0.08002636765996309,
+          -0.04589001871486453
+        ],
+        "parents": 256
+      },
+      "sjrif_db": {
+        "mean": 10.10452273380034,
+        "median": 10.048750637828697,
+        "p95": 19.58851220031022,
+        "parent_bootstrap_ci95": [
+          9.358765590896594,
+          10.868280734427644
+        ],
+        "parents": 256
+      },
+      "false_peak_suppression_db": {
+        "mean": 12.096750002190582,
+        "median": 12.096592580193121,
+        "p95": 24.314875170319166,
+        "parent_bootstrap_ci95": [
+          11.213030756402384,
+          13.00653782184584
+        ],
+        "parents": 256
+      },
+      "pd": {
+        "mean": 0.8580729166666667,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.81640625,
+          0.8958333333333333
+        ],
+        "parents": 256
+      },
+      "pd_no_jammer": {
+        "mean": 0.91796875,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.88671875,
+          0.94921875
+        ],
+        "parents": 256
+      },
+      "cell_pfa_noise": {
+        "mean": 4.3249003542958366e-07,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          1.297470106288751e-06
+        ],
+        "parents": 256
+      },
+      "frame_pfa_noise": {
+        "mean": 0.00390625,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.01171875
+        ],
+        "parents": 256
+      },
+      "cell_pfa_jammer": {
+        "mean": 0.0001908722689695896,
+        "median": 0.0,
+        "p95": 0.0009410983170947741,
+        "parent_bootstrap_ci95": [
+          0.00013767599461175081,
+          0.0002517164087872749
+        ],
+        "parents": 256
+      },
+      "frame_pfa_jammer": {
+        "mean": 0.1640625,
+        "median": 0.0,
+        "p95": 0.6666666666666666,
+        "parent_bootstrap_ci95": [
+          0.13541666666666666,
+          0.19401041666666666
+        ],
+        "parents": 256
+      }
+    },
+    "keep": {
+      "u_nmse": {
+        "mean": 6.692753123244273,
+        "median": 1.8442326566809655,
+        "p95": 25.868273440858395,
+        "parent_bootstrap_ci95": [
+          4.7205914251874335,
+          9.461424433283726
+        ],
+        "parents": 256
+      },
+      "damage": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "background_nmse": {
+        "mean": 6.9786358921788425,
+        "median": 1.872528622867358,
+        "p95": 26.21391155151068,
+        "parent_bootstrap_ci95": [
+          4.821043087374608,
+          10.063376531348267
+        ],
+        "parents": 256
+      },
+      "h0_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "noise_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "no_jammer_pooled_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "amplitude": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          1.0,
+          1.0
+        ],
+        "parents": 256
+      },
+      "phase_deg": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "sjrif_db": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "false_peak_suppression_db": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "pd": {
+        "mean": 0.6302083333333333,
+        "median": 0.6666666666666666,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.5859375,
+          0.6731770833333333
+        ],
+        "parents": 256
+      },
+      "pd_no_jammer": {
+        "mean": 0.921875,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.88671875,
+          0.953125
+        ],
+        "parents": 256
+      },
+      "cell_pfa_noise": {
+        "mean": 4.3249003542958366e-07,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          1.297470106288751e-06
+        ],
+        "parents": 256
+      },
+      "frame_pfa_noise": {
+        "mean": 0.00390625,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.01171875
+        ],
+        "parents": 256
+      },
+      "cell_pfa_jammer": {
+        "mean": 0.0010131799896663713,
+        "median": 0.0005166814289932093,
+        "p95": 0.004253395335104812,
+        "parent_bootstrap_ci95": [
+          0.0008558797596970032,
+          0.0011916614191209035
+        ],
+        "parents": 256
+      },
+      "frame_pfa_jammer": {
+        "mean": 0.44791666666666663,
+        "median": 0.3333333333333333,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.40885416666666663,
+          0.48828124999999994
+        ],
+        "parents": 256
+      }
+    },
+    "reference": {
+      "u_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "damage": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "background_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "h0_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "noise_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "no_jammer_pooled_nmse": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "amplitude": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          1.0,
+          1.0
+        ],
+        "parents": 256
+      },
+      "phase_deg": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "parents": 256
+      },
+      "sjrif_db": {
+        "mean": 12.002798665827923,
+        "median": 12.267910227593408,
+        "p95": 22.11211695412741,
+        "parent_bootstrap_ci95": [
+          11.152702628077346,
+          12.839264525374825
+        ],
+        "parents": 256
+      },
+      "false_peak_suppression_db": {
+        "mean": 14.20455887938719,
+        "median": 14.615219740659942,
+        "p95": 26.94065988738627,
+        "parent_bootstrap_ci95": [
+          13.194740493021854,
+          15.209401866995433
+        ],
+        "parents": 256
+      },
+      "pd": {
+        "mean": 0.921875,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.88671875,
+          0.953125
+        ],
+        "parents": 256
+      },
+      "pd_no_jammer": {
+        "mean": 0.921875,
+        "median": 1.0,
+        "p95": 1.0,
+        "parent_bootstrap_ci95": [
+          0.88671875,
+          0.953125
+        ],
+        "parents": 256
+      },
+      "cell_pfa_noise": {
+        "mean": 4.3249003542958366e-07,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          1.297470106288751e-06
+        ],
+        "parents": 256
+      },
+      "frame_pfa_noise": {
+        "mean": 0.00390625,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.01171875
+        ],
+        "parents": 256
+      },
+      "cell_pfa_jammer": {
+        "mean": 4.3249003542958366e-07,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          1.297470106288751e-06
+        ],
+        "parents": 256
+      },
+      "frame_pfa_jammer": {
+        "mean": 0.00390625,
+        "median": 0.0,
+        "p95": 0.0,
+        "parent_bootstrap_ci95": [
+          0.0,
+          0.01171875
+        ],
+        "parents": 256
+      }
+    }
+  },
+  "model_minus_keep": {
+    "u_nmse": {
+      "mean": -6.626324778424943,
+      "median": -1.82627156960212,
+      "p95": -0.013532317693601944,
+      "parent_bootstrap_ci95": [
+        -9.39265799466596,
+        -4.6650920415774735
+      ],
+      "parents": 256
+    },
+    "damage": {
+      "mean": 0.07365675242789849,
+      "median": 0.06368155872270542,
+      "p95": 0.16694764032516057,
+      "parent_bootstrap_ci95": [
+        0.0669918655752569,
+        0.0801857752313928
+      ],
+      "parents": 256
+    },
+    "background_nmse": {
+      "mean": -6.912067572310961,
+      "median": -1.8500513401556034,
+      "p95": -0.01378713492346586,
+      "parent_bootstrap_ci95": [
+        -9.994764225422228,
+        -4.758823288949797
+      ],
+      "parents": 256
+    },
+    "h0_nmse": {
+      "mean": 0.0001883676621231972,
+      "median": 0.00018326610605582972,
+      "p95": 0.00020758833744506934,
+      "parent_bootstrap_ci95": [
+        0.000185240376184999,
+        0.00019234949160301857
+      ],
+      "parents": 256
+    },
+    "noise_nmse": {
+      "mean": 0.00018204085429088048,
+      "median": 0.00018018429951869802,
+      "p95": 0.000196702131807906,
+      "parent_bootstrap_ci95": [
+        0.000180744461748476,
+        0.00018349122539848496
+      ],
+      "parents": 256
+    },
+    "no_jammer_pooled_nmse": {
+      "mean": 0.0001853413141777235,
+      "median": 0.00018210700010961987,
+      "p95": 0.0002045519526473741,
+      "parent_bootstrap_ci95": [
+        0.0001832328120951428,
+        0.00018780020419236688
+      ],
+      "parents": 256
+    },
+    "amplitude": {
+      "mean": -0.0890545338550333,
+      "median": -0.08159380431293323,
+      "p95": -0.0055820895769460865,
+      "parent_bootstrap_ci95": [
+        -0.09693616965342569,
+        -0.08118315668568103
+      ],
+      "parents": 256
+    },
+    "phase_deg": {
+      "mean": -0.06258208390765554,
+      "median": -0.06272080690969258,
+      "p95": 0.18182017820784319,
+      "parent_bootstrap_ci95": [
+        -0.08002636765996309,
+        -0.04589001871486453
+      ],
+      "parents": 256
+    },
+    "sjrif_db": {
+      "mean": 10.10452273380034,
+      "median": 10.048750637828697,
+      "p95": 19.58851220031022,
+      "parent_bootstrap_ci95": [
+        9.358765590896594,
+        10.868280734427644
+      ],
+      "parents": 256
+    },
+    "false_peak_suppression_db": {
+      "mean": 12.096750002190582,
+      "median": 12.096592580193121,
+      "p95": 24.314875170319166,
+      "parent_bootstrap_ci95": [
+        11.213030756402384,
+        13.00653782184584
+      ],
+      "parents": 256
+    },
+    "pd": {
+      "mean": 0.22786458333333337,
+      "median": 0.0,
+      "p95": 0.6666666666666667,
+      "parent_bootstrap_ci95": [
+        0.19270833333333334,
+        0.265625
+      ],
+      "parents": 256
+    },
+    "pd_no_jammer": {
+      "mean": -0.00390625,
+      "median": 0.0,
+      "p95": 0.0,
+      "parent_bootstrap_ci95": [
+        -0.01171875,
+        0.0
+      ],
+      "parents": 256
+    },
+    "cell_pfa_noise": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "parent_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "parents": 256
+    },
+    "frame_pfa_noise": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "parent_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "parents": 256
+    },
+    "cell_pfa_jammer": {
+      "mean": -0.0008223077206967818,
+      "median": -0.00031369943903159143,
+      "p95": 7.381163271331562e-05,
+      "parent_bootstrap_ci95": [
+        -0.0009784438316541187,
+        -0.0006779966081248155
+      ],
+      "parents": 256
+    },
+    "frame_pfa_jammer": {
+      "mean": -0.28385416666666663,
+      "median": -0.3333333333333333,
+      "p95": 0.0,
+      "parent_bootstrap_ci95": [
+        -0.3203125,
+        -0.24739583333333331
+      ],
+      "parents": 256
+    }
+  },
+  "local_parent_values_sha256": "0c69710cb366535c5ad4ff1a6c45b449a9bec8bfb6e5359b0e345f53dd739448",
+  "metric_note": "Energy ratios use full eight-pulse group; three jammer variants averaged within parent. Doppler scoring is periodic. Pfa includes separate E and J+E states. Intervals resample physical parents, not pulses or variants. DEV only."
+}

@@ -27,6 +27,8 @@ from .dev_256_8seed_v4 import evaluate_checkpoint
 from .io import ROOT, now, read, sha, write
 from .network import CorrectionNet, training_loss
 from .train_1103 import BATCH, JAM_TYPES, batches, load_arrays, make_batch
+from tools.durable_io import (ProcessLock, atomic_copy, atomic_json, atomic_write,
+                              replace_retry)
 
 OLD_BASE = ROOT / "outputs" / "paper2_1103_retry_20261114"
 RUN_ID = "paper2_256_epoch_8seed_20261114"
@@ -42,12 +44,11 @@ CHECKPOINT_FORMAT = "paper2-256-8seed-v1"
 
 
 def source_hashes() -> dict[str, str]:
-    names = ("train_256_8seed.py", "train_1103.py", "data_1103.py", "network.py",
-             "science.py", "io.py", "dev_256_8seed_v4.py", "evaluation_1103_v4.py",
-             "radar_eval.py")
-    values = {f"paper2/{name}": sha(ROOT / "paper2" / name) for name in names}
-    values["tools/aggregate_convergence_256_8seed.py"] = sha(
-        ROOT / "tools" / "aggregate_convergence_256_8seed.py")
+    values = {str(p.relative_to(ROOT)).replace("\\", "/"): sha(p)
+              for p in sorted((ROOT / "paper2").rglob("*.py"))}
+    for name in ("tools/aggregate_convergence_256_8seed.py", "tools/durable_io.py",
+                 "tools/training_progress_256.py"):
+        values[name] = sha(ROOT / name)
     return values
 
 
@@ -72,7 +73,8 @@ def config_for(dataset_sha: str, data_receipt_sha: str, old_training_sha: str,
             "epochs_1_128": "preserve original 1-epoch warm-up and cosine 1e-3 to 2e-5",
             "epochs_129_256": "cosine 2e-5 to 2e-6, inclusive endpoints",
         },
-        "recovery": "atomic latest checkpoint after every epoch; immutable full checkpoints every 32 epochs",
+        "recovery": "immutable full recovery archive every epoch; latest copy; immutable 32-epoch milestones; all SHA-verified",
+        "architecture": "CorrectionNet B4; architecture JSON, module repr and exact sources snapshotted locally",
         "training_data_sha256": dataset_sha,
         "training_data_receipt_sha256": data_receipt_sha,
         "parent_training_complete_sha256": old_training_sha,
@@ -82,34 +84,9 @@ def config_for(dataset_sha: str, data_receipt_sha: str, old_training_sha: str,
     }
 
 
-def atomic_json(path: Path, value) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as stream:
-            json.dump(value, stream, ensure_ascii=False, indent=2, allow_nan=False)
-            stream.write("\n")
-            stream.flush()
-            os.fsync(stream.fileno())
-        os.replace(tmp_name, path)
-    finally:
-        if os.path.exists(tmp_name):
-            os.unlink(tmp_name)
-
-
 def atomic_torch_save(value, path: Path) -> str:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
-    try:
-        with os.fdopen(fd, "wb") as stream:
-            torch.save(value, stream)
-            stream.flush()
-            os.fsync(stream.fileno())
-        os.replace(tmp_name, path)
-        return sha(path)
-    finally:
-        if os.path.exists(tmp_name):
-            os.unlink(tmp_name)
+    atomic_write(path, lambda stream: torch.save(value, stream))
+    return sha(path)
 
 
 def append_event(path: Path, event: dict) -> None:
@@ -146,23 +123,26 @@ def validate_candidate(path: Path, receipt_path: Path, expected: dict):
 
 
 def choose_resume(folder: Path, expected: dict):
-    """Return the newest verified complete recovery point, preferring latest.pt."""
-    latest = validate_candidate(folder / "latest.pt", folder / "latest.json", expected)
-    if latest is not None:
-        return folder / "latest.pt", latest[0], latest[1]
+    """Return the highest verified epoch/segment, including immutable archives.
+
+    A stale latest pointer must never hide a newer durable recovery archive.
+    Check newest candidates first to avoid deserializing all past epochs.
+    """
     candidates = []
-    for path in folder.glob("epoch_*.pt"):
+    paths = [folder / "latest.pt", *folder.glob("epoch_*.pt"),
+             *folder.glob("recovery/epoch_*_segment_*.pt")]
+    for path in paths:
         try:
-            epoch = int(path.stem.split("_")[1])
-        except (IndexError, ValueError):
+            receipt = read(path.with_suffix(".json"))
+            epoch, segment = int(receipt["epoch"]), int(receipt.get("segment", 0))
+            candidates.append((epoch, segment, path.name == "latest.pt", path))
+        except (OSError, KeyError, ValueError):
             continue
+    for epoch, segment, _, path in sorted(candidates, reverse=True):
         valid = validate_candidate(path, path.with_suffix(".json"), expected)
-        if valid is not None:
-            candidates.append((epoch, path, valid[0], valid[1]))
-    if not candidates:
-        return None
-    _, path, payload, digest = max(candidates, key=lambda item: item[0])
-    return path, payload, digest
+        if valid is not None and (int(valid[0]["epoch"]), int(valid[0].get("segment", 0))) == (epoch, segment):
+            return path, valid[0], valid[1]
+    return None
 
 
 def optimizer_for(net):
@@ -214,17 +194,44 @@ def pack_checkpoint(seed: int, epoch: int, segment: int, net, optimizer,
             "model": net.state_dict(), "optimizer": optimizer.state_dict(),
             "global_step": epoch * STEPS_PER_EPOCH,
             "rng": rng_snapshot(), "epoch_record": epoch_record,
+            "architecture": architecture(net),
             "created_utc": now()}
 
 
+def architecture(net):
+    return {"class": "paper2.network.CorrectionNet", "objective": "B4",
+            "parameter_count": sum(p.numel() for p in net.parameters()),
+            "module_repr": str(net),
+            "state_shapes": {key: list(value.shape) for key, value in net.state_dict().items()}}
+
+
 def write_recovery(folder: Path, payload: dict, milestone: bool = False) -> tuple[str, str | None]:
-    latest_sha = atomic_torch_save(payload, folder / "latest.pt")
-    atomic_json(folder / "latest.json", {"epoch": payload["epoch"],
-                                         "checkpoint_sha256": latest_sha,
-                                         "config_sha256": payload["identity"]["config_sha256"],
-                                         "updated_utc": now()})
+    epoch, segment = int(payload["epoch"]), int(payload.get("segment", 0))
+    archive = folder / "recovery" / f"epoch_{epoch:03d}_segment_{segment:03d}.pt"
+    receipt = archive.with_suffix(".json")
+    valid = validate_candidate(archive, receipt, payload["identity"])
+    if valid is None:
+        # Preserve incomplete/corrupted files as forensic evidence before retry.
+        for path in (archive, receipt):
+            if path.exists():
+                replace_retry(path, path.with_name(path.name + f".invalid_{time.time_ns()}"))
+        latest_sha = atomic_torch_save(payload, archive)
+        record = {"seed": payload["seed"], "epoch": epoch, "segment": segment,
+                  "checkpoint_sha256": latest_sha, "identity": payload["identity"],
+                  "updated_utc": now()}
+        atomic_json(receipt, record)
+    else:
+        # Never overwrite a committed recovery archive with a different state.
+        if (valid[0].get("epoch_record") != payload.get("epoch_record") or any(
+                not torch.equal(value.cpu(), valid[0]["model"][name].cpu())
+                for name, value in payload.get("model", {}).items())):
+            raise RuntimeError(f"immutable recovery epoch record changed: {archive}")
+        latest_sha = valid[1]
+    atomic_copy(archive, folder / "latest.pt")
+    atomic_json(folder / "latest.json", {"epoch": epoch, "segment": segment,
+                 "checkpoint_sha256": latest_sha, "archive": str(archive.relative_to(folder)),
+                 "config_sha256": payload["identity"]["config_sha256"], "updated_utc": now()})
     milestone_sha = None
-    epoch = int(payload["epoch"])
     if milestone and epoch in MILESTONES:
         cp = folder / f"epoch_{epoch:03d}.pt"
         receipt = cp.with_suffix(".json")
@@ -235,19 +242,21 @@ def write_recovery(folder: Path, payload: dict, milestone: bool = False) -> tupl
             else:
                 stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()) + f"_{time.time_ns()}"
                 if cp.exists():
-                    os.replace(cp, cp.with_name(f"{cp.stem}.invalid_{stamp}{cp.suffix}"))
+                    replace_retry(cp, cp.with_name(f"{cp.stem}.invalid_{stamp}{cp.suffix}"))
                 if receipt.exists():
-                    os.replace(receipt, receipt.with_name(f"{receipt.stem}.invalid_{stamp}{receipt.suffix}"))
-                milestone_sha = atomic_torch_save(payload, cp)
-                atomic_json(receipt, {"seed": payload["seed"], "epoch": epoch,
+                    replace_retry(receipt, receipt.with_name(f"{receipt.stem}.invalid_{stamp}{receipt.suffix}"))
+                atomic_copy(archive, cp)
+                milestone_sha = latest_sha
+                atomic_json(receipt, {"seed": payload["seed"], "epoch": epoch, "segment": segment,
                                       "checkpoint_sha256": milestone_sha,
                                       "config_sha256": payload["identity"]["config_sha256"],
                                       "dataset_sha256": payload["identity"]["dataset_sha256"],
                                       "source_sha256": payload["identity"]["source_sha256"],
                                       "updated_utc": now()})
         else:
-            milestone_sha = atomic_torch_save(payload, cp)
-            atomic_json(receipt, {"seed": payload["seed"], "epoch": epoch,
+            atomic_copy(archive, cp)
+            milestone_sha = latest_sha
+            atomic_json(receipt, {"seed": payload["seed"], "epoch": epoch, "segment": segment,
                                   "checkpoint_sha256": milestone_sha,
                                   "config_sha256": payload["identity"]["config_sha256"],
                                   "dataset_sha256": payload["identity"]["dataset_sha256"],
@@ -363,10 +372,7 @@ def copy_legacy_epoch128_into_recovery(folder: Path, seed: int, dataset_sha: str
         "continuation_checkpoint_sha256": milestone_sha,
         "weights_loaded_from_source_checkpoint": True,
         "created_utc": now()})
-    latest_sha = atomic_torch_save(payload, folder / "latest.pt")
-    atomic_json(folder / "latest.json", {"epoch": 128, "checkpoint_sha256": latest_sha,
-                 "config_sha256": config_sha, "restored_from_legacy_sha256": verified[(seed,128)]["sha256"],
-                 "updated_utc": now()})
+    write_recovery(folder, payload, milestone=True)
     return 128, 0
 
 
@@ -430,6 +436,12 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
         for epoch in MILESTONES:
             if sha(folder / f"epoch_{epoch:03d}.pt") != old["milestones"][str(epoch)]:
                 raise RuntimeError(f"completed checkpoint hash mismatch: seed={seed} epoch={epoch}")
+            evaluate_checkpoint(seed, epoch)
+        if sha(folder / "events.jsonl") != old["training_events_sha256"]:
+            raise RuntimeError(f"completed seed training event hash mismatch: {seed}")
+        for name, digest in old["training_epoch_record_sha256"].items():
+            if sha(folder / f"training_epoch_{name}.json") != digest:
+                raise RuntimeError(f"completed seed epoch metric hash mismatch: {seed} {name}")
         return old
 
     torch.set_num_threads(4)
@@ -461,7 +473,9 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
         segment = int(payload.get("segment", 0))
         if source_path.name != "latest.pt":
             preserve_invalid_latest(folder)
-            segment += 1
+            existing = [int(p.stem.rsplit("_", 1)[1]) for p in
+                        folder.glob("training_epoch_*_segment_*.json")]
+            segment = max([segment, *existing]) + 1
             append_event(folder / "events.jsonl", {"event": "resume_fallback", "seed": seed,
                           "restored_epoch": int(payload["epoch"]), "segment": segment,
                           "recovery_source": source_path.name,
@@ -471,7 +485,7 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
         restore_rng(payload["rng"])
         start_epoch = int(payload["epoch"])
         recovery_payload = payload
-        if payload.get("epoch_record") and start_epoch > 0:
+        if payload.get("epoch_record", {}).get("updates_this_epoch") and start_epoch > 0:
             write_epoch_receipt(folder, payload["epoch_record"], recovery_sha)
             append_epoch_if_missing(folder, payload["epoch_record"], recovery_sha)
 
@@ -487,8 +501,10 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
     for epoch in MILESTONES:
         if epoch <= start_epoch:
             evaluate_checkpoint(seed, epoch)
+    from tools.training_progress_256 import refresh as refresh_convergence
+    refresh_convergence()
 
-    if start_epoch >= TOTAL_EPOCHS:
+    if start_epoch > TOTAL_EPOCHS:
         raise RuntimeError(f"seed {seed} is at epoch {start_epoch} but has no completion receipt")
     n = arrays["s"].shape[0]
     steps = int(np.ceil(n * len(JAM_TYPES) / BATCH))
@@ -531,7 +547,7 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
         write_epoch_receipt(folder, record, latest_sha)
         append_epoch_if_missing(folder, record, latest_sha)
         if milestone_sha is not None:
-            atomic_json(folder / f"epoch_{epoch:03d}.json", {"seed": seed, "epoch": epoch,
+            atomic_json(folder / f"epoch_{epoch:03d}.json", {"seed": seed, "epoch": epoch, "segment": segment,
                          "checkpoint_sha256": milestone_sha, "dataset_sha256": dataset_sha,
                          "config_sha256": config_sha, "source_sha256": sources,
                          "training_metrics": mean_losses, "updated_utc": now()})
@@ -543,6 +559,7 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
                          "epoch": epoch, "epochs": TOTAL_EPOCHS,
                          "checkpoint_sha256": milestone_sha, "updated_utc": now()})
             evaluate_checkpoint(seed, epoch)
+            refresh_convergence()
             atomic_json(BASE / "STATUS.json", {"stage": "TRAINING", "seed": seed,
                          "epoch": epoch, "epochs": TOTAL_EPOCHS,
                          "checkpoint_sha256": latest_sha,
@@ -570,6 +587,8 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
                   path.stem.removeprefix("training_epoch_"): sha(path)
                   for path in sorted(folder.glob("training_epoch_*_segment_*.json"))},
               "training_events_sha256": sha(folder / "events.jsonl"),
+              "recovery_archives_sha256": {str(path.relative_to(folder)).replace("\\", "/"): sha(path)
+                   for path in sorted((folder / "recovery").glob("*.pt"))},
               "completed_utc": now(), "device": str(device),
               "gpu": torch.cuda.get_device_name() if device.type == "cuda" else None,
               "torch": torch.__version__, "python": platform.python_version(),
@@ -578,27 +597,44 @@ def train_one(seed: int, arrays: dict, dataset_sha: str, config_sha: str,
     return result
 
 
-def acquire_lock() -> Path:
-    lock = BASE / "PROCESS.lock"
-    lock.parent.mkdir(parents=True, exist_ok=True)
-    if lock.exists():
-        try:
-            old_pid = int(lock.read_text(encoding="utf-8").splitlines()[0])
-            os.kill(old_pid, 0)
-            raise RuntimeError(f"training lock belongs to live pid {old_pid}")
-        except ProcessLookupError:
-            stale = BASE / f"PROCESS.lock.stale_{time.time_ns()}"
-            os.replace(lock, stale)
-        except ValueError:
-            raise RuntimeError("unreadable training lock; inspect it before continuing")
-        except PermissionError:
-            raise RuntimeError("training lock owner cannot be checked")
-    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-    with os.fdopen(fd, "w", encoding="utf-8") as stream:
-        stream.write(f"{os.getpid()}\n{socket.gethostname()}\n{now()}\n")
-        stream.flush()
-        os.fsync(stream.fileno())
-    return lock
+def acquire_lock():
+    return ProcessLock(BASE / "PROCESS.lock").acquire()
+
+
+def snapshot_inputs(cfg):
+    """Keep byte-verified local data and exact model/source definitions."""
+    manifest = {}
+    paths = dict(cfg["source_sha256"])
+    for role in ("train", "dev"):
+        for name in (f"data/paper2_1103/{role}.npz", f"data/paper2_1103/{role}.receipt.json"):
+            if (ROOT / name).is_file():
+                paths[name] = sha(ROOT / name)
+    for name, digest in paths.items():
+        source, target = ROOT / name, BASE / "input_snapshot" / name
+        if sha(source) != digest:
+            raise RuntimeError(f"source/data changed before snapshot: {name}")
+        if not target.exists():
+            atomic_copy(source, target)
+        if sha(target) != digest:
+            raise RuntimeError(f"immutable input snapshot mismatch: {name}")
+        manifest[name] = digest
+    # Dataset generation/identity receipts are snapshotted with the arrays;
+    # no augmentation or additional training examples are introduced.
+    arch_path = BASE / "ARCHITECTURE.json"
+    # Avoid consuming the training RNG while capturing the module definition.
+    with torch.random.fork_rng():
+        model_arch = architecture(CorrectionNet())
+    if arch_path.exists() and read(arch_path) != model_arch:
+        raise RuntimeError("model architecture snapshot changed")
+    if not arch_path.exists():
+        atomic_json(arch_path, model_arch)
+    manifest["ARCHITECTURE.json"] = sha(arch_path)
+    path = BASE / "INPUT_SNAPSHOT.json"
+    value = {"sha256": manifest, "config_sha256": sha(BASE / "CONFIG.json")}
+    if path.exists() and read(path) != value:
+        raise RuntimeError("input snapshot identity changed")
+    if not path.exists():
+        atomic_json(path, value)
 
 
 def prepare() -> tuple[dict, dict[int, dict], Path]:
@@ -625,7 +661,7 @@ def prepare() -> tuple[dict, dict[int, dict], Path]:
                 "dataset_sha256": dataset_sha, "dataset_identity": data_identity,
                 "old_training_complete_sha256": sha(OLD_BASE / "TRAINING_COMPLETE.json"),
                 "old_seeds": list(OLD_SEEDS), "new_seeds": list(NEW_SEEDS),
-                "checkpoint_policy": "atomic recovery every epoch; immutable full checkpoints every 32 epochs",
+                "checkpoint_policy": "immutable full recovery every epoch; latest copy; immutable 32-epoch milestones",
                 "network": "CorrectionNet / B4, same implementation as verified epoch-128 run"}
     if manifest_path.exists():
         old = read(manifest_path)
@@ -634,6 +670,7 @@ def prepare() -> tuple[dict, dict[int, dict], Path]:
                 raise RuntimeError(f"frozen run manifest identity changed: {key}")
     else:
         atomic_json(manifest_path, manifest)
+    snapshot_inputs(cfg)
     return cfg, verified, config_path
 
 
@@ -670,7 +707,7 @@ def run() -> None:
                      "updated_utc": now()})
         raise
     finally:
-        lock.unlink(missing_ok=True)
+        lock.release()
 
 
 def recovery_self_test() -> None:
@@ -696,9 +733,14 @@ def recovery_self_test() -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--recovery-self-test", action="store_true")
+    parser.add_argument("--prepare-only", action="store_true")
     args = parser.parse_args()
     if args.recovery_self_test:
         recovery_self_test()
+    elif args.prepare_only:
+        BASE.mkdir(parents=True, exist_ok=True)
+        with ProcessLock(BASE / "PROCESS.lock"):
+            prepare()
     else:
         run()
 

@@ -1,0 +1,33 @@
+{
+  "args": {
+    "action": "run",
+    "role": "test",
+    "run": "paper2_1103_test_20261114",
+    "suites": [
+      "main",
+      "pd",
+      "retention",
+      "coherent",
+      "sliceA",
+      "sliceB"
+    ],
+    "methods": [
+      "model",
+      "keep",
+      "reference"
+    ],
+    "workers": 1,
+    "limit": null,
+    "count": null
+  },
+  "binding": {
+    "freeze_sha256": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930",
+    "sources_sha256": "0c803abbb50b950e5176eb75111ce67e820c457d67408eafc4728e09945ae8f1",
+    "checkpoint_sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3"
+  },
+  "started_utc": "2026-11-14T17:01:54.740879+00:00",
+  "python": "3.13.3",
+  "torch": "2.9.1+cu126",
+  "numpy": "2.2.6",
+  "pid": 5016
+}

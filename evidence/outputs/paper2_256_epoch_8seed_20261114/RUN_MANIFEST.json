@@ -1,0 +1,33 @@
+{
+  "run_id": "paper2_256_epoch_8seed_20261114",
+  "created_utc": "2026-11-14T17:02:23.676942+00:00",
+  "config_sha256": "de86d01ce36a08c0a3bda43cfe832b3b80454aeabee733cd8324c11832e023a4",
+  "dataset_sha256": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+  "dataset_identity": {
+    "parents": 512,
+    "shape": [
+      512,
+      3,
+      8,
+      1800
+    ],
+    "four_state_identity": true,
+    "shared_target_noise": true,
+    "max_abs_component": 841.7283716800907
+  },
+  "old_training_complete_sha256": "5c16ca86e9fd4faf2ddd2245517957648b92aecff70c8c1faa2019f662c88247",
+  "old_seeds": [
+    17,
+    29,
+    41
+  ],
+  "new_seeds": [
+    53,
+    67,
+    79,
+    97,
+    109
+  ],
+  "checkpoint_policy": "immutable full recovery every epoch; latest copy; immutable 32-epoch milestones",
+  "network": "CorrectionNet / B4, same implementation as verified epoch-128 run"
+}

@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-14T17:04:44.205440+00:00",
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 42,
+    "failed": 0,
+    "elapsed_seconds": 45.24
+  },
+  "recovery_self_test": "PASS",
+  "compileall": "PASS",
+  "frozen_original_sources_unchanged": true,
+  "test_scope": "engineering failure/recovery tests; not research performance results",
+  "pipeline_config_sha256": "3ea373439c1fe0663de8ae3c3d5d3362ce67848ff0589cdbd3688a20775bc513",
+  "training_config_sha256": "de86d01ce36a08c0a3bda43cfe832b3b80454aeabee733cd8324c11832e023a4",
+  "reverified_utc": "2026-11-14T17:09:24.462616+00:00"
+}

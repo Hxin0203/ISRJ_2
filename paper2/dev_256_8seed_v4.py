@@ -14,6 +14,7 @@ from .evaluation_1103_v4 import (group_metrics, radar_metrics, restore_model,
                                  states_from_components, summarize)
 from .io import ROOT, now, read, sha, write
 from .network import CorrectionNet
+from tools.durable_io import atomic_json as write, atomic_write
 
 RUN_ID = "paper2_256_epoch_8seed_20261114"
 BASE = ROOT / "outputs" / RUN_ID
@@ -25,21 +26,13 @@ EPOCHS = tuple(range(32, 257, 32))
 def evaluator_sources() -> dict[str, str]:
     names = ("dev_256_8seed_v4.py", "evaluation_1103_v4.py", "radar_eval.py",
              "network.py", "data_1103.py", "io.py")
-    return {f"paper2/{name}": sha(ROOT / "paper2" / name) for name in names}
+    values = {f"paper2/{name}": sha(ROOT / "paper2" / name) for name in names}
+    values["tools/durable_io.py"] = sha(ROOT / "tools/durable_io.py")
+    return values
 
 
 def _save_npz_atomic(path: Path, **arrays) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
-    try:
-        with os.fdopen(fd, "wb") as stream:
-            np.savez_compressed(stream, **arrays)
-            stream.flush()
-            os.fsync(stream.fileno())
-        os.replace(tmp_name, path)
-    finally:
-        if os.path.exists(tmp_name):
-            os.unlink(tmp_name)
+    atomic_write(path, lambda stream: np.savez_compressed(stream, **arrays))
 
 
 def evaluate_checkpoint(seed: int, epoch: int) -> dict:

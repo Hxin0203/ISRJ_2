@@ -1,20 +1,22 @@
 # ISRJ_2 近期执行安排（替代旧进度）
 
-更新时间（UTC）：2026-11-14T12:26:15.303982+00:00。
+更新时间（UTC）：2026-11-14T17:05:39.095835+00:00。
 
 训练三 seed × 128 轮、12 个 checkpoint 和全部 DEV v4 评价已经完成。当前直接执行冻结后的独立 TEST 全网格，不再重复一套全 DEV 网格。该安排为 DEV 后确定的执行决策，不能称作 DEV 前预注册。全部数值、选择依据、指标公式和限制见 `PAPER2_1103_PROGRESS_20261114.md`。
 
 | 实验 | 完整网格条件数 | 当前已完成条件数（按方法） |
 |---|---:|---|
-| main | 168 | model: 165；keep: 165；reference: 164；max_tf: 88；gmm_omp: 87；bcs_oracle: 87 |
-| pd | 310 | model: 0；keep: 0；reference: 0 |
+| main | 168 | model: 168；keep: 168；reference: 168；max_tf: 168；gmm_omp: 168；bcs_oracle: 168 |
+| pd | 310 | model: 208；keep: 208；reference: 208 |
 | retention | 42 | model: 0；keep: 0；reference: 0 |
-| coherent | 3 | model: 0；keep: 0；reference: 0 |
-| sliceA | 21 | model: 0；keep: 0；reference: 0；max_tf: 0 |
-| sliceB | 20 | model: 0；keep: 0；reference: 0；max_tf: 0 |
+| coherent | 3 | model: 3；keep: 3；reference: 3 |
+| sliceA | 21 | model: 0；keep: 0；reference: 0；max_tf: 21 |
+| sliceB | 20 | model: 0；keep: 0；reference: 0；max_tf: 20 |
 
 
 执行顺序为：训练/DEV 完成 → 工程核验与完整条件吞吐试跑 → TEST 前冻结 → 主比较与相参评价 → 310 格 Pd/Pfa → 无干扰保持 → A/B 切片扫描 → 典型脉压/多普勒图与完整论文实验章。CPU 经典方法和 GPU 模型可并行，均使用同一冻结场景，保存 parent block 与条件完成回执；重启只续接身份相同的结果。MCA-ADMM、FNet 和消融暂停。
+
+后续已安排：TEST 审计/统计/图表/结果报告 → 原有三 seed 128→256 → 新增五 seed 0→256 → 八 seed 全轨迹与 DEV 收敛汇总。每轮保存完整恢复档、每 32 轮冻结模型，保留训练数组、结构快照、原模型和失败记录。执行入口为 `tools/start_long_pipeline.ps1`，详见 `PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md`。当前：paper2_1103_test_20261114: 进程存活，磁盘状态 RUNNING；paper2_1103_test_classical_20261114: 无活动进程，磁盘状态 INVOCATION_COMPLETE；长期流水线阶段 frozen_test_resume。完整论文实验章的定稿仍需结合最终结果审核。
 
 主比较检验三类干扰和强度变化下的相对恢复、目标保持和检测表现；Pd/Pfa 扫描检验检测过渡区及虚警代价；相参评价检验脉间相位和功率保持；切片扫描检验窄/宽切片及实际覆盖变化；无干扰评价检验错误改动。它们是规定仿真范围内的证据，不替代新颖性核验或实测验证。
 

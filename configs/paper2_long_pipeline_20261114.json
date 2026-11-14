@@ -1,0 +1,115 @@
+{
+  "pipeline_id": "paper2_long_pipeline_20261114",
+  "stages": [
+    {
+      "name": "frozen_test_resume",
+      "args": [
+        "-m",
+        "tools.resume_scan_1103"
+      ]
+    },
+    {
+      "name": "classical_receipts_verify",
+      "args": [
+        "-m",
+        "tools.resume_scan_1103",
+        "--classical"
+      ]
+    },
+    {
+      "name": "complete_test_hash_audit",
+      "args": [
+        "-m",
+        "tools.aggregate_1103"
+      ]
+    },
+    {
+      "name": "test_pulse_compression_doppler_plots",
+      "args": [
+        "-m",
+        "tools.plot_1103"
+      ]
+    },
+    {
+      "name": "test_report",
+      "args": [
+        "-m",
+        "tools.report_1103"
+      ]
+    },
+    {
+      "name": "eight_seed_training_and_dev",
+      "args": [
+        "-m",
+        "paper2.train_256_8seed"
+      ]
+    },
+    {
+      "name": "final_status_report",
+      "args": [
+        "-m",
+        "tools.report_1103"
+      ]
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    41,
+    53,
+    67,
+    79,
+    97,
+    109
+  ],
+  "epochs": 256,
+  "milestone_epochs": [
+    32,
+    64,
+    96,
+    128,
+    160,
+    192,
+    224,
+    256
+  ],
+  "retry_policy": "at most 3 attempts/stage for mechanical I/O or OS process termination only; identity/numerical failures stop",
+  "source_sha256": {
+    "paper2/baselines_1103.py": "a466597a2f65bee6bd9abdb023289583d4a91fd87195d3ae0317b2bf2b9c32c0",
+    "paper2/data.py": "c3fc377b0f3ef9f0e0250814e0de260eb0ebd125b4ce396929e02151f47d9854",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/dev_1103_v4.py": "da9f773bbaa34137b73e1a43eea0850d540814706f2951fe554964a43e2ead86",
+    "paper2/dev_256_8seed_v4.py": "c796c437fbe096747701af343e8f58d8a3c0585a9f7daf5a7257033ad048465c",
+    "paper2/evaluate.py": "6840d532a5b32b88984abd5d5b1f3fd157f8acbbfc2aba87c8457ce8546b13dd",
+    "paper2/evaluate_1103.py": "0cbd5e53ce835d38be4938e7de1c559a1e2f6953220619bec4909baad940c7ae",
+    "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+    "paper2/run.py": "5188e192a13d9825d5a34f07e664131af851402ec97d8a92a4bea4d2d1059e5a",
+    "paper2/scan_1103.py": "eb096a3284295ce080c2a98b3842ec49136dfd4813a6eedc38ae8a811075a1cd",
+    "paper2/scenes_1103.py": "05864bc879e1d0aaea5aaa55268c5cd19cd982583804387c291cc82cfc29a8c9",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+    "paper2/__init__.py": "d962816e0ba88de846966b1b0795d74410d4d7557accc580c1b4607b28e7a707",
+    "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+    "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e",
+    "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+    "paper2/vendor/__init__.py": "45963df8f00f2ca0fe8e193895ae9f2f4854ecb5a783bdc36278626cb02af2fa",
+    "paper2/vendor/baselines_1103/bcs.py": "23331aeb39205a7f2c321e5a4d293380e8f3aaeb8d087f09dee7f4168b0ba4b2",
+    "paper2/vendor/baselines_1103/max_tf.py": "2d25fb9e4e3a1fc6973a4bfc40606b37f06d49e9c9042f3168f474c9b2f81576",
+    "paper2/vendor/baselines_1103/paper_gmm_omp.py": "e1dafac0faa31d1f424853500425e7bda88db5262d14160d7512c3e78abda1f5",
+    "paper2/vendor/baselines_1103/physical.py": "4bb75b7b715722932306427a598d983bba1bee4ee509338b5c22a61054289cff",
+    "paper2/vendor/baselines_1103/__init__.py": "145c20aa3eb8cc2b56e4f84d2dfb61e93afa04b9492dad579d56c517358f16a6",
+    "tools/run_long_pipeline.py": "040f2e7b582295a7a6af39bbe08e5d52f89033535729cdbfdbdd3e09d1173379",
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+    "tools/resume_scan_1103.py": "ed0b2c7919615235f9155bff99b581c3d036c4c751f3248fc123126af6315ab7",
+    "tools/aggregate_1103.py": "932fcb19f4343b3f5e6a7168d980496920336fcaee48886add8ad7315f50c261",
+    "tools/plot_1103.py": "98e24d0a629bc323e3920587874d2118c483697b79e78d0c21219ee202645714",
+    "tools/report_1103.py": "be6234c62ddf8daf73d6d51f8c237a1edf8bee494197863a2f47b7b32ea6ee49",
+    "tools/aggregate_convergence_256_8seed.py": "00830b60214ebcab40847bdcee6cc11644e84a3fa19482b5b344bb610cae7b55",
+    "tools/training_progress_256.py": "c51bd32d5cbd545132f1fccd544b7f8b69306f8f51b7230d34488ae85ec6ce88",
+    "configs/paper2_1103_scan_freeze.json": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930"
+  }
+}

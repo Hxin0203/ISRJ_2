@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-11-14T17:06:16.146538+00:00",
+  "reports": [
+    {
+      "path": "PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md",
+      "sha256": "152f325bc918e78bfc4d190ef71e3439aac1cda3ed363c00e37a1d37422ff662",
+      "audit": {
+        "path": "PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md",
+          "word_count": 554,
+          "sentence_count": 38,
+          "burstiness_cv": 0.7709,
+          "lexical_diversity": 0.8768,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    {
+      "path": "PAPER2_1103_PROGRESS_20261114.md",
+      "sha256": "7f047d7b24694881cb51108d14266831bd4e2186bc1a83f69694ee34c6b4c861",
+      "audit": {
+        "path": "PAPER2_1103_PROGRESS_20261114.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "PAPER2_1103_PROGRESS_20261114.md",
+          "word_count": 1232,
+          "sentence_count": 68,
+          "burstiness_cv": 0.671,
+          "lexical_diversity": 0.7097,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0625,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    {
+      "path": "PAPER2_1103_NEAR_TERM_PLAN_20261114.md",
+      "sha256": "5839c1d1500f898f4d4baa27867ea597ba66db58eb29795d51c70e7636737260",
+      "audit": {
+        "path": "PAPER2_1103_NEAR_TERM_PLAN_20261114.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "PAPER2_1103_NEAR_TERM_PLAN_20261114.md",
+          "word_count": 226,
+          "sentence_count": 15,
+          "burstiness_cv": 0.8353,
+          "lexical_diversity": 0.7692,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    }
+  ],
+  "changed_characters": 0,
+  "scope": "inspection only; protected math/code/values not normalized",
+  "cjk_score_is_not_calibrated": true
+}

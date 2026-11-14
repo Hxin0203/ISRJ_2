@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-11-14T16:32:16.839868+00:00",
+  "args": {
+    "action": "run",
+    "role": "test",
+    "run": "paper2_1103_test_20261114",
+    "suites": [
+      "main",
+      "coherent",
+      "pd",
+      "retention",
+      "sliceA",
+      "sliceB"
+    ],
+    "methods": [
+      "model",
+      "keep",
+      "reference"
+    ],
+    "workers": 1,
+    "limit": null,
+    "count": null
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"G:\\Project Code\\ISRJ_222\\paper2\\scan_1103.py\", line 328, in run\n    evaluate_condition(root,evidence,binding,args.role,suite,index,condition,\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                       method,model,device,pool)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\Project Code\\ISRJ_222\\paper2\\scan_1103.py\", line 268, in evaluate_condition\n    write(root/'STATUS.json',dict(stage='RUNNING',suite=suite,index=index,method=method,\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          parents_done=ids[-1]+1,parents=condition['count'],pid=os.getpid(),updated_utc=now()))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\Project Code\\ISRJ_222\\paper2\\io.py\", line 27, in write\n    temp.replace(path)\n    ~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_local.py\", line 780, in replace\n    os.replace(self, target)\n    ~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] 拒绝访问。: 'G:\\\\Project Code\\\\ISRJ_222\\\\outputs\\\\paper2_1103_test_20261114\\\\STATUS.json.tmp' -> 'G:\\\\Project Code\\\\ISRJ_222\\\\outputs\\\\paper2_1103_test_20261114\\\\STATUS.json'\n"
+}

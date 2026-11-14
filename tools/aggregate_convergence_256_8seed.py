@@ -18,6 +18,7 @@ import torch
 
 from paper2.dev_256_8seed_v4 import EPOCHS as DEV_EPOCHS, SEEDS, evaluator_sources
 from paper2.io import ROOT, now, read, sha
+from tools.durable_io import atomic_json
 
 RUN_ID = "paper2_256_epoch_8seed_20261114"
 RUN = ROOT / "outputs" / RUN_ID
@@ -130,6 +131,9 @@ def _validate_training_complete() -> dict:
         events = folder / "events.jsonl"
         if not events.is_file() or sha(events) != run.get("training_events_sha256"):
             raise RuntimeError(f"training event log missing or hash mismatch for seed {seed}")
+        for name, digest in run.get("recovery_archives_sha256", {}).items():
+            if sha(folder / name) != digest:
+                raise RuntimeError(f"per-epoch recovery archive hash mismatch: {folder / name}")
         for epoch in DEV_EPOCHS:
             cp = folder / f"epoch_{epoch:03d}.pt"
             milestone = run["milestones"].get(str(epoch))

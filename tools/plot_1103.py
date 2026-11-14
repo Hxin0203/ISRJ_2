@@ -10,6 +10,8 @@ import csv
 import json
 from pathlib import Path
 
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -147,7 +149,9 @@ def main():
     plot_grid(rows, "sliceA", "u_nmse", "Slice-A width sensitivity", "sliceA_u_nmse.png", x="width", y="jsr_db")
     plot_grid(rows, "sliceB", "u_nmse", "Slice-B width sensitivity", "sliceB_u_nmse.png", x="width", y="repeats")
     typical_scene()
-    print(json.dumps({"completed_receipts": len(rows), "output": str(OUT), "partial": True}, ensure_ascii=False))
+    frozen = read(FREEZE)
+    expected = sum(len(grid) * len(frozen['methods'][suite]) for suite,grid in frozen['grids'].items())
+    print(json.dumps({"completed_receipts": len(rows), "output": str(OUT), "partial": len(rows)!=expected}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -13,6 +13,8 @@ import numpy as np
 
 from paper2.evaluation_1103_v4 import summarize
 from paper2.io import ROOT, now, read, sha, source_bindings, write
+from tools.durable_io import atomic_json as write
+from tools.resume_scan_1103 import verify_frozen_sources
 
 RUNS = ("paper2_1103_test_20261114", "paper2_1103_test_classical_20261114")
 METRICS = ("u_nmse", "damage", "sjrif_db", "false_peak_suppression_db", "pd", "pd_no_jammer",
@@ -23,7 +25,7 @@ LIGHT = ROOT / "evidence/outputs"
 def load_verified():
     frozen_path = ROOT / "configs/paper2_1103_scan_freeze.json"
     frozen = read(frozen_path)
-    assert frozen["sources"] == source_bindings(), "frozen source identity changed"
+    verify_frozen_sources(frozen)
     assert sha(ROOT / frozen["selected_checkpoint"]) == frozen["checkpoint_sha256"]
     records = {}
     failures = []

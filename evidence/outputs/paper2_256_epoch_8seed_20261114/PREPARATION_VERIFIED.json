@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-14T17:04:43.800530+00:00",
+  "status": "PREPARED_NOT_TRAINING",
+  "files_sha256": {
+    "CONFIG.json": "de86d01ce36a08c0a3bda43cfe832b3b80454aeabee733cd8324c11832e023a4",
+    "RUN_MANIFEST.json": "4609de0b0123c3e44c0884a66640e0d689f2f979a6e3c017d9924958a9565758",
+    "ARCHITECTURE.json": "c44c44fd923fd1bd7d6a5232b98e0281991b3cabe3035d8cd4bac200c205f071",
+    "INPUT_SNAPSHOT.json": "5a53628e7d5a2fcd6f86e9642b9390519d2c8e6f3911a06f74ab452a1e957f87"
+  },
+  "training_epochs_run": 0,
+  "raw_data_and_weights_uploaded": false
+}
