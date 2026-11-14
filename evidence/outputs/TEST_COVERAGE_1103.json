@@ -1,14 +1,14 @@
 {
-  "checked_utc": "2026-11-14T11:53:44.392105+00:00",
+  "checked_utc": "2026-11-14T12:08:12.588667+00:00",
   "freeze_sha256": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930",
   "coverage": {
     "main": {
-      "model": 91,
-      "keep": 90,
-      "reference": 90,
-      "max_tf": 48,
-      "gmm_omp": 48,
-      "bcs_oracle": 48
+      "model": 124,
+      "keep": 124,
+      "reference": 124,
+      "max_tf": 66,
+      "gmm_omp": 65,
+      "bcs_oracle": 65
     },
     "pd": {
       "model": 0,
@@ -46,5 +46,5 @@
     "sliceA": 21,
     "sliceB": 20
   },
-  "complete_method_conditions": 415
+  "complete_method_conditions": 568
 }

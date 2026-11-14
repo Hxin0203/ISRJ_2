@@ -1,6 +1,6 @@
 # Current state
 
-Verified UTC: 2026-11-14T11:53:44.392105+00:00.
+Verified UTC: 2026-11-14T12:08:12.588667+00:00.
 
 All three 128-epoch training runs and all 12 DEV v4 evaluations complete. All checkpoint hashes and source/data bindings verified. Selected epoch 128 using three-seed mean DEV eU; fixed seed 29. Rule finalized after DEV, before independent TEST; not a pre-DEV preregistration. Weights remain local.
 
