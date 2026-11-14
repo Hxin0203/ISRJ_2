@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-20T15:45:40.807300+00:00",
+  "models": [
+    {
+      "seed": 17,
+      "model_name": "Paper2 target-family response-constrained residual restorer",
+      "checkpoint_local_path": "G:\\Project Code\\ISRJ_222\\outputs\\export\\paper2_target_family_seed17.pt",
+      "checkpoint_sha256": "21c8584a2014401a4d07f33155263c89a82cd6d612a7495deed393eb1276e048",
+      "training_checkpoint_sha256": "8e3cc61401817af34433644b8f377628e37e6f06bd6dfa7b4c86b898997a1d0f",
+      "gain_real": 0.6270444759949669,
+      "gain_imag": 0.006004359408554351,
+      "inference": "python -m tools.restore_waveform",
+      "input": "observed complex [N,1800] only",
+      "sample_rate_hz": 60000000.0,
+      "pulse_width_s": 1e-05,
+      "bandwidth_hz": 30000000.0,
+      "status": "provisional synthetic-development candidate; no final TEST or novelty confirmation"
+    },
+    {
+      "seed": 29,
+      "model_name": "Paper2 target-family response-constrained residual restorer",
+      "checkpoint_local_path": "G:\\Project Code\\ISRJ_222\\outputs\\export\\paper2_target_family_seed29.pt",
+      "checkpoint_sha256": "98c24cef8316ba5ecd3bcca9cc7adca861ea5a6be1de6772d299c51840414a29",
+      "training_checkpoint_sha256": "7c4ffde490817750e4042480e9a2b99ef7dcc107300f85b2195088852e8aa88d",
+      "gain_real": 0.6138166072966751,
+      "gain_imag": 0.0008890877682308264,
+      "inference": "python -m tools.restore_waveform",
+      "input": "observed complex [N,1800] only",
+      "sample_rate_hz": 60000000.0,
+      "pulse_width_s": 1e-05,
+      "bandwidth_hz": 30000000.0,
+      "status": "provisional synthetic-development candidate; no final TEST or novelty confirmation"
+    }
+  ],
+  "weights_uploaded": false
+}

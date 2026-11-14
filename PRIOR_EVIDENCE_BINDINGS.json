@@ -1,0 +1,14 @@
+[
+  {
+    "commit": "417842c639bd6c4c9db9bb78273f3177a5f75856",
+    "path": "paper/derived/paper_closeout_20261020/review_package/RGSSR_English_Research_Review.md",
+    "sha256": "ad6d5886c0108eb36c9fddcf3568377bed988c710387446a7b3755d38ad8349d",
+    "bytes": 66358
+  },
+  {
+    "commit": "417842c639bd6c4c9db9bb78273f3177a5f75856",
+    "path": "paper/derived/paper_closeout_20261020/review_package/SCIENTIFIC_REVIEW_AND_CLAIM_EVIDENCE.md",
+    "sha256": "a436330d06a914e4e1327f1d2c8d282d481a151f060362f3dcd6d6ed1297221d",
+    "bytes": 5585
+  }
+]

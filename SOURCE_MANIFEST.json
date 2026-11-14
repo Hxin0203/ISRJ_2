@@ -1,0 +1,20 @@
+[
+  {
+    "original_path": "G:\\Project Code\\ISRJ\\Frozen Model\\Joint_Unfolding_Net\\data\\generate_v2.py",
+    "snapshot_path": "paper2/vendor/generate_v2.py",
+    "sha256": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+    "size": 31125
+  },
+  {
+    "original_path": "G:\\Project Code\\ISRJ\\Frozen Model\\Joint_Unfolding_Net\\data\\label_builder.py",
+    "snapshot_path": "paper2/vendor/label_builder.py",
+    "sha256": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e",
+    "size": 6969
+  },
+  {
+    "original_path": "G:\\Project Code\\ISRJ\\RGSSR_ISRJ\\model.py",
+    "snapshot_path": "paper2/vendor/legacy_model.py",
+    "sha256": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+    "size": 21592
+  }
+]

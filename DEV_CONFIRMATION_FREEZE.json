@@ -1,0 +1,70 @@
+{
+  "frozen_utc": "2026-10-20T15:28:04.832830+00:00",
+  "freeze": {
+    "source": {
+      "paper2/__init__.py": "d962816e0ba88de846966b1b0795d74410d4d7557accc580c1b4607b28e7a707",
+      "paper2/data.py": "c3fc377b0f3ef9f0e0250814e0de260eb0ebd125b4ce396929e02151f47d9854",
+      "paper2/evaluate.py": "6840d532a5b32b88984abd5d5b1f3fd157f8acbbfc2aba87c8457ce8546b13dd",
+      "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+      "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+      "paper2/run.py": "5188e192a13d9825d5a34f07e664131af851402ec97d8a92a4bea4d2d1059e5a",
+      "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+      "paper2/vendor/__init__.py": "45963df8f00f2ca0fe8e193895ae9f2f4854ecb5a783bdc36278626cb02af2fa",
+      "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+      "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e",
+      "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e"
+    },
+    "tool_sha256": "c661ee8c5a337e66e3036b4393b5c566901c4370cbbe92f1c783ff8d48942a70",
+    "contract_sha256": "106526a1e1968b0a626ac13a7a29ba3b6aaef5df0aaf818e9b4f398388055164",
+    "pilot_results_sha256": "a5b5b2b530a28d2953c3eea3e077cf609488d107935d0b7fff48ca7c97fb2c1d",
+    "methods": {
+      "B1_seed17": {
+        "gain_real": 0.4287224778858531,
+        "gain_imag": -0.0028049288853210673,
+        "checkpoint_sha256": "61f2817c5db6fae641a775daab5a3a4910c06cfa38e16b6dc7c698cfbb176710"
+      },
+      "B2_seed17": {
+        "gain_real": 0.40162418390816695,
+        "gain_imag": -0.003258193326406696,
+        "checkpoint_sha256": "577ec80416464f6fa16275b35aa1ab79d4a7b7250d42a7c63941bc5badaa59b7"
+      },
+      "B4_seed17": {
+        "gain_real": 0.8323530070633565,
+        "gain_imag": -0.007537836442577382,
+        "checkpoint_sha256": "2606e30c03b0766ba895bd4b10d10c856f13fe2bdaee5a168ea579fc76b977ee"
+      },
+      "B1_seed29": {
+        "gain_real": 0.4496656828939865,
+        "gain_imag": -0.0015471633947935553,
+        "checkpoint_sha256": "ca3499baaae97bd239051423f794368b966e6da6f196c0ceda459ea080fe4d25"
+      },
+      "B2_seed29": {
+        "gain_real": 0.44723473813291287,
+        "gain_imag": 0.001754010568529471,
+        "checkpoint_sha256": "06d573b27f0cab06a353a1f1b0fa2213666fc605cc37b4db0fb5059751d19f3a"
+      },
+      "B4_seed29": {
+        "gain_real": 0.8819511245550471,
+        "gain_imag": 0.02824290901352248,
+        "checkpoint_sha256": "f24ec21d0ee1089e7146b50212a2b4505c945737ec93a2a15642128bad2c7bb1"
+      }
+    },
+    "selected_controls": {
+      "17": "B1_seed17",
+      "29": "B2_seed29"
+    },
+    "budget": 0.05,
+    "roles": {
+      "new_id": [
+        192,
+        2026102011,
+        220050000
+      ],
+      "two_target": [
+        96,
+        2026102012,
+        220060000
+      ]
+    }
+  }
+}

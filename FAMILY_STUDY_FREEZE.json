@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-10-20T15:33:16.505673+00:00",
+  "freeze": {
+    "source": {
+      "paper2/__init__.py": "d962816e0ba88de846966b1b0795d74410d4d7557accc580c1b4607b28e7a707",
+      "paper2/data.py": "c3fc377b0f3ef9f0e0250814e0de260eb0ebd125b4ce396929e02151f47d9854",
+      "paper2/evaluate.py": "6840d532a5b32b88984abd5d5b1f3fd157f8acbbfc2aba87c8457ce8546b13dd",
+      "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+      "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+      "paper2/run.py": "5188e192a13d9825d5a34f07e664131af851402ec97d8a92a4bea4d2d1059e5a",
+      "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+      "paper2/vendor/__init__.py": "45963df8f00f2ca0fe8e193895ae9f2f4854ecb5a783bdc36278626cb02af2fa",
+      "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+      "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e",
+      "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+      "tools/family_science.py": "af1690dbc0d87dbc6d64b25bb1b2dcd514bbdb01c2ad5d055230b6dd7224b770",
+      "tools/family_data.py": "152e2fa48afada30aae8f11e6c32cbf31bebd184e25139c87187a78432d1ca0d",
+      "tools/family_study.py": "168db867128bd16880a414b4593db30ce1fe061d69d9ba40dfc9aa08d0d02bb6"
+    },
+    "contract_sha256": "cc657f9bc097384477c7c3b8b47ce19f59e38fbc32445911fbd2a37cc6772cbf",
+    "seeds": [
+      17,
+      29
+    ],
+    "methods": [
+      "B1",
+      "B2",
+      "B4"
+    ],
+    "steps": 1200,
+    "batch_groups": 16,
+    "lr": 0.001,
+    "frontier_budgets": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "operating_budget": 0.04,
+    "operating_tail": 0.05,
+    "confirmation_budget": 0.05,
+    "confirmation_tail": 0.1
+  }
+}
