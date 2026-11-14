@@ -65,7 +65,7 @@ DEV 公开 3 seeds × 4 epochs 的全部 12 行结果，不构造未经论证的
 
 ## 近期执行窗口与资源估计
 
-Seed 17 的完整 128 epoch 训练实测约 45.4 分钟，Seed 29 实测 45.9 分钟（RTX 4060）。截至 2026-11-14T08:38:32Z，Seed 29 已完整结束，4 个 checkpoint 哈希均与训练回执一致；Seed 41 为 epoch 40/128、step 1900/6144，epoch-32 checkpoint 已保存。Seed 41 耗时需依完成后实测更新，不能用旧速度估算代替当前进度。该训练时间不包括 DEV 重评、经典基线和完整信号处理网格。训练期间不启动第二个 GPU 训练进程。
+Seed 17 的完整 128 epoch 训练实测约 45.4 分钟，Seed 29 实测 45.9 分钟（RTX 4060）。截至 2026-11-14T08:47:07Z，Seed 29 已完整结束，4 个 checkpoint 哈希均与训练回执一致；Seed 41 为 epoch 65/128、step 3100/6144，epoch-32/64 checkpoint 已保存。Seed 41 耗时需依完成后实测更新，不能用旧速度估算代替当前进度。该训练时间不包括 DEV 重评、经典基线和完整信号处理网格。训练期间不启动第二个 GPU 训练进程。
 
 | 执行窗口 | 近期动作 | 完成判据与下一步 |
 |---|---|---|
@@ -79,7 +79,7 @@ Seed 17 的完整 128 epoch 训练实测约 45.4 分钟，Seed 29 实测 45.9 �
 
 ## 当前结果与证据边界
 
-- 正式训练进程 PID 41024 正在运行。Seed 17、29 已完成 128 epoch；Seed 41 已到 40/128 epoch（step 1900/6144，最近有限 loss 0.151826），32 epoch checkpoint 已保存。三 seed 全部完成后再对 12 个 checkpoint 做 DEV 评价。
+- 正式训练进程 PID 41024 正在运行。Seed 17、29 已完成 128 epoch；Seed 41 已到 65/128 epoch（step 3100/6144，最近有限 loss 0.111075），32/64 epoch checkpoint 已保存。三 seed 全部完成后再对 12 个 checkpoint 做 DEV 评价。
 - Seed 17 的 32/64/96/128 checkpoint 已在 DEV 用 v3 target-peak 规则评价。此 DEV 汇总中，$e_U$ 分别为 0.387/0.220/0.166/0.179，SJRIF 为 9.72/10.10/10.27/10.33 dB，Pd 为 0.802/0.818/0.819/0.824；KEEP Pd 为 0.595。完整区间见 `evidence/outputs/paper2_1103_retry_20261114/DEV_SUMMARY_v3.json` 和对应逐 epoch JSON。以上仅是一个 seed 的开发集探索，不能作为独立测试或最终模型选择。
 - Max-TF、GMM-OMP、BCS-oracle 只做过两脉冲、单 parent smoke test；没有全网格调参或性能结果。
 - 主比较、完整 Pd/Pfa、A/B 切片宽度敏感性、无干扰保持全扫描和独立 TEST 尚未运行；不宣称投稿级结论。
