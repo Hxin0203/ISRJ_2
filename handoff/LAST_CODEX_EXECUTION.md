@@ -5,6 +5,6 @@
 - Seed 17 has all four checkpoints and v3 DEV results; independent TEST has not been generated or opened.
 - Scope remains CorrectionNet, Max-TF, GMM-OMP, BCS-oracle, KEEP, and no-jammer noisy reference. MCA-ADMM-Net, ISRJ-FNet, and ablations remain suspended.
 - Tests: python -m pytest -q — 24 passed.
-- Protocol, code, and screened aggregate evidence are on `paper2/codex/1103-experiment`, currently at `9c6e0d1a99276e03103b4ff975420e3593b50f08`; this live status update is pending commit. Raw data and checkpoints excluded.
+- Protocol, code, and screened aggregate evidence are on `paper2/codex/1103-experiment`, now at `55134cb7b9f40c78ca27986b594165e46e86f1e0`; remote SHA was verified. Raw data and checkpoints excluded.
 
 Captured UTC: 2026-11-14T08:38:32.564895Z

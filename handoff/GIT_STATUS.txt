@@ -1,8 +1,2 @@
- M PAPER2_1103_EXPERIMENT_PLAN_20261114.md
- M PAPER2_1103_NEAR_TERM_PLAN_20261114.md
- M PAPER2_1103_PROGRESS_20261114.md
- M handoff/CURRENT_STATE.md
- M handoff/LAST_CODEX_EXECUTION.md
- M handoff/OUTPUT_EVIDENCE_INDEX_1103.json
- M handoff/RUNNING_EXPERIMENTS.json
-?? evidence/outputs/paper2_1103_retry_20261114/PROGRESS.json
+## codex/1103-experiment...paper2/codex/1103-experiment
+Working tree clean after commit 55134cb7b9f40c78ca27986b594165e46e86f1e0; remote branch verified at the same SHA.
