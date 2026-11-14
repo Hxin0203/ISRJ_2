@@ -2,6 +2,8 @@
 
 This repository contains the controlled source and evidence snapshot for the second ISRJ paper. Start with [ISRJ_2_CURRENT_STATE_REPORT_20261113.md](ISRJ_2_CURRENT_STATE_REPORT_20261113.md) for the project history, model structure, mathematical formulation, results, and remaining evidence gaps. The work is exploratory; novelty and final-test performance are not established.
 
+[PAPER2_EXPERIMENT_ROADMAP_20261114.md](PAPER2_EXPERIMENT_ROADMAP_20261114.md) lays out the next gated experiments, their controls, and what each result can establish.
+
 Read PAPER2_GO_NO_GO.md and PAPER2_PILOT_RESULTS.md for the initial pilot, and PAPER2_DEV_CONFIRMATION.md for its subsequent failed frozen confirmation. FAMILY_STUDY_CONTRACT.md and FAMILY_STUDY_FREEZE.json define the separate target-family experiment; its completed development results are in PAPER2_FAMILY_RESULTS.md and evidence/family/RESULTS.json. PAPER2_NEAREST_WORK_COMPARISON.md records literature access limits.
 
 Run from this directory with an existing Python environment containing NumPy, PyTorch, pytest and matplotlib:
