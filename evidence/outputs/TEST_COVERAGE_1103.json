@@ -1,0 +1,50 @@
+{
+  "checked_utc": "2026-11-14T11:53:44.392105+00:00",
+  "freeze_sha256": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930",
+  "coverage": {
+    "main": {
+      "model": 91,
+      "keep": 90,
+      "reference": 90,
+      "max_tf": 48,
+      "gmm_omp": 48,
+      "bcs_oracle": 48
+    },
+    "pd": {
+      "model": 0,
+      "keep": 0,
+      "reference": 0
+    },
+    "retention": {
+      "model": 0,
+      "keep": 0,
+      "reference": 0
+    },
+    "coherent": {
+      "model": 0,
+      "keep": 0,
+      "reference": 0
+    },
+    "sliceA": {
+      "model": 0,
+      "keep": 0,
+      "reference": 0,
+      "max_tf": 0
+    },
+    "sliceB": {
+      "model": 0,
+      "keep": 0,
+      "reference": 0,
+      "max_tf": 0
+    }
+  },
+  "expected": {
+    "main": 168,
+    "pd": 310,
+    "retention": 42,
+    "coherent": 3,
+    "sliceA": 21,
+    "sliceB": 20
+  },
+  "complete_method_conditions": 415
+}

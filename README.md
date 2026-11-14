@@ -2,7 +2,9 @@
 
 This repository contains the controlled source and evidence snapshot for the second ISRJ paper. Start with [ISRJ_2_CURRENT_STATE_REPORT_20261113.md](ISRJ_2_CURRENT_STATE_REPORT_20261113.md) for the project history, model structure, mathematical formulation, results, and remaining evidence gaps. The work is exploratory; novelty and final-test performance are not established.
 
-[PAPER2_EXPERIMENT_ROADMAP_20261114.md](PAPER2_EXPERIMENT_ROADMAP_20261114.md) lays out the next gated experiments, their controls, and what each result can establish.
+The current 1103-aligned execution is documented in [PAPER2_1103_PROGRESS_20261114.md](PAPER2_1103_PROGRESS_20261114.md) and [PAPER2_1103_NEAR_TERM_PLAN_20261114.md](PAPER2_1103_NEAR_TERM_PLAN_20261114.md). Three seeds were trained through epochs 32, 64, 96, and 128; all twelve checkpoints are retained locally. The independent TEST is running with the frozen seed-29/epoch-128 checkpoint. MCA-ADMM-Net, FNet, and ablations are intentionally paused. Coverage tables and light result receipts are under `evidence/outputs/`; incomplete suites must not be described as complete.
+
+`PAPER2_EXPERIMENT_ROADMAP_20261114.md` records the earlier broader roadmap. The active scope is the 1103-aligned protocol above: MCA-ADMM-Net, FNet, and ablations are paused.
 
 Read PAPER2_GO_NO_GO.md and PAPER2_PILOT_RESULTS.md for the initial pilot, and PAPER2_DEV_CONFIRMATION.md for its subsequent failed frozen confirmation. FAMILY_STUDY_CONTRACT.md and FAMILY_STUDY_FREEZE.json define the separate target-family experiment; its completed development results are in PAPER2_FAMILY_RESULTS.md and evidence/family/RESULTS.json. PAPER2_NEAREST_WORK_COMPARISON.md records literature access limits.
 
@@ -28,6 +30,6 @@ Observed-only waveform restoration is available through `python -m tools.restore
 
 The engineering command freezes training length from measured cost. Completed runs are preserved and source/config/checkpoint hashes must match. A partial scientific run deliberately requires investigation before restart. The evaluation wrapper checks supplemental dataset bindings, all six run identities, identical per-seed initialization and minibatches, then performs DEV-only analysis. Do not bypass it by calling paper2.evaluate directly.
 
-Local data, weights and raw outputs stay in ignored data/ and outputs/. Only screened source, contracts and small derived evidence belong in Git. No old Gate arrays are read; final TEST remains ungenerated. Known waveforms and all old source snapshots have origin hashes in SOURCE_MANIFEST.json.
+Local data, weights and raw outputs stay in ignored data/ and outputs/. Only screened source, contracts and small derived evidence belong in Git. No old held-out Gate arrays are read; the independent 1103 TEST is running, and its completion status is tracked in `handoff/RUNNING_EXPERIMENTS.json`. Known waveforms and all old source snapshots have origin hashes in SOURCE_MANIFEST.json.
 
 The user explicitly suspended codex-with-chatgpt for this task; Codex performs and labels its own checks. No historical ChatGPT review or PASS is fabricated.

@@ -1,0 +1,25 @@
+{
+  "scope": "ENGINEERING_NOT_PERFORMANCE",
+  "created_utc": "2026-11-14T11:01:04.994477+00:00",
+  "threads": 1,
+  "rows": [
+    {
+      "method": "max_tf",
+      "seconds": 0.032813700032420456,
+      "pulses": 32,
+      "finite": true
+    },
+    {
+      "method": "gmm_omp",
+      "seconds": 0.8668241000268608,
+      "pulses": 32,
+      "finite": true
+    },
+    {
+      "method": "bcs_oracle",
+      "seconds": 0.008273800020106137,
+      "pulses": 32,
+      "finite": true
+    }
+  ]
+}

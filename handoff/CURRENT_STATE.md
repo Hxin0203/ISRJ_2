@@ -1,14 +1,9 @@
-# 当前状态 / Current state
+# Current state
 
-Updated UTC: 2026-11-14T08:47:07.909564+00:00
+Verified UTC: 2026-11-14T11:53:44.392105+00:00.
 
-## Paper 2, 1103-aligned run
+All three 128-epoch training runs and all 12 DEV v4 evaluations complete. All checkpoint hashes and source/data bindings verified. Selected epoch 128 using three-seed mean DEV eU; fixed seed 29. Rule finalized after DEV, before independent TEST; not a pre-DEV preregistration. Weights remain local.
 
-- Active process: PID 41024, seed 41, epoch 65/128, step 3100/6144; latest finite training loss 0.111075. Seed 17 and seed 29 finished all 128 epochs with four checkpoints each. Seed 41 epoch-32/64 checkpoints are saved (SHA-256 `bc98387f8ad512222c840be9e469edbb88f9e5273f804caa44edc4eb41defbfb`, `e9074fae56683bd8eb84e191f4d22c2a824fd2c6b3f02dc9d0a20009a4529305`).
-- TRAIN has 512 parent groups with three within-parent jammer variants. DEV has 256 distinct parents. No independent TEST data has been generated or opened. Legacy held-out Gate arrays were not accessed.
-- Seed 17 alone has v3 DEV results for epochs 32/64/96/128. These exploratory values do not select the final checkpoint. Seed 29/41 checkpoint DEV evaluations remain pending.
-- Scope: CorrectionNet, Max-TF, GMM-OMP, exact-support BCS oracle, KEEP, and noisy no-jammer reference. MCA-ADMM-Net, ISRJ-FNet, and ablations are suspended.
-- Full 168-cell comparison, 310-cell repeated-jammer Pd/Pfa, 8-pulse pulse-compression/Doppler, slice-width, no-jammer retention, and independent TEST runs remain incomplete.
-- `python -m pytest -q`: 24 passed. Full progress and run boundaries are in `PAPER2_1103_PROGRESS_20261114.md` and `PAPER2_1103_NEAR_TERM_PLAN_20261114.md`.
+Independent TEST scans are tracked in `RUNNING_EXPERIMENTS.json`; coverage in `evidence/outputs/TEST_COVERAGE_1103.json`. Primary report: `PAPER2_1103_PROGRESS_20261114.md`. Freeze: `configs/paper2_1103_scan_freeze.json` (SHA 8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930).
 
-Raw data, checkpoints, arrays, caches, and full logs remain local and excluded from Git. Lightweight aggregate evidence only is included.
+Only paper2 remote may be pushed. No ChatGPT collaboration; no old Gate access; no MCA-ADMM/FNet/ablations. Training was 48 updates/epoch, unlike 1103's 512. Preserve every checkpoint, failure and negative condition. Raw data, weights, arrays, caches and logs stay local. Baselines are formula reproductions, BCS oracle is labelled; bibliographic verification remains.

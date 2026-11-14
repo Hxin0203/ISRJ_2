@@ -1,0 +1,285 @@
+{
+  "10.1049/iet-rsn.2018.5658": {
+    "DOI": "10.1049/iet-rsn.2018.5658",
+    "title": [
+      "Band pass filter design against interrupted‐sampling repeater jamming based on time‐frequency analysis"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5947-5604",
+        "authenticated-orcid": false,
+        "given": "Jian",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "National Key Laboratory of Science and Technology on ATR College of Electronic Science and Technology National University of Defense Technology Changsha 410073 People's Republic of China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wenzhen",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "National Key Laboratory of Science and Technology on ATR College of Electronic Science and Technology National University of Defense Technology Changsha 410073 People's Republic of China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shiyou",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Communication Engineering Sun Yat‐sen University Guangzhou 510275 People's Republic of China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zengping",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronics and Communication Engineering Sun Yat‐sen University Guangzhou 510275 People's Republic of China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiangwei",
+        "family": "Zou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "National Key Laboratory of Science and Technology on ATR College of Electronic Science and Technology National University of Defense Technology Changsha 410073 People's Republic of China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "IET Radar, Sonar &amp; Navigation"
+    ],
+    "volume": "13",
+    "issue": "10",
+    "page": "1646-1654",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1049/iet-rsn.2018.5658"
+  },
+  "10.1016/j.dsp.2025.105132": {
+    "DOI": "10.1016/j.dsp.2025.105132",
+    "title": [
+      "Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction"
+    ],
+    "author": [
+      {
+        "given": "Zhenhua",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Liang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0317-9697",
+        "authenticated-orcid": false,
+        "given": "Ning",
+        "family": "Fu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Liyan",
+        "family": "Qiao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Digital Signal Processing"
+    ],
+    "volume": "161",
+    "issue": null,
+    "page": "105132",
+    "article-number": "105132",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1016/j.dsp.2025.105132"
+  },
+  "10.3390/s19153279": {
+    "DOI": "10.3390/s19153279",
+    "title": [
+      "Bayesian Compress Sensing Based Countermeasure Scheme Against the Interrupted Sampling Repeater Jamming"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9883-7508",
+        "authenticated-orcid": false,
+        "given": "Sha",
+        "family": "Huan",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Physics and Electronic Engineering, Guangzhou University, Guangzhou 510006, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gane",
+        "family": "Dai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Advanced Institute of Engineering Science for Intelligent Manufacturing, Guangzhou University, Guangzhou 510006, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gaoyong",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Physics and Electronic Engineering, Guangzhou University, Guangzhou 510006, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shan",
+        "family": "Ai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Advanced Institute of Engineering Science for Intelligent Manufacturing, Guangzhou University, Guangzhou 510006, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Sensors"
+    ],
+    "volume": "19",
+    "issue": "15",
+    "page": "3279",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          7,
+          25
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.3390/s19153279"
+  }
+}
