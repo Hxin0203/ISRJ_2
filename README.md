@@ -4,6 +4,8 @@ This repository contains the controlled source and evidence snapshot for the sec
 
 The current 1103-aligned execution is documented in [PAPER2_1103_PROGRESS_20261114.md](PAPER2_1103_PROGRESS_20261114.md) and [PAPER2_1103_NEAR_TERM_PLAN_20261114.md](PAPER2_1103_NEAR_TERM_PLAN_20261114.md). Three seeds were trained through epochs 32, 64, 96, and 128; all twelve checkpoints are retained locally. The independent TEST is running with the frozen seed-29/epoch-128 checkpoint. MCA-ADMM-Net, FNet, and ablations are intentionally paused. Coverage tables and light result receipts are under `evidence/outputs/`; incomplete suites must not be described as complete.
 
+After the complete 1103-aligned TEST scan and its result audit, the queued long-run follow-up is specified in [PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md](PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md). It extends seeds 17/29/41 to 256 epochs, then trains five additional seeds to 256, retaining the prior runs and adding epoch-level recovery saves plus immutable 32-epoch checkpoints. Do not start it before the current TEST and result package are complete.
+
 `PAPER2_EXPERIMENT_ROADMAP_20261114.md` records the earlier broader roadmap. The active scope is the 1103-aligned protocol above: MCA-ADMM-Net, FNet, and ablations are paused.
 
 Read PAPER2_GO_NO_GO.md and PAPER2_PILOT_RESULTS.md for the initial pilot, and PAPER2_DEV_CONFIRMATION.md for its subsequent failed frozen confirmation. FAMILY_STUDY_CONTRACT.md and FAMILY_STUDY_FREEZE.json define the separate target-family experiment; its completed development results are in PAPER2_FAMILY_RESULTS.md and evidence/family/RESULTS.json. PAPER2_NEAREST_WORK_COMPARISON.md records literature access limits.
