@@ -1,10 +1,10 @@
 # 当前状态 / Current state
 
-Updated UTC: 2026-11-14T08:13:11.458986+00:00
+Updated UTC: 2026-11-14T08:38:32.564895+00:00
 
 ## Paper 2, 1103-aligned run
 
-- Active process: PID 41024, seed 29, epoch 94/128, step 4500/6144; latest finite training loss 0.087579. Checkpoints at 32 and 64 epochs are saved. Seed 17 finished all four checkpoints; seed 41 has not started.
+- Active process: PID 41024, seed 41, epoch 40/128, step 1900/6144; latest finite training loss 0.151826. Seed 17 and seed 29 finished all 128 epochs with four checkpoints each. Seed 41 epoch-32 checkpoint is saved (SHA-256 `bc98387f8ad512222c840be9e469edbb88f9e5273f804caa44edc4eb41defbfb`).
 - TRAIN has 512 parent groups with three within-parent jammer variants. DEV has 256 distinct parents. No independent TEST data has been generated or opened. Legacy held-out Gate arrays were not accessed.
 - Seed 17 alone has v3 DEV results for epochs 32/64/96/128. These exploratory values do not select the final checkpoint. Seed 29/41 checkpoint DEV evaluations remain pending.
 - Scope: CorrectionNet, Max-TF, GMM-OMP, exact-support BCS oracle, KEEP, and noisy no-jammer reference. MCA-ADMM-Net, ISRJ-FNet, and ablations are suspended.

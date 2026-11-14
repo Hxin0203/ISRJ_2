@@ -1,0 +1,91 @@
+{
+  "stage": "TRAINING",
+  "captured_utc": "2026-11-14T08:38:32.564895+00:00",
+  "active_process_id": 41024,
+  "live_status": {
+    "stage": "TRAINING",
+    "seed": 41,
+    "epoch": 40,
+    "epochs": 128,
+    "step": 1900,
+    "steps": 6144,
+    "loss": {
+      "total": 0.15182551741600037,
+      "endpoint": 0.07406602799892426,
+      "pc": 0.0987808108329773,
+      "damage": 0.06788140535354614,
+      "epoch": 40,
+      "step": 1900,
+      "lr": 0.0007932546470203176,
+      "gradient_norm": 6.828832149505615
+    },
+    "elapsed_seconds": 816.8900069000665,
+    "updated_utc": "2026-11-14T08:38:32.564895+00:00"
+  },
+  "seeds": {
+    "17": {
+      "training_complete": true,
+      "checkpoints": {
+        "32": {
+          "sha256": "15ed771f20752bb0078d41031412d290f01c64b9a1b079b4dbf5c2a88b302ba9",
+          "bytes": 1015243
+        },
+        "64": {
+          "sha256": "89e7f663f72ac375e1ec4b6d4c0b6af3bfa65cb231583fc28840167396fcb29f",
+          "bytes": 1015243
+        },
+        "96": {
+          "sha256": "f533bdead853c9a67a4f8753c04b7a2ab3b6ac50f3381001e934b970a7c3fa21",
+          "bytes": 1015243
+        },
+        "128": {
+          "sha256": "2a91655b3535ab2363271b45e04a9363e7240aa0535742ddfd404b3203720056",
+          "bytes": 1015243
+        }
+      },
+      "training_receipt_sha256": "12af88e136ec437cffe44c05235e4f9602474e630aeb03e90312509026460ab3"
+    },
+    "29": {
+      "training_complete": true,
+      "checkpoints": {
+        "32": {
+          "sha256": "a2115778114e3e4d483af679852177c136956300805b1052508ebec6117fcc41",
+          "bytes": 1015243
+        },
+        "64": {
+          "sha256": "5d995e941be6106ece29f8923b06e811820e8089daab7a5a47b7adf22d3a0171",
+          "bytes": 1015243
+        },
+        "96": {
+          "sha256": "31b1edc6de2329d583034cafb473a19b528de48c4f91a7b86abbe20e3d079d87",
+          "bytes": 1015243
+        },
+        "128": {
+          "sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3",
+          "bytes": 1015243
+        }
+      },
+      "training_receipt_sha256": "471e5b482ebc6df25c3d4f0ce43e77b94950271774aeacb0527e54aff7b1ac23"
+    },
+    "41": {
+      "training_complete": false,
+      "checkpoints": {
+        "32": {
+          "sha256": "bc98387f8ad512222c840be9e469edbb88f9e5273f804caa44edc4eb41defbfb",
+          "bytes": 1015243
+        }
+      }
+    }
+  },
+  "dev_evaluations_completed": {
+    "17": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "29": [],
+    "41": []
+  },
+  "test_status": "not generated or opened"
+}

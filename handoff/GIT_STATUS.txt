@@ -1,1 +1,8 @@
-Verified clean immediately after commit 3cc77679944984c580967c8e4922097d2bce9a7e. Remote ref paper2/codex/1103-experiment points to the same commit. Subsequent handoff status refreshes are committed separately.
+ M PAPER2_1103_EXPERIMENT_PLAN_20261114.md
+ M PAPER2_1103_NEAR_TERM_PLAN_20261114.md
+ M PAPER2_1103_PROGRESS_20261114.md
+ M handoff/CURRENT_STATE.md
+ M handoff/LAST_CODEX_EXECUTION.md
+ M handoff/OUTPUT_EVIDENCE_INDEX_1103.json
+ M handoff/RUNNING_EXPERIMENTS.json
+?? evidence/outputs/paper2_1103_retry_20261114/PROGRESS.json
