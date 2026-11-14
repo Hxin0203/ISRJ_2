@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-14T12:58:14.937432+00:00",
+  "inputs": {
+    "evidence\\outputs\\paper2_1103_retry_20261114\\DEV_SELECTION_TABLE_v4.csv": "72f1189c1176c52fdbdb861c69efeeabbf151b8569f26c2aea17a0bf047a7551",
+    "outputs\\paper2_1103_retry_20261114\\seed_17\\history.json": "d6032630a6d8687864157dacd154a5b3f3a7736e2a6298c013d810402280373d",
+    "outputs\\paper2_1103_retry_20261114\\seed_29\\history.json": "1925378daecc6bc4a92c68d989450342d50e4eb7168dd0740e49e148f0ffd961",
+    "outputs\\paper2_1103_retry_20261114\\seed_41\\history.json": "86da0988e7d3b537f9b1972ffdd16372086487b26ea7559cde2be615dc697101"
+  },
+  "plot_script_sha256": "17822b7d1d829e1a9b0bc85054eda89cc4656be4212ea0a4d8b22bbf656ec933",
+  "training_history_records_per_seed": 6144,
+  "training_epochs": 128,
+  "updates_per_epoch": 48,
+  "dev_checkpoint_epochs": [
+    32,
+    64,
+    96,
+    128
+  ],
+  "dev_independent_parent_count": 256,
+  "test_data_accessed": false,
+  "held_out_gate_arrays_accessed": false
+}
