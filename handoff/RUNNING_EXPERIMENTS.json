@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-11-14T12:21:33.839443+00:00",
+  "checked_utc": "2026-11-14T12:26:15.303982+00:00",
   "training_status": "COMPLETE_3_SEEDS_12_CHECKPOINTS",
   "dev_status": "COMPLETE_V4_12_CHECKPOINTS",
   "test_runs": [
@@ -8,12 +8,12 @@
       "status": {
         "stage": "RUNNING",
         "suite": "main",
-        "index": 154,
-        "method": "model",
-        "parents_done": 232,
+        "index": 164,
+        "method": "reference",
+        "parents_done": 208,
         "parents": 256,
         "pid": 32556,
-        "updated_utc": "2026-11-14T12:21:33.585377+00:00"
+        "updated_utc": "2026-11-14T12:26:15.159522+00:00"
       },
       "invocation": {
         "args": {
@@ -54,12 +54,12 @@
       "status": {
         "stage": "RUNNING",
         "suite": "main",
-        "index": 81,
+        "index": 87,
         "method": "gmm_omp",
-        "parents_done": 200,
+        "parents_done": 64,
         "parents": 256,
         "pid": 2700,
-        "updated_utc": "2026-11-14T12:21:34.071657+00:00"
+        "updated_utc": "2026-11-14T12:26:15.364396+00:00"
       },
       "invocation": {
         "args": {
@@ -95,12 +95,12 @@
   ],
   "coverage": {
     "main": {
-      "model": 154,
-      "keep": 154,
-      "reference": 154,
-      "max_tf": 82,
-      "gmm_omp": 81,
-      "bcs_oracle": 81
+      "model": 165,
+      "keep": 165,
+      "reference": 164,
+      "max_tf": 88,
+      "gmm_omp": 87,
+      "bcs_oracle": 87
     },
     "pd": {
       "model": 0,
