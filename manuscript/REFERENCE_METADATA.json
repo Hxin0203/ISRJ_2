@@ -1,0 +1,496 @@
+[
+  {
+    "doi": "10.1007/s11432-007-2017-y",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:20.007653+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Mathematic principles of interrupted-sampling repeater jamming (ISRJ)",
+      "authors": [
+        "XueSong Wang",
+        "JianCheng Liu",
+        "WenMing Zhang",
+        "QiXiang Fu",
+        "Zhong Liu",
+        "XiaoXia Xie"
+      ],
+      "container_title": "Science in China Series F: Information Sciences",
+      "volume": "50",
+      "issue": "1",
+      "pages": "113-123",
+      "published_date": [
+        2007,
+        2
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1049/iet-rsn.2018.5658",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:20.007899+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Band pass filter design against interrupted‐sampling repeater jamming based on time‐frequency analysis",
+      "authors": [
+        "Jian Chen",
+        "Wenzhen Wu",
+        "Shiyou Xu",
+        "Zengping Chen",
+        "Jiangwei Zou"
+      ],
+      "container_title": "IET Radar, Sonar &amp; Navigation",
+      "volume": "13",
+      "issue": "10",
+      "pages": "1646-1654",
+      "published_date": [
+        2019,
+        10
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1016/j.dsp.2025.105132",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:20.008062+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction",
+      "authors": [
+        "Zhenhua Liu",
+        "Wei Liang",
+        "Ning Fu",
+        "Liyan Qiao",
+        "Jun Zhang"
+      ],
+      "container_title": "Digital Signal Processing",
+      "volume": "161",
+      "issue": null,
+      "pages": "105132",
+      "published_date": [
+        2025,
+        6
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1049/rsn2.12300",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:20.008196+00:00",
+    "http_status": 429,
+    "metadata": {
+      "title": null,
+      "authors": null,
+      "container_title": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "published_date": null,
+      "type": null
+    },
+    "status": "retrieval_failed_use_local_pdf_if_available"
+  },
+  {
+    "doi": "10.1016/j.sigpro.2023.109329",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:20.008392+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "MREDNet: A Multi-Residual Encoder-Decoder Network for recovering LFM interfered by intra-pulse retransmission interferences",
+      "authors": [
+        "Husheng Wang",
+        "Baixiao Chen",
+        "Qingzhi Ye",
+        "Fengsheng Huang"
+      ],
+      "container_title": "Signal Processing",
+      "volume": "217",
+      "issue": null,
+      "pages": "109329",
+      "published_date": [
+        2024,
+        4
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.3390/rs14143445",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:21.144617+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Interrupted-Sampling Repeater Jamming-Suppression Method Based on a Multi-Stages Multi-Domains Joint Anti-Jamming Depth Network",
+      "authors": [
+        "Xuesi He",
+        "Kuo Liao",
+        "Shupeng Peng",
+        "Zhenjie Tian",
+        "Jiyan Huang"
+      ],
+      "container_title": "Remote Sensing",
+      "volume": "14",
+      "issue": "14",
+      "pages": "3445",
+      "published_date": [
+        2022,
+        7,
+        18
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1049/rsn2.12568",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:21.157259+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Interrupted sampling repeater jamming suppression based on multiple extended complex‐valued convolutional auto‐encoders",
+      "authors": [
+        "Yunyun Meng",
+        "Lei Yu",
+        "Yinsheng Wei"
+      ],
+      "container_title": "IET Radar, Sonar &amp; Navigation",
+      "volume": "18",
+      "issue": "8",
+      "pages": "1274-1290",
+      "published_date": [
+        2024,
+        4,
+        4
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.3390/s25133925",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:21.159203+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio",
+      "authors": [
+        "Gane Dai",
+        "Xiaoxuan Yang",
+        "Sha Huan",
+        "Ziyang Chen",
+        "Cong Peng",
+        "Yuanqin Xu"
+      ],
+      "container_title": "Sensors",
+      "volume": "25",
+      "issue": "13",
+      "pages": "3925",
+      "published_date": [
+        2025,
+        6,
+        24
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1016/j.dsp.2024.104850",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:21.161049+00:00",
+    "http_status": 429,
+    "metadata": {
+      "title": null,
+      "authors": null,
+      "container_title": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "published_date": null,
+      "type": null
+    },
+    "status": "retrieval_failed_use_local_pdf_if_available"
+  },
+  {
+    "doi": "10.1109/TAES.2025.3646182",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:21.198112+00:00",
+    "http_status": 429,
+    "metadata": {
+      "title": null,
+      "authors": null,
+      "container_title": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "published_date": null,
+      "type": null
+    },
+    "status": "retrieval_failed_use_local_pdf_if_available"
+  },
+  {
+    "doi": "10.1109/TAES.2025.3648973",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:22.245897+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "ISRJ Suppression Using Joint Morphological Component Analysis and Signal Reconstruction Based on Jamming Parameters Estimation",
+      "authors": [
+        "Shaopeng Wei",
+        "Haoyu Han",
+        "Song Wei",
+        "Lei Zhang",
+        "Yejian Zhou"
+      ],
+      "container_title": "IEEE Transactions on Aerospace and Electronic Systems",
+      "volume": "62",
+      "issue": null,
+      "pages": "3773-3797",
+      "published_date": [
+        2026
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1109/TNNLS.2026.3736439",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:22.253218+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Interrupted Sampling Repeater Jamming Suppression for Wideband Radar With MCA-ADMM-Net",
+      "authors": [
+        "Shaopeng Wei",
+        "Haoyu Han",
+        "Haonan Zhang",
+        "Song Wei",
+        "Yejian Zhou",
+        "Lei Zhang"
+      ],
+      "container_title": "IEEE Transactions on Neural Networks and Learning Systems",
+      "volume": null,
+      "issue": null,
+      "pages": "1-15",
+      "published_date": [
+        2026
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1109/LSP.2026.3726844",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:22.265424+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Structure-Informed Deep Filtering for Radar HRRP ISRJ Mitigation",
+      "authors": [
+        "Mei Liu",
+        "Xunzhang Gao",
+        "Xiangfeng Qiu",
+        "Yunfei Zhao"
+      ],
+      "container_title": "IEEE Signal Processing Letters",
+      "volume": "33",
+      "issue": null,
+      "pages": "3601-3605",
+      "published_date": [
+        2026
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1049/rsn2.70251",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:22.267483+00:00",
+    "http_status": 429,
+    "metadata": {
+      "title": null,
+      "authors": null,
+      "container_title": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "published_date": null,
+      "type": null
+    },
+    "status": "retrieval_failed_use_local_pdf_if_available"
+  },
+  {
+    "doi": "10.1007/978-3-319-24574-4_28",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:22.271259+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "authors": [
+        "Olaf Ronneberger",
+        "Philipp Fischer",
+        "Thomas Brox"
+      ],
+      "container_title": "Lecture Notes in Computer Science",
+      "volume": null,
+      "issue": null,
+      "pages": "234-241",
+      "published_date": [
+        2015
+      ],
+      "type": "book-chapter"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1109/CVPR.2016.90",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:23.353080+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": [
+        "Kaiming He",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Sun"
+      ],
+      "container_title": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "volume": null,
+      "issue": null,
+      "pages": "770-778",
+      "published_date": [
+        2016,
+        6
+      ],
+      "type": "proceedings-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1109/TIP.2017.2662206",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:23.355420+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising",
+      "authors": [
+        "Kai Zhang",
+        "Wangmeng Zuo",
+        "Yunjin Chen",
+        "Deyu Meng",
+        "Lei Zhang"
+      ],
+      "container_title": "IEEE Transactions on Image Processing",
+      "volume": "26",
+      "issue": "7",
+      "pages": "3142-3155",
+      "published_date": [
+        2017,
+        7
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1214/aos/1176344552",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:23.370942+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Bootstrap Methods: Another Look at the Jackknife",
+      "authors": [
+        "B. Efron"
+      ],
+      "container_title": "The Annals of Statistics",
+      "volume": "7",
+      "issue": "1",
+      "pages": "1-26",
+      "published_date": [
+        1979,
+        1,
+        1
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1109/TAES.1986.310745",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:12:23.413766+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "An Adaptive Detection Algorithm",
+      "authors": [
+        "E.J. Kelly"
+      ],
+      "container_title": "IEEE Transactions on Aerospace and Electronic Systems",
+      "volume": "AES-22",
+      "issue": "2",
+      "pages": "115-127",
+      "published_date": [
+        1986,
+        3
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.3390/s19153279",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:17:45.589350+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Bayesian Compress Sensing Based Countermeasure Scheme Against the Interrupted Sampling Repeater Jamming",
+      "authors": [
+        "Sha Huan",
+        "Gane Dai",
+        "Gaoyong Luo",
+        "Shan Ai"
+      ],
+      "container_title": "Sensors",
+      "volume": "19",
+      "issue": "15",
+      "pages": "3279",
+      "published_date": [
+        2019,
+        7,
+        25
+      ],
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1007/978-3-030-01261-8_1",
+    "provider": "Crossref",
+    "queried_utc": "2026-11-15T16:17:46.493434+00:00",
+    "http_status": 200,
+    "metadata": {
+      "title": "Group Normalization",
+      "authors": [
+        "Yuxin Wu",
+        "Kaiming He"
+      ],
+      "container_title": "Lecture Notes in Computer Science",
+      "volume": null,
+      "issue": null,
+      "pages": "3-19",
+      "published_date": [
+        2018
+      ],
+      "type": "book-chapter"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  }
+]

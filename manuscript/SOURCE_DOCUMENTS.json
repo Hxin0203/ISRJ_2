@@ -1,0 +1,90 @@
+[
+  {
+    "id": "L01",
+    "filename": "Interrupted_Sampling_Repeater_Jamming_Suppression_for_Wideband_Radar_With_MCA-ADMM-Net.pdf",
+    "title": "Interrupted Sampling Repeater Jamming Suppression for Wideband Radar With MCA-ADMM-Net",
+    "pages": 15,
+    "sha256": "a2e2ca485cf71fe94d48832e884782f05aafd024983ce6dba59d81fd2ff1ca97",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L02",
+    "filename": "Structure-Informed_Deep_Filtering_for_Radar_HRRP_ISRJ_Mitigation.pdf",
+    "title": "Structure-Informed Deep Filtering for Radar HRRP ISRJ Mitigation",
+    "pages": 5,
+    "sha256": "42ba7166446a1f3d5033862bfa339825125c9e3420fec3e8e2fa513ef46fdefa",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L03",
+    "filename": "Trans_Interrupted_Sampling_Repeater_Jamming_Suppression_Using_Complex-Valued_FISTA-Net.pdf",
+    "title": "Interrupted Sampling Repeater Jamming Suppression Using Complex-Valued FISTA-Net",
+    "pages": 17,
+    "sha256": "74e4e42bdae5bdead86a4e486f66c9146dcb3c3091a3fa42bf52c4fd8d6aeca3",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L04",
+    "filename": "Trans_ISRJ_Suppression_Using_Joint_Morphological_Component_Analysis_and_Signal_Reconstruction_Based_on_Jamming_Parameters_Estimation1.pdf",
+    "title": "ISRJ Suppression Using Joint Morphological Component Analysis and Signal Reconstruction Based on Jamming Parameters Estimation",
+    "pages": 25,
+    "sha256": "8b159e6af84997164f35eb778446351de2b215d43030fa67bcc1cbb9cc913e92",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L05",
+    "filename": "End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio.pdf",
+    "title": "End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio",
+    "pages": 23,
+    "sha256": "d297fdae628ed9f4c5c91850c44aebf656f83c52072701a72cac017b5f4c872f",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L06",
+    "filename": "MRED-net.pdf",
+    "title": "MREDNet: A Multi-Residual Encoder-Decoder Network for recovering LFM interfered by intra-pulse retransmission interferences",
+    "pages": 20,
+    "sha256": "e92d9875572f4334d2cddd6745c0e668050659a7f14032db98c9b4c63c84dc90",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L07",
+    "filename": "Gaussian Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction.pdf",
+    "title": "Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction",
+    "pages": 15,
+    "sha256": "823625baecf3e7cd3ece1b2dfc4c49397cbd7956bc63e97fd624d176901b7d04",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L08",
+    "filename": "IET Radar Sonar   Navi - 2022 - Zhang - A new scheme of target detection for pulse Doppler radar in interrupted sampling.pdf",
+    "title": "A new scheme of target detection for pulse Doppler radar in interrupted sampling repeater jamming environment",
+    "pages": 15,
+    "sha256": "57e9de045da2cdaae3fec3e60a48dcc89af2a0a314fed2111559c8a88f5eaf0a",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L09",
+    "filename": "IET Radar Sonar   Navi - 2024 - Meng - Interrupted sampling repeater jamming suppression based on multiple extended.pdf",
+    "title": "Interrupted sampling repeater jamming suppression based on multiple extended complex‐valued convolutional auto‐encoders",
+    "pages": 17,
+    "sha256": "09e9e43ff9a7a7f02def31af7147be820da3863788eb7be35852aa1144a12308",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L10",
+    "filename": "IET Radar Sonar   Navi - 2026 - Lei - Interrupted Sampling Repeater Jamming Suppression Based on Point‐Wise Temporal.pdf",
+    "title": "Interrupted Sampling Repeater Jamming Suppression Based on Point‐Wise Temporal Classification and Sparse Signal Reconstruction",
+    "pages": 17,
+    "sha256": "0a56465de3a3ae6eac3ac1a6c08ac759e343bb9029ac3b7f73f30fa46f3b8c67",
+    "read_status": "extracted_locally_selectively_read"
+  },
+  {
+    "id": "L11",
+    "filename": "E-基于多级多域深度联合抗干扰网络的中断采样中继器干扰抑制方法.pdf",
+    "title": "Interrupted-Sampling Repeater Jamming-Suppression Method Based on a Multi-Stages Multi-Domains Joint Anti-Jamming Depth Network",
+    "pages": 20,
+    "sha256": "f551b80c30aa97aa839ea21398a229c70075400bf1fc89d3faa31429d9d9a51d",
+    "read_status": "extracted_locally_selectively_read"
+  }
+]

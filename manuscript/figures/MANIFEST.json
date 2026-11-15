@@ -1,0 +1,26 @@
+{
+  "purpose": "Manuscript figures from frozen aggregate evidence; no new experiments",
+  "sources": {
+    "evidence/outputs/TEST_CONDITION_TABLE_1103.csv": "db2146c8936350a2b2bb545eb7bc0105e0e78be95f41ea96a264c04f0cb2808a",
+    "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52",
+    "evidence/outputs/RSDR_UNIFIED_20261115/PAIRED_RESULTS.json": "6184735dd2d97ae5efbac62059d8a42135a2d6a486935da87057044b456b80da",
+    "evidence/outputs/CONVERGENCE_256_8SEED_20261114/TRAINING_LOSS_BY_EPOCH.csv": "5c0080e20147d4f49ecb4b05fac854932f6faeadcbea2562874016e663255ebf",
+    "evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_METRICS_BY_CHECKPOINT.csv": "6e59ed05673be28173f15096bf7c7f03b7331849f93faf6807d5958f4f4c99f1",
+    "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71",
+    "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247"
+  },
+  "figures": {
+    "manuscript/figures/fig01_architecture.png": "26862e46936343fdcd937c5b678273777842782ae21c7eb8879ee2faf942369f",
+    "manuscript/figures/fig01_architecture.svg": "eb31c8180347247f1630ece5ff1854c905dadc3e18df45133355581a8f869ed4",
+    "manuscript/figures/fig02_convergence.png": "8d9b095cbfd8815b4263d9d05850b052c61c9c5d7898fb1c04c2655fd135118b",
+    "manuscript/figures/fig02_convergence.svg": "2316e68450fd8ee6e2f27f6311c5c7b36a999a9449f054a5e5067898743b466e",
+    "manuscript/figures/fig03_repeat_jsr20.png": "c25e90cd2461e8ff07b884e1730d342d4004aedd7d3c3ecb9cadb3f1cc1729ec",
+    "manuscript/figures/fig03_repeat_jsr20.svg": "359ec5e6fc5e9f8cbc1efd1b66d8c1a28d6ab0ee6aea8a4cbfd87a50afa11d04",
+    "manuscript/figures/fig04_dense_jsr20.png": "1e54d62d05f26e097d5cf55d9be9445791a9499e87ddc54623eb8e7a74509112",
+    "manuscript/figures/fig04_dense_jsr20.svg": "2e13e7e5259057454f0792f325c5723c5165a011e9e10a84afa58a70fc643926",
+    "manuscript/figures/fig05_fixed_parent_pc_doppler.png": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71",
+    "manuscript/figures/fig06_fixed_parent_rd.png": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.png": "29ce504b2c6bf6a027945d0701926d1f8c9621a59cda3882a869f5cf1b50377e",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.svg": "65974530be1c0be3c56c21dcd45646fd2593afc90e5ce583ca4ea80918f87584"
+  }
+}
