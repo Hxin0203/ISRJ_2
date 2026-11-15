@@ -1,19 +1,29 @@
 {
-  "checked_utc": "2026-11-14T17:05:39.095835+00:00",
-  "training_status": "COMPLETE_3_SEEDS_12_CHECKPOINTS",
-  "dev_status": "COMPLETE_V4_12_CHECKPOINTS",
+  "checked_utc": "2026-11-15T11:21:55.084433+00:00",
+  "training_status": "COMPLETE_8_SEEDS_256_EPOCHS_64_CHECKPOINTS",
+  "dev_status": "COMPLETE_V4_64_CHECKPOINTS",
   "test_runs": [
     {
       "name": "paper2_1103_test_20261114",
       "status": {
-        "stage": "RUNNING",
-        "suite": "pd",
-        "index": 208,
-        "method": "model",
-        "parents_done": 360,
-        "parents": 512,
-        "pid": 5016,
-        "updated_utc": "2026-11-14T17:05:38.808184+00:00"
+        "stage": "INVOCATION_COMPLETE",
+        "suites": [
+          "main",
+          "pd",
+          "retention",
+          "coherent",
+          "sliceA",
+          "sliceB"
+        ],
+        "methods": [
+          "model",
+          "keep",
+          "reference"
+        ],
+        "limit": null,
+        "role": "test",
+        "updated_utc": "2026-11-14T18:49:58.996651+00:00",
+        "pid": 5016
       },
       "invocation": {
         "args": {
@@ -48,7 +58,7 @@
         "numpy": "2.2.6",
         "pid": 5016
       },
-      "process_alive": true,
+      "process_alive": false,
       "last_failure": "outputs\\paper2_1103_test_20261114\\FAILURE_1794673936839859100.json"
     },
     {
@@ -67,8 +77,8 @@
         ],
         "limit": null,
         "role": "test",
-        "updated_utc": "2026-11-14T15:06:13.470446+00:00",
-        "pid": 2700
+        "updated_utc": "2026-11-14T18:52:05.237428+00:00",
+        "pid": 25000
       },
       "invocation": {
         "args": {
@@ -85,7 +95,7 @@
             "gmm_omp",
             "bcs_oracle"
           ],
-          "workers": 8,
+          "workers": 1,
           "limit": null,
           "count": null
         },
@@ -94,11 +104,11 @@
           "sources_sha256": "0c803abbb50b950e5176eb75111ce67e820c457d67408eafc4728e09945ae8f1",
           "checkpoint_sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3"
         },
-        "started_utc": "2026-11-14T11:14:10.695763+00:00",
+        "started_utc": "2026-11-14T18:50:02.210694+00:00",
         "python": "3.13.3",
         "torch": "2.9.1+cu126",
         "numpy": "2.2.6",
-        "pid": 2700
+        "pid": 25000
       },
       "process_alive": false,
       "last_failure": null
@@ -114,14 +124,14 @@
       "bcs_oracle": 168
     },
     "pd": {
-      "model": 208,
-      "keep": 208,
-      "reference": 208
+      "model": 310,
+      "keep": 310,
+      "reference": 310
     },
     "retention": {
-      "model": 0,
-      "keep": 0,
-      "reference": 0
+      "model": 42,
+      "keep": 42,
+      "reference": 42
     },
     "coherent": {
       "model": 3,
@@ -129,37 +139,88 @@
       "reference": 3
     },
     "sliceA": {
-      "model": 0,
-      "keep": 0,
-      "reference": 0,
+      "model": 21,
+      "keep": 21,
+      "reference": 21,
       "max_tf": 21
     },
     "sliceB": {
-      "model": 0,
-      "keep": 0,
-      "reference": 0,
+      "model": 20,
+      "keep": 20,
+      "reference": 20,
       "max_tf": 20
     }
   },
   "long_pipeline": {
-    "stage": "frozen_test_resume",
-    "stage_index": 1,
-    "stages": 7,
-    "attempt": 1,
-    "child_pid": 5016,
-    "child_running": true,
-    "command": [
-      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-      "-m",
-      "tools.resume_scan_1103"
+    "stage": "COMPLETE",
+    "completed_stages": [
+      "frozen_test_resume",
+      "classical_receipts_verify",
+      "complete_test_hash_audit",
+      "test_pulse_compression_doppler_plots",
+      "test_report",
+      "eight_seed_training_and_dev",
+      "final_status_report"
     ],
-    "completed_stages": [],
-    "updated_utc": "2026-11-14T17:05:23.612580+00:00",
+    "child_running": false,
+    "updated_utc": "2026-11-15T04:29:14.525505+00:00",
     "controller_pid": 21220,
     "pipeline_id": "paper2_long_pipeline_20261114",
     "config_sha256": "3ea373439c1fe0663de8ae3c3d5d3362ce67848ff0589cdbd3688a20775bc513"
   },
   "old_gate_arrays_accessed": false,
   "frozen_model_sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3",
-  "note": "Use condition receipts and live STATUS timestamps; INVOCATION_COMPLETE need not mean every suite/method is complete."
+  "note": "All expected frozen TEST receipts and seven controller stages are complete. No live experiment process. Historical failures retained. No new experiment launched.",
+  "active_experiment_processes": [],
+  "training_pipeline": {
+    "stage": "PIPELINE_COMPLETE",
+    "convergence_manifest_sha256": "a88dd9000f7c97a1539eef7a551723d73fb734c688245c97e83a70002671e184",
+    "updated_utc": "2026-11-15T04:27:31.723215+00:00"
+  },
+  "progress_integrity_audit": {
+    "verified_utc": "2026-11-15T11:08:26.677374+00:00",
+    "training_seeds": [
+      17,
+      29,
+      41,
+      53,
+      67,
+      79,
+      97,
+      109
+    ],
+    "completed_epochs_each": 256,
+    "milestone_checkpoints_verified": 64,
+    "training_epoch_metric_rows": 2048,
+    "dev_checkpoint_evaluations_verified": 64,
+    "recovery_archives_verified": 1667,
+    "convergence_input_hashes_verified": 1748,
+    "manifest_binding_verified": true,
+    "elapsed_seconds": 166.34,
+    "original_128_epoch_run_models_verified": 12,
+    "frozen_pipeline_sources_verified": true
+  },
+  "training_seeds": [
+    17,
+    29,
+    41,
+    53,
+    67,
+    79,
+    97,
+    109
+  ],
+  "test_status": "COMPLETE_2237_METHOD_CONDITIONS_103826_BLOCKS",
+  "test_model": {
+    "seed": 29,
+    "epoch": 128,
+    "independent_test": true
+  },
+  "expanded_training_scope": "Eight-seed epoch-256 evaluations are DEV, not new independent TEST confirmation.",
+  "uncompleted_scientific_work": [
+    "Matched RSDR-Net comparison",
+    "Independent confirmation plan for expanded models",
+    "Baseline bibliography/discrete implementation verification",
+    "Final manuscript"
+  ]
 }

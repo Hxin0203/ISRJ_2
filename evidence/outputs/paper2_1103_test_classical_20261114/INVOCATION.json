@@ -13,7 +13,7 @@
       "gmm_omp",
       "bcs_oracle"
     ],
-    "workers": 8,
+    "workers": 1,
     "limit": null,
     "count": null
   },
@@ -22,9 +22,9 @@
     "sources_sha256": "0c803abbb50b950e5176eb75111ce67e820c457d67408eafc4728e09945ae8f1",
     "checkpoint_sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3"
   },
-  "started_utc": "2026-11-14T11:14:10.695763+00:00",
+  "started_utc": "2026-11-14T18:50:02.210694+00:00",
   "python": "3.13.3",
   "torch": "2.9.1+cu126",
   "numpy": "2.2.6",
-  "pid": 2700
+  "pid": 25000
 }

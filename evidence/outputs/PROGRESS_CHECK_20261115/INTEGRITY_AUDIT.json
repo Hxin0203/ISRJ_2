@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-11-15T11:08:26.677374+00:00",
+  "training_seeds": [
+    17,
+    29,
+    41,
+    53,
+    67,
+    79,
+    97,
+    109
+  ],
+  "completed_epochs_each": 256,
+  "milestone_checkpoints_verified": 64,
+  "training_epoch_metric_rows": 2048,
+  "dev_checkpoint_evaluations_verified": 64,
+  "recovery_archives_verified": 1667,
+  "convergence_input_hashes_verified": 1748,
+  "manifest_binding_verified": true,
+  "elapsed_seconds": 166.34,
+  "original_128_epoch_run_models_verified": 12,
+  "frozen_pipeline_sources_verified": true
+}

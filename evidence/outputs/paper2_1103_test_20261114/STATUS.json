@@ -1,10 +1,20 @@
 {
-  "stage": "RUNNING",
-  "suite": "pd",
-  "index": 208,
-  "method": "model",
-  "parents_done": 408,
-  "parents": 512,
-  "pid": 5016,
-  "updated_utc": "2026-11-14T17:05:41.269642+00:00"
+  "stage": "INVOCATION_COMPLETE",
+  "suites": [
+    "main",
+    "pd",
+    "retention",
+    "coherent",
+    "sliceA",
+    "sliceB"
+  ],
+  "methods": [
+    "model",
+    "keep",
+    "reference"
+  ],
+  "limit": null,
+  "role": "test",
+  "updated_utc": "2026-11-14T18:49:58.996651+00:00",
+  "pid": 5016
 }

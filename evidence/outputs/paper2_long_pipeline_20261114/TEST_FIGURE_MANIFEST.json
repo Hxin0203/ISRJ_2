@@ -1,0 +1,17 @@
+{
+  "files_sha256": {
+    "coherent_metrics.csv": "17795aa5be41af7884720a89da6f3183919390b762019a37e347d7901260cc2d",
+    "completed_receipts.csv": "20a976d8bfc8a88a2bc9147891569b0b5da51094ca40a6a563ff6547198247f4",
+    "main_pd.png": "e0d9bffaf2f030b599cd8e549033591223363b9ffd9f917ce8f2ac7e1c47a790",
+    "main_sjrif_db.png": "c71707dd15289f27633c5bda3dbee1b42b1247fd07dce54febf226ecc4eb7976",
+    "main_u_nmse.png": "c5e25aa87c150378dedfab501090c0792e606dff9b8434aff157b9ff0d17d46e",
+    "pd_scan.png": "c9b9f69622c1a0cc228a45547c84f5f1ef8fde91a8445e11423432b8156e4577",
+    "retention_e0.png": "0158350ebbca85047a9a7418290e52897b2145494f83b5f6b1cafbc8c4c223a5",
+    "sliceA_u_nmse.png": "7bd1952ba0fa181f1c1e34d1683a148de5156df195edc2ccd2e2306b02128b1a",
+    "sliceB_u_nmse.png": "79d162bb3bfb4184d78e535e28aa881e7aaea846a267d83b83336421c7837d76",
+    "typical_coherent_metrics.csv": "559779aa6f91400cb9af88b67a894e9f0b67198c8e439d23035d03effc9b99df",
+    "typical_parent0_snr0_jsr20.png": "82007f54cabf76cb9b036911fd3f2198b0b622fda9fee5563626b1fa574e2288",
+    "typical_scene_metadata.json": "af0635d1be81264fcdf4351d6b259487e0aa2109a799b8e97df2504994ad5d5d"
+  },
+  "created_utc": "2026-11-14T18:58:54.553785+00:00"
+}

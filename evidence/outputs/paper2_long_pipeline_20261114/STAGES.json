@@ -1,0 +1,80 @@
+{
+  "frozen_test_resume": {
+    "complete": true,
+    "completed_utc": "2026-11-14T18:49:59.403536+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.resume_scan_1103"
+    ],
+    "stdout_sha256": "8fe26765600dc824658efeef951ce04df92f2536e45ca3aadddeaf8c53ef036d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "classical_receipts_verify": {
+    "complete": true,
+    "completed_utc": "2026-11-14T18:52:05.528982+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.resume_scan_1103",
+      "--classical"
+    ],
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "complete_test_hash_audit": {
+    "complete": true,
+    "completed_utc": "2026-11-14T18:58:43.622556+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.aggregate_1103"
+    ],
+    "stdout_sha256": "be9acf38a28961e6ee515c77ae74f94f2d5d8502b2860cf618e775a74d8d4b2c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "test_pulse_compression_doppler_plots": {
+    "complete": true,
+    "completed_utc": "2026-11-14T18:58:54.555543+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.plot_1103"
+    ],
+    "stdout_sha256": "053d7726daedaca9a6c53a1a0fa7560da994cb22686b39555cd6f6c7df704bf1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "test_report": {
+    "complete": true,
+    "completed_utc": "2026-11-14T18:58:59.231553+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.report_1103"
+    ],
+    "stdout_sha256": "e3d25ac5fc1625019b0c9d274e78dea44f3a2b71c85970f83ba54ed321903c38",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "eight_seed_training_and_dev": {
+    "complete": true,
+    "completed_utc": "2026-11-15T04:27:32.444719+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "paper2.train_256_8seed"
+    ],
+    "stdout_sha256": "f55e60f2ed2972ba312b2a136494de446f84a2057c5ae5c2ff2c1582e9399fe8",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final_status_report": {
+    "complete": true,
+    "completed_utc": "2026-11-15T04:29:14.522016+00:00",
+    "command": [
+      "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-m",
+      "tools.report_1103"
+    ],
+    "stdout_sha256": "4ead75e032e42a0620c82c38d8e619888c8ab9eaa094b2bbe3e32e911dd33b35",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

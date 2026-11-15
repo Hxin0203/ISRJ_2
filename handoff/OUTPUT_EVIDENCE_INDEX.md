@@ -1,6 +1,12 @@
 # Output evidence index
 
-Updated UTC: 2026-11-14T17:05:39.095835+00:00
+Progress refreshed on 2026-11-15 after controller completion at 2026-11-15T04:29:14.525505+00:00. No active project training/test process.
+
+Current progress report: `PAPER2_PROGRESS_CHECK_20261115.md`.
+
+Eight-seed epoch-256 DEV: `evidence/outputs/CONVERGENCE_256_8SEED_20261114/CONVERGENCE_SUMMARY.json`, `DEV_METRICS_BY_CHECKPOINT.csv`, `TRAINING_LOSS_BY_EPOCH.csv`, and `MANIFEST.json` in the same directory. All 64 checkpoint evaluations complete. Original curves are retained; readable PNG/PDF exports and their provenance are in `evidence/outputs/PROGRESS_CHECK_20261115/`. Full new integrity audit: `INTEGRITY_AUDIT.json` in that directory.
+
+Controller completion, stage history and training completion receipts: `evidence/outputs/paper2_long_pipeline_20261114/`. TEST pulse-compression, Doppler and scan figures are in its `test_figures/` directory, with `TEST_FIGURE_MANIFEST.json`. The frozen TEST uses seed 29 epoch 128; it is separate from the eight-seed DEV convergence results. A matched RSDR-Net comparison and new independent confirmation of the expanded models have not been produced.
 
 Current TEST coverage: `evidence/outputs/TEST_COVERAGE_1103.json`; condition table: `evidence/outputs/TEST_CONDITION_TABLE_1103.csv` (only when results exist).
 
@@ -11,15 +17,8 @@ Local raw parent blocks and checkpoints are intentionally excluded. A missing co
 | Suite | Expected conditions | Completed method counts |
 |---|---:|---|
 | main | 168 | model=168, keep=168, reference=168, max_tf=168, gmm_omp=168, bcs_oracle=168 |
-| pd | 310 | model=208, keep=208, reference=208 |
-| retention | 42 | model=0, keep=0, reference=0 |
+| pd | 310 | model=310, keep=310, reference=310 |
+| retention | 42 | model=42, keep=42, reference=42 |
 | coherent | 3 | model=3, keep=3, reference=3 |
-| sliceA | 21 | model=0, keep=0, reference=0, max_tf=21 |
-| sliceB | 20 | model=0, keep=0, reference=0, max_tf=20 |
-
-
-Long queue verified UTC: 2026-11-14T17:05:41.646122+00:00. Controller PID 21220, child PID 5016. TEST advanced beyond failed pd index 205; current index 208, 408/512 parents, method model.
-
-User-authorized order: complete frozen TEST/audit/plots/report, continue seeds 17/29/41 to 256, then train seeds 53/67/79/97/109 to 256, and aggregate DEV convergence. 64 milestone models in total; every new training epoch has an independent full recovery archive. Original 12 models and all old histories remain.
-
-Plan: `PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md`. Queue: `configs/paper2_long_pipeline_20261114.json`. Runtime status: `outputs/paper2_long_pipeline_20261114/STATUS.json`. Restart: `powershell -NoProfile -File tools/start_long_pipeline.ps1`. Local input/source/architecture snapshot verified; training not yet started. Tests: 42 passed, recovery self-test passed. Evidence: `evidence/outputs/LONG_PIPELINE_ENGINEERING_VERIFICATION_20261114.json`; `evidence/outputs/paper2_256_epoch_8seed_20261114/`; `evidence/outputs/paper2_long_pipeline_20261114/`.
+| sliceA | 21 | model=21, keep=21, reference=21, max_tf=21 |
+| sliceB | 20 | model=20, keep=20, reference=20, max_tf=20 |

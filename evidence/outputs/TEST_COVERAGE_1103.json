@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-11-14T17:05:39.095835+00:00",
+  "checked_utc": "2026-11-15T04:27:32.684158+00:00",
   "freeze_sha256": "8fed1450643ee71d8725daf0bb046a96c3d9301959c11000acb2d08c951c2930",
   "coverage": {
     "main": {
@@ -11,14 +11,14 @@
       "bcs_oracle": 168
     },
     "pd": {
-      "model": 208,
-      "keep": 208,
-      "reference": 208
+      "model": 310,
+      "keep": 310,
+      "reference": 310
     },
     "retention": {
-      "model": 0,
-      "keep": 0,
-      "reference": 0
+      "model": 42,
+      "keep": 42,
+      "reference": 42
     },
     "coherent": {
       "model": 3,
@@ -26,15 +26,15 @@
       "reference": 3
     },
     "sliceA": {
-      "model": 0,
-      "keep": 0,
-      "reference": 0,
+      "model": 21,
+      "keep": 21,
+      "reference": 21,
       "max_tf": 21
     },
     "sliceB": {
-      "model": 0,
-      "keep": 0,
-      "reference": 0,
+      "model": 20,
+      "keep": 20,
+      "reference": 20,
       "max_tf": 20
     }
   },
@@ -46,5 +46,5 @@
     "sliceA": 21,
     "sliceB": 20
   },
-  "complete_method_conditions": 1682
+  "complete_method_conditions": 2237
 }

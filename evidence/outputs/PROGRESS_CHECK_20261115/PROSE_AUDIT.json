@@ -1,0 +1,156 @@
+{
+  "checked_utc": "2026-11-15T11:21:55.084433+00:00",
+  "mode": "offline detect-only; Chinese stylometry not calibrated; protected math/paths/values unchanged; no normalization",
+  "files": {
+    "PAPER2_PROGRESS_CHECK_20261115.md": {
+      "sha256": "d17e5b0b77472278ec72b187dfa78053bd54416b835910abf211a2bda024b6f2",
+      "report": {
+        "path": "G:\\Project Code\\ISRJ_222\\PAPER2_PROGRESS_CHECK_20261115.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\PAPER2_PROGRESS_CHECK_20261115.md",
+          "word_count": 531,
+          "sentence_count": 37,
+          "burstiness_cv": 0.7456,
+          "lexical_diversity": 0.8201,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "PAPER2_1103_PROGRESS_20261114.md": {
+      "sha256": "a963de284381fcf385de9b411f9ab3e4cfcc61175a6e5afec12dbaf72dd8a87d",
+      "report": {
+        "path": "G:\\Project Code\\ISRJ_222\\PAPER2_1103_PROGRESS_20261114.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\PAPER2_1103_PROGRESS_20261114.md",
+          "word_count": 1267,
+          "sentence_count": 69,
+          "burstiness_cv": 0.6656,
+          "lexical_diversity": 0.7114,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0625,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "PAPER2_1103_NEAR_TERM_PLAN_20261114.md": {
+      "sha256": "d4b0fbb6065a3107697d4a663883485725005b3c4280d1ae25d53327ed3690d7",
+      "report": {
+        "path": "G:\\Project Code\\ISRJ_222\\PAPER2_1103_NEAR_TERM_PLAN_20261114.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\PAPER2_1103_NEAR_TERM_PLAN_20261114.md",
+          "word_count": 244,
+          "sentence_count": 15,
+          "burstiness_cv": 0.835,
+          "lexical_diversity": 0.7626,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "handoff/CURRENT_STATE.md": {
+      "sha256": "be117bdd5336df8305f39f9ae9b20b0be105858b0795c4f659be59f0836cd8f3",
+      "report": {
+        "path": "G:\\Project Code\\ISRJ_222\\handoff\\CURRENT_STATE.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\handoff\\CURRENT_STATE.md",
+          "word_count": 266,
+          "sentence_count": 26,
+          "burstiness_cv": 0.5476,
+          "lexical_diversity": 0.9,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.1225,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "handoff/LAST_CODEX_EXECUTION.md": {
+      "sha256": "7cb91b6076896bd77c112aabf00a17c293d663513a27530830a1f673a13b4e07",
+      "report": {
+        "path": "G:\\Project Code\\ISRJ_222\\handoff\\LAST_CODEX_EXECUTION.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\handoff\\LAST_CODEX_EXECUTION.md",
+          "word_count": 290,
+          "sentence_count": 24,
+          "burstiness_cv": 0.5887,
+          "lexical_diversity": 0.8685,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "handoff/OUTPUT_EVIDENCE_INDEX.md": {
+      "sha256": "9df46003af027a1eca54a117a993ff970d7616b34a9a7d23e25ca47097c1dbdb",
+      "report": {
+        "path": "G:\\Project Code\\ISRJ_222\\handoff\\OUTPUT_EVIDENCE_INDEX.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\handoff\\OUTPUT_EVIDENCE_INDEX.md",
+          "word_count": 259,
+          "sentence_count": 25,
+          "burstiness_cv": 0.4233,
+          "lexical_diversity": 0.7943,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.235,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    }
+  }
+}

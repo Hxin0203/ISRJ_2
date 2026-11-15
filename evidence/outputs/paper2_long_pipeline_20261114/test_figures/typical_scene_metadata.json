@@ -1,0 +1,19 @@
+{
+  "parent_id": "test:coherent:0",
+  "doppler_hz": 4951.467008196236,
+  "paired_invariant_sha256": "f8e8b86a7ebdc5a98992d24cb40966fbb822ef50d7a82fd2eaee5d0dac8817fc",
+  "jammed_pulses": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "target_delay_samples": 286.23295197473556,
+  "total_jsr_db": 19.55747864436642,
+  "target_coverage_all": 0.43875,
+  "target_coverage_selected": 0.43875
+}

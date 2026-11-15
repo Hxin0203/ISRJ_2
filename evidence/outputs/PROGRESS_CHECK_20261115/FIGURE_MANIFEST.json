@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-15T11:15:12.548200+00:00",
+  "source_data_changed": false,
+  "inputs_sha256": {
+    "DEV_METRICS_BY_CHECKPOINT.csv": "6e59ed05673be28173f15096bf7c7f03b7331849f93faf6807d5958f4f4c99f1",
+    "TRAINING_LOSS_BY_EPOCH.csv": "5c0080e20147d4f49ecb4b05fac854932f6faeadcbea2562874016e663255ebf"
+  },
+  "script_sha256": "f33df458205d677989119744218e2640fb2bdb960baa7e5cdfa4eccca93a9017",
+  "outputs_sha256": {
+    "DEV_CONVERGENCE_REVIEW.pdf": "4428232456ac601520fb73561f1f4e43f59c45a303d6fcb8117759da21d5fac3",
+    "DEV_CONVERGENCE_REVIEW.png": "9f30c0de794b7881496e1d2ecc0908d76d944d9888b62fa8f7a896760994bdbc",
+    "TRAINING_CONVERGENCE_REVIEW.pdf": "1bdf91df6b65e3c7a07e85107c660ea3310f37cc1481cf402537908cbfdf5670",
+    "TRAINING_CONVERGENCE_REVIEW.png": "57a0a81633662210e53822367adc2f254316e2b4be96f4285b18979b14c25866"
+  },
+  "uncertainty": "Descriptive sample SD over eight training seeds, not a confidence interval."
+}
