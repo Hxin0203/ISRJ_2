@@ -543,7 +543,7 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 
 ## 数据、代码与可重复性说明
 
-本文代码与轻量证据存放于作者专用仓库 `Hxin0203/ISRJ_2`。训练数据、模型权重和原始数组不随该仓库上传；当前仓库访问权限不等于公开发布承诺。本稿的本地证据整理和文本审计流程参考 Scientific Agent Skills[23]，相关内容不替代作者对数据、公式和引文的核验。训练与测试数据身份、检查点 SHA、逐条件汇总和图表来源在随稿证据说明中记录。最终投稿时应按期刊政策明确数据与代码的可获得方式。本文没有声称取得实测数据许可或完成硬件验证。
+本文代码与轻量证据存放于作者专用仓库 `Hxin0203/ISRJ_2`。训练数据、模型权重和原始数组不随该仓库上传；当前仓库访问权限不等于公开发布承诺。训练与测试数据身份、检查点 SHA、逐条件汇总和图表来源在随稿证据说明中记录。最终投稿时应按期刊政策明确数据与代码的可获得方式。本文没有声称取得实测数据许可或完成硬件验证。
 
 ## 参考文献
 
@@ -590,8 +590,6 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 [21] Kingma D P, Ba J. Adam: A Method for Stochastic Optimization. *International Conference on Learning Representations*, 2015. [arXiv:1412.6980](https://arxiv.org/abs/1412.6980).
 
 [22] Efron B. Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 1979, 7(1): 1–26. DOI: [10.1214/aos/1176344552](https://doi.org/10.1214/aos/1176344552).
-
-[23] Kassis T, Agarwal V, He Y, Patel D, Brueckner A M. Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents. *arXiv preprint* arXiv:2609.00065, 2026. DOI: [10.48550/arXiv.2609.00065](https://doi.org/10.48550/arXiv.2609.00065).
 
 ## 附录 A：配对损失与评价口径的补充推导
 

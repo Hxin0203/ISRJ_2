@@ -493,27 +493,4 @@
     },
     "status": "metadata_retrieved_not_author_verified"
   }
-,
-{
-  "doi": "10.48550/arXiv.2609.00065",
-  "provider": "arXiv API",
-  "queried_utc": "2026-11-15T16:34:36Z",
-  "source": "https://export.arxiv.org/api/query?id_list=2609.00065",
-  "http_status": 200,
-  "metadata": {
-    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
-    "authors": [
-      "Timothy Kassis",
-      "Vinayak Agarwal",
-      "Yuhuan He",
-      "Darshil Patel",
-      "Aubrey M. Brueckner"
-    ],
-    "published_date": "2026-08-30",
-    "current_version": "v2",
-    "type": "preprint",
-    "arxiv_id": "2609.00065"
-  },
-  "status": "metadata_retrieved_not_author_verified"
-}
 ]
