@@ -1,0 +1,105 @@
+{
+  "utc": "2026-11-15T15:30:31.875940+00:00",
+  "torch": "2.9.1+cu128",
+  "tf32_matmul": false,
+  "tf32_cudnn": true,
+  "precision": "highest",
+  "rows": [
+    {
+      "variant": "full",
+      "device": "cpu",
+      "maxabs": 0.0,
+      "relative_l2": 0.0,
+      "outmax": 0.22556890547275543,
+      "failed": 0
+    },
+    {
+      "variant": "full",
+      "device": "cuda",
+      "maxabs": 9.645707905292511e-05,
+      "relative_l2": 0.0005773747689090669,
+      "outmax": 0.22556890547275543,
+      "failed": 832
+    },
+    {
+      "variant": "unet",
+      "device": "cpu",
+      "maxabs": 0.0,
+      "relative_l2": 0.0,
+      "outmax": 1.9820752143859863,
+      "failed": 0
+    },
+    {
+      "variant": "unet",
+      "device": "cuda",
+      "maxabs": 0.0009829699993133545,
+      "relative_l2": 0.00036596786230802536,
+      "outmax": 1.9820752143859863,
+      "failed": 8697
+    },
+    {
+      "variant": "no_dechirp",
+      "device": "cpu",
+      "maxabs": 0.0,
+      "relative_l2": 0.0,
+      "outmax": 2.710282564163208,
+      "failed": 0
+    },
+    {
+      "variant": "no_dechirp",
+      "device": "cuda",
+      "maxabs": 0.0012505650520324707,
+      "relative_l2": 0.00038475406472571194,
+      "outmax": 2.710282564163208,
+      "failed": 9184
+    },
+    {
+      "variant": "no_rms",
+      "device": "cpu",
+      "maxabs": 0.0,
+      "relative_l2": 0.0,
+      "outmax": 1.8709779977798462,
+      "failed": 0
+    },
+    {
+      "variant": "no_rms",
+      "device": "cuda",
+      "maxabs": 0.0010249614715576172,
+      "relative_l2": 0.00036181864561513066,
+      "outmax": 1.8709779977798462,
+      "failed": 8574
+    },
+    {
+      "variant": "no_pc",
+      "device": "cpu",
+      "maxabs": 0.0,
+      "relative_l2": 0.0,
+      "outmax": 2.9355266094207764,
+      "failed": 0
+    },
+    {
+      "variant": "no_pc",
+      "device": "cuda",
+      "maxabs": 0.001445770263671875,
+      "relative_l2": 0.00038920470979064703,
+      "outmax": 2.9355266094207764,
+      "failed": 9247
+    },
+    {
+      "variant": "no_damage",
+      "device": "cpu",
+      "maxabs": 0.0,
+      "relative_l2": 0.0,
+      "outmax": 2.9355266094207764,
+      "failed": 0
+    },
+    {
+      "variant": "no_damage",
+      "device": "cuda",
+      "maxabs": 0.001445770263671875,
+      "relative_l2": 0.00038920470979064703,
+      "outmax": 2.9355266094207764,
+      "failed": 9247
+    }
+  ]
+}

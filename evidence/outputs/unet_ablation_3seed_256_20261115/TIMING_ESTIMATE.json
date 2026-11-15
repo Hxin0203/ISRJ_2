@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-15T15:46:26.122293+00:00",
+  "unet_formal_epochs_used": 25,
+  "unet_epoch_seconds_median": 17.368388600065373,
+  "unet_epoch_seconds_min_max": [
+    17.035598600050434,
+    18.668899499927647
+  ],
+  "unet_remaining_compute_hours": 3.5798178725690297,
+  "unet_remaining_wall_hours_with_15_to_50_percent_allowance": [
+    4.116790553454384,
+    5.369726808853544
+  ],
+  "four_ablations_compute_hours_from_single_update_smoke_only": 22.524141566753386,
+  "whole_queue_rough_hours_with_20_to_100_percent_allowance": [
+    31.3247513271869,
+    52.20791887864483
+  ],
+  "limitations": "Only U-Net has formal multi-epoch timing. Ablations use one engineering update each; their estimate is provisional. Allowances are planning margins, not confidence intervals. Resource waits, failures and unusually expensive evaluation can exceed them."
+}

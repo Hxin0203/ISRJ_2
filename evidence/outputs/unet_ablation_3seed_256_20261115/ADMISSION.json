@@ -1,0 +1,36 @@
+{
+  "stage": "ADMITTED",
+  "samples": [
+    {
+      "utc": "2026-11-15T15:38:53.695800+00:00",
+      "gpu_index": 1,
+      "gpu_utilization_percent": 0.0,
+      "gpu_free_mib": 16050.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 7.6,
+      "ram_free_bytes": 109141094400,
+      "disk_free_bytes": 1565067960320
+    },
+    {
+      "utc": "2026-11-15T15:38:54.731530+00:00",
+      "gpu_index": 1,
+      "gpu_utilization_percent": 0.0,
+      "gpu_free_mib": 16050.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 7.0,
+      "ram_free_bytes": 109138636800,
+      "disk_free_bytes": 1565067960320
+    },
+    {
+      "utc": "2026-11-15T15:38:55.767707+00:00",
+      "gpu_index": 1,
+      "gpu_utilization_percent": 0.0,
+      "gpu_free_mib": 16050.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 6.7,
+      "ram_free_bytes": 109134176256,
+      "disk_free_bytes": 1565067960320
+    }
+  ],
+  "policy": "GPU<90%,CPU<85%,RAM>=5GiB,disk>=8GiB,CUDA free>=4GiB; wait for new dispatch only"
+}

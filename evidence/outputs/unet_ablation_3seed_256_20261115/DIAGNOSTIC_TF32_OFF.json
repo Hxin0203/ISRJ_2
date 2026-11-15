@@ -1,0 +1,42 @@
+{
+  "utc": "2026-11-15T15:30:50.201177+00:00",
+  "scope": "ENGINEERING_DIAGNOSIS_TF32_DISABLED",
+  "rows": [
+    {
+      "variant": "full",
+      "maxabs": 4.209578037261963e-07,
+      "relative_l2": 9.265819244319573e-06,
+      "failed": 0
+    },
+    {
+      "variant": "unet",
+      "maxabs": 2.384185791015625e-06,
+      "relative_l2": 8.252582119894214e-07,
+      "failed": 0
+    },
+    {
+      "variant": "no_dechirp",
+      "maxabs": 6.67572021484375e-06,
+      "relative_l2": 1.3982537439005682e-06,
+      "failed": 0
+    },
+    {
+      "variant": "no_rms",
+      "maxabs": 2.652406692504883e-06,
+      "relative_l2": 1.2663078905461589e-06,
+      "failed": 0
+    },
+    {
+      "variant": "no_pc",
+      "maxabs": 4.038214683532715e-06,
+      "relative_l2": 1.4019375385032617e-06,
+      "failed": 0
+    },
+    {
+      "variant": "no_damage",
+      "maxabs": 4.038214683532715e-06,
+      "relative_l2": 1.4019375385032617e-06,
+      "failed": 0
+    }
+  ]
+}

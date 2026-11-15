@@ -1,26 +1,10 @@
-Checked 2026-11-15T14:56:59.439207+00:00
-Tracked changes only; unrelated untracked evidence omitted.
- M PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md
+Checked 2026-11-15T15:46:26.171021+00:00
+Branch codex/1103-experiment; tracked changes only. Exact new study paths are staged separately.
  M README.md
- M evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv
- M evidence/outputs/RSDR_UNIFIED_20261115/CURVE_SOURCE_SUMMARIES.csv
- M evidence/outputs/RSDR_UNIFIED_20261115/ENGINEERING_EVENTS.json
- M evidence/outputs/RSDR_UNIFIED_20261115/FIGURE_MANIFEST.json
- M evidence/outputs/RSDR_UNIFIED_20261115/PAIRED_RESULTS.json
- M evidence/outputs/RSDR_UNIFIED_20261115/REPORT_RECEIPT.json
- M evidence/outputs/RSDR_UNIFIED_20261115/RESULT_INTEGRITY_AUDIT.json
- M evidence/outputs/RSDR_UNIFIED_20261115/RUN_STATUS.json
- M evidence/outputs/RSDR_UNIFIED_20261115/TEXT_AUDIT.json
- M evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.pdf
  M handoff/CURRENT_STATE.md
  M handoff/GIT_STATUS.txt
  M handoff/LAST_CODEX_EXECUTION.md
  M handoff/OUTPUT_EVIDENCE_INDEX.md
  M handoff/RUNNING_EXPERIMENTS.json
- M tools/finalize_rsdr_unified.py
- M tools/plot_rsdr_unified.py
- M tools/report_rsdr_unified.py
- M tools/status_rsdr_unified.py
- M tools/update_rsdr_handoff.py
 
-Only paper2 remote may be pushed. No raw arrays/weights/logs.
+Only paper2 remote may be pushed. No data/weights/raw arrays/full logs.

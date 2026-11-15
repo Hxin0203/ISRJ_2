@@ -1,0 +1,7 @@
+{
+  "stage": "STOPPED",
+  "utc": "2026-11-15T15:38:01.655556+00:00",
+  "error": "UserStop('User STOP: stopped at a saved epoch/job boundary')",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\run.py\", line 125, in main\n    run(budget)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\run.py\", line 37, in run\n    admit(BASE, EVIDENCE)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\runtime.py\", line 79, in admit\n    user_control(base)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\runtime.py\", line 55, in user_control\n    raise UserStop(\"User STOP: stopped at a saved epoch/job boundary\")\ntools.unet_ablation.runtime.UserStop: User STOP: stopped at a saved epoch/job boundary\n",
+  "pid": 30264
+}

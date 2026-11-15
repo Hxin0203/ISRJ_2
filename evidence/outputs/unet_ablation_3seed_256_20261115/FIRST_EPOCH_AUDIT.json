@@ -1,0 +1,25 @@
+{
+  "stage": "FIRST_EPOCH_DURABILITY_VERIFIED",
+  "utc": "2026-11-15T15:38:38.724644+00:00",
+  "epoch": 1,
+  "global_step": 48,
+  "checkpoint_sha256": "0cb3cb3dbe65cad9ffeb683eae594f6ecb7fc5a5e12ed83bacef74b8f9fd0e7a",
+  "metrics": {
+    "variant": "unet",
+    "seed": 17,
+    "epoch": 1,
+    "step": 48,
+    "updates_this_epoch": 48,
+    "total": 15.112740068075558,
+    "endpoint": 12.267104476379851,
+    "pc": 21.96063986358543,
+    "damage": 0.6495715874868134,
+    "gradient_norm": 82.55160929759343,
+    "lr": 0.0005104166666666667,
+    "epoch_elapsed_seconds": 18.816964700003155,
+    "checkpoint_sha256": "0cb3cb3dbe65cad9ffeb683eae594f6ecb7fc5a5e12ed83bacef74b8f9fd0e7a"
+  },
+  "optimizer_state_entries": 42,
+  "recovery_valid": true,
+  "latest_sha256": "0cb3cb3dbe65cad9ffeb683eae594f6ecb7fc5a5e12ed83bacef74b8f9fd0e7a"
+}

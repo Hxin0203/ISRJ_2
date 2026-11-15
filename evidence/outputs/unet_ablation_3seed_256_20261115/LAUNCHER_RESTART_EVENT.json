@@ -1,0 +1,6 @@
+{
+  "utc": "2026-11-15T15:38:38.807163+00:00",
+  "reason": "Agent requested a saved-boundary restart to move launcher from SSH-owned lifetime to WMI-owned hidden process. No training failure; epoch1 preserved. Same frozen sources and cumulative budget.",
+  "previous_controller_pid": 30264,
+  "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b"
+}

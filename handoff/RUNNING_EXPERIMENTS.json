@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-11-15T14:56:59.364709+00:00",
+  "checked_utc": "2026-11-15T15:46:23.311350+00:00",
   "training_status": "COMPLETE_8_SEEDS_256_EPOCHS_64_CHECKPOINTS",
   "dev_status": "COMPLETE_V4_64_CHECKPOINTS",
   "test_runs": [
@@ -170,8 +170,65 @@
   },
   "old_gate_arrays_accessed": false,
   "frozen_model_sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3",
-  "note": "Original training/TEST pipeline complete. Additive frozen RSDR benchmark status is reported separately; no model reselection.",
-  "active_experiment_processes": [],
+  "note": "Original training/TEST and RSDR comparison complete. New server-only U-Net/ablation study is active.",
+  "active_experiment_processes": [
+    {
+      "pid": 14888,
+      "ppid": 29516,
+      "name": "python.exe",
+      "cmdline": [
+        "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+        "-m",
+        "tools.unet_ablation.run"
+      ],
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    },
+    {
+      "pid": 28820,
+      "ppid": 29968,
+      "name": "python.exe",
+      "cmdline": [
+        "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+        "-m",
+        "tools.unet_ablation.train",
+        "--variant",
+        "unet",
+        "--seed",
+        "17"
+      ],
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    },
+    {
+      "pid": 29924,
+      "ppid": 28820,
+      "name": "python.exe",
+      "cmdline": [
+        "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "-m",
+        "tools.unet_ablation.train",
+        "--variant",
+        "unet",
+        "--seed",
+        "17"
+      ],
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    },
+    {
+      "pid": 29968,
+      "ppid": 14888,
+      "name": "python.exe",
+      "cmdline": [
+        "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "-m",
+        "tools.unet_ablation.run"
+      ],
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    }
+  ],
   "training_pipeline": {
     "stage": "PIPELINE_COMPLETE",
     "convergence_manifest_sha256": "a88dd9000f7c97a1539eef7a551723d73fb734c688245c97e83a70002671e184",
@@ -218,7 +275,8 @@
   },
   "expanded_training_scope": "Eight-seed epoch-256 evaluations are DEV, not new independent TEST confirmation.",
   "uncompleted_scientific_work": [
-    "Independent confirmation plan for expanded models",
+    "Server U-Net and four ablations: 15 runs x 256 epochs with 3 seeds",
+    "Fresh fixed-distribution epoch-256 confirmation after all new training",
     "Baseline bibliography/discrete implementation verification",
     "Final manuscript"
   ],
@@ -293,6 +351,133 @@
     },
     "failures": [
       "outputs\\rsdr_unified_20261115\\FAILURE_1794745539682280200.json"
+    ]
+  },
+  "unet_ablation": {
+    "run_id": "unet_ablation_3seed_256_20261115",
+    "server": "rsdr-b",
+    "root": "D:/code/Xin/ISRJ_222",
+    "physical_gpu": 1,
+    "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+    "queue": {
+      "stage": "TRAINING_QUEUE",
+      "job_index": 1,
+      "jobs": 15,
+      "variant": "unet",
+      "seed": 17,
+      "attempt": 1,
+      "controller_pid": 29968,
+      "worker_pid": 28820,
+      "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+      "updated_utc": "2026-11-15T15:38:56.828488+00:00"
+    },
+    "training_heartbeat": {
+      "stage": "TRAINING",
+      "variant": "unet",
+      "seed": 17,
+      "epoch": 26,
+      "batch": 36,
+      "batches": 48,
+      "last_committed_epoch": 25,
+      "loss": {
+        "total": 0.10796165652573109,
+        "endpoint": 0.04267939133569598,
+        "pc": 0.058127982541918755,
+        "damage": 0.05946946423500776,
+        "gradient_norm": 2.696324348449707,
+        "lr": 0.0009109978794280774
+      },
+      "pid": 29924,
+      "updated_utc": "2026-11-15T15:46:18.333639+00:00"
+    },
+    "saved_epochs_independently_verified": {
+      "unet/seed_17": 26
+    },
+    "recovery_audit_utc": "2026-11-15T15:46:24.456093+00:00",
+    "local_formal_training": false,
+    "eta": {
+      "utc": "2026-11-15T15:46:26.122293+00:00",
+      "unet_formal_epochs_used": 25,
+      "unet_epoch_seconds_median": 17.368388600065373,
+      "unet_epoch_seconds_min_max": [
+        17.035598600050434,
+        18.668899499927647
+      ],
+      "unet_remaining_compute_hours": 3.5798178725690297,
+      "unet_remaining_wall_hours_with_15_to_50_percent_allowance": [
+        4.116790553454384,
+        5.369726808853544
+      ],
+      "four_ablations_compute_hours_from_single_update_smoke_only": 22.524141566753386,
+      "whole_queue_rough_hours_with_20_to_100_percent_allowance": [
+        31.3247513271869,
+        52.20791887864483
+      ],
+      "limitations": "Only U-Net has formal multi-epoch timing. Ablations use one engineering update each; their estimate is provisional. Allowances are planning margins, not confidence intervals. Resource waits, failures and unusually expensive evaluation can exceed them."
+    },
+    "new_performance_conclusions_available": false,
+    "confirmation": "NOT_YET_GENERATED: held back until all 15 runs finish",
+    "plan": [
+      {
+        "variant": "unet",
+        "seed": 17
+      },
+      {
+        "variant": "unet",
+        "seed": 29
+      },
+      {
+        "variant": "unet",
+        "seed": 41
+      },
+      {
+        "variant": "no_dechirp",
+        "seed": 17
+      },
+      {
+        "variant": "no_pc",
+        "seed": 17
+      },
+      {
+        "variant": "no_rms",
+        "seed": 17
+      },
+      {
+        "variant": "no_damage",
+        "seed": 17
+      },
+      {
+        "variant": "no_rms",
+        "seed": 29
+      },
+      {
+        "variant": "no_dechirp",
+        "seed": 29
+      },
+      {
+        "variant": "no_pc",
+        "seed": 29
+      },
+      {
+        "variant": "no_damage",
+        "seed": 29
+      },
+      {
+        "variant": "no_pc",
+        "seed": 41
+      },
+      {
+        "variant": "no_dechirp",
+        "seed": 41
+      },
+      {
+        "variant": "no_rms",
+        "seed": 41
+      },
+      {
+        "variant": "no_damage",
+        "seed": 41
+      }
     ]
   }
 }

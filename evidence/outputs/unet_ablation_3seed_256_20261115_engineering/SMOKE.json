@@ -1,0 +1,91 @@
+{
+  "scope": "ENGINEERING_ONLY_NOT_RESEARCH_RESULTS",
+  "utc": "2026-11-15T15:34:45.719911+00:00",
+  "rows": [
+    {
+      "variant": "unet",
+      "physical_records": 32,
+      "waveforms": 1024,
+      "seconds": 3.9666963999625295,
+      "peak_cuda_allocated_bytes": 1120594944,
+      "microbatch_records": 8,
+      "loss": {
+        "total": 84.86247682571411,
+        "endpoint": 71.58293151855469,
+        "pc": 129.547776222229,
+        "damage": 0.3247668966650963,
+        "gradient_norm": 757.6543579101562
+      }
+    },
+    {
+      "variant": "no_dechirp",
+      "physical_records": 32,
+      "waveforms": 1024,
+      "seconds": 0.4659309999551624,
+      "peak_cuda_allocated_bytes": 4776525312,
+      "microbatch_records": 32,
+      "loss": {
+        "total": 113.53962707519531,
+        "endpoint": 95.33818054199219,
+        "pc": 173.3076934814453,
+        "damage": 0.8706735968589783,
+        "gradient_norm": 768.1426391601562
+      }
+    },
+    {
+      "variant": "no_rms",
+      "physical_records": 32,
+      "waveforms": 1024,
+      "seconds": 0.6113038000185043,
+      "peak_cuda_allocated_bytes": 4776525312,
+      "microbatch_records": 32,
+      "loss": {
+        "total": 71.13282775878906,
+        "endpoint": 59.852359771728516,
+        "pc": 105.80902862548828,
+        "damage": 0.6995609998703003,
+        "gradient_norm": 67.2121810913086
+      }
+    },
+    {
+      "variant": "no_pc",
+      "physical_records": 32,
+      "waveforms": 1024,
+      "seconds": 0.5612411999609321,
+      "peak_cuda_allocated_bytes": 4776525312,
+      "microbatch_records": 32,
+      "loss": {
+        "total": 89.68923950195312,
+        "endpoint": 88.80421447753906,
+        "pc": 136.35452270507812,
+        "damage": 0.8850259780883789,
+        "gradient_norm": 568.75830078125
+      }
+    },
+    {
+      "variant": "no_damage",
+      "physical_records": 32,
+      "waveforms": 1024,
+      "seconds": 0.5611471999436617,
+      "peak_cuda_allocated_bytes": 4776525312,
+      "microbatch_records": 32,
+      "loss": {
+        "total": 102.43966674804688,
+        "endpoint": 88.80421447753906,
+        "pc": 136.35452270507812,
+        "damage": 0.8850259780883789,
+        "gradient_norm": 637.304931640625
+      }
+    }
+  ],
+  "precision": {
+    "dtype": "float32",
+    "matmul_precision": "highest",
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true
+  },
+  "torch": "2.9.1+cu128",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti"
+}

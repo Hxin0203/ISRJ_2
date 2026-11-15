@@ -1,0 +1,12 @@
+{
+  "stage": "TRAINING_QUEUE",
+  "job_index": 1,
+  "jobs": 15,
+  "variant": "unet",
+  "seed": 17,
+  "attempt": 1,
+  "controller_pid": 29968,
+  "worker_pid": 28820,
+  "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+  "updated_utc": "2026-11-15T15:38:56.828488+00:00"
+}

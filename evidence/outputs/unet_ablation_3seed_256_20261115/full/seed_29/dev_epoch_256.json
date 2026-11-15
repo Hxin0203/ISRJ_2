@@ -1,0 +1,216 @@
+{
+  "variant": "full",
+  "seed": 29,
+  "epoch": 256,
+  "scope": "DEV",
+  "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+  "checkpoint_sha256": "8761b76fa0d4e55faa326d951371ab1531209fff73735627160090422934a328",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "source_sha256": {
+    "paper2/__init__.py": "d962816e0ba88de846966b1b0795d74410d4d7557accc580c1b4607b28e7a707",
+    "paper2/baselines_1103.py": "a466597a2f65bee6bd9abdb023289583d4a91fd87195d3ae0317b2bf2b9c32c0",
+    "paper2/data.py": "c3fc377b0f3ef9f0e0250814e0de260eb0ebd125b4ce396929e02151f47d9854",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/dev_1103_v4.py": "da9f773bbaa34137b73e1a43eea0850d540814706f2951fe554964a43e2ead86",
+    "paper2/dev_256_8seed_v4.py": "c796c437fbe096747701af343e8f58d8a3c0585a9f7daf5a7257033ad048465c",
+    "paper2/evaluate.py": "6840d532a5b32b88984abd5d5b1f3fd157f8acbbfc2aba87c8457ce8546b13dd",
+    "paper2/evaluate_1103.py": "0cbd5e53ce835d38be4938e7de1c559a1e2f6953220619bec4909baad940c7ae",
+    "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+    "paper2/run.py": "5188e192a13d9825d5a34f07e664131af851402ec97d8a92a4bea4d2d1059e5a",
+    "paper2/scan_1103.py": "eb096a3284295ce080c2a98b3842ec49136dfd4813a6eedc38ae8a811075a1cd",
+    "paper2/scenes_1103.py": "05864bc879e1d0aaea5aaa55268c5cd19cd982583804387c291cc82cfc29a8c9",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+    "paper2/vendor/__init__.py": "45963df8f00f2ca0fe8e193895ae9f2f4854ecb5a783bdc36278626cb02af2fa",
+    "paper2/vendor/baselines_1103/__init__.py": "145c20aa3eb8cc2b56e4f84d2dfb61e93afa04b9492dad579d56c517358f16a6",
+    "paper2/vendor/baselines_1103/bcs.py": "23331aeb39205a7f2c321e5a4d293380e8f3aaeb8d087f09dee7f4168b0ba4b2",
+    "paper2/vendor/baselines_1103/max_tf.py": "2d25fb9e4e3a1fc6973a4bfc40606b37f06d49e9c9042f3168f474c9b2f81576",
+    "paper2/vendor/baselines_1103/paper_gmm_omp.py": "e1dafac0faa31d1f424853500425e7bda88db5262d14160d7512c3e78abda1f5",
+    "paper2/vendor/baselines_1103/physical.py": "4bb75b7b715722932306427a598d983bba1bee4ee509338b5c22a61054289cff",
+    "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+    "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e",
+    "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+    "tools/unet_ablation/__init__.py": "561c8fa12f93f4495f9e189b59e4332351e1f6ca057b8acc4d694e29bd22cef1",
+    "tools/unet_ablation/evaluate.py": "9e8abc1bb6ecc9cab04e646a40f11bb11351945f72184fbd40c4fd9b76b32856",
+    "tools/unet_ablation/models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+    "tools/unet_ablation/preflight.py": "6e166280d4f4a3fedeec4eef78445e28f230d65d28ebfbd0b5883ca1e83afb68",
+    "tools/unet_ablation/protocol.py": "5b890c1538097af26170eaa5ffabb274ba476706804b702d435e05a2249f834b",
+    "tools/unet_ablation/run.py": "079c4e56e0f9474346399edb6c0215751796105c95e1b4052a30f7e4ad5c1950",
+    "tools/unet_ablation/runtime.py": "21617ef7ea5a0a20475e4ca12757a824c0cf5840e19c13340dd9912ae8872754",
+    "tools/unet_ablation/smoke.py": "8661116819ce3d505fbe35a92f7d0dfd56ecb130fd23c93c2ec6fed6e99256c5",
+    "tools/unet_ablation/summarize.py": "29e6fbc01b36c6a01146e402805ac36431326f2764cbe48a45ef088a51de2279",
+    "tools/unet_ablation/train.py": "81e66d8cb7b39205337f3fd788d9990b7b5bac879c8d837cc6cf0ed8228837db",
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208"
+  },
+  "parents": 256,
+  "metrics": {
+    "u_nmse": {
+      "mean": 0.06092386260351649,
+      "median": 0.04090747075790898,
+      "p95": 0.20828411224559504,
+      "parent_bootstrap_ci95": [
+        0.05248824317334553,
+        0.06964267621757196
+      ],
+      "parents": 256
+    },
+    "damage": {
+      "mean": 0.0693183047967738,
+      "median": 0.0594478203442121,
+      "p95": 0.15673554164059492,
+      "parent_bootstrap_ci95": [
+        0.06307017771054967,
+        0.07560660156196852
+      ],
+      "parents": 256
+    },
+    "background_nmse": {
+      "mean": 0.06096288680480245,
+      "median": 0.04025086046704639,
+      "p95": 0.20945291788715517,
+      "parent_bootstrap_ci95": [
+        0.05247078760529566,
+        0.0697280515935856
+      ],
+      "parents": 256
+    },
+    "h0_nmse": {
+      "mean": 0.00015528066730990467,
+      "median": 0.00014969597481936294,
+      "p95": 0.00019120058770510985,
+      "parent_bootstrap_ci95": [
+        0.00015256386406178052,
+        0.00015835424546712737
+      ],
+      "parents": 256
+    },
+    "noise_nmse": {
+      "mean": 0.00015051267275033908,
+      "median": 0.00014653591720985,
+      "p95": 0.00017631373121852647,
+      "parent_bootstrap_ci95": [
+        0.00014843137558892886,
+        0.00015274889322696618
+      ],
+      "parents": 256
+    },
+    "no_jammer_pooled_nmse": {
+      "mean": 0.00015298471099390665,
+      "median": 0.00014822807371352753,
+      "p95": 0.00018233899340581197,
+      "parent_bootstrap_ci95": [
+        0.0001506738508063731,
+        0.0001554559097200526
+      ],
+      "parents": 256
+    },
+    "amplitude": {
+      "mean": 0.9108956934633168,
+      "median": 0.91969006308181,
+      "p95": 0.9894658093492523,
+      "parent_bootstrap_ci95": [
+        0.9034221838693907,
+        0.9183154421884804
+      ],
+      "parents": 256
+    },
+    "phase_deg": {
+      "mean": 0.07666188009528753,
+      "median": 0.06339071616657241,
+      "p95": 0.3449345365742168,
+      "parent_bootstrap_ci95": [
+        0.05624875941919824,
+        0.09734935430333702
+      ],
+      "parents": 256
+    },
+    "sjrif_db": {
+      "mean": 10.21862901052678,
+      "median": 10.162230691315195,
+      "p95": 19.684365673455805,
+      "parent_bootstrap_ci95": [
+        9.459820072117434,
+        11.004475829591158
+      ],
+      "parents": 256
+    },
+    "false_peak_suppression_db": {
+      "mean": 12.263027999630925,
+      "median": 12.333305932997611,
+      "p95": 25.007176945955052,
+      "parent_bootstrap_ci95": [
+        11.372450695083664,
+        13.177880074450295
+      ],
+      "parents": 256
+    },
+    "pd": {
+      "mean": 0.859375,
+      "median": 1.0,
+      "p95": 1.0,
+      "parent_bootstrap_ci95": [
+        0.8177083333333334,
+        0.8971354166666667
+      ],
+      "parents": 256
+    },
+    "pd_no_jammer": {
+      "mean": 0.91796875,
+      "median": 1.0,
+      "p95": 1.0,
+      "parent_bootstrap_ci95": [
+        0.88671875,
+        0.94921875
+      ],
+      "parents": 256
+    },
+    "cell_pfa_noise": {
+      "mean": 4.3249003542958366e-07,
+      "median": 0.0,
+      "p95": 0.0,
+      "parent_bootstrap_ci95": [
+        0.0,
+        1.297470106288751e-06
+      ],
+      "parents": 256
+    },
+    "frame_pfa_noise": {
+      "mean": 0.00390625,
+      "median": 0.0,
+      "p95": 0.0,
+      "parent_bootstrap_ci95": [
+        0.0,
+        0.01171875
+      ],
+      "parents": 256
+    },
+    "cell_pfa_jammer": {
+      "mean": 0.0001774650778712725,
+      "median": 0.0,
+      "p95": 0.0008672866843814585,
+      "parent_bootstrap_ci95": [
+        0.0001255590654524653,
+        0.00023816505434381459
+      ],
+      "parents": 256
+    },
+    "frame_pfa_jammer": {
+      "mean": 0.16015625,
+      "median": 0.0,
+      "p95": 0.6666666666666666,
+      "parent_bootstrap_ci95": [
+        0.1328125,
+        0.18883463541666676
+      ],
+      "parents": 256
+    }
+  },
+  "local_parent_values_sha256": "e251ab39ab7d8bc0d4d84307e50c024bd68a30aed8584a56a936a1eccd7b565f",
+  "elapsed_seconds": 17.075597499962896,
+  "created_utc": "2026-11-15T15:37:08.877107+00:00",
+  "note": "Three jammer variants averaged within physical parent; no pulse-level pseudoreplication."
+}

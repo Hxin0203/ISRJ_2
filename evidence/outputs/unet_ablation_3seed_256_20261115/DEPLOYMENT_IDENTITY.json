@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-15T15:46:05.234226+00:00",
+  "deployment_manifest_sha256": "8f84f6aa7d33686a983e1cfdfb4192fc78fc64fd0941ded110c69aa1dc9cc277",
+  "server": "rsdr-b",
+  "root": "D:/code/Xin/ISRJ_222",
+  "deployed_file_count": 84,
+  "deployed_bytes": 359903516,
+  "transport": "SSH/scp to the dedicated second-paper directory; hidden WMI-owned launcher",
+  "archive_kept_under_ignored_outputs": true,
+  "data_and_weights_not_for_github": true
+}
