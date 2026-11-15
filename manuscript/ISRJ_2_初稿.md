@@ -6,13 +6,13 @@
 
 ## 摘要
 
-间歇采样转发干扰与目标回波具有相近的局部调频结构。恢复网络在削弱干扰时，也可能改变目标的幅相响应；增加可靠度估计、专家分支和门控虽能提供更多调节手段，却使模型结构与训练流程更加复杂。本文研究在保留同噪声波形参考和目标响应约束的条件下，单一紧凑校正网络能否完成有用的干扰抑制。网络以接收信号的 I/Q 分量为输入，通过幅度归一化、固定去斜、三尺度残差编码器—解码器及逆去斜预测校正量，再从观测中相减得到恢复波形。训练使用共享目标、干扰和噪声的四种配对状态，以波形端点误差和脉压域误差约束校正准确性，并以加入目标前后的校正差异约束目标增量失真。该约束与恢复算子的目标有限差分误差严格相等，但不构成任意输入下的无损保证。网络实际参与前向计算的参数为 59,714，登记参数为 112,756。独立仿真测试覆盖三类转发干扰、信噪比与干信比扫描、采样宽度变化以及脉压和多普勒处理。在三类干扰的 168 个主网格条件上，冻结模型相对 Max-TF 本地复现的检测概率提高 4.21 个百分点，SJRIF 提高 1.57 dB。与第一版 RSDR-Net 的统一测试比较表明，新模型的平均波形归一化误差和目标增量失真分别由 0.10230、0.07177 降至 0.08741、0.04731，但 SJRIF 下降 1.08 dB，受扰无目标背景的帧虚警率由 7.08% 升至 20.42%。八个种子训练至 256 轮后，开发集误差在 128 轮以后改善趋缓。结果表明，单校正器能够以较小的模型规模获得较低的目标增量失真，但目前仍未达到复杂恢复器的残留干扰控制水平；模型规模、目标响应与受扰背景虚警需要联合评价。
+间歇采样转发干扰与目标回波具有相近的局部调频结构。恢复网络在削弱干扰时，也可能改变目标的幅相响应；增加可靠度估计、专家分支和门控虽能提供更多调节手段，却使模型结构与训练流程更加复杂。本文研究在保留同噪声波形参考和目标响应约束的条件下，单一紧凑校正网络能否完成有用的干扰抑制。网络以接收信号的 I/Q 分量为输入，通过幅度归一化、固定去斜、三尺度残差编码器—解码器及逆去斜预测校正量，再从观测中相减得到恢复波形。训练使用共享目标、干扰和噪声的四种配对状态，以波形端点误差和脉压域误差约束校正准确性，并以加入目标前后的校正差异约束目标增量失真。该约束与恢复算子的目标有限差分误差严格相等，但不构成任意输入下的无损保证。网络实际参与前向计算的参数为 59,714，登记参数为 112,756。独立仿真测试覆盖三类转发干扰、信噪比与干信比扫描、采样宽度变化以及脉压和多普勒处理。在三类干扰的 168 个主网格条件上，采用相同的名义 CA-CFAR 规则时，冻结模型相对 Max-TF 本地复现的检测概率提高 4.21 个百分点，SJRIF 提高 1.57 dB；这一检测比较未匹配处理后的经验虚警率。与第一版 RSDR-Net 的统一测试比较表明，新模型的平均波形归一化误差和目标增量失真分别由 0.10230、0.07177 降至 0.08741、0.04731，但 SJRIF 下降 1.08 dB，受扰无目标背景的帧虚警率由 7.08% 升至 20.42%。八个种子训练至 256 轮后，开发集误差在 128 轮以后改善趋缓。结果表明，单校正器能够以较小的模型规模获得较低的目标增量失真，但目前仍未达到复杂恢复器的残留干扰控制水平；模型规模、目标响应与受扰背景虚警需要联合评价。
 
 **关键词：** 间歇采样转发干扰；波形恢复；残差学习；目标增量一致性；脉冲压缩；恒虚警检测
 
 ## Abstract
 
-Interrupted-sampling repeater jamming (ISRJ) shares local chirp structures with the desired echo, making interference suppression and target preservation competing requirements. This paper investigates a compact, single-corrector alternative to a reliability-guided multi-expert restoration system. The network normalizes the received I/Q waveform, applies a fixed dechirp transform, predicts a correction using a three-scale residual encoder–decoder, and maps the correction back to the observation domain. Four paired states constructed from shared target, jammer, and noise components provide waveform and pulse-compression supervision. A target-increment loss penalizes changes in the predicted correction when the target is added; this loss equals the finite-difference distortion of the restored target response. The network contains 59,714 active parameters and 112,756 registered parameters. In a frozen simulation test covering 168 conditions and three jamming modes, the model improves detection probability by 4.21 percentage points and SJRIF by 1.57 dB over a local Max-TF reproduction. Under a common evaluation protocol, it reduces waveform NMSE and target-increment distortion relative to the earlier RSDR-Net, but yields lower SJRIF and more false alarms in target-absent jammed backgrounds. Eight training seeds evaluated up to 256 epochs show diminishing development-set improvements beyond 128 epochs. These results identify a practical tradeoff between model size, target-response fidelity, and residual-interference control, rather than uniform superiority of the compact architecture.
+Interrupted-sampling repeater jamming (ISRJ) shares local chirp structures with the desired echo, making interference suppression and target preservation competing requirements. This paper investigates a compact, single-corrector alternative to a reliability-guided multi-expert restoration system. The network normalizes the received I/Q waveform, applies a fixed dechirp transform, predicts a correction using a three-scale residual encoder–decoder, and maps the correction back to the observation domain. Four paired states constructed from shared target, jammer, and noise components provide waveform and pulse-compression supervision. A target-increment loss penalizes changes in the predicted correction when the target is added; this loss equals the finite-difference distortion of the restored target response. The network contains 59,714 active parameters and 112,756 registered parameters. In a frozen simulation test covering 168 conditions and three jamming modes, the model improves detection probability by 4.21 percentage points and SJRIF by 1.57 dB over a local Max-TF reproduction under the same nominal CA-CFAR rule; the comparison does not match empirical false-alarm rates after processing. Under a common evaluation protocol, it reduces waveform NMSE and target-increment distortion relative to the earlier RSDR-Net, but yields lower SJRIF and more false alarms in target-absent jammed backgrounds. Eight training seeds evaluated up to 256 epochs show diminishing development-set improvements beyond 128 epochs. These results identify a practical tradeoff between model size, target-response fidelity, and residual-interference control, rather than uniform superiority of the compact architecture.
 
 ## 1 引言
 
@@ -411,7 +411,7 @@ G_{\mathrm{coh}}=10\log_{10}
 
 ### 5.2 与经典方法的冻结主网格比较
 
-表 5 汇总三类干扰、168 个条件上的等权均值。CorrectionNet 相对原始输入显著降低了含噪参考下的波形误差，SJRIF 提高 3.65 dB，检测概率由 59.20% 提高到 67.07%。相对 Max-TF 本地复现，SJRIF 的配对差值为 1.572 dB，95% 区间为 [1.496, 1.651] dB；检测概率提高 4.211 个百分点，95% 区间为 [3.764, 4.653] 个百分点。在该固定配置下，新模型同时改善了检测和受扰背景帧虚警，但后者仍达到 20.42%，尚不能认为受扰背景已经恢复到纯噪声水平。
+表 5 汇总三类干扰、168 个条件上的等权均值。CorrectionNet 相对原始输入大幅降低了含噪参考下的波形误差，SJRIF 提高 3.65 dB，检测概率由 59.20% 提高到 67.07%。相对 Max-TF 本地复现，SJRIF 的配对差值为 1.572 dB，95% 区间为 [1.496, 1.651] dB；检测概率提高 4.211 个百分点，95% 区间为 [3.764, 4.653] 个百分点。在该固定配置下，新模型同时改善了检测和受扰背景帧虚警，但后者仍达到 20.42%，尚不能认为受扰背景已经恢复到纯噪声水平。
 
 **表 5. 三类干扰主网格结果。箭头表示期望方向；参考行不参与算法排名。**
 
@@ -452,7 +452,7 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 
 **图 4.** 稠密检测网格中 JSR = 20 dB 的切片，SNR 步长为 1 dB，每个条件使用 512 个配对 parent。四个面板采用同一测试身份，展示较低目标增量失真与较高受扰背景虚警可以同时出现。完整网格均值见正文，不能用这一单切片替代全体条件。
 
-新旧训练流程、容量与结构同时不同，当前比较反映完整系统的取舍，尚不能确定可靠度估计、多专家或门控中哪一部分负责旧模型的优势。附录 B 列出了为进一步区分这些因素而安排的对照。
+新旧训练流程、容量与结构同时不同，当前比较反映完整系统的取舍，尚不能确定可靠度估计、多专家或门控中哪一部分负责旧模型的优势。为进一步区分这些因素，本文在第 6.3 节列出等参数网络和逐项消融的后续验证方案。
 
 ### 5.4 脉压形态与相参处理
 
@@ -499,22 +499,6 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 
 当前数据支持的结论是：CorrectionNet 在主网格和多个扫描中降低了目标增量失真，但残留干扰控制弱于完整 RSDR-Net。至于该取舍是否主要由损失权重、单分支容量或缺少可靠度门控造成，现有比较尚不能区分。对这些机制的说明应作为待验证假设，而不作为已经得到实验证明的原因。
 
-### 5.7 等参数网络与消融：已安排但尚未形成结论
-
-为区分结构设计与容量因素，后续服务器实验包含有效参数同为 59,714 的 U-Net，采用 18/42/74 通道配置，在种子 17、29、41 上训练至 256 轮。另有去除固定去斜、去除 RMS 归一化、去除脉压损失和去除目标增量损失四组消融，各使用三个种子并训练至 256 轮。完整模型复用对应三个种子的训练检查点，并按统一精度重评。所有长训练均在独立服务器目录执行。
-
-**表 8. 待完成的受控实验与其检验问题。此表是设计说明，没有实验结果。**
-
-| 对照 | 控制方式 | 需要回答的问题 |
-|---|---|---|
-| 等有效参数 U-Net | 59,714 有效参数；3 种子 × 256 轮 | 当前结构收益是否超过同容量常规恢复骨干 |
-| 无固定去斜 | 保留其余结构、数据与损失 | 固定物理变换是否改善学习及跨参数恢复 |
-| 无 RMS | 保留其余结构与损失 | 正实幅度缩放处理对幅度变化和训练稳定性有何作用 |
-| 无脉压损失 | 移除式（12），保留端点与增量项 | 脉压域误差是否带来可重复的检测或伪峰收益 |
-| 无目标增量损失 | 移除式（13），保留其余项 | 较低目标增量失真是否确由该项促进，代价是什么 |
-
-目前已核验的服务器快照为 2026-11-15 16:52 UTC：等参数 U-Net 的 seed 17 正在训练第 243 轮，最近完整提交到第 242 轮；第 224 轮 DEV 评价已经完成，其他组尚未形成完整结果。该时刻只用于说明本稿证据截止状态，不用于预测最终性能。全部训练后计划使用另行生成的 512 个 parent 确认集进行六组、三种子的冻结比较。本文暂不对这些实验作提前结论。
-
 ## 6 讨论
 
 ### 6.1 本文贡献与已有方法的边界
@@ -531,7 +515,19 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 
 ### 6.3 适用范围与后续验证
 
-目前完整模型的八种子分析反映初始化稳定性，尚不能回答某个模块是否有效。等参数 U-Net 与逐项消融将检验结构和损失的作用，需要同时考虑跨种子波动及同一场景上的配对差异。
+目前完整模型的八种子分析反映初始化稳定性，尚不能回答某个模块是否有效。等参数 U-Net 与逐项消融将检验结构和损失的作用，需要同时考虑跨种子波动及同一场景上的配对差异。相关实验应在服务器上完成，并在所有检查点写入可恢复的训练归档后再进行统一重评。
+
+**表 8. 待完成的受控实验与其检验问题。此表是实验设计，不包含本文已完成的结果。**
+
+| 对照 | 控制方式 | 需要回答的问题 |
+|---|---|---|
+| 等有效参数 U-Net | 59,714 有效参数；3 种子 × 256 轮 | 当前结构收益是否超过同容量常规恢复骨干 |
+| 无固定去斜 | 保留其余结构、数据与损失 | 固定物理变换是否改善学习及跨参数恢复 |
+| 无 RMS | 保留其余结构与损失 | 正实幅度缩放处理对幅度变化和训练稳定性有何作用 |
+| 无脉压损失 | 移除式（12），保留端点与增量项 | 脉压域误差是否带来可重复的检测或伪峰收益 |
+| 无目标增量损失 | 移除式（13），保留其余项 | 较低目标增量失真是否确由该项促进，代价是什么 |
+
+这些对照改变的因素并不完全相同，结果只能按实际实现和控制条件解释，不能把整体差异直接归因于单一组件。完成训练后，还需要在未参与训练、DEV 选择和当前 TEST 解释的新 parent 集上一次性冻结比较；若在已有 TEST 上继续选择检查点，所得结果不能再称为独立确认。
 
 第二个缺口是检测公平性。本文已经报告经验虚警，但尚未提供在独立校准数据上匹配实际虚警水平后的检测比较。若要声称检测优势，应补充固定校准方案下的 ROC 或等经验虚警比较，避免将较宽松的输出背景误认为检测能力更强。
 
@@ -547,7 +543,7 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 
 ## 数据、代码与可重复性说明
 
-本文代码与轻量证据存放于作者专用仓库 `Hxin0203/ISRJ_2`。训练数据、模型权重和原始数组不随该仓库上传；当前仓库访问权限不等于公开发布承诺。训练与测试数据身份、检查点 SHA、逐条件汇总和图表来源在随稿证据说明中记录。最终投稿时应按期刊政策明确数据与代码的可获得方式。本文没有声称取得实测数据许可或完成硬件验证。
+本文代码与轻量证据存放于作者专用仓库 `Hxin0203/ISRJ_2`。训练数据、模型权重和原始数组不随该仓库上传；当前仓库访问权限不等于公开发布承诺。本稿的本地证据整理和文本审计流程参考 Scientific Agent Skills[23]，相关内容不替代作者对数据、公式和引文的核验。训练与测试数据身份、检查点 SHA、逐条件汇总和图表来源在随稿证据说明中记录。最终投稿时应按期刊政策明确数据与代码的可获得方式。本文没有声称取得实测数据许可或完成硬件验证。
 
 ## 参考文献
 
@@ -594,6 +590,8 @@ BCS 获得额外支撑信息，其 SJRIF 和背景帧虚警优于新模型，但
 [21] Kingma D P, Ba J. Adam: A Method for Stochastic Optimization. *International Conference on Learning Representations*, 2015. [arXiv:1412.6980](https://arxiv.org/abs/1412.6980).
 
 [22] Efron B. Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 1979, 7(1): 1–26. DOI: [10.1214/aos/1176344552](https://doi.org/10.1214/aos/1176344552).
+
+[23] Kassis T, Agarwal V, He Y, Patel D, Brueckner A M. Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents. *arXiv preprint* arXiv:2609.00065, 2026. DOI: [10.48550/arXiv.2609.00065](https://doi.org/10.48550/arXiv.2609.00065).
 
 ## 附录 A：配对损失与评价口径的补充推导
 

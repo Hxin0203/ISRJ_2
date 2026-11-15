@@ -1,0 +1,36 @@
+{
+  "stage": "final_check",
+  "utc": "2026-11-15T17:45:11.922252+00:00",
+  "manuscript_sha256": "8f34f8a76d6218a2a3bc3439d3309547a7caed344a00bfe1c6d4d8a0e0664706",
+  "backup": "backups/final_check_8f34f8a76d62.md",
+  "characters": 32200,
+  "han_characters": 12369,
+  "protected_span_count": 573,
+  "prose_nonspace_characters": 15740,
+  "protected_sha256": "48f891cc7227889ad13df6221c5977cdf82b028bb072a5724f65405458f7a854",
+  "invisible_or_replacement_characters": [],
+  "skill_exit_code": 0,
+  "skill_audit": {
+    "path": "manuscript/work/final_check_prose_only.txt",
+    "density_tier": "low",
+    "flagged_count": 0,
+    "flagged": [],
+    "stylometry": {
+      "path": "manuscript/work/final_check_prose_only.txt",
+      "word_count": 1811,
+      "sentence_count": 177,
+      "burstiness_cv": 0.9359,
+      "lexical_diversity": 0.9205,
+      "ai_ngram_density": 0.0,
+      "matched_markers": [],
+      "score": 0.0325,
+      "confidence_level": "CLEAN",
+      "density_tier": "low",
+      "status": "ok",
+      "findings": [],
+      "findings_confidence": [],
+      "notes": []
+    }
+  },
+  "interpretation": "Offline inspection only. English stylistic heuristics are not calibrated for Chinese scientific prose; no authorship or detector-evasion claim. No whole-document cleanup performed."
+}
