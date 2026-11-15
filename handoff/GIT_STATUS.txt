@@ -1,44 +1,26 @@
-Checked 2026-11-15T12:16:01.973424+00:00
+Checked 2026-11-15T14:56:59.439207+00:00
 Tracked changes only; unrelated untracked evidence omitted.
-A  PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md
-A  configs/rsdr_unified_20261115.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/ADAPTER_PARITY.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv
-A  evidence/outputs/RSDR_UNIFIED_20261115/CURVE_SOURCE_SUMMARIES.csv
-A  evidence/outputs/RSDR_UNIFIED_20261115/ENGINEERING_EVENTS.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/EXTENDED_PARITY.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/FIGURE_MANIFEST.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/MODEL_IDENTITIES.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/PAIRED_RESULTS.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/POSTPROCESS_PRIMARY_COMPLETE.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/REPORT_RECEIPT.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/RESULT_INTEGRITY_AUDIT.json
-AM evidence/outputs/RSDR_UNIFIED_20261115/RUN_STATUS.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/TEXT_AUDIT.json
-A  evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.pdf
-A  evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.png
-MM handoff/CURRENT_STATE.md
-M  handoff/GIT_STATUS.txt
-MM handoff/LAST_CODEX_EXECUTION.md
-MM handoff/OUTPUT_EVIDENCE_INDEX.md
-MM handoff/RUNNING_EXPERIMENTS.json
-A  tools/aggregate_rsdr_unified.py
-A  tools/compare_rsdr_unified.py
-A  tools/finalize_rsdr_unified.py
-A  tools/plot_rsdr_unified.py
-AM tools/report_rsdr_unified.py
-A  tools/rsdr_adapter.py
-A  tools/rsdr_stream.py
-A  tools/rsdr_vendor/PROVENANCE.json
-A  tools/rsdr_vendor/__init__.py
-A  tools/rsdr_vendor/d1_model.py
-A  tools/rsdr_vendor/gate_core.py
-A  tools/rsdr_vendor/m11_model.py
-A  tools/rsdr_vendor/m12_model.py
-A  tools/rsdr_vendor/m9_model.py
-A  tools/rsdr_vendor/model.py
-AM tools/status_rsdr_unified.py
-AM tools/update_rsdr_handoff.py
-A  tools/verify_rsdr_adapter.py
+ M PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md
+ M README.md
+ M evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv
+ M evidence/outputs/RSDR_UNIFIED_20261115/CURVE_SOURCE_SUMMARIES.csv
+ M evidence/outputs/RSDR_UNIFIED_20261115/ENGINEERING_EVENTS.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/FIGURE_MANIFEST.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/PAIRED_RESULTS.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/REPORT_RECEIPT.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/RESULT_INTEGRITY_AUDIT.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/RUN_STATUS.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/TEXT_AUDIT.json
+ M evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.pdf
+ M handoff/CURRENT_STATE.md
+ M handoff/GIT_STATUS.txt
+ M handoff/LAST_CODEX_EXECUTION.md
+ M handoff/OUTPUT_EVIDENCE_INDEX.md
+ M handoff/RUNNING_EXPERIMENTS.json
+ M tools/finalize_rsdr_unified.py
+ M tools/plot_rsdr_unified.py
+ M tools/report_rsdr_unified.py
+ M tools/status_rsdr_unified.py
+ M tools/update_rsdr_handoff.py
 
 Only paper2 remote may be pushed. No raw arrays/weights/logs.

@@ -43,7 +43,11 @@ def publish_snapshot(stage):
     atomic_json(LIGHT/f'POSTPROCESS_{stage.upper()}_COMPLETE.json',dict(completed_utc=now(),stage=stage,
         conditions=result['complete_conditions'],status=result['status'],freeze_sha256=sha(FREEZE),
         report_sha256=sha(path),aggregate_sha256=sha(LIGHT/'PAIRED_RESULTS.json'),
-        figure_manifest_sha256=sha(LIGHT/'FIGURE_MANIFEST.json')))
+        figure_manifest_sha256=sha(LIGHT/'FIGURE_MANIFEST.json'),
+        postprocessing_source_sha256={name:sha(ROOT/name) for name in (
+            'tools/aggregate_rsdr_unified.py','tools/plot_rsdr_unified.py',
+            'tools/report_rsdr_unified.py','tools/status_rsdr_unified.py',
+            'tools/update_rsdr_handoff.py','tools/finalize_rsdr_unified.py')}))
 
 
 def main(once=None):

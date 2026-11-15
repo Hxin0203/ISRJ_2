@@ -27,10 +27,12 @@ COLORS={'model':'#0072B2','rsdr':'#A54E00'}
 NAMES={'model':'Paper 2 (seed 29, epoch 128)','rsdr':'RSDR-Net (complete F-R7)'}
 STYLE={'model':('o','-'),'rsdr':('s','--')}
 ROWS=[]; EXPORTS=[]
+WIDTH_ROWS=[]
 LABELS={'u_nmse':'Restored-waveform NMSE (lower better)',
         'damage':'Target-response damage (lower better)', 'sjrif_db':'SJRIF proxy (dB; higher better)',
         'pd':'Detection probability', 'cell_pfa_jammer':'Jammer H0 cell false-alarm rate',
         'frame_pfa_jammer':'Jammer H0 frame false-alarm probability',
+        'false_peak_suppression_db':'Outside-mainlobe peak suppression (dB)',
         'no_jammer_pooled_nmse':'No-jammer pooled NMSE', 'pd_no_jammer':'No-jammer detection probability',
         'cell_pfa_noise':'Noise H0 cell false-alarm rate','frame_pfa_noise':'Noise H0 frame false-alarm probability'}
 
@@ -91,6 +93,48 @@ def heatmaps(f,records):
     save(fig,'dense_pd_and_false_alarm','Cell means on all frozen dense-grid coordinates. Grey denotes unfinished, not zero. Common 0..1 scales and signed difference -1..1. Paired n=512 physical parents per cell.')
 
 
+def width_curves(f, records):
+    for suite in ('sliceA', 'sliceB'):
+        grid = f['grids'][suite]
+        settings = sorted({(c['snr_db'], c['jsr_db'], c['repeats']) for c in grid})
+        for snr, jsr, repeats in settings:
+            indexes = [i for i, c in enumerate(grid)
+                       if (c['snr_db'], c['jsr_db'], c['repeats']) == (snr, jsr, repeats)]
+            if not all((suite, i) in records for i in indexes):
+                continue
+            indexes.sort(key=lambda i: grid[i]['width'])
+            widths = [grid[i]['width'] for i in indexes]
+            name = f'{suite}_snr{snr}_jsr{jsr}_m{repeats}'
+            groups = {i: paired_group(records, suite, [i]) for i in indexes}
+            metrics = ('u_nmse', 'damage', 'sjrif_db', 'pd',
+                       'false_peak_suppression_db', 'frame_pfa_jammer')
+            fig, axes = plt.subplots(2, 3, figsize=(14, 8.5), layout='constrained')
+            for ax, key in zip(axes.flat, metrics):
+                for method in ('model', 'rsdr'):
+                    values = [groups[i]['metrics'][method][key] for i in indexes]
+                    means = [v['mean'] for v in values]
+                    lower, upper = np.asarray([v['parent_bootstrap_ci95'] for v in values]).T
+                    marker, line = STYLE[method]
+                    ax.plot(widths, means, color=COLORS[method], marker=marker,
+                            linestyle=line, label=NAMES[method], ms=4)
+                    ax.fill_between(widths, lower, upper, color=COLORS[method], alpha=.12)
+                    for i, value in zip(indexes, values):
+                        WIDTH_ROWS.append(dict(figure=name, suite=suite, index=i,
+                            snr_db=snr, jsr_db=jsr, repeats=repeats, width_samples=grid[i]['width'],
+                            metric=key, method=method, **value))
+                ax.set(xlabel='Sampling width (samples; 60 MHz)', ylabel=LABELS[key])
+                ax.grid(alpha=.2)
+                if key in ('pd', 'frame_pfa_jammer'):
+                    ax.set_ylim(-.025, 1.025)
+            axes.flat[0].legend(fontsize=8)
+            period = 'fixed period 260 samples' if suite == 'sliceA' else 'period = (M+1) * width + 1'
+            fig.suptitle(f'{suite}: SNR {snr} dB, group-energy JSR {jsr} dB, M={repeats}; {period}\n'
+                         'All frozen widths; pointwise 95% physical-parent bootstrap CI', fontsize=12)
+            save(fig, name, 'Every frozen width at this SNR/JSR/M is shown, with no smoothing or selection. '
+                 'Shared physical parents across widths; 4000 pointwise parent bootstrap replicates, seed 20261114. '
+                 'JSR is total pulse-group energy JSR, unlike the main scan active-support convention.')
+
+
 def examples(f):
     import torch
     from tools.rsdr_adapter import RSDRNet
@@ -145,7 +189,7 @@ def examples(f):
 
 def main(with_examples=False,audited=None):
     # The durable controller invokes this module at several milestones.
-    ROWS.clear(); EXPORTS.clear()
+    ROWS.clear(); WIDTH_ROWS.clear(); EXPORTS.clear()
     if audited is None:
         _,records,_=load_records()
     else:
@@ -159,10 +203,14 @@ def main(with_examples=False,audited=None):
         curves(records,'pd',ids,'pd_jsr20','Repeat jammer, JSR 20 dB; 512 paired physical parents',('u_nmse','damage','sjrif_db','pd','cell_pfa_jammer','frame_pfa_jammer'))
         curves(records,'retention',list(range(len(f['grids']['retention']))),'retention','No-jammer retention; three independent parent groups',('no_jammer_pooled_nmse','damage','pd_no_jammer','cell_pfa_noise','frame_pfa_noise','u_nmse'))
         heatmaps(f,records)
+        width_curves(f,records)
         if with_examples:examples(f)
     if ROWS:
         stream=io.StringIO(newline='');w=csv.DictWriter(stream,fieldnames=list(ROWS[0]));w.writeheader();w.writerows(ROWS)
         atomic_write(LIGHT/'CURVE_SOURCE_SUMMARIES.csv',lambda dest:dest.write(stream.getvalue().encode('utf8')))
+    if WIDTH_ROWS:
+        stream=io.StringIO(newline='');w=csv.DictWriter(stream,fieldnames=list(WIDTH_ROWS[0]));w.writeheader();w.writerows(WIDTH_ROWS)
+        atomic_write(LIGHT/'WIDTH_SOURCE_SUMMARIES.csv',lambda dest:dest.write(stream.getvalue().encode('utf8')))
     atomic_json(LIGHT/'FIGURE_MANIFEST.json',dict(created_utc=now(),freeze_sha256=sha(FREEZE),script_sha256=sha(__file__),
         purpose='Provisional scientific review; journal requirements not specified.',formats=['PNG 180 dpi','PDF'],
         uncertainty='4000 paired physical-parent bootstrap replicates, seed 20261114. Pointwise 95%, not simultaneous.',

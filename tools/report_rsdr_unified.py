@@ -77,6 +77,65 @@ def primary_snr_table():
     return '\n\n'.join(lines[:2])+ '\n\n'+'\n'.join(lines[2:])
 
 
+def secondary_interpretation(name,g):
+    a,b=[g['metrics'][m] for m in ('model','rsdr')]
+    if name=='main_all':
+        return ('三类干扰等权合并后的恢复误差较低，不能解释为每种干扰、每个 SNR 都改善。'
+            '例如直接转发干扰的 NMSE 配对区间包含 0；重复转发干扰的 NMSE 排序也随 SNR 改变。'
+            'SJRIF、Pd 与干扰 H0 虚警给出的排序应与恢复误差一起保留。')
+    if name=='retention':
+        return (f"无干扰合并 NMSE 为 {num(a['no_jammer_pooled_nmse']['mean'])}／{num(b['no_jammer_pooled_nmse']['mean'])}（第二版／第一版）。"
+            '两版的误差绝对值都较小，但第一版更接近恒等映射；本次没有预设可接受误差阈值，不能仅凭数值小宣布满足应用要求。'
+            '无干扰 Pd 的配对差值区间包含 0，这不构成等效性证明。')
+    if name=='coherent':
+        return (f"多普勒峰误差为 {a['peak_error_hz']['mean']:.3f}／{b['peak_error_hz']['mean']:.3f} Hz（第二版／第一版），"
+            '第二版在这三个冻结条件下的平均峰误差更低，配对区间未跨 0；相位 RMSE 的差值区间包含 0。'
+            '相干功率比以 0 dB 为理想参考，仍含残余干扰和噪声，不能把功率更接近 0 直接解释为纯目标相干增益提高。'
+            '这些比较只有 16 个独立父样本，且没有多重比较校正。')
+    if name=='sliceA':
+        return ('固定周期扫描中，第二版的平均 NMSE 和目标响应损伤更低，第一版的 SJRIF 与干扰 H0 虚警控制更好。'
+            'Pd 的配对差值区间包含 0。宽度曲线仍存在排序变化，汇总值不能替代逐宽度检查。')
+    if name=='sliceB':
+        return (f"固定重复次数、随宽度改变周期的扫描中，第二版／第一版 NMSE 为 {a['u_nmse']['mean']:.6f}／{b['u_nmse']['mean']:.6f}，"
+            f"Pd 为 {100*a['pd']['mean']:.3f}%／{100*b['pd']['mean']:.3f}%，"
+            f"差值为 {100*g['model_minus_rsdr']['pd']['mean']:.3f} 个百分点。"
+            '第二版的目标响应损伤仍较低，但恢复误差、SJRIF、Pd 和干扰 H0 虚警均不及第一版。'
+            '这是当前版本在本次宽度干预中的明显短板，不能从主扫描的平均 NMSE 优势推断宽度鲁棒性更好。')
+    if name=='pd':
+        return (f"全部 310 个密集网格等权合并后，恢复 NMSE 为 {a['u_nmse']['mean']:.6f}／{b['u_nmse']['mean']:.6f}（第二版／第一版）。"
+            '第一版的恢复误差更低，配对差值区间未跨 0，排序与主扫描相反；第二版的目标响应损伤仍更低。'
+            '密集扫描与主扫描的 SNR／JSR 覆盖、网格权重及父样本集合不同，不能将主扫描的平均优势推广至密集扫描，也不能只凭这两个总体均值确定排序变化的原因。'
+            f"Pd 为 {100*a['pd']['mean']:.3f}%／{100*b['pd']['mean']:.3f}%，"
+            f"干扰 H0 帧级虚警为 {100*a['frame_pfa_jammer']['mean']:.3f}%／{100*b['frame_pfa_jammer']['mean']:.3f}%（第二版／第一版）。"
+            '这是该完整 SNR／JSR 网格上的描述，不能外推为任意场景发生频率下的平均表现。'
+            '两版仍处于不同的经验虚警工作点，须同时查看 Pd 与虚警热图。')
+    if name=='pd_jsr20':
+        lo,hi=g['model_minus_rsdr']['pd']['parent_bootstrap_ci95']
+        return (f"JSR = 20 dB 时，Pd 为 {100*a['pd']['mean']:.3f}%／{100*b['pd']['mean']:.3f}%（第二版／第一版），"
+            f"配对差值的 95% 区间为 [{100*lo:.3f}, {100*hi:.3f}] 个百分点，包含 0。"
+            f"同时干扰 H0 帧级虚警为 {100*a['frame_pfa_jammer']['mean']:.3f}%／{100*b['frame_pfa_jammer']['mean']:.3f}%，第二版明显更高。"
+            '因此不能根据第二版略高的 Pd 均值声称检测性能更好，也不能把差值区间包含 0 当作两版等效的证据。')
+    return ''
+
+
+def figure_links():
+    path=LIGHT/'FIGURE_MANIFEST.json'
+    if not path.exists():return ''
+    exports={}
+    for item in read(path)['figures']:
+        p=Path(item['file'])
+        exports.setdefault(p.stem,{})[p.suffix]=p.as_posix()
+    lines=['| 图组 | PNG | PDF |','|---|---|---|']
+    labels={'main_repeat':'重复转发干扰主比较','main_direct':'直接转发干扰','main_cyclic':'循环转发干扰',
+            'main_all':'三类干扰等权合并','pd_jsr20':'JSR = 20 dB 密集检测曲线','retention':'无干扰保持性',
+            'dense_pd_and_false_alarm':'密集 Pd 与干扰帧级虚警热图'}
+    for name,paths in exports.items():
+        label=labels.get(name,name)
+        links=[f'[{suffix[1:].upper()}]({paths[suffix]})' if suffix in paths else '尚未生成' for suffix in ('.png','.pdf')]
+        lines.append(f'| {label} | {links[0]} | {links[1]} |')
+    return '\n'.join(lines)
+
+
 def report():
     a=read(LIGHT/'PAIRED_RESULTS.json');f=read(FREEZE);ids=read(LIGHT/'MODEL_IDENTITIES.json');s=snapshot(save=True)
     full=a['status']=='COMPLETE';primary=a['groups'].get('main_repeat',{})
@@ -98,6 +157,8 @@ def report():
         '两版使用逐父样本完全相同的 S、J、E 和元数据，以及四个状态 E、S+E、J+E、S+J+E。原有 TEST 每个块与此次 RSDR-Net 块均核验 SHA、有限值、结果均值及父样本身份。不同模型没有使用各自的测试集。',
         '主扫描 SNR 为 −30、−28、−26、−25、−24、−23、−22、−20、−15、−10、−5、0、5、10 dB，JSR 为 0、10、20、35 dB，三类干扰各 56 个条件、每条件 256 个配对物理父样本。预先固定的主要比较范围是 repeat 的 56 个条件。',
         '密集 Pd 扫描 SNR 为 −30 至 0 dB、步长 1 dB，JSR 为 −10 至 35 dB、步长 5 dB，共 310 个条件、每条件 512 个父样本；另外包含 42 个无干扰保持性、3 个相干性和 41 个宽度干预条件。所有网格沿用原冻结实验。',
+        '宽度扫描的 JSR 定义为整组脉冲的干扰／目标总能量比；主扫描和密集 Pd 扫描沿用有效支撑区功率口径，实际总能量 JSR 另存于逐父样本元数据。两种口径下相同的名义 JSR 不代表相同总干扰能量，不把不同扫描合并成一条强度曲线。',
+        '固定周期宽度扫描：周期 260 点、重复次数 M = 2，宽度 3、6、18、36、54、72、84 点；(SNR, JSR) 为 (−10, 20)、(−20, 35)、(0, 10) dB，每条件 256 个父样本。固定重复次数扫描：M = 2 或 4，宽度 6、18、36、54、72 点，周期为 (M+1) × 宽度 + 1 点；(SNR, JSR) 为 (−10, 20)、(−20, 35) dB，每条件 128 个父样本。采样率为 60 MHz，宽度图按全部冻结取值绘制。',
         '脉压使用 600 点 LFM 模板和完整线性匹配滤波；保留 0 至 1200 的有效距离时延。8 脉冲做慢时间 FFT。二维 CA-CFAR 的距离保护／参考半宽为 12／24，多普勒为 1／2（周期边界），参考单元数 436，每帧 9032 个有效 CUT，名义 Pfa = 10⁻⁶。检测命中在真实最近多普勒 bin、目标距离 ±1 单元判断。真实值只用于离线计分。',
         '同一套检测器和名义 Pfa 并不保证相同的经验 Pfa。本报告同时列出噪声 H0 与干扰 H0 的单元及帧级虚警率，因此 Pd 不应脱离虚警表单独解读。没有用 TEST 校准检测阈值。',
         '统计时先在每个物理父样本内对指定网格等权平均，再对两模型差值做 4,000 次父样本配对 bootstrap，固定 seed 20261114。无干扰保持性的三个独立父样本组分层重采样、等权合并。不能把同一父样本的多个 SNR／JSR 单元或 8 个脉冲当作独立重复。区间为点态 95%，未校正多重比较，也不包含训练 seed 方差。逐条件二项事件同时保存事件数、分母与 Clopper–Pearson 区间；观察到零事件不能解释为真实概率为零。',
@@ -112,6 +173,9 @@ def report():
         'Pd 是目标存在时的检测事件均值；Pfa 在目标缺席的 E 和 J+E 上分别计分。相干性按相同目标 bin 的慢时间相位 RMSE、相干功率比和谱峰频率误差衡量；4096 点零填充仅插值频谱，不提高 8 脉冲的物理分辨率。',
         '## 当前覆盖\n','| 扫描 | 已审计 / 计划 |\n|---|---:|']
     if primary.get('complete'):lines.insert(4,primary_overview(primary))
+    if full:
+        dense=a['groups']['pd']['metrics']
+        lines.insert(5,f"完整密集扫描的恢复 NMSE 为 {dense['model']['u_nmse']['mean']:.6f}／{dense['rsdr']['u_nmse']['mean']:.6f}（第二版／第一版），第一版更低，排序与主扫描相反；固定重复次数宽度扫描也暴露了第二版的恢复与检测短板。主扫描的平均优势不覆盖这些范围，详见对应表格和曲线。")
     for name,v in a['coverage'].items():lines.append(f'| {NAMES.get(name,name)} | {v["complete"]} / {v["expected"]} |')
     for name,g in a['groups'].items():
         if not g['complete']:continue
@@ -119,6 +183,8 @@ def report():
         keys=('no_jammer_pooled_nmse','damage','pd_no_jammer','cell_pfa_noise','frame_pfa_noise') if name=='retention' else ('phase_rmse_deg','coherent_power_db','peak_error_hz','damage','pd') if name=='coherent' else ('u_nmse','damage','sjrif_db','pd','cell_pfa_noise','frame_pfa_noise','cell_pfa_jammer','frame_pfa_jammer')
         lines.append(table(g,keys))
         if name=='main_repeat':lines+=['\n'+primary_interpretation(g),primary_snr_table()]
+        interpretation=secondary_interpretation(name,g)
+        if interpretation:lines.append(interpretation)
     if not primary.get('complete'):lines.append('\n主比较尚未完整，因此此快照不据局部低 SNR 结果给出总体排序。')
     if (LIGHT/'CONDITION_COMPARISONS.csv').exists():
         with (LIGHT/'CONDITION_COMPARISONS.csv').open(encoding='utf8',newline='') as stream:rows=list(csv.DictReader(stream))
@@ -128,7 +194,8 @@ def report():
                 '| SNR / dB | JSR / dB | 指标 | 第二版 | 第一版 |\n|---:|---:|---|---:|---:|']
             for r in co:lines.append(f'| {r["snr_db"]} | {r["jsr_db"]} | {METRICS[r["metric"]]} | {num(float(r["paper2_mean"]))} | {num(float(r["rsdr_mean"]))} |')
     lines+=['\n## 图表和可核验文件\n',
-        '图表目录为 `evidence/outputs/RSDR_UNIFIED_20261115/figures/`，当前已生成文件以 `FIGURE_MANIFEST.json` 为准。曲线只在对应范围完整后生成，阴影为父样本点态 95% 区间；密集网格的未完成单元保留灰色空缺。全扫描完成后，相干性示例按原冻结 parent 0 的全部三个条件生成，不挑选有利示例；脉压与多普勒采用共同归一化和颜色范围。',
+        '图表目录为 `evidence/outputs/RSDR_UNIFIED_20261115/figures/`，已生成文件以 `FIGURE_MANIFEST.json` 为准。曲线只在对应范围完整后生成，阴影为父样本点态 95% 区间；密集网格的未完成单元保留灰色空缺。相干性示例按原冻结 parent 0 的全部三个条件生成，不挑选有利示例；各模型使用共同的脉压／多普勒功率参考，距离–多普勒图使用共同颜色范围。',
+        figure_links(),
         '模型身份：`MODEL_IDENTITIES.json`；配对汇总：`PAIRED_RESULTS.json`；逐条件指标、事件数与区间：`CONDITION_COMPARISONS.csv`；逐块 SHA 与样本配对审计：`RESULT_INTEGRITY_AUDIT.json`；工程移植记录：`ENGINEERING_EVENTS.json`；图来源与 SHA：`FIGURE_MANIFEST.json`。上述文件均在 `evidence/outputs/RSDR_UNIFIED_20261115/`。',
         f'比较冻结清单：`configs/rsdr_unified_20261115.json`，SHA-256：`{sha(FREEZE)}`。原始数组、模型权重、缓存、完整日志只保存在本地 `outputs/rsdr_unified_20261115/`，不上传 GitHub。',
         '## 结论的适用边界\n',
@@ -147,7 +214,8 @@ def report():
         if not backup.exists():atomic_copy(REPORT,backup)
     atomic_write(REPORT,lambda stream:stream.write(raw))
     atomic_json(LIGHT/'REPORT_RECEIPT.json',dict(created_utc=now(),report=str(REPORT.relative_to(ROOT)),sha256=sha(REPORT),
-        paired_results_sha256=sha(LIGHT/'PAIRED_RESULTS.json'),status=a['status'],primary_complete=primary.get('complete',False)))
+        paired_results_sha256=sha(LIGHT/'PAIRED_RESULTS.json'),generator_sha256=sha(__file__),
+        status=a['status'],primary_complete=primary.get('complete',False)))
     print(dict(report=str(REPORT),status=state),flush=True)
     return REPORT
 

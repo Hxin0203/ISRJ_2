@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-15T13:07:13.158020+00:00",
+  "stage": "main",
+  "conditions": 295,
+  "status": "PARTIAL_IN_PROGRESS",
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "report_sha256": "136479a28a1bf1464dab8817150508feba351509996a74313d294445e351427e",
+  "aggregate_sha256": "c1850b0971435e1e3100d82f196254591a8175d72905ffc3aa77b932a1f6794e",
+  "figure_manifest_sha256": "a80c809aa47bed389af5c1251b66ec3767b67870d8a59e9bfcafe0d27efba2b3",
+  "postprocessing_source_sha256": {
+    "tools/aggregate_rsdr_unified.py": "ad56ac42ca5d1abddf63b6ae867924afb30c0797f4abaa4b1c66a9cac8dea56d",
+    "tools/plot_rsdr_unified.py": "efcf3ca7f586a819d3f9174da977c4b3eeec3911aa74822a02f12b5d653b94d2",
+    "tools/report_rsdr_unified.py": "c673e592937507cb5cee6e739ed79509bb6b361e9c210973378f9d3adb4f5224",
+    "tools/status_rsdr_unified.py": "5f24cace192c12a6e00726c622257b5e148bc85d953609f90dcd13cedc9ce716",
+    "tools/update_rsdr_handoff.py": "d49f376b9716bd412db6c00d430bcb2a8f393e675dfb3ba257fdffba98b6928e",
+    "tools/finalize_rsdr_unified.py": "64835001cea48b517faefde67c850a8c44ac09893501fba6dde7666d6226c620"
+  }
+}

@@ -8,7 +8,9 @@ import time
 
 from paper2.io import ROOT, now, read as read_json, sha
 from tools.durable_io import atomic_json, process_alive
-from tools.compare_rsdr_unified import DEST, LIGHT, FREEZE
+DEST = ROOT / 'outputs/rsdr_unified_20261115'
+LIGHT = ROOT / 'evidence/outputs/RSDR_UNIFIED_20261115'
+FREEZE = ROOT / 'configs/rsdr_unified_20261115.json'
 
 
 def read(path):
@@ -22,14 +24,15 @@ def read(path):
 
 
 def snapshot(save=False):
-    f=read(FREEZE); completed=[]; coverage={}; remaining={}; durations={}
+    f=read(FREEZE); freeze_sha=sha(FREEZE)
+    completed=[]; coverage={}; remaining={}; durations={}
     for j in f['plan']:
         s=j['suite']; c=coverage.setdefault(s,dict(complete=0,expected=0))
         c['expected']+=1
         p=DEST/f"{s}_{j['index']:03d}/rsdr/result.json"
         if p.exists():
             r=read(p)
-            assert r['status']=='COMPLETE' and r['identity']==dict(freeze_sha256=sha(FREEZE),**j)
+            assert r['status']=='COMPLETE' and r['identity']==dict(freeze_sha256=freeze_sha,**j)
             c['complete']+=1; completed.append(j)
             durations.setdefault(j['backend'],[]).append(r['elapsed_this_invocation_seconds']/j['condition']['count'])
         else:

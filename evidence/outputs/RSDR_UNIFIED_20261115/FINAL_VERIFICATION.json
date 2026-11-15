@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-11-15T14:58:58.674876+00:00",
+  "status": "VERIFIED",
+  "conditions": 564,
+  "parent_condition_evaluations": 231216,
+  "independent_sample_count_not_inferred": true,
+  "complete_coverage": {
+    "main": {
+      "complete": 168,
+      "expected": 168
+    },
+    "pd": {
+      "complete": 310,
+      "expected": 310
+    },
+    "retention": {
+      "complete": 42,
+      "expected": 42
+    },
+    "coherent": {
+      "complete": 3,
+      "expected": 3
+    },
+    "sliceA": {
+      "complete": 21,
+      "expected": 21
+    },
+    "sliceB": {
+      "complete": 20,
+      "expected": 20
+    }
+  },
+  "audited_blocks": {
+    "model": 28902,
+    "rsdr": 14451
+  },
+  "figure_files": 40,
+  "visually_reviewed_pngs": 20,
+  "report_sha256": "b3d16d04d17c0b24e7c833ae33a0dafe562a19b377e2e3b21bdbcfe21f7cb69c",
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "postprocess_sha256": "5daa4a0a04f8f365c3b8e53bc03867a384fdf2e6809414c6ba50f445636d5fa8",
+  "supervisor_sha256": "e8050cd86601013e7dd863f1c2934767e77ba3e846236ea0bbbc485f371bca4e",
+  "visual_review_sha256": "bc80843052f3417db4cfd21f89c3ce5d1db92b9c20168f4133bd604af8d4cc65",
+  "frozen_source_hashes_verified": true,
+  "postprocessing_source_hashes_verified": true,
+  "current_report_and_figure_hash_chains_verified": true,
+  "report_links_verified": true,
+  "limitation": "Final artifact consistency verification supplements the full block audit; no new scientific evaluation or model selection."
+}

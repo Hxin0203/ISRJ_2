@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-11-15T14:52:36.177596+00:00",
+  "stage": "all",
+  "conditions": 564,
+  "status": "COMPLETE",
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "report_sha256": "b3d16d04d17c0b24e7c833ae33a0dafe562a19b377e2e3b21bdbcfe21f7cb69c",
+  "aggregate_sha256": "6184735dd2d97ae5efbac62059d8a42135a2d6a486935da87057044b456b80da",
+  "figure_manifest_sha256": "4ca543ff5c84b5348df906c595add077f2a136f9bda270e26d15fc0b2ae9e50e",
+  "postprocessing_source_sha256": {
+    "tools/aggregate_rsdr_unified.py": "ad56ac42ca5d1abddf63b6ae867924afb30c0797f4abaa4b1c66a9cac8dea56d",
+    "tools/plot_rsdr_unified.py": "efcf3ca7f586a819d3f9174da977c4b3eeec3911aa74822a02f12b5d653b94d2",
+    "tools/report_rsdr_unified.py": "874f5b7e7ee68fe7992fb18ed87eaa75fb7fd873d616b118defa80cecd3901b9",
+    "tools/status_rsdr_unified.py": "5f24cace192c12a6e00726c622257b5e148bc85d953609f90dcd13cedc9ce716",
+    "tools/update_rsdr_handoff.py": "d49f376b9716bd412db6c00d430bcb2a8f393e675dfb3ba257fdffba98b6928e",
+    "tools/finalize_rsdr_unified.py": "64835001cea48b517faefde67c850a8c44ac09893501fba6dde7666d6226c620"
+  },
+  "report_only_revision": {
+    "revised_utc": "2026-11-15T14:56:59.452628+00:00",
+    "prior_receipt_sha256": "5366823968401afbaaeaf90be6a381646e8392123a232615a58c696909c914f8",
+    "reason": "Clarify dense-grid NMSE ranking reversal and JSR20 Pd uncertainty versus elevated false alarms; no scientific values changed.",
+    "original_full_audit_completed_utc": "2026-11-15T14:52:36.177596+00:00",
+    "full_block_audit_repeated": false,
+    "aggregate_and_figures_unchanged": true
+  }
+}

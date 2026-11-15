@@ -1,75 +1,73 @@
 {
-  "checked_utc": "2026-11-15T12:16:01.372903+00:00",
-  "status": "RUNNING",
-  "pid": 3592,
-  "complete_conditions": 136,
+  "checked_utc": "2026-11-15T14:56:59.361089+00:00",
+  "status": "COMPLETE",
+  "pid": 30620,
+  "complete_conditions": 564,
   "expected_conditions": 564,
-  "complete_parent_evaluations": 34832,
+  "complete_parent_evaluations": 231216,
   "expected_parent_evaluations": 231216,
   "coverage": {
     "main": {
-      "complete": 134,
+      "complete": 168,
       "expected": 168
     },
     "coherent": {
-      "complete": 1,
+      "complete": 3,
       "expected": 3
     },
     "retention": {
-      "complete": 1,
+      "complete": 42,
       "expected": 42
     },
     "sliceA": {
-      "complete": 0,
+      "complete": 21,
       "expected": 21
     },
     "sliceB": {
-      "complete": 0,
+      "complete": 20,
       "expected": 20
     },
     "pd": {
-      "complete": 0,
+      "complete": 310,
       "expected": 310
     }
   },
   "primary_complete": true,
-  "remaining_hours_by_backend_estimate": {
-    "rsdr-b/cuda:0": 2.797652095434093,
-    "rsdr-b/cuda:1": 2.6379006368084283,
-    "local": 1.480139015103527
-  },
+  "remaining_hours_by_backend_estimate": {},
   "eta_note": "Recent eight completed cells per backend; engineering estimate, not a deadline.",
   "heartbeats": {
     "local": {
-      "updated_utc": "2026-11-15T12:16:00.079845+00:00",
-      "pid": 3592,
-      "suite": "retention",
-      "index": 3,
-      "parents_finished": 320,
+      "updated_utc": "2026-11-15T13:55:37.579597+00:00",
+      "pid": 30620,
+      "suite": "pd",
+      "index": 307,
+      "parents_finished": 512,
       "parents_total": 512,
       "backend": "local",
-      "age_seconds": 1.292818
+      "age_seconds": 3681.781226
     },
     "rsdr-b/cuda:0": {
-      "updated_utc": "2026-11-15T12:15:59.825929+00:00",
-      "pid": 3592,
-      "suite": "main",
-      "index": 115,
-      "parents_finished": 176,
-      "parents_total": 256,
+      "updated_utc": "2026-11-15T14:41:23.444030+00:00",
+      "pid": 30620,
+      "suite": "pd",
+      "index": 308,
+      "parents_finished": 512,
+      "parents_total": 512,
       "backend": "rsdr-b/cuda:0",
-      "age_seconds": 1.546851
+      "age_seconds": 935.916916
     },
     "rsdr-b/cuda:1": {
-      "updated_utc": "2026-11-15T12:16:00.226084+00:00",
-      "pid": 3592,
-      "suite": "main",
-      "index": 119,
-      "parents_finished": 256,
-      "parents_total": 256,
+      "updated_utc": "2026-11-15T14:34:00.594006+00:00",
+      "pid": 30620,
+      "suite": "pd",
+      "index": 309,
+      "parents_finished": 512,
+      "parents_total": 512,
       "backend": "rsdr-b/cuda:1",
-      "age_seconds": 1.146795
+      "age_seconds": 1378.767054
     }
   },
-  "failures": []
+  "failures": [
+    "outputs\\rsdr_unified_20261115\\FAILURE_1794745539682280200.json"
+  ]
 }

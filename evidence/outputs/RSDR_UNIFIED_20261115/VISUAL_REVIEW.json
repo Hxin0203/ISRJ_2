@@ -1,0 +1,90 @@
+{
+  "recorded_utc": "2026-11-15T14:56:59.469396+00:00",
+  "status": "VISUALLY_REVIEWED",
+  "method": "Twenty PNG figures inspected visually within this continued task. Reused twelve prior inspections only after exact SHA agreement; eight final dense-grid and fixed-parent images inspected after full-grid rendering. Checked labels, axes, legends, clipping and common power/color scales. No image pixels modified.",
+  "prior_inspections_reused": 12,
+  "final_full_grid_inspections": 8,
+  "figure_manifest_sha256": "4ca543ff5c84b5348df906c595add077f2a136f9bda270e26d15fc0b2ae9e50e",
+  "figures": [
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.png",
+      "sha256": "77567605515960dde31ffbc52046b6b5c0679adf872c3898195c1865a25e2bf1"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/main_direct.png",
+      "sha256": "fa3091079171d04f51763cdab96dcd443bacd0a7b49b0acdd6a96b5aa300ce95"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/main_cyclic.png",
+      "sha256": "85d8c5bc13e7a02335bb6fad4c9cea833db30b2d82cfea3ac41648da12f037f8"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/main_all.png",
+      "sha256": "75d34ba04ed38108a427d7c8f0d25dd9d32f97742ab7c413849f65c094ae53fc"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/pd_jsr20.png",
+      "sha256": "d865c61443880dfac03fdc6f49e436a37a35e91f3bce6d7e7bbac77ea5a5da45"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/retention.png",
+      "sha256": "1931e528408cee4968dae18bbfd581abfe25f62f726053f37e377bd64ec5e4d0"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/dense_pd_and_false_alarm.png",
+      "sha256": "782087ac28a6dc131f178f7dd9e02e4cc2cc07647006d12fb77c7718fa8aae1e"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceA_snr-20_jsr35_m2.png",
+      "sha256": "5ded3d028ff0e1f2628819381a5eebb26407c5106930b5f842a4ca2ebfe7753b"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceA_snr-10_jsr20_m2.png",
+      "sha256": "99a1a4597764d1707c4bc3c71e646d9fbd6981a1442d544b1b2655cb0a0ed66b"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceA_snr0_jsr10_m2.png",
+      "sha256": "3dae9c5d2b554035c847844fd45ccf2faf643e9f71994f1a3757838b65071fee"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceB_snr-20_jsr35_m2.png",
+      "sha256": "460649b174fd01c4f1506fc6cfed69b8d944ccfa76237d4b27416270e9d88c04"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceB_snr-20_jsr35_m4.png",
+      "sha256": "f77929bc87b96a9e461289945adc928c993eaf83af0275f28cd7838d1609ae05"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceB_snr-10_jsr20_m2.png",
+      "sha256": "902dd6743a84c191d484491e3dad9d28b76dc099a164cc56a046ef7c3638eb3a"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/sliceB_snr-10_jsr20_m4.png",
+      "sha256": "1faa21946334347af6ce8977c118cc59d090f55cc950271bd8084c109e5e7457"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_000.png",
+      "sha256": "2bce4f113b03723b174dbd98d5b5a0546bd9d86bcf9f80f67af636132381c26e"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_000.png",
+      "sha256": "23f78abab5ee34f0794bda543af434ff2b5eb26ccd35232c1e2cdcf45df04c16"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png",
+      "sha256": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png",
+      "sha256": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_002.png",
+      "sha256": "cef543affa06264d83dd75bef45df085a604339d6051b6b1bf74e32551eb2bfe"
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_002.png",
+      "sha256": "a35f95059ba1b5d2c2d20835f2c9d22844e85803ec9d098589e6de1c9a18fa06"
+    }
+  ]
+}

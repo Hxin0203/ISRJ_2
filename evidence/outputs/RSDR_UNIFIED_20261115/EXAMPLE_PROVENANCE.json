@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-11-15T14:52:34.603916+00:00",
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "parent": 0,
+  "examples": [
+    {
+      "condition": {
+        "jam_type": "repeat",
+        "snr_db": -20,
+        "jsr_db": 20,
+        "count": 16
+      },
+      "metadata": [
+        {
+          "parent_id": "test:coherent:0",
+          "doppler_hz": 4951.467008196236,
+          "paired_invariant_sha256": "f8e8b86a7ebdc5a98992d24cb40966fbb822ef50d7a82fd2eaee5d0dac8817fc",
+          "jammed_pulses": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "target_delay_samples": 286.23295197473556,
+          "total_jsr_db": 19.55747864436642,
+          "target_coverage_all": 0.43875,
+          "target_coverage_selected": 0.43875
+        }
+      ],
+      "local_raw_file": "outputs\\rsdr_unified_20261115\\fixed_parent_examples\\condition_000.npz",
+      "sha256": "fc78c83a8e51e56bc2487416689662e7f27147ac52d2fdbd07e3af6c7931cff8"
+    },
+    {
+      "condition": {
+        "jam_type": "repeat",
+        "snr_db": 0,
+        "jsr_db": 20,
+        "count": 16
+      },
+      "metadata": [
+        {
+          "parent_id": "test:coherent:0",
+          "doppler_hz": 4951.467008196236,
+          "paired_invariant_sha256": "f8e8b86a7ebdc5a98992d24cb40966fbb822ef50d7a82fd2eaee5d0dac8817fc",
+          "jammed_pulses": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "target_delay_samples": 286.23295197473556,
+          "total_jsr_db": 19.55747864436642,
+          "target_coverage_all": 0.43875,
+          "target_coverage_selected": 0.43875
+        }
+      ],
+      "local_raw_file": "outputs\\rsdr_unified_20261115\\fixed_parent_examples\\condition_001.npz",
+      "sha256": "52434596cb192cad164c292ac1dbbed7c9a9e4941e365e47d2c3dad18bc15bc9"
+    },
+    {
+      "condition": {
+        "jam_type": "repeat",
+        "snr_db": 0,
+        "jsr_db": 35,
+        "count": 16
+      },
+      "metadata": [
+        {
+          "parent_id": "test:coherent:0",
+          "doppler_hz": 4951.467008196236,
+          "paired_invariant_sha256": "f8e8b86a7ebdc5a98992d24cb40966fbb822ef50d7a82fd2eaee5d0dac8817fc",
+          "jammed_pulses": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "target_delay_samples": 286.23295197473556,
+          "total_jsr_db": 34.55747864436642,
+          "target_coverage_all": 0.43875,
+          "target_coverage_selected": 0.43875
+        }
+      ],
+      "local_raw_file": "outputs\\rsdr_unified_20261115\\fixed_parent_examples\\condition_002.npz",
+      "sha256": "bf94f59d294e362e56ac18033407778d9798b3e04fc6778b3bb046d1de150b19"
+    }
+  ],
+  "raw_arrays_local_only": true
+}

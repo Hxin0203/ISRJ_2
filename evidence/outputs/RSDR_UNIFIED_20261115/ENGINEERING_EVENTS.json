@@ -6,6 +6,16 @@
       "cause": "Archive writer lambda shadowed the native output array name.",
       "resolution": "Renamed the stream argument, reran all native and batching parity checks successfully before comparison freeze.",
       "scientific_result_discarded": false
+    },
+    {
+      "id": "20261115_allocation_recovery",
+      "stage": "Frozen TEST inference and concurrent postprocessing",
+      "observed": "Both processes stopped on MemoryError at 2026-11-15T12:25Z; 163 complete conditions retained.",
+      "cause": "Allocation failure observed; historical resource trace unavailable, so system exhaustion versus process allocation growth is unresolved.",
+      "resolution": "Resumed the same frozen evaluator from hashed blocks; lightweight supervisor avoids importing NumPy/PyTorch and defers postprocessing until inference completion; at most two explicit-memory-error retries.",
+      "failed_receipt_sha256": "ec585d01fd4c61be9a8a76176296fde71e973c1b9e11f42b2fbdfc6a7682f236",
+      "updated_utc": "2026-11-15T12:40:25.247134+00:00",
+      "scientific_definitions_changed": false
     }
   ],
   "no_training_or_test_selection_change": true

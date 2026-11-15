@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-11-15T14:52:36.835858+00:00",
+  "status": "COMPLETE",
+  "conditions": 564,
+  "restarts": 0,
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "postprocess_receipt_sha256": "5daa4a0a04f8f365c3b8e53bc03867a384fdf2e6809414c6ba50f445636d5fa8",
+  "frozen_sources_modified": false,
+  "failure_history_preserved": true,
+  "report_only_revision": {
+    "revised_utc": "2026-11-15T14:56:59.455546+00:00",
+    "prior_receipt_sha256": "ca346f684d11f09d69cac8139e3708a367ded0f19232519f86ac2464c478bd8b",
+    "original_supervisor_completed_utc": "2026-11-15T14:52:36.835858+00:00",
+    "inference_repeated": false
+  }
+}
