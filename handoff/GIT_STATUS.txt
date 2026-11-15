@@ -1,76 +1,44 @@
-Pre-commit snapshot UTC 2026-11-15T11:23:00.417419+00:00
-Branch: codex/1103-experiment
-Base HEAD: 405790b7193dc18b1bc1b4a5a9187f09501a1b23
-Target remote: paper2 (Hxin0203/ISRJ_2); never origin
+Checked 2026-11-15T12:16:01.973424+00:00
+Tracked changes only; unrelated untracked evidence omitted.
+A  PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md
+A  configs/rsdr_unified_20261115.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/ADAPTER_PARITY.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv
+A  evidence/outputs/RSDR_UNIFIED_20261115/CURVE_SOURCE_SUMMARIES.csv
+A  evidence/outputs/RSDR_UNIFIED_20261115/ENGINEERING_EVENTS.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/EXTENDED_PARITY.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/FIGURE_MANIFEST.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/MODEL_IDENTITIES.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/PAIRED_RESULTS.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/POSTPROCESS_PRIMARY_COMPLETE.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/REPORT_RECEIPT.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/RESULT_INTEGRITY_AUDIT.json
+AM evidence/outputs/RSDR_UNIFIED_20261115/RUN_STATUS.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/TEXT_AUDIT.json
+A  evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.pdf
+A  evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.png
+MM handoff/CURRENT_STATE.md
+M  handoff/GIT_STATUS.txt
+MM handoff/LAST_CODEX_EXECUTION.md
+MM handoff/OUTPUT_EVIDENCE_INDEX.md
+MM handoff/RUNNING_EXPERIMENTS.json
+A  tools/aggregate_rsdr_unified.py
+A  tools/compare_rsdr_unified.py
+A  tools/finalize_rsdr_unified.py
+A  tools/plot_rsdr_unified.py
+AM tools/report_rsdr_unified.py
+A  tools/rsdr_adapter.py
+A  tools/rsdr_stream.py
+A  tools/rsdr_vendor/PROVENANCE.json
+A  tools/rsdr_vendor/__init__.py
+A  tools/rsdr_vendor/d1_model.py
+A  tools/rsdr_vendor/gate_core.py
+A  tools/rsdr_vendor/m11_model.py
+A  tools/rsdr_vendor/m12_model.py
+A  tools/rsdr_vendor/m9_model.py
+A  tools/rsdr_vendor/model.py
+AM tools/status_rsdr_unified.py
+AM tools/update_rsdr_handoff.py
+A  tools/verify_rsdr_adapter.py
 
-Tracked working-tree changes:
- M PAPER2_1103_NEAR_TERM_PLAN_20261114.md
- M PAPER2_1103_PROGRESS_20261114.md
- M evidence/outputs/TEST_CONDITION_TABLE_1103.csv
- M evidence/outputs/TEST_COVERAGE_1103.json
- M evidence/outputs/TEST_PAIRED_AGGREGATES_1103.json
- M evidence/outputs/TEST_PAIRED_DIFFERENCES_1103.csv
- M evidence/outputs/paper2_1103_test_20261114/STATUS.json
- M evidence/outputs/paper2_1103_test_classical_20261114/INVOCATION.json
- M evidence/outputs/paper2_1103_test_classical_20261114/STATUS.json
- M evidence/outputs/paper2_long_pipeline_20261114/STATUS.json
- M handoff/CURRENT_STATE.md
- M handoff/GIT_STATUS.txt
- M handoff/LAST_CODEX_EXECUTION.md
- M handoff/OUTPUT_EVIDENCE_INDEX.md
- M handoff/RUNNING_EXPERIMENTS.json
-
-Explicit reviewed synchronization scope:
-PAPER2_1103_NEAR_TERM_PLAN_20261114.md
-PAPER2_1103_PROGRESS_20261114.md
-PAPER2_PROGRESS_CHECK_20261115.md
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/CONVERGENCE_SUMMARY.json
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_CONVERGENCE_8SEED.pdf
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_CONVERGENCE_8SEED.png
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_METRICS_BY_CHECKPOINT.csv
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/MANIFEST.json
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/README.md
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/TRAINING_CONVERGENCE_8SEED.pdf
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/TRAINING_CONVERGENCE_8SEED.png
-evidence/outputs/CONVERGENCE_256_8SEED_20261114/TRAINING_LOSS_BY_EPOCH.csv
-evidence/outputs/PROGRESS_CHECK_20261115/DEV_CONVERGENCE_REVIEW.pdf
-evidence/outputs/PROGRESS_CHECK_20261115/DEV_CONVERGENCE_REVIEW.png
-evidence/outputs/PROGRESS_CHECK_20261115/FIGURE_MANIFEST.json
-evidence/outputs/PROGRESS_CHECK_20261115/INTEGRITY_AUDIT.json
-evidence/outputs/PROGRESS_CHECK_20261115/LIVE_PROCESS_SNAPSHOT.json
-evidence/outputs/PROGRESS_CHECK_20261115/PROSE_AUDIT.json
-evidence/outputs/PROGRESS_CHECK_20261115/REPORT_VERIFICATION.json
-evidence/outputs/PROGRESS_CHECK_20261115/TRAINING_CONVERGENCE_REVIEW.pdf
-evidence/outputs/PROGRESS_CHECK_20261115/TRAINING_CONVERGENCE_REVIEW.png
-evidence/outputs/PROGRESS_CHECK_20261115/TRAINING_STATUS.json
-evidence/outputs/TEST_CONDITION_TABLE_1103.csv
-evidence/outputs/TEST_COVERAGE_1103.json
-evidence/outputs/TEST_PAIRED_AGGREGATES_1103.json
-evidence/outputs/TEST_PAIRED_DIFFERENCES_1103.csv
-evidence/outputs/paper2_1103_test_20261114/STATUS.json
-evidence/outputs/paper2_1103_test_classical_20261114/INVOCATION.json
-evidence/outputs/paper2_1103_test_classical_20261114/STATUS.json
-evidence/outputs/paper2_long_pipeline_20261114/EIGHT_SEED_TRAINING_COMPLETE.json
-evidence/outputs/paper2_long_pipeline_20261114/STAGES.json
-evidence/outputs/paper2_long_pipeline_20261114/STATUS.json
-evidence/outputs/paper2_long_pipeline_20261114/TEST_FIGURE_MANIFEST.json
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/coherent_metrics.csv
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/completed_receipts.csv
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/main_pd.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/main_sjrif_db.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/main_u_nmse.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/pd_scan.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/retention_e0.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/sliceA_u_nmse.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/sliceB_u_nmse.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/typical_coherent_metrics.csv
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/typical_parent0_snr0_jsr20.png
-evidence/outputs/paper2_long_pipeline_20261114/test_figures/typical_scene_metadata.json
-handoff/CURRENT_STATE.md
-handoff/GIT_STATUS.txt
-handoff/LAST_CODEX_EXECUTION.md
-handoff/OUTPUT_EVIDENCE_INDEX.md
-handoff/RUNNING_EXPERIMENTS.json
-tools/plot_convergence_review_20261115.py
-
-Other untracked per-condition evidence and all local outputs remain untouched. Raw data, arrays, weights, caches and full logs excluded. This is a pre-commit snapshot, not a claim of a clean working tree.
+Only paper2 remote may be pushed. No raw arrays/weights/logs.

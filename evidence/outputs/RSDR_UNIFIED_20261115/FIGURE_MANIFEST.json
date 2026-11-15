@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-15T12:10:01.799803+00:00",
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "script_sha256": "3dfdc6719530b3028bf16197cfdbfea385ecfca5ece538735752db6cdb95d03e",
+  "purpose": "Provisional scientific review; journal requirements not specified.",
+  "formats": [
+    "PNG 180 dpi",
+    "PDF"
+  ],
+  "uncertainty": "4000 paired physical-parent bootstrap replicates, seed 20261114. Pointwise 95%, not simultaneous.",
+  "raw_arrays_local_only": true,
+  "figures": [
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.png",
+      "sha256": "77567605515960dde31ffbc52046b6b5c0679adf872c3898195c1865a25e2bf1",
+      "caption": "All listed conditions complete. No smoothing. Equal grid-cell weights within physical parent; 4000 parent bootstrap replicates, seed 20261114. Pointwise intervals, not simultaneous. Retention uses stratified parent bootstrap."
+    },
+    {
+      "file": "evidence/outputs/RSDR_UNIFIED_20261115/figures/main_repeat.pdf",
+      "sha256": "2efa89a97e6dfef1ec062425d1b97b58fb38f75f815335a698685d5759ebb8f3",
+      "caption": "All listed conditions complete. No smoothing. Equal grid-cell weights within physical parent; 4000 parent bootstrap replicates, seed 20261114. Pointwise intervals, not simultaneous. Retention uses stratified parent bootstrap."
+    }
+  ]
+}

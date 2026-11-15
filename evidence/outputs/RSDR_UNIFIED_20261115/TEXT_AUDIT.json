@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-15T12:13:44.479817+00:00",
+  "report_sha256": "246a56318f8fb92844b1133cbdff0ad0cf6c4b52352f0d500fe6444e7776f5d3",
+  "backup_sha256": "246a56318f8fb92844b1133cbdff0ad0cf6c4b52352f0d500fe6444e7776f5d3",
+  "mode": "Offline detect-only; formulas, values, code, paths and citations protected. No automatic cleanup.",
+  "chinese_scoring_limit": "English stylometry heuristic is not calibrated for Chinese; not an authorship or authenticity test.",
+  "exit_code": 0,
+  "stdout": "{\n  \"path\": \"G:\\\\Project Code\\\\ISRJ_222\\\\PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md\",\n  \"density_tier\": \"low\",\n  \"flagged_count\": 0,\n  \"flagged\": [],\n  \"stylometry\": {\n    \"path\": \"G:\\\\Project Code\\\\ISRJ_222\\\\PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md\",\n    \"word_count\": 994,\n    \"sentence_count\": 85,\n    \"burstiness_cv\": 0.783,\n    \"lexical_diversity\": 0.7522,\n    \"ai_ngram_density\": 0.0,\n    \"matched_markers\": [],\n    \"score\": 0.0625,\n    \"confidence_level\": \"CLEAN\",\n    \"density_tier\": \"low\",\n    \"status\": \"ok\",\n    \"findings\": [],\n    \"findings_confidence\": [],\n    \"notes\": []\n  }\n}\n",
+  "stderr": ""
+}

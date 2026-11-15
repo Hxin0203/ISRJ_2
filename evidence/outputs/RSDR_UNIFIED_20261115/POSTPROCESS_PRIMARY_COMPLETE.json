@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-11-15T12:10:02.958851+00:00",
+  "stage": "primary",
+  "conditions": 92,
+  "status": "PARTIAL_IN_PROGRESS",
+  "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+  "report_sha256": "0acc3d5b855c7d6e584fc2d69c816f2b611717da063b43fe611f049b5c7fa584",
+  "aggregate_sha256": "2f303cc5277206b458f188331df9fb3efe1e7e536b06a1d2c55737f3610f684b",
+  "figure_manifest_sha256": "9dbce9aeb5b96e787ef9d002f18d2319482a2212e705438830e42dd0efc34e79"
+}

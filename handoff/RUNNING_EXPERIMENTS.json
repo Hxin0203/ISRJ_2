@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-11-15T11:21:55.084433+00:00",
+  "checked_utc": "2026-11-15T12:16:01.412822+00:00",
   "training_status": "COMPLETE_8_SEEDS_256_EPOCHS_64_CHECKPOINTS",
   "dev_status": "COMPLETE_V4_64_CHECKPOINTS",
   "test_runs": [
@@ -170,8 +170,13 @@
   },
   "old_gate_arrays_accessed": false,
   "frozen_model_sha256": "7e05f594c26a9c24061216ab4c9cc1e9f264269fb9cbca5e10c27b7690e53cf3",
-  "note": "All expected frozen TEST receipts and seven controller stages are complete. No live experiment process. Historical failures retained. No new experiment launched.",
-  "active_experiment_processes": [],
+  "note": "Original training/TEST pipeline complete. Additive frozen RSDR benchmark status is reported separately; no model reselection.",
+  "active_experiment_processes": [
+    {
+      "pid": 3592,
+      "name": "frozen RSDR-Net benchmark"
+    }
+  ],
   "training_pipeline": {
     "stage": "PIPELINE_COMPLETE",
     "convergence_manifest_sha256": "a88dd9000f7c97a1539eef7a551723d73fb734c688245c97e83a70002671e184",
@@ -218,9 +223,84 @@
   },
   "expanded_training_scope": "Eight-seed epoch-256 evaluations are DEV, not new independent TEST confirmation.",
   "uncompleted_scientific_work": [
-    "Matched RSDR-Net comparison",
+    "Complete and audit additive RSDR benchmark",
     "Independent confirmation plan for expanded models",
     "Baseline bibliography/discrete implementation verification",
     "Final manuscript"
-  ]
+  ],
+  "rsdr_unified": {
+    "checked_utc": "2026-11-15T12:16:01.372903+00:00",
+    "status": "RUNNING",
+    "pid": 3592,
+    "complete_conditions": 136,
+    "expected_conditions": 564,
+    "complete_parent_evaluations": 34832,
+    "expected_parent_evaluations": 231216,
+    "coverage": {
+      "main": {
+        "complete": 134,
+        "expected": 168
+      },
+      "coherent": {
+        "complete": 1,
+        "expected": 3
+      },
+      "retention": {
+        "complete": 1,
+        "expected": 42
+      },
+      "sliceA": {
+        "complete": 0,
+        "expected": 21
+      },
+      "sliceB": {
+        "complete": 0,
+        "expected": 20
+      },
+      "pd": {
+        "complete": 0,
+        "expected": 310
+      }
+    },
+    "primary_complete": true,
+    "remaining_hours_by_backend_estimate": {
+      "rsdr-b/cuda:0": 2.797652095434093,
+      "rsdr-b/cuda:1": 2.6379006368084283,
+      "local": 1.480139015103527
+    },
+    "eta_note": "Recent eight completed cells per backend; engineering estimate, not a deadline.",
+    "heartbeats": {
+      "local": {
+        "updated_utc": "2026-11-15T12:16:00.079845+00:00",
+        "pid": 3592,
+        "suite": "retention",
+        "index": 3,
+        "parents_finished": 320,
+        "parents_total": 512,
+        "backend": "local",
+        "age_seconds": 1.292818
+      },
+      "rsdr-b/cuda:0": {
+        "updated_utc": "2026-11-15T12:15:59.825929+00:00",
+        "pid": 3592,
+        "suite": "main",
+        "index": 115,
+        "parents_finished": 176,
+        "parents_total": 256,
+        "backend": "rsdr-b/cuda:0",
+        "age_seconds": 1.546851
+      },
+      "rsdr-b/cuda:1": {
+        "updated_utc": "2026-11-15T12:16:00.226084+00:00",
+        "pid": 3592,
+        "suite": "main",
+        "index": 119,
+        "parents_finished": 256,
+        "parents_total": 256,
+        "backend": "rsdr-b/cuda:1",
+        "age_seconds": 1.146795
+      }
+    },
+    "failures": []
+  }
 }

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-15T11:41:14.421389+00:00",
+  "role": "ENGINEERING_ONLY",
+  "engineering_conditions": [
+    {
+      "jam_type": "repeat",
+      "snr_db": -20,
+      "jsr_db": 35
+    },
+    {
+      "jam_type": "direct",
+      "snr_db": 0,
+      "jsr_db": 10
+    }
+  ],
+  "historical_reference_source_sha256": "eef44e12dc18b5eec73d3ada4f81fa859d999343b781837bbac3ee4267fc7a57",
+  "cross_host_native_max_abs_waveform_difference": 6.726109131705016e-05,
+  "batch_2_vs_128_max_abs_waveform_difference": 6.057145947124809e-05,
+  "batch_independence_max_abs_difference": 2.3216756744659506e-05,
+  "absolute_tolerance": 0.0002,
+  "relative_tolerance": 2e-05,
+  "metric_max_absolute_differences": {
+    "u_nmse": 5.769309543990353e-09,
+    "damage": 2.695004217012631e-08,
+    "background_nmse": 2.0345370353724856e-09,
+    "h0_nmse": 6.807187192398034e-09,
+    "noise_nmse": 5.512730370765384e-12,
+    "no_jammer_pooled_nmse": 3.887867444218179e-09,
+    "amplitude": 4.647822826608916e-08,
+    "phase_deg": 2.2737735178024465e-07,
+    "sjrif_db": 3.828470269695572e-07,
+    "false_peak_suppression_db": 7.959005383639806e-07,
+    "pd": 0,
+    "pd_no_jammer": 0,
+    "cell_pfa_noise": 0,
+    "frame_pfa_noise": 0,
+    "cell_pfa_jammer": 0,
+    "frame_pfa_jammer": 0
+  },
+  "batch2_seconds": 1.1771522000199184,
+  "batch128_seconds": 0.1905385999707505,
+  "native_torch_version": "2.9.1+cu128",
+  "local_torch_version": "2.9.1+cu126",
+  "no_historical_arrays_read": true,
+  "no_remote_files_written": true
+}

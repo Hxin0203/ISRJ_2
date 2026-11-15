@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-11-15T11:53:28.744896+00:00",
+  "paper2_parameters": 112756,
+  "rsdr_expert_parameters": [
+    1480167,
+    1523591
+  ],
+  "rsdr_router_parameters": [
+    4642,
+    4642,
+    4642
+  ],
+  "rsdr_gate_parameters": 193,
+  "rsdr_total_parameters": 3017877,
+  "note": "Learnable parameter counts of deployed inference graphs; fixed signal buffers excluded. Not an equal-hardware latency benchmark.",
+  "assets_verified_sha256": {
+    "u1_c32.pt": "7ae9f62434d058a57b08cc0f8c549bcad3e3c86533e87cebbfee9871195040d7",
+    "u2_32.pt": "28086570dbe946870a491b5ae92931096b6dedb6993d7e6e383e919b4956fa38",
+    "gate_e32_step16384.pt": "3a8f170f07d52149d08b2b21001e06760547a4f7d8f6e40eb907060a0624d3d1",
+    "FIT.json": "85c07a6d7ca73c6d68b8fa93b68f7694ede50821692c7cccb63efef1d1a6218b",
+    "router1.pt": "e8b70c4ca60bb6748bc93e69e8fa0d201a753407b7b5c7c477f71c1c6dc13fea",
+    "router2.pt": "9f1b502d8435a0191db5cc588c1e97109fa7ca1b4b5b62dc0a554d8dcda2b139",
+    "router3.pt": "11f2a26e2e7a6f50079671f3b1d2f15e2322aa301b6c2bc2aeb0e0a684ad1c26"
+  }
+}

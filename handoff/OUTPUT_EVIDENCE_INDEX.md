@@ -1,24 +1,11 @@
 # Output evidence index
 
-Progress refreshed on 2026-11-15 after controller completion at 2026-11-15T04:29:14.525505+00:00. No active project training/test process.
+Updated 2026-11-15T12:16:01.809431+00:00. Direct RSDR comparison is RUNNING: 136/564 saved conditions; audited aggregate currently 92. Primary complete: True. The aggregate/report can trail live saved progress while auditing.
 
-Current progress report: `PAPER2_PROGRESS_CHECK_20261115.md`.
+Current comparison report: `PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md`. In `evidence/outputs/RSDR_UNIFIED_20261115/`: `RUN_STATUS.json`, `PAIRED_RESULTS.json`, `CONDITION_COMPARISONS.csv`, `RESULT_INTEGRITY_AUDIT.json`, `MODEL_IDENTITIES.json`, `ADAPTER_PARITY.json`, `EXTENDED_PARITY.json`, `ENGINEERING_EVENTS.json`, `FIGURE_MANIFEST.json`, `CURVE_SOURCE_SUMMARIES.csv`, `REPORT_RECEIPT.json`, `TEXT_AUDIT.json`, and completion milestone receipts as produced. No missing file represents a scientific zero. Freeze: `configs/rsdr_unified_20261115.json`.
 
-Eight-seed epoch-256 DEV: `evidence/outputs/CONVERGENCE_256_8SEED_20261114/CONVERGENCE_SUMMARY.json`, `DEV_METRICS_BY_CHECKPOINT.csv`, `TRAINING_LOSS_BY_EPOCH.csv`, and `MANIFEST.json` in the same directory. All 64 checkpoint evaluations complete. Original curves are retained; readable PNG/PDF exports and their provenance are in `evidence/outputs/PROGRESS_CHECK_20261115/`. Full new integrity audit: `INTEGRITY_AUDIT.json` in that directory.
+Original progress report: `PAPER2_PROGRESS_CHECK_20261115.md`; original method/selection report: `PAPER2_1103_PROGRESS_20261114.md`. Eight-seed epoch-256 DEV convergence: `evidence/outputs/CONVERGENCE_256_8SEED_20261114/`; readable review figures and verified training receipts: `evidence/outputs/PROGRESS_CHECK_20261115/`. These are distinct from frozen epoch-128 TEST and do not establish expanded-model independent TEST confirmation.
 
-Controller completion, stage history and training completion receipts: `evidence/outputs/paper2_long_pipeline_20261114/`. TEST pulse-compression, Doppler and scan figures are in its `test_figures/` directory, with `TEST_FIGURE_MANIFEST.json`. The frozen TEST uses seed 29 epoch 128; it is separate from the eight-seed DEV convergence results. A matched RSDR-Net comparison and new independent confirmation of the expanded models have not been produced.
+Original seven-stage controller and completion receipts: `evidence/outputs/paper2_long_pipeline_20261114/`; original TEST figures: its `test_figures/`. Original coverage and condition tables: `evidence/outputs/TEST_COVERAGE_1103.json` and `TEST_CONDITION_TABLE_1103.csv`. Original TEST complete at 2237 method-condition receipts / 103826 audited parent blocks. Original DEV/checkpoint verification: `evidence/outputs/paper2_1103_retry_20261114/`.
 
-Current TEST coverage: `evidence/outputs/TEST_COVERAGE_1103.json`; condition table: `evidence/outputs/TEST_CONDITION_TABLE_1103.csv` (only when results exist).
-
-DEV v4: `evidence/outputs/paper2_1103_retry_20261114/DEV_SUMMARY_v4.json`; checkpoint integrity: `CHECKPOINT_VERIFICATION.json`; selection table: `DEV_SELECTION_TABLE_v4.csv`.
-
-Local raw parent blocks and checkpoints are intentionally excluded. A missing condition result means not yet produced, never a fabricated scientific value. Earlier v2/v3 results are historical.
-
-| Suite | Expected conditions | Completed method counts |
-|---|---:|---|
-| main | 168 | model=168, keep=168, reference=168, max_tf=168, gmm_omp=168, bcs_oracle=168 |
-| pd | 310 | model=310, keep=310, reference=310 |
-| retention | 42 | model=42, keep=42, reference=42 |
-| coherent | 3 | model=3, keep=3, reference=3 |
-| sliceA | 21 | model=21, keep=21, reference=21, max_tf=21 |
-| sliceB | 20 | model=20, keep=20, reference=20, max_tf=20 |
+All raw arrays, datasets, model checkpoints, caches and full logs remain local under ignored `outputs/` or `data/`. Original failure history retained. Only the dedicated paper2 remote is authorized for this work.

@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-15T11:47:12.402154+00:00",
+  "role": "ENGINEERING_ONLY",
+  "parents": 16,
+  "condition": {
+    "jam_type": "repeat",
+    "snr_db": -10,
+    "jsr_db": 20
+  },
+  "pulse_batch": 256,
+  "selected_state_cache_max_abs_difference": 0.0,
+  "backends": [
+    {
+      "device": "cuda:0",
+      "ready": {
+        "status": "READY",
+        "device": "cuda:0",
+        "torch": "2.9.1+cu128"
+      },
+      "seconds_for_16_parents": 3.834133700001985,
+      "waveform_max_abs_difference": 1.4098985957389232e-05,
+      "metric_differences": {
+        "u_nmse": 5.57880582008341e-09,
+        "damage": 6.067279882671084e-08,
+        "background_nmse": 5.2755631391177005e-09,
+        "h0_nmse": 2.66228075832865e-10,
+        "noise_nmse": 1.3979809910026912e-11,
+        "no_jammer_pooled_nmse": 1.365587503984072e-10,
+        "amplitude": 1.6907277800015663e-08,
+        "phase_deg": 1.5673826589124307e-06,
+        "sjrif_db": 2.9341051543951835e-07,
+        "false_peak_suppression_db": 7.359374265547558e-07,
+        "pd": 0.0,
+        "pd_no_jammer": 0.0,
+        "cell_pfa_noise": 0.0,
+        "frame_pfa_noise": 0.0,
+        "cell_pfa_jammer": 0.0,
+        "frame_pfa_jammer": 0.0
+      }
+    },
+    {
+      "device": "cuda:1",
+      "ready": {
+        "status": "READY",
+        "device": "cuda:1",
+        "torch": "2.9.1+cu128"
+      },
+      "seconds_for_16_parents": 3.5419337999774143,
+      "waveform_max_abs_difference": 1.4098985957389232e-05,
+      "metric_differences": {
+        "u_nmse": 5.57880582008341e-09,
+        "damage": 6.067279882671084e-08,
+        "background_nmse": 5.2755631391177005e-09,
+        "h0_nmse": 2.66228075832865e-10,
+        "noise_nmse": 1.3979809910026912e-11,
+        "no_jammer_pooled_nmse": 1.365587503984072e-10,
+        "amplitude": 1.6907277800015663e-08,
+        "phase_deg": 1.5673826589124307e-06,
+        "sjrif_db": 2.9341051543951835e-07,
+        "false_peak_suppression_db": 7.359374265547558e-07,
+        "pd": 0.0,
+        "pd_no_jammer": 0.0,
+        "cell_pfa_noise": 0.0,
+        "frame_pfa_noise": 0.0,
+        "cell_pfa_jammer": 0.0,
+        "frame_pfa_jammer": 0.0
+      }
+    }
+  ],
+  "absolute_tolerance": 0.0002,
+  "relative_tolerance": 2e-05,
+  "no_remote_files_written": true
+}

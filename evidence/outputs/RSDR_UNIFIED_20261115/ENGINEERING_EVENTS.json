@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "stage": "engineering validation persistence before TEST freeze",
+      "error": "TypeError: cannot pickle BufferedWriter instances",
+      "cause": "Archive writer lambda shadowed the native output array name.",
+      "resolution": "Renamed the stream argument, reran all native and batching parity checks successfully before comparison freeze.",
+      "scientific_result_discarded": false
+    }
+  ],
+  "no_training_or_test_selection_change": true
+}
