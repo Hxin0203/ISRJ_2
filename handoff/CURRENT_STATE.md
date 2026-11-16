@@ -1,6 +1,16 @@
 # Current state
 
-Server snapshot 2026-11-15T15:46:23.311350+00:00: TRAINING_QUEUE; job 1/15, unet seed 17, epoch 26. Independently SHA-verified saved epochs at 2026-11-15T15:46:24.456093+00:00: {'unet/seed_17': 26}.
+## Superseding snapshot — 2026-11-16 14:52 UTC
+
+- The U-Net/ablation server queue is complete: 15 runs × 256 epochs; five variants have confirmation comparisons. Completion receipt: `evidence/outputs/unet_ablation_3seed_256_20261115/PIPELINE_COMPLETE.json`.
+- Max-TF (9 candidates) and GMM-OMP (8 candidates) DEV pilots all failed the predeclared gate. No full-DEV rerun or independent confirmation was opened. BCS GCV selected `λ=0.001`; `λ=0.01` sensitivity remains a small DEV-only oracle comparison.
+- A synthetic phase-origin diagnostic showed that the zero-origin and centered dechirp references differ by a constant phase and an exact 450-bin DFT shift under project parameters. The OMP equivariance test passes; this does not justify a revised baseline or another DEV run. See `evidence/outputs/GMM_OMP_PHASE_ORIGIN_DIAGNOSTIC_20261116.md` and `tests/test_gmm_phase_origin_equivalence.py`.
+- Server B GPU 1 was idle at the latest check. The Python processes present belonged to unrelated projects. No local or server long training was started in this continuation.
+- The next experiment-design task is source-equation and evaluation-target audit for the classical baselines. Only if it identifies a substantive correction should a new, versioned DEV-only calibration plan be frozen. No confirmation data may be used for parameter repair.
+
+The snapshot below is historical and is superseded by the dated status above.
+
+Server snapshot 2026-11-15T16:52:41.103691+00:00: TRAINING_QUEUE; job 1/15, unet seed 17, epoch 243. Independently SHA-verified saved epochs at 2026-11-15T16:52:45.331611+00:00: {'unet/seed_17': 242}.
 
 U-Net seeds 17/29/41 run first, each 256 epochs; then no_dechirp, no_rms, no_pc and no_damage, each with the same three seeds and budget. 15 new runs in total. U-Net has exactly 59,714 active/registered parameters; the full model has 59,714 active plus 53,042 unused registered parameters. The three full epoch-256 checkpoints are reused and their DEV evaluations were rerun on the server. Every new epoch retains a complete recovery archive; every 32 epochs retains a milestone and DEV result. After all training, generate 512 fresh confirmation parents and compare all six models at fixed epoch 256 on the same observations. No best-seed/epoch selection. Report u_nmse, damage, SJRIF, Pd and empirical Pfa. Parent bootstrap intervals are conditional on the three trained seeds; seed SD is separate. Historical full training environment differs from the new server training; do not claim identical trajectories.
 
