@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "native_objects": 116,
+  "semantic_groups": 4,
+  "native_shapes_including_groups": 120,
+  "editable_text_objects": 64,
+  "glued_connection_endpoints": 57,
+  "embedded_media": [],
+  "pdf_raster_images": 0,
+  "pdf_fonts": [
+    {
+      "name": "BCDEEE+TimesNewRomanPS-BoldMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDFEE+TimesNewRomanPSMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDGEE+TimesNewRomanPS-ItalicMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDHEE+CambriaMath",
+      "embedded": true
+    },
+    {
+      "name": "BCDIEE+TimesNewRomanPS-ItalicMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDJEE+TimesNewRomanPS-BoldMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDKEE+TimesNewRomanPSMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDLEE+TimesNewRomanPSMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDMEE+TimesNewRomanPS-ItalicMT",
+      "embedded": true
+    }
+  ],
+  "png_dpi": 300,
+  "protected_inputs_unchanged": true,
+  "all_children_inside_panels": true,
+  "inference_uses_only_observation": true,
+  "training_panel_marked": true,
+  "waveform_icons": "Synthetic schematic paths; not experimental predictions",
+  "files": {
+    "CorrectionNet_editable.vsdx": {
+      "bytes": 62713,
+      "sha256": "8616f34baac537851c92faf6e7ce6af9374b9897ffcc26d5ac5c65e29c5f2cd4"
+    },
+    "CorrectionNet_editable.pdf": {
+      "bytes": 217143,
+      "sha256": "4382f28b01ba5564e082db9cbc0466a4fdaffbb275838f0a4af21b56c8031610"
+    },
+    "CorrectionNet_editable.svg": {
+      "bytes": 71256,
+      "sha256": "59b888732459aed64ab33c79a9293b5e4c7a057959e9a86c72ddc4c6561cdcec"
+    },
+    "CorrectionNet_editable.png": {
+      "bytes": 681596,
+      "sha256": "3637cb9ad7818825010892529964479d895ad120ec3f5d60c9ca6286e73d3d4e"
+    }
+  }
+}

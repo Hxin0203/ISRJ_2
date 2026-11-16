@@ -1,0 +1,10 @@
+{
+  "source": "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv",
+  "source_sha256": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52",
+  "conditions": 310,
+  "independent_parents": 512,
+  "uncertainty": "Descriptive condition means and paired point differences; no significance claim",
+  "source_transform": "Select dense grid, multiply probabilities by 100; no smoothing or interpolation",
+  "color_scales": "Absolute panels share 0-100%; signed differences use separate symmetric limits per metric",
+  "conclusion": "Detection and jammed-background false alarms must be inspected together across conditions"
+}

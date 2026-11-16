@@ -15,7 +15,7 @@ SKILL=Path('C:/Users/admin/.codex/skills/clean-user-facing-text/scripts/inspect_
 
 def protected(text):
     spans=[]
-    pattern=r'\\\[[\s\S]*?\\\]|\$[^$\n]+\$|```[\s\S]*?```|`[^`]+`|https?://[^\s)]+|(?m:^\[[0-9]+\][^\n]*$)|\[[0-9][0-9,–— \-]*\]|(?m:^>[^\n]*$)|(?m:^\|[^\n]*$)'
+    pattern=r'\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$\$[\s\S]*?\$\$|\$[^$\n]+\$|```[\s\S]*?```|`[^`]+`|https?://[^\s)]+|(?m:^\[[0-9]+\][^\n]*$)|\[[0-9][0-9,–— \-]*\]|(?m:^>[^\n]*$)|(?m:^\|[^\n]*$)'
     for m in re.finditer(pattern,text):
         spans.append((m.start(),m.end(),m.group()))
     # Preserve numerical values and units by leaving them outside cleanup scope.
@@ -26,6 +26,8 @@ def protected(text):
 if __name__=='__main__':
     sys.stdout.reconfigure(encoding='utf-8')
     tag=sys.argv[1] if len(sys.argv)>1 else 'review'
+    if len(sys.argv)>2:
+        SOURCE=Path(sys.argv[2]).resolve()
     data=SOURCE.read_bytes(); text=data.decode('utf-8');sha=hashlib.sha256(data).hexdigest()
     (ROOT/'backups').mkdir(exist_ok=True)
     backup=ROOT/'backups'/f'{tag}_{sha[:12]}.md'

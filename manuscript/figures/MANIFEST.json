@@ -1,26 +1,133 @@
 {
-  "purpose": "Manuscript figures from frozen aggregate evidence; no new experiments",
+  "purpose": "Final manuscript figures; frozen evidence and schematic architecture; no new experiments",
   "sources": {
-    "evidence/outputs/TEST_CONDITION_TABLE_1103.csv": "db2146c8936350a2b2bb545eb7bc0105e0e78be95f41ea96a264c04f0cb2808a",
-    "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52",
-    "evidence/outputs/RSDR_UNIFIED_20261115/PAIRED_RESULTS.json": "6184735dd2d97ae5efbac62059d8a42135a2d6a486935da87057044b456b80da",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
     "evidence/outputs/CONVERGENCE_256_8SEED_20261114/TRAINING_LOSS_BY_EPOCH.csv": "5c0080e20147d4f49ecb4b05fac854932f6faeadcbea2562874016e663255ebf",
     "evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_METRICS_BY_CHECKPOINT.csv": "6e59ed05673be28173f15096bf7c7f03b7331849f93faf6807d5958f4f4c99f1",
+    "evidence/outputs/TEST_CONDITION_TABLE_1103.csv": "db2146c8936350a2b2bb545eb7bc0105e0e78be95f41ea96a264c04f0cb2808a",
+    "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52",
     "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71",
     "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247"
   },
   "figures": {
-    "manuscript/figures/fig01_architecture.png": "26862e46936343fdcd937c5b678273777842782ae21c7eb8879ee2faf942369f",
-    "manuscript/figures/fig01_architecture.svg": "eb31c8180347247f1630ece5ff1854c905dadc3e18df45133355581a8f869ed4",
-    "manuscript/figures/fig02_convergence.png": "8d9b095cbfd8815b4263d9d05850b052c61c9c5d7898fb1c04c2655fd135118b",
-    "manuscript/figures/fig02_convergence.svg": "2316e68450fd8ee6e2f27f6311c5c7b36a999a9449f054a5e5067898743b466e",
-    "manuscript/figures/fig03_repeat_jsr20.png": "c25e90cd2461e8ff07b884e1730d342d4004aedd7d3c3ecb9cadb3f1cc1729ec",
-    "manuscript/figures/fig03_repeat_jsr20.svg": "359ec5e6fc5e9f8cbc1efd1b66d8c1a28d6ab0ee6aea8a4cbfd87a50afa11d04",
-    "manuscript/figures/fig04_dense_jsr20.png": "1e54d62d05f26e097d5cf55d9be9445791a9499e87ddc54623eb8e7a74509112",
-    "manuscript/figures/fig04_dense_jsr20.svg": "2e13e7e5259057454f0792f325c5723c5165a011e9e10a84afa58a70fc643926",
+    "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.vsdx": "8616f34baac537851c92faf6e7ce6af9374b9897ffcc26d5ac5c65e29c5f2cd4",
+    "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.pdf": "4382f28b01ba5564e082db9cbc0466a4fdaffbb275838f0a4af21b56c8031610",
+    "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.svg": "59b888732459aed64ab33c79a9293b5e4c7a057959e9a86c72ddc4c6561cdcec",
+    "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.png": "3637cb9ad7818825010892529964479d895ad120ec3f5d60c9ca6286e73d3d4e",
+    "manuscript/figures/fig02_convergence.pdf": "98a9cce95579ea385a1dfe79cd5fd62235748f432297d7d13effe57a1589e510",
+    "manuscript/figures/fig02_convergence.svg": "2fdb8e8612a0d8d1f88e2a99d7934190af972af80dd1c19202d458704c223ac9",
+    "manuscript/figures/fig02_convergence.png": "f46b1f9928c98f662cf839262ce0f3dff8711e4cabb9b5284c84a1101f6ef15c",
+    "manuscript/figures/fig03_repeat_jsr20.pdf": "8064e5d01e1a8bb84b80c11bc703c45ae675de1dc0aa5e6e77693f272ed061b5",
+    "manuscript/figures/fig03_repeat_jsr20.svg": "f6b5295eae4edeed220174ec83e36c73f39c159fe7e2fa1a1225a6e3621aa180",
+    "manuscript/figures/fig03_repeat_jsr20.png": "d8859231b0db52301f5784beebda5a8d1b8ce79d61216f76f08fc3a16377cb0b",
+    "manuscript/figures/fig04_dense_jsr20.pdf": "ad926f013f83ec656158bb8322c216d9afca54ee90baccc309c9e2a276bd40cf",
+    "manuscript/figures/fig04_dense_jsr20.svg": "70a70cb35917da223684e4b48867dcb881c50b100e44b00b4cb8e8b94d78685d",
+    "manuscript/figures/fig04_dense_jsr20.png": "076a6f1ddde4e8c0266f69eb292d30328bd6c5d13f0f1c2083422bcc075ce3ca",
+    "manuscript/figures/fig08_full_detection_grid.pdf": "bd157c07e2127e4a6d0963697fb278bc6ff19ea5dba5a0060ae542f56d550347",
+    "manuscript/figures/fig08_full_detection_grid.svg": "af26b2b0fbe568b9847976a8ed079815b28e9fe790d6c361eda3e91ed8e4c64f",
+    "manuscript/figures/fig08_full_detection_grid.png": "8139a47e2b9cf8583d6df463968f278b3beb7654271b165fcece7d986755edce",
     "manuscript/figures/fig05_fixed_parent_pc_doppler.png": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71",
     "manuscript/figures/fig06_fixed_parent_rd.png": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247",
-    "manuscript/figures/fig07_width_snr_minus20_jsre35.png": "29ce504b2c6bf6a027945d0701926d1f8c9621a59cda3882a869f5cf1b50377e",
-    "manuscript/figures/fig07_width_snr_minus20_jsre35.svg": "65974530be1c0be3c56c21dcd45646fd2593afc90e5ce583ca4ea80918f87584"
-  }
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.pdf": "cc889fba236194ed0b7b04fd976f3862a205318731dc9790f98e5ab78e4df683",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.svg": "02bdb83f3507247a4667f325b6580544c4d56f7d549fdba7f87258a9089baf97",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.png": "bfd26b3c372a4060f6cb10165fc8ee5e8a95d5d675982a92819c91ce684a2d34"
+  },
+  "manuscript_mapping": [
+    {
+      "number": 1,
+      "files": [
+        "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.vsdx",
+        "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.pdf",
+        "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.svg",
+        "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.png"
+      ],
+      "sources": [
+        "paper2/network.py",
+        "paper2/vendor/legacy_model.py"
+      ],
+      "scope_and_limits": "网络及四状态监督；波形图标是示意，不是预测数据。VSDX 为原生可编辑对象。"
+    },
+    {
+      "number": 2,
+      "files": [
+        "manuscript/figures/fig02_convergence.pdf",
+        "manuscript/figures/fig02_convergence.svg",
+        "manuscript/figures/fig02_convergence.png"
+      ],
+      "sources": [
+        "evidence/outputs/CONVERGENCE_256_8SEED_20261114/TRAINING_LOSS_BY_EPOCH.csv",
+        "evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_METRICS_BY_CHECKPOINT.csv"
+      ],
+      "scope_and_limits": "8 seed、256 轮；2048 条逐轮记录、64 个 DEV 里程碑；阴影为 seed 样本标准差。"
+    },
+    {
+      "number": 3,
+      "files": [
+        "manuscript/figures/fig03_repeat_jsr20.pdf",
+        "manuscript/figures/fig03_repeat_jsr20.svg",
+        "manuscript/figures/fig03_repeat_jsr20.png"
+      ],
+      "sources": [
+        "evidence/outputs/TEST_CONDITION_TABLE_1103.csv"
+      ],
+      "scope_and_limits": "重复转发、JSR=20 dB，256 parent/条件；oracle 与不可观测参考单列。"
+    },
+    {
+      "number": 4,
+      "files": [
+        "manuscript/figures/fig04_dense_jsr20.pdf",
+        "manuscript/figures/fig04_dense_jsr20.svg",
+        "manuscript/figures/fig04_dense_jsr20.png"
+      ],
+      "sources": [
+        "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv"
+      ],
+      "scope_and_limits": "JSR=20 dB，SNR 步长 1 dB，512 parent/条件；仅为完整网格切片。"
+    },
+    {
+      "number": 5,
+      "files": [
+        "manuscript/figures/fig08_full_detection_grid.pdf",
+        "manuscript/figures/fig08_full_detection_grid.svg",
+        "manuscript/figures/fig08_full_detection_grid.png"
+      ],
+      "sources": [
+        "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv"
+      ],
+      "scope_and_limits": "全部 310 稠密条件，512 parent/条件；SNR/JSR 步长 1/5 dB，无插值；共同名义 CFAR。"
+    },
+    {
+      "number": 6,
+      "files": [
+        "manuscript/figures/fig05_fixed_parent_pc_doppler.png"
+      ],
+      "sources": [
+        "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png"
+      ],
+      "scope_and_limits": "固定 parent 0，SNR=0 dB、JSR=20 dB；冻结 PNG，非矢量，不估读重画。"
+    },
+    {
+      "number": 7,
+      "files": [
+        "manuscript/figures/fig06_fixed_parent_rd.png"
+      ],
+      "sources": [
+        "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png"
+      ],
+      "scope_and_limits": "同图 6 场景；仅冻结 PNG。横向四面板缩放后可能难读，需源数据重排或拆图。"
+    },
+    {
+      "number": 8,
+      "files": [
+        "manuscript/figures/fig07_width_snr_minus20_jsre35.pdf",
+        "manuscript/figures/fig07_width_snr_minus20_jsre35.svg",
+        "manuscript/figures/fig07_width_snr_minus20_jsre35.png"
+      ],
+      "sources": [
+        "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv"
+      ],
+      "scope_and_limits": "扫描 B，SNR=-20 dB、JSR_E=35 dB、M=2/4，128 parent/条件；宽度与周期一起变化。"
+    }
+  ]
 }

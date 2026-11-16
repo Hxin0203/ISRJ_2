@@ -1,495 +1,2334 @@
 [
   {
     "doi": "10.1007/s11432-007-2017-y",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:20.007653+00:00",
+    "queried_utc": "2026-11-16T06:53:25.251795+00:00",
+    "source": "https://api.crossref.org/works/10.1007/s11432-007-2017-y",
     "http_status": 200,
     "metadata": {
-      "title": "Mathematic principles of interrupted-sampling repeater jamming (ISRJ)",
-      "authors": [
-        "XueSong Wang",
-        "JianCheng Liu",
-        "WenMing Zhang",
-        "QiXiang Fu",
-        "Zhong Liu",
-        "XiaoXia Xie"
+      "title": [
+        "Mathematic principles of interrupted-sampling repeater jamming (ISRJ)"
       ],
-      "container_title": "Science in China Series F: Information Sciences",
+      "author": [
+        {
+          "given": "XueSong",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JianCheng",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "WenMing",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "QiXiang",
+          "family": "Fu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhong",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "XiaoXia",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science in China Series F: Information Sciences"
+      ],
       "volume": "50",
       "issue": "1",
-      "pages": "113-123",
-      "published_date": [
-        2007,
-        2
-      ],
+      "page": "113-123",
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            2
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            2
+          ]
+        ]
+      },
+      "DOI": "10.1007/s11432-007-2017-y",
+      "URL": "https://doi.org/10.1007/s11432-007-2017-y",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1049/iet-rsn.2018.5658",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:20.007899+00:00",
+    "queried_utc": "2026-11-16T06:53:25.252072+00:00",
+    "source": "https://api.crossref.org/works/10.1049/iet-rsn.2018.5658",
     "http_status": 200,
     "metadata": {
-      "title": "Band pass filter design against interrupted‐sampling repeater jamming based on time‐frequency analysis",
-      "authors": [
-        "Jian Chen",
-        "Wenzhen Wu",
-        "Shiyou Xu",
-        "Zengping Chen",
-        "Jiangwei Zou"
+      "title": [
+        "Band pass filter design against interrupted‐sampling repeater jamming based on time‐frequency analysis"
       ],
-      "container_title": "IET Radar, Sonar &amp; Navigation",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5947-5604",
+          "authenticated-orcid": false,
+          "given": "Jian",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National Key Laboratory of Science and Technology on ATR College of Electronic Science and Technology National University of Defense Technology Changsha 410073 People's Republic of China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenzhen",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Key Laboratory of Science and Technology on ATR College of Electronic Science and Technology National University of Defense Technology Changsha 410073 People's Republic of China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shiyou",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering Sun Yat‐sen University Guangzhou 510275 People's Republic of China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zengping",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering Sun Yat‐sen University Guangzhou 510275 People's Republic of China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiangwei",
+          "family": "Zou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Key Laboratory of Science and Technology on ATR College of Electronic Science and Technology National University of Defense Technology Changsha 410073 People's Republic of China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Radar, Sonar &amp; Navigation"
+      ],
       "volume": "13",
       "issue": "10",
-      "pages": "1646-1654",
-      "published_date": [
-        2019,
-        10
-      ],
+      "page": "1646-1654",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1049/iet-rsn.2018.5658",
+      "URL": "https://doi.org/10.1049/iet-rsn.2018.5658",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1016/j.dsp.2025.105132",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:20.008062+00:00",
+    "queried_utc": "2026-11-16T06:53:25.252254+00:00",
+    "source": "https://api.crossref.org/works/10.1016/j.dsp.2025.105132",
     "http_status": 200,
     "metadata": {
-      "title": "Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction",
-      "authors": [
-        "Zhenhua Liu",
-        "Wei Liang",
-        "Ning Fu",
-        "Liyan Qiao",
-        "Jun Zhang"
+      "title": [
+        "Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction"
       ],
-      "container_title": "Digital Signal Processing",
+      "author": [
+        {
+          "given": "Zhenhua",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wei",
+          "family": "Liang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0317-9697",
+          "authenticated-orcid": false,
+          "given": "Ning",
+          "family": "Fu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liyan",
+          "family": "Qiao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jun",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Signal Processing"
+      ],
       "volume": "161",
-      "issue": null,
-      "pages": "105132",
-      "published_date": [
-        2025,
-        6
-      ],
+      "page": "105132",
+      "article-number": "105132",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.dsp.2025.105132",
+      "URL": "https://doi.org/10.1016/j.dsp.2025.105132",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1049/rsn2.12300",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:20.008196+00:00",
-    "http_status": 429,
+    "queried_utc": "2026-11-16T06:53:25.252415+00:00",
+    "source": "https://api.crossref.org/works/10.1049/rsn2.12300",
+    "http_status": 200,
     "metadata": {
-      "title": null,
-      "authors": null,
-      "container_title": null,
-      "volume": null,
-      "issue": null,
-      "pages": null,
-      "published_date": null,
-      "type": null
+      "title": [
+        "A new scheme of target detection for pulse Doppler radar in interrupted sampling repeater jamming environment"
+      ],
+      "author": [
+        {
+          "given": "Yu",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National Laboratory of Radar Signal Processing Xidian University  Xi'an China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5064-5702",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Jiu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Laboratory of Radar Signal Processing Xidian University  Xi'an China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaojun",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Research Academy of Rocket  Xi'an China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongwei",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Laboratory of Radar Signal Processing Xidian University  Xi'an China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenqi",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Laboratory of Radar Signal Processing Xidian University  Xi'an China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Radar, Sonar &amp; Navigation"
+      ],
+      "volume": "16",
+      "issue": "11",
+      "page": "1836-1850",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            11
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            8
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1049/rsn2.12300",
+      "URL": "https://doi.org/10.1049/rsn2.12300",
+      "type": "journal-article"
     },
-    "status": "retrieval_failed_use_local_pdf_if_available"
+    "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1016/j.sigpro.2023.109329",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:20.008392+00:00",
+    "queried_utc": "2026-11-16T08:37:43.733567+00:00",
+    "source": "https://api.crossref.org/works/10.1016/j.sigpro.2023.109329",
     "http_status": 200,
     "metadata": {
-      "title": "MREDNet: A Multi-Residual Encoder-Decoder Network for recovering LFM interfered by intra-pulse retransmission interferences",
-      "authors": [
-        "Husheng Wang",
-        "Baixiao Chen",
-        "Qingzhi Ye",
-        "Fengsheng Huang"
+      "title": [
+        "MREDNet: A Multi-Residual Encoder-Decoder Network for recovering LFM interfered by intra-pulse retransmission interferences"
       ],
-      "container_title": "Signal Processing",
+      "author": [
+        {
+          "given": "Husheng",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7320-327X",
+          "authenticated-orcid": false,
+          "given": "Baixiao",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Qingzhi",
+          "family": "Ye",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Fengsheng",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Signal Processing"
+      ],
       "volume": "217",
-      "issue": null,
-      "pages": "109329",
-      "published_date": [
-        2024,
-        4
-      ],
+      "page": "109329",
+      "article-number": "109329",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            4
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.sigpro.2023.109329",
+      "URL": "https://doi.org/10.1016/j.sigpro.2023.109329",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.3390/rs14143445",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:21.144617+00:00",
+    "queried_utc": "2026-11-16T06:53:26.592200+00:00",
+    "source": "https://api.crossref.org/works/10.3390/rs14143445",
     "http_status": 200,
     "metadata": {
-      "title": "Interrupted-Sampling Repeater Jamming-Suppression Method Based on a Multi-Stages Multi-Domains Joint Anti-Jamming Depth Network",
-      "authors": [
-        "Xuesi He",
-        "Kuo Liao",
-        "Shupeng Peng",
-        "Zhenjie Tian",
-        "Jiyan Huang"
+      "title": [
+        "Interrupted-Sampling Repeater Jamming-Suppression Method Based on a Multi-Stages Multi-Domains Joint Anti-Jamming Depth Network"
       ],
-      "container_title": "Remote Sensing",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3426-7267",
+          "authenticated-orcid": false,
+          "given": "Xuesi",
+          "family": "He",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Information and Communication Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5558-227X",
+          "authenticated-orcid": false,
+          "given": "Kuo",
+          "family": "Liao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information and Communication Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shupeng",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information and Communication Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenjie",
+          "family": "Tian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information and Communication Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2204-4552",
+          "authenticated-orcid": false,
+          "given": "Jiyan",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information and Communication Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Remote Sensing"
+      ],
       "volume": "14",
       "issue": "14",
-      "pages": "3445",
-      "published_date": [
-        2022,
-        7,
-        18
-      ],
+      "page": "3445",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            18
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            18
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            18
+          ]
+        ]
+      },
+      "DOI": "10.3390/rs14143445",
+      "URL": "https://doi.org/10.3390/rs14143445",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1049/rsn2.12568",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:21.157259+00:00",
+    "queried_utc": "2026-11-16T06:53:26.641674+00:00",
+    "source": "https://api.crossref.org/works/10.1049/rsn2.12568",
     "http_status": 200,
     "metadata": {
-      "title": "Interrupted sampling repeater jamming suppression based on multiple extended complex‐valued convolutional auto‐encoders",
-      "authors": [
-        "Yunyun Meng",
-        "Lei Yu",
-        "Yinsheng Wei"
+      "title": [
+        "Interrupted sampling repeater jamming suppression based on multiple extended complex‐valued convolutional auto‐encoders"
       ],
-      "container_title": "IET Radar, Sonar &amp; Navigation",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7775-7288",
+          "authenticated-orcid": false,
+          "given": "Yunyun",
+          "family": "Meng",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Information Engineering Harbin Institute of Technology  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lei",
+          "family": "Yu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Information Engineering Harbin Institute of Technology  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yinsheng",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Information Engineering Harbin Institute of Technology  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Radar, Sonar &amp; Navigation"
+      ],
       "volume": "18",
       "issue": "8",
-      "pages": "1274-1290",
-      "published_date": [
-        2024,
-        4,
-        4
-      ],
+      "page": "1274-1290",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            8
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            4
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.1049/rsn2.12568",
+      "URL": "https://doi.org/10.1049/rsn2.12568",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.3390/s25133925",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:21.159203+00:00",
+    "queried_utc": "2026-11-16T06:53:26.683168+00:00",
+    "source": "https://api.crossref.org/works/10.3390/s25133925",
     "http_status": 200,
     "metadata": {
-      "title": "End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio",
-      "authors": [
-        "Gane Dai",
-        "Xiaoxuan Yang",
-        "Sha Huan",
-        "Ziyang Chen",
-        "Cong Peng",
-        "Yuanqin Xu"
+      "title": [
+        "End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio"
       ],
-      "container_title": "Sensors",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6970-6165",
+          "authenticated-orcid": false,
+          "given": "Gane",
+          "family": "Dai",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Electronic Information Engineering, Foshan University, Foshan 528225, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoxuan",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9883-7508",
+          "authenticated-orcid": false,
+          "given": "Sha",
+          "family": "Huan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ziyang",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cong",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuanqin",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sensors"
+      ],
       "volume": "25",
       "issue": "13",
-      "pages": "3925",
-      "published_date": [
-        2025,
-        6,
-        24
-      ],
+      "page": "3925",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            24
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            24
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            24
+          ]
+        ]
+      },
+      "DOI": "10.3390/s25133925",
+      "URL": "https://doi.org/10.3390/s25133925",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1016/j.dsp.2024.104850",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:21.161049+00:00",
-    "http_status": 429,
+    "queried_utc": "2026-11-16T06:53:26.713425+00:00",
+    "source": "https://api.crossref.org/works/10.1016/j.dsp.2024.104850",
+    "http_status": 200,
     "metadata": {
-      "title": null,
-      "authors": null,
-      "container_title": null,
-      "volume": null,
-      "issue": null,
-      "pages": null,
-      "published_date": null,
-      "type": null
+      "title": [
+        "Interpretable ADMM-CSNet for interrupted sampling repeater jamming suppression"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-1993-2297",
+          "authenticated-orcid": false,
+          "given": "Quan",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0390-4692",
+          "authenticated-orcid": false,
+          "given": "Shaopeng",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1907-3640",
+          "authenticated-orcid": false,
+          "given": "Lei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Digital Signal Processing"
+      ],
+      "volume": "156",
+      "page": "104850",
+      "article-number": "104850",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            1
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.dsp.2024.104850",
+      "URL": "https://doi.org/10.1016/j.dsp.2024.104850",
+      "type": "journal-article"
     },
-    "status": "retrieval_failed_use_local_pdf_if_available"
+    "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1109/TAES.2025.3646182",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:21.198112+00:00",
-    "http_status": 429,
+    "queried_utc": "2026-11-16T08:37:44.696232+00:00",
+    "source": "https://api.crossref.org/works/10.1109/TAES.2025.3646182",
+    "http_status": 200,
     "metadata": {
-      "title": null,
-      "authors": null,
-      "container_title": null,
-      "volume": null,
-      "issue": null,
-      "pages": null,
-      "published_date": null,
-      "type": null
+      "title": [
+        "Interrupted Sampling Repeater Jamming Suppression Using Complex-Valued FISTA-Net"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-1993-2297",
+          "authenticated-orcid": false,
+          "given": "Quan",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Sun Yat-sen University, Shenzhen, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1907-3640",
+          "authenticated-orcid": false,
+          "given": "Lei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sun Yat-sen University, Shenzhen, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Aerospace and Electronic Systems"
+      ],
+      "volume": "62",
+      "page": "3270-3286",
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "DOI": "10.1109/taes.2025.3646182",
+      "URL": "https://doi.org/10.1109/taes.2025.3646182",
+      "type": "journal-article"
     },
-    "status": "retrieval_failed_use_local_pdf_if_available"
+    "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1109/TAES.2025.3648973",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:22.245897+00:00",
+    "queried_utc": "2026-11-16T06:53:27.822019+00:00",
+    "source": "https://api.crossref.org/works/10.1109/TAES.2025.3648973",
     "http_status": 200,
     "metadata": {
-      "title": "ISRJ Suppression Using Joint Morphological Component Analysis and Signal Reconstruction Based on Jamming Parameters Estimation",
-      "authors": [
-        "Shaopeng Wei",
-        "Haoyu Han",
-        "Song Wei",
-        "Lei Zhang",
-        "Yejian Zhou"
+      "title": [
+        "ISRJ Suppression Using Joint Morphological Component Analysis and Signal Reconstruction Based on Jamming Parameters Estimation"
       ],
-      "container_title": "IEEE Transactions on Aerospace and Electronic Systems",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0390-4692",
+          "authenticated-orcid": false,
+          "given": "Shaopeng",
+          "family": "Wei",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Oceanography and Space Informatics, China University of Petroleum (East China), Qingdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-7618-4325",
+          "authenticated-orcid": false,
+          "given": "Haoyu",
+          "family": "Han",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Oceanography and Space Informatics, China University of Petroleum (East China), Qingdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Song",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Oceanography and Space Informatics, China University of Petroleum (East China), Qingdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1907-3640",
+          "authenticated-orcid": false,
+          "given": "Lei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electronics and Communication Engineering, Sun Yat-sen University (Shenzhen Campus), Shenzhen, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0152-4063",
+          "authenticated-orcid": false,
+          "given": "Yejian",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Information Engineering, Zhejiang University of Technology, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Aerospace and Electronic Systems"
+      ],
       "volume": "62",
-      "issue": null,
-      "pages": "3773-3797",
-      "published_date": [
-        2026
-      ],
+      "page": "3773-3797",
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "DOI": "10.1109/taes.2025.3648973",
+      "URL": "https://doi.org/10.1109/taes.2025.3648973",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1109/TNNLS.2026.3736439",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:22.253218+00:00",
+    "queried_utc": "2026-11-16T06:53:27.937226+00:00",
+    "source": "https://api.crossref.org/works/10.1109/TNNLS.2026.3736439",
     "http_status": 200,
     "metadata": {
-      "title": "Interrupted Sampling Repeater Jamming Suppression for Wideband Radar With MCA-ADMM-Net",
-      "authors": [
-        "Shaopeng Wei",
-        "Haoyu Han",
-        "Haonan Zhang",
-        "Song Wei",
-        "Yejian Zhou",
-        "Lei Zhang"
+      "title": [
+        "Interrupted Sampling Repeater Jamming Suppression for Wideband Radar With MCA-ADMM-Net"
       ],
-      "container_title": "IEEE Transactions on Neural Networks and Learning Systems",
-      "volume": null,
-      "issue": null,
-      "pages": "1-15",
-      "published_date": [
-        2026
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0390-4692",
+          "authenticated-orcid": false,
+          "given": "Shaopeng",
+          "family": "Wei",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "China University of Petroleum (East China)",
+              "place": [
+                "Qingdao, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-7618-4325",
+          "authenticated-orcid": false,
+          "given": "Haoyu",
+          "family": "Han",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "China University of Petroleum (East China)",
+              "place": [
+                "Qingdao, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-6187-4168",
+          "authenticated-orcid": false,
+          "given": "Haonan",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "China Research Institute of Radiowave Propagation",
+              "place": [
+                "Qingdao, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1335-1446",
+          "authenticated-orcid": false,
+          "given": "Song",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "China University of Petroleum (East China)",
+              "place": [
+                "Qingdao, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0152-4063",
+          "authenticated-orcid": false,
+          "given": "Yejian",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Zhejiang University of Technology",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1907-3640",
+          "authenticated-orcid": false,
+          "given": "Lei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sun Yat-sen University",
+              "place": [
+                "Guangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
       ],
+      "container-title": [
+        "IEEE Transactions on Neural Networks and Learning Systems"
+      ],
+      "page": "1-15",
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "DOI": "10.1109/tnnls.2026.3736439",
+      "URL": "https://doi.org/10.1109/tnnls.2026.3736439",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1109/LSP.2026.3726844",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:22.265424+00:00",
+    "queried_utc": "2026-11-16T06:53:27.960132+00:00",
+    "source": "https://api.crossref.org/works/10.1109/LSP.2026.3726844",
     "http_status": 200,
     "metadata": {
-      "title": "Structure-Informed Deep Filtering for Radar HRRP ISRJ Mitigation",
-      "authors": [
-        "Mei Liu",
-        "Xunzhang Gao",
-        "Xiangfeng Qiu",
-        "Yunfei Zhao"
+      "title": [
+        "Structure-Informed Deep Filtering for Radar HRRP ISRJ Mitigation"
       ],
-      "container_title": "IEEE Signal Processing Letters",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-9535-0182",
+          "authenticated-orcid": false,
+          "given": "Mei",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National University of Defense Technology",
+              "place": [
+                "Changsha, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5875-2721",
+          "authenticated-orcid": false,
+          "given": "Xunzhang",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National University of Defense Technology",
+              "place": [
+                "Changsha, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2770-9891",
+          "authenticated-orcid": false,
+          "given": "Xiangfeng",
+          "family": "Qiu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National University of Defense Technology",
+              "place": [
+                "Changsha, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yunfei",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National University of Defense Technology",
+              "place": [
+                "Changsha, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Signal Processing Letters"
+      ],
       "volume": "33",
-      "issue": null,
-      "pages": "3601-3605",
-      "published_date": [
-        2026
-      ],
+      "page": "3601-3605",
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "DOI": "10.1109/lsp.2026.3726844",
+      "URL": "https://doi.org/10.1109/lsp.2026.3726844",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1049/rsn2.70251",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:22.267483+00:00",
-    "http_status": 429,
+    "queried_utc": "2026-11-16T06:53:28.012833+00:00",
+    "source": "https://api.crossref.org/works/10.1049/rsn2.70251",
+    "http_status": 200,
     "metadata": {
-      "title": null,
-      "authors": null,
-      "container_title": null,
-      "volume": null,
-      "issue": null,
-      "pages": null,
-      "published_date": null,
-      "type": null
+      "title": [
+        "Interrupted Sampling Repeater Jamming Suppression Based on Point‐Wise Temporal Classification and Sparse Signal Reconstruction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-6533-0926",
+          "authenticated-orcid": false,
+          "given": "Chen",
+          "family": "Lei",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wang",
+          "family": "Ke",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pan",
+          "family": "Xiaoyi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gu",
+          "family": "Zhaoyu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiao",
+          "family": "Shunping",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Radar, Sonar &amp; Navigation"
+      ],
+      "volume": "20",
+      "issue": "1",
+      "article-number": "e70251",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            14
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1049/rsn2.70251",
+      "URL": "https://doi.org/10.1049/rsn2.70251",
+      "type": "journal-article"
     },
-    "status": "retrieval_failed_use_local_pdf_if_available"
+    "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1007/978-3-319-24574-4_28",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:22.271259+00:00",
+    "queried_utc": "2026-11-16T06:53:28.032939+00:00",
+    "source": "https://api.crossref.org/works/10.1007/978-3-319-24574-4_28",
     "http_status": 200,
     "metadata": {
-      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
-      "authors": [
-        "Olaf Ronneberger",
-        "Philipp Fischer",
-        "Thomas Brox"
+      "title": [
+        "U-Net: Convolutional Networks for Biomedical Image Segmentation"
       ],
-      "container_title": "Lecture Notes in Computer Science",
-      "volume": null,
-      "issue": null,
-      "pages": "234-241",
-      "published_date": [
-        2015
+      "author": [
+        {
+          "given": "Olaf",
+          "family": "Ronneberger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philipp",
+          "family": "Fischer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Brox",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
       ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Medical Image Computing and Computer-Assisted Intervention – MICCAI 2015"
+      ],
+      "page": "234-241",
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            18
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "DOI": "10.1007/978-3-319-24574-4_28",
+      "URL": "https://doi.org/10.1007/978-3-319-24574-4_28",
       "type": "book-chapter"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1109/CVPR.2016.90",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:23.353080+00:00",
+    "queried_utc": "2026-11-16T06:53:28.933441+00:00",
+    "source": "https://api.crossref.org/works/10.1109/CVPR.2016.90",
     "http_status": 200,
     "metadata": {
-      "title": "Deep Residual Learning for Image Recognition",
-      "authors": [
-        "Kaiming He",
-        "Xiangyu Zhang",
-        "Shaoqing Ren",
-        "Jian Sun"
+      "title": [
+        "Deep Residual Learning for Image Recognition"
       ],
-      "container_title": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
-      "volume": null,
-      "issue": null,
-      "pages": "770-778",
-      "published_date": [
-        2016,
-        6
+      "author": [
+        {
+          "given": "Kaiming",
+          "family": "He",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiangyu",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shaoqing",
+          "family": "Ren",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jian",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
       ],
+      "container-title": [
+        "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+      ],
+      "page": "770-778",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "DOI": "10.1109/cvpr.2016.90",
+      "URL": "https://doi.org/10.1109/cvpr.2016.90",
       "type": "proceedings-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1109/TIP.2017.2662206",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:23.355420+00:00",
+    "queried_utc": "2026-11-16T06:53:29.170141+00:00",
+    "source": "https://api.crossref.org/works/10.1109/TIP.2017.2662206",
     "http_status": 200,
     "metadata": {
-      "title": "Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising",
-      "authors": [
-        "Kai Zhang",
-        "Wangmeng Zuo",
-        "Yunjin Chen",
-        "Deyu Meng",
-        "Lei Zhang"
+      "title": [
+        "Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising"
       ],
-      "container_title": "IEEE Transactions on Image Processing",
+      "author": [
+        {
+          "given": "Kai",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3330-783X",
+          "authenticated-orcid": false,
+          "given": "Wangmeng",
+          "family": "Zuo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yunjin",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1294-8283",
+          "authenticated-orcid": false,
+          "given": "Deyu",
+          "family": "Meng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2078-4215",
+          "authenticated-orcid": false,
+          "given": "Lei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Image Processing"
+      ],
       "volume": "26",
       "issue": "7",
-      "pages": "3142-3155",
-      "published_date": [
-        2017,
-        7
-      ],
-      "type": "journal-article"
-    },
-    "status": "metadata_retrieved_not_author_verified"
-  },
-  {
-    "doi": "10.1214/aos/1176344552",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:23.370942+00:00",
-    "http_status": 200,
-    "metadata": {
-      "title": "Bootstrap Methods: Another Look at the Jackknife",
-      "authors": [
-        "B. Efron"
-      ],
-      "container_title": "The Annals of Statistics",
-      "volume": "7",
-      "issue": "1",
-      "pages": "1-26",
-      "published_date": [
-        1979,
-        1,
-        1
-      ],
-      "type": "journal-article"
-    },
-    "status": "metadata_retrieved_not_author_verified"
-  },
-  {
-    "doi": "10.1109/TAES.1986.310745",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:12:23.413766+00:00",
-    "http_status": 200,
-    "metadata": {
-      "title": "An Adaptive Detection Algorithm",
-      "authors": [
-        "E.J. Kelly"
-      ],
-      "container_title": "IEEE Transactions on Aerospace and Electronic Systems",
-      "volume": "AES-22",
-      "issue": "2",
-      "pages": "115-127",
-      "published_date": [
-        1986,
-        3
-      ],
-      "type": "journal-article"
-    },
-    "status": "metadata_retrieved_not_author_verified"
-  },
-  {
-    "doi": "10.3390/s19153279",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:17:45.589350+00:00",
-    "http_status": 200,
-    "metadata": {
-      "title": "Bayesian Compress Sensing Based Countermeasure Scheme Against the Interrupted Sampling Repeater Jamming",
-      "authors": [
-        "Sha Huan",
-        "Gane Dai",
-        "Gaoyong Luo",
-        "Shan Ai"
-      ],
-      "container_title": "Sensors",
-      "volume": "19",
-      "issue": "15",
-      "pages": "3279",
-      "published_date": [
-        2019,
-        7,
-        25
-      ],
+      "page": "3142-3155",
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            7
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            7
+          ]
+        ]
+      },
+      "DOI": "10.1109/tip.2017.2662206",
+      "URL": "https://doi.org/10.1109/tip.2017.2662206",
       "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   },
   {
     "doi": "10.1007/978-3-030-01261-8_1",
-    "provider": "Crossref",
-    "queried_utc": "2026-11-15T16:17:46.493434+00:00",
+    "queried_utc": "2026-11-16T06:53:29.209493+00:00",
+    "source": "https://api.crossref.org/works/10.1007/978-3-030-01261-8_1",
     "http_status": 200,
     "metadata": {
-      "title": "Group Normalization",
-      "authors": [
-        "Yuxin Wu",
-        "Kaiming He"
+      "title": [
+        "Group Normalization"
       ],
-      "container_title": "Lecture Notes in Computer Science",
-      "volume": null,
-      "issue": null,
-      "pages": "3-19",
-      "published_date": [
-        2018
+      "author": [
+        {
+          "given": "Yuxin",
+          "family": "Wu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kaiming",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
       ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Vision – ECCV 2018"
+      ],
+      "page": "3-19",
+      "published": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            6
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "DOI": "10.1007/978-3-030-01261-8_1",
+      "URL": "https://doi.org/10.1007/978-3-030-01261-8_1",
       "type": "book-chapter"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1214/aos/1176344552",
+    "queried_utc": "2026-11-16T06:53:29.255735+00:00",
+    "source": "https://api.crossref.org/works/10.1214/aos/1176344552",
+    "http_status": 200,
+    "metadata": {
+      "title": [
+        "Bootstrap Methods: Another Look at the Jackknife"
+      ],
+      "author": [
+        {
+          "given": "B.",
+          "family": "Efron",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Annals of Statistics"
+      ],
+      "volume": "7",
+      "issue": "1",
+      "page": "1-26",
+      "published": {
+        "date-parts": [
+          [
+            1979,
+            1,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1979,
+            1,
+            1
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1979,
+            1,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1214/aos/1176344552",
+      "URL": "https://doi.org/10.1214/aos/1176344552",
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.1109/TAES.1986.310745",
+    "queried_utc": "2026-11-16T06:53:29.257977+00:00",
+    "source": "https://api.crossref.org/works/10.1109/TAES.1986.310745",
+    "http_status": 200,
+    "metadata": {
+      "title": [
+        "An Adaptive Detection Algorithm"
+      ],
+      "author": [
+        {
+          "given": "E.J.",
+          "family": "Kelly",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Aerospace and Electronic Systems"
+      ],
+      "volume": "AES-22",
+      "issue": "2",
+      "page": "115-127",
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            3
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            3
+          ]
+        ]
+      },
+      "DOI": "10.1109/taes.1986.310745",
+      "URL": "https://doi.org/10.1109/taes.1986.310745",
+      "type": "journal-article"
+    },
+    "status": "metadata_retrieved_not_author_verified"
+  },
+  {
+    "doi": "10.3390/s19153279",
+    "queried_utc": "2026-11-16T08:37:42.721044+00:00",
+    "source": "https://api.crossref.org/works/10.3390/s19153279",
+    "http_status": 200,
+    "metadata": {
+      "title": [
+        "Bayesian Compress Sensing Based Countermeasure Scheme Against the Interrupted Sampling Repeater Jamming"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9883-7508",
+          "authenticated-orcid": false,
+          "given": "Sha",
+          "family": "Huan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Physics and Electronic Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gane",
+          "family": "Dai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Advanced Institute of Engineering Science for Intelligent Manufacturing, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gaoyong",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Physics and Electronic Engineering, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shan",
+          "family": "Ai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Advanced Institute of Engineering Science for Intelligent Manufacturing, Guangzhou University, Guangzhou 510006, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Sensors"
+      ],
+      "volume": "19",
+      "issue": "15",
+      "page": "3279",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            25
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            25
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            25
+          ]
+        ]
+      },
+      "DOI": "10.3390/s19153279",
+      "URL": "https://doi.org/10.3390/s19153279",
+      "type": "journal-article"
     },
     "status": "metadata_retrieved_not_author_verified"
   }

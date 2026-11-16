@@ -1,0 +1,38 @@
+{
+  "stage": "delivery_readme_final",
+  "utc": "2026-11-16T08:56:17.061283+00:00",
+  "manuscript_sha256": "b6aa20ea8d1eb94c09b58a7e56a14bd08cf46cdaaa17aca222fb58f6d132b303",
+  "backup": "backups/delivery_readme_final_b6aa20ea8d1e.md",
+  "characters": 1513,
+  "han_characters": 667,
+  "protected_span_count": 31,
+  "prose_nonspace_characters": 639,
+  "protected_sha256": "0473ac079da5a3daf0b4efcefcf88e355e9996e7f6d1a92fc9e946f95103714a",
+  "invisible_or_replacement_characters": [],
+  "skill_exit_code": 0,
+  "skill_audit": {
+    "path": "G:\\Project Code\\ISRJ_222\\manuscript\\work\\delivery_readme_final_prose_only.txt",
+    "density_tier": "low",
+    "flagged_count": 0,
+    "flagged": [],
+    "stylometry": {
+      "path": "G:\\Project Code\\ISRJ_222\\manuscript\\work\\delivery_readme_final_prose_only.txt",
+      "word_count": 87,
+      "sentence_count": 9,
+      "burstiness_cv": 0.8372,
+      "lexical_diversity": 0.9432,
+      "ai_ngram_density": 0.0,
+      "matched_markers": [],
+      "score": 0.0289,
+      "confidence_level": "CLEAN",
+      "density_tier": "low",
+      "status": "ok",
+      "findings": [],
+      "findings_confidence": [],
+      "notes": [
+        "Sample word count (87) is in calibration range (30-100); score dampened by factor 0.89"
+      ]
+    }
+  },
+  "interpretation": "Offline inspection only. English stylistic heuristics are not calibrated for Chinese scientific prose; no authorship or detector-evasion claim. No whole-document cleanup performed."
+}

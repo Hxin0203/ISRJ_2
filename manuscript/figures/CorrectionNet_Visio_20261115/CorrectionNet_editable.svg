@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 CorrectionNet_editable.svg CorrectionNet -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="16in" height="11.5in" viewBox="0 0 1152 828"
+		xml:space="preserve" color-interpolation-filters="sRGB" class="st50">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#243746;font-family:Times New Roman;font-size:1.75001em;font-weight:bold}
+		.st3 {fill:#f5f8fa;stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:#243746;font-family:Times New Roman;font-size:1.41666em}
+		.st5 {fill:#ffffff;stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6}
+		.st6 {stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.45}
+		.st7 {stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6}
+		.st8 {fill:#243746;font-family:Times New Roman;font-size:1.5em;font-style:italic}
+		.st9 {font-family:Cambria Math;font-size:1em}
+		.st10 {baseline-shift:32.4951%;font-size:0.649902em}
+		.st11 {fill:#ffffff;stroke:#526775;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.05}
+		.st12 {font-size:1em}
+		.st13 {fill:#92c7c8;stroke:#526775;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.05}
+		.st14 {fill:#243746;font-family:Times New Roman;font-size:1.5em;font-weight:bold}
+		.st15 {baseline-shift:-32.4951%;font-size:0.649902em}
+		.st16 {baseline-shift:32.4945%;font-size:0.649891em}
+		.st17 {baseline-shift:-32.4945%;font-size:0.649891em}
+		.st18 {fill:#243746;font-family:Times New Roman;font-size:1.91666em}
+		.st19 {marker-end:url(#mrkr4-79);stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+		.st20 {fill:#243746;fill-opacity:1;stroke:#243746;stroke-opacity:1;stroke-width:0.38983050847458}
+		.st21 {fill:#243746;stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6}
+		.st22 {marker-end:url(#mrkr4-87);stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+		.st23 {fill:#71838d;font-family:Times New Roman;font-size:1.41666em}
+		.st24 {fill:#243746;font-family:Times New Roman;font-size:1.5em}
+		.st25 {fill:#243746;font-family:Times New Roman;font-size:1.66667em}
+		.st26 {fill:#243746;font-family:Times New Roman;font-size:1.58334em;font-style:italic}
+		.st27 {baseline-shift:-32.4949%;font-size:0.649898em}
+		.st28 {marker-end:url(#mrkr4-134);stroke:#5285a3;stroke-dasharray:8.05,5.75;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+		.st29 {fill:#5285a3;fill-opacity:1;stroke:#5285a3;stroke-opacity:1;stroke-width:0.38983050847458}
+		.st30 {fill:#5285a3;font-family:Times New Roman;font-size:1.33333em}
+		.st31 {fill:#71838d;font-family:Times New Roman;font-size:1.24999em}
+		.st32 {fill:#243746;font-family:Times New Roman;font-size:1.33333em}
+		.st33 {fill:#243746;font-family:Times New Roman;font-size:1.24999em}
+		.st34 {fill:#dfeaf1;stroke:#526775;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.05}
+		.st35 {marker-end:url(#mrkr4-210);stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+		.st36 {fill:#243746;font-family:Times New Roman;font-size:1.41666em;font-style:italic}
+		.st37 {fill:#71838d;font-family:Times New Roman;font-size:1.33333em}
+		.st38 {fill:#dcecee;stroke:#526775;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.05}
+		.st39 {fill:#243746;font-family:Times New Roman;font-size:1.83334em}
+		.st40 {marker-end:url(#mrkr4-134);stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+		.st41 {fill:#ffffff;stroke:#b86d4e;stroke-dasharray:6.3,4.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st42 {baseline-shift:-32.4948%;font-size:0.649895em}
+		.st43 {fill:#ffffff;stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st44 {fill:#faeee7;stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st45 {fill:#fbf6e8;stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st46 {stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6}
+		.st47 {fill:#243746;font-family:Times New Roman;font-size:1.58334em}
+		.st48 {fill:#b86d4e;font-family:Times New Roman;font-size:1.58334em}
+		.st49 {baseline-shift:32.4948%;font-size:0.649895em}
+		.st50 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-79" class="st20" v:arrowType="4" v:arrowSize="1" v:setback="5.13043" refX="-5.1304347826087"
+				orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5652173913043,-2.5652173913043) "/>
+		</marker>
+		<marker id="mrkr4-87" class="st20" v:arrowType="4" v:arrowSize="1" v:setback="4.81739" refX="-4.8173913043478"
+				orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5652173913043,-2.5652173913043) "/>
+		</marker>
+		<marker id="mrkr4-134" class="st29" v:arrowType="4" v:arrowSize="1" v:setback="4.81739" refX="-4.8173913043478"
+				orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5652173913043,-2.5652173913043) "/>
+		</marker>
+		<marker id="mrkr4-210" class="st29" v:arrowType="4" v:arrowSize="1" v:setback="5.13043" refX="-5.1304347826087"
+				orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5652173913043,-2.5652173913043) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>CorrectionNet</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="group117-1" transform="translate(14.4,-606.24)" v:mID="117" v:groupContext="group">
+			<title>A_Inference</title>
+			<g id="shape1-2" v:mID="1" v:groupContext="shape" transform="translate(1.44,-185.76)">
+				<title>title_a</title>
+				<desc>(a) Overall architecture of CorrectionNet</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="399.6" cy="813.6" width="799.2" height="28.8"/>
+				<rect x="0" y="799.2" width="799.2" height="28.8" class="st1"/>
+				<text x="0" y="819.11" class="st2" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(a)  Overall architecture of CorrectionNet</text>			</g>
+			<g id="shape2-5" v:mID="2" v:groupContext="shape">
+				<title>panel_a</title>
+				<rect x="0" y="648" width="1123.2" height="180" class="st3"/>
+			</g>
+			<g id="shape3-7" v:mID="3" v:groupContext="shape" transform="translate(15.12,-110.88)">
+				<title>input_title</title>
+				<desc>Observed I/Q</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="52.2" cy="817.92" width="104.4" height="20.16"/>
+				<rect x="0" y="807.84" width="104.4" height="20.16" class="st1"/>
+				<text x="6.17" y="822.38" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Observed I/Q</text>			</g>
+			<g id="shape4-10" v:mID="4" v:groupContext="shape" transform="translate(19.44,-54.72)">
+				<title>input_frame</title>
+				<rect x="0" y="776.16" width="97.2" height="51.84" class="st5"/>
+			</g>
+			<g id="shape5-12" v:mID="5" v:groupContext="shape" transform="translate(24.48,-91.5264)">
+				<title>input_axis_0</title>
+				<path d="M0 828 L87.12 828" class="st6"/>
+			</g>
+			<g id="shape6-15" v:mID="6" v:groupContext="shape" transform="translate(25.2,-81.7575)">
+				<title>input_native_IQ_0</title>
+				<path d="M0 818.23 L0.33 817.9 L0.66 818.63 L0.99 818.09 L1.32 818 L1.65 818.65 L1.98 817.97 L2.32 818.13 L2.65 818.62
+							 L2.98 817.88 L3.31 818.27 L3.64 818.54 L3.97 817.82 L4.3 818.4 L4.63 818.43 L4.96 817.82 L5.29 818.52
+							 L5.62 818.3 L5.95 817.86 L6.29 818.6 L6.62 818.16 L6.95 817.94 L7.28 818.64 L7.61 818.03 L7.94 818.06
+							 L8.27 818.64 L8.6 817.92 L8.93 818.2 L9.26 818.59 L9.59 817.84 L9.92 818.34 L10.26 818.49 L10.59 817.81
+							 L10.92 818.46 L11.25 818.37 L11.58 817.83 L11.91 818.57 L12.24 818.23 L12.57 817.9 L12.9 818.63 L13.23
+							 818.09 L13.56 818 L13.89 821.85 L14.22 821.81 L14.56 822.28 L14.89 822.71 L15.22 821.52 L15.55 821.13
+							 L15.88 820.34 L16.21 818.38 L16.54 817.65 L16.87 816.44 L17.2 814.77 L17.53 814.73 L17.86 814.15 L18.19
+							 813.79 L18.53 815.05 L18.86 815.51 L19.19 816.49 L19.52 818.57 L19.85 819.34 L20.18 820.62 L20.51 822.16
+							 L20.84 821.99 L21.17 822.33 L21.5 822.29 L21.83 820.65 L22.16 819.89 L22.5 823.78 L22.83 816.29 L23.16
+							 810.4 L23.49 808.51 L23.82 811.78 L24.15 818.49 L24.48 821.36 L24.81 819.2 L25.14 815.37 L25.47 812.43
+							 L25.8 815.31 L26.13 822.85 L26.46 827.86 L26.8 828 L27.13 822.79 L27.46 815.25 L27.79 813 L28.12 816.09
+							 L28.45 819.9 L28.78 821.46 L29.11 817.09 L29.44 810.2 L29.77 808.58 L30.1 816.19 L30.43 817.39 L30.77
+							 819.86 L31.1 820.94 L31.43 821.76 L31.76 822.82 L32.09 821.81 L32.42 820.75 L32.75 819.75 L33.08 817.22
+							 L33.41 815.82 L33.74 814.97 L34.07 813.68 L34.4 814.44 L34.74 815.63 L35.07 816.56 L35.4 819.09 L35.73
+							 820.74 L36.06 821.48 L36.39 822.74 L36.72 822.05 L37.05 820.55 L37.38 819.54 L37.71 817.06 L38.04 815.24
+							 L38.37 814.76 L38.7 813.82 L39.04 814.65 L39.37 816.61 L39.7 817.8 L40.03 820.16 L40.36 821.96 L40.69
+							 821.97 L41.02 822.28 L41.35 821.11 L41.68 818.64 L42.01 819.22 L42.34 821.78 L42.67 817.36 L43.01 811.02
+							 L43.34 808.67 L43.67 814.93 L44 824.6 L44.33 826.76 L44.66 821.79 L44.99 816.6 L45.32 816.37 L45.65
+							 821.89 L45.98 824.16 L46.31 817.54 L46.64 809.75 L46.98 808.38 L47.31 814.9 L47.64 823.65 L47.97 824.31
+							 L48.3 818.37 L48.63 816.15 L48.96 819.98 L49.29 825.32 L49.62 824.49 L49.95 814.97 L50.28 807.88 L50.61
+							 814.49 L50.94 814.64 L51.28 816.68 L51.61 819.52 L51.94 820.85 L52.27 822.36 L52.6 822.42 L52.93 820.21
+							 L53.26 818.5 L53.59 816.2 L53.92 814 L54.25 814.41 L54.58 815.31 L54.91 817.02 L55.25 820.21 L55.58
+							 821.67 L55.91 822.11 L56.24 822 L56.57 819.35 L56.9 816.87 L57.23 815.36 L57.56 813.75 L57.89 814.68
+							 L58.22 817.03 L58.55 818.85 L58.88 821.52 L59.22 822.66 L59.55 821.35 L59.88 820.01 L60.21 817.31 L60.54
+							 814.57 L60.87 814.4 L61.2 814.81 L61.53 816.6 L61.86 819.99 L62.19 821.56 L62.52 822.16 L62.85 823.38
+							 L63.18 812.92 L63.52 812.06 L63.85 818.87 L64.18 819.73 L64.51 816.74 L64.84 811.99 L65.17 816.66 L65.5
+							 824.49 L65.83 822.01 L66.16 813.12 L66.49 813.14 L66.82 820.97 L67.15 824.24 L67.49 818.25 L67.82 811.65
+							 L68.15 816.02 L68.48 824.5 L68.81 821.93 L69.14 813.49 L69.47 813.26 L69.8 820.78 L70.13 824.46 L70.46
+							 817.63 L70.79 811.29 L71.12 818.34 L71.46 818.49 L71.79 817.81 L72.12 818.46 L72.45 818.37 L72.78 817.83
+							 L73.11 818.57 L73.44 818.23 L73.77 817.9 L74.1 818.63 L74.43 818.09 L74.76 818 L75.09 818.65 L75.42
+							 817.97 L75.76 818.13 L76.09 818.62 L76.42 817.88 L76.75 818.27 L77.08 818.54 L77.41 817.82 L77.74 818.4
+							 L78.07 818.43 L78.4 817.82 L78.73 818.52 L79.06 818.3 L79.39 817.86 L79.73 818.6 L80.06 818.16 L80.39
+							 817.94 L80.72 818.64 L81.05 818.03 L81.38 818.06 L81.71 818.64 L82.04 817.92 L82.37 818.2 L82.7 818.59
+							 L83.03 817.84 L83.36 818.34 L83.7 818.49 L84.03 817.81 L84.36 818.46 L84.69 818.37 L85.02 817.83 L85.35
+							 818.57 L85.68 818.23" class="st7"/>
+			</g>
+			<g id="shape7-18" v:mID="7" v:groupContext="shape" transform="translate(24.48,-69.2352)">
+				<title>input_axis_1</title>
+				<path d="M0 828 L87.12 828" class="st6"/>
+			</g>
+			<g id="shape8-21" v:mID="8" v:groupContext="shape" transform="translate(25.2,-58.4726)">
+				<title>input_native_IQ_1</title>
+				<path d="M0 816.89 L0.33 817.26 L0.66 817.56 L0.99 816.83 L1.32 817.4 L1.65 817.45 L1.98 816.82 L2.32 817.52 L2.65
+							 817.32 L2.98 816.86 L3.31 817.61 L3.64 817.17 L3.97 816.94 L4.3 817.65 L4.63 817.04 L4.96 817.06 L5.29
+							 817.65 L5.62 816.93 L5.95 817.19 L6.29 817.6 L6.62 816.85 L6.95 817.33 L7.28 817.51 L7.61 816.82 L7.94
+							 817.46 L8.27 817.38 L8.6 816.84 L8.93 817.57 L9.26 817.25 L9.59 816.9 L9.92 817.63 L10.26 817.11 L10.59
+							 817 L10.92 817.65 L11.25 816.98 L11.58 817.12 L11.91 817.63 L12.24 816.89 L12.57 817.26 L12.9 817.56
+							 L13.23 816.83 L13.56 817.4 L13.89 820.12 L14.22 818.44 L14.56 817.93 L14.89 816.47 L15.22 814.83 L15.55
+							 814.57 L15.88 813.41 L16.21 812.81 L16.54 813.55 L16.87 813.38 L17.2 814.21 L17.53 815.9 L17.86 816.49
+							 L18.19 818.11 L18.53 819.78 L18.86 820.07 L19.19 821.25 L19.52 821.68 L19.85 820.78 L20.18 820.76 L20.51
+							 819.62 L20.84 817.74 L21.17 817.03 L21.5 815.32 L21.83 813.81 L22.16 813.76 L22.5 813.02 L22.83 807.84
+							 L23.16 808.18 L23.49 812.78 L23.82 820.29 L24.15 825.16 L24.48 823.18 L24.81 818.7 L25.14 815.37 L25.47
+							 815.78 L25.8 821.33 L26.13 825.52 L26.46 823.79 L26.8 818 L27.13 810.42 L27.46 807.11 L27.79 811.21
+							 L28.12 816.89 L28.45 819.97 L28.78 818.6 L29.11 813.27 L29.44 811.42 L29.77 816.04 L30.1 820.53 L30.43
+							 821.34 L30.77 821.58 L31.1 819.97 L31.43 819.03 L31.76 817.47 L32.09 815.05 L32.42 814.28 L32.75 813.36
+							 L33.08 812.72 L33.41 814.14 L33.74 815.16 L34.07 816.57 L34.4 819.13 L34.74 820.15 L35.07 820.98 L35.4
+							 821.78 L35.73 820.41 L36.06 819.15 L36.39 817.82 L36.72 815.2 L37.05 814.04 L37.38 813.48 L37.71 812.79
+							 L38.04 814.27 L38.37 815.93 L38.7 817.26 L39.04 819.83 L39.37 820.97 L39.7 821.03 L40.03 821.33 L40.36
+							 819.57 L40.69 817.44 L41.02 816.12 L41.35 813.84 L41.68 812.97 L42.01 819.78 L42.34 818.78 L42.67 814.02
+							 L43.01 812.12 L43.34 816.45 L43.67 825.14 L44 828 L44.33 821.3 L44.66 813.42 L44.99 810.8 L45.32 814.79
+							 L45.65 819.87 L45.98 817.32 L46.31 810.81 L46.64 810.02 L46.98 816.35 L47.31 825.14 L47.64 827.46 L47.97
+							 820.08 L48.3 813.42 L48.63 814.38 L48.96 818.79 L49.29 820.23 L49.62 814.37 L49.95 807.49 L50.28 810.45
+							 L50.61 817.77 L50.94 819.33 L51.28 821.43 L51.61 821.39 L51.94 819.79 L52.27 818.43 L52.6 815.63 L52.93
+							 813.52 L53.26 813.48 L53.59 813.51 L53.92 815.37 L54.25 818.38 L54.58 819.84 L54.91 821.28 L55.25 821.45
+							 L55.58 819.11 L55.91 817.2 L56.24 815.02 L56.57 812.86 L56.9 813.46 L57.23 814.8 L57.56 816.62 L57.89
+							 819.81 L58.22 821.12 L58.55 820.95 L58.88 820.33 L59.22 817.41 L59.55 814.79 L59.88 813.78 L60.21 812.95
+							 L60.54 814.52 L60.87 817.48 L61.2 819.27 L61.53 821.23 L61.86 821.5 L62.19 819.15 L62.52 817.13 L62.85
+							 810.7 L63.18 806.76 L63.52 815.15 L63.85 822.1 L64.18 819.26 L64.51 811.66 L64.84 813.24 L65.17 821.28
+							 L65.5 823.34 L65.83 814.96 L66.16 810.55 L66.49 817.23 L66.82 823.28 L67.15 819.96 L67.49 812.25 L67.82
+							 812.17 L68.15 821.05 L68.48 823.46 L68.81 815.11 L69.14 810.94 L69.47 816.98 L69.8 823.24 L70.13 819.96
+							 L70.46 811.57 L70.79 812.82 L71.12 817.63 L71.46 817.11 L71.79 817 L72.12 817.65 L72.45 816.98 L72.78
+							 817.12 L73.11 817.63 L73.44 816.89 L73.77 817.26 L74.1 817.56 L74.43 816.83 L74.76 817.4 L75.09 817.45
+							 L75.42 816.82 L75.76 817.52 L76.09 817.32 L76.42 816.86 L76.75 817.61 L77.08 817.17 L77.41 816.94 L77.74
+							 817.65 L78.07 817.04 L78.4 817.06 L78.73 817.65 L79.06 816.93 L79.39 817.19 L79.73 817.6 L80.06 816.85
+							 L80.39 817.33 L80.72 817.51 L81.05 816.82 L81.38 817.46 L81.71 817.38 L82.04 816.84 L82.37 817.57 L82.7
+							 817.25 L83.03 816.9 L83.36 817.63 L83.7 817.11 L84.03 817 L84.36 817.65 L84.69 816.98 L85.02 817.12
+							 L85.35 817.63 L85.68 816.89" class="st7"/>
+			</g>
+			<g id="shape9-24" v:mID="9" v:groupContext="shape" transform="translate(20.16,-31.68)">
+				<title>input_y</title>
+				<desc>y ∈ ℂN</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="47.88" cy="817.56" width="95.76" height="20.88"/>
+				<rect x="0" y="807.12" width="95.76" height="20.88" class="st1"/>
+				<text x="23.87" y="822.36" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>y <tspan
+							class="st9">∈</tspan> ℂ<tspan dy="-0.198em" class="st10" v:baseFontSize="18">N</tspan></text>			</g>
+			<g id="shape10-29" v:mID="10" v:groupContext="shape" transform="translate(156.96,-53.28)">
+				<title>rms_dechirp</title>
+				<desc>RMS + dechirp z = Dy / a(y)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="68.4" cy="800.64" width="136.8" height="54.72"/>
+				<rect x="0" y="773.28" width="136.8" height="54.72" class="st11"/>
+				<text x="15.91" y="796.18" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>RMS + dechirp<v:newlineChar/><tspan
+							x="24.9" dy="1.05em" class="st12">z = Dy / a(y)</tspan></text>			</g>
+			<g id="shape11-33" v:mID="11" v:groupContext="shape" transform="translate(345.6,-50.4)">
+				<title>learned_core</title>
+				<desc>Residual backbone Fθ · panel (b)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="97.2" cy="797.76" width="194.4" height="60.48"/>
+				<rect x="0" y="767.52" width="194.4" height="60.48" class="st13"/>
+				<text x="24.43" y="793.04" class="st14" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Residual backbone<v:newlineChar/><tspan
+							x="42.39" dy="1.05em" class="st12">F</tspan><tspan dy="-0.279em" class="st15" v:baseFontSize="18">θ</tspan><tspan
+							dy="0.181em" class="st12">  </tspan>·  panel (b)</text>			</g>
+			<g id="shape12-39" v:mID="12" v:groupContext="shape" transform="translate(591.84,-53.28)">
+				<title>inverse_dechirp</title>
+				<desc>Inverse dechirp + rescale c = a(y)D−1δz</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="91.8" cy="800.64" width="183.6" height="54.72"/>
+				<rect x="0" y="773.28" width="183.6" height="54.72" class="st11"/>
+				<text x="6.54" y="796.18" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Inverse dechirp + rescale<v:newlineChar/><tspan
+							x="46.83" dy="1.05em" class="st12">c = a(y)D</tspan><tspan dy="-0.198em" class="st16"
+							v:baseFontSize="17">−</tspan><tspan class="st16" v:baseFontSize="17">1</tspan><tspan dy="0.129em"
+							class="st12">δ</tspan><tspan dy="-0.279em" class="st17" v:baseFontSize="17">z</tspan></text>			</g>
+			<g id="shape13-47" v:mID="13" v:groupContext="shape" transform="translate(873.36,-66.96)">
+				<title>subtraction</title>
+				<desc>Σ</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="13.68" cy="814.32" width="27.37" height="27.36"/>
+				<ellipse cx="13.68" cy="814.32" rx="13.68" ry="13.68" class="st11"/>
+				<text x="6.99" y="820.36" class="st18" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Σ</text>			</g>
+			<g id="shape14-50" v:mID="14" v:groupContext="shape" transform="translate(979.92,-54.72)">
+				<title>output_frame</title>
+				<rect x="0" y="776.16" width="97.2" height="51.84" class="st5"/>
+			</g>
+			<g id="shape15-52" v:mID="15" v:groupContext="shape" transform="translate(984.96,-91.5264)">
+				<title>output_axis_0</title>
+				<path d="M0 828 L87.12 828" class="st6"/>
+			</g>
+			<g id="shape16-55" v:mID="16" v:groupContext="shape" transform="translate(985.68,-86.9395)">
+				<title>output_native_IQ_0</title>
+				<path d="M0 823.41 L0.33 823.08 L0.66 823.81 L0.99 823.27 L1.32 823.18 L1.65 823.83 L1.98 823.15 L2.32 823.31 L2.65
+							 823.8 L2.98 823.06 L3.31 823.45 L3.64 823.73 L3.97 823.01 L4.3 823.58 L4.63 823.62 L4.96 823 L5.29 823.7
+							 L5.62 823.48 L5.95 823.04 L6.29 823.79 L6.62 823.34 L6.95 823.12 L7.28 823.83 L7.61 823.21 L7.94 823.24
+							 L8.27 823.82 L8.6 823.1 L8.93 823.38 L9.26 823.77 L9.59 823.03 L9.92 823.52 L10.26 823.68 L10.59 823
+							 L10.92 823.65 L11.25 823.55 L11.58 823.01 L11.91 823.75 L12.24 823.41 L12.57 823.08 L12.9 823.81 L13.23
+							 823.27 L13.56 823.18 L13.89 827.03 L14.22 827 L14.56 827.46 L14.89 827.89 L15.22 826.7 L15.55 826.31
+							 L15.88 825.52 L16.21 823.56 L16.54 822.83 L16.87 821.62 L17.2 819.95 L17.53 819.91 L17.86 819.33 L18.19
+							 818.97 L18.53 820.23 L18.86 820.69 L19.19 821.67 L19.52 823.75 L19.85 824.52 L20.18 825.8 L20.51 827.34
+							 L20.84 827.17 L21.17 827.52 L21.5 827.47 L21.83 825.83 L22.16 825.07 L22.5 823.77 L22.83 821.61 L23.16
+							 820.95 L23.49 819.9 L23.82 818.88 L24.15 819.69 L24.48 819.99 L24.81 820.77 L25.14 822.95 L25.47 823.99
+							 L25.8 825.38 L26.13 827.2 L26.46 827.2 L26.8 827.44 L27.13 827.38 L27.46 825.54 L27.79 824.44 L28.12
+							 823.06 L28.45 820.78 L28.78 820.15 L29.11 819.52 L29.44 818.92 L29.77 820.32 L30.1 821.37 L30.43 822.57
+							 L30.77 825.04 L31.1 826.12 L31.43 826.94 L31.76 828 L32.09 826.99 L32.42 825.94 L32.75 824.93 L33.08
+							 822.4 L33.41 821 L33.74 820.15 L34.07 818.87 L34.4 819.62 L34.74 820.82 L35.07 821.75 L35.4 824.27 L35.73
+							 825.93 L36.06 826.66 L36.39 827.92 L36.72 827.23 L37.05 825.73 L37.38 824.72 L37.71 822.24 L38.04 820.42
+							 L38.37 819.94 L38.7 819 L39.04 819.83 L39.37 821.79 L39.7 822.98 L40.03 825.34 L40.36 827.14 L40.69
+							 827.15 L41.02 827.47 L41.35 826.3 L41.68 823.82 L42.01 822.45 L42.34 820.46 L42.67 819 L43.01 819.75
+							 L43.34 820.34 L43.67 821.93 L44 824.77 L44.33 826.04 L44.66 827.22 L44.99 827.89 L45.32 826.16 L45.65
+							 824.59 L45.98 822.79 L46.31 820.12 L46.64 819.49 L46.98 819.66 L47.31 820.14 L47.64 822.77 L47.97 824.92
+							 L48.3 826.24 L48.63 827.88 L48.96 827.23 L49.29 825.43 L49.62 823.98 L49.95 821.2 L50.28 819.49 L50.61
+							 819.67 L50.94 819.82 L51.28 821.86 L51.61 824.7 L51.94 826.03 L52.27 827.54 L52.6 827.6 L52.93 825.39
+							 L53.26 823.68 L53.59 821.38 L53.92 819.18 L54.25 819.59 L54.58 820.49 L54.91 822.2 L55.25 825.4 L55.58
+							 826.85 L55.91 827.3 L56.24 827.18 L56.57 824.53 L56.9 822.05 L57.23 820.54 L57.56 818.93 L57.89 819.86
+							 L58.22 822.22 L58.55 824.03 L58.88 826.7 L59.22 827.84 L59.55 826.54 L59.88 825.19 L60.21 822.49 L60.54
+							 819.76 L60.87 819.58 L61.2 819.99 L61.53 821.78 L61.86 825.17 L62.19 826.75 L62.52 827.34 L62.85 826.96
+							 L63.18 823.95 L63.52 821.42 L63.85 820.02 L64.18 818.99 L64.51 823.45 L64.84 823.73 L65.17 823.01 L65.5
+							 823.58 L65.83 823.62 L66.16 823 L66.49 823.7 L66.82 823.48 L67.15 823.04 L67.49 823.79 L67.82 823.34
+							 L68.15 823.12 L68.48 823.83 L68.81 823.21 L69.14 823.24 L69.47 823.82 L69.8 823.1 L70.13 823.38 L70.46
+							 823.77 L70.79 823.03 L71.12 823.52 L71.46 823.68 L71.79 823 L72.12 823.65 L72.45 823.55 L72.78 823.01
+							 L73.11 823.75 L73.44 823.41 L73.77 823.08 L74.1 823.81 L74.43 823.27 L74.76 823.18 L75.09 823.83 L75.42
+							 823.15 L75.76 823.31 L76.09 823.8 L76.42 823.06 L76.75 823.45 L77.08 823.73 L77.41 823.01 L77.74 823.58
+							 L78.07 823.62 L78.4 823 L78.73 823.7 L79.06 823.48 L79.39 823.04 L79.73 823.79 L80.06 823.34 L80.39
+							 823.12 L80.72 823.83 L81.05 823.21 L81.38 823.24 L81.71 823.82 L82.04 823.1 L82.37 823.38 L82.7 823.77
+							 L83.03 823.03 L83.36 823.52 L83.7 823.68 L84.03 823 L84.36 823.65 L84.69 823.55 L85.02 823.01 L85.35
+							 823.75 L85.68 823.41" class="st7"/>
+			</g>
+			<g id="shape17-58" v:mID="17" v:groupContext="shape" transform="translate(984.96,-69.2352)">
+				<title>output_axis_1</title>
+				<path d="M0 828 L87.12 828" class="st6"/>
+			</g>
+			<g id="shape18-61" v:mID="18" v:groupContext="shape" transform="translate(985.68,-64.6914)">
+				<title>output_native_IQ_1</title>
+				<path d="M0 823.11 L0.33 823.48 L0.66 823.77 L0.99 823.05 L1.32 823.62 L1.65 823.67 L1.98 823.04 L2.32 823.74 L2.65
+							 823.53 L2.98 823.08 L3.31 823.83 L3.64 823.39 L3.97 823.16 L4.3 823.87 L4.63 823.26 L4.96 823.28 L5.29
+							 823.87 L5.62 823.15 L5.95 823.41 L6.29 823.82 L6.62 823.07 L6.95 823.55 L7.28 823.72 L7.61 823.04 L7.94
+							 823.68 L8.27 823.6 L8.6 823.05 L8.93 823.79 L9.26 823.46 L9.59 823.12 L9.92 823.85 L10.26 823.32 L10.59
+							 823.22 L10.92 823.87 L11.25 823.2 L11.58 823.34 L11.91 823.85 L12.24 823.11 L12.57 823.48 L12.9 823.77
+							 L13.23 823.05 L13.56 823.62 L13.89 826.34 L14.22 824.66 L14.56 824.15 L14.89 822.69 L15.22 821.05 L15.55
+							 820.79 L15.88 819.63 L16.21 819.03 L16.54 819.76 L16.87 819.59 L17.2 820.42 L17.53 822.12 L17.86 822.7
+							 L18.19 824.33 L18.53 826 L18.86 826.29 L19.19 827.47 L19.52 827.9 L19.85 827 L20.18 826.98 L20.51 825.84
+							 L20.84 823.96 L21.17 823.25 L21.5 821.53 L21.83 820.02 L22.16 819.98 L22.5 819.15 L22.83 819.28 L23.16
+							 820.69 L23.49 821.19 L23.82 822.78 L24.15 824.82 L24.48 825.49 L24.81 826.96 L25.14 827.86 L25.47 827.16
+							 L25.8 827.17 L26.13 826.13 L26.46 824.05 L26.8 823.13 L27.13 821.39 L27.46 819.72 L27.79 819.77 L28.12
+							 819.27 L28.45 819.63 L28.78 821.5 L29.11 822.45 L29.44 824.16 L29.77 826.31 L30.1 826.75 L30.43 827.56
+							 L30.77 827.79 L31.1 826.19 L31.43 825.25 L31.76 823.69 L32.09 821.27 L32.42 820.5 L32.75 819.58 L33.08
+							 818.94 L33.41 820.36 L33.74 821.38 L34.07 822.79 L34.4 825.35 L34.74 826.36 L35.07 827.2 L35.4 828 L35.73
+							 826.63 L36.06 825.37 L36.39 824.04 L36.72 821.42 L37.05 820.26 L37.38 819.7 L37.71 819.01 L38.04 820.49
+							 L38.37 822.15 L38.7 823.48 L39.04 826.05 L39.37 827.19 L39.7 827.25 L40.03 827.55 L40.36 825.79 L40.69
+							 823.65 L41.02 822.33 L41.35 820.06 L41.68 819.19 L42.01 819.88 L42.34 820.27 L42.67 822.36 L43.01 824.87
+							 L43.34 825.97 L43.67 827.55 L44 827.79 L44.33 826.1 L44.66 824.93 L44.99 822.69 L45.32 820.22 L45.65
+							 819.79 L45.98 819.41 L46.31 820.12 L46.64 822.77 L46.98 824.46 L47.31 826.26 L47.64 827.95 L47.97 827.14
+							 L48.3 825.99 L48.63 824.41 L48.96 821.42 L49.29 820.04 L49.62 819.6 L49.95 819.43 L50.28 821.67 L50.61
+							 823.99 L50.94 825.55 L51.28 827.65 L51.61 827.61 L51.94 826.01 L52.27 824.65 L52.6 821.84 L52.93 819.74
+							 L53.26 819.7 L53.59 819.73 L53.92 821.59 L54.25 824.6 L54.58 826.05 L54.91 827.5 L55.25 827.67 L55.58
+							 825.33 L55.91 823.42 L56.24 821.24 L56.57 819.08 L56.9 819.68 L57.23 821.02 L57.56 822.84 L57.89 826.03
+							 L58.22 827.34 L58.55 827.17 L58.88 826.55 L59.22 823.63 L59.55 821.01 L59.88 820 L60.21 819.16 L60.54
+							 820.73 L60.87 823.7 L61.2 825.49 L61.53 827.45 L61.86 827.72 L62.19 825.36 L62.52 823.35 L62.85 820.91
+							 L63.18 818.94 L63.52 820.02 L63.85 821.76 L64.18 824.02 L64.51 823.83 L64.84 823.39 L65.17 823.16 L65.5
+							 823.87 L65.83 823.26 L66.16 823.28 L66.49 823.87 L66.82 823.15 L67.15 823.41 L67.49 823.82 L67.82 823.07
+							 L68.15 823.55 L68.48 823.72 L68.81 823.04 L69.14 823.68 L69.47 823.6 L69.8 823.05 L70.13 823.79 L70.46
+							 823.46 L70.79 823.12 L71.12 823.85 L71.46 823.32 L71.79 823.22 L72.12 823.87 L72.45 823.2 L72.78 823.34
+							 L73.11 823.85 L73.44 823.11 L73.77 823.48 L74.1 823.77 L74.43 823.05 L74.76 823.62 L75.09 823.67 L75.42
+							 823.04 L75.76 823.74 L76.09 823.53 L76.42 823.08 L76.75 823.83 L77.08 823.39 L77.41 823.16 L77.74 823.87
+							 L78.07 823.26 L78.4 823.28 L78.73 823.87 L79.06 823.15 L79.39 823.41 L79.73 823.82 L80.06 823.07 L80.39
+							 823.55 L80.72 823.72 L81.05 823.04 L81.38 823.68 L81.71 823.6 L82.04 823.05 L82.37 823.79 L82.7 823.46
+							 L83.03 823.12 L83.36 823.85 L83.7 823.32 L84.03 823.22 L84.36 823.87 L84.69 823.2 L85.02 823.34 L85.35
+							 823.85 L85.68 823.11" class="st7"/>
+			</g>
+			<g id="shape19-64" v:mID="19" v:groupContext="shape" transform="translate(956.88,-110.88)">
+				<title>output_title</title>
+				<desc>Restored I/Q</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="72" cy="817.92" width="144" height="20.16"/>
+				<rect x="0" y="807.84" width="144" height="20.16" class="st1"/>
+				<text x="28.33" y="822.38" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Restored I/Q</text>			</g>
+			<g id="shape20-67" v:mID="20" v:groupContext="shape" transform="translate(948.96,-31.68)">
+				<title>output_T</title>
+				<desc>Tθ(y) = y − Cθ(y)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="81.36" cy="817.56" width="162.72" height="20.88"/>
+				<rect x="0" y="807.12" width="162.72" height="20.88" class="st1"/>
+				<text x="19.49" y="822.28" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>T<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">θ</tspan><tspan dy="0.181em" class="st12">(y) = y </tspan>− C<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">θ</tspan><tspan dy="0.181em" class="st12">(y)</tspan></text>			</g>
+			<g id="shape21-74" v:mID="21" v:groupContext="shape" transform="translate(116.64,-80.64)">
+				<title>input_to_norm</title>
+				<path d="M0 828 L34.42 828" class="st19"/>
+			</g>
+			<g id="shape22-80" v:mID="22" v:groupContext="shape" transform="translate(134.64,-78.48)">
+				<title>input_split</title>
+				<ellipse cx="2.16" cy="825.84" rx="2.16" ry="2.16" class="st21"/>
+			</g>
+			<g id="shape23-82" v:mID="23" v:groupContext="shape" transform="translate(121.705,-80.5024) rotate(-1.04462)">
+				<title>identity_bypass</title>
+				<path d="M0 828 L1.25 759.61 L751.36 773.29 L750.36 828 L750.36 828" class="st22"/>
+			</g>
+			<g id="shape24-88" v:mID="24" v:groupContext="shape" transform="translate(367.2,-150.48)">
+				<title>bypass_label</title>
+				<desc>Observation bypass</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="140.4" cy="818.28" width="280.8" height="19.44"/>
+				<rect x="0" y="808.56" width="280.8" height="19.44" class="st1"/>
+				<text x="73.59" y="822.74" class="st23" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Observation bypass</text>			</g>
+			<g id="shape25-91" v:mID="25" v:groupContext="shape" transform="translate(895.68,-95.04)">
+				<title>plus_port</title>
+				<desc>+</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="10.08" cy="817.92" width="20.16" height="20.16"/>
+				<rect x="0" y="807.84" width="20.16" height="20.16" class="st1"/>
+				<text x="5" y="822.65" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>+</text>			</g>
+			<g id="shape26-94" v:mID="26" v:groupContext="shape" transform="translate(846.72,-59.04)">
+				<title>minus_port</title>
+				<desc>−</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="10.08" cy="818.28" width="20.16" height="19.44"/>
+				<rect x="0" y="808.56" width="20.16" height="19.44" class="st1"/>
+				<text x="4.44" y="823.53" class="st25" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>−</text>			</g>
+			<g id="shape27-97" v:mID="27" v:groupContext="shape" transform="translate(293.76,-80.64)">
+				<title>norm_to_core</title>
+				<path d="M0 828 L45.94 828" class="st19"/>
+			</g>
+			<g id="shape28-102" v:mID="28" v:groupContext="shape" transform="translate(299.52,-84.24)">
+				<title>z_label</title>
+				<desc>z</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="20.16" cy="818.64" width="40.33" height="18.72"/>
+				<rect x="0" y="809.28" width="40.32" height="18.72" class="st1"/>
+				<text x="16.46" y="823.63" class="st26" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>z</text>			</g>
+			<g id="shape29-105" v:mID="29" v:groupContext="shape" transform="translate(540,-80.64)">
+				<title>core_to_inverse</title>
+				<path d="M0 828 L45.94 828" class="st19"/>
+			</g>
+			<g id="shape30-110" v:mID="30" v:groupContext="shape" transform="translate(547.2,-84.96)">
+				<title>delta_label</title>
+				<desc>δz</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="19.08" cy="817.92" width="38.17" height="20.16"/>
+				<rect x="0" y="807.84" width="38.16" height="20.16" class="st1"/>
+				<text x="12.26" y="822.91" class="st26" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>δ<tspan
+							dy="-0.279em" class="st27" v:baseFontSize="19">z</tspan></text>			</g>
+			<g id="shape31-114" v:mID="31" v:groupContext="shape" transform="translate(775.44,-80.64)">
+				<title>correction_to_subtract</title>
+				<path d="M0 828 L92.02 828" class="st19"/>
+			</g>
+			<g id="shape32-119" v:mID="32" v:groupContext="shape" transform="translate(776.16,-86.4)">
+				<title>correction_label</title>
+				<desc>c = Cθ(y)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="47.52" cy="817.92" width="95.04" height="20.16"/>
+				<rect x="0" y="807.84" width="95.04" height="20.16" class="st1"/>
+				<text x="14.09" y="822.65" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>c = C<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">θ</tspan><tspan dy="0.181em" class="st12">(y)</tspan></text>			</g>
+			<g id="shape33-124" v:mID="33" v:groupContext="shape" transform="translate(900.72,-80.64)">
+				<title>subtract_to_output</title>
+				<path d="M0 828 L73.3 828" class="st19"/>
+			</g>
+			<g id="shape34-129" v:mID="34" v:groupContext="shape" transform="translate(225.36,-23.04)">
+				<title>scale_to_inverse</title>
+				<path d="M0 797.76 L0 828 L458.28 828 L458.28 797.76 L458.28 797.76" class="st28"/>
+			</g>
+			<g id="shape35-135" v:mID="35" v:groupContext="shape" transform="translate(335.52,-21.6)">
+				<title>scale_label</title>
+				<desc>a(y): per-observation RMS</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="131.4" cy="818.64" width="262.8" height="18.72"/>
+				<rect x="0" y="809.28" width="262.8" height="18.72" class="st1"/>
+				<text x="45.2" y="822.84" class="st30" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>a(y): per-observation RMS</text>			</g>
+			<g id="shape36-138" v:mID="36" v:groupContext="shape" transform="translate(18.72,-7.2)">
+				<title>icons_schematic</title>
+				<desc>Waveforms are schematic</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="84.6" cy="819.72" width="169.2" height="16.56"/>
+				<rect x="0" y="811.44" width="169.2" height="16.56" class="st1"/>
+				<text x="0" y="823.66" class="st31" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Waveforms are schematic</text>			</g>
+		</g>
+		<g id="group118-141" transform="translate(14.4,-288.72)" v:mID="118" v:groupContext="group">
+			<title>B_Residual_Backbone</title>
+			<g id="shape37-142" v:mID="37" v:groupContext="shape" transform="translate(1.44,-279.36)">
+				<title>title_b</title>
+				<desc>(b) Three-scale residual encoder–decoder Fθ</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="338.4" cy="815.04" width="676.8" height="25.92"/>
+				<rect x="0" y="802.08" width="676.8" height="25.92" class="st1"/>
+				<text x="0" y="820.55" class="st2" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(b)  Three-scale residual encoder–decoder F<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="21">θ</tspan></text>			</g>
+			<g id="shape38-146" v:mID="38" v:groupContext="shape">
+				<title>panel_b</title>
+				<rect x="0" y="556.56" width="669.6" height="271.44" class="st3"/>
+			</g>
+			<g id="shape39-148" v:mID="39" v:groupContext="shape" transform="translate(15.84,-205.2)">
+				<title>iq_tensor</title>
+				<desc>I/Q z 2 × 1800</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="36" cy="807.84" width="72" height="40.32"/>
+				<rect x="0" y="787.68" width="72" height="40.32" class="st11"/>
+				<text x="19.79" y="803.64" class="st32" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>I/Q z<v:newlineChar/><tspan
+							x="7.49" dy="1.05em" class="st12">2 × 1800</tspan></text>			</g>
+			<g id="shape40-152" v:mID="40" v:groupContext="shape" transform="translate(118.08,-201.6)">
+				<title>enc0</title>
+				<desc>Res 16 16 × 1800</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="59.76" cy="804.24" width="119.52" height="47.52"/>
+				<rect x="0" y="780.48" width="119.52" height="47.52" class="st13"/>
+				<text x="35.01" y="799.52" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Res 16<v:newlineChar/><tspan
+							x="23.18" dy="1.05em" class="st12">16 × 1800</tspan></text>			</g>
+			<g id="shape41-156" v:mID="41" v:groupContext="shape" transform="translate(118.08,-118.8)">
+				<title>enc1</title>
+				<desc>Res 32, s = 2 32 × 900</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="59.76" cy="804.24" width="119.52" height="47.52"/>
+				<rect x="0" y="780.48" width="119.52" height="47.52" class="st13"/>
+				<text x="12.93" y="799.52" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Res 32, s = 2<v:newlineChar/><tspan
+							x="27.68" dy="1.05em" class="st12">32 × 900</tspan></text>			</g>
+			<g id="shape42-160" v:mID="42" v:groupContext="shape" transform="translate(118.08,-36)">
+				<title>enc2</title>
+				<desc>Res 64, s = 2 64 × 450</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="59.76" cy="804.24" width="119.52" height="47.52"/>
+				<rect x="0" y="780.48" width="119.52" height="47.52" class="st13"/>
+				<text x="12.93" y="799.52" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Res 64, s = 2<v:newlineChar/><tspan
+							x="27.68" dy="1.05em" class="st12">64 × 450</tspan></text>			</g>
+			<g id="shape43-164" v:mID="43" v:groupContext="shape" transform="translate(360,-205.2)">
+				<title>concat0</title>
+				<desc>Concat 48 ch</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="30.24" cy="807.84" width="60.48" height="40.32"/>
+				<rect x="0" y="787.68" width="60.48" height="40.32" class="st11"/>
+				<text x="9" y="803.9" class="st33" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Concat<v:newlineChar/><tspan
+							x="13.79" dy="1.05em" class="st12">48 ch</tspan></text>			</g>
+			<g id="shape44-168" v:mID="44" v:groupContext="shape" transform="translate(360,-122.4)">
+				<title>concat1</title>
+				<desc>Concat 96 ch</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="30.24" cy="807.84" width="60.48" height="40.32"/>
+				<rect x="0" y="787.68" width="60.48" height="40.32" class="st11"/>
+				<text x="9" y="803.9" class="st33" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Concat<v:newlineChar/><tspan
+							x="13.79" dy="1.05em" class="st12">96 ch</tspan></text>			</g>
+			<g id="shape45-172" v:mID="45" v:groupContext="shape" transform="translate(439.92,-201.6)">
+				<title>dec0</title>
+				<desc>Res 16 16 × 1800</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="58.68" cy="804.24" width="117.36" height="47.52"/>
+				<rect x="0" y="780.48" width="117.36" height="47.52" class="st34"/>
+				<text x="33.93" y="799.52" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Res 16<v:newlineChar/><tspan
+							x="22.1" dy="1.05em" class="st12">16 × 1800</tspan></text>			</g>
+			<g id="shape46-176" v:mID="46" v:groupContext="shape" transform="translate(439.92,-118.8)">
+				<title>dec1</title>
+				<desc>Res 32 32 × 900</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="58.68" cy="804.24" width="117.36" height="47.52"/>
+				<rect x="0" y="780.48" width="117.36" height="47.52" class="st34"/>
+				<text x="33.93" y="799.52" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Res 32<v:newlineChar/><tspan
+							x="26.6" dy="1.05em" class="st12">32 × 900</tspan></text>			</g>
+			<g id="shape47-180" v:mID="47" v:groupContext="shape" transform="translate(588.24,-203.76)">
+				<title>head</title>
+				<desc>Conv₁ 16 → 2</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="32.4" cy="806.4" width="64.8" height="43.2"/>
+				<rect x="0" y="784.8" width="64.8" height="43.2" class="st34"/>
+				<text x="12.67" y="802.2" class="st32" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv₁<v:newlineChar/><tspan
+							x="8.4" dy="1.05em" class="st12">16 </tspan>→ 2</text>			</g>
+			<g id="shape48-184" v:mID="48" v:groupContext="shape" transform="translate(87.84,-225.36)">
+				<title>iq_to_enc0</title>
+				<path d="M0 828 L24.34 828" class="st19"/>
+			</g>
+			<g id="shape49-189" v:mID="49" v:groupContext="shape" transform="translate(1005.84,626.4) rotate(90)">
+				<title>down0</title>
+				<path d="M0 828 L29.38 828" class="st19"/>
+			</g>
+			<g id="shape50-194" v:mID="50" v:groupContext="shape" transform="translate(185.04,-174.96)">
+				<title>down0_label</title>
+				<desc>↓2</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="19.8" cy="817.92" width="39.6" height="20.16"/>
+				<rect x="0" y="807.84" width="39.6" height="20.16" class="st1"/>
+				<text x="11.3" y="822.38" class="st23" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>↓2</text>			</g>
+			<g id="shape51-197" v:mID="51" v:groupContext="shape" transform="translate(1005.84,709.2) rotate(90)">
+				<title>down1</title>
+				<path d="M0 828 L29.38 828" class="st19"/>
+			</g>
+			<g id="shape52-202" v:mID="52" v:groupContext="shape" transform="translate(185.04,-92.16)">
+				<title>down1_label</title>
+				<desc>↓2</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="19.8" cy="817.92" width="39.6" height="20.16"/>
+				<rect x="0" y="807.84" width="39.6" height="20.16" class="st1"/>
+				<text x="11.3" y="822.38" class="st23" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>↓2</text>			</g>
+			<g id="shape53-205" v:mID="53" v:groupContext="shape" transform="translate(237.6,-225.36)">
+				<title>skip0</title>
+				<path d="M0 828 L116.5 828" class="st35"/>
+			</g>
+			<g id="shape54-211" v:mID="54" v:groupContext="shape" transform="translate(237.6,-142.56)">
+				<title>skip1</title>
+				<path d="M0 828 L116.5 828" class="st35"/>
+			</g>
+			<g id="shape55-216" v:mID="55" v:groupContext="shape" transform="translate(267.12,-231.12)">
+				<title>skip0_label</title>
+				<desc>skip</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="39.6" cy="818.64" width="79.2" height="18.72"/>
+				<rect x="0" y="809.28" width="79.2" height="18.72" class="st1"/>
+				<text x="26.26" y="822.84" class="st30" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>skip</text>			</g>
+			<g id="shape56-219" v:mID="56" v:groupContext="shape" transform="translate(267.12,-148.32)">
+				<title>skip1_label</title>
+				<desc>skip</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="39.6" cy="818.64" width="79.2" height="18.72"/>
+				<rect x="0" y="809.28" width="79.2" height="18.72" class="st1"/>
+				<text x="26.26" y="822.84" class="st30" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>skip</text>			</g>
+			<g id="shape57-222" v:mID="57" v:groupContext="shape" transform="translate(420.48,-225.36)">
+				<title>concat_to_dec0</title>
+				<path d="M0 828 L13.54 828" class="st19"/>
+			</g>
+			<g id="shape58-227" v:mID="58" v:groupContext="shape" transform="translate(420.48,-142.56)">
+				<title>concat_to_dec1</title>
+				<path d="M0 828 L13.54 828" class="st19"/>
+			</g>
+			<g id="shape59-232" v:mID="59" v:groupContext="shape" transform="translate(-54.7511,55.8443) rotate(-22.3121)">
+				<title>upsample1</title>
+				<path d="M0 770.05 L141.21 828 L164.99 770.05 L164.99 770.05" class="st22"/>
+			</g>
+			<g id="shape60-237" v:mID="60" v:groupContext="shape" transform="translate(264.96,-65.52)">
+				<title>upsample1_label</title>
+				<desc>Linear ↑2</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="56.88" cy="817.92" width="113.76" height="20.16"/>
+				<rect x="0" y="807.84" width="113.76" height="20.16" class="st1"/>
+				<text x="24.08" y="822.38" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Linear ↑2</text>			</g>
+			<g id="shape61-240" v:mID="61" v:groupContext="shape" transform="translate(225.145,1423.81) rotate(-160.262)">
+				<title>upsample0</title>
+				<path d="M0 809.7 L6.57 828 L108.56 791.4 L115.12 809.7 L115.12 809.7" class="st22"/>
+			</g>
+			<g id="shape62-245" v:mID="62" v:groupContext="shape" transform="translate(257.76,-180.72)">
+				<title>upsample0_label</title>
+				<desc>Linear ↑2</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="59.4" cy="818.64" width="118.8" height="18.72"/>
+				<rect x="0" y="809.28" width="118.8" height="18.72" class="st1"/>
+				<text x="28.52" y="822.84" class="st32" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Linear ↑2</text>			</g>
+			<g id="shape63-248" v:mID="63" v:groupContext="shape" transform="translate(557.28,-225.36)">
+				<title>dec0_to_head</title>
+				<path d="M0 828 L25.06 828" class="st19"/>
+			</g>
+			<g id="shape64-253" v:mID="64" v:groupContext="shape" transform="translate(1448.64,624.24) rotate(90)">
+				<title>head_to_delta</title>
+				<path d="M0 828 L17.14 828" class="st19"/>
+			</g>
+			<g id="shape65-258" v:mID="65" v:groupContext="shape" transform="translate(564.48,-137.52)">
+				<title>output_tensor</title>
+				<desc>δz 2 × 1800</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="49.68" cy="808.92" width="99.36" height="38.16"/>
+				<rect x="0" y="789.84" width="99.36" height="38.16" class="st1"/>
+				<text x="43.58" y="804.46" class="st36" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>δ<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="17">z<v:newlineChar/></tspan><tspan x="18.44" dy="1.231em"
+							class="st12">2 × 1800</tspan></text>			</g>
+			<g id="shape66-263" v:mID="66" v:groupContext="shape" transform="translate(20.88,-10.08)">
+				<title>backbone_legend</title>
+				<desc>Res: block (c); Concat: channels; tensor sizes: channels × sa...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="313.2" cy="817.92" width="626.4" height="20.16"/>
+				<rect x="0" y="807.84" width="626.4" height="20.16" class="st1"/>
+				<text x="0" y="822.12" class="st37" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Res: block (c);  Concat: channels;  tensor sizes: channels × samples</text>			</g>
+		</g>
+		<g id="group119-266" transform="translate(705.6,-288.72)" v:mID="119" v:groupContext="group">
+			<title>C_Residual_Block</title>
+			<g id="shape67-267" v:mID="67" v:groupContext="shape" transform="translate(2.88,-279.36)">
+				<title>title_c</title>
+				<desc>(c) Residual convolution block</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="213.84" cy="815.04" width="427.68" height="25.92"/>
+				<rect x="0" y="802.08" width="427.68" height="25.92" class="st1"/>
+				<text x="0" y="820.55" class="st2" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(c)  Residual convolution block</text>			</g>
+			<g id="shape68-270" v:mID="68" v:groupContext="shape">
+				<title>panel_c</title>
+				<rect x="0" y="556.56" width="432" height="271.44" class="st3"/>
+			</g>
+			<g id="shape69-272" v:mID="69" v:groupContext="shape" transform="translate(151.2,-244.08)">
+				<title>block_h</title>
+				<desc>h</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="25.2" cy="817.92" width="50.4" height="20.16"/>
+				<rect x="0" y="807.84" width="50.4" height="20.16" class="st1"/>
+				<text x="20.45" y="822.91" class="st26" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>h</text>			</g>
+			<g id="shape70-275" v:mID="70" v:groupContext="shape" transform="translate(116.64,-190.08)">
+				<title>conv5</title>
+				<desc>Conv₅, stride s</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="60.48" cy="809.28" width="120.96" height="37.44"/>
+				<rect x="0" y="790.56" width="120.96" height="37.44" class="st13"/>
+				<text x="10.94" y="813.74" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv₅, stride s</text>			</g>
+			<g id="shape71-278" v:mID="71" v:groupContext="shape" transform="translate(116.64,-139.68)">
+				<title>norm_gelu</title>
+				<desc>GN → GELU</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="60.48" cy="809.28" width="120.96" height="37.44"/>
+				<rect x="0" y="790.56" width="120.96" height="37.44" class="st38"/>
+				<text x="12.79" y="813.74" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>GN → GELU</text>			</g>
+			<g id="shape72-281" v:mID="72" v:groupContext="shape" transform="translate(116.64,-89.28)">
+				<title>conv3_gn</title>
+				<desc>Conv₃ → GN</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="60.48" cy="809.28" width="120.96" height="37.44"/>
+				<rect x="0" y="790.56" width="120.96" height="37.44" class="st13"/>
+				<text x="14.49" y="813.74" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv₃ → GN</text>			</g>
+			<g id="shape73-284" v:mID="73" v:groupContext="shape" transform="translate(14.4,-128.88)">
+				<title>projection</title>
+				<desc>Conv₁ stride s</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="42.48" cy="803.88" width="84.96" height="48.24"/>
+				<rect x="0" y="779.76" width="84.96" height="48.24" class="st34"/>
+				<text x="22.75" y="799.68" class="st32" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv₁<v:newlineChar/><tspan
+							x="19.59" dy="1.05em" class="st12">stride s</tspan></text>			</g>
+			<g id="shape74-288" v:mID="74" v:groupContext="shape" transform="translate(164.16,-39.6)">
+				<title>residual_add</title>
+				<desc>+</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="12.96" cy="815.04" width="25.92" height="25.92"/>
+				<ellipse cx="12.96" cy="815.04" rx="12.96" ry="12.96" class="st11"/>
+				<text x="6.76" y="820.81" class="st39" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>+</text>			</g>
+			<g id="shape75-291" v:mID="75" v:groupContext="shape" transform="translate(264.24,-35.28)">
+				<title>final_gelu</title>
+				<desc>GELU</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="46.8" cy="810.72" width="93.6" height="34.56"/>
+				<rect x="0" y="793.44" width="93.6" height="34.56" class="st38"/>
+				<text x="22.81" y="815.45" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>GELU</text>			</g>
+			<g id="shape76-294" v:mID="76" v:groupContext="shape" transform="translate(1005.12,583.92) rotate(90)">
+				<title>h_to_conv5</title>
+				<path d="M0 828 L10.66 828" class="st19"/>
+			</g>
+			<g id="shape77-299" v:mID="77" v:groupContext="shape" transform="translate(174.96,-235.44)">
+				<title>h_split</title>
+				<ellipse cx="2.16" cy="825.84" rx="2.16" ry="2.16" class="st21"/>
+			</g>
+			<g id="shape78-301" v:mID="78" v:groupContext="shape" transform="translate(524.905,1281.83) rotate(153.298)">
+				<title>h_to_projection</title>
+				<path d="M0 773.97 L107.42 828 L134.59 773.97 L134.59 773.97" class="st22"/>
+			</g>
+			<g id="shape79-306" v:mID="79" v:groupContext="shape" transform="translate(1005.12,637.92) rotate(90)">
+				<title>conv5_to_gn</title>
+				<path d="M0 828 L7.06 828" class="st19"/>
+			</g>
+			<g id="shape80-311" v:mID="80" v:groupContext="shape" transform="translate(1005.12,688.32) rotate(90)">
+				<title>gn_to_conv3</title>
+				<path d="M0 828 L7.06 828" class="st19"/>
+			</g>
+			<g id="shape81-316" v:mID="81" v:groupContext="shape" transform="translate(1005.12,738.72) rotate(90)">
+				<title>conv3_to_add</title>
+				<path d="M0 828 L17.86 828" class="st19"/>
+			</g>
+			<g id="shape82-321" v:mID="82" v:groupContext="shape" transform="translate(500.81,75.1059) rotate(35.4284)">
+				<title>projection_to_add</title>
+				<path d="M0 765.81 L44.24 828 L131.66 765.81 L131.66 765.81" class="st40"/>
+			</g>
+			<g id="shape83-326" v:mID="83" v:groupContext="shape" transform="translate(190.08,-52.56)">
+				<title>add_to_gelu</title>
+				<path d="M0 828 L68.26 828" class="st19"/>
+			</g>
+			<g id="shape84-331" v:mID="84" v:groupContext="shape" transform="translate(357.84,-52.56)">
+				<title>block_output</title>
+				<path d="M0 828 L45.94 828" class="st19"/>
+			</g>
+			<g id="shape85-336" v:mID="85" v:groupContext="shape" transform="translate(367.2,-58.32)">
+				<title>block_output_h</title>
+				<desc>h′</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="26.28" cy="817.2" width="52.56" height="21.6"/>
+				<rect x="0" y="806.4" width="52.56" height="21.6" class="st1"/>
+				<text x="19.45" y="822.19" class="st26" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>h′</text>			</g>
+			<g id="shape86-339" v:mID="86" v:groupContext="shape" transform="translate(12.24,-10.08)">
+				<title>block_legend</title>
+				<desc>GN: 8 groups; s = 2 for downsampling, otherwise 1</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="203.76" cy="817.92" width="407.52" height="20.16"/>
+				<rect x="0" y="807.84" width="407.52" height="20.16" class="st1"/>
+				<text x="0" y="822.12" class="st37" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>GN: 8 groups; s = 2 for downsampling, otherwise 1</text>			</g>
+		</g>
+		<g id="group120-342" transform="translate(14.4,-12.24)" v:mID="120" v:groupContext="group">
+			<title>D_Paired_Training</title>
+			<g id="shape87-343" v:mID="87" v:groupContext="shape" transform="translate(1.44,-233.28)">
+				<title>title_d</title>
+				<desc>(d) Four-state paired supervision (training only)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="442.8" cy="813.96" width="885.6" height="28.08"/>
+				<rect x="0" y="799.92" width="885.6" height="28.08" class="st1"/>
+				<text x="0" y="819.47" class="st2" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(d)  Four-state paired supervision (training only)</text>			</g>
+			<g id="shape88-346" v:mID="88" v:groupContext="shape">
+				<title>panel_d</title>
+				<path d="M0 828 L1123.2 828 L1123.2 604.8 L0 604.8 L0 828 Z" class="st41"/>
+			</g>
+			<g id="shape89-348" v:mID="89" v:groupContext="shape" transform="translate(16.56,-195.12)">
+				<title>shared_realizations</title>
+				<desc>Shared realizations of S, J and E in each quartet</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="232.56" cy="817.92" width="465.12" height="20.16"/>
+				<rect x="0" y="807.84" width="465.12" height="20.16" class="st1"/>
+				<text x="70.17" y="822.38" class="st23" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Shared realizations of S, J and E in each quartet</text>			</g>
+			<g id="shape90-351" v:mID="90" v:groupContext="shape" transform="translate(201.6,-47.52)">
+				<title>shared_C</title>
+				<desc>CorrectionNet Cθ Shared weights</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="68.4" cy="763.2" width="136.8" height="129.6"/>
+				<rect x="0" y="698.4" width="136.8" height="129.6" class="st13"/>
+				<text x="12.93" y="739.58" class="st14" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>CorrectionNet<v:newlineChar/><tspan
+							x="58.85" dy="1.05em" class="st12">C</tspan><tspan dy="-0.279em" class="st15" v:baseFontSize="18">θ<v:newlineChar/><v:newlineChar/></tspan><tspan
+							x="9.65" dy="2.281em" class="st12">Shared weights</tspan></text>			</g>
+			<g id="shape91-357" v:mID="91" v:groupContext="shape" transform="translate(20.16,-173.52)">
+				<title>states_heading</title>
+				<desc>Input yab</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="69.84" cy="817.92" width="139.68" height="20.16"/>
+				<rect x="0" y="807.84" width="139.68" height="20.16" class="st1"/>
+				<text x="42.05" y="822.12" class="st32" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Input y<tspan
+							dy="-0.279em" class="st42" v:baseFontSize="16">ab</tspan></text>			</g>
+			<g id="shape92-361" v:mID="92" v:groupContext="shape" transform="translate(364.32,-173.52)">
+				<title>targets_heading</title>
+				<desc>cab / qab</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="65.88" cy="817.92" width="131.76" height="20.16"/>
+				<rect x="0" y="807.84" width="131.76" height="20.16" class="st1"/>
+				<text x="40.82" y="822.38" class="st4" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>c<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="17">ab</tspan><tspan dy="0.181em" class="st12"> </tspan>/ q<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="17">ab</tspan></text>			</g>
+			<g id="shape93-367" v:mID="93" v:groupContext="shape" transform="translate(20.16,-142.56)">
+				<title>state_00</title>
+				<desc>E</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="69.84" cy="815.04" width="139.68" height="25.92"/>
+				<rect x="0" y="802.08" width="139.68" height="25.92" class="st43"/>
+				<text x="64.34" y="819.77" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>E</text>			</g>
+			<g id="shape94-370" v:mID="94" v:groupContext="shape" transform="translate(159.84,-155.52)">
+				<title>state_to_C_00</title>
+				<path d="M0 828 L35.86 828" class="st19"/>
+			</g>
+			<g id="shape95-375" v:mID="95" v:groupContext="shape" transform="translate(338.4,-155.52)">
+				<title>C_to_prediction_00</title>
+				<path d="M0 828 L26.5 828" class="st19"/>
+			</g>
+			<g id="shape96-380" v:mID="96" v:groupContext="shape" transform="translate(375.12,-142.56)">
+				<title>prediction_00</title>
+				<desc>c00 / 0</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="58.68" cy="815.04" width="117.36" height="25.92"/>
+				<rect x="0" y="802.08" width="117.36" height="25.92" class="st1"/>
+				<text x="32.84" y="819.77" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>c<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">00</tspan><tspan dy="0.181em" class="st12">  </tspan>/  0</text>			</g>
+			<g id="shape97-385" v:mID="97" v:groupContext="shape" transform="translate(20.16,-110.16)">
+				<title>state_10</title>
+				<desc>S + E</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="69.84" cy="815.04" width="139.68" height="25.92"/>
+				<rect x="0" y="802.08" width="139.68" height="25.92" class="st43"/>
+				<text x="49.76" y="819.77" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>S + E</text>			</g>
+			<g id="shape98-388" v:mID="98" v:groupContext="shape" transform="translate(159.84,-123.12)">
+				<title>state_to_C_10</title>
+				<path d="M0 828 L35.86 828" class="st19"/>
+			</g>
+			<g id="shape99-393" v:mID="99" v:groupContext="shape" transform="translate(338.4,-123.12)">
+				<title>C_to_prediction_10</title>
+				<path d="M0 828 L26.5 828" class="st19"/>
+			</g>
+			<g id="shape100-398" v:mID="100" v:groupContext="shape" transform="translate(375.12,-110.16)">
+				<title>prediction_10</title>
+				<desc>c10 / 0</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="58.68" cy="815.04" width="117.36" height="25.92"/>
+				<rect x="0" y="802.08" width="117.36" height="25.92" class="st1"/>
+				<text x="32.84" y="819.77" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>c<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">10</tspan><tspan dy="0.181em" class="st12">  </tspan>/  0</text>			</g>
+			<g id="shape101-403" v:mID="101" v:groupContext="shape" transform="translate(20.16,-77.76)">
+				<title>state_01</title>
+				<desc>J + E</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="69.84" cy="815.04" width="139.68" height="25.92"/>
+				<rect x="0" y="802.08" width="139.68" height="25.92" class="st44"/>
+				<text x="51.26" y="819.77" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>J + E</text>			</g>
+			<g id="shape102-406" v:mID="102" v:groupContext="shape" transform="translate(159.84,-90.72)">
+				<title>state_to_C_01</title>
+				<path d="M0 828 L35.86 828" class="st19"/>
+			</g>
+			<g id="shape103-411" v:mID="103" v:groupContext="shape" transform="translate(338.4,-90.72)">
+				<title>C_to_prediction_01</title>
+				<path d="M0 828 L26.5 828" class="st19"/>
+			</g>
+			<g id="shape104-416" v:mID="104" v:groupContext="shape" transform="translate(375.12,-77.76)">
+				<title>prediction_01</title>
+				<desc>c01 / J</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="58.68" cy="815.04" width="117.36" height="25.92"/>
+				<rect x="0" y="802.08" width="117.36" height="25.92" class="st1"/>
+				<text x="33.34" y="819.77" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>c<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">01</tspan><tspan dy="0.181em" class="st12">  </tspan>/  J</text>			</g>
+			<g id="shape105-421" v:mID="105" v:groupContext="shape" transform="translate(20.16,-45.36)">
+				<title>state_11</title>
+				<desc>S + J + E</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="69.84" cy="815.04" width="139.68" height="25.92"/>
+				<rect x="0" y="802.08" width="139.68" height="25.92" class="st44"/>
+				<text x="36.68" y="819.77" class="st24" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>S + J + E</text>			</g>
+			<g id="shape106-424" v:mID="106" v:groupContext="shape" transform="translate(159.84,-58.32)">
+				<title>state_to_C_11</title>
+				<path d="M0 828 L35.86 828" class="st19"/>
+			</g>
+			<g id="shape107-429" v:mID="107" v:groupContext="shape" transform="translate(338.4,-58.32)">
+				<title>C_to_prediction_11</title>
+				<path d="M0 828 L26.5 828" class="st19"/>
+			</g>
+			<g id="shape108-434" v:mID="108" v:groupContext="shape" transform="translate(375.12,-45.36)">
+				<title>prediction_11</title>
+				<desc>c11 / J</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="58.68" cy="815.04" width="117.36" height="25.92"/>
+				<rect x="0" y="802.08" width="117.36" height="25.92" class="st1"/>
+				<text x="33.34" y="819.77" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>c<tspan
+							dy="-0.279em" class="st15" v:baseFontSize="18">11</tspan><tspan dy="0.181em" class="st12">  </tspan>/  J</text>			</g>
+			<g id="shape109-439" v:mID="109" v:groupContext="shape" transform="translate(18,-12.96)">
+				<title>references</title>
+				<desc>References uab: (E, S + E, E, S + E)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="235.8" cy="816.12" width="471.6" height="23.76"/>
+				<rect x="0" y="804.24" width="471.6" height="23.76" class="st1"/>
+				<text x="122.34" y="820.32" class="st37" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>References u<tspan
+							dy="-0.279em" class="st42" v:baseFontSize="16">ab</tspan><tspan dy="0.181em" class="st12">: (E, S + E, E, S + E)</tspan></text>			</g>
+			<g id="shape110-444" v:mID="110" v:groupContext="shape" transform="translate(511.2,-42.48)">
+				<title>loss_panel</title>
+				<rect x="0" y="663.84" width="594" height="164.16" class="st45"/>
+			</g>
+			<g id="shape111-446" v:mID="111" v:groupContext="shape" transform="translate(523.44,-174.96)">
+				<title>total_loss</title>
+				<desc>L = Lend + 0.1 LPC + Ldamage</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="285.12" cy="814.68" width="570.24" height="26.64"/>
+				<rect x="0" y="801.36" width="570.24" height="26.64" class="st1"/>
+				<text x="165.2" y="820.19" class="st2" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>L = L<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="21">end</tspan><tspan dy="0.181em" class="st12"> </tspan>+ 0.1 L<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="21">PC</tspan><tspan dy="0.181em" class="st12"> </tspan>+ L<tspan
+							dy="-0.279em" class="st17" v:baseFontSize="21">damage</tspan></text>			</g>
+			<g id="shape112-454" v:mID="112" v:groupContext="shape" transform="translate(525.6,-170.64)">
+				<title>loss_rule</title>
+				<path d="M0 828 L565.2 828" class="st46"/>
+			</g>
+			<g id="shape113-457" v:mID="113" v:groupContext="shape" transform="translate(524.16,-133.2)">
+				<title>endpoint_loss</title>
+				<desc>Lend = ⟨ ‖cab − qab‖² / max(‖uab‖², ε) ⟩ab</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="282.96" cy="814.32" width="565.93" height="27.36"/>
+				<rect x="0" y="800.64" width="565.92" height="27.36" class="st1"/>
+				<text x="144.25" y="819.38" class="st47" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>L<tspan
+							dy="-0.279em" class="st27" v:baseFontSize="19">end</tspan><tspan dy="0.181em" class="st12"> </tspan>= <tspan
+							class="st9">⟨</tspan> ‖c<tspan dy="-0.279em" class="st27" v:baseFontSize="19">ab</tspan><tspan
+							dy="0.181em" class="st12"> </tspan>− q<tspan dy="-0.279em" class="st27" v:baseFontSize="19">ab</tspan><tspan
+							dy="0.181em" class="st12">‖</tspan>² / max(‖u<tspan dy="-0.279em" class="st27" v:baseFontSize="19">ab</tspan><tspan
+							dy="0.181em" class="st12">‖</tspan>², ε) <tspan class="st9">⟩</tspan><tspan dy="-0.279em" class="st27"
+							v:baseFontSize="19">ab</tspan></text>			</g>
+			<g id="shape114-471" v:mID="114" v:groupContext="shape" transform="translate(524.16,-97.92)">
+				<title>pc_loss</title>
+				<desc>LPC = ⟨ ‖H(cab − qab)‖² / max(‖Huab‖², ε) ⟩ab</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="282.96" cy="814.32" width="565.93" height="27.36"/>
+				<rect x="0" y="800.64" width="565.92" height="27.36" class="st1"/>
+				<text x="125.56" y="819.38" class="st47" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>L<tspan
+							dy="-0.279em" class="st27" v:baseFontSize="19">PC</tspan><tspan dy="0.181em" class="st12"> </tspan>= <tspan
+							class="st9">⟨</tspan> ‖H(c<tspan dy="-0.279em" class="st27" v:baseFontSize="19">ab</tspan><tspan
+							dy="0.181em" class="st12"> </tspan>− q<tspan dy="-0.279em" class="st27" v:baseFontSize="19">ab</tspan><tspan
+							dy="0.181em" class="st12">)</tspan>‖² / max(‖Hu<tspan dy="-0.279em" class="st27" v:baseFontSize="19">ab</tspan><tspan
+							dy="0.181em" class="st12">‖</tspan>², ε) <tspan class="st9">⟩</tspan><tspan dy="-0.279em" class="st27"
+							v:baseFontSize="19">ab</tspan></text>			</g>
+			<g id="shape115-485" v:mID="115" v:groupContext="shape" transform="translate(524.16,-59.04)">
+				<title>damage_loss</title>
+				<desc>Ldamage = ‖c11 − c01‖² / max(‖S‖², ε)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="282.96" cy="812.52" width="565.93" height="30.96"/>
+				<rect x="0" y="797.04" width="565.92" height="30.96" class="st1"/>
+				<text x="156.5" y="817.51" class="st48" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>L<tspan
+							dy="-0.279em" class="st27" v:baseFontSize="19">damage</tspan><tspan dy="0.181em" class="st12"> </tspan>= ‖c<tspan
+							dy="-0.279em" class="st27" v:baseFontSize="19">11</tspan><tspan dy="0.181em" class="st12"> </tspan>− c<tspan
+							dy="-0.279em" class="st27" v:baseFontSize="19">01</tspan><tspan dy="0.181em" class="st12">‖</tspan>² / max(‖S‖², ε)</text>			</g>
+			<g id="shape116-494" v:mID="116" v:groupContext="shape" transform="translate(518.4,-12.24)">
+				<title>loss_legend</title>
+				<desc>H: matched filter; ⟨·⟩ab: mean over four states; ε = 10−12</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="289.44" cy="815.4" width="578.88" height="25.2"/>
+				<rect x="0" y="802.8" width="578.88" height="25.2" class="st1"/>
+				<text x="108.16" y="819.66" class="st37" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>H: matched filter;  <tspan
+							class="st9">⟨</tspan>·<tspan class="st9">⟩</tspan><tspan dy="-0.279em" class="st42" v:baseFontSize="16">ab</tspan><tspan
+							dy="0.181em" class="st12">: mean over four states;  </tspan>ε = 10<tspan dy="-0.198em" class="st49"
+							v:baseFontSize="16">−</tspan><tspan class="st49" v:baseFontSize="16">12</tspan></text>			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "stage": "completion_zh_final",
+  "utc": "2026-11-16T08:57:28.777218+00:00",
+  "manuscript_sha256": "3b82485f6143d8a5f5da6d7047f6ceff0f671ebe31accd6e7411fe377952996f",
+  "backup": "backups/completion_zh_final_3b82485f6143.md",
+  "characters": 51905,
+  "han_characters": 18114,
+  "protected_span_count": 883,
+  "prose_nonspace_characters": 22880,
+  "protected_sha256": "5042d7e009e01a8d4409c4a2e60d80e6d90bab95d28762d4599e01199582fa38",
+  "invisible_or_replacement_characters": [],
+  "skill_exit_code": 0,
+  "skill_audit": {
+    "path": "G:\\Project Code\\ISRJ_222\\manuscript\\work\\completion_zh_final_prose_only.txt",
+    "density_tier": "low",
+    "flagged_count": 0,
+    "flagged": [],
+    "stylometry": {
+      "path": "G:\\Project Code\\ISRJ_222\\manuscript\\work\\completion_zh_final_prose_only.txt",
+      "word_count": 2693,
+      "sentence_count": 279,
+      "burstiness_cv": 0.8733,
+      "lexical_diversity": 0.924,
+      "ai_ngram_density": 0.0,
+      "matched_markers": [],
+      "score": 0.0325,
+      "confidence_level": "CLEAN",
+      "density_tier": "low",
+      "status": "ok",
+      "findings": [],
+      "findings_confidence": [],
+      "notes": []
+    }
+  },
+  "interpretation": "Offline inspection only. English stylistic heuristics are not calibrated for Chinese scientific prose; no authorship or detector-evasion claim. No whole-document cleanup performed."
+}

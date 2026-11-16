@@ -1,0 +1,72 @@
+{
+  "stage": "completion_en_final",
+  "utc": "2026-11-16T08:57:29.977437+00:00",
+  "manuscript_sha256": "83b9cc0e9724f62758776f76666201e7625d03c0d272a3e2583611b67a2b567a",
+  "backup": "backups/completion_en_final_83b9cc0e9724.md",
+  "characters": 75595,
+  "han_characters": 0,
+  "protected_span_count": 675,
+  "prose_nonspace_characters": 43661,
+  "protected_sha256": "b2c7aa9e10ab3a7ae4b399daa1932f1ff4beae071b75768fa96bbb8e8ba4499e",
+  "invisible_or_replacement_characters": [],
+  "skill_exit_code": 0,
+  "skill_audit": {
+    "path": "G:\\Project Code\\ISRJ_222\\manuscript\\work\\completion_en_final_prose_only.txt",
+    "density_tier": "low",
+    "flagged_count": 1,
+    "flagged": [
+      {
+        "detector": "stylometry",
+        "phrase": "moreover,",
+        "count": 1,
+        "weight": 0.6,
+        "samples": [
+          "Moreover,"
+        ],
+        "spans": [
+          [
+            12877,
+            12886
+          ]
+        ],
+        "severity": "low"
+      }
+    ],
+    "stylometry": {
+      "path": "G:\\Project Code\\ISRJ_222\\manuscript\\work\\completion_en_final_prose_only.txt",
+      "word_count": 6958,
+      "sentence_count": 583,
+      "burstiness_cv": 0.5631,
+      "lexical_diversity": 0.8357,
+      "ai_ngram_density": 0.0086,
+      "matched_markers": [
+        {
+          "phrase": "moreover,",
+          "count": 1,
+          "weight": 0.6,
+          "samples": [
+            "Moreover,"
+          ],
+          "spans": [
+            [
+              12877,
+              12886
+            ]
+          ]
+        }
+      ],
+      "score": 0.1225,
+      "confidence_level": "CLEAN",
+      "density_tier": "low",
+      "status": "ok",
+      "findings": [
+        "AI cadence phrase 'moreover,' (1x)"
+      ],
+      "findings_confidence": [
+        "informational"
+      ],
+      "notes": []
+    }
+  },
+  "interpretation": "Offline inspection only. English stylistic heuristics are not calibrated for Chinese scientific prose; no authorship or detector-evasion claim. No whole-document cleanup performed."
+}

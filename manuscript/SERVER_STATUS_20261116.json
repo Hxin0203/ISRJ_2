@@ -1,0 +1,143 @@
+{
+  "checked_server_host": "DESKTOP-RFFERM3",
+  "files": {
+    "QUEUE_STATUS.json": {
+      "stage": "TRAINING_QUEUE",
+      "job_index": 13,
+      "jobs": 15,
+      "variant": "no_dechirp",
+      "seed": 41,
+      "attempt": 1,
+      "controller_pid": 29968,
+      "worker_pid": 33668,
+      "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+      "updated_utc": "2026-11-16T07:48:00.381683+00:00"
+    },
+    "STATUS.json": {
+      "stage": "TRAINING",
+      "variant": "no_dechirp",
+      "seed": 41,
+      "epoch": 89,
+      "batch": 1,
+      "batches": 48,
+      "last_committed_epoch": 88,
+      "loss": {
+        "total": 0.05763881281018257,
+        "endpoint": 0.031715866178274155,
+        "pc": 0.04901260882616043,
+        "damage": 0.021021686494350433,
+        "gradient_norm": 0.4408985674381256,
+        "lr": 0.00024071715897397948
+      },
+      "pid": 29420,
+      "updated_utc": "2026-11-16T08:16:34.847134+00:00"
+    },
+    "EVAL_STATUS.json": {
+      "variant": "no_dechirp",
+      "seed": 41,
+      "epoch": 64,
+      "scope": "DEV",
+      "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+      "checkpoint_sha256": "5906223556e70ad2d349f36a379f64095cec7220c04431e835cab7104fd90178",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "parents_done": 256,
+      "parents": 256,
+      "updated_utc": "2026-11-16T08:08:59.413014+00:00"
+    },
+    "RESOURCE_STATUS.json": {
+      "utc": "2026-11-16T08:16:29.262913+00:00",
+      "gpu_index": 1,
+      "gpu_utilization_percent": 99.0,
+      "gpu_free_mib": 10469.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 14.3,
+      "ram_free_bytes": 88901001216,
+      "disk_free_bytes": 1550953324544
+    },
+    "CONTROLLER_FAILURE.json": {
+      "stage": "STOPPED",
+      "utc": "2026-11-15T15:38:01.655556+00:00",
+      "error": "UserStop('User STOP: stopped at a saved epoch/job boundary')",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\run.py\", line 125, in main\n    run(budget)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\run.py\", line 37, in run\n    admit(BASE, EVIDENCE)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\runtime.py\", line 79, in admit\n    user_control(base)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_ablation\\runtime.py\", line 55, in user_control\n    raise UserStop(\"User STOP: stopped at a saved epoch/job boundary\")\ntools.unet_ablation.runtime.UserStop: User STOP: stopped at a saved epoch/job boundary\n",
+      "pid": 30264
+    }
+  },
+  "saved_epoch_counts": {
+    "full\\seed_17": 0,
+    "full\\seed_29": 0,
+    "full\\seed_41": 0,
+    "no_damage\\seed_17": 256,
+    "no_damage\\seed_29": 256,
+    "no_dechirp\\seed_17": 256,
+    "no_dechirp\\seed_29": 256,
+    "no_dechirp\\seed_41": 88,
+    "no_pc\\seed_17": 256,
+    "no_pc\\seed_29": 256,
+    "no_pc\\seed_41": 256,
+    "no_rms\\seed_17": 256,
+    "no_rms\\seed_29": 256,
+    "unet\\seed_17": 256,
+    "unet\\seed_29": 256,
+    "unet\\seed_41": 256
+  },
+  "processes": [
+    {
+      "name": "python.exe",
+      "ppid": 29516,
+      "cmdline": [
+        "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+        "-m",
+        "tools.unet_ablation.run"
+      ],
+      "pid": 14888,
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    },
+    {
+      "name": "python.exe",
+      "ppid": 33668,
+      "cmdline": [
+        "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "-m",
+        "tools.unet_ablation.train",
+        "--variant",
+        "no_dechirp",
+        "--seed",
+        "41"
+      ],
+      "pid": 29420,
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    },
+    {
+      "name": "python.exe",
+      "ppid": 14888,
+      "cmdline": [
+        "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "-m",
+        "tools.unet_ablation.run"
+      ],
+      "pid": 29968,
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    },
+    {
+      "name": "python.exe",
+      "ppid": 29968,
+      "cmdline": [
+        "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+        "-m",
+        "tools.unet_ablation.train",
+        "--variant",
+        "no_dechirp",
+        "--seed",
+        "41"
+      ],
+      "pid": 33668,
+      "cwd": "D:\\code\\Xin\\ISRJ_222",
+      "cuda_visible_devices": "1"
+    }
+  ],
+  "gpu": "0, NVIDIA GeForce RTX 5060 Ti, 826 MiB, 3 %\n1, NVIDIA GeForce RTX 5060 Ti, 5582 MiB, 56 %\n",
+  "retrieved_utc": "2026-11-16T08:16:42.202718+00:00"
+}

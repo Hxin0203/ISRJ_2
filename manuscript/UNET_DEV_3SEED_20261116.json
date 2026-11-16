@@ -1,0 +1,158 @@
+{
+  "scope": "DEV descriptive only; not independent confirmation; no significance test",
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "epoch": 256,
+  "parents": 256,
+  "rows": [
+    {
+      "model": "CorrectionNet",
+      "seed": 17,
+      "epoch": 256,
+      "u_nmse": 0.05789371008946728,
+      "damage": 0.0574652362227075,
+      "sjrif_db": 10.38722675100078,
+      "pd": 0.8645833333333334,
+      "frame_pfa_jammer": 0.14973958333333331
+    },
+    {
+      "model": "U-Net",
+      "seed": 17,
+      "epoch": 256,
+      "u_nmse": 0.055632660867064615,
+      "damage": 0.049637481082156085,
+      "sjrif_db": 10.584255632907691,
+      "pd": 0.8671875,
+      "frame_pfa_jammer": 0.11458333333333333
+    },
+    {
+      "model": "CorrectionNet",
+      "seed": 29,
+      "epoch": 256,
+      "u_nmse": 0.060920469410016234,
+      "damage": 0.06933495368482831,
+      "sjrif_db": 10.21884166689862,
+      "pd": 0.859375,
+      "frame_pfa_jammer": 0.16015625
+    },
+    {
+      "model": "U-Net",
+      "seed": 29,
+      "epoch": 256,
+      "u_nmse": 0.05426741428454518,
+      "damage": 0.04799551527975899,
+      "sjrif_db": 10.596249989454297,
+      "pd": 0.8723958333333333,
+      "frame_pfa_jammer": 0.11067708333333333
+    },
+    {
+      "model": "CorrectionNet",
+      "seed": 41,
+      "epoch": 256,
+      "u_nmse": 0.06084871946421417,
+      "damage": 0.06339139314003656,
+      "sjrif_db": 10.29784765062632,
+      "pd": 0.85546875,
+      "frame_pfa_jammer": 0.14973958333333331
+    },
+    {
+      "model": "U-Net",
+      "seed": 41,
+      "epoch": 256,
+      "u_nmse": 0.05363232931049781,
+      "damage": 0.046801664626954925,
+      "sjrif_db": 10.635139011827405,
+      "pd": 0.8645833333333333,
+      "frame_pfa_jammer": 0.10807291666666666
+    }
+  ],
+  "summary": {
+    "CorrectionNet": {
+      "u_nmse": {
+        "mean": 0.05988763298789923,
+        "sample_sd": 0.00172716050422336
+      },
+      "damage": {
+        "mean": 0.06339719434919079,
+        "sample_sd": 0.005934860857523506
+      },
+      "sjrif_db": {
+        "mean": 10.30130535617524,
+        "sample_sd": 0.08424577694324029
+      },
+      "pd": {
+        "mean": 0.8598090277777778,
+        "sample_sd": 0.004572766385786798
+      },
+      "frame_pfa_jammer": {
+        "mean": 0.15321180555555555,
+        "sample_sd": 0.006014065304058612
+      }
+    },
+    "U-Net": {
+      "u_nmse": {
+        "mean": 0.0545108014873692,
+        "sample_sd": 0.0010221348159235762
+      },
+      "damage": {
+        "mean": 0.04814488699629,
+        "sample_sd": 0.0014237969216752727
+      },
+      "sjrif_db": {
+        "mean": 10.605214878063132,
+        "sample_sd": 0.026599933898384203
+      },
+      "pd": {
+        "mean": 0.8680555555555555,
+        "sample_sd": 0.003977930290760269
+      },
+      "frame_pfa_jammer": {
+        "mean": 0.1111111111111111,
+        "sample_sd": 0.0032768378625307095
+      }
+    }
+  },
+  "source_bindings": [
+    {
+      "path": "evidence/outputs/paper2_256_epoch_8seed_20261114/seed_17/dev_epoch_256_v4.json",
+      "sha256": "e496d554e522a713c83d803840902e26748d10e5a427c12fa03c26b6af678c44",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "checkpoint_sha256": "48f00ade49e240f182361611d854d41a8075bf72f93cda8e5deaf9950f0f31d1"
+    },
+    {
+      "path": "evidence/outputs/unet_ablation_3seed_256_20261115/unet/seed_17/dev_epoch_256.json",
+      "sha256": "e457ed89ce5acec2c62be18c0ab78e7fb64d61bc202ea64271c447e1ef511b89",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "checkpoint_sha256": "ae7369f7435be4aac432a863176a291dddf0ceeb2338dc50524c015f10a52d80"
+    },
+    {
+      "path": "evidence/outputs/paper2_256_epoch_8seed_20261114/seed_29/dev_epoch_256_v4.json",
+      "sha256": "9a768ee2b6523457e74f87039dc000186ba582032299d9b3184d235c2e46c641",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "checkpoint_sha256": "8761b76fa0d4e55faa326d951371ab1531209fff73735627160090422934a328"
+    },
+    {
+      "path": "evidence/outputs/unet_ablation_3seed_256_20261115/unet/seed_29/dev_epoch_256.json",
+      "sha256": "a7464e22e88c3235af41d4022aae507070b074a32dc052cb6e034b58ab26d63c",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "checkpoint_sha256": "c52070122cafa6406c70ab0764fd4ef6b4bd9ca4ab3f0fad84e4c005a692e752"
+    },
+    {
+      "path": "evidence/outputs/paper2_256_epoch_8seed_20261114/seed_41/dev_epoch_256_v4.json",
+      "sha256": "d7016425ceb443764c38582aba3e8a663253bf082217dcd306ddcc25fcbbd5cb",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "checkpoint_sha256": "5968be54395eca6f85632f87cb9ae804ab611d21fc498ac29a5a2fc87f624a25"
+    },
+    {
+      "path": "evidence/outputs/unet_ablation_3seed_256_20261115/unet/seed_41/dev_epoch_256.json",
+      "sha256": "6ecd22ab2428b3f94b20165ac481ffa2631d7c8d38a593931a92ab05f7d4818c",
+      "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+      "checkpoint_sha256": "f7a63bd16a4403a4788618e498f67a27e42d114327451e2c7695505a9895ee1f"
+    }
+  ],
+  "evaluator_check": "Same data SHA and shared v4 waveform/radar/data source SHA; different wrappers verified by source inspection",
+  "architecture_control": "59714 active parameters each; U-Net changes blocks, widths, pooling, activation and dechirp together; not a single-factor ablation"
+}
