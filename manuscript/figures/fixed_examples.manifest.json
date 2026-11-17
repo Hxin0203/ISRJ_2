@@ -1,0 +1,21 @@
+{
+  "source_receipt": "evidence/outputs/RSDR_UNIFIED_20261115/EXAMPLE_PROVENANCE.json",
+  "raw_file": "outputs/rsdr_unified_20261115/fixed_parent_examples/condition_001.npz",
+  "raw_sha256": "52434596cb192cad164c292ac1dbbed7c9a9e4941e365e47d2c3dad18bc15bc9",
+  "condition": {
+    "jam_type": "repeat",
+    "snr_db": 0,
+    "jsr_db": 20,
+    "count": 16
+  },
+  "parent": 0,
+  "inference_run": false,
+  "target_peak_lag_samples": 286,
+  "jammer_peak_lag_samples": 490,
+  "pc_normalization": "Common maximum target-only PC power; pulse-mean power curves; floor 1e-14 before log10",
+  "doppler": "8 pulses; 4096-point zero padding for line spectra only, divided by 8^2; no added resolution",
+  "rd": "8 actual Doppler bins; shared global maximum across four panels; -80..0 dB; no interpolation",
+  "range": "Offset from target-only compressed peak; c=299792458 m/s",
+  "jammer_range_rule": "Strongest pulse-mean jammer-only PC bin, same bin for every displayed method; truth-assisted visualization only",
+  "plot_script_sha256": "0fc998f22e96e9ba92c2480d575083da81c3c985721d499102bdfb294f0c6175"
+}

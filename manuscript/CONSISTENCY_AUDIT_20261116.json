@@ -1,10 +1,10 @@
 {
-  "utc": "2026-11-16T08:56:15.901633+00:00",
+  "utc": "2026-11-17T03:16:53.874200+00:00",
   "status": "PASS",
   "scope": "Structural, numeric and provenance checks only; not a proof of scientific correctness or submission readiness",
   "manuscript_sha256": {
-    "ISRJ_2_论文修订稿_20261116.md": "3b82485f6143d8a5f5da6d7047f6ceff0f671ebe31accd6e7411fe377952996f",
-    "ISRJ_2_Manuscript_EN_20261116.md": "83b9cc0e9724f62758776f76666201e7625d03c0d272a3e2583611b67a2b567a"
+    "ISRJ_2_论文修订稿_20261116.md": "adb0d4e3de19664d902d3798ed41e0d5ebd2620ff2a8f2e856e4d479212acb22",
+    "ISRJ_2_Manuscript_EN_20261116.md": "e1555dbb4329717966980f31bcfe4ca0b7d9ec6909e08b7c9e4157e5416a7762"
   },
   "checks": [
     {
@@ -78,7 +78,8 @@
           5,
           6,
           7,
-          8
+          8,
+          9
         ]
       }
     },
@@ -228,7 +229,8 @@
           5,
           6,
           7,
-          8
+          8,
+          9
         ]
       }
     },
@@ -316,6 +318,11 @@
       }
     },
     {
+      "check": "English abstract identical in both editions",
+      "pass": true,
+      "detail": "Shared method-focused abstract; no detailed performance values"
+    },
+    {
       "check": "bilingual table 1 numeric identity",
       "pass": true,
       "detail": {
@@ -385,6 +392,431 @@
         "rows_zh": 2,
         "rows_en": 2,
         "different_rows": []
+      }
+    },
+    {
+      "check": "bilingual table 9 numeric identity",
+      "pass": true,
+      "detail": {
+        "rows_zh": 6,
+        "rows_en": 6,
+        "different_rows": []
+      }
+    },
+    {
+      "check": "calibrated results complete",
+      "pass": true,
+      "detail": {
+        "sha256": "bd5391dd4c85c3ad93a69fd82adc66bcf26dbe45895915b9c8dc7cffc1e047bc",
+        "rows": 18
+      }
+    },
+    {
+      "check": "zh: table9 full",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "47.11",
+            "1.15"
+          ],
+          [
+            "0.857",
+            "0.050"
+          ],
+          [
+            "0.06094",
+            "0.00560"
+          ]
+        ],
+        "expected": [
+          [
+            "47.11",
+            "1.15"
+          ],
+          [
+            "0.857",
+            "0.050"
+          ],
+          [
+            "0.06094",
+            "0.00560"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "zh: table9 unet",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "51.04",
+            "0.95"
+          ],
+          [
+            "0.819",
+            "0.050"
+          ],
+          [
+            "0.04626",
+            "0.00148"
+          ]
+        ],
+        "expected": [
+          [
+            "51.04",
+            "0.95"
+          ],
+          [
+            "0.819",
+            "0.050"
+          ],
+          [
+            "0.04626",
+            "0.00148"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "zh: table9 no_dechirp",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "51.92",
+            "0.72"
+          ],
+          [
+            "0.895",
+            "0.081"
+          ],
+          [
+            "0.04353",
+            "0.00168"
+          ]
+        ],
+        "expected": [
+          [
+            "51.92",
+            "0.72"
+          ],
+          [
+            "0.895",
+            "0.081"
+          ],
+          [
+            "0.04353",
+            "0.00168"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "zh: table9 no_rms",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "49.57",
+            "0.52"
+          ],
+          [
+            "0.613",
+            "0.068"
+          ],
+          [
+            "0.06201",
+            "0.00093"
+          ]
+        ],
+        "expected": [
+          [
+            "49.57",
+            "0.52"
+          ],
+          [
+            "0.613",
+            "0.068"
+          ],
+          [
+            "0.06201",
+            "0.00093"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "zh: table9 no_pc",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "46.46",
+            "0.73"
+          ],
+          [
+            "0.830",
+            "0.065"
+          ],
+          [
+            "0.05679",
+            "0.00434"
+          ]
+        ],
+        "expected": [
+          [
+            "46.46",
+            "0.73"
+          ],
+          [
+            "0.830",
+            "0.065"
+          ],
+          [
+            "0.05679",
+            "0.00434"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "zh: table9 no_damage",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "54.65",
+            "0.76"
+          ],
+          [
+            "1.004",
+            "0.073"
+          ],
+          [
+            "0.12483",
+            "0.00053"
+          ]
+        ],
+        "expected": [
+          [
+            "54.65",
+            "0.76"
+          ],
+          [
+            "1.004",
+            "0.073"
+          ],
+          [
+            "0.12483",
+            "0.00053"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "en: table9 full",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "47.11",
+            "1.15"
+          ],
+          [
+            "0.857",
+            "0.050"
+          ],
+          [
+            "0.06094",
+            "0.00560"
+          ]
+        ],
+        "expected": [
+          [
+            "47.11",
+            "1.15"
+          ],
+          [
+            "0.857",
+            "0.050"
+          ],
+          [
+            "0.06094",
+            "0.00560"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "en: table9 unet",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "51.04",
+            "0.95"
+          ],
+          [
+            "0.819",
+            "0.050"
+          ],
+          [
+            "0.04626",
+            "0.00148"
+          ]
+        ],
+        "expected": [
+          [
+            "51.04",
+            "0.95"
+          ],
+          [
+            "0.819",
+            "0.050"
+          ],
+          [
+            "0.04626",
+            "0.00148"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "en: table9 no_dechirp",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "51.92",
+            "0.72"
+          ],
+          [
+            "0.895",
+            "0.081"
+          ],
+          [
+            "0.04353",
+            "0.00168"
+          ]
+        ],
+        "expected": [
+          [
+            "51.92",
+            "0.72"
+          ],
+          [
+            "0.895",
+            "0.081"
+          ],
+          [
+            "0.04353",
+            "0.00168"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "en: table9 no_rms",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "49.57",
+            "0.52"
+          ],
+          [
+            "0.613",
+            "0.068"
+          ],
+          [
+            "0.06201",
+            "0.00093"
+          ]
+        ],
+        "expected": [
+          [
+            "49.57",
+            "0.52"
+          ],
+          [
+            "0.613",
+            "0.068"
+          ],
+          [
+            "0.06201",
+            "0.00093"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "en: table9 no_pc",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "46.46",
+            "0.73"
+          ],
+          [
+            "0.830",
+            "0.065"
+          ],
+          [
+            "0.05679",
+            "0.00434"
+          ]
+        ],
+        "expected": [
+          [
+            "46.46",
+            "0.73"
+          ],
+          [
+            "0.830",
+            "0.065"
+          ],
+          [
+            "0.05679",
+            "0.00434"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "en: table9 no_damage",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "54.65",
+            "0.76"
+          ],
+          [
+            "1.004",
+            "0.073"
+          ],
+          [
+            "0.12483",
+            "0.00053"
+          ]
+        ],
+        "expected": [
+          [
+            "54.65",
+            "0.76"
+          ],
+          [
+            "1.004",
+            "0.073"
+          ],
+          [
+            "0.12483",
+            "0.00053"
+          ]
+        ]
       }
     },
     {
@@ -1197,14 +1629,19 @@
       "detail": "3637cb9ad7818825010892529964479d895ad120ec3f5d60c9ca6286e73d3d4e"
     },
     {
-      "check": "figure 6 frozen copy",
+      "check": "fixed figure raw identity",
       "pass": true,
-      "detail": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png"
+      "detail": "52434596cb192cad164c292ac1dbbed7c9a9e4941e365e47d2c3dad18bc15bc9"
     },
     {
-      "check": "figure 7 frozen copy",
+      "check": "fixed figures no inference",
       "pass": true,
-      "detail": "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png"
+      "detail": {
+        "jam_type": "repeat",
+        "snr_db": 0,
+        "jsr_db": 20,
+        "count": 16
+      }
     },
     {
       "check": "recorded Crossref query status",
@@ -1216,9 +1653,9 @@
     }
   ],
   "remaining_limits": [
-    "Incomplete ablations and independent confirmation",
-    "Unmatched empirical false alarms",
-    "Figure 7 remains a frozen raster with small panels",
+    "Prospective independent RSDR-Net calibrated comparison outstanding",
+    "Empirical false alarms differ after calibration",
+    "External validation and classical source audit outstanding",
     "Author/venue-specific finalization required"
   ]
 }

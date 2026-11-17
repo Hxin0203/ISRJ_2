@@ -31,12 +31,12 @@ SPEC = [
     (5, 'fig08_full_detection_grid', ['pdf','svg','png'],
      ['evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv'],
      '全部 310 稠密条件，512 parent/条件；SNR/JSR 步长 1/5 dB，无插值；共同名义 CFAR。'),
-    (6, 'fig05_fixed_parent_pc_doppler', ['png'],
-     ['evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png'],
-     '固定 parent 0，SNR=0 dB、JSR=20 dB；冻结 PNG，非矢量，不估读重画。'),
-    (7, 'fig06_fixed_parent_rd', ['png'],
-     ['evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png'],
-     '同图 6 场景；仅冻结 PNG。横向四面板缩放后可能难读，需源数据重排或拆图。'),
+    (6, 'fig05_fixed_parent_pc_doppler', ['pdf','svg','png'],
+     ['evidence/outputs/RSDR_UNIFIED_20261115/EXAMPLE_PROVENANCE.json','manuscript/figures/fixed_examples.manifest.json'],
+     '固定 parent 0，SNR=0 dB、JSR=20 dB；校验冻结数组 SHA 后重新绘制；统一目标单分量脉压峰功率归一化。'),
+    (7, 'fig06_fixed_parent_rd', ['pdf','svg','png'],
+     ['evidence/outputs/RSDR_UNIFIED_20261115/EXAMPLE_PROVENANCE.json','manuscript/figures/fixed_examples.manifest.json'],
+     '同图 6 场景；2×2 矢量网格，共享色阶，保留 8 个实际多普勒单元，无插值。'),
     (8, 'fig07_width_snr_minus20_jsre35', ['pdf','svg','png'],
      ['evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv'],
      '扫描 B，SNR=-20 dB、JSR_E=35 dB、M=2/4，128 parent/条件；宽度与周期一起变化。'),
@@ -75,11 +75,11 @@ def make_manifest():
     lines += ['', '## 源证据身份', '', '| 文件 | SHA-256 |', '|---|---|']
     lines += [f'| `{k}` | `{v}` |' for k,v in sources.items()]
     lines += ['', '## 结果表及复核入口', '',
-        '- 表 4：8 seed 的 DEV 里程碑 CSV；表 5：`TEST_CONDITION_TABLE_1103.csv`；表 6：`RSDR_UNIFIED_20261115/PAIRED_RESULTS.json`；表 7：条件汇总及相参性结果；表 8：`UNET_DEV_3SEED_20261116.json`。路径前缀见上述表格。',
+        '- 表 4：8 seed 的 DEV 里程碑 CSV；表 5：`TEST_CONDITION_TABLE_1103.csv`；表 6：`RSDR_UNIFIED_20261115/PAIRED_RESULTS.json`；表 7：条件汇总及相参性结果；表 8：`UNET_DEV_3SEED_20261116.json`；表 9：`evidence/outputs/unet_ablation_3seed_256_20261115/EQUAL_PFA_RESULTS.json`。路径前缀见上述表格。',
         '- `tools/index_and_audit_delivery.py` 核验公式、引用、图表编号、中英数字、主要结果及图件 SHA，输出 `CONSISTENCY_AUDIT_20261116.json`。其通过状态仅覆盖已编码检查，不代表所有数学论证已形式化证明。',
         '- 模型图 `QA_FIGURE.json` 记录原生对象、可编辑文字及粘连端点数量。旧 `fig01_architecture` 为历史产物，不属于本次正文图件。',
-        '- 图 6/7 的两份源 PNG 与正文 PNG 字节相同。后续期刊排版需从原始绘图数据改进图 7，不能将位图装入 PDF 后宣称矢量。',
-        '- 缺少完整证据的消融、等虚警 ROC、统一硬件效率和外部失配图暂不绘制。所需实验和图件见 `投稿前实验与模型改进路线_20261116.md`。',
+        '- 图 6/7 从 SHA 核验通过的冻结预测数组重绘；未重新推理。原始数组不上传，归一化、坐标、选点和来源见 fixed_examples.manifest.json。',
+        '- 三种子消融与第二版模型独立校准/确认已完成并写入正文。前向计时收据来自 DESKTOP-RFFERM3，缺少计时代码版本标识，且 scope 与现有脚本描述冲突，延迟排序仍待核验；完整 ROC、RSDR-Net 新前瞻确认及外部失配尚缺证据。所需实验和图件见 `投稿前实验与模型改进路线_20261116.md`。',
         '- 不含训练数据、模型权重或逐样本 raw arrays；这里只索引轻量汇总和已导出的图件。', '']
     (MAN/'图件与证据索引.md').write_text('\n'.join(lines),encoding='utf-8',newline='\n')
     return manifest
@@ -119,7 +119,7 @@ def main():
         eqs[lang] = {int(re.search(r'\\tag\{(\d+)\}',m)[1]):m for m in re.findall(r'\\\[[\s\S]*?\\\]',t) if '\\tag{' in m}
         figs=list(map(int,re.findall(r'^\*\*(?:图|Fig\.) (\d+)\.',t,re.M)))
         tabs=list(map(int,re.findall(r'^\*\*(?:表|Table) (\d+)\.',t,re.M)))
-        check(f'{lang}: figure and table numbering',figs==list(range(1,9)) and tabs==list(range(1,9)),{'figures':figs,'tables':tabs})
+        check(f'{lang}: figure and table numbering',figs==list(range(1,9)) and tabs==list(range(1,10)),{'figures':figs,'tables':tabs})
         refs=list(map(int,re.findall(r'^\[(\d+)\] ',t,re.M)))
         check(f'{lang}: bibliography',refs==list(range(1,23)),refs)
         body=t.split('## 参考文献' if lang=='zh' else '## References')[0]
@@ -132,10 +132,23 @@ def main():
         check(f'{lang}: no unresolved template tokens',not unresolved,unresolved)
     mismatches=[k for k in range(1,44) if k!=34 and eqs['zh'].get(k)!=eqs['en'].get(k)]
     check('bilingual numbered equation identity',not mismatches,{'mismatches':mismatches,'exception':'34: algorithm prose translated'})
-    for n in range(1,9):
+    abstracts = [t.split('## Abstract\n\n',1)[1].split('\n\n',1)[0] for t in texts.values()]
+    check('English abstract identical in both editions', abstracts[0]==abstracts[1], 'Shared method-focused abstract; no detailed performance values')
+    for n in range(1,10):
         z=table_rows(texts['zh'],'表',n); e=table_rows(texts['en'],'Table',n)
         zn=[numbers(' | '.join(r)) for r in z];en=[numbers(' | '.join(r)) for r in e]
         check(f'bilingual table {n} numeric identity',zn==en,{'rows_zh':len(z),'rows_en':len(e),'different_rows':[i for i,(a,b) in enumerate(zip(zn,en)) if a!=b]})
+    calibrated_path=ROOT/'evidence/outputs/unet_ablation_3seed_256_20261115/EQUAL_PFA_RESULTS.json'
+    calibrated=read_json(calibrated_path)
+    variant_names=['full','unet','no_dechirp','no_rms','no_pc','no_damage']
+    check('calibrated results complete', {(r['variant'],r['seed'],r['epoch']) for r in calibrated['rows']}=={(v,s,256) for v in variant_names for s in (17,29,41)}, {'sha256':sha(calibrated_path),'rows':len(calibrated['rows'])})
+    for lang,label in [('zh','表'),('en','Table')]:
+        for row,variant in zip(table_rows(texts[lang],label,9),variant_names):
+            subset=[r for r in calibrated['rows'] if r['variant']==variant]
+            values=[[r['test_pd']['mean']*100 for r in subset], [r['test_frame_pfa_jammer']['mean']*100 for r in subset], [r['test_target_increment_error']['direct_damage']['mean'] for r in subset]]
+            expected=[[f'{statistics.mean(x):.{p}f}',f'{statistics.stdev(x):.{p}f}'] for x,p in zip(values,[2,3,5])]
+            actual=[numbers(cell) for cell in row[1:]]
+            check(f'{lang}: table9 {variant}', actual==expected, {'actual':actual,'expected':expected})
     unet=read_json(MAN/'UNET_DEV_3SEED_20261116.json')
     keys=['u_nmse','damage','sjrif_db','pd','frame_pfa_jammer']
     precisions=[6,6,4,3,3]
@@ -169,14 +182,16 @@ def main():
     check('Visio native package',qa['status']=='PASS' and not qa['embedded_media'] and qa['editable_text_objects']>0,{'native_objects':qa['native_objects'],'editable_text_objects':qa['editable_text_objects'],'glued_endpoints':qa['glued_connection_endpoints']})
     for name,entry in qa['files'].items():
         check('Visio QA file SHA '+name,sha(FIG/'CorrectionNet_Visio_20261115'/name)==entry['sha256'],entry['sha256'])
-    for n,stem,exts,srcs,note in SPEC:
-        if n in (6,7):check(f'figure {n} frozen copy',sha(FIG/(stem+'.png'))==sha(ROOT/srcs[0]),srcs[0])
+    fp=read_json(FIG/'fixed_examples.manifest.json')
+    receipt=read_json(ROOT/fp['source_receipt'])['examples'][1]
+    check('fixed figure raw identity',fp['raw_sha256']==receipt['sha256']==sha(ROOT/fp['raw_file']),fp['raw_sha256'])
+    check('fixed figures no inference',fp['inference_run'] is False,fp['condition'])
     metadata=read_json(MAN/'REFERENCE_METADATA.json')
     check('recorded Crossref query status',all(r.get('http_status')==200 for r in metadata),{'records':len(metadata),'scope':'Retrieval status, not author identity verification'})
     report={'utc':datetime.now(timezone.utc).isoformat(),'status':'PASS' if all(c['pass'] for c in checks) else 'FAIL',
             'scope':'Structural, numeric and provenance checks only; not a proof of scientific correctness or submission readiness',
             'manuscript_sha256':{n:sha(MAN/n) for n in ['ISRJ_2_论文修订稿_20261116.md','ISRJ_2_Manuscript_EN_20261116.md']},
-            'checks':checks,'remaining_limits':['Incomplete ablations and independent confirmation','Unmatched empirical false alarms','Figure 7 remains a frozen raster with small panels','Author/venue-specific finalization required']}
+            'checks':checks,'remaining_limits':['Prospective independent RSDR-Net calibrated comparison outstanding','Empirical false alarms differ after calibration','External validation and classical source audit outstanding','Author/venue-specific finalization required']}
     write_json(MAN/'CONSISTENCY_AUDIT_20261116.json',report)
     failures=[c for c in checks if not c['pass']]
     print(json.dumps({'status':report['status'],'checks':len(checks),'failures':failures},ensure_ascii=False,indent=2))

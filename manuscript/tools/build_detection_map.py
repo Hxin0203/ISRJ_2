@@ -15,7 +15,7 @@ SKILL = Path('C:/Users/admin/.codex/skills/nature-figure/scripts')
 sys.path.insert(0, str(SKILL))
 from audit_panel_alignment import require_matplotlib_panel_alignment
 
-plt.rcParams.update({'font.family':'Arial','font.size':7,'axes.titlesize':8,
+plt.rcParams.update({'font.family':'serif','font.serif':['Times New Roman','STIXGeneral'],'mathtext.fontset':'stix','font.size':7,'axes.titlesize':8,
     'axes.labelsize':7,'xtick.labelsize':6,'ytick.labelsize':6,
     'pdf.fonttype':42,'svg.fonttype':'none','axes.linewidth':.6})
 source = ROOT / 'evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv'

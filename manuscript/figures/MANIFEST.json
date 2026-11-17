@@ -7,31 +7,35 @@
     "evidence/outputs/CONVERGENCE_256_8SEED_20261114/DEV_METRICS_BY_CHECKPOINT.csv": "6e59ed05673be28173f15096bf7c7f03b7331849f93faf6807d5958f4f4c99f1",
     "evidence/outputs/TEST_CONDITION_TABLE_1103.csv": "db2146c8936350a2b2bb545eb7bc0105e0e78be95f41ea96a264c04f0cb2808a",
     "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52",
-    "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71",
-    "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247"
+    "evidence/outputs/RSDR_UNIFIED_20261115/EXAMPLE_PROVENANCE.json": "918ec876f050507bc56ed036c704e7e64edd518844ce61bed342195eba99d771",
+    "manuscript/figures/fixed_examples.manifest.json": "55e1fce54f07a2cf2e2e347e6b1aa584c2f0f325d6f8fe0c756c958198597c21"
   },
   "figures": {
     "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.vsdx": "8616f34baac537851c92faf6e7ce6af9374b9897ffcc26d5ac5c65e29c5f2cd4",
     "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.pdf": "4382f28b01ba5564e082db9cbc0466a4fdaffbb275838f0a4af21b56c8031610",
     "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.svg": "59b888732459aed64ab33c79a9293b5e4c7a057959e9a86c72ddc4c6561cdcec",
     "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.png": "3637cb9ad7818825010892529964479d895ad120ec3f5d60c9ca6286e73d3d4e",
-    "manuscript/figures/fig02_convergence.pdf": "98a9cce95579ea385a1dfe79cd5fd62235748f432297d7d13effe57a1589e510",
-    "manuscript/figures/fig02_convergence.svg": "2fdb8e8612a0d8d1f88e2a99d7934190af972af80dd1c19202d458704c223ac9",
-    "manuscript/figures/fig02_convergence.png": "f46b1f9928c98f662cf839262ce0f3dff8711e4cabb9b5284c84a1101f6ef15c",
-    "manuscript/figures/fig03_repeat_jsr20.pdf": "8064e5d01e1a8bb84b80c11bc703c45ae675de1dc0aa5e6e77693f272ed061b5",
-    "manuscript/figures/fig03_repeat_jsr20.svg": "f6b5295eae4edeed220174ec83e36c73f39c159fe7e2fa1a1225a6e3621aa180",
-    "manuscript/figures/fig03_repeat_jsr20.png": "d8859231b0db52301f5784beebda5a8d1b8ce79d61216f76f08fc3a16377cb0b",
-    "manuscript/figures/fig04_dense_jsr20.pdf": "ad926f013f83ec656158bb8322c216d9afca54ee90baccc309c9e2a276bd40cf",
-    "manuscript/figures/fig04_dense_jsr20.svg": "70a70cb35917da223684e4b48867dcb881c50b100e44b00b4cb8e8b94d78685d",
-    "manuscript/figures/fig04_dense_jsr20.png": "076a6f1ddde4e8c0266f69eb292d30328bd6c5d13f0f1c2083422bcc075ce3ca",
-    "manuscript/figures/fig08_full_detection_grid.pdf": "bd157c07e2127e4a6d0963697fb278bc6ff19ea5dba5a0060ae542f56d550347",
-    "manuscript/figures/fig08_full_detection_grid.svg": "af26b2b0fbe568b9847976a8ed079815b28e9fe790d6c361eda3e91ed8e4c64f",
-    "manuscript/figures/fig08_full_detection_grid.png": "8139a47e2b9cf8583d6df463968f278b3beb7654271b165fcece7d986755edce",
-    "manuscript/figures/fig05_fixed_parent_pc_doppler.png": "1a444899dbbc55a0681efec5c4c7c913d0e78d4ebfa00eab876cb606f9deee71",
-    "manuscript/figures/fig06_fixed_parent_rd.png": "d888a2d52d6124ad7b8dce4a3a00f4d8972dbba88299983fd4688c1694be2247",
-    "manuscript/figures/fig07_width_snr_minus20_jsre35.pdf": "cc889fba236194ed0b7b04fd976f3862a205318731dc9790f98e5ab78e4df683",
-    "manuscript/figures/fig07_width_snr_minus20_jsre35.svg": "02bdb83f3507247a4667f325b6580544c4d56f7d549fdba7f87258a9089baf97",
-    "manuscript/figures/fig07_width_snr_minus20_jsre35.png": "bfd26b3c372a4060f6cb10165fc8ee5e8a95d5d675982a92819c91ce684a2d34"
+    "manuscript/figures/fig02_convergence.pdf": "0b00a152fc4cfcfa50f86ef9f5f9e1a95ac8bfb12a18d408d472a50f05b781bc",
+    "manuscript/figures/fig02_convergence.svg": "9cf9d45a6f04ed5128f7a5564b336bc75b40eddd5839c9393e851ee15f2789f9",
+    "manuscript/figures/fig02_convergence.png": "9e0fa40ab64fbae9948e36d30f8a5c2f24988af1da8c8c2ba129c9bdeb209bfc",
+    "manuscript/figures/fig03_repeat_jsr20.pdf": "79cf2aff7c8e6af77edfe9e7b2519cd3ff37bd6e2da967f029e1449385797547",
+    "manuscript/figures/fig03_repeat_jsr20.svg": "1a1f27fa0cf2bffaa5d8f5c2e7656f315f2d5d130aa34333d1d57d86cd053879",
+    "manuscript/figures/fig03_repeat_jsr20.png": "db8cbc35f2c68238cab65a61d6997ff4f81b0bc0378881c6ee11b019757a9260",
+    "manuscript/figures/fig04_dense_jsr20.pdf": "17c110b9316875b9a78dd764df3a4cc87aaee20c1984e0bdc9b6f3e9c35de317",
+    "manuscript/figures/fig04_dense_jsr20.svg": "4b351bc75600945fcfcf572bee277f6bf97904619653339677c64fda4dfc13cc",
+    "manuscript/figures/fig04_dense_jsr20.png": "6855a5c7e83af7eda1b3a467acb1da8f8e0ff47915860e0cee3d83f04432ed04",
+    "manuscript/figures/fig08_full_detection_grid.pdf": "456170ce86df883dd6b6ea09e08854f754f28cfc90e756a15c7b503c012c872f",
+    "manuscript/figures/fig08_full_detection_grid.svg": "610a0b46ea5db3dfff9372c096ccbad97f14e29bd4433f46c991b4085c040587",
+    "manuscript/figures/fig08_full_detection_grid.png": "7d8cc74e22eb2cd51e51a4593798f90cc369d5e08f832d8a27abbbd1011bd915",
+    "manuscript/figures/fig05_fixed_parent_pc_doppler.pdf": "12260fdd71674cd31a61b58a7d67dc0db3519410e54c56bec0d9c2840df0c96f",
+    "manuscript/figures/fig05_fixed_parent_pc_doppler.svg": "49b82653ff65525fc34911921e71257c2743015e214bd1c57e504b211c6c3247",
+    "manuscript/figures/fig05_fixed_parent_pc_doppler.png": "3dfdca23267dc9c755d954a0e78643be3e039e10c74649e3ee7ca825702161d8",
+    "manuscript/figures/fig06_fixed_parent_rd.pdf": "7437b2ef2a60858eddde2e926f93f8fae3b10f588168dda27827a9a285a1ec84",
+    "manuscript/figures/fig06_fixed_parent_rd.svg": "70b4737bb2a34d52534abe11fd9c2e152a8b25551854eb85a5b64d7faa214e41",
+    "manuscript/figures/fig06_fixed_parent_rd.png": "9efe0aa77a9848d03df4790bd95fbaeb9b22f427f298b7f218c79ffa21c45348",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.pdf": "a7279bcb0bbcd98e9fe77496edd5ad7d3cfebaa7248ceba9eef37a23ec6383fa",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.svg": "feb0a5fe638fb9bad355e5ac831cc21895ffbd83c78b4538c4cf13803e8f4918",
+    "manuscript/figures/fig07_width_snr_minus20_jsre35.png": "117c05b2e12a014273cb86ecf3dc06d0ecbcbbfebc3c7e5d0e26645f768bf20f"
   },
   "manuscript_mapping": [
     {
@@ -100,22 +104,28 @@
     {
       "number": 6,
       "files": [
+        "manuscript/figures/fig05_fixed_parent_pc_doppler.pdf",
+        "manuscript/figures/fig05_fixed_parent_pc_doppler.svg",
         "manuscript/figures/fig05_fixed_parent_pc_doppler.png"
       ],
       "sources": [
-        "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_coherent_001.png"
+        "evidence/outputs/RSDR_UNIFIED_20261115/EXAMPLE_PROVENANCE.json",
+        "manuscript/figures/fixed_examples.manifest.json"
       ],
-      "scope_and_limits": "固定 parent 0，SNR=0 dB、JSR=20 dB；冻结 PNG，非矢量，不估读重画。"
+      "scope_and_limits": "固定 parent 0，SNR=0 dB、JSR=20 dB；校验冻结数组 SHA 后重新绘制；统一目标单分量脉压峰功率归一化。"
     },
     {
       "number": 7,
       "files": [
+        "manuscript/figures/fig06_fixed_parent_rd.pdf",
+        "manuscript/figures/fig06_fixed_parent_rd.svg",
         "manuscript/figures/fig06_fixed_parent_rd.png"
       ],
       "sources": [
-        "evidence/outputs/RSDR_UNIFIED_20261115/figures/fixed_parent0_rd_001.png"
+        "evidence/outputs/RSDR_UNIFIED_20261115/EXAMPLE_PROVENANCE.json",
+        "manuscript/figures/fixed_examples.manifest.json"
       ],
-      "scope_and_limits": "同图 6 场景；仅冻结 PNG。横向四面板缩放后可能难读，需源数据重排或拆图。"
+      "scope_and_limits": "同图 6 场景；2×2 矢量网格，共享色阶，保留 8 个实际多普勒单元，无插值。"
     },
     {
       "number": 8,

@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-17T03:01:12.513834+00:00",
+  "scope": "PDF text/page-boundary check plus manual review of exported figures; not an exhaustive collision detector",
+  "figures": [
+    {
+      "file": "manuscript/figures/CorrectionNet_Visio_20261115/CorrectionNet_editable.pdf",
+      "sha256": "4382f28b01ba5564e082db9cbc0466a4fdaffbb275838f0a4af21b56c8031610",
+      "pages": 1,
+      "minimum_text_pt": 10.4399995803833,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig02_convergence.pdf",
+      "sha256": "0b00a152fc4cfcfa50f86ef9f5f9e1a95ac8bfb12a18d408d472a50f05b781bc",
+      "pages": 1,
+      "minimum_text_pt": 4.550000190734863,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig03_repeat_jsr20.pdf",
+      "sha256": "79cf2aff7c8e6af77edfe9e7b2519cd3ff37bd6e2da967f029e1449385797547",
+      "pages": 1,
+      "minimum_text_pt": 4.550000190734863,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig04_dense_jsr20.pdf",
+      "sha256": "17c110b9316875b9a78dd764df3a4cc87aaee20c1984e0bdc9b6f3e9c35de317",
+      "pages": 1,
+      "minimum_text_pt": 6.5,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig08_full_detection_grid.pdf",
+      "sha256": "456170ce86df883dd6b6ea09e08854f754f28cfc90e756a15c7b503c012c872f",
+      "pages": 1,
+      "minimum_text_pt": 6.0,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig05_fixed_parent_pc_doppler.pdf",
+      "sha256": "12260fdd71674cd31a61b58a7d67dc0db3519410e54c56bec0d9c2840df0c96f",
+      "pages": 1,
+      "minimum_text_pt": 6.5,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig06_fixed_parent_rd.pdf",
+      "sha256": "7437b2ef2a60858eddde2e926f93f8fae3b10f588168dda27827a9a285a1ec84",
+      "pages": 1,
+      "minimum_text_pt": 6.5,
+      "text_outside_page": []
+    },
+    {
+      "file": "manuscript/figures/fig07_width_snr_minus20_jsre35.pdf",
+      "sha256": "a7279bcb0bbcd98e9fe77496edd5ad7d3cfebaa7248ceba9eef37a23ec6383fa",
+      "pages": 1,
+      "minimum_text_pt": 6.5,
+      "text_outside_page": []
+    }
+  ]
+}
