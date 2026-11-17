@@ -1,6 +1,6 @@
 # ISRJ_2 创新候选逐项核验与优化路线
 
-日期：2026-11-17  
+日期：2026-11-17
 范围：核对 G:/Files/Markdown/ISRJ_2/gptpro创新性研究.md 与 G:/Files/Markdown/ISRJ_2/ISRJ_2模型思路.md 中的创新设想，并用当前代码、已完成训练与评价记录判断下一步。本文只提出研究决策，不声称候选方法已实现或有效。本轮没有启动训练、改动模型或读取/复制训练权重。
 
 ## 结论
@@ -58,4 +58,3 @@ DEV 共有 256 个物理 parent，SNR 在 8 脉冲间抽样。用每个 parent �
 - 等虚警与效率：evidence/outputs/UNET_EQUAL_PFA_AND_EFFICIENCY_REPORT_20261116.md
 - 当前损失与模型：paper2/network.py；生成器：paper2/scenes_1103.py；DEV 角色生成：paper2/data_1103.py、paper2/dev_1103_v4.py
 - DEV 输入：data/paper2_1103/dev.npz；第 128 轮各 seed 的 parent 汇总：outputs/paper2_1103_retry_20261114/seed_{17,29,41}/dev_epoch_128_v4.npz
-
