@@ -1,0 +1,308 @@
+{
+  "schema": "isrj2-research-pipeline-v1",
+  "snapshot_utc": "2026-11-17T14:29:11.599690+00:00",
+  "status_evidence_sha256": "32c7a4017395aff9275cfda64beeedb5ddffcb4ae8ccd6a154c0ee0d39397765",
+  "report": "IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.md",
+  "automatic_execution_scope": [
+    "T",
+    "N",
+    "L",
+    "F"
+  ],
+  "not_a_controller": "This JSON records plans; PLANNED/CONDITIONAL/DEFERRED tasks are not launched jobs.",
+  "development_gate": {
+    "median_seed_delta_frame_pfa_jammer": "< 0",
+    "each_seed_delta_pd": ">= -0.02",
+    "mean_seed_delta_damage": "<= +0.005",
+    "interpretation": "Resource screening only, not significance or confirmed noninferiority"
+  },
+  "constraints": {
+    "server": "rsdr-b",
+    "root": "D:/code/Xin/ISRJ_222",
+    "local_training": false,
+    "remote_for_push": "paper2",
+    "all_epoch_recovery": true,
+    "milestones_every_epochs": 32,
+    "upload_training_data_weights_raw_arrays_full_logs": false
+  },
+  "tasks": [
+    {
+      "id": "D0",
+      "name": "Residual/failure and retrospective JNR diagnosis",
+      "status": "COMPLETE_DIAGNOSTIC",
+      "deployed": false,
+      "depends_on": [],
+      "evidence": [
+        "RESIDUAL_FAILURE_DIAGNOSTIC_REPORT_20261117.md"
+      ],
+      "claim_boundary": "Association and retrospective findings; no new-model efficacy claim"
+    },
+    {
+      "id": "D1",
+      "name": "Common phase/scale diagnostic; fixed 16 DEV parents",
+      "status": "COMPLETE_DIAGNOSTIC",
+      "deployed": false,
+      "depends_on": [],
+      "evidence": [
+        "phase_scale_diagnostic_20261117_v1/SUMMARY.json"
+      ],
+      "claim_boundary": "Not a delay test, full DEV detection analysis, or teacher evaluation"
+    },
+    {
+      "id": "T",
+      "name": "tail independent three-seed screen",
+      "run": "unet_mf_tail_screen_20261117_v2",
+      "status": "TRAINING",
+      "deployed": true,
+      "physical_gpu": 1,
+      "depends_on": [],
+      "dependency_type": "Training plus paired DEV completion for device scheduling; prerequisite need not pass efficacy gate",
+      "saved_epochs": {
+        "17": 256,
+        "29": 228,
+        "41": null
+      },
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "epochs_per_seed": 256,
+      "updates_per_seed": 12288,
+      "includes_automatic_paired_dev_evaluation": true,
+      "automatic_completion_evidence": "unet_mf_tail_screen_20261117_v2/PIPELINE_STATUS.json",
+      "scope": "Development only; no selection of best epoch or best seed",
+      "eta_training_hours_only": 1.7656714579166668,
+      "queue_binding_sha256": null,
+      "config_sha256": "cef0a79c03a022e09bce91237f909179a692952c5c44f34c19fd8315a404c1af",
+      "source_drift": []
+    },
+    {
+      "id": "N",
+      "name": "norm independent three-seed screen",
+      "run": "unet_noise_norm_screen_20261117_v1",
+      "status": "TRAINING",
+      "deployed": true,
+      "physical_gpu": 0,
+      "depends_on": [],
+      "dependency_type": "Training plus paired DEV completion for device scheduling; prerequisite need not pass efficacy gate",
+      "saved_epochs": {
+        "17": 131,
+        "29": null,
+        "41": null
+      },
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "epochs_per_seed": 256,
+      "updates_per_seed": 12288,
+      "includes_automatic_paired_dev_evaluation": true,
+      "automatic_completion_evidence": "unet_noise_norm_screen_20261117_v1/PIPELINE_STATUS.json",
+      "scope": "Development only; no selection of best epoch or best seed",
+      "eta_training_hours_only": 3.988654249125,
+      "queue_binding_sha256": null,
+      "config_sha256": "e5b01d1c77363be8b6cfd389604e61bf2e5c4ad89c081fba177d1e93f9ca7be0",
+      "source_drift": []
+    },
+    {
+      "id": "L",
+      "name": "dilation independent three-seed screen",
+      "run": "unet_dilation_screen_20261117_v1",
+      "status": "WAIT_DEPENDENCY",
+      "deployed": true,
+      "physical_gpu": 1,
+      "depends_on": [
+        "T"
+      ],
+      "dependency_type": "Training plus paired DEV completion for device scheduling; prerequisite need not pass efficacy gate",
+      "saved_epochs": {
+        "17": null,
+        "29": null,
+        "41": null
+      },
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "epochs_per_seed": 256,
+      "updates_per_seed": 12288,
+      "includes_automatic_paired_dev_evaluation": true,
+      "automatic_completion_evidence": "unet_dilation_screen_20261117_v1/PIPELINE_STATUS.json",
+      "scope": "Development only; no selection of best epoch or best seed",
+      "eta_training_hours_only": null,
+      "queue_binding_sha256": "50ff8bc7724dd709b0b368f49f913e58b4cdc5371f448f6552e3210cc3f3437e",
+      "config_sha256": null,
+      "source_drift": []
+    },
+    {
+      "id": "F",
+      "name": "frequency independent three-seed screen",
+      "run": "unet_frequency_screen_20261117_v1",
+      "status": "WAIT_DEPENDENCY",
+      "deployed": true,
+      "physical_gpu": 0,
+      "depends_on": [
+        "N"
+      ],
+      "dependency_type": "Training plus paired DEV completion for device scheduling; prerequisite need not pass efficacy gate",
+      "saved_epochs": {
+        "17": null,
+        "29": null,
+        "41": null
+      },
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "epochs_per_seed": 256,
+      "updates_per_seed": 12288,
+      "includes_automatic_paired_dev_evaluation": true,
+      "automatic_completion_evidence": "unet_frequency_screen_20261117_v1/PIPELINE_STATUS.json",
+      "scope": "Development only; no selection of best epoch or best seed",
+      "eta_training_hours_only": null,
+      "queue_binding_sha256": "ebe2721336be80fd721f0b57de8adeda9a5750aad5df88aab309b6eab416be73",
+      "config_sha256": null,
+      "source_drift": []
+    },
+    {
+      "id": "D2",
+      "name": "Delay/boundary, phase-failure association, peak denominator sensitivity and common-DEV teacher audit",
+      "depends_on": [
+        "D0",
+        "D1"
+      ],
+      "status": "PLANNED",
+      "deployed": false,
+      "entry_gate": "Diagnostic protocols and teacher/data identity audit before execution",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "S",
+      "name": "Four-factor paired DEV review and original-grid main/extreme/JNR stratification",
+      "depends_on": [
+        "T",
+        "N",
+        "L",
+        "F"
+      ],
+      "status": "PLANNED",
+      "deployed": false,
+      "entry_gate": "All four fixed endpoint summaries; keep all seed-level effects and strata counts",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "C0",
+      "name": "Mean-PC and hard-parent control experiments",
+      "depends_on": [
+        "T"
+      ],
+      "status": "CONDITIONAL",
+      "deployed": false,
+      "entry_gate": "Tail passes gate; prefreeze controls and budget before reading their outcomes",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "C1",
+      "name": "Architecture-by-loss four cells and minimal combinations",
+      "depends_on": [
+        "S"
+      ],
+      "status": "CONDITIONAL",
+      "deployed": false,
+      "entry_gate": "Only individually eligible factors; do not automatically stack factors",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "R0",
+      "name": "Equal-augmentation U-Net / ordinary complex / minimal equivariant control",
+      "depends_on": [
+        "D2"
+      ],
+      "status": "CONDITIONAL",
+      "deployed": false,
+      "entry_gate": "Transformation inconsistency linked to relevant failures; stop if augmentation explains benefit",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "R1",
+      "name": "Truth / output KD / correction KD / selective relational KD",
+      "depends_on": [
+        "D2"
+      ],
+      "status": "CONDITIONAL",
+      "deployed": false,
+      "entry_gate": "Teacher has common-DEV background advantage and clean data-role provenance",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "M",
+      "name": "Coherent-jammer generator and same-eight-pulse-input temporal/2D U-Net controls",
+      "depends_on": [
+        "D2"
+      ],
+      "status": "DEFERRED",
+      "deployed": false,
+      "entry_gate": "No multi-pulse architecture training until generator/coherence and information fairness are verified",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "X",
+      "name": "Training-parent scale, shared-device efficiency, selected mismatch checks",
+      "depends_on": [
+        "C1"
+      ],
+      "status": "CONDITIONAL",
+      "deployed": false,
+      "entry_gate": "Stable candidate; optional R0/R1/M only if their branch is activated and passes",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "E8",
+      "name": "Final candidate and key U-Net controls; eight common seeds to epoch 256",
+      "depends_on": [
+        "X"
+      ],
+      "status": "CONDITIONAL",
+      "deployed": false,
+      "entry_gate": "Freeze candidate; reuse completed seeds only if full run identity matches",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "H0",
+      "name": "Freeze independent calibration protocol, data roles and sample sizes",
+      "depends_on": [
+        "E8"
+      ],
+      "status": "PLANNED",
+      "deployed": false,
+      "entry_gate": "No threshold/architecture tuning on confirmation; teacher/student train isolation",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "Q",
+      "name": "New independent confirmation and parent/seed uncertainty analysis",
+      "depends_on": [
+        "H0"
+      ],
+      "status": "PLANNED",
+      "deployed": false,
+      "entry_gate": "Frozen deployable calibration thresholds; E and J+E false alarms reported separately",
+      "eta_training_hours_only": null
+    },
+    {
+      "id": "P",
+      "name": "Nearest-prior full-text comparison, manuscript claims and reproducible release",
+      "depends_on": [
+        "Q"
+      ],
+      "status": "PLANNED",
+      "deployed": false,
+      "entry_gate": "Evidence-grounded novelty, efficiency, limitations and reporting",
+      "eta_training_hours_only": null
+    }
+  ]
+}

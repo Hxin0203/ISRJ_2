@@ -1,0 +1,11 @@
+{
+  "stage": "WAIT_DEPENDENCY",
+  "factor": "dilation",
+  "physical_gpu": 1,
+  "dependency": "unet_mf_tail_screen_20261117_v2",
+  "dependency_stage": "EPOCH_SAVED",
+  "dependency_seed": 29,
+  "dependency_saved_epoch": 228,
+  "numerical_preflight": "PENDING_GPU_RELEASE",
+  "updated_utc": "2026-11-17T14:29:05.557584+00:00"
+}

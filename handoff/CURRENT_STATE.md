@@ -1,5 +1,19 @@
 # Current state
 
+## Superseding idea-to-experiment pipeline — 2026-11-17 14:29 UTC
+
+Both original idea documents have been mapped to evidence, gaps, entry gates and stopping rules in `evidence/outputs/IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.md`. Machine plan: `evidence/outputs/IDEA_EXPERIMENT_PIPELINE_20261117.json`. Only tasks T/N/L/F have deployed controllers; later combinations, distillation, eight-seed training and new confirmation remain conditional plans.
+
+- Server B only, dedicated second-paper root. At 14:29:11 UTC, GPU 1 tail-loss seed 17/29/41 saved 256/228/not started; GPU 0 observation-scale saved 131/not started/not started. Neither has complete three-seed DEV results. Training-only remaining estimates are about 1.8/4.0 hours, excluding evaluation, waits and interruptions.
+- Two persistent source-bound queues are already running: dilation on physical GPU 1 after tail training plus paired DEV, and frequency coordinates on physical GPU 0 after normalization training plus paired DEV. Both are independent factors, original RMS/loss, 59,714 active parameters, matching initialization, seeds 17/29/41 to epoch 256. Dependencies release devices and do not require efficacy-gate success. Do not duplicate-launch or edit frozen sources/protocols. Server CPU engineering checks passed; GPU numerical recovery preflight remains pending device release.
+- All nine Full/No-dechirp/U-Net by seed phase/scale diagnostic combinations completed on fixed first 16 DEV parents, server CPU only. Phase inconsistency exists, common amplitude scaling is nearly exact, and endpoint changes have mixed signs. No causal detection conclusion, delay test or teacher audit exists yet. SUMMARY.json is the completion authority; the intermediate STATUS.json still says DIAGNOSING with nine completed pairs.
+- Latest checkpoint SHA sidecars match; source drift is empty. Full archive/data audit at 14:22:15 UTC covered tail 256/209 and normalization 113; later light snapshots are not full archive audits. Preserve every epoch and every 32-epoch milestone. No new confirmation data was consumed.
+- Next: denominator/delay/teacher diagnostics; four-factor DEV review; justified mean-PC/hard-parent controls; eligible minimal combinations with architecture-by-loss four cells; data scale and shared-device efficiency; final candidate and key U-Net controls at eight common seeds to 256; frozen H0 calibration and fresh confirmation. Phase/delay and selective-transfer ideas are still conditional research routes, not disproved or replaced by the four screens.
+- Keep diagnostic MF-peak normalization (noise-only output residual RD median) distinct from tail training normalization (known training-noise RD power). Historical RSDR/JNR comparisons are not new three-seed epoch-256 results.
+- Report text audit was offline with protected spans, backup and SHA. Only exact code/protocol/report/light JSON paths go to `paper2`, never `origin`, data, weights, arrays, caches, credentials or full logs. Preserve unrelated working changes and paper manuscripts.
+
+Earlier snapshots below are historical; this dated entry takes precedence.
+
 ## Superseding parallel snapshot — 2026-11-17 13:42 UTC
 
 The user explicitly authorized using otherwise idle server GPUs for independent experiments. GPU 1 continues the frozen matched-filter tail-loss screen; GPU 0 now runs a separate normalization-only screen. This supersedes historical instructions below that required normalization to wait for the tail-loss gate. Do not change frozen sources, share partial outcomes for tuning, or combine factors before screening completes.

@@ -1,0 +1,33 @@
+{
+  "stage": "CPU_GEOMETRY_CHECKS_PASSED",
+  "created_utc": "2026-11-17T14:22:00.002516+00:00",
+  "host": "DESKTOP-RFFERM3",
+  "rows": [
+    {
+      "factor": "dilation",
+      "parameters_total_and_active": 59714,
+      "same_initial_tensors": true,
+      "finite_forward_backward": true,
+      "scale_max_absolute_error": 4.172325134277344e-06,
+      "fft_roundtrip_max_absolute_error": 8.429369700024836e-07,
+      "parseval_relative_error": 0.0,
+      "cpu_threads": 2,
+      "scope": "synthetic engineering check on server; no optimizer updates and no DEV access",
+      "model_source_sha256": "97d52510f69bc18c567704da0c22919eed400dcee2c55f5b3dfec0f0ecb35860"
+    },
+    {
+      "factor": "frequency",
+      "parameters_total_and_active": 59714,
+      "same_initial_tensors": true,
+      "finite_forward_backward": true,
+      "scale_max_absolute_error": 4.351139068603516e-06,
+      "fft_roundtrip_max_absolute_error": 8.429369700024836e-07,
+      "parseval_relative_error": 0.0,
+      "cpu_threads": 2,
+      "scope": "synthetic engineering check on server; no optimizer updates and no DEV access",
+      "model_source_sha256": "97d52510f69bc18c567704da0c22919eed400dcee2c55f5b3dfec0f0ecb35860"
+    }
+  ],
+  "validator_sha256": "ab232534b542e0e8fcba61a78ce46db9cf5f3553c2ce2cf9c0954c3b89c648c8",
+  "limitations": "Synthetic server CPU forward/backward only; no optimizer steps, GPU preflight, DEV evaluation or efficacy claim."
+}

@@ -1,18 +1,18 @@
 {
-  "checked_utc": "2026-11-17T13:42:38.730693+00:00",
+  "checked_utc": "2026-11-17T14:22:15.525333+00:00",
   "host": "DESKTOP-RFFERM3",
   "gpu": [
     {
       "index": 0,
       "uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
-      "utilization_percent": 0.0,
-      "memory_used_mib": 2383.0,
+      "utilization_percent": 67.0,
+      "memory_used_mib": 2382.0,
       "memory_total_mib": 16311.0
     },
     {
       "index": 1,
       "uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
-      "utilization_percent": 70.0,
+      "utilization_percent": 72.0,
       "memory_used_mib": 1544.0,
       "memory_total_mib": 16311.0
     }
@@ -31,21 +31,21 @@
       "status": {
         "stage": "TRAINING",
         "seed": 29,
-        "epoch": 104,
+        "epoch": 210,
         "step": 36,
         "steps": 48,
-        "last_committed_epoch": 103,
+        "last_committed_epoch": 209,
         "resource": {
-          "utc": "2026-11-17T13:42:35.254503+00:00",
+          "utc": "2026-11-17T14:22:12.305847+00:00",
           "gpu_index": 1,
-          "gpu_utilization_percent": 69.0,
+          "gpu_utilization_percent": 66.0,
           "gpu_free_mib": 14507.0,
           "gpu_total_mib": 16311.0,
-          "cpu_percent": 9.3,
-          "ram_free_bytes": 85263564800,
-          "disk_free_bytes": 1547795140608
+          "cpu_percent": 7.5,
+          "ram_free_bytes": 84562804736,
+          "disk_free_bytes": 1547641753600
         },
-        "updated_utc": "2026-11-17T13:42:36.256006+00:00"
+        "updated_utc": "2026-11-17T14:22:13.306906+00:00"
       },
       "seeds": [
         {
@@ -119,9 +119,9 @@
         {
           "seed": 29,
           "training_complete": false,
-          "saved_epoch": 103,
-          "recovery_points": 104,
-          "checkpoint_sha256": "06280b8157988fa6a1a10548d43bef702a1d5de14c4398df24b7c8a824c4b427",
+          "saved_epoch": 209,
+          "recovery_points": 210,
+          "checkpoint_sha256": "5acdc10d213fa7451d1da0f3580ad2a37e7f7a437cc53edf84f0cc91f882df69",
           "sidecar_matches": true,
           "full_recovery_sha_audit_failures": [],
           "recovery_identity_failures": [],
@@ -142,21 +142,36 @@
               "epoch": 96,
               "sha256": "f0e654285a164549d79d99efd7ceb1f517c124f66b3169923e945c21d56b38ca",
               "sidecar_matches": true
+            },
+            {
+              "epoch": 128,
+              "sha256": "ba065228e5f449af77d29633698e6987b58fcfc06f4aef1c213a2cccd11821b6",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 160,
+              "sha256": "d3706881c1576b4a134c206f036990ef541582cd4d1cf80b2b945e0c08040475",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 192,
+              "sha256": "d0eccbeb8f0d9391da691db5b40c1627ad65192762e8b9daebd8f68d658961ef",
+              "sidecar_matches": true
             }
           ],
           "latest_epoch_metrics": {
             "run": "unet_mf_tail_screen_20261117_v2",
             "seed": 29,
-            "epoch": 103,
-            "global_step": 4944,
+            "epoch": 209,
+            "global_step": 10032,
             "updates_this_epoch": 48,
-            "total": 0.07564694117172623,
-            "endpoint": 0.039820504753151915,
-            "pc": 0.05596604382541653,
-            "damage": 0.028886633716562454,
-            "tail": 0.026863965643997283,
-            "epoch_elapsed_seconds": 22.082421400002204,
-            "checkpoint_sha256": "06280b8157988fa6a1a10548d43bef702a1d5de14c4398df24b7c8a824c4b427"
+            "total": 0.07137757610568467,
+            "endpoint": 0.037321529094091005,
+            "pc": 0.05227637188121054,
+            "damage": 0.02758574688778026,
+            "tail": 0.0248532669756969,
+            "epoch_elapsed_seconds": 22.149782599997707,
+            "checkpoint_sha256": "5acdc10d213fa7451d1da0f3580ad2a37e7f7a437cc53edf84f0cc91f882df69"
           }
         },
         {
@@ -188,43 +203,66 @@
         "dev": true
       },
       "status": {
-        "stage": "EPOCH_SAVED",
+        "stage": "TRAINING",
         "seed": 17,
-        "epoch": 8,
-        "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093",
-        "metrics": {
-          "total": 4.244438098743555,
-          "endpoint": 3.544802574828887,
-          "pc": 6.325853715340294,
-          "damage": 0.06705015984092216
+        "epoch": 114,
+        "step": 12,
+        "steps": 48,
+        "last_committed_epoch": 113,
+        "resource": {
+          "utc": "2026-11-17T14:22:11.671225+00:00",
+          "gpu_index": 0,
+          "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+          "gpu_utilization_percent": 72.0,
+          "gpu_free_mib": 13669.0,
+          "gpu_total_mib": 16311.0,
+          "cpu_percent": 8.0,
+          "ram_free_bytes": 84560359424,
+          "disk_free_bytes": 1547641753600
         },
-        "updated_utc": "2026-11-17T13:42:38.335372+00:00"
+        "updated_utc": "2026-11-17T14:22:12.672393+00:00"
       },
       "seeds": [
         {
           "seed": 17,
           "training_complete": false,
-          "saved_epoch": 8,
-          "recovery_points": 9,
-          "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093",
+          "saved_epoch": 113,
+          "recovery_points": 114,
+          "checkpoint_sha256": "d1385d634237252635726f87c117bcb917b435bf1620c123f6412b9112607ddf",
           "sidecar_matches": true,
           "full_recovery_sha_audit_failures": [],
           "recovery_identity_failures": [],
           "missing_recovery_epochs": [],
           "missing_milestones": [],
-          "milestones": [],
+          "milestones": [
+            {
+              "epoch": 32,
+              "sha256": "137e5eebb00c650e14e8bd8ed27835a4637c7f8fa5b2803bcd6d9de1a18c9756",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 64,
+              "sha256": "9c3e1ee33d4473f80c477973d69cc4fcfd21d59de1add7e3c9265cb9bdd53176",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 96,
+              "sha256": "bb7a77b7b9aa63c21ad6eee52965a34cdc8d2c8878db6eea8a3eb42aada55f39",
+              "sidecar_matches": true
+            }
+          ],
           "latest_epoch_metrics": {
             "run": "unet_noise_norm_screen_20261117_v1",
             "seed": 17,
-            "epoch": 8,
-            "global_step": 384,
+            "epoch": 113,
+            "global_step": 5424,
             "updates_this_epoch": 48,
-            "total": 4.244438098743555,
-            "endpoint": 3.544802574828887,
-            "pc": 6.325853715340294,
-            "damage": 0.06705015984092216,
-            "epoch_elapsed_seconds": 22.283208999899216,
-            "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093"
+            "total": 0.10114294018906846,
+            "endpoint": 0.05425587147571303,
+            "pc": 0.08045243933156597,
+            "damage": 0.03884182467785043,
+            "epoch_elapsed_seconds": 22.325247299973853,
+            "checkpoint_sha256": "d1385d634237252635726f87c117bcb917b435bf1620c123f6412b9112607ddf"
           }
         },
         {

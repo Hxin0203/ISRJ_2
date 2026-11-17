@@ -1,0 +1,126 @@
+{
+  "scope": "Offline prose and source identity audit; not a scientific efficacy or authorship verdict",
+  "documents": [
+    {
+      "path": "evidence/outputs/IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.md",
+      "before_sha256": "1c5a18a4d5493cce723eaa0bd3056b29879d6f5866f328d1a706e69552bb31da",
+      "backup": "G:\\Project Code\\ISRJ_222\\outputs\\task_backups\\idea_pipeline_20261117\\IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.1c5a18a4d549.md",
+      "backup_sha256_verified": true,
+      "final_sha256": "815c4dc9a621389c097feda1f01aab5366822af1fe5a8bd52a66ba2a32be6c30",
+      "protected_span_counts": {
+        "fenced_code": 1,
+        "display_math": 2,
+        "inline_code": 9,
+        "inline_math": 0,
+        "urls": 0,
+        "citation_numbers": 0,
+        "exact_numbers": 187
+      },
+      "audit": {
+        "path": "G:\\Project Code\\ISRJ_222\\outputs\\task_backups\\idea_pipeline_20261117\\IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.prose_audit.txt",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\outputs\\task_backups\\idea_pipeline_20261117\\IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.prose_audit.txt",
+          "word_count": 1170,
+          "sentence_count": 107,
+          "burstiness_cv": 0.6713,
+          "lexical_diversity": 0.8718,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      },
+      "action": "Offline detect-only audit; no automatic cleanup or English-score-based rewriting of Chinese prose. Only factual timestamp/progress updates applied to the report."
+    },
+    {
+      "path": "evidence/outputs/UNET_REPRESENTATION_SCREEN_PLAN_20261117.md",
+      "before_sha256": "2e1fb1b1d216ab4b3c18ef84e99b20b76c911753ac421a7d16a48440cc738d40",
+      "backup": "G:\\Project Code\\ISRJ_222\\outputs\\task_backups\\idea_pipeline_20261117\\UNET_REPRESENTATION_SCREEN_PLAN_20261117.2e1fb1b1d216.md",
+      "backup_sha256_verified": true,
+      "final_sha256": "2e1fb1b1d216ab4b3c18ef84e99b20b76c911753ac421a7d16a48440cc738d40",
+      "protected_span_counts": {
+        "fenced_code": 0,
+        "display_math": 0,
+        "inline_code": 0,
+        "inline_math": 0,
+        "urls": 0,
+        "citation_numbers": 0,
+        "exact_numbers": 25
+      },
+      "audit": {
+        "path": "G:\\Project Code\\ISRJ_222\\outputs\\task_backups\\idea_pipeline_20261117\\UNET_REPRESENTATION_SCREEN_PLAN_20261117.prose_audit.txt",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\outputs\\task_backups\\idea_pipeline_20261117\\UNET_REPRESENTATION_SCREEN_PLAN_20261117.prose_audit.txt",
+          "word_count": 182,
+          "sentence_count": 13,
+          "burstiness_cv": 0.6158,
+          "lexical_diversity": 0.9111,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      },
+      "action": "Offline detect-only audit; no automatic cleanup or English-score-based rewriting of Chinese prose. Only factual timestamp/progress updates applied to the report."
+    }
+  ],
+  "original_documents": [
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\gptpro创新性研究.md",
+      "sha256": "368ca894f2a575cc53e0032b5fc8cc90496e4584a2ad59fa73512d5f79cc0fd9",
+      "unchanged": true
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\ISRJ_2模型思路.md",
+      "sha256": "a153014739878663df88457771c67559f8008e84ae3aae153c46dfcb7798af9e",
+      "unchanged": true
+    }
+  ],
+  "queue_source_checks": [
+    {
+      "run": "unet_dilation_screen_20261117_v1",
+      "bound_files": 48,
+      "local_source_drift": [],
+      "queue_binding_sha256": "50ff8bc7724dd709b0b368f49f913e58b4cdc5371f448f6552e3210cc3f3437e"
+    },
+    {
+      "run": "unet_frequency_screen_20261117_v1",
+      "bound_files": 48,
+      "local_source_drift": [],
+      "queue_binding_sha256": "ebe2721336be80fd721f0b57de8adeda9a5750aad5df88aab309b6eab416be73"
+    }
+  ],
+  "python_ast_passed": [
+    "tools\\unet_factor_screen\\evaluate.py",
+    "tools\\unet_factor_screen\\model.py",
+    "tools\\unet_factor_screen\\preflight.py",
+    "tools\\unet_factor_screen\\run.py",
+    "tools\\unet_factor_screen\\runtime.py",
+    "tools\\unet_factor_screen\\settings.py",
+    "tools\\unet_factor_screen\\train.py",
+    "tools\\unet_factor_screen\\__init__.py",
+    "tools\\phase_scale_diagnostic_20261117.py",
+    "tools\\snapshot_idea_pipeline_20261117.py",
+    "tools\\validate_idea_pipeline_20261117.py",
+    "tools\\build_idea_pipeline_manifest_20261117.py"
+  ],
+  "mathematics_values_paths_citations_protected": true,
+  "external_text_services_used": false,
+  "server_snapshot": "IDEA_PIPELINE_STATUS_20261117.json"
+}

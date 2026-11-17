@@ -1,0 +1,11 @@
+{
+  "stage": "WAIT_DEPENDENCY",
+  "factor": "frequency",
+  "physical_gpu": 0,
+  "dependency": "unet_noise_norm_screen_20261117_v1",
+  "dependency_stage": "TRAINING",
+  "dependency_seed": 17,
+  "dependency_saved_epoch": 131,
+  "numerical_preflight": "PENDING_GPU_RELEASE",
+  "updated_utc": "2026-11-17T14:29:05.522584+00:00"
+}
