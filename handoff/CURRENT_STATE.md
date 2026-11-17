@@ -1,5 +1,16 @@
 # Current state
 
+## Superseding snapshot — 2026-11-17 11:45 UTC
+
+- The user-authorized sequence is active: residual/detection-failure diagnosis → U-Net matched-filter tail-loss screen → separate long-range, frequency-processing, and normalization screens → combine only factors that pass screening, then evaluate on a newly generated independent confirmation set.
+- The residual diagnosis is complete as DEV-only hypothesis formation. Matched-filter residual peaks were more strongly associated with jammer-frame false alarms than total residual energy in the inspected DEV sample; this is not causal or independent confirmation evidence. See `evidence/outputs/RESIDUAL_FAILURE_DIAGNOSTIC_REPORT_20261117.md`.
+- The matched-filter tail-loss U-Net screen is training on server B (`rsdr-b`, `D:/code/Xin/ISRJ_222`, physical GPU 1), run `unet_mf_tail_screen_20261117_v2`. Snapshot at 2026-11-17 11:44:52 UTC: seed 17, epoch 45 committed; checkpoint SHA-256 `3fb5b7db3d3cf539f9f3eb03e5aeb51b3e80311b608717b2ee8f4c8b8213a02e`. All epoch records 0–45 and the epoch-32 milestone are present; milestone SHA-256 `6344699d7270a12955412526e3a071fdd7ce9b349aae17c0a2841374118f11e4`. The latest checkpoint sidecar matches its file hash. Frozen config SHA-256 is `cef0a79c03a022e09bce91237f909179a692952c5c44f34c19fd8315a404c1af`.
+- The displayed losses are training diagnostics only. No screening performance outcome exists until all paired seeds 17/29/41 complete and the frozen DEV evaluation runs. Do not start the downstream long-range/frequency/normalization factors before applying the prespecified screening rule in `evidence/outputs/UNET_MF_TAIL_SCREEN_PLAN_20261117.md`.
+- At the observed epoch rate (about 22.2 s/epoch), remaining work for the current three-seed screen is roughly 4.7 compute-hours from this snapshot, before evaluation and queue overhead. This is a rough estimate, not a deadline.
+- No local long training is running. No confirmation parents have been generated or consumed for this branch. Training data, checkpoints, raw arrays, caches, and full logs remain off GitHub. Only `paper2` may be pushed.
+
+The earlier snapshots below are historical and superseded by this entry.
+
 ## Superseding snapshot — 2026-11-16 14:52 UTC
 
 - The U-Net/ablation server queue is complete: 15 runs × 256 epochs; five variants have confirmation comparisons. Completion receipt: `evidence/outputs/unet_ablation_3seed_256_20261115/PIPELINE_COMPLETE.json`.
