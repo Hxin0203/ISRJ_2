@@ -1,0 +1,7 @@
+{
+  "stage": "FAILED",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_norm_screen\\run.py\", line 6, in <module>\n    main()\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_norm_screen\\train.py\", line 317, in main\n    preflight(BASE)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_norm_screen\\preflight.py\", line 113, in preflight\n    assert resume_error == 0 and second == second_resumed\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "pid": 32620,
+  "updated_utc": "2026-11-17T13:35:18.316745+00:00"
+}

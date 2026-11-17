@@ -1,5 +1,18 @@
 # Last execution
 
+## Superseding parallel snapshot — 2026-11-17 13:42 UTC
+
+The user explicitly authorized using otherwise idle server GPUs for independent experiments. GPU 1 continues the frozen matched-filter tail-loss screen; GPU 0 now runs a separate normalization-only screen. This supersedes historical instructions below that required normalization to wait for the tail-loss gate. Do not change frozen sources, share partial outcomes for tuning, or combine factors before screening completes.
+
+- Server B only: `rsdr-b`, `D:/code/Xin/ISRJ_222`. GPU 1 tail loss: seed 17 completed 256; seed 29 saved 103; seed 41 pending. GPU 0 normalization: seed 17 saved 8; seeds 29/41 pending. Both branches automatically train all three seeds to 256, then run paired DEV evaluation against the same-seed frozen U-Net controls.
+- Every existing recovery point passed SHA and identity checks; no missing completed epochs or due 32-epoch milestones. No frozen source drift; training and DEV data hashes match. No new DEV efficacy conclusion exists yet. No independent confirmation set has been opened for these optimization factors.
+- Normalization changes only the observation-derived input/output scale; parameters, initial tensors, original loss, data and update budget match the plain U-Net. It adds no tail loss. Numerical preflight passed. Strong jammer leakage can inflate the outer-band scale proxy (train-first32 diagnostic q95 ratio 2.565063, max 12.617789); retain this limitation and any negative outcome.
+- Approximate remaining training from this snapshot: tail 2.5 hours; normalization 4.7 hours, excluding evaluation, saving/auditing, waits and recovery. Do not treat this as a deadline. Long-range/frequency factors are not yet launched; freeze separate protocols before scheduling them on released devices. Only later combine eligible factors and use fresh independent confirmation parents.
+- Report: `evidence/outputs/PARALLEL_EXPERIMENT_PROGRESS_20261117.md`; full light audit: `evidence/outputs/PARALLEL_GPU_STATUS_20261117.json`; normalization protocol: `evidence/outputs/UNET_NOISE_NORM_SCREEN_PLAN_20261117.md`. New guarded entry: `tools/start_unet_norm_screen.ps1`. All completed epoch recovery points, earlier models and failure history remain preserved on server. Push only key source/report/text evidence to `paper2`, never datasets, weights, raw arrays, caches, credentials or full logs.
+
+Earlier snapshots below are historical; the dated parallel snapshot above takes precedence.
+
+
 Updated 2026-11-15T15:46:26.128115+00:00. Server snapshot 2026-11-15T15:46:23.311350+00:00: TRAINING_QUEUE; job 1/15, unet seed 17, epoch 26. Independently SHA-verified saved epochs at 2026-11-15T15:46:24.456093+00:00: {'unet/seed_17': 26}.
 
 U-Net seeds 17/29/41 run first, each 256 epochs; then no_dechirp, no_rms, no_pc and no_damage, each with the same three seeds and budget. 15 new runs in total. U-Net has exactly 59,714 active/registered parameters; the full model has 59,714 active plus 53,042 unused registered parameters. The three full epoch-256 checkpoints are reused and their DEV evaluations were rerun on the server. Every new epoch retains a complete recovery archive; every 32 epochs retains a milestone and DEV result. After all training, generate 512 fresh confirmation parents and compare all six models at fixed epoch 256 on the same observations. No best-seed/epoch selection. Report u_nmse, damage, SJRIF, Pd and empirical Pfa. Parent bootstrap intervals are conditional on the three trained seeds; seed SD is separate. Historical full training environment differs from the new server training; do not claim identical trajectories.

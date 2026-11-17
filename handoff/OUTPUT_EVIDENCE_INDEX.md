@@ -1,5 +1,10 @@
 # Output evidence index
 
+Current parallel evidence (2026-11-17 13:42 UTC): `evidence/outputs/PARALLEL_EXPERIMENT_PROGRESS_20261117.md` and `PARALLEL_GPU_STATUS_20261117.json`. GPU 1 tail: seeds 17/29/41 saved 256/103/not-started. GPU 0 normalization: 8/not-started/not-started. Protocol: `UNET_NOISE_NORM_SCREEN_PLAN_20261117.md`; frozen config, admission, passing numerical preflight and retained engineering failures: `unet_noise_norm_screen_20261117_v1/`. Latest epoch summaries are `tail/seed_*/LATEST_TRAINING_EPOCH.json` and `norm/seed_17/LATEST_TRAINING_EPOCH.json` under the corresponding run evidence. No new paired DEV outcome exists. The user's parallel authorization supersedes the older sequential gate below. See the report for leakage limitations and recovery audits.
+
+Historical entries follow.
+
+
 Updated 2026-11-15T15:46:23.311350+00:00.
 
 New study: `PAPER2_UNET_ABLATION_PLAN_20261115.md`; freeze: `configs/unet_ablation_3seed_256_20261115.json` (SHA `6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b`). Evidence directory: `evidence/outputs/unet_ablation_3seed_256_20261115`. Read SERVER_STATUS.json, RECOVERY_IDENTITY_AUDIT.json, FIRST_EPOCH_AUDIT.json, QUEUE_STATUS.json, NUMERICAL_PREFLIGHT.json, DIAGNOSTIC_BEFORE.json, DIAGNOSTIC_TF32_OFF.json, LAUNCHER_RESTART_EVENT.json, TIMING_ESTIMATE.json, VALIDATION.json and TEXT_AUDIT.json. Full epoch-256 DEV receipts are under full/seed_*/. Engineering-only update/memory evidence is in `evidence/outputs/unet_ablation_3seed_256_20261115_engineering/`. Absent U-Net milestone/confirmation files mean not yet produced, never a scientific zero. Per-epoch metric JSON is fetched to ignored outputs/; weights and raw arrays remain on the server.

@@ -1,0 +1,263 @@
+{
+  "checked_utc": "2026-11-17T13:42:38.730693+00:00",
+  "host": "DESKTOP-RFFERM3",
+  "gpu": [
+    {
+      "index": 0,
+      "uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "utilization_percent": 0.0,
+      "memory_used_mib": 2383.0,
+      "memory_total_mib": 16311.0
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+      "utilization_percent": 70.0,
+      "memory_used_mib": 1544.0,
+      "memory_total_mib": 16311.0
+    }
+  ],
+  "experiments": [
+    {
+      "run": "unet_mf_tail_screen_20261117_v2",
+      "physical_gpu": 1,
+      "config_sha256": "cef0a79c03a022e09bce91237f909179a692952c5c44f34c19fd8315a404c1af",
+      "source_files": 13,
+      "source_drift": [],
+      "data_sha_matches": {
+        "train": true,
+        "dev": true
+      },
+      "status": {
+        "stage": "TRAINING",
+        "seed": 29,
+        "epoch": 104,
+        "step": 36,
+        "steps": 48,
+        "last_committed_epoch": 103,
+        "resource": {
+          "utc": "2026-11-17T13:42:35.254503+00:00",
+          "gpu_index": 1,
+          "gpu_utilization_percent": 69.0,
+          "gpu_free_mib": 14507.0,
+          "gpu_total_mib": 16311.0,
+          "cpu_percent": 9.3,
+          "ram_free_bytes": 85263564800,
+          "disk_free_bytes": 1547795140608
+        },
+        "updated_utc": "2026-11-17T13:42:36.256006+00:00"
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "training_complete": true,
+          "saved_epoch": 256,
+          "recovery_points": 257,
+          "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803",
+          "sidecar_matches": true,
+          "full_recovery_sha_audit_failures": [],
+          "recovery_identity_failures": [],
+          "missing_recovery_epochs": [],
+          "missing_milestones": [],
+          "milestones": [
+            {
+              "epoch": 32,
+              "sha256": "6344699d7270a12955412526e3a071fdd7ce9b349aae17c0a2841374118f11e4",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 64,
+              "sha256": "2c4df281993fff53e54db7ee6048e32cca0c54e645bb3a9a5ade1f8815e39f2a",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 96,
+              "sha256": "fdf8321567c2670d7462d8f8a3f33c689c2ec8558773a96fc7a95c65e93215a3",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 128,
+              "sha256": "13356ad56f96637e8d948fbb78c5e66c674db76bc7ce49029b0c989e405a3db0",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 160,
+              "sha256": "5148fb3b7a396389c3e70e1a0f6b49d63005e4e140a6424eb4903039d147bf4b",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 192,
+              "sha256": "e34bb1915a8b517e0d5c5b20179c569e93fa46799846bfcbe046d036a84e3384",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 224,
+              "sha256": "9f6598e67c6b7fd7e1f8387ca147b452f420eae3e82853dcfe55a35cc6c856cd",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 256,
+              "sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803",
+              "sidecar_matches": true
+            }
+          ],
+          "latest_epoch_metrics": {
+            "run": "unet_mf_tail_screen_20261117_v2",
+            "seed": 17,
+            "epoch": 256,
+            "global_step": 12288,
+            "updates_this_epoch": 48,
+            "total": 0.07368592935866519,
+            "endpoint": 0.0378018066621735,
+            "pc": 0.05343710796538894,
+            "damage": 0.029256814724552282,
+            "tail": 0.02567194860728369,
+            "epoch_elapsed_seconds": 22.19183169992175,
+            "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803"
+          }
+        },
+        {
+          "seed": 29,
+          "training_complete": false,
+          "saved_epoch": 103,
+          "recovery_points": 104,
+          "checkpoint_sha256": "06280b8157988fa6a1a10548d43bef702a1d5de14c4398df24b7c8a824c4b427",
+          "sidecar_matches": true,
+          "full_recovery_sha_audit_failures": [],
+          "recovery_identity_failures": [],
+          "missing_recovery_epochs": [],
+          "missing_milestones": [],
+          "milestones": [
+            {
+              "epoch": 32,
+              "sha256": "6fb9a98f4adcdb86681642058bae6391c0ef7b266acbc44c2b3fc8c337b09926",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 64,
+              "sha256": "d5da9c9e012944004385541b53d13ce3d5fd4a85290fd8dfeeef84a060b7f47b",
+              "sidecar_matches": true
+            },
+            {
+              "epoch": 96,
+              "sha256": "f0e654285a164549d79d99efd7ceb1f517c124f66b3169923e945c21d56b38ca",
+              "sidecar_matches": true
+            }
+          ],
+          "latest_epoch_metrics": {
+            "run": "unet_mf_tail_screen_20261117_v2",
+            "seed": 29,
+            "epoch": 103,
+            "global_step": 4944,
+            "updates_this_epoch": 48,
+            "total": 0.07564694117172623,
+            "endpoint": 0.039820504753151915,
+            "pc": 0.05596604382541653,
+            "damage": 0.028886633716562454,
+            "tail": 0.026863965643997283,
+            "epoch_elapsed_seconds": 22.082421400002204,
+            "checkpoint_sha256": "06280b8157988fa6a1a10548d43bef702a1d5de14c4398df24b7c8a824c4b427"
+          }
+        },
+        {
+          "seed": 41,
+          "training_complete": false,
+          "saved_epoch": null,
+          "recovery_points": 0,
+          "checkpoint_sha256": null,
+          "sidecar_matches": null,
+          "full_recovery_sha_audit_failures": [],
+          "recovery_identity_failures": [],
+          "missing_recovery_epochs": [],
+          "missing_milestones": [],
+          "milestones": [],
+          "latest_epoch_metrics": null
+        }
+      ],
+      "dev_summary_exists": false,
+      "pipeline_status_exists": false
+    },
+    {
+      "run": "unet_noise_norm_screen_20261117_v1",
+      "physical_gpu": 0,
+      "config_sha256": "e5b01d1c77363be8b6cfd389604e61bf2e5c4ad89c081fba177d1e93f9ca7be0",
+      "source_files": 47,
+      "source_drift": [],
+      "data_sha_matches": {
+        "train": true,
+        "dev": true
+      },
+      "status": {
+        "stage": "EPOCH_SAVED",
+        "seed": 17,
+        "epoch": 8,
+        "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093",
+        "metrics": {
+          "total": 4.244438098743555,
+          "endpoint": 3.544802574828887,
+          "pc": 6.325853715340294,
+          "damage": 0.06705015984092216
+        },
+        "updated_utc": "2026-11-17T13:42:38.335372+00:00"
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "training_complete": false,
+          "saved_epoch": 8,
+          "recovery_points": 9,
+          "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093",
+          "sidecar_matches": true,
+          "full_recovery_sha_audit_failures": [],
+          "recovery_identity_failures": [],
+          "missing_recovery_epochs": [],
+          "missing_milestones": [],
+          "milestones": [],
+          "latest_epoch_metrics": {
+            "run": "unet_noise_norm_screen_20261117_v1",
+            "seed": 17,
+            "epoch": 8,
+            "global_step": 384,
+            "updates_this_epoch": 48,
+            "total": 4.244438098743555,
+            "endpoint": 3.544802574828887,
+            "pc": 6.325853715340294,
+            "damage": 0.06705015984092216,
+            "epoch_elapsed_seconds": 22.283208999899216,
+            "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093"
+          }
+        },
+        {
+          "seed": 29,
+          "training_complete": false,
+          "saved_epoch": null,
+          "recovery_points": 0,
+          "checkpoint_sha256": null,
+          "sidecar_matches": null,
+          "full_recovery_sha_audit_failures": [],
+          "recovery_identity_failures": [],
+          "missing_recovery_epochs": [],
+          "missing_milestones": [],
+          "milestones": [],
+          "latest_epoch_metrics": null
+        },
+        {
+          "seed": 41,
+          "training_complete": false,
+          "saved_epoch": null,
+          "recovery_points": 0,
+          "checkpoint_sha256": null,
+          "sidecar_matches": null,
+          "full_recovery_sha_audit_failures": [],
+          "recovery_identity_failures": [],
+          "missing_recovery_epochs": [],
+          "missing_milestones": [],
+          "milestones": [],
+          "latest_epoch_metrics": null
+        }
+      ],
+      "dev_summary_exists": false,
+      "pipeline_status_exists": false
+    }
+  ]
+}

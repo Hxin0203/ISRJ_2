@@ -1,0 +1,13 @@
+{
+  "stage": "EPOCH_SAVED",
+  "seed": 17,
+  "epoch": 8,
+  "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093",
+  "metrics": {
+    "total": 4.244438098743555,
+    "endpoint": 3.544802574828887,
+    "pc": 6.325853715340294,
+    "damage": 0.06705015984092216
+  },
+  "updated_utc": "2026-11-17T13:42:38.335372+00:00"
+}

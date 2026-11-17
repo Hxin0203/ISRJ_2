@@ -1,0 +1,13 @@
+{
+  "run": "unet_noise_norm_screen_20261117_v1",
+  "seed": 17,
+  "epoch": 8,
+  "global_step": 384,
+  "updates_this_epoch": 48,
+  "total": 4.244438098743555,
+  "endpoint": 3.544802574828887,
+  "pc": 6.325853715340294,
+  "damage": 0.06705015984092216,
+  "epoch_elapsed_seconds": 22.283208999899216,
+  "checkpoint_sha256": "fee99488f43d2bb8eb4bbc2c5c5f5b23a20890b3e28b86640927cedbdd3eb093"
+}

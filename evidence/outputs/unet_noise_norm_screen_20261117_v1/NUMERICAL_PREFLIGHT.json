@@ -1,0 +1,133 @@
+{
+  "stage": "NUMERICAL_PREFLIGHT_PASSED",
+  "source_sha256": {
+    "paper2/__init__.py": "d962816e0ba88de846966b1b0795d74410d4d7557accc580c1b4607b28e7a707",
+    "paper2/baselines_1103.py": "a466597a2f65bee6bd9abdb023289583d4a91fd87195d3ae0317b2bf2b9c32c0",
+    "paper2/data.py": "c3fc377b0f3ef9f0e0250814e0de260eb0ebd125b4ce396929e02151f47d9854",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/dev_1103_v4.py": "da9f773bbaa34137b73e1a43eea0850d540814706f2951fe554964a43e2ead86",
+    "paper2/dev_256_8seed_v4.py": "c796c437fbe096747701af343e8f58d8a3c0585a9f7daf5a7257033ad048465c",
+    "paper2/evaluate.py": "6840d532a5b32b88984abd5d5b1f3fd157f8acbbfc2aba87c8457ce8546b13dd",
+    "paper2/evaluate_1103.py": "0cbd5e53ce835d38be4938e7de1c559a1e2f6953220619bec4909baad940c7ae",
+    "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+    "paper2/run.py": "5188e192a13d9825d5a34f07e664131af851402ec97d8a92a4bea4d2d1059e5a",
+    "paper2/scan_1103.py": "eb096a3284295ce080c2a98b3842ec49136dfd4813a6eedc38ae8a811075a1cd",
+    "paper2/scenes_1103.py": "05864bc879e1d0aaea5aaa55268c5cd19cd982583804387c291cc82cfc29a8c9",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+    "paper2/vendor/__init__.py": "45963df8f00f2ca0fe8e193895ae9f2f4854ecb5a783bdc36278626cb02af2fa",
+    "paper2/vendor/baselines_1103/__init__.py": "145c20aa3eb8cc2b56e4f84d2dfb61e93afa04b9492dad579d56c517358f16a6",
+    "paper2/vendor/baselines_1103/bcs.py": "23331aeb39205a7f2c321e5a4d293380e8f3aaeb8d087f09dee7f4168b0ba4b2",
+    "paper2/vendor/baselines_1103/max_tf.py": "2d25fb9e4e3a1fc6973a4bfc40606b37f06d49e9c9042f3168f474c9b2f81576",
+    "paper2/vendor/baselines_1103/paper_gmm_omp.py": "e1dafac0faa31d1f424853500425e7bda88db5262d14160d7512c3e78abda1f5",
+    "paper2/vendor/baselines_1103/physical.py": "4bb75b7b715722932306427a598d983bba1bee4ee509338b5c22a61054289cff",
+    "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+    "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e",
+    "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+    "tools/unet_ablation/__init__.py": "561c8fa12f93f4495f9e189b59e4332351e1f6ca057b8acc4d694e29bd22cef1",
+    "tools/unet_ablation/evaluate.py": "9e8abc1bb6ecc9cab04e646a40f11bb11351945f72184fbd40c4fd9b76b32856",
+    "tools/unet_ablation/models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+    "tools/unet_ablation/preflight.py": "6e166280d4f4a3fedeec4eef78445e28f230d65d28ebfbd0b5883ca1e83afb68",
+    "tools/unet_ablation/protocol.py": "5b890c1538097af26170eaa5ffabb274ba476706804b702d435e05a2249f834b",
+    "tools/unet_ablation/run.py": "079c4e56e0f9474346399edb6c0215751796105c95e1b4052a30f7e4ad5c1950",
+    "tools/unet_ablation/runtime.py": "21617ef7ea5a0a20475e4ca12757a824c0cf5840e19c13340dd9912ae8872754",
+    "tools/unet_ablation/smoke.py": "8661116819ce3d505fbe35a92f7d0dfd56ecb130fd23c93c2ec6fed6e99256c5",
+    "tools/unet_ablation/summarize.py": "29e6fbc01b36c6a01146e402805ac36431326f2764cbe48a45ef088a51de2279",
+    "tools/unet_ablation/train.py": "81e66d8cb7b39205337f3fd788d9990b7b5bac879c8d837cc6cf0ed8228837db",
+    "tools/unet_norm_screen/__init__.py": "48e8602273fa6a3b7d88ee6d30d840808cdaa5767012c3c90e147cabaf5a038e",
+    "tools/unet_norm_screen/evaluate.py": "8aef2ed2c3c8edd62ded9b62d96087e92052b32cdbbe5e7f1bd02c322307dada",
+    "tools/unet_norm_screen/model.py": "6c27cfc031f248a11df4bcaa009ab1b31076d46c70254f0f328cf6a1d0bbb335",
+    "tools/unet_norm_screen/preflight.py": "85cf5f5952e3911ba734231cf3dbac55a5708f86fc31612035d878d4ecc22c4b",
+    "tools/unet_norm_screen/run.py": "a28b8e0e07b448eff7d27e61bcc1d1f645f32a1e0d5c7ed6dd9d275b81d05de9",
+    "tools/unet_norm_screen/runtime.py": "0a3c2559aad18f17eccf1f87cac2d34b88e16cda49c1d4867b145d714f0ddbb6",
+    "tools/unet_norm_screen/train.py": "a5dfaf19e003633780bfbbb75989c8d4bb7fdc82187c1d64deff9a3f9302706e",
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+    "tools/start_unet_norm_screen.ps1": "0e2609e0b1ecad6afb3306fdc7ed9a1e057dd1d1e3d58bf1e48f4a99b307d979",
+    "evidence/outputs/UNET_NOISE_NORM_SCREEN_PLAN_20261117.md": "055ae061c3eed7e8976db7996fb1c7d240fc03147bde0495881cce8ad4d794d2"
+  },
+  "created_utc": "2026-11-17T13:36:33.787304+00:00",
+  "host": "DESKTOP-RFFERM3",
+  "physical_gpu": 0,
+  "torch": "2.9.1+cu128",
+  "python": "3.12.15",
+  "cuda_device_properties": "_CudaDeviceProperties(name='NVIDIA GeForce RTX 5060 Ti', major=12, minor=0, total_memory=16310MB, multi_processor_count=36, uuid=f12e73b1-3bed-5a1e-bcb0-f9726dd1621d, pci_bus_id=1, pci_device_id=0, pci_domain_id=0, L2_cache_size=32MB)",
+  "precision": {
+    "dtype": "float32",
+    "matmul_precision": "highest",
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true
+  },
+  "parameters_total_and_active": 59714,
+  "noise_monte_carlo": {
+    "waveforms": 2048,
+    "complex_noise_power": 1,
+    "estimated_power": {
+      "mean": 1.001131296157837,
+      "q05": 0.8933438062667847,
+      "median": 1.000847339630127,
+      "q95": 1.1131501197814941,
+      "max": 1.3218845129013062
+    }
+  },
+  "scale_relative_error": 6.053617767065589e-07,
+  "network_scale_max_absolute_error": 1.9073486328125e-06,
+  "baseline_initialization": {
+    "17": {
+      "parameter_bytes_sha256": "9578382422b2e9a42aa1e782d3b1e547cccbdce70d8bf18be09d524c76976bbf",
+      "baseline_epoch0_sha256": "8a286d73e2729e79253f9d88076c3ad7fb03ade47801e6bd362fa06ac6adb592",
+      "exact_match": true
+    },
+    "29": {
+      "parameter_bytes_sha256": "dc539def4c35824d7c14451c8dc30151fdb33b422e056363caa672f4ef0ab0b1",
+      "baseline_epoch0_sha256": "d0ab9d3d6210428a96da14ad7e9190187a11f9311d7aabbd113f626c2c13766e",
+      "exact_match": true
+    },
+    "41": {
+      "parameter_bytes_sha256": "ff1d581ce3229d2974718d858f88bd82e5ae0562e273b1256635092b7da07dee",
+      "baseline_epoch0_sha256": "dca7233e81a4955d6107959225d8ba42d3ea6387390fe2649b333365f3ee68b9",
+      "exact_match": true
+    }
+  },
+  "finite_forward_backward": true,
+  "recovery_model_max_absolute_error": 1.1920928955078125e-07,
+  "recovery_rng_exact": true,
+  "recovery_loaded_model_and_optimizer_exact": true,
+  "recovery_next_loss_max_absolute_error": 0.0,
+  "recovery_numeric_tolerance_absolute": 1e-06,
+  "first_preflight_batch_losses": {
+    "total": 4.9822282791137695,
+    "endpoint": 4.003950119018555,
+    "pc": 7.125271797180176,
+    "damage": 0.2657508850097656
+  },
+  "contamination_train_first32parents": {
+    "noise_proxy_over_realized_noise_rms": {
+      "mean": 1.0000540018081665,
+      "q05": 0.9497388005256653,
+      "median": 0.9998615980148315,
+      "q95": 1.056015968322754,
+      "max": 1.0881316661834717
+    },
+    "signal_plus_noise_proxy_over_noise_proxy": {
+      "mean": 1.0030550956726074,
+      "q05": 0.990865170955658,
+      "median": 1.001450777053833,
+      "q95": 1.019614338874817,
+      "max": 1.0440690517425537
+    },
+    "jammer_plus_noise_proxy_over_noise_proxy": {
+      "mean": 1.2762705087661743,
+      "q05": 0.9936875104904175,
+      "median": 1.0,
+      "q95": 2.565062999725342,
+      "max": 12.617789268493652
+    }
+  },
+  "scope": "engineering checks and fixed-estimator leakage diagnostics; no DEV performance consumed; no tuning"
+}

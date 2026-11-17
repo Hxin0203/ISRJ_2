@@ -1,0 +1,7 @@
+{
+  "stage": "FAILED",
+  "error": "AssertionError({'resume_error': 5.960464477539063e-08, 'second': {'total': 4.62381649017334, 'endpoint': 3.8167197704315186, 'pc': 6.827128887176514, 'damage': 0.1243840828537941}, 'second_resumed': {'total': 4.62381649017334, 'endpoint': 3.8167197704315186, 'pc': 6.827128887176514, 'damage': 0.1243840828537941}})",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_norm_screen\\run.py\", line 6, in <module>\n    main()\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_norm_screen\\train.py\", line 317, in main\n    preflight(BASE)\n  File \"D:\\code\\Xin\\ISRJ_222\\tools\\unet_norm_screen\\preflight.py\", line 113, in preflight\n    assert resume_error == 0 and second == second_resumed, {\"resume_error\": resume_error, \"second\": second, \"second_resumed\": second_resumed}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'resume_error': 5.960464477539063e-08, 'second': {'total': 4.62381649017334, 'endpoint': 3.8167197704315186, 'pc': 6.827128887176514, 'damage': 0.1243840828537941}, 'second_resumed': {'total': 4.62381649017334, 'endpoint': 3.8167197704315186, 'pc': 6.827128887176514, 'damage': 0.1243840828537941}}\n",
+  "pid": 3912,
+  "updated_utc": "2026-11-17T13:35:48.044068+00:00"
+}

@@ -1,5 +1,18 @@
 # Current state
 
+## Superseding parallel snapshot — 2026-11-17 13:42 UTC
+
+The user explicitly authorized using otherwise idle server GPUs for independent experiments. GPU 1 continues the frozen matched-filter tail-loss screen; GPU 0 now runs a separate normalization-only screen. This supersedes historical instructions below that required normalization to wait for the tail-loss gate. Do not change frozen sources, share partial outcomes for tuning, or combine factors before screening completes.
+
+- Server B only: `rsdr-b`, `D:/code/Xin/ISRJ_222`. GPU 1 tail loss: seed 17 completed 256; seed 29 saved 103; seed 41 pending. GPU 0 normalization: seed 17 saved 8; seeds 29/41 pending. Both branches automatically train all three seeds to 256, then run paired DEV evaluation against the same-seed frozen U-Net controls.
+- Every existing recovery point passed SHA and identity checks; no missing completed epochs or due 32-epoch milestones. No frozen source drift; training and DEV data hashes match. No new DEV efficacy conclusion exists yet. No independent confirmation set has been opened for these optimization factors.
+- Normalization changes only the observation-derived input/output scale; parameters, initial tensors, original loss, data and update budget match the plain U-Net. It adds no tail loss. Numerical preflight passed. Strong jammer leakage can inflate the outer-band scale proxy (train-first32 diagnostic q95 ratio 2.565063, max 12.617789); retain this limitation and any negative outcome.
+- Approximate remaining training from this snapshot: tail 2.5 hours; normalization 4.7 hours, excluding evaluation, saving/auditing, waits and recovery. Do not treat this as a deadline. Long-range/frequency factors are not yet launched; freeze separate protocols before scheduling them on released devices. Only later combine eligible factors and use fresh independent confirmation parents.
+- Report: `evidence/outputs/PARALLEL_EXPERIMENT_PROGRESS_20261117.md`; full light audit: `evidence/outputs/PARALLEL_GPU_STATUS_20261117.json`; normalization protocol: `evidence/outputs/UNET_NOISE_NORM_SCREEN_PLAN_20261117.md`. New guarded entry: `tools/start_unet_norm_screen.ps1`. All completed epoch recovery points, earlier models and failure history remain preserved on server. Push only key source/report/text evidence to `paper2`, never datasets, weights, raw arrays, caches, credentials or full logs.
+
+Earlier snapshots below are historical; the dated parallel snapshot above takes precedence.
+
+
 ## Superseding snapshot — 2026-11-17 11:45 UTC
 
 - The user-authorized sequence is active: residual/detection-failure diagnosis → U-Net matched-filter tail-loss screen → separate long-range, frequency-processing, and normalization screens → combine only factors that pass screening, then evaluate on a newly generated independent confirmation set.

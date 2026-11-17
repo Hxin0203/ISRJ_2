@@ -1,0 +1,39 @@
+{
+  "stage": "ADMITTED",
+  "samples": [
+    {
+      "utc": "2026-11-17T13:39:28.899682+00:00",
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "gpu_utilization_percent": 1.0,
+      "gpu_free_mib": 15205.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 8.5,
+      "ram_free_bytes": 86288039936,
+      "disk_free_bytes": 1547808808960
+    },
+    {
+      "utc": "2026-11-17T13:39:29.945542+00:00",
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "gpu_utilization_percent": 5.0,
+      "gpu_free_mib": 15205.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 8.5,
+      "ram_free_bytes": 86298099712,
+      "disk_free_bytes": 1547808808960
+    },
+    {
+      "utc": "2026-11-17T13:39:30.991488+00:00",
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "gpu_utilization_percent": 0.0,
+      "gpu_free_mib": 15205.0,
+      "gpu_total_mib": 16311.0,
+      "cpu_percent": 6.6,
+      "ram_free_bytes": 86297313280,
+      "disk_free_bytes": 1547808808960
+    }
+  ],
+  "policy": "GPU0<20%,free>=12GiB,CPU<85%,RAM>=8GiB,disk>=8GiB; never stop other jobs"
+}

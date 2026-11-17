@@ -1,0 +1,14 @@
+{
+  "run": "unet_mf_tail_screen_20261117_v2",
+  "seed": 17,
+  "epoch": 256,
+  "global_step": 12288,
+  "updates_this_epoch": 48,
+  "total": 0.07368592935866519,
+  "endpoint": 0.0378018066621735,
+  "pc": 0.05343710796538894,
+  "damage": 0.029256814724552282,
+  "tail": 0.02567194860728369,
+  "epoch_elapsed_seconds": 22.19183169992175,
+  "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803"
+}

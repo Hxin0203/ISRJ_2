@@ -1,0 +1,87 @@
+{
+  "snapshot_utc": "2026-11-17T13:42:38.730693+00:00",
+  "syntax_only_local": {
+    "passed": true,
+    "files": [
+      "tools/unet_norm_screen/__init__.py",
+      "tools/unet_norm_screen/evaluate.py",
+      "tools/unet_norm_screen/model.py",
+      "tools/unet_norm_screen/preflight.py",
+      "tools/unet_norm_screen/run.py",
+      "tools/unet_norm_screen/runtime.py",
+      "tools/unet_norm_screen/train.py",
+      "tools/snapshot_parallel_screens.py"
+    ]
+  },
+  "local_torch_execution_or_training": false,
+  "local_frozen_source_sha_matches": 47,
+  "source_mismatches": [],
+  "server_numerical_preflight": {
+    "sha256": "0ce7abe928e957f0ff1803cd088edbd2f1ce3b165785838c140d71e0f25a5f93",
+    "stage": "NUMERICAL_PREFLIGHT_PASSED",
+    "loaded_model_optimizer_exact": true,
+    "rng_exact": true,
+    "next_loss_max_abs_difference": 0.0,
+    "next_model_max_abs_difference": 1.1920928955078125e-07
+  },
+  "text_workflow": {
+    "offline": true,
+    "backup_receipt": "outputs/task_backups/parallel_norm_20261117/review/BACKUP_SHA256.json",
+    "protected_formulas_and_identifiers": true,
+    "whole_document_replacement_filter": false,
+    "audits": {
+      "REPORT_AFTER_AUDIT.json": {
+        "path": "evidence/outputs/PARALLEL_EXPERIMENT_PROGRESS_20261117.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence/outputs/PARALLEL_EXPERIMENT_PROGRESS_20261117.md",
+          "word_count": 396,
+          "sentence_count": 26,
+          "burstiness_cv": 0.7314,
+          "lexical_diversity": 0.845,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      },
+      "PLAN_FINAL_AUDIT.json": {
+        "path": "evidence/outputs/UNET_NOISE_NORM_SCREEN_PLAN_20261117.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence/outputs/UNET_NOISE_NORM_SCREEN_PLAN_20261117.md",
+          "word_count": 307,
+          "sentence_count": 23,
+          "burstiness_cv": 0.7504,
+          "lexical_diversity": 0.89,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "interpretation": "English stylometry heuristic is not calibrated for Chinese; no authorship/detector inference. No flags; no automatic rewriting.",
+    "manual_corrections": [
+      "Replaced a Chinese statistical term with its standard expression.",
+      "Corrected newly drafted epoch-8 total loss against its saved receipt before publication."
+    ]
+  },
+  "report_sha256": "73f963da962e4a7f38249e3c817abe824bee6d459ea452e199d44c68c0774650",
+  "frozen_plan_sha256": "055ae061c3eed7e8976db7996fb1c7d240fc03147bde0495881cce8ad4d794d2",
+  "limitations": "Server preflight is a numerical/persistence check, not an efficacy result; both factors still training."
+}
