@@ -1,7 +1,7 @@
 # ISRJ_2 首次两小时巡检基线
 
-巡检时间：2026-11-17 16:21 UTC  
-自动化：`isrj-2`，当前对话 Thread Automation，周期为两小时。  
+巡检时间：2026-11-17 16:21 UTC
+自动化：`isrj-2`，当前对话 Thread Automation，周期为两小时。
 分支：`codex/1103-experiment`。
 
 ## 总体状态
