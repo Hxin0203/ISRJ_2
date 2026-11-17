@@ -1,0 +1,134 @@
+{
+  "run": "residual_failure_diagnostic_20261117_v2",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+  "diagnostic_source_sha256": "17d1e3521dcbf94d645268cfccc879724b13ccae3a7f16ecfa5958da9635300a",
+  "models": [
+    "full",
+    "unet",
+    "no_dechirp",
+    "no_rms",
+    "no_pc",
+    "no_damage"
+  ],
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "epoch": 256,
+  "scope": "DEV_ONLY",
+  "started_utc": "2026-11-17T10:47:57.906253+00:00",
+  "stage": "COMPLETE",
+  "completed_models": [
+    {
+      "model": "full",
+      "seed": 17,
+      "checkpoint_sha256": "48f00ade49e240f182361611d854d41a8075bf72f93cda8e5deaf9950f0f31d1",
+      "result_file": "full_seed_17.json"
+    },
+    {
+      "model": "full",
+      "seed": 29,
+      "checkpoint_sha256": "8761b76fa0d4e55faa326d951371ab1531209fff73735627160090422934a328",
+      "result_file": "full_seed_29.json"
+    },
+    {
+      "model": "full",
+      "seed": 41,
+      "checkpoint_sha256": "5968be54395eca6f85632f87cb9ae804ab611d21fc498ac29a5a2fc87f624a25",
+      "result_file": "full_seed_41.json"
+    },
+    {
+      "model": "unet",
+      "seed": 17,
+      "checkpoint_sha256": "ae7369f7435be4aac432a863176a291dddf0ceeb2338dc50524c015f10a52d80",
+      "result_file": "unet_seed_17.json"
+    },
+    {
+      "model": "unet",
+      "seed": 29,
+      "checkpoint_sha256": "c52070122cafa6406c70ab0764fd4ef6b4bd9ca4ab3f0fad84e4c005a692e752",
+      "result_file": "unet_seed_29.json"
+    },
+    {
+      "model": "unet",
+      "seed": 41,
+      "checkpoint_sha256": "f7a63bd16a4403a4788618e498f67a27e42d114327451e2c7695505a9895ee1f",
+      "result_file": "unet_seed_41.json"
+    },
+    {
+      "model": "no_dechirp",
+      "seed": 17,
+      "checkpoint_sha256": "c3681e771c00ca643809f07f575eb3b5562dbb823d65ceaf8c44e263a8abd7e2",
+      "result_file": "no_dechirp_seed_17.json"
+    },
+    {
+      "model": "no_dechirp",
+      "seed": 29,
+      "checkpoint_sha256": "0b590779c02e5ec17c6b1b9c75e8f88ed04104e67d32891dd94919380749a212",
+      "result_file": "no_dechirp_seed_29.json"
+    },
+    {
+      "model": "no_dechirp",
+      "seed": 41,
+      "checkpoint_sha256": "87169530ee9c3a83ce87998e15c109242dc96ce17723f052da0f23a9f0315439",
+      "result_file": "no_dechirp_seed_41.json"
+    },
+    {
+      "model": "no_rms",
+      "seed": 17,
+      "checkpoint_sha256": "1da853466ad939ad49078f55103c415b759c5dd325bb6c200458d11747f425b6",
+      "result_file": "no_rms_seed_17.json"
+    },
+    {
+      "model": "no_rms",
+      "seed": 29,
+      "checkpoint_sha256": "bff4883d48e40f01b05de21bf7ccb599633e8fa5c6822ae8137906dda385e04d",
+      "result_file": "no_rms_seed_29.json"
+    },
+    {
+      "model": "no_rms",
+      "seed": 41,
+      "checkpoint_sha256": "9b10fc24774aec96367d623b7f8a8ba4d2878f4279c02a317004a53e57aeb84f",
+      "result_file": "no_rms_seed_41.json"
+    },
+    {
+      "model": "no_pc",
+      "seed": 17,
+      "checkpoint_sha256": "dd6baa53fb17f300d0cfab0d9f60372a523bb9aa7cbfe6f69d03459de1af1e0d",
+      "result_file": "no_pc_seed_17.json"
+    },
+    {
+      "model": "no_pc",
+      "seed": 29,
+      "checkpoint_sha256": "1db6878429b2058ce81b79347115d77a5fdded534783edfb022d5ad0f31d53e5",
+      "result_file": "no_pc_seed_29.json"
+    },
+    {
+      "model": "no_pc",
+      "seed": 41,
+      "checkpoint_sha256": "2a96cfce68cc4f8f20e3b9fb94a17a728e013f5119bac5e48f0ad31238f5f517",
+      "result_file": "no_pc_seed_41.json"
+    },
+    {
+      "model": "no_damage",
+      "seed": 17,
+      "checkpoint_sha256": "ac87df5746affc37c102d73348bb0f6c0c4e159058e1278771e1f214293df51e",
+      "result_file": "no_damage_seed_17.json"
+    },
+    {
+      "model": "no_damage",
+      "seed": 29,
+      "checkpoint_sha256": "c2ef7b82476dc92e3862f1d9b4e2f41f32158811afea02c07f5ca263f102678e",
+      "result_file": "no_damage_seed_29.json"
+    },
+    {
+      "model": "no_damage",
+      "seed": 41,
+      "checkpoint_sha256": "2454c28544466fd1e12661d31d93dd30d48e38c05791486b74672ef4ef39dd83",
+      "result_file": "no_damage_seed_41.json"
+    }
+  ],
+  "completed_utc": "2026-11-17T10:54:41.694829+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "unet_mf_tail_screen_20261117_v2",
+  "stage": "TRAINING",
+  "host": "rsdr-b",
+  "server_root": "D:/code/Xin/ISRJ_222",
+  "physical_gpu": 1,
+  "checked_utc": "2026-11-17T11:30:29.7596014Z",
+  "config_sha256": "cef0a79c03a022e09bce91237f909179a692952c5c44f34c19fd8315a404c1af",
+  "current_seed": 17,
+  "current_epoch": 7,
+  "current_step": 36,
+  "steps_per_epoch": 48,
+  "last_committed_epoch": 6,
+  "saved_recovery_epochs": [0, 1, 2, 3, 4, 5, 6],
+  "latest_committed_checkpoint_sha256": "3d991ecad3153445fa27a49f66da8c18263fbadc7c5ad1bdc756c40dac85267d",
+  "checkpoint_sidecar_matches": true,
+  "training_data_sha256": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+  "gpu_utilization_percent": 65,
+  "gpu_memory_used_mib": 1542,
+  "gpu_memory_total_mib": 16311,
+  "scientific_screen_evaluated": false,
+  "note": "DEV screening only; no performance conclusion until all paired seeds and evaluation complete."
+}

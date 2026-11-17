@@ -1,0 +1,22 @@
+{
+  "run": "residual_failure_diagnostic_20261117_v2",
+  "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b",
+  "diagnostic_source_sha256": "17d1e3521dcbf94d645268cfccc879724b13ccae3a7f16ecfa5958da9635300a",
+  "models": [
+    "full",
+    "unet",
+    "no_dechirp",
+    "no_rms",
+    "no_pc",
+    "no_damage"
+  ],
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "epoch": 256,
+  "scope": "DEV_ONLY",
+  "started_utc": "2026-11-17T10:47:57.906253+00:00"
+}

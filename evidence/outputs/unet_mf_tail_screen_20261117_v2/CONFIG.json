@@ -1,0 +1,92 @@
+{
+  "run_id": "unet_mf_tail_screen_20261117_v2",
+  "scope": "DEV_SCREEN_ONLY",
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "epochs": 256,
+  "updates_per_seed": 12288,
+  "milestones": [
+    32,
+    64,
+    96,
+    128,
+    160,
+    192,
+    224,
+    256
+  ],
+  "records_per_epoch": 1536,
+  "batch_records": 32,
+  "microbatch_records": 8,
+  "steps_per_epoch": 48,
+  "architecture": "PlainUNet; exact active parameter match to frozen CorrectionNet U-Net baseline",
+  "baseline": {
+    "17": {
+      "checkpoint_sha256": "ae7369f7435be4aac432a863176a291dddf0ceeb2338dc50524c015f10a52d80",
+      "complete_sha256": "b3cf389ffb3d7204f7ecdd487d27f54be52890d3de1af746548d6804387d6df4",
+      "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b"
+    },
+    "29": {
+      "checkpoint_sha256": "c52070122cafa6406c70ab0764fd4ef6b4bd9ca4ab3f0fad84e4c005a692e752",
+      "complete_sha256": "b4a665b3bdcff15f53140174afbae72655eee38ed2af20d18916740013f0c89d",
+      "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b"
+    },
+    "41": {
+      "checkpoint_sha256": "f7a63bd16a4403a4788618e498f67a27e42d114327451e2c7695505a9895ee1f",
+      "complete_sha256": "3d84980132d88a1b0b4e25ca5ed6105fd0c0465e187198f128e6be5122da1980",
+      "config_sha256": "6db6fc300fe8fe76004c5a4d9e208f629cdc4f34c47014246c34e1186e95cd8b"
+    }
+  },
+  "training_data_sha256": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+  "training_data_receipt_sha256": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+  "dev_data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "dev_receipt_sha256": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092",
+  "source_sha256": {
+    "tools/unet_tail_loss/objective.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+    "tools/unet_tail_loss/train.py": "49e690cf9d531132ec52b5645df8e67f6746920f1b2532c8bc0fae0b1ab49386",
+    "tools/unet_tail_loss/run.py": "13d9fc9a1f18fd092eb65968ffe68e1a02a69e9bac77f4b41a5838cb272d8d33",
+    "tools/unet_tail_loss/__init__.py": "d2b5b796b4bc6e5af59b4c5c17fb4decde47d7b376d84afe802fa8a56891a6e5",
+    "tools/unet_ablation/models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+    "tools/unet_ablation/runtime.py": "21617ef7ea5a0a20475e4ca12757a824c0cf5840e19c13340dd9912ae8872754",
+    "tools/unet_ablation/protocol.py": "5b890c1538097af26170eaa5ffabb274ba476706804b702d435e05a2249f834b",
+    "tools/unet_tail_loss/evaluate.py": "ddfcd92fc2aa07d3eef501297b036f2b6fc881b8e806d3f7c5519a538cb2d91b",
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+    "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+    "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208"
+  },
+  "optimizer": {
+    "class": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "clip_grad_norm": 5
+  },
+  "lr_schedule": "identical to frozen 256-epoch U-Net screen: one-epoch warmup; cosine 1e-3 to 2e-5 by 128 and to 2e-6 by 256",
+  "loss": {
+    "baseline": "endpoint + 0.1 pulse-compression + target-damage",
+    "addition": "0.05 * smooth-top8 matched-filter range-Doppler tail on target-absent jammer state",
+    "matched_filter": "600-sample 30-MHz/10-us LFM, 60-MHz sampling, physical lags 0..1200",
+    "slow_time": "8-pulse FFT; normalize power by mean target-free thermal-noise RD power per parent-family record",
+    "tail": "top 8 RD cells; smooth hinge above idealized 436-cell CA-CFAR multiplier at Pfa=1e-6; tau=3 dB",
+    "tail_weight": 0.05,
+    "interpretation": "risk-aligned surrogate only; not a calibrated or guaranteed CA-CFAR false-alarm objective"
+  },
+  "comparison": "Existing frozen U-Net controls with same seeds, train data, initialization, optimizer, LR, updates, and precision; no DEV winner selection",
+  "recovery": "atomic immutable per-epoch checkpoints, every-32-epoch milestone, optimizer and RNG state; preserve all records",
+  "execution": {
+    "host": "rsdr-b",
+    "root": "D:/code/Xin/ISRJ_222",
+    "cuda_visible_devices": "1",
+    "local_training": false
+  },
+  "confirmation": "new independent parent set required after factor screening; DEV cannot confirm",
+  "prepared_utc": "2026-11-17T11:20:02.176440+00:00"
+}
