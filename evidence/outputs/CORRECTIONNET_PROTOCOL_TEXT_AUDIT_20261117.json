@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "ebda573f18d3ae28bd262d2fc06c146582dc0a818ffca228c52a5e47c6159c70",
+  "backup_sha256": "ebda573f18d3ae28bd262d2fc06c146582dc0a818ffca228c52a5e47c6159c70",
+  "backup": "G:\\Project Code\\ISRJ_222\\outputs\\review_backups\\correction_tail_study_20261117\\CORRECTIONNET_TAIL_STUDY_PLAN_20261117.md",
+  "protected": "equations, values, units, paths, identifiers; no rewrite",
+  "audit_exit_code": 0,
+  "audit_stdout": "{\n  \"path\": \"G:\\\\Project Code\\\\ISRJ_222\\\\evidence\\\\outputs\\\\CORRECTIONNET_TAIL_STUDY_PLAN_20261117.md\",\n  \"density_tier\": \"low\",\n  \"flagged_count\": 0,\n  \"flagged\": [],\n  \"stylometry\": {\n    \"path\": \"G:\\\\Project Code\\\\ISRJ_222\\\\evidence\\\\outputs\\\\CORRECTIONNET_TAIL_STUDY_PLAN_20261117.md\",\n    \"word_count\": 409,\n    \"sentence_count\": 26,\n    \"burstiness_cv\": 0.9078,\n    \"lexical_diversity\": 0.8645,\n    \"ai_ngram_density\": 0.0,\n    \"matched_markers\": [],\n    \"score\": 0.0325,\n    \"confidence_level\": \"CLEAN\",\n    \"density_tier\": \"low\",\n    \"status\": \"ok\",\n    \"findings\": [],\n    \"findings_confidence\": [],\n    \"notes\": []\n  }\n}\n",
+  "audit_stderr": "",
+  "python_ast_files": 11
+}

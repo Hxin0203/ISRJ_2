@@ -1,3 +1,15 @@
+## Superseding own-model priority — 2026-11-17 15:03 UTC
+
+- The user challenged the prolonged U-Net-only optimization schedule. Own-backbone validation now takes priority on physical GPU 1: current U-Net tail training + DEV -> fresh CorrectionNet original-loss control -> CorrectionNet + identical 0.05 tail -> original U-Net dilation. Both own-model arms use seeds 17/29/41 to 256; preserve all epoch recovery and 32-epoch milestones. Old eight-seed models remain intact.
+- Both own-model controllers are deployed on server B only (`rsdr-b`, `D:/code/Xin/ISRJ_222`), PID 14952 (original) and 31212 (tail). At 15:03:52 UTC both are alive, WAIT_DEPENDENCY, no saved epochs, no source drift. GPU numerical recovery preflight is pending device release. CPU engineering checks passed; 53 frozen source/protocol hashes matched between local and server. No efficacy result exists.
+- Dilation has an owned PAUSE with token `ISRJ2_CORRECTION_TAIL_STUDY_20261117_V1`; CONTROL_STATUS confirms PAUSED. Only the matching owned pause is automatically removed after both CorrectionNet arms, paired DEV and four-cell summary complete. Do not duplicate-launch. GPU 0 normalization/frequency scheduling is unchanged; unrelated jobs are untouched.
+- Freeze `tools/correction_tail_study/`, its launch/deploy scripts and `CORRECTIONNET_TAIL_STUDY_PLAN_20261117.md`. Use independent read-only `tools.snapshot_correction_priority_20261117` to inspect status. The frozen operations snapshot reader touches a Windows-locked byte and may fail; do not edit frozen sources to repair this non-training reader.
+- Evaluate own tail against its fresh original-loss control first: jammer-frame Pfa, Pd, SJRIF, target damage and component losses. Then compare architecture-by-loss four cells descriptively. U-Net screens cannot establish own-model efficacy. No-dechirp/tail combinations and transfer of useful normalization/long-range/frequency factors remain conditional, undeployed plans.
+- Report: `evidence/outputs/CORRECTIONNET_PRIORITY_CORRECTION_REPORT_20261117.md`; priority overlay: `CORRECTIONNET_PRIORITY_PIPELINE_20261117.json` (CN0/CN1/CN2 avoid inherited C0/C1 ID collisions). Historical 18-task snapshots retain their dates and are superseded only for this execution priority. Latest own-queue snapshot: `CORRECTIONNET_PRIORITY_STATUS_20261117_150352.json`.
+- No local training, first-paper writes, MCA-ADMM/FNet or ChatGPT collaboration. Push exact key code/report/light evidence paths only to `paper2`; never data, weights, raw arrays, caches, credentials or full logs.
+
+Earlier snapshots below are historical; this dated priority entry takes precedence.
+
 # Current state
 
 ## Superseding idea-to-experiment pipeline — 2026-11-17 14:29 UTC

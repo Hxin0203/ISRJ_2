@@ -1,0 +1,12 @@
+{
+  "mode": "offline_detect_only",
+  "report_sha256": "d84baef6bf4ffc68bf2d329da99bfd571a3738caeddcc05f5027cb88a43b1043",
+  "audit_backup_sha256": "d84baef6bf4ffc68bf2d329da99bfd571a3738caeddcc05f5027cb88a43b1043",
+  "pre_final_review_backup_sha256": "7c1123440047140f0e5b8a1afdb73f979822e3ee63d929f26e3050b7baa18eb7",
+  "handoff_pre_edit_sha256": "a0bc107edf3b0be2bb839d5cb4e4406c58f347eed4789ade2f37797e2f1aa1f8",
+  "audit_exit_code": 0,
+  "audit_stdout": "{\n  \"path\": \"G:\\\\Project Code\\\\ISRJ_222\\\\evidence\\\\outputs\\\\CORRECTIONNET_PRIORITY_CORRECTION_REPORT_20261117.md\",\n  \"density_tier\": \"low\",\n  \"flagged_count\": 0,\n  \"flagged\": [],\n  \"stylometry\": {\n    \"path\": \"G:\\\\Project Code\\\\ISRJ_222\\\\evidence\\\\outputs\\\\CORRECTIONNET_PRIORITY_CORRECTION_REPORT_20261117.md\",\n    \"word_count\": 408,\n    \"sentence_count\": 35,\n    \"burstiness_cv\": 0.7868,\n    \"lexical_diversity\": 0.8738,\n    \"ai_ngram_density\": 0.0,\n    \"matched_markers\": [],\n    \"score\": 0.0325,\n    \"confidence_level\": \"CLEAN\",\n    \"density_tier\": \"low\",\n    \"status\": \"ok\",\n    \"findings\": [],\n    \"findings_confidence\": [],\n    \"notes\": []\n  }\n}\n",
+  "audit_stderr": "",
+  "whole_document_character_replacement": false,
+  "notes": "Chinese prose reviewed manually; formulas, values, paths and identifiers protected. No external service or stylometry-driven rewrite."
+}

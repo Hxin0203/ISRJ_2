@@ -1,0 +1,14 @@
+{
+  "source_sha_local_server_match": true,
+  "source_count": 53,
+  "python_ast_files": 12,
+  "two_controllers_verified_waiting": true,
+  "dilation_verified_paused": true,
+  "training_efficacy_claim": false,
+  "gpu_preflight": "PENDING_DEVICE_RELEASE",
+  "evidence_sha256": {
+    "CORRECTIONNET_PRIORITY_STATUS_20261117.json": "4c40bbadb687fcfac30f662548c3ecbb00d59f69503d53591a732adfae38272f",
+    "CORRECTIONNET_CPU_CHECK_ORIGINAL_20261117.json": "f3f5d49c37737deffcc523bf9fde04bef39e289dd4fdb72ac7ac2ccb92d2435b",
+    "CORRECTIONNET_CPU_CHECK_TAIL_20261117.json": "3ec8d17f21e6aa21d9dc113eb4f964ed34920bca474f44f04b59c609925a4ce8"
+  }
+}

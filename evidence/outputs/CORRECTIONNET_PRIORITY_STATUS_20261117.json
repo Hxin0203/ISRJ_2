@@ -1,0 +1,104 @@
+{
+  "snapshot_utc": "2026-11-17T14:59:52.451277+00:00",
+  "jobs": [
+    {
+      "run": "correction_original_control_20261117_v1",
+      "physical_gpu": 1,
+      "controller_pid": 14952,
+      "controller_alive": true,
+      "status": {
+        "stage": "WAIT_DEPENDENCY",
+        "arm": "original",
+        "physical_gpu": 1,
+        "dependency": "unet_mf_tail_screen_20261117_v2",
+        "dependency_stage": "TRAINING",
+        "dependency_seed": 41,
+        "dependency_saved_epoch": 53,
+        "numerical_preflight": "PENDING_GPU_RELEASE",
+        "updated_utc": "2026-11-17T14:59:29.480786+00:00"
+      },
+      "queue_binding_sha256": "a11e5a7d300e698a320276de0e818dae77b6dd62a751b53e329828d3e01cf1e3",
+      "source_drift": [],
+      "seeds": [
+        {
+          "seed": 17,
+          "saved_epoch": null,
+          "recovery_receipts": 0,
+          "latest_sha_matches": null,
+          "complete": false,
+          "recent_wall_seconds_per_epoch": null
+        },
+        {
+          "seed": 29,
+          "saved_epoch": null,
+          "recovery_receipts": 0,
+          "latest_sha_matches": null,
+          "complete": false,
+          "recent_wall_seconds_per_epoch": null
+        },
+        {
+          "seed": 41,
+          "saved_epoch": null,
+          "recovery_receipts": 0,
+          "latest_sha_matches": null,
+          "complete": false,
+          "recent_wall_seconds_per_epoch": null
+        }
+      ],
+      "numerical_preflight_passed": false
+    },
+    {
+      "run": "correction_mf_tail_20261117_v1",
+      "physical_gpu": 1,
+      "controller_pid": 31212,
+      "controller_alive": true,
+      "status": {
+        "stage": "WAIT_DEPENDENCY",
+        "arm": "tail",
+        "physical_gpu": 1,
+        "dependency": "correction_original_control_20261117_v1",
+        "dependency_stage": "WAIT_DEPENDENCY",
+        "dependency_seed": null,
+        "dependency_saved_epoch": null,
+        "numerical_preflight": "PENDING_GPU_RELEASE",
+        "updated_utc": "2026-11-17T14:59:29.431352+00:00"
+      },
+      "queue_binding_sha256": "b5730aaaf4228f1c385405a401c1cf92c6fa7d8e130dfa409667ff619c0578dd",
+      "source_drift": [],
+      "seeds": [
+        {
+          "seed": 17,
+          "saved_epoch": null,
+          "recovery_receipts": 0,
+          "latest_sha_matches": null,
+          "complete": false,
+          "recent_wall_seconds_per_epoch": null
+        },
+        {
+          "seed": 29,
+          "saved_epoch": null,
+          "recovery_receipts": 0,
+          "latest_sha_matches": null,
+          "complete": false,
+          "recent_wall_seconds_per_epoch": null
+        },
+        {
+          "seed": 41,
+          "saved_epoch": null,
+          "recovery_receipts": 0,
+          "latest_sha_matches": null,
+          "complete": false,
+          "recent_wall_seconds_per_epoch": null
+        }
+      ],
+      "numerical_preflight_passed": false
+    }
+  ],
+  "dilation_pause_owned": true,
+  "dilation_control_status": {
+    "stage": "PAUSED",
+    "updated_utc": "2026-11-17T14:59:48.540997+00:00"
+  },
+  "scope": "Lightweight queue snapshot; no new efficacy or full recovery archive audit",
+  "snapshot_entry": "tools.snapshot_correction_priority_20261117; frozen operations snapshot reads a locked byte on Windows; use this reader"
+}
