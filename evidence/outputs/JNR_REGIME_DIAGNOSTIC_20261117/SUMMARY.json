@@ -1,0 +1,229 @@
+{
+  "created": "2026-11-17",
+  "scope": "offline re-read of frozen TEST summaries; CorrectionNet seed 29 epoch 128; RSDR-Net F-R7",
+  "definition": "JNR_dB = SNR_dB + JSR_dB (active-support power convention of the main generator)",
+  "inputs": {
+    "evidence/outputs/TEST_CONDITION_TABLE_1103.csv": "db2146c8936350a2b2bb545eb7bc0105e0e78be95f41ea96a264c04f0cb2808a",
+    "evidence/outputs/RSDR_UNIFIED_20261115/CONDITION_COMPARISONS.csv": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52"
+  },
+  "dense_grid_max_fa_spread_at_equal_jnr": 0.0,
+  "dense_grid_repeat_512_parents": {
+    "-10": {
+      "frame_fa_percent": {
+        "keep": 2.34,
+        "correctionnet": 2.73,
+        "rsdr": 2.34,
+        "rsdr_range_over_input_scale": [
+          2.34,
+          2.34
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": 0.02,
+        "rsdr": -0.05
+      },
+      "background_nmse": {
+        "keep": 0.01513,
+        "correctionnet": 0.01519,
+        "rsdr": 0.01497
+      }
+    },
+    "-5": {
+      "frame_fa_percent": {
+        "keep": 11.91,
+        "correctionnet": 12.3,
+        "rsdr": 10.24,
+        "rsdr_range_over_input_scale": [
+          8.79,
+          11.72
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -0.04,
+        "rsdr": -0.54
+      },
+      "background_nmse": {
+        "keep": 0.04785,
+        "correctionnet": 0.04744,
+        "rsdr": 0.04221
+      }
+    },
+    "0": {
+      "frame_fa_percent": {
+        "keep": 40.23,
+        "correctionnet": 37.7,
+        "rsdr": 14.34,
+        "rsdr_range_over_input_scale": [
+          4.88,
+          31.64
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -0.47,
+        "rsdr": -3.05
+      },
+      "background_nmse": {
+        "keep": 0.1513,
+        "correctionnet": 0.1359,
+        "rsdr": 0.07502
+      }
+    },
+    "5": {
+      "frame_fa_percent": {
+        "keep": 62.7,
+        "correctionnet": 48.83,
+        "rsdr": 8.45,
+        "rsdr_range_over_input_scale": [
+          2.34,
+          25.2
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -3.71,
+        "rsdr": -7.54
+      },
+      "background_nmse": {
+        "keep": 0.4785,
+        "correctionnet": 0.2035,
+        "rsdr": 0.08436
+      }
+    },
+    "10": {
+      "frame_fa_percent": {
+        "keep": 70.12,
+        "correctionnet": 45.9,
+        "rsdr": 5.63,
+        "rsdr_range_over_input_scale": [
+          1.56,
+          16.41
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -8.3,
+        "rsdr": -11.94
+      },
+      "background_nmse": {
+        "keep": 1.513,
+        "correctionnet": 0.2236,
+        "rsdr": 0.09678
+      }
+    },
+    "15": {
+      "frame_fa_percent": {
+        "keep": 70.31,
+        "correctionnet": 37.11,
+        "rsdr": 3.48,
+        "rsdr_range_over_input_scale": [
+          1.17,
+          7.23
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -13.19,
+        "rsdr": -15.99
+      },
+      "background_nmse": {
+        "keep": 4.785,
+        "correctionnet": 0.2297,
+        "rsdr": 0.1206
+      }
+    },
+    "20": {
+      "frame_fa_percent": {
+        "keep": 70.51,
+        "correctionnet": 24.02,
+        "rsdr": 2.93,
+        "rsdr_range_over_input_scale": [
+          1.56,
+          5.66
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -18.78,
+        "rsdr": -19.58
+      },
+      "background_nmse": {
+        "keep": 15.13,
+        "correctionnet": 0.2004,
+        "rsdr": 0.1667
+      }
+    },
+    "25": {
+      "frame_fa_percent": {
+        "keep": 70.9,
+        "correctionnet": 24.41,
+        "rsdr": 3.32,
+        "rsdr_range_over_input_scale": [
+          2.34,
+          5.08
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -23.81,
+        "rsdr": -22.56
+      },
+      "background_nmse": {
+        "keep": 47.85,
+        "correctionnet": 0.1991,
+        "rsdr": 0.2655
+      }
+    },
+    "30": {
+      "frame_fa_percent": {
+        "keep": 70.9,
+        "correctionnet": 37.11,
+        "rsdr": 5.18,
+        "rsdr_range_over_input_scale": [
+          4.88,
+          5.47
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -27.86,
+        "rsdr": -24.65
+      },
+      "background_nmse": {
+        "keep": 151.3,
+        "correctionnet": 0.2476,
+        "rsdr": 0.5188
+      }
+    },
+    "35": {
+      "frame_fa_percent": {
+        "keep": 70.12,
+        "correctionnet": 52.93,
+        "rsdr": 10.74,
+        "rsdr_range_over_input_scale": [
+          10.74,
+          10.74
+        ],
+        "reference": 0.98
+      },
+      "residual_over_jammer_db": {
+        "correctionnet": -30.53,
+        "rsdr": -26.14
+      },
+      "background_nmse": {
+        "keep": 478.5,
+        "correctionnet": 0.4235,
+        "rsdr": 1.164
+      }
+    }
+  },
+  "limits": [
+    "single frozen seed and checkpoint per model; simulated single-target scenes only",
+    "TEST was already analysed; this re-read is diagnostic, not a new confirmation",
+    "equal-parameter U-Net and ablations have no per-JNR table yet",
+    "jammer parameters are drawn independently per pulse in the generator",
+    "RSDR-Net values at one JNR average conditions that differ only in absolute input scale"
+  ]
+}
