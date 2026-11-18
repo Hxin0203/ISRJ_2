@@ -1,0 +1,45 @@
+{
+  "run": "correction_mf_tail_20261117_v1",
+  "stage": "DEV_SCREEN_ONLY",
+  "config_sha256": "c837e5503335cbd027f78a2516960d5f91cfc674f8ed146af92d46c35dcb848e",
+  "arm": "tail",
+  "comparison_scope": "Fresh original-loss CorrectionNet control; same initial tensors, seeds, data, microbatch8, optimizer, LR, updates and precision; only tail weight changes",
+  "dev_data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "seeds": [
+    {
+      "seed": 17,
+      "delta_frame_pfa_jammer": -0.006510416666666667,
+      "delta_pd": 0.005208333333333334,
+      "delta_damage": 0.00026755436484912534,
+      "delta_sjrif_db": 0.08415275209166131
+    },
+    {
+      "seed": 29,
+      "delta_frame_pfa_jammer": -0.009114583333333332,
+      "delta_pd": -0.002604166666666667,
+      "delta_damage": 0.0023465676754927294,
+      "delta_sjrif_db": 0.10675979349734716
+    },
+    {
+      "seed": 41,
+      "delta_frame_pfa_jammer": -0.005208333333333333,
+      "delta_pd": 0.005208333333333333,
+      "delta_damage": 0.0005537859025213235,
+      "delta_sjrif_db": 0.08589966550723332
+    }
+  ],
+  "screening_gate": {
+    "rule": "Mark this arm eligible for later combination only if median seed-level jammer-frame Pfa improves; each seed's Pd change is >= -0.02; and mean damage change is <= +0.005. This is a screening rule, not a confirmation claim.",
+    "passes": true,
+    "applicable": true,
+    "seed_direction_counts": {
+      "pfa_improved": 3,
+      "pd_drop_within_margin": 3
+    },
+    "pd_noninferiority_margin_absolute": -0.02,
+    "damage_worsening_margin_absolute": 0.005
+  },
+  "scope_note": "DEV participated in development; results can screen arms only. Independent confirmation remains mandatory.",
+  "elapsed_seconds": 102.9831757999491,
+  "created_utc": "2026-11-18T02:29:18.847615+00:00"
+}

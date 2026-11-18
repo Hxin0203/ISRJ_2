@@ -1,0 +1,22 @@
+{
+  "stage": "DEV_SCREEN_COMPLETE",
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "config_sha256": "c837e5503335cbd027f78a2516960d5f91cfc674f8ed146af92d46c35dcb848e",
+  "dev_screen_sha256": "0ac3768fb4c4ee0dc0d0107f52a5b3030fed33c7755c76d54f71d919af822bcc",
+  "dev_screen_gate": {
+    "rule": "Mark this arm eligible for later combination only if median seed-level jammer-frame Pfa improves; each seed's Pd change is >= -0.02; and mean damage change is <= +0.005. This is a screening rule, not a confirmation claim.",
+    "passes": true,
+    "applicable": true,
+    "seed_direction_counts": {
+      "pfa_improved": 3,
+      "pd_drop_within_margin": 3
+    },
+    "pd_noninferiority_margin_absolute": -0.02,
+    "damage_worsening_margin_absolute": 0.005
+  },
+  "completed_utc": "2026-11-18T02:29:19.742430+00:00"
+}
