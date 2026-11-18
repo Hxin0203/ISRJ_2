@@ -1,0 +1,42 @@
+{
+  "run": "unet_dilation_screen_20261117_v1",
+  "stage": "DEV_SCREEN_ONLY",
+  "config_sha256": "2e522ab1736dec226420a4ff6d251afc9d72042adb035f06dba6356bd59a703f",
+  "dev_data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "seeds": [
+    {
+      "seed": 17,
+      "delta_frame_pfa_jammer": 0.001302083333333333,
+      "delta_pd": 0.006510416666666667,
+      "delta_damage": 0.0029711533021373592,
+      "delta_sjrif_db": -0.05130338283043283
+    },
+    {
+      "seed": 29,
+      "delta_frame_pfa_jammer": 0.006510416666666667,
+      "delta_pd": -0.005208333333333332,
+      "delta_damage": 0.001647653560148582,
+      "delta_sjrif_db": -0.016398263156071794
+    },
+    {
+      "seed": 41,
+      "delta_frame_pfa_jammer": 0.002604166666666667,
+      "delta_pd": 0.0078125,
+      "delta_damage": 0.0024427285001233055,
+      "delta_sjrif_db": -0.01686300044538972
+    }
+  ],
+  "screening_gate": {
+    "rule": "Mark this factor eligible for later combination only if median seed-level jammer-frame Pfa improves; each seed's Pd change is >= -0.02; and mean damage change is <= +0.005. This is a screening rule, not a confirmation claim.",
+    "passes": false,
+    "seed_direction_counts": {
+      "pfa_improved": 0,
+      "pd_drop_within_margin": 3
+    },
+    "pd_noninferiority_margin_absolute": -0.02,
+    "damage_worsening_margin_absolute": 0.005
+  },
+  "scope_note": "DEV participated in development; results can screen factors only. Independent confirmation remains mandatory.",
+  "elapsed_seconds": 103.11396320001222,
+  "created_utc": "2026-11-18T08:57:16.668938+00:00"
+}

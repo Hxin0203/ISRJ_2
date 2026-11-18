@@ -1,0 +1,21 @@
+{
+  "stage": "DEV_SCREEN_COMPLETE",
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "config_sha256": "cef0a79c03a022e09bce91237f909179a692952c5c44f34c19fd8315a404c1af",
+  "dev_screen_sha256": "e4381152d1d801518746c09d9b79e52a2a9c7f35022e5c017d201127db96f5ac",
+  "dev_screen_gate": {
+    "rule": "Advance to the next DEV screening stage only if median seed-level jammer-frame Pfa improves; each seed's Pd change is >= -0.02; and mean damage change is <= +0.005. This is a screening rule, not a confirmation claim.",
+    "passes": true,
+    "seed_direction_counts": {
+      "pfa_improved": 3,
+      "pd_drop_within_margin": 3
+    },
+    "pd_noninferiority_margin_absolute": -0.02,
+    "damage_worsening_margin_absolute": 0.005
+  },
+  "completed_utc": "2026-11-17T16:16:39.951307+00:00"
+}
