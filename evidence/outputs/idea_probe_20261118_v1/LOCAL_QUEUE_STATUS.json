@@ -1,0 +1,92 @@
+{
+  "checked_utc": "2026-11-18T16:26:44.383Z",
+  "root": "G:/Project Code/ISRJ_222/.cindy-worktrees/happy-liskov",
+  "status": {
+    "stage": "TRAINING",
+    "method": "full_base",
+    "seed": 17,
+    "epoch": 416,
+    "target": 512,
+    "records_processed": 544,
+    "records_per_epoch": 1536,
+    "loss": 0.08083076402544975,
+    "utc": "2026-11-18T16:26:43.399983+00:00",
+    "pid": 35200
+  },
+  "saved_sidecar": {
+    "sha256": "d4bfef5a21924e37ce00ed128f843b2953e6d24d5961563aa8500cc66a54beff",
+    "identity": {
+      "config_sha256": "68d402746f85d5414b405997d38785dde6c48971c5a933978afee0b44a896619",
+      "data_sha256": "111af12dbe3b051e73aa3f852d7ea35ed2a08344adb38e7213b9b02d981cbeed",
+      "data_receipt_sha256": "dff53ed786d5dde11a16219fef4c0c9f56b0eb03e2cdecd1d08614a148970818",
+      "source": {
+        "tools/structured_train.py": "d6e0aea84c93dfec2e57c8952c397ee6260e865db3e42907c0d2a80169a2674b",
+        "paper2/research_models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+        "paper2/research_data.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+        "paper2/research_tail.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+        "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+        "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+        "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e"
+      },
+      "method": "full_base",
+      "seed": 17
+    },
+    "epoch": 415,
+    "utc": "2026-11-18T16:26:36.025756+00:00"
+  },
+  "latest_sha256": "d4bfef5a21924e37ce00ed128f843b2953e6d24d5961563aa8500cc66a54beff",
+  "latest_receipt_stable": true,
+  "latest_sha_matches": true,
+  "milestone_256_sha256": "ee1018d795fa16eabb139347629685d616063d90c330b0f5ebf3aeef6ad8fc08",
+  "milestone_256": {
+    "sha256": "ee1018d795fa16eabb139347629685d616063d90c330b0f5ebf3aeef6ad8fc08",
+    "identity": {
+      "config_sha256": "68d402746f85d5414b405997d38785dde6c48971c5a933978afee0b44a896619",
+      "data_sha256": "111af12dbe3b051e73aa3f852d7ea35ed2a08344adb38e7213b9b02d981cbeed",
+      "data_receipt_sha256": "dff53ed786d5dde11a16219fef4c0c9f56b0eb03e2cdecd1d08614a148970818",
+      "source": {
+        "tools/structured_train.py": "d6e0aea84c93dfec2e57c8952c397ee6260e865db3e42907c0d2a80169a2674b",
+        "paper2/research_models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+        "paper2/research_data.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+        "paper2/research_tail.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+        "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+        "paper2/vendor/generate_v2.py": "5dc1ed973e43a4f0931d34c0171b715f671b2aede634338f172120c3010a73bc",
+        "paper2/vendor/label_builder.py": "f5408adac32e03ca0e075f3403fed505f4a1b1671de4096fc8d80983513a933e"
+      },
+      "method": "full_base",
+      "seed": 17
+    },
+    "epoch": 256
+  },
+  "source_matches": {
+    "tools/structured_train.py": true,
+    "paper2/research_models.py": true,
+    "paper2/research_data.py": true,
+    "paper2/research_tail.py": true,
+    "paper2/network.py": true,
+    "paper2/io.py": true,
+    "paper2/vendor/legacy_model.py": true,
+    "paper2/vendor/generate_v2.py": true,
+    "paper2/vendor/label_builder.py": true
+  },
+  "config_sha_matches": true,
+  "data_sha_matches": true,
+  "data_receipt_sha_matches": true,
+  "checkpoint_files": [
+    "epoch_128.pt",
+    "epoch_256.pt",
+    "latest.pt",
+    "previous.pt"
+  ],
+  "scope": "Read-only snapshot of pre-existing local run. No adoption, stop, migration, resume, or evaluation. Rolling receipt hash is only valid at the read snapshot.",
+  "protocol_conflicts": [
+    "Long training is running on local workstation, not server B",
+    "Only rolling latest/previous and epochs128/256 present, not each-epoch recovery plus32-epoch milestones",
+    "Existing automatic25-group queue lacks the per-group decision gate"
+  ],
+  "milestone_256_sha_matches": true
+}

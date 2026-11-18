@@ -1,0 +1,1266 @@
+{
+  "stage": "VERIFIED",
+  "audited_utc": "2026-11-18T16:18:19.268909+00:00",
+  "counts": {
+    "parents": 80,
+    "inference_rows": 720,
+    "structure_rows": 4800
+  },
+  "summary_reproduced": true,
+  "frozen_sources_match": true,
+  "verified_sha256": {
+    "components_2026111881.npz": "748d54522dbcc9238a05fd965e53f9b015ee78e5db606bd4518798f5c219dd8d",
+    "components_2026111882.npz": "09c260ccf217353d380d4f78a3bb20d8a0ff3eef6ef15acc7a80b6882753c589",
+    "components_2026111883.npz": "5f4262851ce19d33b72c772f44b81422406d56b35dce45e929cbedc894b5e62e",
+    "components_2026111884.npz": "8bb05f1ddc2c9a0dcb68431f129ef4424de7bbc6c995eff98116ac6133250aa2",
+    "components_2026111885.npz": "27aba98396bc77f5a7477addcd3f40986798d5bf9b67a8da898a83ab09290bc3",
+    "INFERENCE_ROWS.json": "ea915a27ba1c076e1cea549f9c8407e975f80768460ca7df4baca7e03662bab0",
+    "STRUCTURE_ROWS.json": "028fae400ee553ff533f2ae25b75e9eb966d6815910a3db301d47e7cbc35fafc",
+    "MANIFEST.json": "b1aace91dd33a483458a0702b68e519a393ffa27c30c4dac8c5f4bd2ac177a67",
+    "SUMMARY.json": "714dbdcd20edd92fa421d594f0da086b352e32edda0440b4993fa2849a6575cc"
+  },
+  "strata": [
+    {
+      "kind": "direct",
+      "jammed": false,
+      "method": "unprotected",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.24125375192761217,
+          "median": 0.055386357310306326,
+          "p95": 0.7987523412875642,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 1.8398772868453845,
+          "median": 0.9795947550133927,
+          "p95": 5.218787977620045,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.005144619128840866,
+          "median": 0.00019179429283767974,
+          "p95": 0.043968822982498955,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.5533079766669646,
+          "median": 0.7790458232808444,
+          "p95": 0.9401525356092783,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 1.1133345054528547,
+          "median": 0.18383659961013013,
+          "p95": 5.102964039279586,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.17323480472556507,
+          "median": 0.022855521970795933,
+          "p95": 0.9207883968078967,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "jammed": false,
+      "method": "hard",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.035964832506305576,
+          "median": 0.029769837063254374,
+          "p95": 0.07671571658858156,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 0.651549361609265,
+          "median": 0.07170339905638715,
+          "p95": 4.6018000310112726,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.003944029783021762,
+          "median": 0.0003504315884191205,
+          "p95": 0.02063489755797923,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.02746464874234716,
+          "median": 0.00047124947786377484,
+          "p95": 0.10821787577816858,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 0.5678556339403399,
+          "median": 0.013859205416717526,
+          "p95": 3.6335534003252015,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.05622907892657795,
+          "median": 2.8784231512555486e-06,
+          "p95": 0.2079898282620021,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "jammed": false,
+      "method": "mixture",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.035610069607358574,
+          "median": 0.029591767123132526,
+          "p95": 0.07671571658777394,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 0.5468272619279236,
+          "median": 0.09683680342308736,
+          "p95": 4.18833106015438,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.003215447004633795,
+          "median": 0.00032498603697009174,
+          "p95": 0.015283161909096296,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.026746502922171234,
+          "median": 0.0007039475384864823,
+          "p95": 0.10179845148940601,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 0.46471955107746865,
+          "median": 0.0322987596517864,
+          "p95": 3.468228477157932,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.055361207928283966,
+          "median": 0.00024480656630638175,
+          "p95": 0.4272813384990667,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "jammed": true,
+      "method": "unprotected",
+      "metrics": {
+        "endpoint": {
+          "mean": 15.861016743589355,
+          "median": 0.35469415306010027,
+          "p95": 35.02264833469772,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 100.29271012629792,
+          "median": 0.5140405699324637,
+          "p95": 150.47306781901142,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 36.57584261478443,
+          "median": 0.604196353824253,
+          "p95": 5.929464789418866,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.009430598553025868,
+          "median": 0.001502692446631675,
+          "p95": 0.058989837404312344,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.24040984797616732,
+          "median": 0.01868681485515187,
+          "p95": 0.9166628047787149,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 36.29439622938691,
+          "median": 0.11732494102842787,
+          "p95": 5.416152963213506,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.041036537421341966,
+          "median": 0.0,
+          "p95": 0.25000752528194625,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.34392771419063184,
+          "median": 4.480281472907244e-05,
+          "p95": 0.9857088013611917,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.1539559421631822,
+          "median": 0.02598326277696912,
+          "p95": 0.569776941004158,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "jammed": true,
+      "method": "hard",
+      "metrics": {
+        "endpoint": {
+          "mean": 79.55590160819087,
+          "median": 0.17723662079596628,
+          "p95": 131.6814489767382,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 100.29271012629792,
+          "median": 0.5140405699324637,
+          "p95": 150.47306781901142,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 1.172397354187824,
+          "median": 0.10323028072505143,
+          "p95": 6.140319108504011,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.011033792890742336,
+          "median": 0.001975322605265964,
+          "p95": 0.058989837404312344,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.03362782939456911,
+          "median": 0.0017736821422063456,
+          "p95": 0.21545493815061428,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 1.109151454035477,
+          "median": 0.06315122762594211,
+          "p95": 5.717604424485825,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.02961807075777757,
+          "median": 2.0848423615612367e-05,
+          "p95": 0.19516641610065075,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.34392771419063184,
+          "median": 4.480281472907244e-05,
+          "p95": 0.9857088013611917,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.1539559421631822,
+          "median": 0.02598326277696912,
+          "p95": 0.569776941004158,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "jammed": true,
+      "method": "mixture",
+      "metrics": {
+        "endpoint": {
+          "mean": 79.55558730020488,
+          "median": 0.17723662079596447,
+          "p95": 131.6814489767382,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 100.29271012629792,
+          "median": 0.5140405699324637,
+          "p95": 150.47306781901142,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 1.2119152669424698,
+          "median": 0.15910445358741548,
+          "p95": 6.37097732680954,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.01098979649594511,
+          "median": 0.0019760415411771317,
+          "p95": 0.058989837404312344,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.03358307441713659,
+          "median": 0.001773682142072073,
+          "p95": 0.21545493815061428,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 1.147928259033602,
+          "median": 0.07587206665653096,
+          "p95": 5.901599920762573,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.030403933491730296,
+          "median": 3.157804085245909e-05,
+          "p95": 0.17969736636273867,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.34392771419063184,
+          "median": 4.480281472907244e-05,
+          "p95": 0.9857088013611917,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.1539559421631822,
+          "median": 0.02598326277696912,
+          "p95": 0.569776941004158,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "repeat",
+      "jammed": false,
+      "method": "unprotected",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.24125375192761217,
+          "median": 0.055386357310306326,
+          "p95": 0.7987523412875642,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 1.8398772868453845,
+          "median": 0.9795947550133927,
+          "p95": 5.218787977620045,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.005144619128840866,
+          "median": 0.00019179429283767974,
+          "p95": 0.043968822982498955,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.5533079766669646,
+          "median": 0.7790458232808444,
+          "p95": 0.9401525356092783,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 1.1133345054528547,
+          "median": 0.18383659961013013,
+          "p95": 5.102964039279586,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.17323480472556507,
+          "median": 0.022855521970795933,
+          "p95": 0.9207883968078967,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "repeat",
+      "jammed": false,
+      "method": "hard",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.035964832506305576,
+          "median": 0.029769837063254374,
+          "p95": 0.07671571658858156,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 0.651549361609265,
+          "median": 0.07170339905638715,
+          "p95": 4.6018000310112726,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.003944029783021762,
+          "median": 0.0003504315884191205,
+          "p95": 0.02063489755797923,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.02746464874234716,
+          "median": 0.00047124947786377484,
+          "p95": 0.10821787577816858,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 0.5678556339403399,
+          "median": 0.013859205416717526,
+          "p95": 3.6335534003252015,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.05622907892657795,
+          "median": 2.8784231512555486e-06,
+          "p95": 0.2079898282620021,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "repeat",
+      "jammed": false,
+      "method": "mixture",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.035610069607358574,
+          "median": 0.029591767123132526,
+          "p95": 0.07671571658777394,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 0.5468272619279236,
+          "median": 0.09683680342308736,
+          "p95": 4.18833106015438,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.003215447004633795,
+          "median": 0.00032498603697009174,
+          "p95": 0.015283161909096296,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.026746502922171234,
+          "median": 0.0007039475384864823,
+          "p95": 0.10179845148940601,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 0.46471955107746865,
+          "median": 0.0322987596517864,
+          "p95": 3.468228477157932,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.055361207928283966,
+          "median": 0.00024480656630638175,
+          "p95": 0.4272813384990667,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "repeat",
+      "jammed": true,
+      "method": "unprotected",
+      "metrics": {
+        "endpoint": {
+          "mean": 258.49754067041835,
+          "median": 2.1817180245579544,
+          "p95": 1332.6147251807954,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 311.6687419774387,
+          "median": 2.5467420962461476,
+          "p95": 1647.6242885210152,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 1.6128832402464666,
+          "median": 0.0010336561849080583,
+          "p95": 2.386585210661464,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.0009678484686801319,
+          "median": 0.000315865924007023,
+          "p95": 0.003049799394294475,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.17144937551989764,
+          "median": 0.0008764608109192573,
+          "p95": 0.9215598627323368,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 1.4145581605795963,
+          "median": 0.0,
+          "p95": 2.3841561366601005,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.02687570414697251,
+          "median": 0.0,
+          "p95": 0.19530125611083907,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.3242586068768198,
+          "median": 1.0351957553278446e-05,
+          "p95": 0.986701218556291,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0578180940062598,
+          "median": 0.04285759713169594,
+          "p95": 0.13268024777034063,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "repeat",
+      "jammed": true,
+      "method": "hard",
+      "metrics": {
+        "endpoint": {
+          "mean": 258.64267747297754,
+          "median": 2.049738863364799,
+          "p95": 1337.3581890096905,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 311.6687419774387,
+          "median": 2.5467420962461476,
+          "p95": 1647.6242885210152,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 0.9486511869399532,
+          "median": 0.0011999434891222876,
+          "p95": 6.168506948044954,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.0011951191665071485,
+          "median": 0.00040356117676077586,
+          "p95": 0.0027833424899973993,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.0004931153909180177,
+          "median": 0.00016904590653242933,
+          "p95": 0.001216559739629731,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 0.947378779414959,
+          "median": 6.432877908178821e-07,
+          "p95": 6.170069404947924,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.0007792921340764323,
+          "median": 0.0,
+          "p95": 0.005189159539920491,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.3242586068768198,
+          "median": 1.0351957553278446e-05,
+          "p95": 0.986701218556291,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0578180940062598,
+          "median": 0.04285759713169594,
+          "p95": 0.13268024777034063,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "repeat",
+      "jammed": true,
+      "method": "mixture",
+      "metrics": {
+        "endpoint": {
+          "mean": 258.6421178536236,
+          "median": 2.049737578465586,
+          "p95": 1337.3581890096905,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 311.6687419774387,
+          "median": 2.5467420962461476,
+          "p95": 1647.6242885210152,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 0.9222570807462737,
+          "median": 0.0012165597396296241,
+          "p95": 6.168503392619036,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.001196725222864441,
+          "median": 0.00040354663377490724,
+          "p95": 0.0027833393912424396,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.0004900320144765783,
+          "median": 0.0001599319760007774,
+          "p95": 0.001216559739629731,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 0.9210317257736257,
+          "median": 2.1112496847539243e-05,
+          "p95": 6.170065853945213,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.0007353229581717317,
+          "median": 2.691123086587917e-08,
+          "p95": 0.005085824821765189,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.3242586068768198,
+          "median": 1.0351957553278446e-05,
+          "p95": 0.986701218556291,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0578180940062598,
+          "median": 0.04285759713169594,
+          "p95": 0.13268024777034063,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "cyclic",
+      "jammed": false,
+      "method": "unprotected",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.24125375192761217,
+          "median": 0.055386357310306326,
+          "p95": 0.7987523412875642,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 1.8398772868453845,
+          "median": 0.9795947550133927,
+          "p95": 5.218787977620045,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.005144619128840866,
+          "median": 0.00019179429283767974,
+          "p95": 0.043968822982498955,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.5533079766669646,
+          "median": 0.7790458232808444,
+          "p95": 0.9401525356092783,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 1.1133345054528547,
+          "median": 0.18383659961013013,
+          "p95": 5.102964039279586,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.17323480472556507,
+          "median": 0.022855521970795933,
+          "p95": 0.9207883968078967,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "cyclic",
+      "jammed": false,
+      "method": "hard",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.035964832506305576,
+          "median": 0.029769837063254374,
+          "p95": 0.07671571658858156,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 0.651549361609265,
+          "median": 0.07170339905638715,
+          "p95": 4.6018000310112726,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.003944029783021762,
+          "median": 0.0003504315884191205,
+          "p95": 0.02063489755797923,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.02746464874234716,
+          "median": 0.00047124947786377484,
+          "p95": 0.10821787577816858,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 0.5678556339403399,
+          "median": 0.013859205416717526,
+          "p95": 3.6335534003252015,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.05622907892657795,
+          "median": 2.8784231512555486e-06,
+          "p95": 0.2079898282620021,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "cyclic",
+      "jammed": false,
+      "method": "mixture",
+      "metrics": {
+        "endpoint": {
+          "mean": 0.035610069607358574,
+          "median": 0.029591767123132526,
+          "p95": 0.07671571658777394,
+          "parents": 39
+        },
+        "baseline_endpoint": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        },
+        "damage": {
+          "mean": 0.5468272619279236,
+          "median": 0.09683680342308736,
+          "p95": 4.18833106015438,
+          "parents": 39
+        },
+        "frozen_damage": {
+          "mean": 0.003215447004633795,
+          "median": 0.00032498603697009174,
+          "p95": 0.015283161909096296,
+          "parents": 39
+        },
+        "leakage": {
+          "mean": 0.026746502922171234,
+          "median": 0.0007039475384864823,
+          "p95": 0.10179845148940601,
+          "parents": 39
+        },
+        "drift": {
+          "mean": 0.46471955107746865,
+          "median": 0.0322987596517864,
+          "p95": 3.468228477157932,
+          "parents": 39
+        },
+        "cross": {
+          "mean": 0.055361207928283966,
+          "median": 0.00024480656630638175,
+          "p95": 0.4272813384990667,
+          "parents": 39
+        },
+        "target_coverage_hard": {
+          "mean": 0.7385365216520267,
+          "median": 0.925255306306603,
+          "p95": 0.9923087951468779,
+          "parents": 39
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "parents": 39
+        }
+      }
+    },
+    {
+      "kind": "cyclic",
+      "jammed": true,
+      "method": "unprotected",
+      "metrics": {
+        "endpoint": {
+          "mean": 60.06978621024044,
+          "median": 0.6096785207956702,
+          "p95": 316.06533330960855,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 262.4377819195433,
+          "median": 0.7293906223251932,
+          "p95": 2351.4016041960904,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 1.6813357904261355,
+          "median": 0.41087307279503943,
+          "p95": 4.625027168765865,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.004525872973096597,
+          "median": 0.0005642463154509872,
+          "p95": 0.012207683747175851,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.23848877987536962,
+          "median": 0.00292703620470811,
+          "p95": 0.9215536139966498,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 1.3951338113336484,
+          "median": 0.1238720854675532,
+          "p95": 4.606093408443856,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.047713199217117204,
+          "median": 0.0,
+          "p95": 0.2339975747301788,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.3625229560099579,
+          "median": 6.117371793856741e-05,
+          "p95": 0.9903817254579533,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.07993001466897143,
+          "median": 0.05440507209981824,
+          "p95": 0.21532079318035255,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "cyclic",
+      "jammed": true,
+      "method": "hard",
+      "metrics": {
+        "endpoint": {
+          "mean": 61.027001332167536,
+          "median": 0.4564559484471328,
+          "p95": 317.01213150571186,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 262.4377819195433,
+          "median": 0.7293906223251932,
+          "p95": 2351.4016041960904,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 0.8133094968528988,
+          "median": 0.0024892821162205924,
+          "p95": 0.7053784249562095,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.005504440427864455,
+          "median": 0.000528472863866481,
+          "p95": 0.012207683747175851,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.006258585487548005,
+          "median": 0.0001319623682226375,
+          "p95": 0.03484621741288316,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 0.8009107517548621,
+          "median": 2.0467098867114886e-05,
+          "p95": 0.7049940129459371,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.006140159610488609,
+          "median": 0.0,
+          "p95": 0.039371630637593726,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.3625229560099579,
+          "median": 6.117371793856741e-05,
+          "p95": 0.9903817254579533,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.07993001466897143,
+          "median": 0.05440507209981824,
+          "p95": 0.21532079318035255,
+          "parents": 41
+        }
+      }
+    },
+    {
+      "kind": "cyclic",
+      "jammed": true,
+      "method": "mixture",
+      "metrics": {
+        "endpoint": {
+          "mean": 61.025354542088444,
+          "median": 0.4564559484470156,
+          "p95": 317.01213150571186,
+          "parents": 41
+        },
+        "baseline_endpoint": {
+          "mean": 262.4377819195433,
+          "median": 0.7293906223251932,
+          "p95": 2351.4016041960904,
+          "parents": 41
+        },
+        "damage": {
+          "mean": 0.715289121522791,
+          "median": 0.002489282116219261,
+          "p95": 0.7052307775625332,
+          "parents": 41
+        },
+        "frozen_damage": {
+          "mean": 0.00563759449701143,
+          "median": 0.0005284728638664809,
+          "p95": 0.012207683747175851,
+          "parents": 41
+        },
+        "leakage": {
+          "mean": 0.006249714178807785,
+          "median": 0.0001319623682226375,
+          "p95": 0.03484202693443078,
+          "parents": 41
+        },
+        "drift": {
+          "mean": 0.7033966136088711,
+          "median": 4.2262995615447246e-05,
+          "p95": 0.7048292290617136,
+          "parents": 41
+        },
+        "cross": {
+          "mean": 0.005642793735112278,
+          "median": 1.1224482870517699e-07,
+          "p95": 0.03940625223532859,
+          "parents": 41
+        },
+        "target_coverage_hard": {
+          "mean": 0.3625229560099579,
+          "median": 6.117371793856741e-05,
+          "p95": 0.9903817254579533,
+          "parents": 41
+        },
+        "h0_jammer_protected_fraction": {
+          "mean": 0.07993001466897143,
+          "median": 0.05440507209981824,
+          "p95": 0.21532079318035255,
+          "parents": 41
+        }
+      }
+    }
+  ],
+  "ambiguity_by_jammed": [
+    {
+      "jammed": false,
+      "records": 117,
+      "parents": 39,
+      "jointly_flagged_records": 9,
+      "jointly_flagged_parents": 3
+    },
+    {
+      "jammed": true,
+      "records": 123,
+      "parents": 41,
+      "jointly_flagged_records": 2,
+      "jointly_flagged_parents": 2
+    }
+  ],
+  "long_lag_by_kind": [
+    {
+      "kind": "direct",
+      "component": "s",
+      "peak": {
+        "mean": 0.009625730097951202,
+        "median": 0.009625730097951249,
+        "p95": 0.009625730097951913,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "direct",
+      "component": "j",
+      "peak": {
+        "mean": 0.07620220940185088,
+        "median": 0.06589975159357041,
+        "p95": 0.16368141772382283,
+        "parents": 41
+      }
+    },
+    {
+      "kind": "direct",
+      "component": "e",
+      "peak": {
+        "mean": 0.055216352459480866,
+        "median": 0.05411302468528624,
+        "p95": 0.06424202807361365,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "direct",
+      "component": "y",
+      "peak": {
+        "mean": 0.061638960044847625,
+        "median": 0.05662320791546205,
+        "p95": 0.11919964437628637,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "repeat",
+      "component": "s",
+      "peak": {
+        "mean": 0.009625730097951202,
+        "median": 0.009625730097951249,
+        "p95": 0.009625730097951913,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "repeat",
+      "component": "j",
+      "peak": {
+        "mean": 0.6762554949523147,
+        "median": 0.7490231901965296,
+        "p95": 0.8894372424860763,
+        "parents": 41
+      }
+    },
+    {
+      "kind": "repeat",
+      "component": "e",
+      "peak": {
+        "mean": 0.055216352459480866,
+        "median": 0.05411302468528624,
+        "p95": 0.06424202807361365,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "repeat",
+      "component": "y",
+      "peak": {
+        "mean": 0.23632121183299284,
+        "median": 0.061219822798825825,
+        "p95": 0.7673528844023111,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "cyclic",
+      "component": "s",
+      "peak": {
+        "mean": 0.009625730097951202,
+        "median": 0.009625730097951249,
+        "p95": 0.009625730097951913,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "cyclic",
+      "component": "j",
+      "peak": {
+        "mean": 0.5221292496415152,
+        "median": 0.5000000000000001,
+        "p95": 0.8216404867388719,
+        "parents": 41
+      }
+    },
+    {
+      "kind": "cyclic",
+      "component": "e",
+      "peak": {
+        "mean": 0.055216352459480866,
+        "median": 0.05411302468528624,
+        "p95": 0.06424202807361365,
+        "parents": 80
+      }
+    },
+    {
+      "kind": "cyclic",
+      "component": "y",
+      "peak": {
+        "mean": 0.1537889361515034,
+        "median": 0.05878941576985898,
+        "p95": 0.5995362990313329,
+        "parents": 80
+      }
+    }
+  ],
+  "audit_source_sha256": "7e32035cc907d7ff43df025e5f41257b94c7678b59fea6c44ef00ef7d516d863",
+  "limitations": [
+    "Descriptive post-run strata; no new model selection or confirmatory test",
+    "Candidate ambiguity is specific to a coarse relaxed library, not a posterior",
+    "H0 protection metric refers to the hard-selected candidate for all methods"
+  ]
+}

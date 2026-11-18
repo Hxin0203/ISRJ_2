@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-11-18T16:31:46.870Z",
+  "scope": "Offline detect-only audit of new report natural-language prose; no cleanup or rewriting by score",
+  "report": "reports/ISRJ2_IDEA_FEASIBILITY_20261118.md",
+  "report_sha256": "f8007da511830832792d8e636bd4161830fdd6bfa1f15a507076182dd214857b",
+  "partial_backup_sha256": "d6fdef5734ee501e735b8289c1c7ab2617c7cbf91a1d5c84546db72be2cd391a",
+  "backup": "outputs/idea_probe_report_audit_20261118/report_partial.before.md (not uploaded)",
+  "protected": "All tables; inline code; links/citations; identifiers; numeric spans. Source documents unchanged.",
+  "chinese_calibration": "English stylometry is not calibrated for Chinese; no authorship/detector inference",
+  "audit": {
+    "path": "C:\\Users\\admin\\.codex\\worktrees\\idea-feasibility-20261118\\ISRJ_222\\outputs\\idea_probe_report_audit_20261118\\report.prose-only.txt",
+    "density_tier": "low",
+    "flagged_count": 0,
+    "flagged": [],
+    "stylometry": {
+      "path": "C:\\Users\\admin\\.codex\\worktrees\\idea-feasibility-20261118\\ISRJ_222\\outputs\\idea_probe_report_audit_20261118\\report.prose-only.txt",
+      "word_count": 794,
+      "sentence_count": 63,
+      "burstiness_cv": 0.8807,
+      "lexical_diversity": 0.6382,
+      "ai_ngram_density": 0,
+      "matched_markers": [],
+      "score": 0.0325,
+      "confidence_level": "CLEAN",
+      "density_tier": "low",
+      "status": "ok",
+      "findings": [],
+      "findings_confidence": [],
+      "notes": []
+    }
+  },
+  "source_documents": {
+    "gptpro_innovation": "368ca894f2a575cc53e0032b5fc8cc90496e4584a2ad59fa73512d5f79cc0fd9",
+    "model_ideas": "d0df96cb1994fcf4a48429b98e1c87c3c2fc1126feb2b923678d3add79700d99"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "COMPLETE",
+  "completed_utc": "2026-11-18T16:15:49.804482+00:00",
+  "manifest_sha256": "b1aace91dd33a483458a0702b68e519a393ffa27c30c4dac8c5f4bd2ac177a67",
+  "summary_sha256": "714dbdcd20edd92fa421d594f0da086b352e32edda0440b4993fa2849a6575cc",
+  "files": {
+    "components_2026111881.npz": "748d54522dbcc9238a05fd965e53f9b015ee78e5db606bd4518798f5c219dd8d",
+    "components_2026111882.npz": "09c260ccf217353d380d4f78a3bb20d8a0ff3eef6ef15acc7a80b6882753c589",
+    "components_2026111883.npz": "5f4262851ce19d33b72c772f44b81422406d56b35dce45e929cbedc894b5e62e",
+    "components_2026111884.npz": "8bb05f1ddc2c9a0dcb68431f129ef4424de7bbc6c995eff98116ac6133250aa2",
+    "components_2026111885.npz": "27aba98396bc77f5a7477addcd3f40986798d5bf9b67a8da898a83ab09290bc3",
+    "INFERENCE_ROWS.json": "ea915a27ba1c076e1cea549f9c8407e975f80768460ca7df4baca7e03662bab0",
+    "STRUCTURE_ROWS.json": "028fae400ee553ff533f2ae25b75e9eb966d6815910a3db301d47e7cbc35fafc"
+  }
+}

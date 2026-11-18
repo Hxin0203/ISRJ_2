@@ -1,0 +1,36 @@
+{
+  "stage": "FROZEN",
+  "created_utc": "2026-11-18T16:25:51.799248+00:00",
+  "admission": {
+    "cpu_percent": 5.2,
+    "available_ram": 80057114624,
+    "free_disk": 1543451262976
+  },
+  "source_sha256": "e58353f3373b0687db37efa85291188269b8f7b6d8c7c63cbc17c22537467aaa",
+  "original_manifest_sha256": "b1aace91dd33a483458a0702b68e519a393ffa27c30c4dac8c5f4bd2ac177a67",
+  "windows": [
+    32,
+    64
+  ],
+  "lags": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    112,
+    128,
+    144,
+    160,
+    176,
+    192,
+    208,
+    224,
+    240,
+    256
+  ],
+  "null_seed": 2026111891,
+  "null": "Independent per-sample phase rotations; exact amplitudes and pulse occupancy preserved",
+  "scope": "Post-run descriptive DEV controls on the same 80 parents, not independent confirmation",
+  "aggregation": "Local mean/p95/max within each record, then three types within physical parent"
+}
