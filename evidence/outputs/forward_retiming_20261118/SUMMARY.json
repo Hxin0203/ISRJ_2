@@ -1,0 +1,215 @@
+{
+  "script_sha256": "b21aa41087c82f6d3da9deeb51b1e6466984f182129298df164b28bd6df33a24",
+  "processes": [
+    {
+      "scope": "CUDA events around model(x), includes all forward-internal transforms; excludes input transfer, restoration subtraction and downstream processing",
+      "host": "DESKTOP-RFFERM3",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "visible_devices": "1",
+      "torch": "2.9.1+cu128",
+      "cuda": "12.8",
+      "shape": [
+        1,
+        2,
+        1800
+      ],
+      "dtype": "torch.float32",
+      "tf32": false,
+      "warmup_per_block": 40,
+      "samples_per_block": 160,
+      "seed": 17,
+      "epoch": 256,
+      "checkpoint_sha256": {
+        "full": "48f00ade49e240f182361611d854d41a8075bf72f93cda8e5deaf9950f0f31d1",
+        "unet": "ae7369f7435be4aac432a863176a291dddf0ceeb2338dc50524c015f10a52d80"
+      },
+      "source_sha256": {
+        "tools/post_ablation_analysis.py": "e96359d9740b6c9983cb279d52e413d8da1108c4fd02f4dadfbc5a59092f2115",
+        "tools/unet_ablation/models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e"
+      },
+      "rounds": [
+        {
+          "order": [
+            "full",
+            "unet"
+          ],
+          "measurements": {
+            "full": {
+              "median_ms": 1.6938719749450684,
+              "p95_ms": 2.0894336342811584
+            },
+            "unet": {
+              "median_ms": 0.9789920151233673,
+              "p95_ms": 1.285399985313415
+            }
+          }
+        },
+        {
+          "order": [
+            "unet",
+            "full"
+          ],
+          "measurements": {
+            "unet": {
+              "median_ms": 0.9630559980869293,
+              "p95_ms": 1.4598272144794426
+            },
+            "full": {
+              "median_ms": 1.7100480198860168,
+              "p95_ms": 2.13661766052246
+            }
+          }
+        },
+        {
+          "order": [
+            "full",
+            "unet"
+          ],
+          "measurements": {
+            "full": {
+              "median_ms": 3.9283039569854736,
+              "p95_ms": 4.611236810684203
+            },
+            "unet": {
+              "median_ms": 2.488368034362793,
+              "p95_ms": 3.1107632279396054
+            }
+          }
+        },
+        {
+          "order": [
+            "unet",
+            "full"
+          ],
+          "measurements": {
+            "unet": {
+              "median_ms": 2.4899200201034546,
+              "p95_ms": 3.0315121054649348
+            },
+            "full": {
+              "median_ms": 3.912416100502014,
+              "p95_ms": 4.662643194198608
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "full": {
+          "median_ms": 2.0790560245513916,
+          "p95_ms": 4.452862191200255
+        },
+        "unet": {
+          "median_ms": 1.8577439785003662,
+          "p95_ms": 2.939907097816467
+        }
+      }
+    },
+    {
+      "scope": "CUDA events around model(x), includes all forward-internal transforms; excludes input transfer, restoration subtraction and downstream processing",
+      "host": "DESKTOP-RFFERM3",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "visible_devices": "1",
+      "torch": "2.9.1+cu128",
+      "cuda": "12.8",
+      "shape": [
+        1,
+        2,
+        1800
+      ],
+      "dtype": "torch.float32",
+      "tf32": false,
+      "warmup_per_block": 40,
+      "samples_per_block": 160,
+      "seed": 17,
+      "epoch": 256,
+      "checkpoint_sha256": {
+        "full": "48f00ade49e240f182361611d854d41a8075bf72f93cda8e5deaf9950f0f31d1",
+        "unet": "ae7369f7435be4aac432a863176a291dddf0ceeb2338dc50524c015f10a52d80"
+      },
+      "source_sha256": {
+        "tools/post_ablation_analysis.py": "e96359d9740b6c9983cb279d52e413d8da1108c4fd02f4dadfbc5a59092f2115",
+        "tools/unet_ablation/models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e"
+      },
+      "rounds": [
+        {
+          "order": [
+            "full",
+            "unet"
+          ],
+          "measurements": {
+            "full": {
+              "median_ms": 1.7309119701385498,
+              "p95_ms": 1.9883167445659633
+            },
+            "unet": {
+              "median_ms": 1.0003999769687653,
+              "p95_ms": 1.2910063564777365
+            }
+          }
+        },
+        {
+          "order": [
+            "unet",
+            "full"
+          ],
+          "measurements": {
+            "unet": {
+              "median_ms": 0.9856480062007904,
+              "p95_ms": 1.3080303788185108
+            },
+            "full": {
+              "median_ms": 1.7410239577293396,
+              "p95_ms": 2.4318896293640133
+            }
+          }
+        },
+        {
+          "order": [
+            "full",
+            "unet"
+          ],
+          "measurements": {
+            "full": {
+              "median_ms": 1.889840006828308,
+              "p95_ms": 4.4777745485305775
+            },
+            "unet": {
+              "median_ms": 2.4753119945526123,
+              "p95_ms": 3.029172885417938
+            }
+          }
+        },
+        {
+          "order": [
+            "unet",
+            "full"
+          ],
+          "measurements": {
+            "unet": {
+              "median_ms": 2.4865920543670654,
+              "p95_ms": 3.030672001838684
+            },
+            "full": {
+              "median_ms": 3.8626720905303955,
+              "p95_ms": 4.670910429954529
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "full": {
+          "median_ms": 1.863103985786438,
+          "p95_ms": 4.347998619079589
+        },
+        "unet": {
+          "median_ms": 2.023632049560547,
+          "p95_ms": 2.9079199194908143
+        }
+      }
+    }
+  ]
+}
