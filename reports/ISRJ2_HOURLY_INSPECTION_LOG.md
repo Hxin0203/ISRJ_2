@@ -35,3 +35,10 @@ UTC 整点。在旧半小时任务上原位调整，旧两小时任务暂停。�
 本地有启动收据 2/25，最终确认完成 0/25，无启动收据 23。持久轮次 full_base_17=512、full_tail_17=168；状态文件 full_tail/17 第 169 轮。B 状态未核实。 相对前次快照的保存轮次变化：full_base_17 2、full_tail_17 None。本地 HEAD fcf9245c0bd9，检查前远端 8f4eb6212a1e。
 
 五份父场景表字节指纹与原完成收据一致；独立单位仍为父场景。 B 只读访问未完成 RuntimeError。下一次复核进程、持久收据和环境冲突 D01/D02。
+
+<!-- UTC slot 2026-11-18T19 -->
+## 2026-11-18 19:00:00 UTC
+
+本地有启动收据 2/25，最终确认完成 0/25，无启动收据 23。持久轮次 full_base_17=512、full_tail_17=355；状态文件 full_tail/17 第 356 轮。B 状态未核实。 相对前次快照的保存轮次变化：full_base_17 0、full_tail_17 187。本地 HEAD fcf9245c0bd9，检查前远端 70139e2c5f9f。
+
+出版方书目核验 [Composing Normalizing Flows for Inverse Problems](https://proceedings.mlr.press/v139/whang21b.html)；仅核题名及原文可达性。 B 只读访问未完成 RuntimeError。下一次复核进程、持久收据和环境冲突 D01/D02。

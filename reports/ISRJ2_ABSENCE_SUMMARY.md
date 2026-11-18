@@ -22,3 +22,5 @@
 - 2026-11-18 17:00:01：本地有启动收据 1/25，最终确认完成 0/25，无启动收据 24。持久轮次 full_base_17=510；状态文件 full_base/17 第 511 轮。B 状态未核实。 独立抽象二点算例复算：均值平方误差 1/16，独立同分布样本互比 1/8；不外推到模型性能。 B 只读访问未完成 RuntimeError。
 
 - 2026-11-18 18:00:00：本地有启动收据 2/25，最终确认完成 0/25，无启动收据 23。持久轮次 full_base_17=512、full_tail_17=168；状态文件 full_tail/17 第 169 轮。B 状态未核实。 五份父场景表字节指纹与原完成收据一致；独立单位仍为父场景。 B 只读访问未完成 RuntimeError。
+
+- 2026-11-18 19:00:00：本地有启动收据 2/25，最终确认完成 0/25，无启动收据 23。持久轮次 full_base_17=512、full_tail_17=355；状态文件 full_tail/17 第 356 轮。B 状态未核实。 出版方书目核验 [Composing Normalizing Flows for Inverse Problems](https://proceedings.mlr.press/v139/whang21b.html)；仅核题名及原文可达性。 B 只读访问未完成 RuntimeError。
