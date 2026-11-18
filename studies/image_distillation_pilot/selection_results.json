@@ -1,0 +1,292 @@
+{
+  "source_sha256_utf8_lf": {
+    "run.py": "2c5ee00f45de3607b2f2b6f62ce5fcedd3a2ff514ff72d6e5eb2a12f8fd83c1d",
+    "protocol.json": "cdc7ba7dc039c82b220c1202f2958adb3475a746551108a295456d83de15e68d",
+    "selective_digits.py": "3dfe696bad416dc98272edb123f241e5a7454b01bdf98165e0873856f4155b13",
+    "selection_protocol.json": "3e72a3ac202425ca4ad19d017bef6dede58c08a48c3e4b777f5f3416664943a9"
+  },
+  "scipy": "1.16.2",
+  "torch": "2.9.1+cu126",
+  "public_arff_sha256": "e86f102c957f41c7022b187766b0f9949a54ae8cedc492de1cc29765f060358a",
+  "external_parent_count": 3823,
+  "external_uint8_pixels_sha256": "dfeb9b1999a16e65d3a2f44644a52d102d69c46ec2878f6170559f04a7febff5",
+  "original_provenance": {
+    "data_sha256_uint8_images_then_labels": "87ff0c9e40dc7e2c0e34e7257799c2e3f3aec1a016363bb11cad869ec428a826",
+    "split_sha256_ordered_image_bytes": {
+      "train": "85e7658ebb2f9ca279266abb82408a17c4130426bdcde17eac9b918768999699",
+      "dev": "a38eb58e5ea5de6326ee27805868db6b1e8bce879ea4d43cdd9f10ed79812e6d",
+      "test": "bc674af80fb3b45b50f211a9768478e86acff96653f1b4d5a7448d62a0a2ea67"
+    },
+    "counts": {
+      "train": 1197,
+      "dev": 300,
+      "test": 300
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 17,
+      "selected_characters": [
+        0,
+        6,
+        9,
+        2,
+        3
+      ],
+      "dev_teacher_advantage_db_by_character": {
+        "0": 1.6258385976155598,
+        "1": 0.8757789611816407,
+        "2": 1.2080748656700397,
+        "3": 1.0979902821202432,
+        "4": 1.0456267992655437,
+        "5": 1.0934441166539346,
+        "6": 1.2595368385314942,
+        "7": 1.0805132548014322,
+        "8": 0.5762397831883924,
+        "9": 1.2118078867594402
+      },
+      "dev_mean_teacher_advantage_db": 1.1088422044118245,
+      "external": {
+        "input": {
+          "psnr_db": 14.369249836799208,
+          "gradient_mae": 0.19497565709964598
+        },
+        "teacher": {
+          "psnr_db": 18.44700830880179,
+          "gradient_mae": 0.11090202225075478
+        },
+        "vanilla": {
+          "psnr_db": 17.415506696688578,
+          "gradient_mae": 0.12451976294873617
+        },
+        "long_vanilla": {
+          "psnr_db": 17.899614585808614,
+          "gradient_mae": 0.11782304920975276
+        },
+        "full_kd": {
+          "psnr_db": 17.407445788102844,
+          "gradient_mae": 0.12571883964976682
+        },
+        "matched_uniform": {
+          "psnr_db": 17.459599770584127,
+          "gradient_mae": 0.12475114830253388
+        },
+        "shuffled": {
+          "psnr_db": 17.443939129158117,
+          "gradient_mae": 0.12486057660318063
+        },
+        "selected": {
+          "psnr_db": 17.45419835657653,
+          "gradient_mae": 0.12472892991405272
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "selected_characters": [
+        4,
+        0,
+        6,
+        5,
+        3
+      ],
+      "dev_teacher_advantage_db_by_character": {
+        "0": 1.8930640856424967,
+        "1": 1.2563445091247558,
+        "2": 1.2088620087196087,
+        "3": 1.3980129303470734,
+        "4": 1.939624309539795,
+        "5": 1.5194373284616778,
+        "6": 1.6655831654866537,
+        "7": 1.386890188852946,
+        "8": 0.5226429577531486,
+        "9": 1.3663731892903646
+      },
+      "dev_mean_teacher_advantage_db": 1.4196366182963054,
+      "external": {
+        "input": {
+          "psnr_db": 14.369249836799208,
+          "gradient_mae": 0.19497565709964598
+        },
+        "teacher": {
+          "psnr_db": 18.52353881199323,
+          "gradient_mae": 0.10945825882425583
+        },
+        "vanilla": {
+          "psnr_db": 17.23086399549344,
+          "gradient_mae": 0.12860931193964226
+        },
+        "long_vanilla": {
+          "psnr_db": 17.756502051207523,
+          "gradient_mae": 0.12021125266447823
+        },
+        "full_kd": {
+          "psnr_db": 17.25350790225864,
+          "gradient_mae": 0.12897433194578115
+        },
+        "matched_uniform": {
+          "psnr_db": 17.148815341623173,
+          "gradient_mae": 0.13132343605538796
+        },
+        "shuffled": {
+          "psnr_db": 17.18094956060994,
+          "gradient_mae": 0.13078983152042095
+        },
+        "selected": {
+          "psnr_db": 17.219947525571225,
+          "gradient_mae": 0.1297724701633729
+        }
+      }
+    },
+    {
+      "seed": 41,
+      "selected_characters": [
+        6,
+        0,
+        4,
+        5,
+        7
+      ],
+      "dev_teacher_advantage_db_by_character": {
+        "0": 1.7039807001749674,
+        "1": 0.8863844553629557,
+        "2": 1.2767414882265289,
+        "3": 1.035862922668457,
+        "4": 1.605970605214437,
+        "5": 1.45969787720711,
+        "6": 1.7605608622233073,
+        "7": 1.350316015879313,
+        "8": 0.6953949435003872,
+        "9": 1.2617153803507486
+      },
+      "dev_mean_teacher_advantage_db": 1.30540727297465,
+      "external": {
+        "input": {
+          "psnr_db": 14.369249836799208,
+          "gradient_mae": 0.19497565709964598
+        },
+        "teacher": {
+          "psnr_db": 18.501388803003596,
+          "gradient_mae": 0.10986819461849451
+        },
+        "vanilla": {
+          "psnr_db": 17.32998921700931,
+          "gradient_mae": 0.12660504743484124
+        },
+        "long_vanilla": {
+          "psnr_db": 17.88920657596693,
+          "gradient_mae": 0.11855741573501064
+        },
+        "full_kd": {
+          "psnr_db": 17.367487832323096,
+          "gradient_mae": 0.12701513360393568
+        },
+        "matched_uniform": {
+          "psnr_db": 17.39203236385568,
+          "gradient_mae": 0.12642872333331723
+        },
+        "shuffled": {
+          "psnr_db": 17.388342329509715,
+          "gradient_mae": 0.1260737773345741
+        },
+        "selected": {
+          "psnr_db": 17.323571192167392,
+          "gradient_mae": 0.12708997324775595
+        }
+      }
+    }
+  ],
+  "external_means": {
+    "input": {
+      "psnr_db": 14.369249836799208,
+      "gradient_mae": 0.194975657099646
+    },
+    "teacher": {
+      "psnr_db": 18.49064530793287,
+      "gradient_mae": 0.1100761585645017
+    },
+    "vanilla": {
+      "psnr_db": 17.325453303063778,
+      "gradient_mae": 0.12657804077440657
+    },
+    "long_vanilla": {
+      "psnr_db": 17.848441070994358,
+      "gradient_mae": 0.1188639058697472
+    },
+    "full_kd": {
+      "psnr_db": 17.34281384089486,
+      "gradient_mae": 0.12723610173316122
+    },
+    "matched_uniform": {
+      "psnr_db": 17.33348249202099,
+      "gradient_mae": 0.12750110256374636
+    },
+    "shuffled": {
+      "psnr_db": 17.33774367309259,
+      "gradient_mae": 0.12724139515272523
+    },
+    "selected": {
+      "psnr_db": 17.33257235810505,
+      "gradient_mae": 0.12719712444172718
+    }
+  },
+  "selective_vs_controls": {
+    "vanilla": {
+      "psnr_gain_db_by_seed": {
+        "17": 0.03869165988795395,
+        "29": -0.010916469922216657,
+        "41": -0.006418024841915273
+      },
+      "mean_gain_db": 0.007119055041274008,
+      "parent_ci95_db_conditional_on_seeds": [
+        0.002284389567443784,
+        0.012105343667992485
+      ],
+      "relative_gradient_mae_change": 0.004890924709634037,
+      "passes": false
+    },
+    "full_kd": {
+      "psnr_gain_db_by_seed": {
+        "17": 0.0467525684736862,
+        "29": -0.03356037668741532,
+        "41": -0.04391664015570143
+      },
+      "mean_gain_db": -0.010241482789810184,
+      "parent_ci95_db_conditional_on_seeds": [
+        -0.014630855120343643,
+        -0.005983204277840828
+      ],
+      "relative_gradient_mae_change": -0.00030633830259729766,
+      "passes": false
+    },
+    "matched_uniform": {
+      "psnr_gain_db_by_seed": {
+        "17": -0.0054014140075955,
+        "29": 0.07113218394805086,
+        "41": -0.06846117168828639
+      },
+      "mean_gain_db": -0.0009101339159436749,
+      "parent_ci95_db_conditional_on_seeds": [
+        -0.005102391383924192,
+        0.00320187843150462
+      ],
+      "relative_gradient_mae_change": -0.002384121516652793,
+      "passes": false
+    },
+    "shuffled": {
+      "psnr_gain_db_by_seed": {
+        "17": 0.010259227418413095,
+        "29": 0.03899796496128618,
+        "41": -0.06477113734232079
+      },
+      "mean_gain_db": -0.005171314987540504,
+      "parent_ci95_db_conditional_on_seeds": [
+        -0.00964266018231793,
+        -0.0005214418567913927
+      ],
+      "relative_gradient_mae_change": -0.00034792695368446314,
+      "passes": false
+    }
+  },
+  "passes_pilot": false
+}

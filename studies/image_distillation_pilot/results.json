@@ -1,0 +1,241 @@
+{
+  "environment": {
+    "python": "3.13.3",
+    "torch": "2.9.1+cu126",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2",
+    "device": "CPU, 1 thread"
+  },
+  "hashes_utf8_lf_sha256": {
+    "protocol.json": "cdc7ba7dc039c82b220c1202f2958adb3475a746551108a295456d83de15e68d",
+    "run.py": "2c5ee00f45de3607b2f2b6f62ce5fcedd3a2ff514ff72d6e5eb2a12f8fd83c1d"
+  },
+  "dataset": {
+    "data_sha256_uint8_images_then_labels": "87ff0c9e40dc7e2c0e34e7257799c2e3f3aec1a016363bb11cad869ec428a826",
+    "split_sha256_ordered_image_bytes": {
+      "train": "85e7658ebb2f9ca279266abb82408a17c4130426bdcde17eac9b918768999699",
+      "dev": "a38eb58e5ea5de6326ee27805868db6b1e8bce879ea4d43cdd9f10ed79812e6d",
+      "test": "bc674af80fb3b45b50f211a9768478e86acff96653f1b4d5a7448d62a0a2ea67"
+    },
+    "counts": {
+      "train": 1197,
+      "dev": 300,
+      "test": 300
+    }
+  },
+  "parameters": {
+    "input": 0,
+    "teacher": 21121,
+    "vanilla": 3061,
+    "distilled": 3061,
+    "long_vanilla": 3061
+  },
+  "per_seed": [
+    {
+      "seed": 17,
+      "dev": {
+        "input": {
+          "psnr_db": 14.388886238733928,
+          "gradient_mae": 0.19547694665690263
+        },
+        "teacher": {
+          "psnr_db": 18.51463791847229,
+          "gradient_mae": 0.110561942756176
+        },
+        "vanilla": {
+          "psnr_db": 17.405795714060467,
+          "gradient_mae": 0.12576939235130946
+        },
+        "distilled": {
+          "psnr_db": 17.41477842648824,
+          "gradient_mae": 0.12665627968808016
+        },
+        "long_vanilla": {
+          "psnr_db": 17.889764642715456,
+          "gradient_mae": 0.11855779948333899
+        }
+      },
+      "test": {
+        "input": {
+          "psnr_db": 14.412505620320639,
+          "gradient_mae": 0.19458395414054394
+        },
+        "teacher": {
+          "psnr_db": 18.597881139119465,
+          "gradient_mae": 0.1097473519295454
+        },
+        "vanilla": {
+          "psnr_db": 17.50438184738159,
+          "gradient_mae": 0.12424368997414907
+        },
+        "distilled": {
+          "psnr_db": 17.503845094045005,
+          "gradient_mae": 0.12553397091726462
+        },
+        "long_vanilla": {
+          "psnr_db": 17.971901839574176,
+          "gradient_mae": 0.11767560390134653
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "dev": {
+        "input": {
+          "psnr_db": 14.388886238733928,
+          "gradient_mae": 0.19547694665690263
+        },
+        "teacher": {
+          "psnr_db": 18.611662432352702,
+          "gradient_mae": 0.10910757344216108
+        },
+        "vanilla": {
+          "psnr_db": 17.192025814056397,
+          "gradient_mae": 0.1304439809670051
+        },
+        "distilled": {
+          "psnr_db": 17.209082543055217,
+          "gradient_mae": 0.13058707763751348
+        },
+        "long_vanilla": {
+          "psnr_db": 17.76455493927002,
+          "gradient_mae": 0.1207622347275416
+        }
+      },
+      "test": {
+        "input": {
+          "psnr_db": 14.412505620320639,
+          "gradient_mae": 0.19458395414054394
+        },
+        "teacher": {
+          "psnr_db": 18.660966170628864,
+          "gradient_mae": 0.10842520265529552
+        },
+        "vanilla": {
+          "psnr_db": 17.319459784825643,
+          "gradient_mae": 0.12831694925824802
+        },
+        "distilled": {
+          "psnr_db": 17.34192154566447,
+          "gradient_mae": 0.1284969127178192
+        },
+        "long_vanilla": {
+          "psnr_db": 17.85481777191162,
+          "gradient_mae": 0.11943461004644633
+        }
+      }
+    },
+    {
+      "seed": 41,
+      "dev": {
+        "input": {
+          "psnr_db": 14.388886238733928,
+          "gradient_mae": 0.19547694665690263
+        },
+        "teacher": {
+          "psnr_db": 18.611990089416505,
+          "gradient_mae": 0.10911718840400378
+        },
+        "vanilla": {
+          "psnr_db": 17.306582816441853,
+          "gradient_mae": 0.12829091315468152
+        },
+        "distilled": {
+          "psnr_db": 17.33146151860555,
+          "gradient_mae": 0.1288272317002217
+        },
+        "long_vanilla": {
+          "psnr_db": 17.882700026830037,
+          "gradient_mae": 0.11955732427537441
+        }
+      },
+      "test": {
+        "input": {
+          "psnr_db": 14.412505620320639,
+          "gradient_mae": 0.19458395414054394
+        },
+        "teacher": {
+          "psnr_db": 18.684815692901612,
+          "gradient_mae": 0.10822739717861017
+        },
+        "vanilla": {
+          "psnr_db": 17.42876749356588,
+          "gradient_mae": 0.12653156946102778
+        },
+        "distilled": {
+          "psnr_db": 17.46797629674276,
+          "gradient_mae": 0.12687331912418207
+        },
+        "long_vanilla": {
+          "psnr_db": 18.01257608095805,
+          "gradient_mae": 0.1177043047050635
+        }
+      }
+    }
+  ],
+  "mean_of_seed_means": {
+    "dev": {
+      "input": {
+        "psnr_db": 14.388886238733926,
+        "gradient_mae": 0.19547694665690263
+      },
+      "teacher": {
+        "psnr_db": 18.579430146747168,
+        "gradient_mae": 0.10959556820078027
+      },
+      "vanilla": {
+        "psnr_db": 17.301468114852906,
+        "gradient_mae": 0.1281680954909987
+      },
+      "distilled": {
+        "psnr_db": 17.318440829383004,
+        "gradient_mae": 0.12869019634193846
+      },
+      "long_vanilla": {
+        "psnr_db": 17.845673202938503,
+        "gradient_mae": 0.11962578616208501
+      }
+    },
+    "test": {
+      "input": {
+        "psnr_db": 14.412505620320639,
+        "gradient_mae": 0.19458395414054394
+      },
+      "teacher": {
+        "psnr_db": 18.64788766754998,
+        "gradient_mae": 0.10879998392115037
+      },
+      "vanilla": {
+        "psnr_db": 17.417536375257704,
+        "gradient_mae": 0.12636406956447496
+      },
+      "distilled": {
+        "psnr_db": 17.437914312150742,
+        "gradient_mae": 0.12696806758642198
+      },
+      "long_vanilla": {
+        "psnr_db": 17.946431897481283,
+        "gradient_mae": 0.11827150621761878
+      }
+    }
+  },
+  "test_paired_psnr_gain_db_by_seed": {
+    "17": -0.0005367533365885417,
+    "29": 0.0224617608388265,
+    "41": 0.039208803176879886
+  },
+  "test_mean_paired_psnr_gain_db": 0.02037793689303928,
+  "test_parent_paired_ci95_db_conditional_on_trained_seeds": [
+    -0.00045646421114603584,
+    0.03962868875927395
+  ],
+  "test_relative_gradient_mae_change": 0.004779824075219707,
+  "test_distilled_minus_long_vanilla_psnr_db": -0.5085175853305408,
+  "criteria": {
+    "teacher_beats_vanilla_every_dev_seed": true,
+    "test_psnr_gain_positive_every_seed": false,
+    "mean_gain_meets_minimum": false,
+    "gradient_mae_within_margin": true
+  },
+  "passes_pilot": false
+}
