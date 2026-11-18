@@ -26,3 +26,5 @@
 - 2026-11-18 19:00:00：本地有启动收据 2/25，最终确认完成 0/25，无启动收据 23。持久轮次 full_base_17=512、full_tail_17=355；状态文件 full_tail/17 第 356 轮。B 状态未核实。 出版方书目核验 [Composing Normalizing Flows for Inverse Problems](https://proceedings.mlr.press/v139/whang21b.html)；仅核题名及原文可达性。 B 只读访问未完成 RuntimeError。
 
 - 2026-11-18 20:00:00：本地有启动收据 3/25，最终确认完成 0/25，无启动收据 22。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=31；状态文件 no_dechirp_base/17 第 32 轮。B 状态未核实。 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 RuntimeError。
+
+- 2026-11-18 21:00:00：本地有启动收据 3/25，最终确认完成 0/25，无启动收据 22。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=223；状态文件 no_dechirp_base/17 第 224 轮。B 状态未核实。 临时目录内五项队列断言通过，含逐组授权缺口反例；未调用生产训练。 B 只读访问未完成 RuntimeError。

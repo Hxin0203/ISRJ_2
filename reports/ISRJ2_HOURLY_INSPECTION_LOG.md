@@ -49,3 +49,10 @@ UTC 整点。在旧半小时任务上原位调整，旧两小时任务暂停。�
 本地有启动收据 3/25，最终确认完成 0/25，无启动收据 22。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=31；状态文件 no_dechirp_base/17 第 32 轮。B 状态未核实。 相对前次快照的保存轮次变化：full_base_17 0、full_tail_17 157、no_dechirp_base_17 None。本地 HEAD fcf9245c0bd9，检查前远端 f7809371cf20。
 
 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 RuntimeError。下一次复核进程、持久收据和环境冲突 D01/D02。
+
+<!-- UTC slot 2026-11-18T21 -->
+## 2026-11-18 21:00:00 UTC
+
+本地有启动收据 3/25，最终确认完成 0/25，无启动收据 22。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=223；状态文件 no_dechirp_base/17 第 224 轮。B 状态未核实。 相对前次快照的保存轮次变化：full_base_17 0、full_tail_17 0、no_dechirp_base_17 192。本地 HEAD fcf9245c0bd9，检查前远端 88601ad2e208。
+
+临时目录内五项队列断言通过，含逐组授权缺口反例；未调用生产训练。 B 只读访问未完成 RuntimeError。下一次复核进程、持久收据和环境冲突 D01/D02。
