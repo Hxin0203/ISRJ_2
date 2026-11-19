@@ -4,7 +4,16 @@
 - On 2026-11-17 the user additionally authorized parallel independent experiments on otherwise idle server GPUs. The independent normalization screen has its own server/root/physical-GPU-0 and UUID guard in `tools/unet_norm_screen/`; the frozen GPU-1 guards and running experiment sources remain unchanged. Check resource admission, preserve unrelated jobs, and keep factors separate until screening finishes. This authorization supersedes historical handoff instructions requiring every independent factor to wait for the tail-loss screen.
 - All second-paper assets remain in this workspace or its dedicated server counterpart. First-paper directories and existing frozen sources/checkpoints are read-only. Do not modify or stop unrelated server jobs.
 - Only push the `paper2` remote (`Hxin0203/ISRJ_2`); `origin` belongs to the first paper. Stage exact paths. Do not upload training data, weights, raw arrays, caches, credentials or full logs.
-- The user authorized U-Net comparison and structural/loss ablations on 2026-11-15. This supersedes older handoff statements prohibiting ablations. Do not start MCA-ADMM or FNet work. ChatGPT collaboration remains disabled; do not use `codex-with-chatgpt` or equivalent alternate collaboration flows.
+- The user authorized U-Net comparison and structural/loss ablations on 2026-11-15. This supersedes older handoff statements prohibiting ablations. Do not start MCA-ADMM or FNet work. CWC collaboration is authorized under the dated R1 policy below.
 - Preserve every completed epoch recovery point and every 32-epoch milestone, including prior models. Validate source, data and checkpoint SHA before resume or evaluation. Report saved epochs and dated status snapshots, not just process existence.
 - Apply the user's `clean-user-facing-text` preference when writing scientific reports: offline audit, backup and SHA, protected formulas/values/paths, no indiscriminate whole-document rewrite or claims of authorship detection evasion.
 - Mandatory GitHub sync after each completed task: commit and push the task's key, reviewable source/report/evidence summaries to the `paper2` remote (`Hxin0203/ISRJ_2`), then verify and record the remote commit SHA. Stage exact paths only; never upload training datasets, weights/checkpoints, raw arrays, caches, credentials, or full logs. If a task has no new durable content, state that explicitly instead of creating a meaningless commit. Never push this workspace to `origin`.
+
+## CWC Collaboration Policy — R1, 2026-11-19 UTC
+
+- CWC is authorized for automatic planning, debugging strategy, evidence reconciliation and read-only review. Consider it for complex issues after two evidenced diagnostic attempts, major changes and final independent review.
+- Codex executes and verifies. ChatGPT provides advice through the read-only connector. Advice grants no new execution permission.
+- Bind each task to happy-liskov, its exact connector, Task ID, iteration and current evidence. All ChatGPT conversations belong to the codex-with-chatgpt Project.
+- Follow docs/CWC_COLLABORATION_POLICY.md and handoff/CURRENT_STATE.md. Save significant decisions, actual tests and recovery state.
+- CWC failure blocks only dependent work. Continue independent authorized management. Preserve provider identity checks and the official iteration limit.
+- This authorization changes no GPU budgets, controlled hosts, frozen protocols, data access or experiment asset protections. CWC cannot execute training or modify the workspace.

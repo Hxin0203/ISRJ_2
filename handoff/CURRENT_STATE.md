@@ -1,3 +1,13 @@
+## CWC R1 authorization and recovery — 2026-11-19 UTC
+
+The user's ISRJ2_CWC_AUTONOMOUS_SUPERVISOR_R1 explicitly supersedes earlier CWC suspension. This dated entry governs CWC only. Experiment budgets, host restrictions and frozen assets retain their existing constraints.
+
+Workspace happy-liskov; connector Codex with ChatGPT · happy-liskov; all discussions in the codex-with-chatgpt Project. CLI 0.1.3 and upstream C2C protocol (no separate numbered version), INIT → PLAN → EXECUTED → implicit REVIEW → DONE/BLOCKED/ERROR. Read docs/CWC_COLLABORATION_POLICY.md and reports/CWC_COLLABORATION_LOG.md before new work, then c2c session for the current checkpoint.
+
+Last manual read-only review received DONE on 2026-11-18 around 16:07 UTC. Health checks passed on 2026-11-19 around 02:11 UTC. Natural-trigger acceptance c2c_a719 is pending at 02:20 UTC. Verified state remains MANUAL_READ_ONLY_REVIEW_VERIFIED until all receipts exist. See reports/CWC_END_TO_END_ACCEPTANCE.md.
+
+B access is unresolved and local-versus-server training authority remains a separate pending decision. CWC authorization does not resolve training budgets or deployment. Earlier handoff entries below retain their historical dates.
+
 ## Superseding own-model priority — 2026-11-17 15:03 UTC
 
 - The user challenged the prolonged U-Net-only optimization schedule. Own-backbone validation now takes priority on physical GPU 1: current U-Net tail training + DEV -> fresh CorrectionNet original-loss control -> CorrectionNet + identical 0.05 tail -> original U-Net dilation. Both own-model arms use seeds 17/29/41 to 256; preserve all epoch recovery and 32-epoch milestones. Old eight-seed models remain intact.
