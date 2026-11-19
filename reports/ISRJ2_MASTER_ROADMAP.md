@@ -37,7 +37,7 @@ ID 唯一。P2 的 ID 与本地 run 目录同名，training/ 相对 outputs/stru
 | no_dechirp_tail_41 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_tail_53 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_53 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_tail_67 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_67 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_67 | 最终收据及身份相符 | 读检查点和总收据 |
-| unet_tail_17 | P2 | 结构规划 P3／CONFIG | unet_tail_17 | 本地持久轮次 155 | RUNNING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
+| unet_tail_17 | P2 | 结构规划 P3／CONFIG | unet_tail_17 | 本地持久轮次 362 | RUNNING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
 | unet_tail_29 | P2 | 结构规划 P3／CONFIG | unet_tail_29 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_29 | 最终收据及身份相符 | 读检查点和总收据 |
 | unet_tail_41 | P2 | 结构规划 P3／CONFIG | unet_tail_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | unet_tail_53 | P2 | 结构规划 P3／CONFIG | unet_tail_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_53 | 最终收据及身份相符 | 读检查点和总收据 |
