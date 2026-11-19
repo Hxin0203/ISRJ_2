@@ -88,3 +88,10 @@ UTC 整点。在旧半小时任务上原位调整，旧两小时任务暂停。�
 ## 2026-11-19 01:49 UTC 独立复核
 
 2026-11-19 01:49:15 UTC 独立只读核验：启动 5/25，固定 512 轮检查点字节及身份核验 4/25，训练结束与统一评价收据齐全 0/25。unet_tail_17 已保存 122 轮，STATUS 第 123 轮。 [阶段核验及收据](ISRJ2_NEXT_STAGE_VERIFICATION.md)
+
+<!-- UTC slot 2026-11-19T02 -->
+## 2026-11-19 02:00:01 UTC
+
+本地有启动收据 5/25，训练结束收据核验 0/25，无启动收据 20。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=155；控制器状态 TRAINING，记录轮次 156。B 状态未核实。 512 固定检查点核验 4/25，训练及 DEV 收据齐全 0/25。 相对前次快照的保存轮次变化：full_base_17 0、full_tail_17 0、no_dechirp_base_17 0、no_dechirp_tail_17 37、unet_tail_17 None。本地 HEAD fcf9245c0bd9，检查前远端 c4bdcbf8cdf2。
+
+临时目录六项队列测试通过，含原循环授权反例与隔离许可检查。 B 只读访问未完成 server read failed: 255 []。下一次复核进程、持久收据和环境冲突 D01/D02。
