@@ -55,3 +55,5 @@
 - 2026-11-19 04:00:00：本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=23、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 TRAINING，记录轮次 24。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 五份父场景表字节指纹与原完成收据一致；独立单位仍为父场景。 B 只读访问未完成 server read failed: 255 []。
 
 - 2026-11-19 05:00:00：本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=213、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 TRAINING，记录轮次 214。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 出版方书目核验 [Group Equivariant Convolutional Networks](https://proceedings.mlr.press/v48/cohenc16.html)；仅核题名及原文可达性。 B 只读访问未完成 server read failed: 255 []。
+
+- 2026-11-19 06:00:00：本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=403、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 TRAINING，记录轮次 404。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 server read failed: 255 []。
