@@ -1,3 +1,13 @@
+## 2026-11-19 02:24 UTC CWC acceptance update
+
+CWC_ROUNDTRIP_VERIFIED: c2c_a719 completed INIT / PLAN / EXECUTED / DONE in the codex-with-chatgpt Project with the happy-liskov connector. Six isolated tests passed and the original fixture hash was unchanged. DONE received 02:24:39.549 UTC; subsequent management inspection succeeded at 02:24:40.083 UTC. Do not resend this task. Official checkpoint cleared.
+
+AUTO_CWC_ENABLED remains pending: the 02:20 natural timer run is still running, and it fired during an active turn. Delivery/completion and the first natural recurring agent-mode run at 03:00 UTC need verification; historical script-mode success is separate. No actual outage-continuation test has been claimed. See reports/CWC_END_TO_END_ACCEPTANCE.md for event times and original local receipt paths.
+
+Current training snapshot: started 5/25, byte-verified fixed 512 milestones 4/25, training-plus-evaluation completion 0/25. unet_tail_17 saved 230, STATUS 231. No training change. D01/D02 (host and extension budgets) remain unresolved; D03 (CWC authorization) resolved by R1.
+
+Historical snapshots below retain their original dates.
+
 # ISRJ_2 下一阶段核验
 
 2026-11-19 01:49:15 UTC 独立只读核验：启动 5/25，固定 512 轮检查点字节及身份核验 4/25，训练结束与统一评价收据齐全 0/25。unet_tail_17 已保存 122 轮，STATUS 第 123 轮。 旧版台账的小时行保留了各自采样时刻。下表时间为 UTC。

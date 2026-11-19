@@ -1,3 +1,13 @@
+## 2026-11-19 02:24 UTC CWC acceptance update
+
+CWC_ROUNDTRIP_VERIFIED: c2c_a719 completed INIT / PLAN / EXECUTED / DONE in the codex-with-chatgpt Project with the happy-liskov connector. Six isolated tests passed and the original fixture hash was unchanged. DONE received 02:24:39.549 UTC; subsequent management inspection succeeded at 02:24:40.083 UTC. Do not resend this task. Official checkpoint cleared.
+
+AUTO_CWC_ENABLED remains pending: the 02:20 natural timer run is still running, and it fired during an active turn. Delivery/completion and the first natural recurring agent-mode run at 03:00 UTC need verification; historical script-mode success is separate. No actual outage-continuation test has been claimed. See reports/CWC_END_TO_END_ACCEPTANCE.md for event times and original local receipt paths.
+
+Current training snapshot: started 5/25, byte-verified fixed 512 milestones 4/25, training-plus-evaluation completion 0/25. unet_tail_17 saved 230, STATUS 231. No training change. D01/D02 (host and extension budgets) remain unresolved; D03 (CWC authorization) resolved by R1.
+
+Historical snapshots below retain their original dates.
+
 ## CWC R1 authorization and recovery — 2026-11-19 UTC
 
 The user's ISRJ2_CWC_AUTONOMOUS_SUPERVISOR_R1 explicitly supersedes earlier CWC suspension. This dated entry governs CWC only. Experiment budgets, host restrictions and frozen assets retain their existing constraints.
@@ -21,6 +31,7 @@ B access is unresolved and local-versus-server training authority remains a sepa
 Earlier snapshots below are historical; this dated priority entry takes precedence.
 
 # Current state
+
 
 ## Superseding idea-to-experiment pipeline — 2026-11-17 14:29 UTC
 
@@ -49,33 +60,64 @@ The user explicitly authorized using otherwise idle server GPUs for independent 
 Earlier snapshots below are historical; the dated parallel snapshot above takes precedence.
 
 
+
 ## Superseding snapshot — 2026-11-17 11:45 UTC
 
+
+
 - The user-authorized sequence is active: residual/detection-failure diagnosis → U-Net matched-filter tail-loss screen → separate long-range, frequency-processing, and normalization screens → combine only factors that pass screening, then evaluate on a newly generated independent confirmation set.
+
 - The residual diagnosis is complete as DEV-only hypothesis formation. Matched-filter residual peaks were more strongly associated with jammer-frame false alarms than total residual energy in the inspected DEV sample; this is not causal or independent confirmation evidence. See `evidence/outputs/RESIDUAL_FAILURE_DIAGNOSTIC_REPORT_20261117.md`.
+
 - The matched-filter tail-loss U-Net screen is training on server B (`rsdr-b`, `D:/code/Xin/ISRJ_222`, physical GPU 1), run `unet_mf_tail_screen_20261117_v2`. Latest snapshot at 2026-11-17 11:50:00 UTC: seed 17, epoch 58 committed, epoch 59 in progress; checkpoint SHA-256 `b8364572e52205d8c734b32ff5ccc160bf1f866afecbc6409e4c4bf40d46c54b`. Epoch records 0–58 and 118 recovery archive files are present. The epoch-32 milestone SHA-256 is `6344699d7270a12955412526e3a071fdd7ce9b349aae17c0a2841374118f11e4`. The latest checkpoint sidecar matches its file hash. Frozen config SHA-256 is `cef0a79c03a022e09bce91237f909179a692952c5c44f34c19fd8315a404c1af`.
+
 - The displayed losses are training diagnostics only. No screening performance outcome exists until all paired seeds 17/29/41 complete and the frozen DEV evaluation runs. Do not start the downstream long-range/frequency/normalization factors before applying the prespecified screening rule in `evidence/outputs/UNET_MF_TAIL_SCREEN_PLAN_20261117.md`.
+
 - At the observed epoch rate (about 22.2 s/epoch), remaining work for the three-seed screen is roughly 4.4 compute-hours from this snapshot, before evaluation and queue overhead. This is a rough estimate, not a deadline.
+
 - No local long training is running. No confirmation parents have been generated or consumed for this branch. Training data, checkpoints, raw arrays, caches, and full logs remain off GitHub. Only `paper2` may be pushed.
+
+
 
 The earlier snapshots below are historical and superseded by this entry.
 
+
+
 ## Superseding snapshot — 2026-11-16 14:52 UTC
 
+
+
 - The U-Net/ablation server queue is complete: 15 runs × 256 epochs; five variants have confirmation comparisons. Completion receipt: `evidence/outputs/unet_ablation_3seed_256_20261115/PIPELINE_COMPLETE.json`.
+
 - Max-TF (9 candidates) and GMM-OMP (8 candidates) DEV pilots all failed the predeclared gate. No full-DEV rerun or independent confirmation was opened. BCS GCV selected `λ=0.001`; `λ=0.01` sensitivity remains a small DEV-only oracle comparison.
+
 - A synthetic phase-origin diagnostic showed that the zero-origin and centered dechirp references differ by a constant phase and an exact 450-bin DFT shift under project parameters. The OMP equivariance test passes; this does not justify a revised baseline or another DEV run. See `evidence/outputs/GMM_OMP_PHASE_ORIGIN_DIAGNOSTIC_20261116.md` and `tests/test_gmm_phase_origin_equivalence.py`.
+
 - Server B GPU 1 was idle at the latest check. The Python processes present belonged to unrelated projects. No local or server long training was started in this continuation.
+
 - The next experiment-design task is source-equation and evaluation-target audit for the classical baselines. Only if it identifies a substantive correction should a new, versioned DEV-only calibration plan be frozen. No confirmation data may be used for parameter repair.
+
+
 
 The snapshot below is historical and is superseded by the dated status above.
 
+
+
 Server snapshot 2026-11-15T16:52:41.103691+00:00: TRAINING_QUEUE; job 1/15, unet seed 17, epoch 243. Independently SHA-verified saved epochs at 2026-11-15T16:52:45.331611+00:00: {'unet/seed_17': 242}.
+
+
 
 U-Net seeds 17/29/41 run first, each 256 epochs; then no_dechirp, no_rms, no_pc and no_damage, each with the same three seeds and budget. 15 new runs in total. U-Net has exactly 59,714 active/registered parameters; the full model has 59,714 active plus 53,042 unused registered parameters. The three full epoch-256 checkpoints are reused and their DEV evaluations were rerun on the server. Every new epoch retains a complete recovery archive; every 32 epochs retains a milestone and DEV result. After all training, generate 512 fresh confirmation parents and compare all six models at fixed epoch 256 on the same observations. No best-seed/epoch selection. Report u_nmse, damage, SJRIF, Pd and empirical Pfa. Parent bootstrap intervals are conditional on the three trained seeds; seed SD is separate. Historical full training environment differs from the new server training; do not claim identical trajectories.
 
+
+
 A planned saved-boundary launcher restart preserved epoch 1 and moved execution to a hidden WMI-owned launcher independent of SSH lifetime. The retained CONTROLLER_FAILURE.json for old PID 30264 records that planned stop; assess the current queue/PIDs and saved epochs. Initial TF32 numerical-preflight failure is retained; explicit TF32-off FP32 passed the unchanged tolerances. No U-Net performance conclusion is available yet.
+
+
 
 Original training completed for all eight seeds (17,29,41,53,67,79,97,109) at epoch 256: 64 immutable milestones, 64 DEV v4 evaluations and 2048 epoch metric rows. Original independent TEST used frozen seed 29/epoch 128: 2237 method-condition receipts and 103826 audited parent blocks. The additive F-R7 RSDR-Net comparison completed 564/564 conditions on the same second-paper TEST observations; it compares one frozen seed per model with different training budgets/distributions. The original epoch-256 curves remain DEV evidence. Reports: `PAPER2_PROGRESS_CHECK_20261115.md`, `PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md`.
 
+
+
 Long training is server-only: rsdr-b / DESKTOP-RFFERM3, `D:/code/Xin/ISRJ_222`, physical GPU 1. No local formal training or fallback. First-paper sources, environments and unrelated jobs are read-only. Frozen `paper2/`, `tools/unet_ablation/` and `tools/durable_io.py` must match config SHA bindings. Only the `paper2` remote (`Hxin0203/ISRJ_2`) may be pushed. Do not upload datasets, weights, raw arrays, caches, credentials or full logs. No old Gate access, MCA-ADMM/FNet or ChatGPT collaboration. The user's 2026-11-15 request explicitly authorizes these ablations and supersedes older pause statements.
+
