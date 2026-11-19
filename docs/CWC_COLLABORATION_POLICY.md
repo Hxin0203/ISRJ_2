@@ -38,6 +38,8 @@ The previous review remains MANUAL_READ_ONLY_REVIEW_VERIFIED. Set AUTO_CWC_ENABL
 
 ## Hourly ownership and persistence
 
+Operational exception, 2026-11-19 03:08 UTC: the 02:20 and 03:00 agent wake-ups failed the host Provider identity guard. Keep the existing recurring schedule in script mode until supported recovery and separate delivery verification succeed. Script mode runs the existing hourly audit but does not invoke GPT or execute the prompt below. Manual CWC roundtrip verification does not override this limitation. See reports/ISRJ2_SUPERVISOR_RECOVERY_20261119.md. Do not bypass identity validation or repeatedly dispatch the completed acceptance task.
+
 Keep one recurring supervisor at 0 * * * * UTC. Its agent reads these rules, invokes the existing hourly audit, records actual trigger and provider runtime, checks CWC health, and addresses one bounded independent management item. CWC failure is recorded while local audit and permitted reporting continue. Use the existing hour lock and slot ledger. Repeat invocations must inspect the slot before publication.
 
 Report startup count, verified fixed milestones, and verified training-plus-evaluation completion separately. Preserve every historic snapshot. Server failures have their own result and time. An independent server query cannot change an earlier hour's failure. Evidence conflicts or unavailable services go to the pending-decision register.

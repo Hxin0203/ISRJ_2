@@ -1,3 +1,11 @@
+## 2026-11-19 03:08 UTC supervisor recovery
+
+The 02:20 timer and 03:00 agent-mode hourly run both FAILED with queued heartbeat Provider identity mismatch. The isolated CWC roundtrip remains verified, but AUTO_CWC_ENABLED is false. The sole hourly schedule is restored to script mode; manual scheduler test 2ccf592d-a386-48d7-835b-30d177890aca succeeded at 03:07:11 UTC. This is not a natural-trigger pass. Next natural script run: 04:00 UTC. Do not automatically switch back to agent mode or resend c2c_a719.
+
+The missing 03-hour archive was recovered at 03:06 UTC, SHA 2ce4e7a716a1f7ca14c4f0168141c9819892b4d5. Training snapshot: 5 starts, 4 fixed milestones, 0 complete/evaluated, unet_tail_17 saved 362. B access remains unavailable. A failed same-hour B recheck now records its error without losing the original archive. See reports/ISRJ2_SUPERVISOR_RECOVERY_20261119.md for actual receipts, the passing regression check and remaining limits.
+
+Earlier dated evidence follows.
+
 ## 2026-11-19 02:24 UTC CWC acceptance update
 
 CWC_ROUNDTRIP_VERIFIED: c2c_a719 completed INIT / PLAN / EXECUTED / DONE in the codex-with-chatgpt Project with the happy-liskov connector. Six isolated tests passed and the original fixture hash was unchanged. DONE received 02:24:39.549 UTC; subsequent management inspection succeeded at 02:24:40.083 UTC. Do not resend this task. Official checkpoint cleared.
