@@ -17,27 +17,27 @@ ID 唯一。P2 的 ID 与本地 run 目录同名，training/ 相对 outputs/stru
 | M05 | P1 | 模型思路·近碰撞与稳定性 | 近碰撞与稳定性的前提审查 | 单射近碰撞反例 | COMPLETED | 数学或历史报告 | 仅核验 | 0 GPU | ISRJ2_CLAIM_EVIDENCE_MATRIX.md | 记录条件或反例 | 遇新证据再审 |
 | M06 | P1 | 模型思路·结构分解条件 | 结构分解条件的前提审查 | 子空间交集反例 | COMPLETED | 数学或历史报告 | 仅核验 | 0 GPU | ISRJ2_CLAIM_EVIDENCE_MATRIX.md | 记录条件或反例 | 遇新证据再审 |
 | M07 | P1 | 模型思路·帧内与场景尾部 | 帧内与场景尾部的前提审查 | 聚合次序反例 | COMPLETED | 数学或历史报告 | 仅核验 | 0 GPU | ISRJ2_CLAIM_EVIDENCE_MATRIX.md | 记录条件或反例 | 遇新证据再审 |
-| full_base_17 | P2 | 结构规划 P3／CONFIG | full_base_17 | 本地持久轮次 512 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_base_17 | 最终收据及身份相符 | 读检查点和总收据 |
+| full_base_17 | P2 | 结构规划 P3／CONFIG | full_base_17 | 本地持久轮次 512；固定哈希一致 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_base_17 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_base_29 | P2 | 结构规划 P3／CONFIG | full_base_29 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_base_29 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_base_41 | P2 | 结构规划 P3／CONFIG | full_base_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_base_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_base_53 | P2 | 结构规划 P3／CONFIG | full_base_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_base_53 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_base_67 | P2 | 结构规划 P3／CONFIG | full_base_67 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_base_67 | 最终收据及身份相符 | 读检查点和总收据 |
-| full_tail_17 | P2 | 结构规划 P3／CONFIG | full_tail_17 | 本地持久轮次 512 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
+| full_tail_17 | P2 | 结构规划 P3／CONFIG | full_tail_17 | 本地持久轮次 512；固定哈希一致 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_tail_29 | P2 | 结构规划 P3／CONFIG | full_tail_29 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_tail_29 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_tail_41 | P2 | 结构规划 P3／CONFIG | full_tail_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_tail_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_tail_53 | P2 | 结构规划 P3／CONFIG | full_tail_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_tail_53 | 最终收据及身份相符 | 读检查点和总收据 |
 | full_tail_67 | P2 | 结构规划 P3／CONFIG | full_tail_67 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/full_tail_67 | 最终收据及身份相符 | 读检查点和总收据 |
-| no_dechirp_base_17 | P2 | 结构规划 P3／CONFIG | no_dechirp_base_17 | 本地持久轮次 512 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_base_17 | 最终收据及身份相符 | 读检查点和总收据 |
+| no_dechirp_base_17 | P2 | 结构规划 P3／CONFIG | no_dechirp_base_17 | 本地持久轮次 512；固定哈希一致 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_base_17 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_base_29 | P2 | 结构规划 P3／CONFIG | no_dechirp_base_29 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_base_29 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_base_41 | P2 | 结构规划 P3／CONFIG | no_dechirp_base_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_base_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_base_53 | P2 | 结构规划 P3／CONFIG | no_dechirp_base_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_base_53 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_base_67 | P2 | 结构规划 P3／CONFIG | no_dechirp_base_67 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_base_67 | 最终收据及身份相符 | 读检查点和总收据 |
-| no_dechirp_tail_17 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_17 | 本地持久轮次 475 | RUNNING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
+| no_dechirp_tail_17 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_17 | 本地持久轮次 512；固定哈希一致 | VERIFYING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_tail_29 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_29 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_29 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_tail_41 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_tail_53 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_53 | 最终收据及身份相符 | 读检查点和总收据 |
 | no_dechirp_tail_67 | P2 | 结构规划 P3／CONFIG | no_dechirp_tail_67 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/no_dechirp_tail_67 | 最终收据及身份相符 | 读检查点和总收据 |
-| unet_tail_17 | P2 | 结构规划 P3／CONFIG | unet_tail_17 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
+| unet_tail_17 | P2 | 结构规划 P3／CONFIG | unet_tail_17 | 本地持久轮次 122；latest 哈希一致 | RUNNING | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_17 | 最终收据及身份相符 | 读检查点和总收据 |
 | unet_tail_29 | P2 | 结构规划 P3／CONFIG | unet_tail_29 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_29 | 最终收据及身份相符 | 读检查点和总收据 |
 | unet_tail_41 | P2 | 结构规划 P3／CONFIG | unet_tail_41 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_41 | 最终收据及身份相符 | 读检查点和总收据 |
 | unet_tail_53 | P2 | 结构规划 P3／CONFIG | unet_tail_53 | 仅计划身份 | PLANNED | 冻结身份及主机 | 只读 | 512 计划；本代理 0 GPU | training/unet_tail_53 | 最终收据及身份相符 | 读检查点和总收据 |
@@ -83,3 +83,7 @@ ID 唯一。P2 的 ID 与本地 run 目录同名，training/ 相对 outputs/stru
 | reports/ISRJ2_AUTO_RESEARCH_LOG.md | 8b9849c 2026-11-18T07:30:49-08:00 | 40 | d32f45067bbe7eadb857d4a1d77fac26f1dd6af7244a592e8c9f5a8120637402 |
 | reports/ISRJ2_RESEARCH_GAP_TRACKER.md | 8b9849c 2026-11-18T07:30:49-08:00 | 28 | 7beb7e5249bf96a23d7d837d5c07206719efd97dcdfebae53023402190bd0f6c |
 | reports/STRUCTURED_EVIDENCE_STATUS_20261118.md | dd338de 2026-11-18T07:02:50-08:00 | 26 | 91760f9d3287cef6e16c9316391ebf818d56d109889812629c6717d5e0e5169b |
+
+## 2026-11-19 01:49 UTC 独立复核
+
+2026-11-19 01:49:15 UTC 独立只读核验：启动 5/25，固定 512 轮检查点字节及身份核验 4/25，训练结束与统一评价收据齐全 0/25。unet_tail_17 已保存 122 轮，STATUS 第 123 轮。 [阶段核验及收据](ISRJ2_NEXT_STAGE_VERIFICATION.md)

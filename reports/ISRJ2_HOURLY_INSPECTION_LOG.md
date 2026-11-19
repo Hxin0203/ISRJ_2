@@ -84,3 +84,7 @@ UTC 整点。在旧半小时任务上原位调整，旧两小时任务暂停。�
 本地有启动收据 4/25，最终确认完成 0/25，无启动收据 21。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=475；状态文件 no_dechirp_tail/17 第 476 轮。B 状态未核实。 相对前次快照的保存轮次变化：full_base_17 0、full_tail_17 0、no_dechirp_base_17 0、no_dechirp_tail_17 190。本地 HEAD fcf9245c0bd9，检查前远端 106dc1b6f3b4。
 
 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 RuntimeError。下一次复核进程、持久收据和环境冲突 D01/D02。
+
+## 2026-11-19 01:49 UTC 独立复核
+
+2026-11-19 01:49:15 UTC 独立只读核验：启动 5/25，固定 512 轮检查点字节及身份核验 4/25，训练结束与统一评价收据齐全 0/25。unet_tail_17 已保存 122 轮，STATUS 第 123 轮。 [阶段核验及收据](ISRJ2_NEXT_STAGE_VERIFICATION.md)
