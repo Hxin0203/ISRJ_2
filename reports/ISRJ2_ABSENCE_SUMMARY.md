@@ -41,3 +41,5 @@
 - 2026-11-19 00:00:00：本地有启动收据 4/25，最终确认完成 0/25，无启动收据 21。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=285；状态文件 no_dechirp_tail/17 第 286 轮。B 状态未核实。 出版方书目核验 [Recurrent Kalman Networks: Factorized Inference in High-Dimensional Deep Feature Spaces](https://proceedings.mlr.press/v97/becker19a.html)；仅核题名及原文可达性。 B 只读访问未完成 RuntimeError。
 
 文献候选 2026-11-19（书目检索，内容与相关性待评阅）：[DOI 10.20517/aiagent.2026.31](https://doi.org/10.20517/aiagent.2026.31)、[DOI 10.1038/s42256-024-00962-z](https://doi.org/10.1038/s42256-024-00962-z)、[DOI 10.1016/j.mlwa.2026.101054](https://doi.org/10.1016/j.mlwa.2026.101054)。
+
+- 2026-11-19 01:00:00：本地有启动收据 4/25，最终确认完成 0/25，无启动收据 21。持久轮次 full_base_17=512、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=475；状态文件 no_dechirp_tail/17 第 476 轮。B 状态未核实。 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 RuntimeError。
