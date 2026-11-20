@@ -102,3 +102,5 @@
 文献候选 2026-11-20（书目检索，内容与相关性待评阅）：[DOI 10.20517/aiagent.2026.31](https://doi.org/10.20517/aiagent.2026.31)、[DOI 10.1038/s42256-024-00962-z](https://doi.org/10.1038/s42256-024-00962-z)、[DOI 10.1016/j.mlwa.2026.101054](https://doi.org/10.1016/j.mlwa.2026.101054)。
 
 - 2026-11-20 01:00:00：本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=435、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 MIGRATED_TO_SERVER，记录轮次 436。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 出版方书目核验 [Composing Normalizing Flows for Inverse Problems](https://proceedings.mlr.press/v139/whang21b.html)；仅核题名及原文可达性。 B 只读访问未完成 server read failed: 255 []。
+
+- 2026-11-20 02:00:00：本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=435、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 MIGRATED_TO_SERVER，记录轮次 436。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 server read failed: 255 []。
