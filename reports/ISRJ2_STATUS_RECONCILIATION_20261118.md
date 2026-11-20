@@ -441,3 +441,10 @@
 本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=435、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 MIGRATED_TO_SERVER，记录轮次 436。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 相对前次快照的保存轮次变化：full_base_17 0、full_base_29 0、full_tail_17 0、no_dechirp_base_17 0、no_dechirp_tail_17 0、unet_tail_17 0。本地 HEAD fcf9245c0bd9，检查前远端 11a1b5af28bd。
 
 五项历史摘要哈希、15 条逐种子记录与门槛复算一致；2 项通过 DEV。 B 只读访问未完成 server read failed: 255 []。下一次复核进程、持久收据和环境冲突 D01/D02。
+
+<!-- UTC slot 2026-11-20T18 -->
+## 2026-11-20 18:00:00 UTC
+
+本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=435、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 MIGRATED_TO_SERVER，记录轮次 436。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 相对前次快照的保存轮次变化：full_base_17 0、full_base_29 0、full_tail_17 0、no_dechirp_base_17 0、no_dechirp_tail_17 0、unet_tail_17 0。本地 HEAD fcf9245c0bd9，检查前远端 fce84578b50c。
+
+临时目录六项队列测试通过，含原循环授权反例与隔离许可检查。 B 只读访问未完成 server read failed: 255 []。下一次复核进程、持久收据和环境冲突 D01/D02。
