@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "task": "ISRJ2_CONTINUOUS_RESEARCH_R2",
+  "workspace": "happy-liskov",
+  "tasks": [
+    {
+      "id": "B-R05-REVIEW",
+      "title": "Four-state algebra and counterexample review",
+      "expected_report": "reports/ISRJ2_R05_ALGEBRA_REVIEW_R2.md",
+      "status": "COMPLETED",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 1,
+      "evidence": {
+        "path": "reports/ISRJ2_R05_ALGEBRA_REVIEW_R2.md",
+        "sha256": "b36db6bd8a9373379c5637044c5ede19cc0a35130a8efb9152f14853d0d7400b"
+      },
+      "verification": "Fresh exact rational checks PASS: 9 cases, 5 checks; 14 queue tests PASS"
+    },
+    {
+      "id": "B-R08-REVIEW",
+      "title": "Measurement coverage review",
+      "expected_report": "reports/ISRJ2_R08_MEASUREMENT_REVIEW_R2.md",
+      "status": "COMPLETED",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 2,
+      "evidence": {
+        "path": "reports/ISRJ2_R08_MEASUREMENT_REVIEW_R2.md",
+        "sha256": "3bce3e05fdc3df1a7d060f287c37ef2cd115e507dbdcb33666bfdff6d2a7e1cb"
+      },
+      "verification": "Re-read confirm timing boundary: batch packing through CPU return; detector excluded; divided by 32"
+    },
+    {
+      "id": "B-R01-REVIEW",
+      "title": "Physical transform definitions and boundary review",
+      "expected_report": null,
+      "status": "COMPLETED",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 3,
+      "evidence": {
+        "path": "reports/ISRJ2_R01_TRANSFORM_REVIEW_R3.md",
+        "sha256": "b215fbabfc465105bf0694d32c3bece2989fc78da4702cd110fcdc5bcdf42905"
+      },
+      "verification": "51 abstract transform checks PASS; source and boundary review complete; research hypothesis PARTIAL"
+    },
+    {
+      "id": "B-R02-LITERATURE",
+      "title": "Teacher provenance and nearest-work review",
+      "expected_report": null,
+      "status": "READY",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 4,
+      "evidence": null
+    },
+    {
+      "id": "B-R03-INPUT",
+      "title": "Multi-pulse input information fairness review",
+      "expected_report": null,
+      "status": "READY",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 5,
+      "evidence": null
+    },
+    {
+      "id": "B-R06-ASSUMPTIONS",
+      "title": "Structured decomposition assumption review",
+      "expected_report": null,
+      "status": "READY",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 6,
+      "evidence": null
+    },
+    {
+      "id": "B-R07-GATES",
+      "title": "Flow and SDE entry-condition audit",
+      "expected_report": null,
+      "status": "READY",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 7,
+      "evidence": null
+    },
+    {
+      "id": "B-R09-SCOPE",
+      "title": "External validity scope review",
+      "expected_report": null,
+      "status": "READY",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 8,
+      "evidence": null
+    },
+    {
+      "id": "B-R10-NEIGHBORS",
+      "title": "Direct nearest-work full-text comparison",
+      "expected_report": null,
+      "status": "READY",
+      "authorized": true,
+      "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
+      "dependencies": [],
+      "priority": 9,
+      "evidence": null
+    },
+    {
+      "id": "C01",
+      "title": "Complete confirmation receipt audit",
+      "status": "COMPLETED",
+      "authorized": true,
+      "authorization": "R2 C01 read-only verification",
+      "dependencies": [],
+      "priority": 0,
+      "evidence": {
+        "path": "outputs/status_audit/R3_confirmation_compact_receipt.json",
+        "sha256": "79fe8a4fe568e528945afb23c150fbcce7fda4cda3bc68c979b249acaf06e486"
+      },
+      "release_condition": "25/25 confirmed and complete audit verified; explicit ready with hash and verification required",
+      "verification": "Fresh server B full audit and bootstrap exit 0; compact receipt retains 25 CAL/CONFIRM hashes"
+    }
+  ],
+  "events": [
+    {
+      "utc": "2026-11-23T02:23:09.445941+00:00",
+      "task": "B-R05-REVIEW",
+      "stages": [
+        "VERIFY",
+        "ARCHIVE",
+        "NEXT"
+      ],
+      "verification": "Fresh exact rational checks PASS: 9 cases, 5 checks; 14 queue tests PASS",
+      "evidence": {
+        "path": "reports/ISRJ2_R05_ALGEBRA_REVIEW_R2.md",
+        "sha256": "b36db6bd8a9373379c5637044c5ede19cc0a35130a8efb9152f14853d0d7400b"
+      }
+    },
+    {
+      "utc": "2026-11-23T02:23:09.449982+00:00",
+      "task": "B-R08-REVIEW",
+      "stages": [
+        "VERIFY",
+        "ARCHIVE",
+        "NEXT"
+      ],
+      "verification": "Re-read confirm timing boundary: batch packing through CPU return; detector excluded; divided by 32",
+      "evidence": {
+        "path": "reports/ISRJ2_R08_MEASUREMENT_REVIEW_R2.md",
+        "sha256": "3bce3e05fdc3df1a7d060f287c37ef2cd115e507dbdcb33666bfdff6d2a7e1cb"
+      }
+    },
+    {
+      "utc": "2026-11-23T02:43:13.154420+00:00",
+      "task": "C01",
+      "stages": [
+        "CHECK_EVIDENCE",
+        "READY"
+      ],
+      "verification": "Fresh server B full audit and bootstrap exit 0; compact receipt retains 25 CAL/CONFIRM hashes",
+      "evidence": {
+        "path": "outputs/status_audit/R3_confirmation_compact_receipt.json",
+        "sha256": "79fe8a4fe568e528945afb23c150fbcce7fda4cda3bc68c979b249acaf06e486"
+      }
+    },
+    {
+      "utc": "2026-11-23T02:43:13.158260+00:00",
+      "task": "C01",
+      "stages": [
+        "VERIFY",
+        "ARCHIVE",
+        "NEXT"
+      ],
+      "verification": "Fresh server B full audit and bootstrap exit 0; compact receipt retains 25 CAL/CONFIRM hashes",
+      "evidence": {
+        "path": "outputs/status_audit/R3_confirmation_compact_receipt.json",
+        "sha256": "79fe8a4fe568e528945afb23c150fbcce7fda4cda3bc68c979b249acaf06e486"
+      }
+    },
+    {
+      "utc": "2026-11-23T02:43:13.163721+00:00",
+      "task": "B-R01-REVIEW",
+      "stages": [
+        "VERIFY",
+        "ARCHIVE",
+        "NEXT"
+      ],
+      "verification": "51 abstract transform checks PASS; source and boundary review complete; research hypothesis PARTIAL",
+      "evidence": {
+        "path": "reports/ISRJ2_R01_TRANSFORM_REVIEW_R3.md",
+        "sha256": "b215fbabfc465105bf0694d32c3bece2989fc78da4702cd110fcdc5bcdf42905"
+      }
+    }
+  ],
+  "next_ready": "B-R02-LITERATURE",
+  "script_limit": "Selection and bookkeeping only; no automatic research execution",
+  "updated_utc": "2026-11-23T02:43:13.163726+00:00"
+}
