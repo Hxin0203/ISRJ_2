@@ -1,5 +1,13 @@
 # 研究验证总表 R2
 
+## 2026-11-23 R4-A 当前审计状态
+
+C01及R01/R05/R08审查工作单元已核销，旧c2c_closeout_20261123已DONE。下文旧“C05沿用任务”仅作历史记录，不重派。所有研究方向仍PARTIAL。
+
+R02/R10及R03/R06/R07/R09已生成R4-A部分证据审计：缺失原始来源或全文/逐项验证尚未完成，队列标BLOCKED，不代表研究命题失败。详见各EVIDENCE_AUDIT、CITATION_AUDIT报告。后续只补来源与引用完整性，不扩展为能力优化。
+
+最新小时脚本报告分歧退出1；自然代理唤醒Provider身份错误再次发生。四类自动化能力分开记录于ISRJ2_AUTOMATION_RELIABILITY_R4.md。
+
 任务 ISRJ2_CONTINUOUS_RESEARCH_R2。来源哈希见 ISRJ2_R2_SOURCE_MANIFEST.json；原始建议、历史纠正、追加规划与冻结实验分开。研究状态与工作单元完成状态不同。十个方向均未整体完成，不给卡片完成率充当研究成功率。
 
 |ID|来源章节/版本|研究假设|现有证据|证据等级|缺少证据|状态|前置条件|下一动作|许可范围|验收条件|
@@ -18,3 +26,4 @@
 ## 当前工作单元
 
 稳定Task ID、依赖和下一项由 ISRJ2_RESEARCH_QUEUE.json 维护；research_queue.py仅做证据登记与调度，不执行训练。C01—C04使用已冻结结果；C05沿用c2c_closeout_20261123 iteration 0，不重复INIT；C06公开报告；C07返回R01—R10。失败实验的科学结果为FAILED，审查工作本身可COMPLETED。
+

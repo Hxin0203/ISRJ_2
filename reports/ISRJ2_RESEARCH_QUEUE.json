@@ -52,67 +52,73 @@
       "id": "B-R02-LITERATURE",
       "title": "Teacher provenance and nearest-work review",
       "expected_report": null,
-      "status": "READY",
+      "status": "BLOCKED",
       "authorized": true,
       "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
       "dependencies": [],
       "priority": 4,
-      "evidence": null
+      "evidence": null,
+      "failure": "PARTIAL evidence audit: missing local paired source and primary full-text checks; see reports/ISRJ2_R02_EVIDENCE_AUDIT.md"
     },
     {
       "id": "B-R03-INPUT",
       "title": "Multi-pulse input information fairness review",
       "expected_report": null,
-      "status": "READY",
+      "status": "BLOCKED",
       "authorized": true,
       "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
       "dependencies": [],
       "priority": 5,
-      "evidence": null
+      "evidence": null,
+      "failure": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report"
     },
     {
       "id": "B-R06-ASSUMPTIONS",
       "title": "Structured decomposition assumption review",
       "expected_report": null,
-      "status": "READY",
+      "status": "BLOCKED",
       "authorized": true,
       "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
       "dependencies": [],
       "priority": 6,
-      "evidence": null
+      "evidence": null,
+      "failure": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report"
     },
     {
       "id": "B-R07-GATES",
       "title": "Flow and SDE entry-condition audit",
       "expected_report": null,
-      "status": "READY",
+      "status": "BLOCKED",
       "authorized": true,
       "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
       "dependencies": [],
       "priority": 7,
-      "evidence": null
+      "evidence": null,
+      "failure": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report"
     },
     {
       "id": "B-R09-SCOPE",
       "title": "External validity scope review",
       "expected_report": null,
-      "status": "READY",
+      "status": "BLOCKED",
       "authorized": true,
       "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
       "dependencies": [],
       "priority": 8,
-      "evidence": null
+      "evidence": null,
+      "failure": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report"
     },
     {
       "id": "B-R10-NEIGHBORS",
       "title": "Direct nearest-work full-text comparison",
       "expected_report": null,
-      "status": "READY",
+      "status": "BLOCKED",
       "authorized": true,
       "authorization": "R2 level 1/2: read-only review or isolated correctness; no GPU/training",
       "dependencies": [],
       "priority": 9,
-      "evidence": null
+      "evidence": null,
+      "failure": "PARTIAL citation-only audit; complete author/full-text attribution unavailable; see reports/ISRJ2_R10_CITATION_AUDIT.md"
     },
     {
       "id": "C01",
@@ -199,9 +205,76 @@
         "path": "reports/ISRJ2_R01_TRANSFORM_REVIEW_R3.md",
         "sha256": "b215fbabfc465105bf0694d32c3bece2989fc78da4702cd110fcdc5bcdf42905"
       }
+    },
+    {
+      "utc": "2026-11-23T03:03:25.097920+00:00",
+      "task": "B-R02-LITERATURE",
+      "stages": [
+        "DIAGNOSE",
+        "BLOCKED",
+        "NEXT"
+      ],
+      "verification": "PARTIAL evidence audit: missing local paired source and primary full-text checks; see reports/ISRJ2_R02_EVIDENCE_AUDIT.md",
+      "evidence": null
+    },
+    {
+      "utc": "2026-11-23T03:03:25.104163+00:00",
+      "task": "B-R10-NEIGHBORS",
+      "stages": [
+        "DIAGNOSE",
+        "BLOCKED",
+        "NEXT"
+      ],
+      "verification": "PARTIAL citation-only audit; complete author/full-text attribution unavailable; see reports/ISRJ2_R10_CITATION_AUDIT.md",
+      "evidence": null
+    },
+    {
+      "utc": "2026-11-23T03:04:01.156666+00:00",
+      "task": "B-R03-INPUT",
+      "stages": [
+        "DIAGNOSE",
+        "BLOCKED",
+        "NEXT"
+      ],
+      "verification": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report",
+      "evidence": null
+    },
+    {
+      "utc": "2026-11-23T03:04:01.160205+00:00",
+      "task": "B-R06-ASSUMPTIONS",
+      "stages": [
+        "DIAGNOSE",
+        "BLOCKED",
+        "NEXT"
+      ],
+      "verification": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report",
+      "evidence": null
+    },
+    {
+      "utc": "2026-11-23T03:04:01.163403+00:00",
+      "task": "B-R07-GATES",
+      "stages": [
+        "DIAGNOSE",
+        "BLOCKED",
+        "NEXT"
+      ],
+      "verification": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report",
+      "evidence": null
+    },
+    {
+      "utc": "2026-11-23T03:04:01.168194+00:00",
+      "task": "B-R09-SCOPE",
+      "stages": [
+        "DIAGNOSE",
+        "BLOCKED",
+        "NEXT"
+      ],
+      "verification": "R4-A partial document audit archived; original evidence and full acceptance not verified; see corresponding R4A evidence report",
+      "evidence": null
     }
   ],
-  "next_ready": "B-R02-LITERATURE",
+  "next_ready": null,
   "script_limit": "Selection and bookkeeping only; no automatic research execution",
-  "updated_utc": "2026-11-23T02:43:13.163726+00:00"
+  "updated_utc": "2026-11-23T03:04:01.168205+00:00"
 }
+

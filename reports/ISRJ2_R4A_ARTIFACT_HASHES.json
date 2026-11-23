@@ -1,0 +1,42 @@
+[
+  {
+    "path": "reports/ISRJ2_R02_EVIDENCE_AUDIT.md",
+    "sha256": "d64b8358cbc592252e26dcde385e066524f1992caaa20406652ca620092f56a6"
+  },
+  {
+    "path": "reports/ISRJ2_R10_CITATION_AUDIT.md",
+    "sha256": "be06b00e1a01ff7ece0a0e4218480049df702270bf419715dbbbccd05553d65c"
+  },
+  {
+    "path": "reports/ISRJ2_AUTOMATION_RELIABILITY_R4.md",
+    "sha256": "ce5f468371921820f41558c359799b440a8a8e8fa28bd2e871eb8a039aedeabe"
+  },
+  {
+    "path": "reports/ISRJ2_R03_EVIDENCE_AUDIT_R4A.md",
+    "sha256": "416d2b7c847093f2ef02065fd5764dd498973e4bf34292f388f223e5d79d52fc"
+  },
+  {
+    "path": "reports/ISRJ2_R06_EVIDENCE_AUDIT_R4A.md",
+    "sha256": "a49474401f25a20b898fb653b0b0186fe24c34799a7a98d04c34322b7ecc88eb"
+  },
+  {
+    "path": "reports/ISRJ2_R07_EVIDENCE_AUDIT_R4A.md",
+    "sha256": "ea7ca269fc19e534477790209072c9afdade30945d96c7d30969c4b43a33e6be"
+  },
+  {
+    "path": "reports/ISRJ2_R09_EVIDENCE_AUDIT_R4A.md",
+    "sha256": "46f1e5fcc35a92ca29626c7b8d40a880840ca2cdf3b246b7734754178f5b6688"
+  },
+  {
+    "path": "reports/ISRJ2_RESEARCH_VALIDATION_MATRIX.md",
+    "sha256": "978c62b03cbd58d86f14820804d6e6df3d9e3d934d39321fc7055e527a7c0b39"
+  },
+  {
+    "path": "reports/ISRJ2_ABSENCE_SUMMARY.md",
+    "sha256": "eb654d89888c94f31cab6b62301b5dcf1d9e305855fe9a16b59e85faed4ae80f"
+  },
+  {
+    "path": "reports/ISRJ2_RESEARCH_QUEUE.json",
+    "sha256": "97f4be10e907914640821e2a921313b5cf7433f28c5e7c236dafcb8a562876f3"
+  }
+]
