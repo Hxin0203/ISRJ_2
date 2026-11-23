@@ -697,3 +697,12 @@ UTC 整点。在旧半小时任务上原位调整，旧两小时任务暂停。�
 本地有启动收据 6/25，训练结束收据核验 0/25，无启动收据 19。持久轮次 full_base_17=512、full_base_29=435、full_tail_17=512、no_dechirp_base_17=512、no_dechirp_tail_17=512、unet_tail_17=512；控制器状态 MIGRATED_TO_SERVER，记录轮次 436。B 状态未核实。 512 固定检查点核验 5/25，训练及 DEV 收据齐全 0/25。 相对前次快照的保存轮次变化：full_base_17 0、full_base_29 0、full_tail_17 0、no_dechirp_base_17 0、no_dechirp_tail_17 0、unet_tail_17 0。本地 HEAD fcf9245c0bd9，检查前远端 ac039e6f1ecf。
 
 独立抽象二点算例复算：均值平方误差 1/16，独立同分布样本互比 1/8；不外推到模型性能。 B 只读访问未完成 server read failed: 255 []。下一次复核进程、持久收据和环境冲突 D01/D02。
+
+## 2026-11-23 closeout：实际故障与恢复
+
+回读113条现有小时任务历史。最近失败 run 931f9fb5-3b8a-45ca-a19f-305db8bf2196（2026-11-19 03:00 UTC）为 queued heartbeat Provider identity mismatch；更早另有 SSH 255 和 stdout 协议不匹配，不混称一种故障。最近五次历史脚本运行成功，但任务检查时为 paused，暂停原因未获证据。
+
+已恢复同一任务 492c2e4d-66be-43c3-ad61-5d1a44d10fe0，保持每小时 UTC、脚本模式及身份验证；未新增调度。02:00 UTC 自然运行 b18f4679-d1b2-4192-9eec-d8edfe8579e0 成功归档至 da0159cb7d9134e06389792a35d8ca225c61b876。然而该时槽 server.verified=false，错误 server read failed:255；因此调度/归档恢复，服务器无人值守读取仍 BLOCKED。交互式 Cindy SSH 正常，不能把它的成功移植为定时脚本成功。
+
+脚本已显式指定既有服务器 Python，监视输出将 CAL/CONFIRM 收据存在数分开；9项隔离回归通过。没有更改正在运行的确认程序。自然运行不等于 Agent 自动唤醒恢复，也不等于 CWC 自动协作恢复。原失败回执保留于 outputs/status_audit/closeout_scheduler_runs_20261123.json（仅本地）。
+

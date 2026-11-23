@@ -87,3 +87,8 @@ ID 唯一。P2 的 ID 与本地 run 目录同名，training/ 相对 outputs/stru
 ## 2026-11-19 01:49 UTC 独立复核
 
 2026-11-19 01:49:15 UTC 独立只读核验：启动 5/25，固定 512 轮检查点字节及身份核验 4/25，训练结束与统一评价收据齐全 0/25。unet_tail_17 已保存 122 轮，STATUS 第 123 轮。 [阶段核验及收据](ISRJ2_NEXT_STAGE_VERIFICATION.md)
+
+## 2026-11-23 收尾核销
+
+训练与固定512 DEV各25/25已核验；CAL已完成25/25，独立确认由原控制器接续。不能把CAL算为CONFIRM。权威分阶段核销见 ISRJ2_RESEARCH_STAGE_SUMMARY.md，统计验收见 ISRJ2_CONFIRMATION_FINAL_AUDIT.md。旧条目保留历史时间；D01迁移、D02基础预算交接已由用户授权解决，额外训练预算未增加。结构学习、慢时间、OOD与完整效率均未自动完成。
+
