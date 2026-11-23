@@ -13,3 +13,12 @@
 9. R01–R10研究方向全部PARTIAL；完成25组实验及本轮审查不等于整体研究闭环。
 
 注意：STATUS.json的CONFIRMING记录早于COMPLETE.json，属于过期进度。以完整完成收据及25组验收为准，不重启原控制器。
+
+## 发布与自然验收后续
+
+11个精确文件已通过GitHub插件发布至paper2对应仓库的codex/1103-experiment，回读远端SHA为835714b8a88f036f77c221785b29b8a6a3f5526b。包括最终审计、矩阵、队列、R05/R08/R01审查、R3摘要与哈希、必要队列及抽象测试工具。没有覆盖远端AGENTS或handoff。此SHA为本段之前的成果提交，本段属于后续发布收据。
+
+R3单独自然唤醒验收已安排一次性定时216a72e7-d139-4c2f-8f9f-e087dbfca692，绑定当前任务，沿用当前Provider。它不是第二个循环巡检，不使用run-now，且不重派历史c2c_a719。当前状态PENDING_NATURAL_ACCEPTANCE；成功须有真实自然触发和完整工作单元回执。历史BLOCKED_BY_RUNTIME保留，不能因创建定时器即改为PASS。
+
+R02已开始检索官方蒸馏文献（Hinton 2015；Cho与Hariharan ICCV2019；Qian等ICCV2025），目前只取得题录/摘要证据，尚未完成全文、教师身份和隔离审查，因此仍READY，不伪造COMPLETED。
+
