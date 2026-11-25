@@ -1,0 +1,92 @@
+{
+  "stage": "BACKGROUND_PIPELINE_VERIFIED_WAITING_FOR_TRAINING",
+  "verified_utc": "2026-11-25T09:22:51.871878+00:00",
+  "verifier_source_sha256": "e65bdc3dd946bcb8678ff8508dbc6a5fb458242484b36f2655cf158943b0c372",
+  "launch": {
+    "stage": "POSTTRAINING_LAUNCH_REQUESTED",
+    "launched_utc": "2026-11-25T09:20:42.7420194Z",
+    "method": "hidden WMI process; independent of SSH session",
+    "wrapper_pid": 9044,
+    "root": "D:\\code\\Xin\\ISRJ_222",
+    "launcher_source_sha256": "23c512675966fcd44b9d08365a1ca1be523ad2326b3417a97a946e02b59e56e1",
+    "stdout_path": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed17\\controller_20261125T092042Z.stdout.log",
+    "stderr_path": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed17\\controller_20261125T092042Z.stderr.log"
+  },
+  "posttraining_status": {
+    "stage": "WAITING_FOR_SEED17_TRAINING",
+    "run": "recovp_hybrid_seed17",
+    "seed": 17,
+    "updated_utc": "2026-11-25T09:22:45.491844+00:00",
+    "controller_pid": 7768,
+    "source_sha256": {
+      "tools/finish_recovp_hybrid_seed17.py": "11a90b7cfc885b9e73b37d7b9af942cf09725df00e61687f0973e071da5f0e79",
+      "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563",
+      "tools/vp_1103_recovp_hybrid_evaluate.py": "4f274650986b165bb83d393c6f667d7b48af7d0fcbb822dc1ff068d48a27a062"
+    },
+    "scope": "existing seed17 -> fixed DEV256 -> review; no new training",
+    "training_status": {
+      "stage": "TRAINING",
+      "seed": 17,
+      "epoch": 21,
+      "epochs": 256,
+      "update": 12,
+      "updates_per_epoch": 48,
+      "last_committed_epoch": 20,
+      "metrics": {
+        "total": 0.7148011773824692,
+        "endpoint": 0.565619919449091,
+        "pc": 0.855932455509901,
+        "damage": 0.0605646800249815,
+        "tail": 0.0604664352722466,
+        "final_total": 0.1361751239746809,
+        "stage1_total": 2.3145041428506374,
+        "final_tail": 0.031737250230435166,
+        "stage1_tail": 0.11491673346608877,
+        "tail_peak_db": 3.1035241186618805,
+        "stage1_tail_peak_db": 6.939833700656891,
+        "gradient_norm": 3.4995322227478027,
+        "lr": 0.0009454872848296593
+      },
+      "updated_utc": "2026-11-25T09:22:34.814540+00:00"
+    },
+    "training_process": {
+      "pid": 7964,
+      "acquired_unix": 1795596596.9968276,
+      "pid_alive": true
+    }
+  },
+  "checks": {
+    "controller_alive_after_separate_ssh_reconnect": true,
+    "heartbeat_advanced_after_launch": true,
+    "training_process_alive": true,
+    "controller_sources_match": true,
+    "launcher_source_matches": true,
+    "controller_stderr_empty": true,
+    "snapshot_source_data_and_all_saved_recovery_pass": true,
+    "training_lock_owner_matches": true,
+    "evaluator_frozen_dev_config_preflight_binding_pass": true
+  },
+  "snapshot_sha256": "fe7aff91fd2331383fbdc06fc7c9dd705fd7b4139fd3043ca92f61253b9713f7",
+  "highest_saved_epoch": 20,
+  "verified_recovery_count": 21,
+  "eta": {
+    "recent_epoch_count": 8,
+    "mean_epoch_seconds": 96.20536522497423,
+    "progress_epochs": 20.25,
+    "remaining_seconds_estimate": 22680.414851787675,
+    "completion_utc_estimate": "2026-11-25T15:40:52.234215+00:00",
+    "limitation": "Estimate from recent completed epochs; shared GPU load may change."
+  },
+  "scope": "existing seed17 train256 -> checkpoint/data verification -> two-GPU admission below85 -> core fixed DEV256 -> review",
+  "frozen_dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+  "remaining_task_book_work": [
+    "Base/P0/UNet/RSDR paired comparison and Equal-PFA",
+    "Top-10 parent audit and CPU latency comparison",
+    "complete SUMMARY/REPORT/VERIFICATION delivery"
+  ],
+  "limitations": [
+    "Final checkpoint and DEV performance metrics do not exist yet",
+    "No automatic recovery from server reboot or training numerical failure",
+    "No extra seed or CONFIRM/TEST evaluation"
+  ]
+}

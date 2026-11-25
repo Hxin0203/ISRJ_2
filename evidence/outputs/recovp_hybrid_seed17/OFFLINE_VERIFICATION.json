@@ -1,0 +1,17 @@
+{
+  "stage": "OFFLINE_VERIFICATION_PASS",
+  "recorded_utc": "2026-11-25T09:24:07.676171+00:00",
+  "execution": "local CPU; no CUDA inference or training",
+  "command": "python -m pytest -q tests/test_finish_recovp_hybrid_seed17.py tests/test_server_gpu_admission.py tests/test_recovp_hybrid_evaluate.py",
+  "observed_output": "46 passed in 2.53s",
+  "passed": 46,
+  "failed": 0,
+  "source_sha256": {
+    "tools/finish_recovp_hybrid_seed17.py": "11a90b7cfc885b9e73b37d7b9af942cf09725df00e61687f0973e071da5f0e79",
+    "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563",
+    "tools/vp_1103_recovp_hybrid_evaluate.py": "4f274650986b165bb83d393c6f667d7b48af7d0fcbb822dc1ff068d48a27a062",
+    "tests/test_finish_recovp_hybrid_seed17.py": "3834f90613d26a8a2fba375774857233248a0e60d520f8bd9f744f76408f2308",
+    "tests/test_server_gpu_admission.py": "6972b819f2546ab2b5ee1d654ebff65591caa53d20ecc906da7216d42e970846",
+    "tests/test_recovp_hybrid_evaluate.py": "b6e7a59220188a3d73e974a4403957169a92d867a0e676fff29592a4ca812ed2"
+  }
+}

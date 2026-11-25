@@ -1,0 +1,43 @@
+{
+  "stage": "WAITING_FOR_SEED17_TRAINING",
+  "run": "recovp_hybrid_seed17",
+  "seed": 17,
+  "updated_utc": "2026-11-25T09:22:45.491844+00:00",
+  "controller_pid": 7768,
+  "source_sha256": {
+    "tools/finish_recovp_hybrid_seed17.py": "11a90b7cfc885b9e73b37d7b9af942cf09725df00e61687f0973e071da5f0e79",
+    "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563",
+    "tools/vp_1103_recovp_hybrid_evaluate.py": "4f274650986b165bb83d393c6f667d7b48af7d0fcbb822dc1ff068d48a27a062"
+  },
+  "scope": "existing seed17 -> fixed DEV256 -> review; no new training",
+  "training_status": {
+    "stage": "TRAINING",
+    "seed": 17,
+    "epoch": 21,
+    "epochs": 256,
+    "update": 12,
+    "updates_per_epoch": 48,
+    "last_committed_epoch": 20,
+    "metrics": {
+      "total": 0.7148011773824692,
+      "endpoint": 0.565619919449091,
+      "pc": 0.855932455509901,
+      "damage": 0.0605646800249815,
+      "tail": 0.0604664352722466,
+      "final_total": 0.1361751239746809,
+      "stage1_total": 2.3145041428506374,
+      "final_tail": 0.031737250230435166,
+      "stage1_tail": 0.11491673346608877,
+      "tail_peak_db": 3.1035241186618805,
+      "stage1_tail_peak_db": 6.939833700656891,
+      "gradient_norm": 3.4995322227478027,
+      "lr": 0.0009454872848296593
+    },
+    "updated_utc": "2026-11-25T09:22:34.814540+00:00"
+  },
+  "training_process": {
+    "pid": 7964,
+    "acquired_unix": 1795596596.9968276,
+    "pid_alive": true
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "run_id": "recovp_hybrid_seed17",
+  "scope": "TRAIN_512_DEV_256_ONLY",
+  "seed": 17,
+  "epochs": 256,
+  "milestones": [
+    32,
+    64,
+    96,
+    128,
+    160,
+    192,
+    224,
+    256
+  ],
+  "training_parents": 512,
+  "jammer_variants": [
+    "direct",
+    "repeat",
+    "cyclic"
+  ],
+  "records_per_epoch": 1536,
+  "record_batch": 32,
+  "microbatch_records": 8,
+  "steps_per_epoch": 48,
+  "architecture": "ReCoVPHybrid K=16; parameter count bound by preflight",
+  "objective": {
+    "formula": "L_new(final) + 0.25 * L_new(Stage1)",
+    "base": "paper2.network.training_loss B4 for each stage",
+    "weights": {
+      "endpoint": 1.0,
+      "pulse_compression": 0.1,
+      "target_damage": 1.0,
+      "matched_filter_tail": 0.05,
+      "stage1_auxiliary": 0.25
+    },
+    "tail": "top-8 smooth range-Doppler tail on target-absent jammer state; surrogate only",
+    "correction_semantics": "C_final = observed - factor()['restored']; C_stage1 = observed - factor()['stage1_restored'] = factor()['correction']",
+    "accumulation": "four 8-record microbatches weighted by 8/32; one clip and Adam update per 32 records"
+  },
+  "optimizer": {
+    "class": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "clip_grad_norm": 5.0
+  },
+  "lr_schedule": "one-epoch linear warmup to 1e-3; cosine to 2e-5 by epoch128 and 2e-6 by epoch256",
+  "source_sha256": {
+    "tools/vp_1103_recovp_hybrid.py": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+    "tools/vp_1103_recovp_hybrid_train.py": "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+    "tools/vp_1103_recovp_hybrid_objective.py": "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+    "tools/unet_tail_loss/objective.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208"
+  },
+  "data_sha256": {
+    "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+    "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+    "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+  },
+  "preflight_sha256": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7",
+  "recovery": "immutable epoch_000..256, latest pointer, every-32-epoch milestone, optimizer and RNG state; SHA-256 receipts",
+  "execution": {
+    "hostname": "DESKTOP-RFFERM3",
+    "root": "D:\\code\\Xin\\ISRJ_222",
+    "visible_devices": "1",
+    "physical_gpu_index": 1,
+    "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+    "free_mib_at_start": 16050.0,
+    "total_mib": 16311.0,
+    "utilization_percent_at_start": 0.0,
+    "admission_policy": "concurrent use allowed; start only when selected GPU utilization is below 85 percent",
+    "local_training": false
+  },
+  "precision": {
+    "dtype": "float32",
+    "vp_solve": "complex128",
+    "matmul_precision": "highest",
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true
+  },
+  "data_scope": "Only data/paper2_1103/train.npz and dev.npz are bound; no CONFIRM or TEST access",
+  "prepared_utc": "2026-11-25T08:49:56.926340+00:00"
+}

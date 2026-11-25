@@ -1,0 +1,181 @@
+{
+  "format": "recovp-hybrid-preflight-v1",
+  "stage": "PREFLIGHT_PASSED",
+  "status": "PASS",
+  "scope": "TRAIN_AND_DEV_ONLY",
+  "created_utc": "2026-11-25T08:49:29.669269+00:00",
+  "seed": 17,
+  "epochs": 256,
+  "server": {
+    "host": "DESKTOP-RFFERM3",
+    "root": "D:\\code\\Xin\\ISRJ_222",
+    "cuda_visible_devices": "1",
+    "physical_gpu_index": 1,
+    "physical_gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+    "free_mib_at_start": 16050.0,
+    "total_mib": 16311.0,
+    "utilization_percent_at_start": 0.0,
+    "admission_policy": "concurrent use allowed; start only when selected GPU utilization is below 85 percent"
+  },
+  "precision": {
+    "matmul_precision": "highest",
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true
+  },
+  "source_sha256": {
+    "tools/vp_1103_recovp_hybrid.py": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+    "tools/vp_1103_recovp_hybrid_preflight.py": "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+    "tools/vp_1103_recovp_hybrid_objective.py": "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+    "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+    "paper2/data_1103.py": "366f9d2bddbe23af4aff222b0266c3cfb98d3502554d9cf2528effda2d8d8950",
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/science.py": "69625ecb7c74b2b63ce544d315412dd2ab6755f9d9f16a2c41391ff0e4edfa2d",
+    "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+    "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+    "tools/unet_tail_loss/objective.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+    "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+    "tools/vp_1103_recovp_hybrid_train.py": "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360"
+  },
+  "data_sha256": {
+    "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+    "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+    "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+  },
+  "parameter_report": {
+    "stage1_effective_real_parameters": 28948,
+    "stage2_effective_real_parameters": 28577,
+    "total_effective_real_parameters": 57525,
+    "limit": 59700
+  },
+  "output_shape": [
+    1,
+    2,
+    1800
+  ],
+  "equivariance": {
+    "tests": [
+      {
+        "amplitude": 0.2,
+        "phase_rad": 6.224954128265381,
+        "stage1_residual_rel_error": 3.911907742182308e-10,
+        "stage2_delta_rel_error": 2.5422161797905574e-07,
+        "final_rel_error": 5.651428836017658e-08
+      },
+      {
+        "amplitude": 0.5,
+        "phase_rad": 5.127044677734375,
+        "stage1_residual_rel_error": 5.223622645544879e-10,
+        "stage2_delta_rel_error": 2.5359426558679843e-07,
+        "final_rel_error": 5.608876563201193e-08
+      },
+      {
+        "amplitude": 2.0,
+        "phase_rad": 0.24875827133655548,
+        "stage1_residual_rel_error": 6.549210618267409e-10,
+        "stage2_delta_rel_error": 2.526393245716463e-07,
+        "final_rel_error": 5.712068329444264e-08
+      },
+      {
+        "amplitude": 5.0,
+        "phase_rad": 3.332214117050171,
+        "stage1_residual_rel_error": 6.124727947032227e-10,
+        "stage2_delta_rel_error": 2.510966510271828e-07,
+        "final_rel_error": 5.71667087001515e-08
+      }
+    ],
+    "max_relative_error": 2.5422161797905574e-07,
+    "stage1_column_permutation_relative_error": 0.0,
+    "threshold": 1e-05,
+    "pass": true
+  },
+  "real_train_microbatch": {
+    "records": 8,
+    "input_shape": [
+      256,
+      2,
+      1800
+    ],
+    "loss": 0.8211719989776611,
+    "loss_components": {
+      "total": 0.8211719989776611,
+      "endpoint": 0.6703046560287476,
+      "pc": 1.1688092947006226,
+      "damage": 2.3603206500411034e-08,
+      "tail": 0.6797295808792114,
+      "final_total": 0.6569391489028931,
+      "stage1_total": 0.6569314002990723,
+      "final_tail": 0.5437842011451721,
+      "stage1_tail": 0.5437816381454468,
+      "final_tail_peak_db": 16.063440322875977,
+      "stage1_tail_peak_db": 16.063365936279297,
+      "tail_peak_db_mean": 16.063440322875977,
+      "stage2_delta_rms": 0.00013236318773124367
+    },
+    "trainable_parameter_tensors": 100,
+    "gradient_tensors_with_finite_nonzero_max": 100,
+    "missing_gradient_names": [],
+    "zero_gradient_names": [],
+    "nonfinite_gradient_names": [],
+    "all_trainable_tensors_finite_nonzero": true,
+    "ten_step_seconds": [
+      0.5393347998615354,
+      0.47657219995744526,
+      0.4763340000063181,
+      0.47532339999452233,
+      0.47611539997160435,
+      0.4757491999771446,
+      0.478002900024876,
+      0.4770078998990357,
+      0.48663410008884966,
+      0.4779167000669986
+    ],
+    "mean_microbatch_seconds": 0.483899059984833,
+    "estimated_256_epoch_hours": 6.606835165659587,
+    "estimated_updates": 12288,
+    "estimated_microbatches": 49152
+  },
+  "dev_k12_k16_recall": {
+    "definition": "jammer-only E0_rect matched-filter top-16 peak energy covered by observed j+epsilon candidate within +/-2 samples; proxy, not latent component ground truth",
+    "window": "rect",
+    "tolerance_samples": 2,
+    "types": {
+      "direct": {
+        "records": 2048,
+        "proxy_components": 32768,
+        "k12_proxy_energy_recall": 0.9857210358305417,
+        "k16_proxy_energy_recall": 0.9938754289254716,
+        "absolute_change": 0.008154393094929935
+      },
+      "repeat": {
+        "records": 2048,
+        "proxy_components": 32768,
+        "k12_proxy_energy_recall": 0.9089623762956642,
+        "k16_proxy_energy_recall": 0.9861723359153753,
+        "absolute_change": 0.07720995961971121
+      },
+      "cyclic": {
+        "records": 2048,
+        "proxy_components": 32768,
+        "k12_proxy_energy_recall": 0.9374385555241789,
+        "k16_proxy_energy_recall": 0.9881620985712176,
+        "absolute_change": 0.050723543047038674
+      }
+    },
+    "global_proxy_energy_recall_k12": 0.9330693511781085,
+    "global_proxy_energy_recall_k16": 0.9883470349715128,
+    "global_absolute_change": 0.055277683793404274
+  },
+  "guard": {
+    "confirmation_access": "PROHIBITED",
+    "historical_test_access": "PROHIBITED",
+    "training_started": false
+  },
+  "limitations": [
+    "Finite numerical tests do not prove equivariance for all floating-point inputs.",
+    "The DEV anchor metric is a matched-filter peak proxy because latent echo annotations are absent."
+  ]
+}

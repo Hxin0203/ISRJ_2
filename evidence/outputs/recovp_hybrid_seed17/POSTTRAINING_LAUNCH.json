@@ -1,0 +1,10 @@
+{
+    "stage":  "POSTTRAINING_LAUNCH_REQUESTED",
+    "launched_utc":  "2026-11-25T09:20:42.7420194Z",
+    "method":  "hidden WMI process; independent of SSH session",
+    "wrapper_pid":  9044,
+    "root":  "D:\\code\\Xin\\ISRJ_222",
+    "launcher_source_sha256":  "23c512675966fcd44b9d08365a1ca1be523ad2326b3417a97a946e02b59e56e1",
+    "stdout_path":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed17\\controller_20261125T092042Z.stdout.log",
+    "stderr_path":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed17\\controller_20261125T092042Z.stderr.log"
+}

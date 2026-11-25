@@ -1,0 +1,28 @@
+{
+  "skill": "C:/Users/admin/.codex/skills/clean-user-facing-text/SKILL.md",
+  "audited_utc": "2026-11-25T09:25:10.158754+00:00",
+  "mode": "offline detect-only; no rewrite",
+  "protected": "code, commands, paths, identifiers, formulas, all values and limitations retained",
+  "documents": {
+    "PROGRESS_20261125.md": {
+      "sha256_before": "075257bef1505b48cf78071a3d1c298213035c61e3a5fe3e04ce08fddbbf690a",
+      "sha256_after": "075257bef1505b48cf78071a3d1c298213035c61e3a5fe3e04ce08fddbbf690a",
+      "backup_path": "outputs\\recovp_hybrid_seed17\\prose_audit_backup_20261125\\PROGRESS_20261125.md",
+      "flagged_count": 0,
+      "density_tier": "low",
+      "heuristic_score": 0.0325,
+      "interpretation": "English stylometry is not calibrated for Chinese; no authorship or detector conclusion",
+      "changed": false
+    },
+    "REPRODUCE.md": {
+      "sha256_before": "541ea305a9d447f80ac949866ff0be9e3efa063f2219f5d99ad9d1e1797d5e17",
+      "sha256_after": "541ea305a9d447f80ac949866ff0be9e3efa063f2219f5d99ad9d1e1797d5e17",
+      "backup_path": "outputs\\recovp_hybrid_seed17\\prose_audit_backup_20261125\\REPRODUCE.md",
+      "flagged_count": 0,
+      "density_tier": "low",
+      "heuristic_score": 0.0325,
+      "interpretation": "English stylometry is not calibrated for Chinese; no authorship or detector conclusion",
+      "changed": false
+    }
+  }
+}

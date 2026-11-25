@@ -1,0 +1,18 @@
+﻿{
+    "checked_utc":  "2026-11-25T06:59:35.0454914Z",
+    "status":  "BLOCKED_MISSING_SOURCE_AND_DATA",
+    "hybrid_preflight":  "NOT_EXECUTED",
+    "hybrid_training_started":  false,
+    "saved_epoch_verified":  null,
+    "missing_source_worktree":  ".cindy-worktrees/thoughtful-tesla",
+    "prior_receipt":  "evidence/outputs/recovp_research_stage_review_20261125_r2/STATUS.json",
+    "local_required_files_found":  false,
+    "server":  "rsdr-b",
+    "server_root":  "D:/code/Xin/ISRJ_222",
+    "server_hybrid_files_found":  false,
+    "gpu1_utilization_percent":  0,
+    "gpu1_memory_mib":  0,
+    "confirmation_accessed":  false,
+    "historical_test_accessed":  false,
+    "next_step":  "Restore or locate archived Base source, train/dev datasets and checkpoint identities before implementing Hybrid."
+}

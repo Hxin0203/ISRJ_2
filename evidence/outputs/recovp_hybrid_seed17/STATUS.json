@@ -1,18 +1,25 @@
-﻿{
-    "checked_utc":  "2026-11-25T06:59:35.0454914Z",
-    "status":  "BLOCKED_MISSING_SOURCE_AND_DATA",
-    "hybrid_preflight":  "NOT_EXECUTED",
-    "hybrid_training_started":  false,
-    "saved_epoch_verified":  null,
-    "missing_source_worktree":  ".cindy-worktrees/thoughtful-tesla",
-    "prior_receipt":  "evidence/outputs/recovp_research_stage_review_20261125_r2/STATUS.json",
-    "local_required_files_found":  false,
-    "server":  "rsdr-b",
-    "server_root":  "D:/code/Xin/ISRJ_222",
-    "server_hybrid_files_found":  false,
-    "gpu1_utilization_percent":  0,
-    "gpu1_memory_mib":  0,
-    "confirmation_accessed":  false,
-    "historical_test_accessed":  false,
-    "next_step":  "Restore or locate archived Base source, train/dev datasets and checkpoint identities before implementing Hybrid."
+{
+  "stage": "TRAINING",
+  "seed": 17,
+  "epoch": 21,
+  "epochs": 256,
+  "update": 24,
+  "updates_per_epoch": 48,
+  "last_committed_epoch": 20,
+  "metrics": {
+    "total": 0.14931508153676987,
+    "endpoint": 0.09124984685331583,
+    "pc": 0.12264702469110489,
+    "damage": 0.0440958165563643,
+    "tail": 0.03409431322506862,
+    "final_total": 0.07458101771771908,
+    "stage1_total": 0.29893624782562256,
+    "final_tail": 0.01772461412474513,
+    "stage1_tail": 0.06547879919526167,
+    "tail_peak_db": 0.13313275575637817,
+    "stage1_tail_peak_db": 4.151043340563774,
+    "gradient_norm": 0.8999407887458801,
+    "lr": 0.0009440899084197614
+  },
+  "updated_utc": "2026-11-25T09:22:58.822070+00:00"
 }
