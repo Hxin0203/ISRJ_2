@@ -1,0 +1,22 @@
+{
+  "path": "manuscript\\ReCoVP_Hybrid_论文草稿_20261125.md",
+  "density_tier": "low",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "manuscript\\ReCoVP_Hybrid_论文草稿_20261125.md",
+    "word_count": 3331,
+    "sentence_count": 449,
+    "burstiness_cv": 0.9276,
+    "lexical_diversity": 0.8124,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0325,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}
