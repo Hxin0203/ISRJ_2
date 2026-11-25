@@ -1,0 +1,10 @@
+{
+  "stage": "GITHUB_SOURCE_AND_EVIDENCE_SYNC_VERIFIED",
+  "remote": "paper2",
+  "url": "https://github.com/Hxin0203/ISRJ_2.git",
+  "branch": "codex/hybrid-seed17-pipeline-20261125",
+  "source_and_evidence_commit": "854445cc81f6354e1636eb920cbb79be8a5747b3",
+  "verified_remote_commit": "854445cc81f6354e1636eb920cbb79be8a5747b3",
+  "verified_utc": "2026-11-25T09:26:33.603688+00:00",
+  "note": "This receipt is committed after verification of the source/evidence commit; its own envelope commit is verified separately. No datasets, weights, raw arrays, or full logs were uploaded."
+}
