@@ -1,0 +1,12 @@
+/data/
+/outputs/
+__pycache__/
+*.pyc
+*.log
+*.npz
+*.npy
+*.pt
+*.pth
+*.b64
+*.zlib
+.env

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "identity_jcr_max_db": 0.0,
+  "ideal_removal_min_jcr_db": 164.54260844822818,
+  "gain2_cpl_db": [
+    -6.020599913283967,
+    -6.020599913283967
+  ],
+  "quarter_turn_cpl_db": [
+    -8.686661818707667e-12,
+    -8.686661818707667e-12
+  ],
+  "quarter_turn_gain_imag": [
+    1.0,
+    1.0
+  ],
+  "cfar_valid_cells": 9032,
+  "mathematical_interpretation": "SNR/JSR read native active-support metadata. JCR uses T(Y01)-E; RD peak uses the same residual and the 9032 valid CFAR cells, normalized by mean RD noise power. CPL and angle use T(Y11)-T(Y01); signed and absolute dB are reported separately. BVR is an energy ratio, not a test of whiteness or independence. RD peak is a risk descriptor, not a universal CFAR false-alarm bound. Actual CFAR is always measured. Matched filtering is not generally unitary, and correlated CUTs do not justify an independent-cell product formula. A global phase rotation can leave CPL/angle zero; signed complex gain and pulse-phase errors are retained."
+}

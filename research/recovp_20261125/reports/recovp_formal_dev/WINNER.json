@@ -1,0 +1,11 @@
+{
+  "arm": "ReCoVP-NoEquiv",
+  "seed": 17,
+  "seed17_checkpoint_sha256": "e1ac097830c3ad4837affb75a357ccaed8b46572f3e11ca6a50b0f28521950d9",
+  "extend_seeds": true,
+  "suite_required": true,
+  "independent_confirmation_unlocked": false,
+  "selection_rule": "no-jammer safety, then Pfa asc, Pd desc, RD peak asc, JCR desc, absCPL asc, angle asc; seed17 only",
+  "extension_rule": "Pfa<=.115 AND (mean_abs_CPL<=.8 OR angle<=.05) AND no-jammer-NMSE<=5e-4",
+  "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1"
+}

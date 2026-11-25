@@ -1,0 +1,41 @@
+{
+  "definition": "SNR/JSR 优先使用规范 snr_db/jsr_db；生成器定义为有效目标支撑平均功率/噪声方差、有效干扰支撑平均功率/有效目标支撑平均功率的 10log10。帧值先对有效脉冲线性比取均值再转 dB；SNR 使用全部八脉冲，JSR 仅使用受扰脉冲。整段能量比因占空比不同不替代该口径。",
+  "ranges_metadata_only": {
+    "train": {
+      "snr_db": {
+        "minimum": -29.996089935302734,
+        "maximum": 14.99569034576416
+      },
+      "jsr_db": {
+        "minimum": -11.995431900024414,
+        "maximum": 44.95396041870117
+      }
+    },
+    "dev": {
+      "snr_db": {
+        "minimum": -29.986976623535156,
+        "maximum": 14.95106315612793
+      },
+      "jsr_db": {
+        "minimum": -11.969945907592773,
+        "maximum": 44.974308013916016
+      }
+    }
+  },
+  "snr_edges": [
+    null,
+    0,
+    10,
+    null
+  ],
+  "jsr_edges": [
+    null,
+    0,
+    15,
+    30,
+    null
+  ],
+  "intervals": "left closed, right open; outer bins unbounded",
+  "pooling_unit": "parent; families/pulses/states are not independent samples",
+  "extractor_selection": "TRAIN only; DEV metadata range does not select extractors"
+}

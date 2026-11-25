@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-24T08:56:50.928276+00:00",
+  "explicit_user_release": true,
+  "supersedes_performance_gate": "NO_GO_EXP1_PREFLIGHT",
+  "prior_receipts_preserved": true,
+  "independent_confirmation_unlocked": false,
+  "base_and_noequiv_seed17_required": true,
+  "suite_required_even_if_seed17_uncompetitive": true,
+  "softshare_and_cvar": "NOT_AUTHORIZED_THIS_ROUND"
+}
