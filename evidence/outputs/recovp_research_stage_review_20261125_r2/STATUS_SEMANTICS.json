@@ -1,0 +1,9 @@
+{
+  "research_subject": "ReCoVP-Base",
+  "research_subject_seed": 17,
+  "last_evaluated_control_model": "RSDR-Net",
+  "original_model_field": "progress cursor",
+  "explanation": "Last reference-model loop updates model; report finalizer retains it. Original receipt preserved.",
+  "source": "tools/vp_1103_recovp_dev_gap_audit.py:182",
+  "original_status_sha256": "d0a6793e0160873b30a5bc2a0071c0c04523042424758d1e7139a17ca895d3f4"
+}

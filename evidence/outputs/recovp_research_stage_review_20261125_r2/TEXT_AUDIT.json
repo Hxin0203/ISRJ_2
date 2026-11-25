@@ -1,0 +1,161 @@
+{
+  "offline": true,
+  "prose_rewritten": false,
+  "protected_formulas_values_paths_unchanged": true,
+  "backup_directory": "outputs\\recovp_stage_review_text_backup_20261125",
+  "items": [
+    {
+      "file": "CLAIM_EVIDENCE_MATRIX.md",
+      "sha256_before": "2edee827572e29c3ec06f62a0a904d6a33245394de80ea01401131f6a22c4823",
+      "sha256_after": "2edee827572e29c3ec06f62a0a904d6a33245394de80ea01401131f6a22c4823",
+      "rewritten": false,
+      "exit_code": 0,
+      "audit": {
+        "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\CLAIM_EVIDENCE_MATRIX.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\CLAIM_EVIDENCE_MATRIX.md",
+          "word_count": 193,
+          "sentence_count": 24,
+          "burstiness_cv": 0.3288,
+          "lexical_diversity": 0.9522,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.37,
+          "confidence_level": "LOW",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [
+            "Unnaturally uniform sentence cadence (CV=0.33 < 0.35)"
+          ],
+          "findings_confidence": [
+            "informational"
+          ],
+          "notes": []
+        }
+      }
+    },
+    {
+      "file": "REPRODUCIBILITY_AUDIT.md",
+      "sha256_before": "0b2f7c6b5ec24925eb48a640ba39da85c305496c128b7d57f7a52e11a05181a1",
+      "sha256_after": "0b2f7c6b5ec24925eb48a640ba39da85c305496c128b7d57f7a52e11a05181a1",
+      "rewritten": false,
+      "exit_code": 0,
+      "audit": {
+        "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\REPRODUCIBILITY_AUDIT.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\REPRODUCIBILITY_AUDIT.md",
+          "word_count": 269,
+          "sentence_count": 33,
+          "burstiness_cv": 0.846,
+          "lexical_diversity": 0.8262,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    {
+      "file": "RESEARCH_STAGE_SUMMARY.md",
+      "sha256_before": "d4180cc76da991bb1c11705fa04bedf1740b09686c0e7387b08a43c35159a644",
+      "sha256_after": "d4180cc76da991bb1c11705fa04bedf1740b09686c0e7387b08a43c35159a644",
+      "rewritten": false,
+      "exit_code": 0,
+      "audit": {
+        "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\RESEARCH_STAGE_SUMMARY.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\RESEARCH_STAGE_SUMMARY.md",
+          "word_count": 1361,
+          "sentence_count": 140,
+          "burstiness_cv": 0.6241,
+          "lexical_diversity": 0.6694,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    {
+      "file": "STATISTICAL_REVIEW.md",
+      "sha256_before": "d36df8778965a847ee90f9f90cf0f7735636936977c8afbbb6f43954ceda24f9",
+      "sha256_after": "d36df8778965a847ee90f9f90cf0f7735636936977c8afbbb6f43954ceda24f9",
+      "rewritten": false,
+      "exit_code": 0,
+      "audit": {
+        "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\STATISTICAL_REVIEW.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\STATISTICAL_REVIEW.md",
+          "word_count": 134,
+          "sentence_count": 19,
+          "burstiness_cv": 0.5976,
+          "lexical_diversity": 0.5475,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    {
+      "file": "UNRESOLVED_ISSUES.md",
+      "sha256_before": "11288fa768c0214a33254c1d37a0c45522a884bfe67e7a006e0bf45d254730c7",
+      "sha256_after": "11288fa768c0214a33254c1d37a0c45522a884bfe67e7a006e0bf45d254730c7",
+      "rewritten": false,
+      "exit_code": 0,
+      "audit": {
+        "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\UNRESOLVED_ISSUES.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "evidence\\outputs\\recovp_research_stage_review_20261125_r2\\UNRESOLVED_ISSUES.md",
+          "word_count": 108,
+          "sentence_count": 20,
+          "burstiness_cv": 0.332,
+          "lexical_diversity": 0.9892,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.37,
+          "confidence_level": "LOW",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [
+            "Unnaturally uniform sentence cadence (CV=0.33 < 0.35)"
+          ],
+          "findings_confidence": [
+            "informational"
+          ],
+          "notes": []
+        }
+      }
+    }
+  ]
+}

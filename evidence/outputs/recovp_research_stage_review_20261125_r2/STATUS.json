@@ -1,0 +1,82 @@
+{
+  "stage": "COMPLETE_DOCUMENT_REVIEW_AWAITING_MANUAL_REVIEW",
+  "completed_utc": "2026-11-25T06:50:13.569167+00:00",
+  "research_subject": "ReCoVP-Base",
+  "research_subject_seed": 17,
+  "last_evaluated_control_model": "RSDR-Net",
+  "original_status_receipt_preserved": true,
+  "source_worktree": ".cindy-worktrees/thoughtful-tesla",
+  "source_archive": "evidence/outputs/recovp_research_closure_20261125_063119",
+  "source_worktree_commit": "fcf9245c0bd9d2a85d3261138908b9852df2a750",
+  "current_document_checks": 456,
+  "failed_current_document_checks": 0,
+  "text_and_source_files_rehashed": 204,
+  "binary_assets_not_reopened": 20,
+  "prior_archive_checks": 547,
+  "prior_archive_checks_independently_rerun": false,
+  "training_updates": 0,
+  "inference_runs": 0,
+  "new_bootstrap_runs": 0,
+  "new_scan_conditions": 0,
+  "data_arrays_opened": false,
+  "weights_loaded": false,
+  "confirmation_accessed": false,
+  "historical_test_accessed": false,
+  "model_or_threshold_changes": false,
+  "hybrid_implemented_or_trained": false,
+  "hybrid_preflight_status": "NOT_EXECUTED",
+  "hybrid_performance_targets": "UNVERIFIED",
+  "cvednet_task": "CANCELLED_BY_USER_NO_REPRODUCTION",
+  "pause_markers_preserved": true,
+  "server_process_state_checked": false,
+  "next_tasks_started": false,
+  "publication": {
+    "repository": "Hxin0203/ISRJ_2",
+    "branch": "codex/recovp-audit-20261125",
+    "parent_observed": "519b39cf68af995da7981ddb26fc5567b429676f",
+    "remote_commit_receipt": "outputs/recovp_stage_review_sync_20261125.json"
+  },
+  "review_script_sha256": "36cfac1cdb1c9784b54a2b2fadeafe118a87c22ba7c9a681e3c08c5e37db42f1",
+  "outputs": {
+    "CLAIM_EVIDENCE_MATRIX.md": {
+      "bytes": 5153,
+      "sha256": "2edee827572e29c3ec06f62a0a904d6a33245394de80ea01401131f6a22c4823"
+    },
+    "DOCUMENT_RECHECK.json": {
+      "bytes": 142288,
+      "sha256": "a5be448719d931bce5fa16d44d5a4f9fcfef9bbb731ece8c6e407cc91d0da4f8"
+    },
+    "EXISTING_RESULTS.json": {
+      "bytes": 128957,
+      "sha256": "87eddd108704fb4f3e9fd5ba2f19414d28f2031acc1ccc0947b8e70ad9426c3a"
+    },
+    "INPUT_MANIFEST.json": {
+      "bytes": 40184,
+      "sha256": "eea082755bb368d1b52e23c76e39ab04856a3e81e689a10a11bb9e3bfd46a3f9"
+    },
+    "REPRODUCIBILITY_AUDIT.md": {
+      "bytes": 4637,
+      "sha256": "0b2f7c6b5ec24925eb48a640ba39da85c305496c128b7d57f7a52e11a05181a1"
+    },
+    "RESEARCH_STAGE_SUMMARY.md": {
+      "bytes": 12009,
+      "sha256": "d4180cc76da991bb1c11705fa04bedf1740b09686c0e7387b08a43c35159a644"
+    },
+    "STATISTICAL_REVIEW.md": {
+      "bytes": 2021,
+      "sha256": "d36df8778965a847ee90f9f90cf0f7735636936977c8afbbb6f43954ceda24f9"
+    },
+    "STATUS_SEMANTICS.json": {
+      "bytes": 442,
+      "sha256": "85cb0adbbac5e68b7a60a147cd91ea58e3ec74d265744eaf9bead30af77de590"
+    },
+    "TEXT_AUDIT.json": {
+      "bytes": 5816,
+      "sha256": "9cf7be881fc02458ab4b34159b938fa13cbcbba5888e7d24c0c60f8af2668377"
+    },
+    "UNRESOLVED_ISSUES.md": {
+      "bytes": 2504,
+      "sha256": "11288fa768c0214a33254c1d37a0c45522a884bfe67e7a006e0bf45d254730c7"
+    }
+  }
+}
