@@ -1,0 +1,23 @@
+{
+  "captured_utc": "2026-11-25T02:18:48.937433+00:00",
+  "state": "WAITING_SAFE_GPU_SLOT",
+  "parameters": 58943,
+  "widths": [
+    21,
+    40,
+    74
+  ],
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "epochs": 256,
+  "micro_batch": 8,
+  "cpu_preflight": "PASS",
+  "training_loop_ast_parity": "PASS",
+  "formal_training_started": false,
+  "formal_results_available": false,
+  "independent_confirmation_unlocked": false,
+  "scope": "Exact parameter budget architecture control, no disconnected padding; keep original controller and frozen scans intact"
+}
