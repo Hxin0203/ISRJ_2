@@ -1,0 +1,22 @@
+﻿{
+  "path": "manuscript/recovp_paper_20261126/ISRJ_2论文草稿.md",
+  "density_tier": "low",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "manuscript/recovp_paper_20261126/ISRJ_2论文草稿.md",
+    "word_count": 4227,
+    "sentence_count": 483,
+    "burstiness_cv": 0.832,
+    "lexical_diversity": 0.7576,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0625,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}
