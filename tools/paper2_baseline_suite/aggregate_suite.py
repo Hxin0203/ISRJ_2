@@ -28,7 +28,8 @@ DEV_METRICS = ("u_nmse", "damage", "no_jammer_pooled_nmse", "background_nmse", "
                "false_peak_suppression_db", "pd", "frame_pfa_jammer", "frame_pfa_noise")
 LOWER = {"u_nmse", "damage", "no_jammer_pooled_nmse", "background_nmse", "frame_pfa_jammer", "frame_pfa_noise"}
 # Folder names are authoritative (an early max_tf ROW.json carries the label "Max-TF").
-FOLDER_LABELS = {"max_tf": "Max-TF (1103 cfg)", "max_tf_isrj1": "Max-TF", "gmm_omp": "GMM-OMP", "cvednet": "CVEDNet"}
+FOLDER_LABELS = {"max_tf": "Max-TF (1103 cfg)", "max_tf_isrj1": "Max-TF", "gmm_omp": "GMM-OMP", "cvednet": "CVEDNet",
+                 "rsdr_net": "RSDR-Net"}
 
 
 def boot(d, seed):

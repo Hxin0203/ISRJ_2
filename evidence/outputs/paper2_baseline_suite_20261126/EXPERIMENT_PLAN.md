@@ -1,4 +1,4 @@
-# ISRJ_2 对比实验总计划（除本模型外）
+﻿# ISRJ_2 对比实验总计划（除本模型外）
 
 版本：2026-11-26（UTC）。本文件规定本轮及后续对比实验的顺序、资源、输入身份、产出与对应的论文表图。ReCoVP-Hybrid 的8个种子仍在服务器B上训练，本计划不改动该任务，也不新增 Hybrid 种子。所有长任务只在服务器B（`rsdr-b`，`D:/code/Xin/ISRJ_222`）运行；GPU 准入按利用率低于85%判定，不停止、不迁移任何在跑任务。不读取 CONFIRM 或历史 TEST 作为选型依据。
 
@@ -44,3 +44,11 @@
 ## 4 统计口径
 
 物理场景为独立单元；三种转发变体先在场景内平均。配对差值为 Hybrid 减基线，基线取3个种子的逐场景平均；同时报告逐种子差值。区间为4000次场景bootstrap的2.5%/97.5%分位。种子间标准差单独报告，不与场景区间合并。单种子 Hybrid 与3种子平均基线的比较只说明该训练实例的位置，Hybrid 的训练随机性待8种子结果补齐。
+
+## 5 2026-11-26 17:08 UTC 更新：服务器总控接管剩余步骤
+
+- 总控：`tools/paper2_baseline_suite/controller.py`，服务器 B 上以 WMI 托管进程运行，状态写入 `outputs/paper2_baseline_suite_20261126/CONTROLLER_STATUS.json`（含心跳），日志在 `controller_logs/`。本机断线不影响执行。
+- 顺序：等 E3 队列完成 → E7b RSDR-Net（第一篇冻结权重，原生种子 40312102、32 轮，DEV256 + 等虚警）→ 汇总 `SUITE_SUMMARY.json`/`SUITE_TABLES.md` → E5 登记、生成、评测、汇总 → 补入 E3 队列启动后才完成的 Hybrid 种子（含 seed41）→ 之后每 30 分钟检查新完成的 Hybrid 种子并接入 E3/E5，至 8 个种子或 96 小时为止。
+- E4 决定：RSDR-Net 接入同一评测（E7b）。ReCoVP-Base/P0 的检查点所在工作树已不存在、权重未上传 GitHub，不重新训练；论文中只引用已封存的 DEV 点估计与各自区间。
+- E5 决定：SNR {-25,…,10} dB × JSR {0,10,20,30} dB，共 32 格，每格 64 个物理场景，第 k 格种子 2026112700+k；先写 `E5/REGISTRATION.json` 再生成，生成后核对与 TRAIN/DEV/确认集/两套等虚警集无场景重叠；只用于评测。方法：Hybrid（已完成种子）、CorrectionNet、U-Net（各3种子）、CVEDNet、RSDR-Net、Max-TF（第一篇配置）、GMM-OMP。切片宽度与未受扰比例扫描需要生成器新接口，本轮不做。
+- BCS 按用户要求不进论文表格，汇总时排除。
