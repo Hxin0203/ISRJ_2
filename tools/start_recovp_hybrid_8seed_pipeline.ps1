@@ -20,8 +20,8 @@ if ($existing) {
     throw "An 8-seed pipeline controller already exists: $($existing.ProcessId -join ',')"
 }
 
-$innerCommand = "`"$python`" -u -m tools.run_recovp_hybrid_8seed_pipeline --poll-seconds 60 --retry-seconds 60 >> `"$stdoutPath`" 2>&1"
-$commandLine = "cmd.exe /d /s /c `"`"$innerCommand`"`""
+$wrapper = Join-Path $root 'tools\run_recovp_hybrid_8seed_pipeline.cmd'
+$commandLine = "cmd.exe /d /c $wrapper"
 $created = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{
     CommandLine = $commandLine
     CurrentDirectory = $root
@@ -37,6 +37,7 @@ $launch = [ordered]@{
     repository_root = $root
     pid = $created.ProcessId
     process_creation = 'Win32_Process.Create'
+    command_line = $commandLine
     executable = $python
     arguments = @('-m', 'tools.run_recovp_hybrid_8seed_pipeline', '--poll-seconds', '60', '--retry-seconds', '60')
     stdout = $stdoutPath
