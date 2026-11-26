@@ -1,0 +1,116 @@
+{
+ "family": "CorrectionNet",
+ "seed": 17,
+ "epoch": 256,
+ "created_utc": "2026-11-26T15:13:58Z",
+ "server": "DESKTOP-RFFERM3",
+ "gpu_admission": {
+  "physical_gpu_index": 0,
+  "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+  "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+  "utilization_percent": 4.0,
+  "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+ },
+ "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_256_epoch_8seed_20261114\\seed_17\\epoch_256.pt",
+ "checkpoint_sha256": "48f00ade49e240f182361611d854d41a8075bf72f93cda8e5deaf9950f0f31d1",
+ "bindings": [
+  "sidecar",
+  "training_complete_milestone_256"
+ ],
+ "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+ "evaluation_sha256": "3da7c3b28afb35bedbd9eea4ad1d4bb792089a216472d0930e999128914f15f2",
+ "calibration_parent_ids_sha256": "e98797a3526ff6a52bb658090083976b422438c70f77b0e5ade4feda6fc39e4e",
+ "evaluation_parent_ids_sha256": "ab43530146297b27fb38121c4ce13020f53ec18075b38ee32c00982f52c9fc67",
+ "calibration_frames": 3072,
+ "evaluation_frames": 6144,
+ "curve": [
+  {
+   "target_frame_pfa": 0.001,
+   "threshold_ratio": 50.971124598397445,
+   "cal_frame_pfa": 0.0009765625,
+   "eval_frame_pfa_jammer": 0.0008138020833333334,
+   "eval_frame_pfa_noise": 0.0,
+   "eval_pd": 0.3502604166666667,
+   "eval_pd_no_jammer": 0.41455078125
+  },
+  {
+   "target_frame_pfa": 0.002,
+   "threshold_ratio": 46.90685207358433,
+   "cal_frame_pfa": 0.001953125,
+   "eval_frame_pfa_jammer": 0.0017903645833333333,
+   "eval_frame_pfa_noise": 0.0,
+   "eval_pd": 0.3756510416666667,
+   "eval_pd_no_jammer": 0.4501953125
+  },
+  {
+   "target_frame_pfa": 0.005,
+   "threshold_ratio": 42.731330251742314,
+   "cal_frame_pfa": 0.0048828125,
+   "eval_frame_pfa_jammer": 0.0032552083333333335,
+   "eval_frame_pfa_noise": 0.0,
+   "eval_pd": 0.40869140625,
+   "eval_pd_no_jammer": 0.49072265625
+  },
+  {
+   "target_frame_pfa": 0.01,
+   "threshold_ratio": 36.76829927127121,
+   "cal_frame_pfa": 0.009765625,
+   "eval_frame_pfa_jammer": 0.008138020833333334,
+   "eval_frame_pfa_noise": 0.0,
+   "eval_pd": 0.4749348958333333,
+   "eval_pd_no_jammer": 0.56005859375
+  },
+  {
+   "target_frame_pfa": 0.02,
+   "threshold_ratio": 29.95202327162448,
+   "cal_frame_pfa": 0.019856770833333332,
+   "eval_frame_pfa_jammer": 0.019205729166666668,
+   "eval_frame_pfa_noise": 0.0,
+   "eval_pd": 0.5735677083333334,
+   "eval_pd_no_jammer": 0.6513671875
+  },
+  {
+   "target_frame_pfa": 0.05,
+   "threshold_ratio": 21.66925948297646,
+   "cal_frame_pfa": 0.0498046875,
+   "eval_frame_pfa_jammer": 0.0439453125,
+   "eval_frame_pfa_noise": 0.0,
+   "eval_pd": 0.7255859375,
+   "eval_pd_no_jammer": 0.79833984375
+  },
+  {
+   "target_frame_pfa": 0.1,
+   "threshold_ratio": 16.137969692267866,
+   "cal_frame_pfa": 0.09993489583333333,
+   "eval_frame_pfa_jammer": 0.09049479166666667,
+   "eval_frame_pfa_noise": 0.00048828125,
+   "eval_pd": 0.83544921875,
+   "eval_pd_no_jammer": 0.88720703125
+  }
+ ],
+ "main_pfa": 0.01,
+ "diagnostics_mean": {
+  "resid_peak_noise_units": 11.880390889779312,
+  "resid_concentration": 0.008824510984532888,
+  "resid_energy_ratio": 0.055903030724113935,
+  "gain_error": 0.010303893759992895,
+  "orth_error": 0.04505814937409744,
+  "e0_modification": 0.00010420165968440597,
+  "resid_peak_noise_units_median": 1.5923533824900948,
+  "resid_concentration_median": 0.006136219652721405
+ },
+ "acceptance_vs_20261116": {
+  "old_threshold": 36.76829927127121,
+  "new_threshold": 36.76829927127121,
+  "threshold_rel_diff": 0.0,
+  "old_eval_pd": 0.4749348958333333,
+  "new_eval_pd": 0.4749348958333333,
+  "old_eval_pfa": 0.008138020833333332,
+  "new_eval_pfa": 0.008138020833333334,
+  "old_checkpoint_sha256": "48f00ade49e240f182361611d854d41a8075bf72f93cda8e5deaf9950f0f31d1",
+  "same_checkpoint": true,
+  "pass": true
+ },
+ "inference_and_scoring_seconds": 165.42295169993304,
+ "protocol": "copied from tools/post_ablation_analysis.py: frame-max CUT/CA-mean ratio on J+E, method/seed threshold at empirical calibration quantile (method='higher'); detection if target range +/-1 at nearest Doppler bin exceeds it. Jammer variants are frames."
+}
