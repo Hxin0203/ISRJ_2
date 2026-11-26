@@ -1,0 +1,575 @@
+{
+  "created": "2026-11-25",
+  "hybrid": {
+    "run": "recovp_hybrid_seed17",
+    "seed": 17,
+    "epoch": 256,
+    "parents": 256,
+    "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+    "data_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "evaluation_json_sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1"
+  },
+  "rsdr": {
+    "seed": 40312102,
+    "epoch": 32,
+    "main_conditions": 168,
+    "verified_conditions": {
+      "complete": 168,
+      "expected": 168
+    },
+    "freeze_sha256": "383289fc412932cd55fdf70351b03dac118cc6154d5df6885d8af72a91a87ac2",
+    "condition_csv_sha256": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52"
+  },
+  "metric_definition_mapping": {
+    "u_nmse": "identical formula to manuscript e_U",
+    "damage": "identical target-increment formula to manuscript e_S",
+    "pd": "target detection probability",
+    "frame_pfa_jammer": "frame-level false alarm rate on jammer-only/no-target state",
+    "sjrif_db": "SJRI-F dB"
+  },
+  "aggregation": {
+    "hybrid": "DEV parent means; 5 dB SNR and 10 dB JSR bins; parent bootstrap 95% CI; all jammer variants pooled per physical parent",
+    "rsdr": "equal mean over exact condition-level means in each matching bin; 3 jammer classes; 256 scenarios per condition; no aggregated CI"
+  },
+  "overall_descriptive": {
+    "u_nmse": {
+      "hybrid_mean_dev": 0.043122743968323995,
+      "hybrid_ci95": [
+        0.03705852159360198,
+        0.049500039547729136
+      ],
+      "hybrid_parents": 256,
+      "rsdr_equal_condition_mean_main168": 0.10230175214753935,
+      "rsdr_conditions": 168
+    },
+    "damage": {
+      "hybrid_mean_dev": 0.059674371786718874,
+      "hybrid_ci95": [
+        0.0517334328544674,
+        0.06870529485728903
+      ],
+      "hybrid_parents": 256,
+      "rsdr_equal_condition_mean_main168": 0.07176881587879864,
+      "rsdr_conditions": 168
+    },
+    "pd": {
+      "hybrid_mean_dev": 0.87109375,
+      "hybrid_ci95": [
+        0.8319986979166667,
+        0.9088541666666666
+      ],
+      "hybrid_parents": 256,
+      "rsdr_equal_condition_mean_main168": 0.6796875,
+      "rsdr_conditions": 168
+    },
+    "frame_pfa_jammer": {
+      "hybrid_mean_dev": 0.05598958333333333,
+      "hybrid_ci95": [
+        0.0390625,
+        0.07421874999999999
+      ],
+      "hybrid_parents": 256,
+      "rsdr_equal_condition_mean_main168": 0.07075427827380952,
+      "rsdr_conditions": 168
+    },
+    "sjrif_db": {
+      "hybrid_mean_dev": 11.096816076501504,
+      "hybrid_ci95": [
+        10.2878784256124,
+        11.85347165835693
+      ],
+      "hybrid_parents": 256,
+      "rsdr_equal_condition_mean_main168": 4.736024431107377,
+      "rsdr_conditions": 168
+    }
+  },
+  "strata": {
+    "snr_db": [
+      {
+        "bin": "[-20,-15)",
+        "hybrid_parents": 13,
+        "rsdr_conditions_per_metric": 12,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.026169789634800635,
+            "hybrid_ci95": [
+              0.014198509922586127,
+              0.040982488921207094
+            ],
+            "rsdr_mean_condition_average": 0.025709545938326347
+          },
+          "damage": {
+            "hybrid_mean": 0.06739975453461497,
+            "hybrid_ci95": [
+              0.030643499542543785,
+              0.12402244060123871
+            ],
+            "rsdr_mean_condition_average": 0.05386483514603047
+          },
+          "pd": {
+            "hybrid_mean": 0.46153846153846156,
+            "hybrid_ci95": [
+              0.23076923076923078,
+              0.6923076923076923
+            ],
+            "rsdr_mean_condition_average": 0.9622395833333334
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.07692307692307693,
+            "hybrid_ci95": [
+              0.0,
+              0.15384615384615383
+            ],
+            "rsdr_mean_condition_average": 0.0322265625
+          },
+          "sjrif_db": {
+            "hybrid_mean": 9.884455103816956,
+            "hybrid_ci95": [
+              7.223743374499429,
+              12.352081501008508
+            ],
+            "rsdr_mean_condition_average": 5.252148651589137
+          }
+        }
+      },
+      {
+        "bin": "[-15,-10)",
+        "hybrid_parents": 63,
+        "rsdr_conditions_per_metric": 12,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.03436333531480319,
+            "hybrid_ci95": [
+              0.024354895624485045,
+              0.04596055522041476
+            ],
+            "rsdr_mean_condition_average": 0.03683857315507157
+          },
+          "damage": {
+            "hybrid_mean": 0.04693077351842045,
+            "hybrid_ci95": [
+              0.033504972477802285,
+              0.06493832976204254
+            ],
+            "rsdr_mean_condition_average": 0.07061291692077794
+          },
+          "pd": {
+            "hybrid_mean": 0.7619047619047619,
+            "hybrid_ci95": [
+              0.6613756613756615,
+              0.857142857142857
+            ],
+            "rsdr_mean_condition_average": 0.9996744791666666
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.047619047619047616,
+            "hybrid_ci95": [
+              0.021164021164021163,
+              0.07936507936507935
+            ],
+            "rsdr_mean_condition_average": 0.042643229166666664
+          },
+          "sjrif_db": {
+            "hybrid_mean": 9.934982232807014,
+            "hybrid_ci95": [
+              8.324728779796281,
+              11.544912140671835
+            ],
+            "rsdr_mean_condition_average": 5.714645340442439
+          }
+        }
+      },
+      {
+        "bin": "[-10,-5)",
+        "hybrid_parents": 108,
+        "rsdr_conditions_per_metric": 12,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.04219640721710526,
+            "hybrid_ci95": [
+              0.033350659570996435,
+              0.052021305665880514
+            ],
+            "rsdr_mean_condition_average": 0.05821539353221391
+          },
+          "damage": {
+            "hybrid_mean": 0.06162319269072442,
+            "hybrid_ci95": [
+              0.049081955171755884,
+              0.07936692659271993
+            ],
+            "rsdr_mean_condition_average": 0.08816004459373082
+          },
+          "pd": {
+            "hybrid_mean": 0.9012345679012346,
+            "hybrid_ci95": [
+              0.8487654320987654,
+              0.9444444444444444
+            ],
+            "rsdr_mean_condition_average": 1.0
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.07098765432098765,
+            "hybrid_ci95": [
+              0.040123456790123455,
+              0.10493827160493828
+            ],
+            "rsdr_mean_condition_average": 0.0634765625
+          },
+          "sjrif_db": {
+            "hybrid_mean": 11.246566786995162,
+            "hybrid_ci95": [
+              10.10892691173459,
+              12.373875591642106
+            ],
+            "rsdr_mean_condition_average": 5.82000383906022
+          }
+        }
+      },
+      {
+        "bin": "[-5,0)",
+        "hybrid_parents": 59,
+        "rsdr_conditions_per_metric": 12,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.05077549310572689,
+            "hybrid_ci95": [
+              0.03672446776261123,
+              0.06595510012012148
+            ],
+            "rsdr_mean_condition_average": 0.10183537984633044
+          },
+          "damage": {
+            "hybrid_mean": 0.06702085999197653,
+            "hybrid_ci95": [
+              0.05578432457721813,
+              0.07777568840790913
+            ],
+            "rsdr_mean_condition_average": 0.11277213631976744
+          },
+          "pd": {
+            "hybrid_mean": 0.9943502824858756,
+            "hybrid_ci95": [
+              0.983050847457627,
+              1.0
+            ],
+            "rsdr_mean_condition_average": 1.0
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.03954802259887006,
+            "hybrid_ci95": [
+              0.01694915254237288,
+              0.06779661016949153
+            ],
+            "rsdr_mean_condition_average": 0.0927734375
+          },
+          "sjrif_db": {
+            "hybrid_mean": 12.050855334041861,
+            "hybrid_ci95": [
+              10.362290616557928,
+              13.779897265612325
+            ],
+            "rsdr_mean_condition_average": 5.858827844422038
+          }
+        }
+      },
+      {
+        "bin": "[0,5)",
+        "hybrid_parents": 13,
+        "rsdr_conditions_per_metric": 12,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.07548915331697528,
+            "hybrid_ci95": [
+              0.03335152928107773,
+              0.1242940331671831
+            ],
+            "rsdr_mean_condition_average": 0.2006129145190003
+          },
+          "damage": {
+            "hybrid_mean": 0.06417446820497671,
+            "hybrid_ci95": [
+              0.04222363947573087,
+              0.08846548798778438
+            ],
+            "rsdr_mean_condition_average": 0.12824751640469764
+          },
+          "pd": {
+            "hybrid_mean": 1.0,
+            "hybrid_ci95": [
+              1.0,
+              1.0
+            ],
+            "rsdr_mean_condition_average": 1.0
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.02564102564102564,
+            "hybrid_ci95": [
+              0.0,
+              0.07692307692307693
+            ],
+            "rsdr_mean_condition_average": 0.1640625
+          },
+          "sjrif_db": {
+            "hybrid_mean": 12.365649297228872,
+            "hybrid_ci95": [
+              8.92864895461944,
+              15.99167998293182
+            ],
+            "rsdr_mean_condition_average": 5.871978449056239
+          }
+        }
+      }
+    ],
+    "jsr_db": [
+      {
+        "bin": "[-10,0)",
+        "hybrid_parents": 2,
+        "rsdr_conditions_per_metric": 0,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.001055293734956973,
+            "hybrid_ci95": [
+              0.0004191409394712654,
+              0.0016914465304426805
+            ],
+            "rsdr_mean_condition_average": null
+          },
+          "damage": {
+            "hybrid_mean": 8.827994084172964e-05,
+            "hybrid_ci95": [
+              6.746217740040315e-05,
+              0.00010909770428305613
+            ],
+            "rsdr_mean_condition_average": null
+          },
+          "pd": {
+            "hybrid_mean": 1.0,
+            "hybrid_ci95": [
+              1.0,
+              1.0
+            ],
+            "rsdr_mean_condition_average": null
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.0,
+            "hybrid_ci95": [
+              0.0,
+              0.0
+            ],
+            "rsdr_mean_condition_average": null
+          },
+          "sjrif_db": {
+            "hybrid_mean": -0.027388440868504144,
+            "hybrid_ci95": [
+              -0.027923202035821087,
+              -0.0268536797011872
+            ],
+            "rsdr_mean_condition_average": null
+          }
+        }
+      },
+      {
+        "bin": "[0,10)",
+        "hybrid_parents": 34,
+        "rsdr_conditions_per_metric": 42,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.011306362694898354,
+            "hybrid_ci95": [
+              0.005086168419243641,
+              0.020273539760269584
+            ],
+            "rsdr_mean_condition_average": 0.02139351973931291
+          },
+          "damage": {
+            "hybrid_mean": 0.02573268231298101,
+            "hybrid_ci95": [
+              0.01669554865693886,
+              0.035194476023661825
+            ],
+            "rsdr_mean_condition_average": 0.013717250401076499
+          },
+          "pd": {
+            "hybrid_mean": 0.9411764705882353,
+            "hybrid_ci95": [
+              0.8529411764705882,
+              1.0
+            ],
+            "rsdr_mean_condition_average": 0.6940104166666666
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.00980392156862745,
+            "hybrid_ci95": [
+              0.0,
+              0.029411764705882353
+            ],
+            "rsdr_mean_condition_average": 0.09095982142857142
+          },
+          "sjrif_db": {
+            "hybrid_mean": 4.3503232231121105,
+            "hybrid_ci95": [
+              3.0678044932433153,
+              5.667864256149969
+            ],
+            "rsdr_mean_condition_average": 0.0062840361130544024
+          }
+        }
+      },
+      {
+        "bin": "[10,20)",
+        "hybrid_parents": 162,
+        "rsdr_conditions_per_metric": 42,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.04730424227582392,
+            "hybrid_ci95": [
+              0.040217816567910666,
+              0.054837701191160854
+            ],
+            "rsdr_mean_condition_average": 0.04494178994545194
+          },
+          "damage": {
+            "hybrid_mean": 0.07142902334403348,
+            "hybrid_ci95": [
+              0.06082665375300379,
+              0.08450399739863805
+            ],
+            "rsdr_mean_condition_average": 0.05487295946297871
+          },
+          "pd": {
+            "hybrid_mean": 0.8662551440329217,
+            "hybrid_ci95": [
+              0.8168209876543209,
+              0.9115226337448561
+            ],
+            "rsdr_mean_condition_average": 0.6917782738095238
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.0699588477366255,
+            "hybrid_ci95": [
+              0.047325102880658436,
+              0.09465020576131687
+            ],
+            "rsdr_mean_condition_average": 0.072265625
+          },
+          "sjrif_db": {
+            "hybrid_mean": 12.336859497158743,
+            "hybrid_ci95": [
+              11.418491988903893,
+              13.240523046671733
+            ],
+            "rsdr_mean_condition_average": 0.0509819830416739
+          }
+        }
+      },
+      {
+        "bin": "[20,30)",
+        "hybrid_parents": 55,
+        "rsdr_conditions_per_metric": 42,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.05390492165283433,
+            "hybrid_ci95": [
+              0.03694037645605,
+              0.07318650884209243
+            ],
+            "rsdr_mean_condition_average": 0.08055776488163521
+          },
+          "damage": {
+            "hybrid_mean": 0.049554347180689684,
+            "hybrid_ci95": [
+              0.03761943547611261,
+              0.06283385714667084
+            ],
+            "rsdr_mean_condition_average": 0.07935182063236683
+          },
+          "pd": {
+            "hybrid_mean": 0.8303030303030301,
+            "hybrid_ci95": [
+              0.7333333333333333,
+              0.9151515151515152
+            ],
+            "rsdr_mean_condition_average": 0.677734375
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.04848484848484849,
+            "hybrid_ci95": [
+              0.01818181818181818,
+              0.08484848484848485
+            ],
+            "rsdr_mean_condition_average": 0.07152157738095238
+          },
+          "sjrif_db": {
+            "hybrid_mean": 11.822836482962327,
+            "hybrid_ci95": [
+              10.228289326914721,
+              13.442780194985998
+            ],
+            "rsdr_mean_condition_average": 2.9179896023888547
+          }
+        }
+      },
+      {
+        "bin": "[30,40)",
+        "hybrid_parents": 3,
+        "rsdr_conditions_per_metric": 42,
+        "metrics": {
+          "u_nmse": {
+            "hybrid_mean": 0.008279199068373535,
+            "hybrid_ci95": [
+              0.0009548954298654874,
+              0.020382427381793633
+            ],
+            "rsdr_mean_condition_average": 0.26231393402375724
+          },
+          "damage": {
+            "hybrid_mean": 0.034853514068545456,
+            "hybrid_ci95": [
+              0.02296942538400581,
+              0.04641413988582536
+            ],
+            "rsdr_mean_condition_average": 0.1391332330187725
+          },
+          "pd": {
+            "hybrid_mean": 1.0,
+            "hybrid_ci95": [
+              1.0,
+              1.0
+            ],
+            "rsdr_mean_condition_average": 0.6552269345238095
+          },
+          "frame_pfa_jammer": {
+            "hybrid_mean": 0.0,
+            "hybrid_ci95": [
+              0.0,
+              0.0
+            ],
+            "rsdr_mean_condition_average": 0.04827008928571429
+          },
+          "sjrif_db": {
+            "hybrid_mean": 14.70048592588867,
+            "hybrid_ci95": [
+              13.84797540483398,
+              15.819053749737629
+            ],
+            "rsdr_mean_condition_average": 15.968842102885926
+          }
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Not paired across shared physical parents.",
+    "Hybrid and RSDR condition weights differ.",
+    "Hybrid SNR DEV coverage is [-20,5) dB only.",
+    "Hybrid JSR edge bins have only 2 and 3 parents.",
+    "Metrics average jammer variants; not separated by jammer type.",
+    "A full 168-condition Hybrid inference is required for a strict curve-level comparison."
+  ],
+  "input_sha256": {
+    "hybrid_evaluation_json": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+    "rsdr_condition_comparisons_csv": "be3a380b5c51b50e903dd5f851b307ef84d708c3a7905f11006d150b6a84cd52",
+    "rsdr_final_verification_json": "b7e1306888c99cee82cc2fc41913dd74e6b8e616aaa8759d335609afbbcb5523"
+  }
+}
