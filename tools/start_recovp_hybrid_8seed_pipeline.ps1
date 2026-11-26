@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 $root = 'D:\code\Xin\ISRJ_222'
-$python = 'D:\Anaconda\python.exe'
+$python = Join-Path $root '.venv\Scripts\python.exe'
 $stateDir = Join-Path $root 'evidence\outputs\recovp_hybrid_8seed_pipeline'
 $stdoutPath = Join-Path $stateDir 'controller.stdout.log'
 $stderrPath = Join-Path $stateDir 'controller.stderr.log'
