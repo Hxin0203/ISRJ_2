@@ -1,0 +1,10 @@
+{
+  "verified_content_commit": "1a9e6302b52d7ec01f9941a67869bbf15270f861",
+  "remote": "paper2",
+  "repository": "Hxin0203/ISRJ_2",
+  "branch": "codex/hybrid-seed17-pipeline-20261125",
+  "verified_with": "GitHub plugin list_commits",
+  "manuscript_sha256": "899b33afe32727f7eaf971da2fb0befd3c8929cc3a686d76b099b725d1c984a2",
+  "scope": "full manuscript refinement; no new model experiments",
+  "supplementary_figure_context_commit": "82e5bc6d4c89d757da4390fec4e534b21ed3d92c"
+}
