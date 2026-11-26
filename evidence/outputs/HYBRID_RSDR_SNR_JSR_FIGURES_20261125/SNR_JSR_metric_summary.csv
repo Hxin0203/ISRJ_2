@@ -1,0 +1,251 @@
+model,metric,snr_bin,snr_mid_db,jsr_bin,jsr_mid_db,mean,ci95_lower,ci95_upper,n_parents,n_conditions
+Hybrid seed17 epoch256 DEV,u_nmse,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-20,-15)",-17.5,"[0,10)",5,0.0063250458,0.00072450011,0.011925592,2,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-20,-15)",-17.5,"[10,20)",15,0.027398044,0.016598852,0.040271548,9,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-20,-15)",-17.5,"[20,30)",25,0.040487387,0.00023547097,0.080739304,2,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-20,-15)",-17.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-15,-10)",-12.5,"[0,10)",5,0.014685963,0.001077462,0.04049333,9,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-15,-10)",-12.5,"[10,20)",15,0.035625606,0.0252269,0.048176374,38,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-15,-10)",-12.5,"[20,30)",25,0.045199235,0.020626749,0.075218278,15,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-15,-10)",-12.5,"[30,40)",35,0.00095489543,,,1,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-10,-5)",-7.5,"[-10,0)",-5,0.0010552937,0.00041914094,0.0016914465,2,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-10,-5)",-7.5,"[0,10)",5,0.012541228,0.0037183794,0.025120925,12,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-10,-5)",-7.5,"[10,20)",15,0.047096937,0.03679737,0.058753497,69,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-10,-5)",-7.5,"[20,30)",25,0.049175447,0.025007204,0.079234724,23,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-10,-5)",-7.5,"[30,40)",35,0.011941351,0.0035002744,0.020382427,2,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-5,0)",-2.5,"[0,10)",5,0.0057311672,0.0011078544,0.013277482,8,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-5,0)",-2.5,"[10,20)",15,0.055968303,0.040863462,0.073625828,38,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-5,0)",-2.5,"[20,30)",25,0.063316095,0.029402778,0.10936261,13,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[-5,0)",-2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[0,5)",2.5,"[0,10)",5,0.014416165,0.007837638,0.022859225,3,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[0,5)",2.5,"[10,20)",15,0.085805952,0.036921439,0.14156613,8,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[0,5)",2.5,"[20,30)",25,0.12583144,0.014024331,0.23763855,2,0
+Hybrid seed17 epoch256 DEV,u_nmse,"[0,5)",2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[-20,-15)",-17.5,"[0,10)",5,0.0097834292,2.3101144e-05,0.019543757,2,0
+Hybrid seed17 epoch256 DEV,damage,"[-20,-15)",-17.5,"[10,20)",15,0.083623234,0.037497518,0.15790369,9,0
+Hybrid seed17 epoch256 DEV,damage,"[-20,-15)",-17.5,"[20,30)",25,0.052010424,0.0089188148,0.095102033,2,0
+Hybrid seed17 epoch256 DEV,damage,"[-20,-15)",-17.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[-15,-10)",-12.5,"[0,10)",5,0.010719733,0.0040281449,0.018819318,9,0
+Hybrid seed17 epoch256 DEV,damage,"[-15,-10)",-12.5,"[10,20)",15,0.05836246,0.040703374,0.084141192,38,0
+Hybrid seed17 epoch256 DEV,damage,"[-15,-10)",-12.5,"[20,30)",25,0.040480711,0.017309909,0.075537575,15,0
+Hybrid seed17 epoch256 DEV,damage,"[-15,-10)",-12.5,"[30,40)",35,0.035176977,,,1,0
+Hybrid seed17 epoch256 DEV,damage,"[-10,-5)",-7.5,"[-10,0)",-5,8.8279941e-05,6.7462177e-05,0.0001090977,2,0
+Hybrid seed17 epoch256 DEV,damage,"[-10,-5)",-7.5,"[0,10)",5,0.030275864,0.014252293,0.048378487,12,0
+Hybrid seed17 epoch256 DEV,damage,"[-10,-5)",-7.5,"[10,20)",15,0.075602809,0.057693077,0.10088072,69,0
+Hybrid seed17 epoch256 DEV,damage,"[-10,-5)",-7.5,"[20,30)",25,0.043732195,0.029938642,0.058905518,23,0
+Hybrid seed17 epoch256 DEV,damage,"[-10,-5)",-7.5,"[30,40)",35,0.034691783,0.022969425,0.04641414,2,0
+Hybrid seed17 epoch256 DEV,damage,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[-5,0)",-2.5,"[0,10)",5,0.038392344,0.01695496,0.064532015,8,0
+Hybrid seed17 epoch256 DEV,damage,"[-5,0)",-2.5,"[10,20)",15,0.072994328,0.060769231,0.085204236,38,0
+Hybrid seed17 epoch256 DEV,damage,"[-5,0)",-2.5,"[20,30)",25,0.067177501,0.03990086,0.096764846,13,0
+Hybrid seed17 epoch256 DEV,damage,"[-5,0)",-2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,damage,"[0,5)",2.5,"[0,10)",5,0.029472541,0.0086723993,0.061648369,3,0
+Hybrid seed17 epoch256 DEV,damage,"[0,5)",2.5,"[10,20)",15,0.076342608,0.051254705,0.10503964,8,0
+Hybrid seed17 epoch256 DEV,damage,"[0,5)",2.5,"[20,30)",25,0.067554799,0.015712835,0.11939676,2,0
+Hybrid seed17 epoch256 DEV,damage,"[0,5)",2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[-20,-15)",-17.5,"[0,10)",5,0.5,0,1,2,0
+Hybrid seed17 epoch256 DEV,pd,"[-20,-15)",-17.5,"[10,20)",15,0.55555556,0.22222222,0.88888889,9,0
+Hybrid seed17 epoch256 DEV,pd,"[-20,-15)",-17.5,"[20,30)",25,0,0,0,2,0
+Hybrid seed17 epoch256 DEV,pd,"[-20,-15)",-17.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[-15,-10)",-12.5,"[0,10)",5,0.88888889,0.66666667,1,9,0
+Hybrid seed17 epoch256 DEV,pd,"[-15,-10)",-12.5,"[10,20)",15,0.77192982,0.64035088,0.88618421,38,0
+Hybrid seed17 epoch256 DEV,pd,"[-15,-10)",-12.5,"[20,30)",25,0.64444444,0.42222222,0.84444444,15,0
+Hybrid seed17 epoch256 DEV,pd,"[-15,-10)",-12.5,"[30,40)",35,1,,,1,0
+Hybrid seed17 epoch256 DEV,pd,"[-10,-5)",-7.5,"[-10,0)",-5,1,1,1,2,0
+Hybrid seed17 epoch256 DEV,pd,"[-10,-5)",-7.5,"[0,10)",5,1,1,1,12,0
+Hybrid seed17 epoch256 DEV,pd,"[-10,-5)",-7.5,"[10,20)",15,0.86956522,0.79227053,0.93236715,69,0
+Hybrid seed17 epoch256 DEV,pd,"[-10,-5)",-7.5,"[20,30)",25,0.92753623,0.8115942,1,23,0
+Hybrid seed17 epoch256 DEV,pd,"[-10,-5)",-7.5,"[30,40)",35,1,1,1,2,0
+Hybrid seed17 epoch256 DEV,pd,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[-5,0)",-2.5,"[0,10)",5,1,1,1,8,0
+Hybrid seed17 epoch256 DEV,pd,"[-5,0)",-2.5,"[10,20)",15,1,1,1,38,0
+Hybrid seed17 epoch256 DEV,pd,"[-5,0)",-2.5,"[20,30)",25,0.97435897,0.92307692,1,13,0
+Hybrid seed17 epoch256 DEV,pd,"[-5,0)",-2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,pd,"[0,5)",2.5,"[0,10)",5,1,1,1,3,0
+Hybrid seed17 epoch256 DEV,pd,"[0,5)",2.5,"[10,20)",15,1,1,1,8,0
+Hybrid seed17 epoch256 DEV,pd,"[0,5)",2.5,"[20,30)",25,1,1,1,2,0
+Hybrid seed17 epoch256 DEV,pd,"[0,5)",2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-20,-15)",-17.5,"[0,10)",5,0,0,0,2,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-20,-15)",-17.5,"[10,20)",15,0.11111111,0.037037037,0.22222222,9,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-20,-15)",-17.5,"[20,30)",25,0,0,0,2,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-20,-15)",-17.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-15,-10)",-12.5,"[0,10)",5,0.037037037,0,0.11111111,9,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-15,-10)",-12.5,"[10,20)",15,0.043859649,0.0087719298,0.078947368,38,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-15,-10)",-12.5,"[20,30)",25,0.066666667,0,0.13333333,15,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-15,-10)",-12.5,"[30,40)",35,0,,,1,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-10,-5)",-7.5,"[-10,0)",-5,0,0,0,2,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-10,-5)",-7.5,"[0,10)",5,0,0,0,12,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-10,-5)",-7.5,"[10,20)",15,0.09178744,0.048309179,0.13538647,69,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-10,-5)",-7.5,"[20,30)",25,0.057971014,0,0.13043478,23,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-10,-5)",-7.5,"[30,40)",35,0,0,0,2,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-5,0)",-2.5,"[0,10)",5,0,0,0,8,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-5,0)",-2.5,"[10,20)",15,0.061403509,0.026315789,0.10526316,38,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-5,0)",-2.5,"[20,30)",25,0,0,0,13,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[-5,0)",-2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[0,5)",2.5,"[0,10)",5,0,0,0,3,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[0,5)",2.5,"[10,20)",15,0,0,0,8,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[0,5)",2.5,"[20,30)",25,0.16666667,0,0.33333333,2,0
+Hybrid seed17 epoch256 DEV,frame_pfa_jammer,"[0,5)",2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-20,-15)",-17.5,"[0,10)",5,3.8786954,-0.0084415027,7.7658323,2,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-20,-15)",-17.5,"[10,20)",15,11.156944,9.2633049,13.071343,9,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-20,-15)",-17.5,"[20,30)",25,10.164014,3.3205698,17.007457,2,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-20,-15)",-17.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-15,-10)",-12.5,"[0,10)",5,4.3717,1.7910187,7.4962041,9,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-15,-10)",-12.5,"[10,20)",15,11.214934,9.148741,13.268491,38,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-15,-10)",-12.5,"[20,30)",25,9.6381362,6.7824083,12.547392,15,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-15,-10)",-12.5,"[30,40)",35,15.819054,,,1,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-10,-5)",-7.5,"[-10,0)",-5,-0.027388441,-0.027923202,-0.02685368,2,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-10,-5)",-7.5,"[0,10)",5,4.4339249,2.4341636,6.3017066,12,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-10,-5)",-7.5,"[10,20)",15,12.305308,10.970702,13.721139,69,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-10,-5)",-7.5,"[20,30)",25,12.353402,10.259586,14.499553,23,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-10,-5)",-7.5,"[30,40)",35,14.141202,13.847975,14.434429,2,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-5,0)",-2.5,"[0,10)",5,3.7499299,1.1201418,6.7864523,8,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-5,0)",-2.5,"[10,20)",15,13.469227,11.56401,15.25602,38,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-5,0)",-2.5,"[20,30)",25,13.013109,9.1128804,16.812867,13,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[-5,0)",-2.5,"[30,40)",35,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[0,5)",2.5,"[0,10)",5,5.8672533,1.882166,10.080853,3,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[0,5)",2.5,"[10,20)",15,13.8868,10.181151,17.798,8,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[0,5)",2.5,"[20,30)",25,16.02864,8.4683739,23.588906,2,0
+Hybrid seed17 epoch256 DEV,sjrif_db,"[0,5)",2.5,"[30,40)",35,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-20,-15)",-17.5,"[0,10)",5,0.0010315253,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-20,-15)",-17.5,"[10,20)",15,0.010103121,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-20,-15)",-17.5,"[20,30)",25,0.039968243,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-20,-15)",-17.5,"[30,40)",35,0.051735294,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-15,-10)",-12.5,"[0,10)",5,0.003210424,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-15,-10)",-12.5,"[10,20)",15,0.02797664,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-15,-10)",-12.5,"[20,30)",25,0.045023581,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-15,-10)",-12.5,"[30,40)",35,0.071143647,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-10,-5)",-7.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-10,-5)",-7.5,"[0,10)",5,0.0098296486,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-10,-5)",-7.5,"[10,20)",15,0.051625109,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-10,-5)",-7.5,"[20,30)",25,0.056435119,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-10,-5)",-7.5,"[30,40)",35,0.1149717,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-5,0)",-2.5,"[0,10)",5,0.027545236,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-5,0)",-2.5,"[10,20)",15,0.067035459,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-5,0)",-2.5,"[20,30)",25,0.083071627,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[-5,0)",-2.5,"[30,40)",35,0.2296892,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[0,5)",2.5,"[0,10)",5,0.0559437,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[0,5)",2.5,"[10,20)",15,0.098206021,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[0,5)",2.5,"[20,30)",25,0.14348951,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,u_nmse,"[0,5)",2.5,"[30,40)",35,0.50481243,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-20,-15)",-17.5,"[0,10)",5,0.00021436783,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-20,-15)",-17.5,"[10,20)",15,0.00061543874,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-20,-15)",-17.5,"[20,30)",25,0.090241505,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-20,-15)",-17.5,"[30,40)",35,0.12438803,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-15,-10)",-12.5,"[0,10)",5,0.00031123986,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-15,-10)",-12.5,"[10,20)",15,0.013321093,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-15,-10)",-12.5,"[20,30)",25,0.12899525,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-15,-10)",-12.5,"[30,40)",35,0.13982408,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-10,-5)",-7.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-10,-5)",-7.5,"[0,10)",5,0.0011843008,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-10,-5)",-7.5,"[10,20)",15,0.068926896,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-10,-5)",-7.5,"[20,30)",25,0.13007681,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-10,-5)",-7.5,"[30,40)",35,0.15245217,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-5,0)",-2.5,"[0,10)",5,0.0099555753,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-5,0)",-2.5,"[10,20)",15,0.14233366,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-5,0)",-2.5,"[20,30)",25,0.13955437,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[-5,0)",-2.5,"[30,40)",35,0.15924494,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,damage,"[0,5)",2.5,"[0,10)",5,0.032189965,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[0,5)",2.5,"[10,20)",15,0.17108839,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[0,5)",2.5,"[20,30)",25,0.14796411,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,damage,"[0,5)",2.5,"[30,40)",35,0.1617476,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-20,-15)",-17.5,"[0,10)",5,0.97265625,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-20,-15)",-17.5,"[10,20)",15,0.97135417,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-20,-15)",-17.5,"[20,30)",25,0.953125,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-20,-15)",-17.5,"[30,40)",35,0.95182292,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-15,-10)",-12.5,"[0,10)",5,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-15,-10)",-12.5,"[10,20)",15,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-15,-10)",-12.5,"[20,30)",25,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-15,-10)",-12.5,"[30,40)",35,0.99869792,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-10,-5)",-7.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-10,-5)",-7.5,"[0,10)",5,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-10,-5)",-7.5,"[10,20)",15,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-10,-5)",-7.5,"[20,30)",25,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-10,-5)",-7.5,"[30,40)",35,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-5,0)",-2.5,"[0,10)",5,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-5,0)",-2.5,"[10,20)",15,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-5,0)",-2.5,"[20,30)",25,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[-5,0)",-2.5,"[30,40)",35,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,pd,"[0,5)",2.5,"[0,10)",5,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[0,5)",2.5,"[10,20)",15,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[0,5)",2.5,"[20,30)",25,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,pd,"[0,5)",2.5,"[30,40)",35,1,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-20,-15)",-17.5,"[0,10)",5,0.0065104167,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-20,-15)",-17.5,"[10,20)",15,0.022135417,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-20,-15)",-17.5,"[20,30)",25,0.092447917,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-20,-15)",-17.5,"[30,40)",35,0.0078125,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-15,-10)",-12.5,"[0,10)",5,0.0052083333,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-15,-10)",-12.5,"[10,20)",15,0.11067708,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-15,-10)",-12.5,"[20,30)",25,0.049479167,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-15,-10)",-12.5,"[30,40)",35,0.0052083333,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-10,-5)",-7.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-10,-5)",-7.5,"[0,10)",5,0.022135417,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-10,-5)",-7.5,"[10,20)",15,0.1875,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-10,-5)",-7.5,"[20,30)",25,0.03125,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-10,-5)",-7.5,"[30,40)",35,0.013020833,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-5,0)",-2.5,"[0,10)",5,0.13802083,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-5,0)",-2.5,"[10,20)",15,0.15104167,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-5,0)",-2.5,"[20,30)",25,0.028645833,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[-5,0)",-2.5,"[30,40)",35,0.053385417,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[0,5)",2.5,"[0,10)",5,0.34635417,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[0,5)",2.5,"[10,20)",15,0.14453125,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[0,5)",2.5,"[20,30)",25,0.048177083,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,frame_pfa_jammer,"[0,5)",2.5,"[30,40)",35,0.1171875,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-20,-15)",-17.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-20,-15)",-17.5,"[0,10)",5,0.00037298804,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-20,-15)",-17.5,"[10,20)",15,0.0048264411,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-20,-15)",-17.5,"[20,30)",25,3.788134,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-20,-15)",-17.5,"[30,40)",35,17.215261,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-15,-10)",-12.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-15,-10)",-12.5,"[0,10)",5,0.00071537735,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-15,-10)",-12.5,"[10,20)",15,0.051357855,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-15,-10)",-12.5,"[20,30)",25,4.8942943,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-15,-10)",-12.5,"[30,40)",35,17.912214,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-10,-5)",-7.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-10,-5)",-7.5,"[0,10)",5,0.0019361778,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-10,-5)",-7.5,"[10,20)",15,0.10425507,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-10,-5)",-7.5,"[20,30)",25,5.0486298,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-10,-5)",-7.5,"[30,40)",35,18.125194,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-5,0)",-2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-5,0)",-2.5,"[0,10)",5,0.007269759,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-5,0)",-2.5,"[10,20)",15,0.1410176,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-5,0)",-2.5,"[20,30)",25,5.0903043,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[-5,0)",-2.5,"[30,40)",35,18.19672,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[0,5)",2.5,"[-10,0)",-5,,,,0,0
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[0,5)",2.5,"[0,10)",5,0.022535079,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[0,5)",2.5,"[10,20)",15,0.14243503,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[0,5)",2.5,"[20,30)",25,5.1023163,,,0,3
+RSDR-Net seed40312102 epoch32 main scan,sjrif_db,"[0,5)",2.5,"[30,40)",35,18.220627,,,0,3
