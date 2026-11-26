@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-11-26T07:46:07Z",
+  "task": "isrj-2",
+  "host": "rsdr-b",
+  "root": "D:/code/Xin/ISRJ_222",
+  "experiment": "ReCoVP-Hybrid",
+  "seed29": {
+    "state": "RUNNING_HEALTHY",
+    "saved_epoch": 111,
+    "total_epochs": 256,
+    "status_epoch": 112,
+    "latest_receipt": "epoch_111.json",
+    "checkpoint_sha256": "fc87b4ca6d90650cc4b3a3e0809e279055041dd7050cc7c07078b93ae5d1351f",
+    "status_sha256": "94144db8a4430622552d42fec6ce84a874a48e89efda444ee61c7a84917cf5fd",
+    "config_sha256": "1503ad0eea77061381e99b2920f59f89679585e4d81294b0cdb4ad18e3793080",
+    "preflight_sha256": "cce84aa7a9103816e3378fa9f30641847e0daef95482e6c1e00b2845a0f29786",
+    "source_sha_matches": "12/12",
+    "data_sha_matches": "4/4",
+    "prior_saved_epoch": 29,
+    "delta_saved_epoch": 82,
+    "gpu_index": 1,
+    "gpu_utilization_pct": 85
+  },
+  "seed41": {
+    "state": "WAIT_DEPENDENCY",
+    "status_exists": false
+  },
+  "gpu": {
+    "gpu0_utilization_pct": 4,
+    "gpu1_utilization_pct": 85,
+    "admission": "no new dispatch: selected GPU must be strictly below 85%"
+  },
+  "scientific_status": "seed29 efficacy not yet evaluated; no DEV result",
+  "next_action": "continue seed29; after completion fixed DEV256 evaluation, then seed41 when resource and dependency conditions permit"
+}
