@@ -1,0 +1,15 @@
+{
+  "verified_utc": "2026-11-26 06:55:51 UTC",
+  "paper2_repository": "Hxin0203/ISRJ_2",
+  "branch": "codex/hybrid-seed17-pipeline-20261125",
+  "manuscript_content_commit": "2b3d95ea01bd9962bf5b35df2355cc2646cda966",
+  "notion_audit_content_commit": "524485c66505e273ad6cbce0717e9712949bcbc9",
+  "remote_verification": "GitHub plugin list_commits, explicit owner/repo/branch",
+  "notion_hub": "https://www.notion.so/42433a09317f8119b587d2e329f7f9aa",
+  "notion_coverage_audit": "https://app.notion.com/p/08-42433a09317f81dc9d6fee4cabe0010a",
+  "sources": 78,
+  "exact_readback_volumes": 85,
+  "updated_existing_pages": 12,
+  "local_manuscript_sha256": "d15d16b6f0a69f59d48b5b0fb1673cad6b7fe9262d120bed2aec4715a05cf2b7",
+  "scope": "Writing, review and Notion evidence synchronization completed. Outstanding scientific experiments remain open. No new training/inference/CONFIRM/TEST."
+}
