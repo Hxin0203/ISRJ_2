@@ -20,20 +20,23 @@ if ($existing) {
     throw "An 8-seed pipeline controller already exists: $($existing.ProcessId -join ',')"
 }
 
-$process = Start-Process -FilePath $python `
-    -ArgumentList @('-m', 'tools.run_recovp_hybrid_8seed_pipeline', '--poll-seconds', '60', '--retry-seconds', '60') `
-    -WorkingDirectory $root `
-    -RedirectStandardOutput $stdoutPath `
-    -RedirectStandardError $stderrPath `
-    -WindowStyle Hidden `
-    -PassThru
+$innerCommand = "`"$python`" -u -m tools.run_recovp_hybrid_8seed_pipeline --poll-seconds 60 --retry-seconds 60 >> `"$stdoutPath`" 2>&1"
+$commandLine = "cmd.exe /d /s /c `"`"$innerCommand`"`""
+$created = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{
+    CommandLine = $commandLine
+    CurrentDirectory = $root
+}
+if ($created.ReturnValue -ne 0 -or -not $created.ProcessId) {
+    throw "Windows process manager could not create the controller (return=$($created.ReturnValue))"
+}
 
 $launch = [ordered]@{
     stage = 'CONTROLLER_STARTED'
     started_local = (Get-Date).ToString('o')
     hostname = $env:COMPUTERNAME
     repository_root = $root
-    pid = $process.Id
+    pid = $created.ProcessId
+    process_creation = 'Win32_Process.Create'
     executable = $python
     arguments = @('-m', 'tools.run_recovp_hybrid_8seed_pipeline', '--poll-seconds', '60', '--retry-seconds', '60')
     stdout = $stdoutPath
