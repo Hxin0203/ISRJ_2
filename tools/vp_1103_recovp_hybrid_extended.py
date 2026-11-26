@@ -72,6 +72,8 @@ def _source_hashes(module_path: Path) -> dict[str, str]:
         "tools/vp_1103_recovp_hybrid_preflight.py",
         "tools/vp_1103_recovp_hybrid_extended.py",
         "tools/start_recovp_hybrid_extended.py",
+        "tools/recovp_hybrid_seed_schedule.py",
+        "tools/run_recovp_hybrid_split_pipeline.py",
         "tools/evaluate_recovp_hybrid_extended.py",
         "tools/start_recovp_hybrid_extended_eval.py",
         "tools/run_recovp_hybrid_8seed_pipeline.py",
