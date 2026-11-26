@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "all original display mathematics conserved",
+      "passed": true,
+      "detail": "35 expressions unchanged except tags and relocation"
+    },
+    {
+      "name": "main equation sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "appendix sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no dangling equation references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all original numeric result rows unchanged",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "formal sections",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "abstract without detailed numeric results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all references have uses",
+      "passed": true,
+      "detail": {
+        "unused": []
+      }
+    },
+    {
+      "name": "all Markdown tables have stable columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "necessary figure slots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "model detail and two gates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "adverse findings retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "three comparison supports differentiated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no stale fulltext deficit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no internal execution prose",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no invisible formatting controls",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "manuscript_sha256": "899b33afe32727f7eaf971da2fb0befd3c8929cc3a686d76b099b725d1c984a2",
+  "input_sha256": "d15d16b6f0a69f59d48b5b0fb1673cad6b7fe9262d120bed2aec4715a05cf2b7",
+  "scope": "static editorial audit; no training, inference, raw array recomputation or independent test",
+  "review_hashes": {
+    "REVIEW_DOMAIN.md": "a215ea97d51a0f06f8d7aa7f56a381fc5eef8fcfcccde8f00a24ac109b71c963",
+    "REVIEW_MATH.md": "ff8197dbf04e0ae2043262ca03254358a74c1517a6943e60741bb7e5cab7fbbc",
+    "REVIEW_NARRATIVE.md": "dd53239de61f0578a653c6373afa5b90eb5bc888cac39776748b2e3d764c4ad8"
+  }
+}

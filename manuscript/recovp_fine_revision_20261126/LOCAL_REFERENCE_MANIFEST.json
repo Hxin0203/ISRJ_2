@@ -1,0 +1,122 @@
+[
+  {
+    "id": "R01",
+    "filename": "1809.07454v3.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\1809.07454v3.pdf",
+    "pages": 12,
+    "sha256": "ef065773c5bcd1e9c10507db25001987b2b675bbcb649e07533d2e0daf0cd77c",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R01.txt"
+  },
+  {
+    "id": "R02",
+    "filename": "26012303.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\26012303.pdf",
+    "pages": 11,
+    "sha256": "b1f9e26d88b5bfdf1ad5cd26bdf715a3b0de7ff0a307e14efc9cde0677ae2500",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R02.txt"
+  },
+  {
+    "id": "R03",
+    "filename": "Trans_Interrupted_Sampling_Repeater_Jamming_Suppression_Using_Complex-Valued_FISTA-Net.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\Trans_Interrupted_Sampling_Repeater_Jamming_Suppression_Using_Complex-Valued_FISTA-Net.pdf",
+    "pages": 17,
+    "sha256": "74e4e42bdae5bdead86a4e486f66c9146dcb3c3091a3fa42bf52c4fd8d6aeca3",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R03.txt"
+  },
+  {
+    "id": "R04",
+    "filename": "2307.03368v2.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\2307.03368v2.pdf",
+    "pages": 13,
+    "sha256": "9081f5c31a8d6060c39be029a7ceb4638b0567197afff0eb328bdf90341eb44a",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R04.txt"
+  },
+  {
+    "id": "R05",
+    "filename": "JNLEST.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\JNLEST.pdf",
+    "pages": 6,
+    "sha256": "0189177a6b28092c283005095c3d1ee690cb970b35c84e64b97ba4b94a097894",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R05.txt"
+  },
+  {
+    "id": "R06",
+    "filename": "Interrupted_Sampling_Repeater_Jamming_Suppression_for_Wideband_Radar_With_MCA-ADMM-Net.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\Interrupted_Sampling_Repeater_Jamming_Suppression_for_Wideband_Radar_With_MCA-ADMM-Net.pdf",
+    "pages": 15,
+    "sha256": "a2e2ca485cf71fe94d48832e884782f05aafd024983ce6dba59d81fd2ff1ca97",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R06.txt"
+  },
+  {
+    "id": "R07",
+    "filename": "Structure-Informed_Deep_Filtering_for_Radar_HRRP_ISRJ_Mitigation.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\Structure-Informed_Deep_Filtering_for_Radar_HRRP_ISRJ_Mitigation.pdf",
+    "pages": 5,
+    "sha256": "42ba7166446a1f3d5033862bfa339825125c9e3420fec3e8e2fa513ef46fdefa",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R07.txt"
+  },
+  {
+    "id": "R08",
+    "filename": "End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\End-to-End Interrupted Sampling Repeater Jamming Countermeasure Network Under Low Signal-to-Noise Ratio.pdf",
+    "pages": 23,
+    "sha256": "d297fdae628ed9f4c5c91850c44aebf656f83c52072701a72cac017b5f4c872f",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R08.txt"
+  },
+  {
+    "id": "R09",
+    "filename": "Gu_Interpreting_Super-Resolution_Networks_With_Local_Attribution_Maps_CVPR_2021_paper.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\Gu_Interpreting_Super-Resolution_Networks_With_Local_Attribution_Maps_CVPR_2021_paper.pdf",
+    "pages": 10,
+    "sha256": "d0d8931e9dcec68f8986638c7edcf611fb59ed006a9c4bd8c77dd3a9df4d8ed7",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R09.txt"
+  },
+  {
+    "id": "R10",
+    "filename": "kornblith19a.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\kornblith19a.pdf",
+    "pages": 11,
+    "sha256": "303c616cd2f254c40db3201580ea6c270656effacefc903f45e1b96e15629fbd",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R10.txt"
+  },
+  {
+    "id": "R11",
+    "filename": "chen18a.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\chen18a.pdf",
+    "pages": 10,
+    "sha256": "c298d1027a1dfcb845bc7867d64a2ec831f184a1cdc0e270124619aed9b506c1",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R11.txt"
+  },
+  {
+    "id": "R12",
+    "filename": "1311.2901v3.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\1311.2901v3.pdf",
+    "pages": 11,
+    "sha256": "f85b442009c4378aebce5f7e70a39ef5bbd5d595b36643e261c83c44534e00c0",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R12.txt"
+  },
+  {
+    "id": "R13",
+    "filename": "Wang_EDVR_Video_Restoration_With_Enhanced_Deformable_Convolutional_Networks_CVPRW_2019_paper.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\Wang_EDVR_Video_Restoration_With_Enhanced_Deformable_Convolutional_Networks_CVPRW_2019_paper.pdf",
+    "pages": 10,
+    "sha256": "d3a9b12ba22fd60037025afcb506cf684d9bac1dc7444d4b25a8f3a8cb729b96",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R13.txt"
+  },
+  {
+    "id": "R14",
+    "filename": "Wang_Recovering_Realistic_Texture_CVPR_2018_paper.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\Wang_Recovering_Realistic_Texture_CVPR_2018_paper.pdf",
+    "pages": 10,
+    "sha256": "d866c57272c76a498029300369ad748fcba9bbc7a9a806fac8604b50e3216910",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R14.txt"
+  },
+  {
+    "id": "R15",
+    "filename": "IET Radar Sonar   Navi - 2026 - Lei - Interrupted Sampling Repeater Jamming Suppression Based on Point‐Wise Temporal.pdf",
+    "path": "G:\\Files\\文件_2026\\论文编写\\2026.10论文\\IET Radar Sonar   Navi - 2026 - Lei - Interrupted Sampling Repeater Jamming Suppression Based on Point‐Wise Temporal.pdf",
+    "pages": 17,
+    "sha256": "0a56465de3a3ae6eac3ac1a6c08ac759e343bb9029ac3b7f73f30fa46f3b8c67",
+    "extraction": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1125\\精修_20261126\\本地文献\\R15.txt"
+  }
+]

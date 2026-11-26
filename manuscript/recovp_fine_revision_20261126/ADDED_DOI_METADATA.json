@@ -1,0 +1,558 @@
+[
+  {
+    "doi": "10.1109/TAES.2025.3646182",
+    "title": [
+      "Interrupted Sampling Repeater Jamming Suppression Using Complex-Valued FISTA-Net"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-1993-2297",
+        "authenticated-orcid": false,
+        "given": "Quan",
+        "family": "Huang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Sun Yat-sen University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1907-3640",
+        "authenticated-orcid": false,
+        "given": "Lei",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sun Yat-sen University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "IEEE Transactions on Aerospace and Electronic Systems"
+    ],
+    "volume": "62",
+    "issue": null,
+    "page": "3270-3286",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published_online": null,
+    "published_print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "update_to": null,
+    "relation": {},
+    "source": "https://api.crossref.org/works/10.1109/TAES.2025.3646182",
+    "status": "registry_metadata_retrieved"
+  },
+  {
+    "doi": "10.1049/rsn2.70251",
+    "title": [
+      "Interrupted Sampling Repeater Jamming Suppression Based on Point‐Wise Temporal Classification and Sparse Signal Reconstruction"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-6533-0926",
+        "authenticated-orcid": false,
+        "given": "Chen",
+        "family": "Lei",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wang",
+        "family": "Ke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pan",
+        "family": "Xiaoyi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gu",
+        "family": "Zhaoyu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiao",
+        "family": "Shunping",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Science and Technology, National University of Defense Technology  Changsha China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "IET Radar, Sonar &amp; Navigation"
+    ],
+    "volume": "20",
+    "issue": "1",
+    "page": null,
+    "article_number": "e70251",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ]
+    },
+    "published_print": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "update_to": null,
+    "relation": {},
+    "source": "https://api.crossref.org/works/10.1049/rsn2.70251",
+    "status": "registry_metadata_retrieved"
+  },
+  {
+    "doi": "10.2528/PIERC26012303",
+    "title": [
+      "An Anti-Interrupted Sampling Repeater Jamming Method Based on SSFA-MCPC Waveform Design Combined with Segmented Mismatched Filtering"
+    ],
+    "author": [
+      {
+        "given": "Ji",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hai",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Progress In Electromagnetics Research C"
+    ],
+    "volume": "167",
+    "issue": null,
+    "page": "254-264",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "published_online": null,
+    "published_print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "update_to": null,
+    "relation": {},
+    "source": "https://api.crossref.org/works/10.2528/PIERC26012303",
+    "status": "registry_metadata_retrieved"
+  },
+  {
+    "doi": "10.1038/s42254-021-00314-5",
+    "title": [
+      "Physics-informed machine learning"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9713-7120",
+        "authenticated-orcid": false,
+        "given": "George Em",
+        "family": "Karniadakis",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ioannis G.",
+        "family": "Kevrekidis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5476-5768",
+        "authenticated-orcid": false,
+        "given": "Lu",
+        "family": "Lu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paris",
+        "family": "Perdikaris",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sifan",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7476-9168",
+        "authenticated-orcid": false,
+        "given": "Liu",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Nature Reviews Physics"
+    ],
+    "volume": "3",
+    "issue": "6",
+    "page": "422-440",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          24
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          24
+        ]
+      ]
+    },
+    "published_print": null,
+    "type": "journal-article",
+    "update_to": null,
+    "relation": {},
+    "source": "https://api.crossref.org/works/10.1038/s42254-021-00314-5",
+    "status": "registry_metadata_retrieved"
+  },
+  {
+    "doi": "10.1038/nature25988",
+    "title": [
+      "Image reconstruction by domain-transform manifold learning"
+    ],
+    "author": [
+      {
+        "given": "Bo",
+        "family": "Zhu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jeremiah Z.",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen F.",
+        "family": "Cauley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bruce R.",
+        "family": "Rosen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthew S.",
+        "family": "Rosen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Nature"
+    ],
+    "volume": "555",
+    "issue": "7697",
+    "page": "487-492",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          22
+        ]
+      ]
+    },
+    "published_print": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "update_to": null,
+    "relation": {},
+    "source": "https://api.crossref.org/works/10.1038/nature25988",
+    "status": "registry_metadata_retrieved"
+  },
+  {
+    "doi": "10.1109/TASLP.2019.2915167",
+    "title": [
+      "Conv-TasNet: Surpassing Ideal Time–Frequency Magnitude Masking for Speech Separation"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7447-3885",
+        "authenticated-orcid": false,
+        "given": "Yi",
+        "family": "Luo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2987-759X",
+        "authenticated-orcid": false,
+        "given": "Nima",
+        "family": "Mesgarani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "IEEE/ACM Transactions on Audio, Speech, and Language Processing"
+    ],
+    "volume": "27",
+    "issue": "8",
+    "page": "1256-1266",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          8
+        ]
+      ]
+    },
+    "published_online": null,
+    "published_print": {
+      "date-parts": [
+        [
+          2019,
+          8
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "update_to": null,
+    "relation": {},
+    "source": "https://api.crossref.org/works/10.1109/TASLP.2019.2915167",
+    "status": "registry_metadata_retrieved"
+  }
+]
