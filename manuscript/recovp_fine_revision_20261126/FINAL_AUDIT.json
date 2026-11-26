@@ -89,7 +89,7 @@
       "detail": ""
     }
   ],
-  "manuscript_sha256": "899b33afe32727f7eaf971da2fb0befd3c8929cc3a686d76b099b725d1c984a2",
+  "manuscript_sha256": "ab019700121e17e9c871ba1fc22cc108d1ad53ffd412ac2c5727278084aeb985",
   "input_sha256": "d15d16b6f0a69f59d48b5b0fb1673cad6b7fe9262d120bed2aec4715a05cf2b7",
   "scope": "static editorial audit; no training, inference, raw array recomputation or independent test",
   "review_hashes": {

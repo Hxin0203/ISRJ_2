@@ -95,9 +95,7 @@ $$
 \qquad \boldsymbol\eta=\boldsymbol d-\boldsymbol s. \tag{7}
 $$
 
-令 $\boldsymbol e_{11}=F_\theta(\boldsymbol y_{11})-(\boldsymbol s+\boldsymbol\epsilon)$、$\boldsymbol e_{01}=F_\theta(\boldsymbol y_{01})-\boldsymbol\epsilon$，。
-
-两恢复残差之差等于目标增量误差，其能量关系见式（A1）。
+令 $\boldsymbol e_{11}=F_\theta(\boldsymbol y_{11})-(\boldsymbol s+\boldsymbol\epsilon)$、$\boldsymbol e_{01}=F_\theta(\boldsymbol y_{01})-\boldsymbol\epsilon$。两恢复残差之差等于目标增量误差，其能量关系见式（A1）。
 
 两个恢复残差之间的内积决定了它们取差后的行为。单独降低含目标状态的恢复误差，不能确定目标增量误差是否下降。对于非零目标，令目标增量在目标方向上的复增益为 $g=\boldsymbol s^H\boldsymbol d/\|\boldsymbol s\|_2^2$，其余正交部分记为 $\boldsymbol q=\boldsymbol d-g\boldsymbol s$。
 
@@ -183,13 +181,11 @@ $$
 
 具体而言，对每个候选模板，将其与归一化观测作共轭乘积，分别采用5、15、31点平均窗口提取局部匹配信息；各尺度的幅值及相邻共轭积实虚部组成九路候选特征。九路特征与13路共享解码特征拼接后，由窗网络给出逐点权重。不同候选可以共享同一特征提取器，但因模板位置和匹配响应不同而形成不同窗。归一化后的原子只约定表示的尺度，实际复幅度由下一步系数求解确定。
 
-设 $\widehat\sigma^2>0$ 为归一化输入的稳健离差估计，相关强度 $\rho_k=|\boldsymbol b_k^H\boldsymbol x|^2/\widehat\sigma^2$。正则头输出实数 $v_k$，按实际实现定义
-
-正则头采用有界指数变换并叠加正下限，逐候选得到 $\lambda_k>0$；数值形式见式（A5）。
+设 $\widehat\sigma^2>0$ 为归一化输入的稳健离差估计，相关强度 $\rho_k=|\boldsymbol b_k^H\boldsymbol x|^2/\widehat\sigma^2$。正则头输出实数 $v_k$，经有界指数变换并叠加正下限，逐候选得到 $\lambda_k>0$；数值形式见式（A5）。
 
 稳健离差通过三次反距离加权中心更新，再取到中心距离平方的中位数并除以 $\log2$ 得到；实现包含数值下限。它是正则头的尺度特征，不据此宣称恢复后噪声方差保持不变。式（A5）保证每个正则系数严格为正。其作用是调节相关候选之间的拟合强度，而不是判定某个分量必为干扰；当多个原子解释同一观测结构时，正则项抑制不稳定的大系数组合。正则强度仍由受扰输入估计，因此不会自动排除目标方向。
 
-给定 $\boldsymbol B$ 与 $\boldsymbol\Lambda$，系数子问题为
+记 $\boldsymbol\Lambda=\operatorname{diag}(\lambda_1,\ldots,\lambda_K)$。给定 $\boldsymbol B$ 与 $\boldsymbol\Lambda$，系数子问题为
 
 $$
 \widehat{\boldsymbol c}=\arg\min_{\boldsymbol c\in\mathbb C^K}
@@ -229,9 +225,7 @@ $$
 
 ### 3.5 复值残差精修与门控
 
-第一阶段残余可能来自候选遗漏、窗形与频偏失配，也可能包含应当保留的目标和噪声。因此，第二阶段估计的是附加干扰修正，而不是将全部残余重建为纯净目标。它联合输入归一化后的恢复残差 $\boldsymbol r_1=\widehat{\boldsymbol u}_1/r$ 和干扰估计 $\boldsymbol j_1=\widehat{\boldsymbol j}_1/r$。复值卷积采用无偏置的复数线性形式[17]
-
-复值卷积通过实部与虚部卷积的交叉组合实现，代数展开见式（A8）。
+第一阶段残余可能来自候选遗漏、窗形与频偏失配，也可能包含应当保留的目标和噪声。因此，第二阶段估计的是附加干扰修正，而不是将全部残余重建为纯净目标。它联合输入归一化后的恢复残差 $\boldsymbol r_1=\widehat{\boldsymbol u}_1/r$ 和干扰估计 $\boldsymbol j_1=\widehat{\boldsymbol j}_1/r$。复值卷积采用无偏置的复数线性形式[17]，通过实部与虚部卷积的交叉组合实现，代数展开见式（A8）。
 
 每层的复数输出 $\boldsymbol v$ 乘以实值门 $\boldsymbol g$。门由归一化幅值的对数及六路不变特征生成，六路分别为两输入的逐点对数幅值、恢复残差延迟积的实虚部、恢复残差与干扰估计共轭乘积的实虚部。模长的数值平滑按式（16）计算，不额外进行时间滑动平滑；低分辨率层的不变特征由平均池化获得。写为
 
@@ -312,9 +306,7 @@ $\mathcal H$ 是已知 LFM 的零填充相关算子。训练保留完整相关�
 
 ### 4.2 目标增量与残余尾峰约束
 
-由 $F(y)=y-C(y)$ 和式（6）可得
-
-由恢复定义，两受扰状态的目标增量误差恰好等于修正差的相反数，推导见式（A10）。
+由 $F(y)=y-C(y)$ 和式（6）可知，两受扰状态的目标增量误差恰好等于修正差的相反数，推导见式（A10）。
 
 目标损伤损失因此写为
 
@@ -608,6 +600,8 @@ $$
 \frac{\|\boldsymbol d-\boldsymbol s\|_2^2}{\|\boldsymbol s\|_2^2}
 =|g-1|^2+\frac{\|\boldsymbol q\|_2^2}{\|\boldsymbol s\|_2^2}. \tag{A3}
 $$
+
+式（A4）中，$\widetilde{\boldsymbol P}$ 为单位能量模板零填充至 $N$ 点后的离散傅里叶变换，$\mathcal F_N^{-1}$ 为相应逆变换，$\mathcal T_T$ 表示截取前 $T$ 个采样点；归一化频率向量 $\boldsymbol f$ 与变换的频率排列一致。式（A7）中的 $\boldsymbol\eta_1$ 为式（15）左侧的第一阶段目标增量误差。
 
 $$
 \boldsymbol t_k=\mathcal T_T\mathcal F_N^{-1}
