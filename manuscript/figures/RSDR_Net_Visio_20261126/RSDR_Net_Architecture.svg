@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 RSDR_Net_Architecture.svg RSDR-Net -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="18in" height="12.8in" viewBox="0 0 1296 921.6"
+		xml:space="preserve" color-interpolation-filters="sRGB" class="st56">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#f5f8fa;stroke:#c2d0d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st2 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:#243746;font-family:Times New Roman;font-size:1.58334em;font-weight:bold}
+		.st4 {fill:#ffffff;stroke:#526775;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st5 {fill:#243746;font-family:Times New Roman;font-size:1.41666em;font-weight:bold}
+		.st6 {font-size:1em}
+		.st7 {fill:#dcecee;stroke:#70b0b7;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st8 {fill:#243746;font-family:Times New Roman;font-size:1.16666em;font-weight:bold}
+		.st9 {fill:#dfeaf1;stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st10 {fill:#ffffff;stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st11 {fill:#fbf6e8;stroke:#e4c169;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st12 {fill:#243746;font-family:Times New Roman;font-size:1.08334em;font-weight:bold}
+		.st13 {fill:#f4e5e2;stroke:#ce7569;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st14 {marker-end:url(#mrkr4-68);stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st15 {fill:#243746;fill-opacity:1;stroke:#243746;stroke-opacity:1;stroke-width:0.35714285714286}
+		.st16 {marker-end:url(#mrkr4-79);stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st17 {fill:#243746;fill-opacity:1;stroke:#243746;stroke-opacity:1;stroke-width:0.33333333333333}
+		.st18 {stroke:#3e7c83;stroke-dasharray:7.7,5.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.1}
+		.st19 {marker-end:url(#mrkr4-96);stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st20 {fill:#71838d;font-family:Times New Roman;font-size:1.00001em}
+		.st21 {marker-end:url(#mrkr4-126);stroke:#ce7569;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st22 {fill:#ce7569;fill-opacity:1;stroke:#ce7569;stroke-opacity:1;stroke-width:0.33333333333333}
+		.st23 {marker-end:url(#mrkr4-137);stroke:#e4c169;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st24 {fill:#e4c169;fill-opacity:1;stroke:#e4c169;stroke-opacity:1;stroke-width:0.4}
+		.st25 {marker-end:url(#mrkr4-143);stroke:#ce7569;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.1}
+		.st26 {fill:#ce7569;fill-opacity:1;stroke:#ce7569;stroke-opacity:1;stroke-width:0.37931034482759}
+		.st27 {marker-end:url(#mrkr4-149);stroke:#70b0b7;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st28 {fill:#70b0b7;fill-opacity:1;stroke:#70b0b7;stroke-opacity:1;stroke-width:0.4}
+		.st29 {marker-end:url(#mrkr4-155);stroke:#243746;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st30 {fill:#243746;fill-opacity:1;stroke:#243746;stroke-opacity:1;stroke-width:0.4}
+		.st31 {marker-end:url(#mrkr4-161);stroke:#71838d;stroke-dasharray:5.6,4;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st32 {fill:#71838d;fill-opacity:1;stroke:#71838d;stroke-opacity:1;stroke-width:0.30769230769231}
+		.st33 {fill:#71838d;font-family:Times New Roman;font-size:0.916672em}
+		.st34 {fill:#3e7c83;font-family:Times New Roman;font-size:0.916672em}
+		.st35 {font-family:Cambria Math;font-size:1em}
+		.st36 {fill:#71838d;font-family:Times New Roman;font-size:1.08334em}
+		.st37 {fill:#70b0b7;font-family:Times New Roman;font-size:1.33333em;font-weight:bold}
+		.st38 {fill:#ffffff;stroke:#70b0b7;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st39 {marker-end:url(#mrkr4-253);stroke:#71838d;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st40 {fill:#71838d;fill-opacity:1;stroke:#71838d;stroke-opacity:1;stroke-width:0.29411764705882}
+		.st41 {fill:#5285a3;font-family:Times New Roman;font-size:1.33333em;font-weight:bold}
+		.st42 {fill:#243746;font-family:Times New Roman;font-size:1.00001em;font-weight:bold}
+		.st43 {marker-end:url(#mrkr4-332);stroke:#3e7c83;stroke-dasharray:7.7,5.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.1}
+		.st44 {fill:#3e7c83;fill-opacity:1;stroke:#3e7c83;stroke-opacity:1;stroke-width:0.37931034482759}
+		.st45 {marker-end:url(#mrkr4-338);stroke:#3e7c83;stroke-dasharray:7,5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st46 {fill:#3e7c83;fill-opacity:1;stroke:#3e7c83;stroke-opacity:1;stroke-width:0.35714285714286}
+		.st47 {marker-end:url(#mrkr4-357);stroke:#71838d;stroke-dasharray:6.3,4.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st48 {fill:#71838d;fill-opacity:1;stroke:#71838d;stroke-opacity:1;stroke-width:0.33333333333333}
+		.st49 {fill:#243746;font-family:Times New Roman;font-size:1.08334em}
+		.st50 {fill:#71838d;font-family:Times New Roman;font-size:1.00001em;font-style:italic}
+		.st51 {marker-end:url(#mrkr4-434);stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st52 {fill:#5285a3;fill-opacity:1;stroke:#5285a3;stroke-opacity:1;stroke-width:0.33333333333333}
+		.st53 {marker-end:url(#mrkr4-440);stroke:#70b0b7;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st54 {fill:#70b0b7;fill-opacity:1;stroke:#70b0b7;stroke-opacity:1;stroke-width:0.33333333333333}
+		.st55 {marker-end:url(#mrkr4-446);stroke:#5285a3;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st56 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-68" class="st15" v:arrowType="4" v:arrowSize="1" v:setback="5.24" refX="-5.24" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.8,-2.8) "/>
+		</marker>
+		<marker id="mrkr4-79" class="st17" v:arrowType="4" v:arrowSize="1" v:setback="5.6" refX="-5.6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<marker id="mrkr4-96" class="st15" v:arrowType="4" v:arrowSize="1" v:setback="5.6" refX="-5.6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.8,-2.8) "/>
+		</marker>
+		<marker id="mrkr4-126" class="st22" v:arrowType="4" v:arrowSize="1" v:setback="5.6" refX="-5.6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<marker id="mrkr4-137" class="st24" v:arrowType="4" v:arrowSize="1" v:setback="5" refX="-5" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5,-2.5) "/>
+		</marker>
+		<marker id="mrkr4-143" class="st26" v:arrowType="4" v:arrowSize="1" v:setback="4.94545" refX="-4.9454545454545"
+				orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.6363636363636,-2.6363636363636) "/>
+		</marker>
+		<marker id="mrkr4-149" class="st28" v:arrowType="4" v:arrowSize="1" v:setback="5" refX="-5" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5,-2.5) "/>
+		</marker>
+		<marker id="mrkr4-155" class="st30" v:arrowType="4" v:arrowSize="1" v:setback="5" refX="-5" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.5,-2.5) "/>
+		</marker>
+		<marker id="mrkr4-161" class="st32" v:arrowType="4" v:arrowSize="1" v:setback="6.05" refX="-6.05" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.25,-3.25) "/>
+		</marker>
+		<marker id="mrkr4-253" class="st40" v:arrowType="4" v:arrowSize="1" v:setback="6.32" refX="-6.32" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.4,-3.4) "/>
+		</marker>
+		<marker id="mrkr4-332" class="st44" v:arrowType="4" v:arrowSize="1" v:setback="4.94545" refX="-4.9454545454545"
+				orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.6363636363636,-2.6363636363636) "/>
+		</marker>
+		<marker id="mrkr4-338" class="st46" v:arrowType="4" v:arrowSize="1" v:setback="5.24" refX="-5.24" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-2.8,-2.8) "/>
+		</marker>
+		<marker id="mrkr4-357" class="st48" v:arrowType="4" v:arrowSize="1" v:setback="5.6" refX="-5.6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<marker id="mrkr4-434" class="st52" v:arrowType="4" v:arrowSize="1" v:setback="6" refX="-6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<marker id="mrkr4-440" class="st54" v:arrowType="4" v:arrowSize="1" v:setback="5.6" refX="-5.6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<marker id="mrkr4-446" class="st52" v:arrowType="4" v:arrowSize="1" v:setback="5.6" refX="-5.6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>RSDR-Net</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="group97-1" transform="translate(14.4,-581.04)" v:mID="97" v:groupContext="group">
+			<title>A_Overall</title>
+			<g id="shape1-2" v:mID="1" v:groupContext="shape">
+				<title>panel_A_Overall</title>
+				<rect x="0" y="594" width="1267.2" height="327.6" class="st1"/>
+			</g>
+			<g id="shape2-4" v:mID="2" v:groupContext="shape" transform="translate(12.96,-299.52)">
+				<title>title_A_Overall</title>
+				<desc>(a) Overall inference architecture of RSDR-Net</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="620.64" cy="910.08" width="1241.28" height="23.04"/>
+				<rect x="0" y="898.56" width="1241.28" height="23.04" class="st2"/>
+				<text x="0" y="915.07" class="st3" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(a)  Overall inference architecture of RSDR-Net</text>			</g>
+			<g id="shape3-7" v:mID="3" v:groupContext="shape" transform="translate(20.16,-141.84)">
+				<title>a_input</title>
+				<desc>Observed I/Q Y</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="47.52" cy="894.96" width="95.04" height="53.28"/>
+				<rect x="0" y="868.32" width="95.04" height="53.28" class="st4"/>
+				<text x="12.58" y="881.57" class="st5" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Observed <tspan
+							x="35.24" dy="1.05em" class="st6">I/Q<v:newlineChar/></tspan><tspan x="41.38" dy="1.05em" class="st6">Y</tspan></text>			</g>
+			<g id="shape4-12" v:mID="4" v:groupContext="shape" transform="translate(162,-218.16)">
+				<title>a_e1</title>
+				<desc>Reliability estimator E₁ R₁, b₁, T₁</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="66.24" cy="893.52" width="132.49" height="56.16"/>
+				<rect x="0" y="865.44" width="132.48" height="56.16" class="st7"/>
+				<text x="5" y="882.49" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Reliability estimator <tspan
+							x="59.47" dy="1.05em" class="st6">E</tspan>₁<v:newlineChar/><tspan x="39.33" dy="1.05em" class="st6">R</tspan>₁, b₁, T₁</text>			</g>
+			<g id="shape5-17" v:mID="5" v:groupContext="shape" transform="translate(162,-74.16)">
+				<title>a_e2</title>
+				<desc>Reliability estimator E₂ R₂, b₂, T₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="66.24" cy="893.52" width="132.49" height="56.16"/>
+				<rect x="0" y="865.44" width="132.48" height="56.16" class="st7"/>
+				<text x="5" y="882.49" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Reliability estimator <tspan
+							x="59.47" dy="1.05em" class="st6">E</tspan>₂<v:newlineChar/><tspan x="39.33" dy="1.05em" class="st6">R</tspan>₂, b₂, T₂</text>			</g>
+			<g id="shape6-22" v:mID="6" v:groupContext="shape" transform="translate(335.52,-218.16)">
+				<title>a_x1</title>
+				<desc>Expert 1: residual U-Net proposal δ₁ + action gate g₁</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="84.96" cy="893.52" width="169.92" height="56.16"/>
+				<rect x="0" y="865.44" width="169.92" height="56.16" class="st9"/>
+				<text x="11.28" y="889.85" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Expert 1: residual U-Net<v:newlineChar/><tspan
+							x="4.12" dy="1.05em" class="st6">proposal </tspan>δ₁ + action gate g₁</text>			</g>
+			<g id="shape7-26" v:mID="7" v:groupContext="shape" transform="translate(335.52,-74.16)">
+				<title>a_x2</title>
+				<desc>Expert 2: conditioned U-Net proposal δ₂ + bounded gate a₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="84.96" cy="893.52" width="169.92" height="56.16"/>
+				<rect x="0" y="865.44" width="169.92" height="56.16" class="st9"/>
+				<text x="0.39" y="882.49" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Expert 2: conditioned U-Net<v:newlineChar/><tspan
+							x="3.67" dy="1.05em" class="st6">proposal </tspan>δ₂ + bounded gate <tspan x="79.36" dy="1.05em"
+							class="st6">a</tspan>₂</text>			</g>
+			<g id="shape8-31" v:mID="8" v:groupContext="shape" transform="translate(541.44,-224.64)">
+				<title>a_u1</title>
+				<desc>U₁ = Y + g₁δ₁</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="46.08" cy="900.72" width="92.16" height="41.76"/>
+				<rect x="0" y="879.84" width="92.16" height="41.76" class="st10"/>
+				<text x="7.56" y="904.39" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>U₁ = Y + g₁δ₁</text>			</g>
+			<g id="shape9-34" v:mID="9" v:groupContext="shape" transform="translate(541.44,-80.64)">
+				<title>a_u2</title>
+				<desc>U₂ = Y + a₂δ₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="46.08" cy="900.72" width="92.16" height="41.76"/>
+				<rect x="0" y="879.84" width="92.16" height="41.76" class="st10"/>
+				<text x="7.56" y="904.39" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>U₂ = Y + a₂δ₂</text>			</g>
+			<g id="shape10-37" v:mID="10" v:groupContext="shape" transform="translate(686.88,-159.84)">
+				<title>a_anchor</title>
+				<desc>Fixed anchor A = Σ w̄ᵢ Cᵢ C₀=Y, C₁=U₁, C₂=U₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="62.64" cy="890.64" width="125.28" height="61.92"/>
+				<rect x="0" y="859.68" width="125.28" height="61.92" class="st11"/>
+				<text x="25.99" y="880.4" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Fixed anchor<v:newlineChar/><tspan
+							x="31.8" dy="1.05em" class="st6">A = </tspan>Σ w<tspan x="5.864em" dy="0em" class="st6">̄</tspan>ᵢ Cᵢ<v:newlineChar/><tspan
+							x="7.12" dy="1.05em" class="st6">C</tspan>₀=Y, C₁=U₁, C₂=U₂</text>			</g>
+			<g id="shape11-43" v:mID="11" v:groupContext="shape" transform="translate(686.88,-75.6)">
+				<title>a_router</title>
+				<desc>3 local routers L = π̄₁U₁ + π̄₂U₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="62.64" cy="897.84" width="125.28" height="47.52"/>
+				<rect x="0" y="874.08" width="125.28" height="47.52" class="st13"/>
+				<text x="19.87" y="894.16" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>3 local routers<v:newlineChar/><tspan
+							x="16.82" dy="1.05em" class="st6">L = </tspan><tspan x="2.938em 3.486em" dy="0em" class="st6">π̄</tspan>₁U₁ + <tspan
+							x="5.878em 6.425em" dy="0em" class="st6">π̄</tspan>₂U₂</text>			</g>
+			<g id="shape12-49" v:mID="12" v:groupContext="shape" transform="translate(860.4,-121.68)">
+				<title>a_gate</title>
+				<desc>Group gate 10 statistics z(Y, A, L) ρ = 0.25 σ(hψ(z))</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="60.48" cy="890.64" width="120.96" height="61.92"/>
+				<rect x="0" y="859.68" width="120.96" height="61.92" class="st7"/>
+				<text x="28.88" y="873.58" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Group gate<v:newlineChar/><tspan
+							x="7.59" dy="1.05em" class="st6">10 statistics z(Y, A, </tspan><tspan x="53.98" dy="1.05em" class="st6">L)<v:newlineChar/></tspan><tspan
+							x="13.88" dy="1.05em" class="st6">ρ</tspan> = 0.25 σ(hψ(z))</text>			</g>
+			<g id="shape13-55" v:mID="13" v:groupContext="shape" transform="translate(1016.64,-121.68)">
+				<title>a_blend</title>
+				<desc>Bounded blend F = A + ρ(L − A)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="57.6" cy="890.64" width="115.2" height="61.92"/>
+				<rect x="0" y="859.68" width="115.2" height="61.92" class="st11"/>
+				<text x="12.27" y="886.96" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Bounded blend<v:newlineChar/><tspan
+							x="7.67" dy="1.05em" class="st6">F = A + </tspan>ρ(L − A)</text>			</g>
+			<g id="shape14-59" v:mID="14" v:groupContext="shape" transform="translate(1159.2,-126)">
+				<title>a_out</title>
+				<desc>Restored output F</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="40.32" cy="894.96" width="80.65" height="53.28"/>
+				<rect x="0" y="868.32" width="80.64" height="53.28" class="st4"/>
+				<text x="7.75" y="890.5" class="st5" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Restored<v:newlineChar/><tspan
+							x="8.91" dy="1.05em" class="st6">output F</tspan></text>			</g>
+			<g id="shape15-63" v:mID="15" v:groupContext="shape" transform="translate(115.2,-183.6)">
+				<title>a_y_to_e1</title>
+				<path d="M0 921.6 L21.6 921.6 L21.6 858.96 L46.8 858.96 L46.8 858.96" class="st14"/>
+			</g>
+			<g id="shape16-69" v:mID="16" v:groupContext="shape" transform="translate(115.2,-102.24)">
+				<title>a_y_to_e2</title>
+				<path d="M0 870.48 L21.6 870.48 L21.6 921.6 L46.8 921.6 L46.8 921.6" class="st14"/>
+			</g>
+			<g id="shape17-74" v:mID="17" v:groupContext="shape" transform="translate(115.2,-183.6)">
+				<title>a_y_to_x1</title>
+				<path d="M0 921.6 L32.4 921.6 L32.4 820.08 L205.92 820.08 L205.92 858.96 L220.32 858.96 L220.32 858.96"
+						class="st16"/>
+			</g>
+			<g id="shape18-80" v:mID="18" v:groupContext="shape" transform="translate(115.2,-63.36)">
+				<title>a_y_to_x2</title>
+				<path d="M0 831.6 L32.4 831.6 L32.4 921.6 L205.92 921.6 L205.92 882.72 L220.32 882.72 L220.32 882.72" class="st16"/>
+			</g>
+			<g id="shape19-85" v:mID="19" v:groupContext="shape" transform="translate(294.48,-246.24)">
+				<title>a_e1_to_x1</title>
+				<path d="M0 921.6 L41.04 921.6" class="st18"/>
+			</g>
+			<g id="shape20-88" v:mID="20" v:groupContext="shape" transform="translate(294.48,-102.24)">
+				<title>a_e2_to_x2</title>
+				<path d="M0 921.6 L41.04 921.6" class="st18"/>
+			</g>
+			<g id="shape21-91" v:mID="21" v:groupContext="shape" transform="translate(505.44,-246.24)">
+				<title>a_x1_to_u1</title>
+				<path d="M0 921.6 L30.4 921.6" class="st19"/>
+			</g>
+			<g id="shape22-97" v:mID="22" v:groupContext="shape" transform="translate(505.44,-102.24)">
+				<title>a_x2_to_u2</title>
+				<path d="M0 921.6 L30.4 921.6" class="st19"/>
+			</g>
+			<g id="shape23-102" v:mID="23" v:groupContext="shape" transform="translate(115.2,-25.2)">
+				<title>a_y_keep</title>
+				<path d="M0 777.6 L10.08 777.6 L10.08 921.6 L550.08 921.6 L550.08 766.8 L571.68 766.8 L571.68 766.8" class="st16"/>
+			</g>
+			<g id="shape24-107" v:mID="24" v:groupContext="shape" transform="translate(495.36,-28.8)">
+				<title>a_keep_label</title>
+				<desc>KEEP: C₀ = Y</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="33.12" cy="913.68" width="66.25" height="15.84"/>
+				<rect x="0" y="905.76" width="66.24" height="15.84" class="st2"/>
+				<text x="4.27" y="910.53" class="st20" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>KEEP: C₀ = <tspan
+							x="28.79" dy="1.05em" class="st6">Y</tspan></text>			</g>
+			<g id="shape25-111" v:mID="25" v:groupContext="shape" transform="translate(633.6,-207.36)">
+				<title>a_u1_anchor</title>
+				<path d="M0 883.44 L25.2 883.44 L25.2 921.6 L53.28 921.6 L53.28 921.6" class="st14"/>
+			</g>
+			<g id="shape26-116" v:mID="26" v:groupContext="shape" transform="translate(633.6,-101.52)">
+				<title>a_u2_anchor</title>
+				<path d="M0 921.6 L25.2 921.6 L25.2 849.6 L53.28 849.6 L53.28 849.6" class="st14"/>
+			</g>
+			<g id="shape27-121" v:mID="27" v:groupContext="shape" transform="translate(633.6,-103.68)">
+				<title>a_u1_router</title>
+				<path d="M0 789.12 L15.84 789.12 L15.84 921.6 L53.28 921.6 L53.28 921.6" class="st21"/>
+			</g>
+			<g id="shape28-127" v:mID="28" v:groupContext="shape" transform="translate(633.6,-91.44)">
+				<title>a_u2_router</title>
+				<path d="M0 920.88 L31.68 920.88 L31.68 921.6 L53.28 921.6 L53.28 921.6" class="st21"/>
+			</g>
+			<g id="shape29-132" v:mID="29" v:groupContext="shape" transform="translate(915.349,-185.725) rotate(6.42875)">
+				<title>a_anchor_blend</title>
+				<path d="M0 921.6 L199.77 921.6" class="st23"/>
+			</g>
+			<g id="shape30-138" v:mID="30" v:groupContext="shape" transform="translate(812.16,-99.36)">
+				<title>a_router_gate</title>
+				<path d="M0 921.6 L23.04 921.6 L23.04 883.44 L48.24 883.44 L48.24 883.44" class="st25"/>
+			</g>
+			<g id="shape31-144" v:mID="31" v:groupContext="shape" transform="translate(981.36,-152.64)">
+				<title>a_gate_blend</title>
+				<path d="M0 921.6 L29.28 921.6" class="st27"/>
+			</g>
+			<g id="shape32-150" v:mID="32" v:groupContext="shape" transform="translate(1131.84,-152.64)">
+				<title>a_blend_out</title>
+				<path d="M0 921.6 L21.36 921.6" class="st29"/>
+			</g>
+			<g id="shape33-156" v:mID="33" v:groupContext="shape" transform="translate(115.2,-13.68)">
+				<title>a_stats</title>
+				<path d="M0 770.4 L10.8 770.4 L10.8 921.6 L728.64 921.6 L728.64 812.88 L745.2 812.88 L745.2 812.88" class="st31"/>
+			</g>
+			<g id="shape34-162" v:mID="34" v:groupContext="shape" transform="translate(752.4,-14.4)">
+				<title>a_stats_label</title>
+				<desc>frame-level statistics</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="57.6" cy="914.76" width="115.2" height="13.68"/>
+				<rect x="0" y="907.92" width="115.2" height="13.68" class="st2"/>
+				<text x="11.94" y="917.65" class="st33" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>frame-level statistics</text>			</g>
+			<g id="shape35-165" v:mID="35" v:groupContext="shape" transform="translate(15.84,-20.88)">
+				<title>a_stop_note</title>
+				<desc>Dashed: stop-gradient reliability/features or group statistics</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="122.4" cy="914.76" width="244.8" height="13.68"/>
+				<rect x="0" y="907.92" width="244.8" height="13.68" class="st2"/>
+				<text x="0" y="911.87" class="st34" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Dashed: stop-gradient reliability/features or group <tspan
+							x="0" dy="1.05em" class="st6">statistics</tspan></text>			</g>
+			<g id="shape36-169" v:mID="36" v:groupContext="shape" transform="translate(1005.12,-92.88)">
+				<title>a_rho_note</title>
+				<desc>ρ ∈ [0, 0.25]; fixed-anchor coefficient 1−ρ ≥ 0.75</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="126.72" cy="910.8" width="253.44" height="21.6"/>
+				<rect x="0" y="900" width="253.44" height="21.6" class="st2"/>
+				<text x="7.85" y="914" class="st20" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>ρ <tspan
+							class="st35">∈</tspan> [0, 0.25]; fixed-anchor coefficient 1−ρ ≥ 0.75</text>			</g>
+		</g>
+		<g id="group98-173" transform="translate(14.4,-14.4)" v:mID="98" v:groupContext="group">
+			<title>B_Detail</title>
+			<g id="shape37-174" v:mID="37" v:groupContext="shape">
+				<title>panel_B_Detail</title>
+				<rect x="0" y="367.2" width="842.4" height="554.4" class="st1"/>
+			</g>
+			<g id="shape38-176" v:mID="38" v:groupContext="shape" transform="translate(12.96,-526.32)">
+				<title>title_B_Detail</title>
+				<desc>(b) Reliability estimator E₂ and proposal network D₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="408.24" cy="910.08" width="816.48" height="23.04"/>
+				<rect x="0" y="898.56" width="816.48" height="23.04" class="st2"/>
+				<text x="0" y="915.07" class="st3" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(b)  Reliability estimator E₂ and proposal network D₂</text>			</g>
+			<g id="shape39-179" v:mID="39" v:groupContext="shape" transform="translate(15.84,-504.72)">
+				<title>b_subtitle</title>
+				<desc>Per-pulse fast-time processing; E₁ and E₂ have independent pa...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="401.4" cy="912.96" width="802.8" height="17.28"/>
+				<rect x="0" y="904.32" width="802.8" height="17.28" class="st2"/>
+				<text x="0" y="916.37" class="st36" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Per-pulse fast-time processing; E₁ and E₂ have independent parameters</text>			</g>
+			<g id="shape40-182" v:mID="40" v:groupContext="shape" transform="translate(20.16,-475.2)">
+				<title>b_e_label</title>
+				<desc>Reliability estimator E₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.2" cy="912.24" width="140.4" height="18.72"/>
+				<rect x="0" y="902.88" width="140.4" height="18.72" class="st2"/>
+				<text x="0" y="908.04" class="st37" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Reliability estimator <tspan
+							x="0" dy="1.05em" class="st6">E</tspan>₂</text>			</g>
+			<g id="shape41-186" v:mID="41" v:groupContext="shape" transform="translate(20.16,-414.72)">
+				<title>b_iqy</title>
+				<desc>I(Y) 2 channels</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="44.64" cy="899.28" width="89.28" height="44.64"/>
+				<rect x="0" y="876.96" width="89.28" height="44.64" class="st4"/>
+				<text x="32.2" y="895.6" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>I(Y)<v:newlineChar/><tspan
+							x="13.33" dy="1.05em" class="st6">2 channels</tspan></text>			</g>
+			<g id="shape42-190" v:mID="42" v:groupContext="shape" transform="translate(141.84,-414.72)">
+				<title>b_enc0</title>
+				<desc>Conv encoder 32 ch · N=1800</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="47.52" cy="894.96" width="95.04" height="53.28"/>
+				<rect x="0" y="868.32" width="95.04" height="53.28" class="st7"/>
+				<text x="9.07" y="891.55" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv encoder<v:newlineChar/><tspan
+							x="6.08" dy="1.05em" class="st6">32 ch · N=1800</tspan></text>			</g>
+			<g id="shape43-194" v:mID="43" v:groupContext="shape" transform="translate(260.64,-414.72)">
+				<title>b_enc1</title>
+				<desc>Conv encoder 64 ch · N=900</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="47.52" cy="894.96" width="95.04" height="53.28"/>
+				<rect x="0" y="868.32" width="95.04" height="53.28" class="st7"/>
+				<text x="9.07" y="891.55" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv encoder<v:newlineChar/><tspan
+							x="9.33" dy="1.05em" class="st6">64 ch · N=900</tspan></text>			</g>
+			<g id="shape44-198" v:mID="44" v:groupContext="shape" transform="translate(379.44,-414.72)">
+				<title>b_enc2</title>
+				<desc>Conv encoder 128 ch · N=450</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="52.2" cy="894.96" width="104.4" height="53.28"/>
+				<rect x="0" y="868.32" width="104.4" height="53.28" class="st7"/>
+				<text x="13.75" y="891.55" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv encoder<v:newlineChar/><tspan
+							x="10.76" dy="1.05em" class="st6">128 ch · N=450</tspan></text>			</g>
+			<g id="shape45-202" v:mID="45" v:groupContext="shape" transform="translate(508.32,-407.52)">
+				<title>b_trans</title>
+				<desc>Pre-LN Transformer 4 layers · 4 heads RoPE</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="66.24" cy="887.76" width="132.49" height="67.68"/>
+				<rect x="0" y="853.92" width="132.48" height="67.68" class="st11"/>
+				<text x="7.58" y="877.52" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Pre-LN Transformer<v:newlineChar/><tspan
+							x="18.57" dy="1.05em" class="st6">4 layers · 4 heads<v:newlineChar/></tspan><tspan x="49.99"
+							dy="1.05em" class="st6">RoPE</tspan></text>			</g>
+			<g id="shape46-207" v:mID="46" v:groupContext="shape" transform="translate(663.12,-414.72)">
+				<title>b_dec</title>
+				<desc>Skip decoder 3 scales</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="49.68" cy="894.96" width="99.36" height="53.28"/>
+				<rect x="0" y="868.32" width="99.36" height="53.28" class="st7"/>
+				<text x="13.38" y="891.55" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Skip decoder<v:newlineChar/><tspan
+							x="28.92" dy="1.05em" class="st6">3 scales</tspan></text>			</g>
+			<g id="shape47-211" v:mID="47" v:groupContext="shape" transform="translate(774,-401.76)">
+				<title>b_eout</title>
+				<desc>R₂, b₂ T₂,₀:₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.08" cy="882" width="56.17" height="79.2"/>
+				<rect x="0" y="842.4" width="56.16" height="79.2" class="st38"/>
+				<text x="12.62" y="878.59" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>R₂, b₂<v:newlineChar/><tspan
+							x="14.11" dy="1.05em" class="st6">T</tspan>₂,₀:₂</text>			</g>
+			<g id="shape48-215" v:mID="48" v:groupContext="shape" transform="translate(109.44,-437.04)">
+				<title>b_e0</title>
+				<path d="M0 921.6 L26.8 921.6" class="st19"/>
+			</g>
+			<g id="shape49-220" v:mID="49" v:groupContext="shape" transform="translate(236.88,-441.36)">
+				<title>b_e1</title>
+				<path d="M0 921.6 L18.16 921.6" class="st19"/>
+			</g>
+			<g id="shape50-225" v:mID="50" v:groupContext="shape" transform="translate(355.68,-441.36)">
+				<title>b_e2</title>
+				<path d="M0 921.6 L18.16 921.6" class="st19"/>
+			</g>
+			<g id="shape51-230" v:mID="51" v:groupContext="shape" transform="translate(483.84,-441.36)">
+				<title>b_e3</title>
+				<path d="M0 921.6 L18.88 921.6" class="st19"/>
+			</g>
+			<g id="shape52-235" v:mID="52" v:groupContext="shape" transform="translate(640.8,-441.36)">
+				<title>b_e4</title>
+				<path d="M0 921.6 L16.72 921.6" class="st19"/>
+			</g>
+			<g id="shape53-240" v:mID="53" v:groupContext="shape" transform="translate(762.48,-441.36)">
+				<title>b_e5</title>
+				<path d="M0 921.6 L5.92 921.6" class="st19"/>
+			</g>
+			<g id="shape54-245" v:mID="54" v:groupContext="shape" transform="translate(257.04,-378.72)">
+				<title>b_skip_lbl</title>
+				<desc>Encoder features connect to decoder at matching resolutions (...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="213.84" cy="915.12" width="427.68" height="12.96"/>
+				<rect x="0" y="908.64" width="427.68" height="12.96" class="st2"/>
+				<text x="39.28" y="918.01" class="st33" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Encoder features connect to decoder at matching resolutions (skip connections)</text>			</g>
+			<g id="shape55-248" v:mID="55" v:groupContext="shape" transform="translate(189.36,-408.96)">
+				<title>b_skip0</title>
+				<path d="M0 915.84 L0 921.6 L517.68 921.6 L517.68 915.84 L517.68 915.84" class="st39"/>
+			</g>
+			<g id="shape56-254" v:mID="56" v:groupContext="shape" transform="translate(308.16,-402.48)">
+				<title>b_skip1</title>
+				<path d="M0 909.36 L0 921.6 L404.64 921.6 L404.64 909.36 L404.64 909.36" class="st39"/>
+			</g>
+			<g id="shape57-259" v:mID="57" v:groupContext="shape" transform="translate(431.28,-396)">
+				<title>b_skip2</title>
+				<path d="M0 902.88 L0 921.6 L287.28 921.6 L287.28 902.88 L287.28 902.88" class="st39"/>
+			</g>
+			<g id="shape58-264" v:mID="58" v:groupContext="shape" transform="translate(20.16,-347.04)">
+				<title>b_d_label</title>
+				<desc>Expert 2 proposal network D₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="126" cy="912.24" width="252" height="18.72"/>
+				<rect x="0" y="902.88" width="252" height="18.72" class="st2"/>
+				<text x="0" y="916.44" class="st41" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Expert 2 proposal network D₂</text>			</g>
+			<g id="shape59-267" v:mID="59" v:groupContext="shape" transform="translate(20.16,-276.48)">
+				<title>b_di</title>
+				<desc>I(Y) 2 channels</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="44.64" cy="899.28" width="89.28" height="44.64"/>
+				<rect x="0" y="876.96" width="89.28" height="44.64" class="st4"/>
+				<text x="32.2" y="895.6" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>I(Y)<v:newlineChar/><tspan
+							x="13.33" dy="1.05em" class="st6">2 channels</tspan></text>			</g>
+			<g id="shape60-271" v:mID="60" v:groupContext="shape" transform="translate(141.84,-268.56)">
+				<title>b_denc</title>
+				<desc>Residual U-Net encoder 32 → 64 → 128 ch ↓2 at each scale</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="63.36" cy="891.36" width="126.72" height="60.48"/>
+				<rect x="0" y="861.12" width="126.72" height="60.48" class="st9"/>
+				<text x="20.93" y="874.3" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Residual U-Net <tspan
+							x="41.34" dy="1.05em" class="st6">encoder<v:newlineChar/></tspan><tspan x="12.98" dy="1.05em"
+							class="st6">32 </tspan>→ 64 → 128 ch<v:newlineChar/><tspan x="20.58" dy="1.05em" class="st6">↓</tspan>2 at each scale</text>			</g>
+			<g id="shape61-277" v:mID="61" v:groupContext="shape" transform="translate(294.48,-259.92)">
+				<title>b_dmod</title>
+				<desc>3 reliability modulation cells H̃c = Hc + (1−rc)γc vc(Hc) fea...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="66.24" cy="882.72" width="132.49" height="77.76"/>
+				<rect x="0" y="843.84" width="132.48" height="77.76" class="st13"/>
+				<text x="5.9" y="860.67" class="st42" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>3 reliability modulation <tspan
+							x="55.24" dy="1.05em" class="st6">cells<v:newlineChar/></tspan><tspan x="17.53" dy="1.05em" class="st6">H</tspan><tspan
+							x="2.239em" dy="0em" class="st6">̃</tspan>c = Hc + (1−rc)γc <tspan x="49.25" dy="1.05em" class="st6">vc(Hc)<v:newlineChar/></tspan><tspan
+							x="11.75" dy="1.05em" class="st6">features: 32 / 64 / 128</tspan></text>			</g>
+			<g id="shape62-285" v:mID="62" v:groupContext="shape" transform="translate(452.88,-268.56)">
+				<title>b_ddec</title>
+				<desc>Skip decoder 128 → 64 → 32 ch ↑2 linear resize</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="63.36" cy="891.36" width="126.72" height="60.48"/>
+				<rect x="0" y="861.12" width="126.72" height="60.48" class="st9"/>
+				<text x="27.06" y="881.12" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Skip decoder<v:newlineChar/><tspan
+							x="12.98" dy="1.05em" class="st6">128 </tspan>→ 64 → 32 ch<v:newlineChar/><tspan x="21.49" dy="1.05em"
+							class="st6">↑</tspan>2 linear resize</text>			</g>
+			<g id="shape63-290" v:mID="63" v:groupContext="shape" transform="translate(607.68,-276.48)">
+				<title>b_delta</title>
+				<desc>Complex proposal δ₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="43.92" cy="899.28" width="87.84" height="44.64"/>
+				<rect x="0" y="876.96" width="87.84" height="44.64" class="st10"/>
+				<text x="19.01" y="889.04" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Complex <tspan
+							x="19.72" dy="1.05em" class="st6">proposal<v:newlineChar/></tspan><tspan x="38.6" dy="1.05em"
+							class="st6">δ</tspan>₂</text>			</g>
+			<g id="shape64-295" v:mID="64" v:groupContext="shape" transform="translate(717.12,-264.24)">
+				<title>b_gate</title>
+				<desc>Action gate Gω₂ [ I(Y), I(δ₂), R̃₂ ] a₂=(1−R̃₂)g₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="56.16" cy="887.76" width="112.32" height="67.68"/>
+				<rect x="0" y="853.92" width="112.32" height="67.68" class="st11"/>
+				<text x="14.65" y="878.31" class="st42" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Action gate Gω₂<v:newlineChar/><tspan
+							x="15.12" dy="1.05em" class="st6">[ I(Y), I(</tspan>δ₂), R<tspan x="7.217em" dy="0em" class="st6">̃</tspan>₂ ]<v:newlineChar/><tspan
+							x="26.6" dy="1.05em" class="st6">a</tspan>₂=(1−R<tspan x="5.711em" dy="0em" class="st6">̃</tspan>₂)g₂</text>			</g>
+			<g id="shape65-302" v:mID="65" v:groupContext="shape" transform="translate(109.44,-298.8)">
+				<title>b_d0</title>
+				<path d="M0 921.6 L26.8 921.6" class="st19"/>
+			</g>
+			<g id="shape66-307" v:mID="66" v:groupContext="shape" transform="translate(268.56,-298.8)">
+				<title>b_d1</title>
+				<path d="M0 921.6 L20.32 921.6" class="st19"/>
+			</g>
+			<g id="shape67-312" v:mID="67" v:groupContext="shape" transform="translate(426.96,-298.8)">
+				<title>b_d2</title>
+				<path d="M0 921.6 L20.32 921.6" class="st19"/>
+			</g>
+			<g id="shape68-317" v:mID="68" v:groupContext="shape" transform="translate(579.6,-298.8)">
+				<title>b_d3</title>
+				<path d="M0 921.6 L22.48 921.6" class="st19"/>
+			</g>
+			<g id="shape69-322" v:mID="69" v:groupContext="shape" transform="translate(695.52,-298.8)">
+				<title>b_d4</title>
+				<path d="M0 921.6 L16 921.6" class="st19"/>
+			</g>
+			<g id="shape70-327" v:mID="70" v:groupContext="shape" transform="translate(361.44,-337.68)">
+				<title>b_r_to_d</title>
+				<path d="M440.64 857.52 L440.64 887.76 L0 887.76 L0 921.6 L0 921.6" class="st43"/>
+			</g>
+			<g id="shape71-333" v:mID="71" v:groupContext="shape" transform="translate(361.44,-337.68)">
+				<title>b_t_to_d</title>
+				<path d="M430.56 857.52 L430.56 879.84 L63.36 879.84 L63.36 908.64 L0 908.64 L0 921.6 L0 921.6" class="st45"/>
+			</g>
+			<g id="shape72-339" v:mID="72" v:groupContext="shape" transform="translate(531.36,-352.08)">
+				<title>b_stop</title>
+				<desc>R̃₂=sg(R₂), T̃₂=sg(T₂)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="75.6" cy="914.76" width="151.21" height="13.68"/>
+				<rect x="0" y="907.92" width="151.2" height="13.68" class="st2"/>
+				<text x="28.89" y="917.65" class="st34" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>R<tspan
+							x="3.293em" dy="0em" class="st6">̃</tspan>₂=sg(R₂), T<tspan x="7.79em" dy="0em" class="st6">̃</tspan>₂=sg(T₂)</text>			</g>
+			<g id="shape73-344" v:mID="73" v:groupContext="shape" transform="translate(717.12,-190.08)">
+				<title>b_u2</title>
+				<desc>U₂ = Y + a₂δ₂</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="56.16" cy="899.28" width="112.32" height="44.64"/>
+				<rect x="0" y="876.96" width="112.32" height="44.64" class="st10"/>
+				<text x="17.64" y="902.95" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>U₂ = Y + a₂δ₂</text>			</g>
+			<g id="shape74-347" v:mID="74" v:groupContext="shape" transform="translate(1694.88,657.36) rotate(90)">
+				<title>b_gate_to_u</title>
+				<path d="M0 921.6 L23.92 921.6" class="st19"/>
+			</g>
+			<g id="shape75-352" v:mID="75" v:groupContext="shape" transform="translate(64.8,-212.4)">
+				<title>b_y_to_u</title>
+				<path d="M0 857.52 L0 921.6 L652.32 921.6 L652.32 921.6" class="st47"/>
+			</g>
+			<g id="shape76-358" v:mID="76" v:groupContext="shape" transform="translate(20.16,-128.16)">
+				<title>b_d1_compare</title>
+				<desc>Expert 1 uses the same residual U-Net backbone without reliab...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="396" cy="902.88" width="792" height="37.44"/>
+				<rect x="0" y="884.16" width="792" height="37.44" class="st2"/>
+				<text x="0" y="906.29" class="st36" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Expert 1 uses the same residual U-Net backbone without reliability conditioning or modulation; its action gate uses R<tspan
+							x="47.017em" dy="0em" class="st6">̃</tspan>₁ only at the output.</text>			</g>
+			<g id="shape77-362" v:mID="77" v:groupContext="shape" transform="translate(20.16,-74.88)">
+				<title>b_infer_note</title>
+				<desc>Estimators, experts and local routers process each pulse inde...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="396" cy="902.16" width="792" height="38.88"/>
+				<rect x="0" y="882.72" width="792" height="38.88" class="st2"/>
+				<text x="0" y="905.57" class="st49" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Estimators, experts and local routers process each pulse independently. Only the group gate aggregates the complete P × N frame.</text>			</g>
+			<g id="shape78-365" v:mID="78" v:groupContext="shape" transform="translate(20.16,-30.96)">
+				<title>b_train_only</title>
+				<desc>Training-only auxiliary output: boundary map b₂; it is not an...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="392.4" cy="909.36" width="784.8" height="24.48"/>
+				<rect x="0" y="897.12" width="784.8" height="24.48" class="st2"/>
+				<text x="0" y="912.51" class="st50" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>Training-only auxiliary output: boundary map b₂; it is not an inference input.</text>			</g>
+		</g>
+		<g id="group99-368" transform="translate(871.2,-14.4)" v:mID="99" v:groupContext="group">
+			<title>C_Modulation</title>
+			<g id="shape79-369" v:mID="79" v:groupContext="shape">
+				<title>panel_C_Modulation</title>
+				<rect x="0" y="367.2" width="410.4" height="554.4" class="st1"/>
+			</g>
+			<g id="shape80-371" v:mID="80" v:groupContext="shape" transform="translate(12.96,-526.32)">
+				<title>title_C_Modulation</title>
+				<desc>(c) Reliability modulation cell</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="192.24" cy="910.08" width="384.48" height="23.04"/>
+				<rect x="0" y="898.56" width="384.48" height="23.04" class="st2"/>
+				<text x="0" y="915.07" class="st3" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>(c)  Reliability modulation cell</text>			</g>
+			<g id="shape81-374" v:mID="81" v:groupContext="shape" transform="translate(18,-480.96)">
+				<title>c_intro</title>
+				<desc>At each encoder–decoder scale c, resize the stopped reliabili...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="187.2" cy="902.88" width="374.4" height="37.44"/>
+				<rect x="0" y="884.16" width="374.4" height="37.44" class="st2"/>
+				<text x="0" y="899.47" class="st49" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>At each encoder–decoder scale c, resize the stopped reliability and map <tspan
+							x="0" dy="1.05em" class="st6">the estimator feature:</tspan></text>			</g>
+			<g id="shape82-378" v:mID="82" v:groupContext="shape" transform="translate(28.8,-412.56)">
+				<title>c_h</title>
+				<desc>Encoder feature Hc</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="42.48" cy="899.28" width="84.96" height="44.64"/>
+				<rect x="0" y="876.96" width="84.96" height="44.64" class="st9"/>
+				<text x="17.2" y="888.26" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Encoder <tspan
+							x="21.1" dy="1.05em" class="st6">feature<v:newlineChar/></tspan><tspan x="33.93" dy="1.05em"
+							class="st6">Hc</tspan></text>			</g>
+			<g id="shape83-383" v:mID="83" v:groupContext="shape" transform="translate(173.52,-405.36)">
+				<title>c_conv</title>
+				<desc>Conv₁ [ Hc, rc, ηc(T̃₂,c) ] Sigmoid</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="68.4" cy="892.08" width="136.8" height="59.04"/>
+				<rect x="0" y="862.56" width="136.8" height="59.04" class="st7"/>
+				<text x="0.53" y="888.67" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Conv₁ [ Hc, rc, ηc(T<tspan
+							x="8.573em" dy="0em" class="st6">̃</tspan>₂,c) ]<v:newlineChar/><tspan x="45.64" dy="1.05em"
+							class="st6">Sigmoid</tspan></text>			</g>
+			<g id="shape84-388" v:mID="84" v:groupContext="shape" transform="translate(320.4,-412.56)">
+				<title>c_gamma</title>
+				<desc>Gate γc</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="33.84" cy="899.28" width="67.68" height="44.64"/>
+				<rect x="0" y="876.96" width="67.68" height="44.64" class="st38"/>
+				<text x="19.46" y="895.6" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Gate<v:newlineChar/><tspan
+							x="27.46" dy="1.05em" class="st6">γ</tspan>c</text>			</g>
+			<g id="shape85-392" v:mID="85" v:groupContext="shape" transform="translate(113.76,-434.88)">
+				<title>c_h_to_conv</title>
+				<path d="M0 921.6 L54.16 921.6" class="st19"/>
+			</g>
+			<g id="shape86-397" v:mID="86" v:groupContext="shape" transform="translate(310.32,-434.88)">
+				<title>c_conv_to_g</title>
+				<path d="M0 921.6 L4.48 921.6" class="st19"/>
+			</g>
+			<g id="shape87-402" v:mID="87" v:groupContext="shape" transform="translate(27.36,-325.44)">
+				<title>c_rc</title>
+				<desc>r_c = Resize(R̃₂) 1 − r_c</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="51.12" cy="898.56" width="102.24" height="46.08"/>
+				<rect x="0" y="875.52" width="102.24" height="46.08" class="st13"/>
+				<text x="6.49" y="895.15" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>r_c = Resize(R<tspan
+							x="6.733em" dy="0em" class="st6">̃</tspan>₂)<v:newlineChar/><tspan x="31.9" dy="1.05em" class="st6">1 </tspan>− r_c</text>			</g>
+			<g id="shape88-407" v:mID="88" v:groupContext="shape" transform="translate(172.8,-325.44)">
+				<title>c_v</title>
+				<desc>v_c(Hc) Conv₃ + GELU</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="68.4" cy="898.56" width="136.8" height="46.08"/>
+				<rect x="0" y="875.52" width="136.8" height="46.08" class="st9"/>
+				<text x="46.74" y="895.15" class="st12" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>v_c(Hc)<v:newlineChar/><tspan
+							x="26.27" dy="1.05em" class="st6">Conv</tspan>₃ + GELU</text>			</g>
+			<g id="shape89-411" v:mID="89" v:groupContext="shape" transform="translate(216,-237.6)">
+				<title>c_sum</title>
+				<desc>H̃c = Hc + (1−r_c) ⊙ γc ⊙ v_c(Hc)</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="55.44" cy="897.84" width="110.88" height="47.52"/>
+				<rect x="0" y="874.08" width="110.88" height="47.52" class="st11"/>
+				<text x="29.44" y="888.27" class="st42" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>H<tspan
+							x="3.231em" dy="0em" class="st6">̃</tspan>c = Hc +<v:newlineChar/><tspan x="15.02" dy="1.065em"
+							class="st6">(1</tspan>−r_c) <tspan class="st35">⊙</tspan> γc <tspan class="st35">⊙</tspan> <tspan
+							x="35.45" dy="1.055em" class="st6">v_c(Hc)</tspan></text>			</g>
+			<g id="shape90-419" v:mID="90" v:groupContext="shape" transform="translate(129.6,-348.48)">
+				<title>c_rc_gate</title>
+				<path d="M0 921.6 L18 921.6 L18 872.64 L221.76 872.64 L221.76 857.52 L221.76 857.52" class="st21"/>
+			</g>
+			<g id="shape91-424" v:mID="91" v:groupContext="shape" transform="translate(79.2,-262.08)">
+				<title>c_rc_sum</title>
+				<path d="M0 858.24 L0 921.6 L136.8 921.6 L136.8 921.6" class="st21"/>
+			</g>
+			<g id="shape92-429" v:mID="92" v:groupContext="shape" transform="translate(1162.8,596.16) rotate(90)">
+				<title>c_v_sum</title>
+				<path d="M0 921.6 L34.92 921.6" class="st51"/>
+			</g>
+			<g id="shape93-435" v:mID="93" v:groupContext="shape" transform="translate(326.88,-262.08)">
+				<title>c_gamma_sum</title>
+				<path d="M27.36 771.12 L27.36 921.6 L0 921.6 L0 921.6" class="st53"/>
+			</g>
+			<g id="shape94-441" v:mID="94" v:groupContext="shape" transform="translate(71.28,-262.08)">
+				<title>c_h_sum</title>
+				<path d="M0 771.12 L0 882.72 L126.72 882.72 L126.72 921.6 L144.72 921.6 L144.72 921.6" class="st55"/>
+			</g>
+			<g id="shape95-447" v:mID="95" v:groupContext="shape" transform="translate(21.6,-160.56)">
+				<title>c_behaviour</title>
+				<desc>R̃₂ ≈ 1 → little feature change Lower R̃₂ → larger permitted ...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="183.6" cy="895.68" width="367.2" height="51.84"/>
+				<rect x="0" y="869.76" width="367.2" height="51.84" class="st2"/>
+				<text x="0" y="892" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05"/><v:tabList/>R<tspan x="0.722em"
+							dy="0em" class="st6">̃</tspan>₂ ≈ 1  →  little feature change<v:newlineChar/><tspan x="0" dy="1.05em"
+							class="st6">Lower R</tspan><tspan x="3.749em" dy="0em" class="st6">̃</tspan>₂  →  larger permitted modulation</text>			</g>
+			<g id="shape96-453" v:mID="96" v:groupContext="shape" transform="translate(21.6,-59.04)">
+				<title>c_adopt</title>
+				<desc>Output action gate g₂ = σ(Gω₂[ I(Y), I(δ₂), R̃₂ ]) a₂ = (1 − ...</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="183.6" cy="882.72" width="367.2" height="77.76"/>
+				<rect x="0" y="843.84" width="367.2" height="77.76" class="st11"/>
+				<text x="127.6" y="871.55" class="st8" v:langID="2052"><v:paragraph v:spLine="-1.05" v:horizAlign="1"/><v:tabList/>Output action gate<v:newlineChar/><tspan
+							x="101.51" dy="1.05em" class="st6">g</tspan>₂ = σ(Gω₂[ I(Y), I(δ₂), R<tspan x="17.762em" dy="0em"
+							class="st6">̃</tspan>₂ ])<v:newlineChar/><tspan x="92.44" dy="1.065em" class="st6">a</tspan>₂ = (1 − R<tspan
+							x="11.098em" dy="0em" class="st6">̃</tspan>₂) <tspan class="st35">⊙</tspan> g₂  <tspan class="st35">∈</tspan> [0, 1 − R<tspan
+							x="18.993em" dy="0em" class="st6">̃</tspan>₂]</text>			</g>
+		</g>
+	</g>
+</svg>

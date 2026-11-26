@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "native_geometry_objects": 96,
+  "semantic_panels": 3,
+  "native_shapes_including_groups": 99,
+  "editable_text_shapes": 50,
+  "embedded_media": [],
+  "pdf_raster_images": 0,
+  "pdf_fonts": [
+    {
+      "name": "BCDEEE+TimesNewRomanPS-BoldMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDFEE+TimesNewRomanPS-BoldMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDGEE+TimesNewRomanPS-BoldMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDHEE+TimesNewRomanPSMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDIEE+TimesNewRomanPSMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDJEE+CambriaMath",
+      "embedded": true
+    },
+    {
+      "name": "BCDKEE+TimesNewRomanPSMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDLEE+TimesNewRomanPS-ItalicMT",
+      "embedded": true
+    },
+    {
+      "name": "BCDMEE+TimesNewRomanPS-ItalicMT",
+      "embedded": true
+    }
+  ],
+  "png_dpi": 300,
+  "source_documents_unchanged": {
+    "G:/Files/Markdown/ISRJ/草稿/终稿1124/修订稿_CVEDNet_20261126_第二轮/论文终稿_英文版.md": {
+      "exists": true,
+      "sha256_matches": true
+    },
+    "G:/Files/Markdown/ISRJ/草稿/终稿1124/修订稿_CVEDNet_20261126_第二轮/论文终稿_中文版 - 副本.md": {
+      "exists": true,
+      "sha256_matches": true
+    }
+  },
+  "all_geometry_inside_panels": true,
+  "inference_input": "observed I/Q waveform Y only",
+  "training_only_boundary_map_marked": true,
+  "schematic_signals": "No experimental waveform or result curves are depicted",
+  "files": {
+    "RSDR_Net_Architecture.vsdx": {
+      "bytes": 37827,
+      "sha256": "4d08b9cdfc9c3c0f54f1be5220c97a48dce7f3c9d9f90114cfc9f984fb7d9966"
+    },
+    "RSDR_Net_Architecture.pdf": {
+      "bytes": 225448,
+      "sha256": "ffc15565712a7e3e2b3faf00af6ede63e7b094d89601bfb373c56279421fb37c"
+    },
+    "RSDR_Net_Architecture.svg": {
+      "bytes": 53463,
+      "sha256": "bfff0aac22d083d613498fcd7b5cfbff9f94ec5ea782c065de2de45510f30a96"
+    },
+    "RSDR_Net_Architecture.png": {
+      "bytes": 798840,
+      "sha256": "9e82c7f6a9cf1fbd4924e56ab70e28fc03cdbe9daf420203b0e807a2d4847702"
+    }
+  }
+}
