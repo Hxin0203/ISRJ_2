@@ -1,0 +1,55 @@
+{
+  "format": "recovp-hybrid-seed17-full-review-status-v1",
+  "updated_date": "2026-11-26",
+  "stage": "PARTIAL_EVIDENCE_REVIEW",
+  "reviewed_run": "recovp_hybrid_seed17",
+  "seed": 17,
+  "training_started_this_review": false,
+  "evaluation_started_this_review": false,
+  "training_queue": "PAUSED_FOR_HUMAN_REVIEW",
+  "core_training": "TRAINING_COMPLETE",
+  "core_dev": "CORE_DEV_COMPLETE_REVIEW_REQUIRED",
+  "baseline_archive": "AVAILABLE_READ_ONLY",
+  "full_review": "INCOMPLETE",
+  "required_deliverables": {
+    "SUMMARY.json": "written; summarizes supported evidence and gaps",
+    "REPORT.md": "written; conclusion is explicitly provisional",
+    "VERIFICATION.json": "written; source and document hashes recorded",
+    "REPRODUCE.md": "written; records source paths and blocked steps",
+    "STATUS.json": "written"
+  },
+  "verified_bindings": {
+    "hybrid_checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+    "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "hybrid_dev_result_sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+    "hybrid_parent_values_sha256_expected": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
+    "hybrid_parent_values_available_locally": false,
+    "server_b_availability": "unreadable per current machine inventory"
+  },
+  "completed_from_existing_receipts": [
+    "training/checkpoint identity review",
+    "core Hybrid vs Stage1Only paired DEV metrics",
+    "descriptive same-DEV single-seed comparison to frozen Base/P0/UNet/RSDR summaries",
+    "archived baseline repeat and repeat JSR >= 30 dB reference values",
+    "equivariance, alpha-gate, and CUDA latency receipt review"
+  ],
+  "blocked_items": [
+    "Hybrid-versus-baseline paired bootstrap CIs",
+    "equal-PFA calibration and comparison",
+    "Hybrid direct/repeat/cyclic and repeat JSR >= 30 dB strata",
+    "Top-10 failed-parent audit",
+    "CPU and cross-model latency/memory comparison",
+    "Stage 1 versus Stage 2 latency decomposition",
+    "Hybrid JCR/RD/CPL/sin^2/BVR/threshold-lift results under shared formal metric code"
+  ],
+  "scope_guards": {
+    "new_training_updates": 0,
+    "new_seeds_started": [],
+    "large_scans_started": false,
+    "confirm_accessed": false,
+    "historical_test_accessed": false,
+    "model_architecture_changed": false,
+    "thresholds_changed": false
+  },
+  "next_action": "Resume read-only DEV analysis after server B and parent-array access are available; do not unlock additional experiments before review."
+}

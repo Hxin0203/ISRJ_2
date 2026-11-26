@@ -1,0 +1,89 @@
+{
+  "format": "recovp-hybrid-seed17-review-summary-v1",
+  "status": "PARTIAL_EVIDENCE_REVIEW",
+  "created_utc": "2026-11-26",
+  "scope": {
+    "training_updates_this_review": 0,
+    "new_model_evaluations_this_review": 0,
+    "datasets_used_for_review": ["fixed DEV256 only"],
+    "confirm_or_historical_test_accessed": false,
+    "new_seeds_or_scans_started": false
+  },
+  "identity": {
+    "seed": 17,
+    "epochs_completed": 256,
+    "optimizer_updates": 12288,
+    "recovery_points": 257,
+    "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+    "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "dev_parents": 256,
+    "dev_variants_per_parent": 3,
+    "hybrid_effective_real_parameters": 57525,
+    "parameter_limit": 59700,
+    "source_result_sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1"
+  },
+  "hybrid_final_dev": {
+    "u_nmse": {"mean": 0.043122743968323995, "parent_bootstrap_ci95": [0.03705852159360198, 0.049500039547729136]},
+    "frame_pfa_jammer": {"mean": 0.05598958333333333, "parent_bootstrap_ci95": [0.0390625, 0.07421875]},
+    "pd": {"mean": 0.87109375, "parent_bootstrap_ci95": [0.8319986979166667, 0.9088541666666666]},
+    "damage": {"mean": 0.059674371786718874, "parent_bootstrap_ci95": [0.0517334328544674, 0.06870529485728903]},
+    "no_jammer_pooled_nmse": {"mean": 0.00000456643869058134, "parent_bootstrap_ci95": [0.0000022232483630048136, 0.000008264890604617507]},
+    "sjrif_db": {"mean": 11.096816076501504, "parent_bootstrap_ci95": [10.2878784256124, 11.85347165835693]},
+    "false_peak_suppression_db": {"mean": 13.459600077165977, "parent_bootstrap_ci95": [12.497853569903292, 14.414129218047687]},
+    "amplitude_ratio": {"mean": 0.9151800175619955, "parent_bootstrap_ci95": [0.9081559443437519, 0.9219379653032722]},
+    "phase_error_deg": {"mean": -0.03323930266713543, "parent_bootstrap_ci95": [-0.042056179729691855, -0.02417675684959159]},
+    "frame_pfa_noise": 0.00390625,
+    "cell_pfa_jammer": 0.00006026027826985533
+  },
+  "hybrid_minus_stage1_paired_parent_differences": {
+    "u_nmse": {"mean": -0.35873070792409917, "parent_bootstrap_ci95": [-0.4682127713563325, -0.2655241075889051], "ci_excludes_zero": true},
+    "damage": {"mean": -0.0659120484378923, "parent_bootstrap_ci95": [-0.1393065445993464, -0.013592540589799886], "ci_excludes_zero": true},
+    "sjrif_db": {"mean": 0.6800558756521786, "parent_bootstrap_ci95": [0.5300627687275947, 0.8341896594358188], "ci_excludes_zero": true},
+    "pd": {"mean": 0.016927083333333336, "parent_bootstrap_ci95": [-0.0013020833333333313, 0.03645833333333334], "ci_excludes_zero": false},
+    "frame_pfa_jammer": {"mean": -0.018229166666666664, "parent_bootstrap_ci95": [-0.03125, -0.005208333333333333], "ci_excludes_zero": true},
+    "false_peak_suppression_db": {"mean": 1.6685129551756952, "parent_bootstrap_ci95": [1.4391370624758872, 1.9108626634527466], "ci_excludes_zero": true}
+  },
+  "same_dev_single_seed_reference_comparison": {
+    "interpretation": "Descriptive point estimates across matching DEV256 data identity. Per-model marginal parent-bootstrap CIs are reported in source receipts; cross-model paired CIs are unavailable because Hybrid parent-level arrays are not locally accessible.",
+    "models": {
+      "ReCoVP-Hybrid": {"seed": 17, "epoch": 256, "effective_parameters": 57525, "u_nmse": 0.043122743968323995, "frame_pfa_jammer": 0.05598958333333333, "pd": 0.87109375, "damage": 0.059674371786718874, "sjrif_db": 11.096816076501504, "no_jammer_pooled_nmse": 0.00000456643869058134},
+      "ReCoVP-Base": {"seed": 17, "epoch": 256, "effective_parameters": 58943, "u_nmse": 0.49665050215192674, "frame_pfa_jammer": 0.06901041666666666, "pd": 0.8489583333333333, "damage": 0.07161970149815405, "sjrif_db": 10.243562959304661, "no_jammer_pooled_nmse": 0.000001943460617530793},
+      "P0-NoDechirp-Tail": {"seed": 17, "epoch": 256, "effective_parameters": 59714, "u_nmse": 0.04866051758182366, "frame_pfa_jammer": 0.10286458333333331, "pd": 0.8763020833333334, "damage": 0.04479403746822931, "sjrif_db": 10.80655455862098, "no_jammer_pooled_nmse": 0.0000918981878594422},
+      "UNet-Tail": {"seed": 17, "epoch": 256, "effective_parameters": 59714, "u_nmse": 0.0544869915505857, "frame_pfa_jammer": 0.10807291666666666, "pd": 0.8645833333333333, "damage": 0.05078011991381638, "sjrif_db": 10.656887346740277, "no_jammer_pooled_nmse": 0.00011740181508260265},
+      "RSDR-Net": {"native_seed": 40312102, "epoch": 32, "effective_parameters": 3017877, "u_nmse": 0.033428968803336546, "frame_pfa_jammer": 0.05078125, "pd": 0.8697916666666666, "damage": 0.09470348247166308, "sjrif_db": 11.337603980474405, "no_jammer_pooled_nmse": 0.000013461771135813958, "training_budget_note": "Different model family and training budget; not a matched seed/epoch comparison."}
+    }
+  },
+  "repeat_stratum_archived_reference": {
+    "note": "Archived baseline-only strata. Hybrid's corresponding parent-level stratification is not present in the locally available result JSON.",
+    "repeat_jsr_ge_30_parent_count": 133,
+    "ReCoVP-Base": {"pd": 0.5864661654135338, "frame_pfa_jammer": 0.15037593984962405, "jcr_db": 11.11373589, "bvr01_db": 3.19735467, "damage": 0.12921743},
+    "P0-NoDechirp-Tail": {"pd": 0.7969924812030075, "frame_pfa_jammer": 0.12781954887218044, "jcr_db": 21.18257893, "bvr01_db": 0.02589724, "damage": 0.09306026},
+    "UNet-Tail": {"pd": 0.7744360902255639, "frame_pfa_jammer": 0.13533834586466165, "jcr_db": 20.59454284, "bvr01_db": 0.02714564, "damage": 0.10452763},
+    "RSDR-Net": {"pd": 0.8270676691729323, "frame_pfa_jammer": 0.07518796992481203, "jcr_db": 22.06650527, "bvr01_db": -0.15255785, "damage": 0.17019065}
+  },
+  "equivariance_and_gate": {
+    "preflight_status": "PASS",
+    "preflight_max_relative_error": 2.5422161797905574e-7,
+    "preflight_column_permutation_relative_error": 0.0,
+    "dev_random_scale_relative_l2_mean": 2.3328479215156683e-5,
+    "dev_random_scale_relative_l2_p95": 8.717726814211346e-5,
+    "dev_scale_detector_metric_absolute_deltas": {"pd": 0.0, "frame_pfa_noise": 0.0, "frame_pfa_jammer": 0.0, "cell_pfa_noise": 0.0, "cell_pfa_jammer": 0.0},
+    "interpretation": "Preflight finite-sample unit checks pass the 1e-5 bound. The separate aggregate DEV random-scale relative-L2 summary exceeds 1e-5 at its mean and P95; detector decisions remain unchanged. Do not describe the empirical scale stress metric itself as passing a strict <1e-5 bound."
+  },
+  "alpha_distribution": {
+    "Y00": {"count": 6144, "mean": 0.00045270899063609704, "p10": 0.0004299888067180291, "p50": 0.0004482373915379867, "p90": 0.00047738377179484814},
+    "Y10": {"count": 6144, "mean": 0.0005334603436040197, "p10": 0.00028301021666266024, "p50": 0.00043867134081665426, "p90": 0.0007601381570566444},
+    "Y01": {"count": 6144, "mean": 0.024807449307511813, "p10": 0.00043451864621602, "p50": 0.00046940807078499347, "p90": 0.09786907285451889},
+    "Y11": {"count": 6144, "mean": 0.023009642696725525, "p10": 0.00033567277132533495, "p50": 0.0005481693660840392, "p90": 0.09273470938205719}
+  },
+  "missing_review_items": [
+    "Hybrid-versus-Base/P0/UNet/RSDR paired parent bootstrap CIs",
+    "DEV-internal equal-PFA calibration and paired comparisons",
+    "Hybrid direct/repeat/cyclic and repeat JSR >= 30 dB strata",
+    "Top-10 failed-parent cross-model audit",
+    "CPU latency and cross-model GPU/CPU latency comparison",
+    "Hybrid JCR, RD residual peak, CPL, sin^2(theta), BVR00/BVR01 and CFAR threshold-lift measurements under the shared formal metric code",
+    "Independent CONFIRM or held-out TEST generalization study"
+  ],
+  "review_decision": "Do not freeze Hybrid as the final paper model or claim comprehensive superiority on the basis of this single-seed DEV review. Keep the experimental queue paused at human review."
+}

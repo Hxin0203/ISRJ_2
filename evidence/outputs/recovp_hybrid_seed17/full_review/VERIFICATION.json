@@ -1,0 +1,81 @@
+{
+  "format": "recovp-hybrid-seed17-full-review-verification-v1",
+  "verified_date": "2026-11-26",
+  "verification_status": "PASS_FOR_PARTIAL_EVIDENCE_REVIEW",
+  "interpretation": "The documents accurately distinguish verified core DEV evidence from missing full-review analyses. This is not a PASS for the complete task-book review.",
+  "read_only_actions": {
+    "training_updates": 0,
+    "new_model_inference_runs": 0,
+    "hyperparameter_searches": 0,
+    "model_or_threshold_changes": 0,
+    "confirm_accessed": false,
+    "historical_test_accessed": false
+  },
+  "source_artifacts_sha256": {
+    "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+    "evidence/outputs/recovp_hybrid_seed17/PREFLIGHT.json": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7",
+    "evidence/outputs/recovp_hybrid_seed17/TRAINING_COMPLETE.json": "8812452c2202ae801a05d332c75e57ba4bef36d72539122b781acf4a24361d34",
+    "evidence/outputs/recovp_hybrid_seed17/POSTTRAINING_STATUS.json": "6e292d75d1c8baee9cdc486873b7ba554b5e6ad0a53ac52432d849bf162a644e",
+    ".cindy-worktrees/recovp-hybrid/evidence/outputs/recovp_archive_readonly/results/formal_dev/ReCoVP-Base_seed_17.json": "2f4602891cc604ff3a8a559ae43dad68220a3254c6b19833b3e2256805eada69",
+    ".cindy-worktrees/recovp-hybrid/evidence/outputs/recovp_archive_readonly/results/formal_dev/P0-NoDechirp-Tail_seed_17.json": "1db7137eafeefd94319209b3b1e16676283f135f9ae8f11bd6eccca864e7489b",
+    ".cindy-worktrees/recovp-hybrid/evidence/outputs/recovp_archive_readonly/results/formal_dev/UNet-Tail_seed_17.json": "27f62d41cbc0277e41ad48648cd8027c1f0e35d66b7a2388d6f2c27ae0cbdbd8",
+    ".cindy-worktrees/recovp-hybrid/evidence/outputs/recovp_archive_readonly/results/formal_dev/RSDR-Net_seed_40312102.json": "83b5ae02e7aa5e45b86af03fe9e79f3fdcc8a83886b86e02dc4ca09508a5ae00"
+  },
+  "identity_checks": {
+    "hybrid_seed": 17,
+    "hybrid_epochs": 256,
+    "hybrid_updates": 12288,
+    "hybrid_recovery_points": 257,
+    "hybrid_checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+    "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "hybrid_effective_real_parameters": 57525,
+    "baseline_receipts_dev_hash_match": true,
+    "baseline_receipts_parent_count_match": true
+  },
+  "analysis_checks": {
+    "hybrid_stage1_parent_paired_ci_read_from_source_receipt": true,
+    "cross_model_values_labeled_descriptive_only": true,
+    "cross_model_paired_ci_not_invented": true,
+    "equal_pfa_not_claimed": true,
+    "hybrid_repeat_strata_not_claimed": true,
+    "equivariance_preflight_and_dev_scale_stress_reported_separately": true,
+    "marginal_model_ci_not_misrepresented_as_cross_model_ci": true
+  },
+  "text_checks": {
+    "REPORT.md": {"unicode_flagged_spans": 0, "stylometry_score": 0.0325, "density_tier": "low", "confidence_level": "CLEAN"},
+    "REPRODUCE.md": {"unicode_flagged_spans": 0, "stylometry_score": 0.0325, "density_tier": "low", "confidence_level": "CLEAN"}
+  },
+  "document_sha256": {
+    "evidence/outputs/recovp_hybrid_seed17/full_review/SUMMARY.json": "c78fedcde7a6b9092fa205606eae2bfe93d667d92a69068c10506fb59abed9d3",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPORT.md": "0fd316bb8b4846212e296e9fe429eb7d403c0752ba1f888cc3e00ea015bba486",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPRODUCE.md": "093f6ffea32b61e2749b8def4a238e56b57f695406d5ed0143dfd53e9df37f41",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/STATUS.json": "c02ed7654564488fa8fd65255e25e1ac922edfe1bc88bbed470f7d3ecda5c5f7"
+  },
+  "baseline_source_provenance": {
+    "local_recovery_worktree": ".cindy-worktrees/recovp-hybrid",
+    "worktree_head": "5723605ccbde2f439a5f1e985e5ca050bf6ce67b",
+    "baseline_result_files_tracked_in_recovery_worktree": false,
+    "baseline_result_files_found_on_checked_paper2_branches": false,
+    "sha256_values_recorded_for_each_used_baseline_receipt": true
+  },
+  "availability_and_limitations": {
+    "server_b_current_availability": "unreadable per current machine inventory",
+    "hybrid_parent_values_expected_sha256": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
+    "hybrid_parent_values_present_on_this_workstation": false,
+    "full_review_items_blocked": [
+      "Hybrid-versus-baseline paired bootstrap intervals",
+      "equal-PFA calibration",
+      "Hybrid type and high-JSR strata",
+      "Top-10 parent comparison",
+      "CPU and cross-model latency/memory",
+      "shared-code Hybrid physical radar metrics"
+    ]
+  },
+  "github_reference": {
+    "remote": "paper2",
+    "repository": "Hxin0203/ISRJ_2",
+    "branch": "codex/hybrid-seed17-pipeline-20261125",
+    "head_observed_during_review": "b9d7fa041667d20256e9af35f11be39f3ceee595",
+    "remote_contents_checked": "Core receipts and report were present; no full_review directory was present at that branch head."
+  }
+}
