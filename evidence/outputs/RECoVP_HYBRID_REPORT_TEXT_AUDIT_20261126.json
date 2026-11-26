@@ -1,0 +1,22 @@
+{
+  "path": "reports/RECoVP_HYBRID_SEED17_EXPERIMENT_REPORT_20261126.md",
+  "density_tier": "low",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "reports/RECoVP_HYBRID_SEED17_EXPERIMENT_REPORT_20261126.md",
+    "word_count": 491,
+    "sentence_count": 75,
+    "burstiness_cv": 0.8509,
+    "lexical_diversity": 0.799,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0325,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}
