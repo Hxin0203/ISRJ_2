@@ -1,0 +1,728 @@
+# 基于正则化变量投影与复值残差精修的间歇采样转发干扰波形恢复
+
+## 摘要
+
+间歇采样转发干扰（ISRJ）复制雷达发射波形的局部片段，经脉冲压缩后形成具有相干增益的假目标。由于干扰与目标回波共享调频结构，抑制干扰的同时容易改变真实目标的幅度、相位和波形形状。本文将ISRJ抑制表述为含噪参考下的复数波形恢复问题，以同次噪声实现下撤去干扰后的观测为恢复目标，并提出由正则化变量投影与复值残差精修组成的两阶段方法ReCoVP-Hybrid。第一阶段利用已知线性调频模板从观测中选取候选时延，由全局相位不变特征估计每个候选的局部窗和正则强度，在所构造的复数字典上以闭式解求取干扰系数；第二阶段同时读取初步恢复结果和已估计的干扰，在复值卷积通道中补偿有限字典无法表示的残余，并由相位不变的实值门控制修正强度。训练在共享噪声与干扰背景的四种状态上同时约束波形误差、脉冲压缩误差、目标增量误差和残余尾峰。本文给出固定字典下系数子问题的唯一性与收缩性质，分析正则化收缩偏差、表示残差和目标泄漏三类第一阶段误差来源，并说明输入自适应的字典变化如何进入目标响应。仿真实验从恢复误差、目标保真和恒虚警检测三个方面检验了两阶段结构的作用及其代价。
+
+**关键词：** 间歇采样转发干扰；波形恢复；变量投影；复值神经网络；目标保真；模型驱动深度学习
+
+## 1 引言
+
+脉冲压缩雷达通过发射线性调频（LFM）等大时宽带宽积信号获得距离分辨率和处理增益。数字射频存储（DRFM）技术成熟以后，干扰机可以在一个脉冲持续期内截取、存储并转发信号片段。间歇采样转发干扰（interrupted-sampling repeater jamming，ISRJ）以“采样—转发”交替的方式工作，只需单天线收发即可实现，且转发片段与原发射信号相干[1]。这些片段经过匹配滤波后会形成一串具有处理增益的假目标峰，其位置、数量和幅度由采样宽度、采样周期和转发方式决定[1,2]。当假峰落在真实目标附近或主瓣以内时，后续检测、跟踪和成像都会受到影响[3,4]。
+
+ISRJ的难点在于它与目标回波的相似性。与噪声压制类干扰不同，ISRJ的每个片段在时频面上都位于发射信号的调频轨迹上，只是时间支撑不完整并带有转发延迟。单纯依据幅度或能量剔除样本，很可能把真实目标的一部分一并剔除；对目标而言，幅度衰减和相位偏移会进一步影响多脉冲相参积累。因此，衡量一种抑制方法，不仅要看干扰残余是否减少，还要看真实目标的复数响应是否被保留。
+
+现有抑制方法大致可分为三类。第一类是发射端或收发联合设计，通过频率捷变、脉间参差、波形与失配滤波器联合设计等手段提高目标与干扰的可分性[5–8]。这类方法通常有效，但依赖于发射波形和系统调度的配合，不能直接用于波形固定的接收端处理。第二类是接收端信号处理方法，利用干扰的间歇时间支撑、时频轨迹或稀疏结构进行分离。时频分析与带通滤波方法根据干扰片段在时频面上的位置构造滤波器[2,9,10]；Su等在波形域构造累积相干函数并设计自适应匹配滤波[11]；Liu等以高斯混合模型识别未受扰片段，再进行稀疏重构[12]；Wei等利用参数估计构造短时傅里叶字典，并结合形态成分分析联合重构目标与干扰[13]，并进一步提出多模型融合滤波[14]。这类方法物理含义清楚，但其性能取决于片段边界、转发参数或字典的估计精度。低信噪比或干扰参数变化时，片段漏检会损失目标能量，误判则使干扰残留在重构结果中[12,15]。
+
+第三类是数据驱动方法。He等构造多级多域联合网络[16]；Wang等提出多残差编码—解码网络MREDNet，从受脉内转发干扰污染的LFM信号中恢复目标[17]；复值Transformer[18]和复值编码—解码网络CVEDNet[19]直接在复数域处理接收信号，后者还在训练中同时使用波形域与脉压域约束。另有研究将识别与抑制结合[20]，对复合ISRJ进行分离和参数测量[21]，利用自监督学习抑制复合转发干扰[22]，或以Transformer与CFAR融合检测密集干扰[23]。在汽车调频连续波雷达的互干扰抑制中，复值卷积网络[24,25]、先验引导网络[26]和对比学习方法[27]也表明，学习方法能够利用难以用规则完整描述的干扰特征；近期的系统性评估同时指出，数据驱动方法的结论高度依赖评价指标与测试条件[28]。
+
+介于两者之间的是模型驱动的学习方法。这类方法把稀疏重构或迭代优化中的计算步骤显式保留在网络中[29–31]。Meng等串联复值片段提取、片段去噪与压缩感知重构[32]；Lei等依次执行逐点时间分类、I/Q残差去噪和稀疏重构[33]；Huang和Zhang把复值FISTA展开为网络[4]；Wei等以时延LFM字典和局部傅里叶字典分别表示目标与干扰，展开ADMM进行双分量稀疏求解[34]；Liu等则在高分辨距离像上利用目标的结构先验约束滤波网络[35]。这些工作把物理模型与学习模型结合起来，提高了结果的可解释性；但多数方法仍以重构纯净目标或干扰抑制比为主要目标，较少单独检验处理器对真实目标的复数响应。
+
+图像与语音恢复领域在这一点上提供了可以借鉴的思路。Conv-TasNet用可学习的编码器与掩码估计替代固定时频变换，说明表示方式与相位处理会直接影响分离质量[36]；残差学习[37,38]、多阶段渐进恢复[39]和真实噪声下的盲去噪[40]说明，把难以一次完成的恢复任务分解为若干职责明确的阶段，可以降低每个阶段的学习难度；空间特征变换以条件信息调制中间特征[41]，视频恢复中的可变形对齐则先对齐再恢复细节[42]。物理信息学习[43]和数据驱动的逆变换学习[44]进一步表明，先验知识可以进入网络的表示和计算步骤，而不仅仅是输入前的一次预处理。这些方法的有效机制不能直接移植到雷达信号，但它们对“结构估计与残差补偿分工”的组织方式，与ISRJ抑制的需求是一致的。
+
+基于上述分析，本文关注固定LFM波形下的接收端复数波形恢复，并考虑以下三个问题。其一，ISRJ片段继承了发射波形的结构，能否把这部分可以显式表示的干扰交给一个可解析求解的模型处理，使网络只学习难以用模型描述的部分？其二，有限字典必然存在表示残差，正则化又会带来收缩偏差，如何在保留结构化估计的同时补偿这些误差？其三，自适应处理器在撤销干扰时会对目标产生多大的附带修改，这种修改如何在训练和评价中被单独度量？
+
+针对这些问题，本文提出ReCoVP-Hybrid（regularized complex variable projection with hybrid refinement）。方法以同次噪声实现下的无干扰观测为恢复参考，把理想修正限定为干扰分量本身。第一阶段从观测中选取候选时延，由相位不变特征估计局部窗和正则强度，构造复数字典后以正则化变量投影求取干扰系数；第二阶段读取初步恢复与已估计干扰，以复值残差网络补偿剩余误差。本文的主要工作如下：
+
+1. 提出一种两阶段的ISRJ复数波形恢复结构。第一阶段把干扰修正约束在观测驱动字典的张成空间中，并以闭式解确定复幅度；第二阶段在复值通道中补偿字典表示残差与正则收缩偏差，两个阶段的输入、输出和估计对象都有明确的定义。
+2. 给出系数子问题的唯一性与收缩性质，把第一阶段误差分解为正则收缩偏差、字典表示残差和目标噪声泄漏三项，以此说明精修阶段的作用；推导输入自适应字典对目标增量响应的影响，并据此构造共享背景四状态训练目标。
+3. 建立恢复误差、目标增量损伤和二维CA-CFAR检测并列的评价方法，在同一训练实例的阶段输出之间以及不同结构的模型之间分析恢复收益与保真代价。
+
+本文其余部分安排如下：第2节建立信号模型并定义恢复问题和目标响应；第3节介绍ReCoVP-Hybrid各模块及其数学性质；第4节给出四状态联合训练目标；第5节报告仿真实验；第6节讨论方法的作用机制与适用范围；第7节总结全文。
+
+## 2 信号模型与问题描述
+
+### 2.1 目标回波与间歇采样转发干扰
+
+设基带LFM发射脉冲为
+
+$$
+p(t)=\operatorname{rect}\!\left(\frac{t}{T_p}\right)\exp(\mathrm j\pi\mu t^2),\qquad \mu=\frac{B}{T_p}, \tag{1}
+$$
+
+其中$T_p$为脉宽，$B$为带宽，$\operatorname{rect}(\cdot)$为$[-1/2,1/2)$上的矩形窗。一个相参处理间隔内共有$M$个脉冲，脉冲重复间隔为$T_r$。在窄带、单目标且组内目标参数不变的假设下，第$m$个脉冲的目标回波为
+
+$$
+s_m(t)=a\,p(t-\tau)\exp\{\mathrm j2\pi f_D(t+mT_r)\},\qquad m=0,\ldots,M-1, \tag{2}
+$$
+
+其中复数$a$包含目标幅度与初始相位，$\tau$为目标时延，$f_D$为多普勒频率。
+
+干扰机以周期$T_s$、宽度$T_w$对截获信号进行间歇采样，第$\ell$个采样窗记为$w_\ell(t)$。每个采样片段经一次或多次转发，记转发集合为$\mathcal R_\ell$，第$r$次转发相对于采样时刻的延迟为$d_{\ell r}$。统一直接转发、重复转发与循环转发三种方式，接收端第$m$个脉冲中的干扰可写为
+
+$$
+j_m(t)=\sum_{\ell}\sum_{r\in\mathcal R_{m\ell}}\beta_{m\ell r}\,
+w_{m\ell}(t-d_{m\ell r})\,p(t-d_{m\ell r}-\tau_J)\,
+\exp\{\mathrm j2\pi\nu_{m\ell r}t\}, \tag{3}
+$$
+
+其中$\tau_J$为干扰机所在位置对应的基准时延，$\beta_{m\ell r}$为转发复增益，$\nu_{m\ell r}$为附加频偏。三种转发方式的区别只体现在集合$\mathcal R_{m\ell}$与延迟$d_{m\ell r}$的排列规则上[1,2]。式（3）说明，每个干扰片段都是“窗函数×时延LFM×频偏”的乘积，这一结构是第3节构造字典的依据。处理器在推理时并不知道上述参数。
+
+〔图1占位：ISRJ工作原理示意。(a) 发射LFM脉冲与间歇采样窗；(b) 直接、重复、循环三种转发方式的时序；(c) 目标与干扰的时频分布；(d) 受扰回波的脉冲压缩结果，标出真实目标峰与假目标峰。〕
+
+### 2.2 观测模型与恢复参考
+
+以采样率$f_s$对单个脉冲采样$T$点，得到
+
+$$
+\boldsymbol y=\boldsymbol s+\boldsymbol j+\boldsymbol\epsilon\in\mathbb C^T,\qquad
+\boldsymbol u\triangleq\boldsymbol s+\boldsymbol\epsilon, \tag{4}
+$$
+
+其中$\boldsymbol\epsilon$为复高斯噪声。本文以$\boldsymbol u$为恢复参考，即要求处理器去除干扰，但不要求同时消除接收机噪声。这样做有两方面考虑：一是干扰抑制与噪声抑制本来是两个任务，后续的脉冲压缩与相参积累已经承担了噪声抑制的作用；二是以$\boldsymbol u$为参考时，理想修正恰好是干扰本身，处理器对无干扰输入的任何改动都可以被单独度量。
+
+记处理器为$F_\theta:\mathbb C^T\to\mathbb C^T$，并定义其修正量$C_\theta(\boldsymbol y)\triangleq\boldsymbol y-F_\theta(\boldsymbol y)$。由式（4）直接可得
+
+$$
+F_\theta(\boldsymbol y)-\boldsymbol u=\boldsymbol j-C_\theta(\boldsymbol y). \tag{5}
+$$
+
+式（5）表明，相对含噪参考的恢复误差等于干扰估计误差。因此，以$\boldsymbol u$为参考的恢复问题等价于从观测中估计应当减去的干扰。需要说明的是，这一等价关系是监督目标的定义，并不意味着干扰可以从任意单次观测中被唯一辨识；当目标与干扰在某段时间内具有相同的局部结构时，估计仍存在模糊性。
+
+### 2.3 共享背景四状态与目标响应
+
+恢复误差只描述处理器在受扰观测上的整体表现，不能区分误差来自干扰残留还是目标损伤。为此，对同一组$(\boldsymbol s,\boldsymbol j,\boldsymbol\epsilon)$构造四种状态：
+
+$$
+\boldsymbol y_{00}=\boldsymbol\epsilon,\quad
+\boldsymbol y_{10}=\boldsymbol s+\boldsymbol\epsilon,\quad
+\boldsymbol y_{01}=\boldsymbol j+\boldsymbol\epsilon,\quad
+\boldsymbol y_{11}=\boldsymbol s+\boldsymbol j+\boldsymbol\epsilon, \tag{6}
+$$
+
+下标依次表示目标与干扰是否存在。四种状态共享同一次噪声和同一组干扰；去掉目标时，干扰保持不变。物理上，干扰机转发的是被照射目标反射之前的发射信号，因此固定干扰、单独切换目标是一种合理的离线干预，其目的在于分离处理器对目标的响应。
+
+在受扰背景下，定义目标增量及其误差
+
+$$
+\boldsymbol d\triangleq F_\theta(\boldsymbol y_{11})-F_\theta(\boldsymbol y_{01}),\qquad
+\boldsymbol\eta\triangleq\boldsymbol d-\boldsymbol s. \tag{7}
+$$
+
+若处理器对目标是“透明”的，则$\boldsymbol d=\boldsymbol s$。对非线性、输入自适应的处理器，$\boldsymbol d$一般不等于$\boldsymbol s$。令$\boldsymbol e_{11}=F_\theta(\boldsymbol y_{11})-\boldsymbol u$，$\boldsymbol e_{01}=F_\theta(\boldsymbol y_{01})-\boldsymbol\epsilon$分别为两种受扰状态的恢复残差，则$\boldsymbol\eta=\boldsymbol e_{11}-\boldsymbol e_{01}$，且
+
+$$
+\|\boldsymbol\eta\|_2^2=\|\boldsymbol e_{11}\|_2^2+\|\boldsymbol e_{01}\|_2^2
+-2\operatorname{Re}\left(\boldsymbol e_{01}^{H}\boldsymbol e_{11}\right). \tag{8}
+$$
+
+式（8）说明，只降低含目标状态的恢复误差$\|\boldsymbol e_{11}\|_2$并不能保证目标增量误差下降，两种状态残差的相关性同样起作用：两者高度相关时，干扰残留在取差时相互抵消，目标损伤可以很小；两者不相关时，即使各自的残差都不大，目标增量误差也可能较大。这正是本文把恢复误差与目标损伤分开评价的原因。
+
+为进一步区分目标损伤的类型，设$\boldsymbol s\neq\boldsymbol 0$，将$\boldsymbol d$投影到目标方向：
+
+$$
+g\triangleq\frac{\boldsymbol s^{H}\boldsymbol d}{\|\boldsymbol s\|_2^2},\qquad
+\boldsymbol q\triangleq\boldsymbol d-g\boldsymbol s,\qquad \boldsymbol s^{H}\boldsymbol q=0. \tag{9}
+$$
+
+由$\boldsymbol\eta=(g-1)\boldsymbol s+\boldsymbol q$及正交性得到
+
+$$
+\frac{\|\boldsymbol\eta\|_2^2}{\|\boldsymbol s\|_2^2}=|g-1|^2+\frac{\|\boldsymbol q\|_2^2}{\|\boldsymbol s\|_2^2}. \tag{10}
+$$
+
+第一项是复增益偏差，$|g|<1$对应幅度衰减，$\arg g\neq0$对应相位偏移；第二项是不能由单一复增益解释的波形形状误差。两者对检测的影响不同：复增益偏差直接降低脉压峰值，形状误差则主要抬高旁瓣或使峰值展宽。式（10）也说明，平均幅度保持与平均目标损伤可以向不同方向变化，二者不能互相代替。
+
+
+## 3 ReCoVP-Hybrid波形恢复方法
+
+### 3.1 总体结构与设计思路
+
+ReCoVP-Hybrid对每个脉冲独立处理，输入与输出均为长度$T$的复数向量。方法的设计依据来自式（3）：ISRJ的每个片段可以看作“局部窗×时延LFM”的形式，而时延LFM的形状对接收端是已知的。只要能从观测中找到干扰所在的时延并估计其窗形，干扰就落在一组已知结构原子的张成空间里，复幅度可以通过线性最小二乘直接求出，无须由网络回归。网络在这一阶段只承担两类非线性估计：在哪里放原子（时延），以及原子的时间支撑是什么形状（窗）。
+
+这一表示并不完整。候选时延可能漏检，窗形可能估计偏差，干扰频偏没有逐原子建模，正则化又使系数向零收缩，这些都会在第一阶段输出中留下残余（3.5节给出了具体分解）。第二阶段因此不再受字典张成空间的限制，以复值卷积网络估计附加修正。它同时读取两路输入：初步恢复结果$\widehat{\boldsymbol u}_1$提供“还剩下什么”，已估计干扰$\widehat{\boldsymbol j}_1$提供“已经撤掉了什么”，两者结合可以判断残余是否与已撤销的干扰同源。两个阶段的修正都从观测中减去：
+
+$$
+\widehat{\boldsymbol j}_1=\mathcal S_1(\boldsymbol y),\qquad
+\widehat{\boldsymbol u}_1=\boldsymbol y-\widehat{\boldsymbol j}_1,\qquad
+\boldsymbol\delta_2=\mathcal S_2(\widehat{\boldsymbol u}_1,\widehat{\boldsymbol j}_1),\qquad
+\widehat{\boldsymbol u}=\widehat{\boldsymbol u}_1-\boldsymbol\delta_2. \tag{11}
+$$
+
+故总修正为$C_\theta(\boldsymbol y)=\widehat{\boldsymbol j}_1+\boldsymbol\delta_2$。整个流程只使用观测和已知发射波形，不读取目标位置、干扰支撑或真实系数；四状态真值只用于训练与评价。
+
+方法中实值与复值两类计算的分工也由同一原则决定。凡是需要在全局相位旋转下保持不变的判断（候选位置、窗形、正则强度、门控强度），都由相位不变的实值特征计算；凡是需要保留相位关系的量（字典原子、系数、修正波形），都在复数域计算。3.8节将说明，这一分工使整个映射对输入的复数缩放保持等变。
+
+〔图2占位：ReCoVP-Hybrid总体框架。左侧为第一阶段：RMS归一化→相位不变特征编码器→候选时延选择与细化→局部窗估计→复数字典与正则矩阵→正则化系数求解→$\widehat{\boldsymbol j}_1$；右侧为第二阶段：$(\widehat{\boldsymbol u}_1,\widehat{\boldsymbol j}_1)$→复值编码器（含相位不变实门）→膨胀瓶颈→跳连解码→脉冲级标量门→$\boldsymbol\delta_2$。用不同颜色区分复数数据流、实值条件流和仅用于训练的真值，标注每个节点的通道数与长度。〕
+
+算法1概括了推理过程。
+
+> **算法1 ReCoVP-Hybrid单脉冲推理**
+> 输入：受扰脉冲$\boldsymbol y\in\mathbb C^T$；已知LFM模板$\boldsymbol p$。
+> 1. 计算RMS尺度$r$与归一化输入$\boldsymbol x=\boldsymbol y/r$（式（12））；
+> 2. 提取四路相位不变特征$\boldsymbol\phi$（式（13）），经特征编码—解码网络得到共享特征$\boldsymbol h\in\mathbb R^{13\times T}$；
+> 3. 由模板相关幅值选出$K$个候选峰$a_k$，并按式（14）细化得到时延$\tau_k$；
+> 4. 按式（15）生成时延模板$\boldsymbol t_k$，由窗网络得到实窗$\boldsymbol m_k$，按式（16）构成字典$\boldsymbol B$；
+> 5. 由正则头得到$\boldsymbol\Lambda$（式（17）），求解式（19）得到$\widehat{\boldsymbol j}_1$，并令$\widehat{\boldsymbol u}_1=\boldsymbol y-\widehat{\boldsymbol j}_1$；
+> 6. 将$(\widehat{\boldsymbol u}_1/r,\widehat{\boldsymbol j}_1/r)$送入复值精修网络，得到修正提案$\widetilde{\boldsymbol\delta}$与脉冲级门$\alpha$（式（23）—（25））；
+> 7. 输出$\widehat{\boldsymbol u}=\widehat{\boldsymbol u}_1-r\alpha\widetilde{\boldsymbol\delta}$。
+
+### 3.2 尺度归一化与相位不变特征
+
+接收信号的幅度随目标距离和干扰功率在很大范围内变化。对非零输入，以均方根尺度归一化：
+
+$$
+r(\boldsymbol y)=\Big(\tfrac1T\textstyle\sum_{n=0}^{T-1}|y_n|^2\Big)^{1/2},\qquad
+\boldsymbol x=\boldsymbol y/r(\boldsymbol y), \tag{12}
+$$
+
+全零输入单独定义$r=1$、$\boldsymbol x=\boldsymbol 0$。所有修正量在归一化坐标中估计，再乘以$r$回到物理尺度，因而输出保留了输入的绝对幅度。
+
+记单位能量模板为$\widetilde{\boldsymbol p}$，相关幅值$\boldsymbol a=|\boldsymbol x\star\widetilde{\boldsymbol p}|$。对每个采样点构造四路特征
+
+$$
+\boldsymbol\phi_n=\big[\,|x_n|,\;a_n,\;\operatorname{Re}\ell_n,\;\operatorname{Im}\ell_n\,\big]^\top,\qquad
+\ell_n=x_nx_{n-1}^{*},\ \ell_0=0. \tag{13}
+$$
+
+三类特征各有分工：$|x_n|$描述局部能量，能量突变处往往对应干扰片段的边界；$a_n$描述观测与已知LFM的匹配程度，峰值位置给出可能的延迟波形；相邻样点共轭积$\ell_n$的相位等于局部瞬时频率乘以采样间隔，在LFM信号上随时间线性变化，干扰片段的转发延迟和频偏会使这一规律出现跳变。若输入乘以单位模复数$e^{\mathrm j\varphi}$，三类特征均不变，因此后续候选选择和窗形估计不会因整体相位变化而改变。
+
+特征编码器为一维U-Net形式[45]，通道宽度依次为$4\to13\to26\to44$，长度依次为$T\to T/2\to T/4$，每级卷积后接组归一化[46]和ReLU。解码器经两次上采样与跳跃连接回到$13\times T$的共享特征$\boldsymbol h$。跳跃连接保留了片段边界附近的细节，下采样路径则汇聚较长时间范围的上下文，便于区分重复转发造成的多个相似片段。
+
+### 3.3 候选时延的选择与细化
+
+以未归一化LFM模板计算观测的相关幅值，在索引$2\le n\le T-3$内用13点最大池化寻找局部峰，选出幅值最大的$K=16$个峰作为候选，并要求任意两个候选间隔不小于6个采样点；局部峰不足$K$个时，从其余位置按幅值补足，幅值并列时取较小索引。候选只依赖观测与已知模板。
+
+整数位置的候选不足以描述非整数时延，也不足以吸收频偏引起的峰值偏移。为此，对每个候选$a_k$提取其邻域内的共享特征、全局池化特征、归一化位置与峰值信息，组成59维向量$\boldsymbol h_k$，由一个$59\to64\to1$的多层感知机给出有界细化：
+
+$$
+\tau_k=a_k+2\tanh\big(f_\tau(\boldsymbol h_k)\big). \tag{14}
+$$
+
+细化范围被限制在$\pm2$个采样点以内，使网络只在候选附近微调，而不会把一个候选移到另一个峰上。其代价是，被池化漏掉的干扰片段无法由细化补回，这部分误差留给第二阶段。
+
+### 3.4 局部窗字典
+
+为了表示非整数时延，在$N=4096$点频域对单位能量模板施加线性相位，再截取前$T$点：
+
+$$
+\boldsymbol t_k=\mathcal T_T\,\mathcal F_N^{-1}\Big[\widetilde{\boldsymbol P}\odot\exp(-\mathrm j2\pi\boldsymbol f\tau_k)\Big], \tag{15}
+$$
+
+其中$\widetilde{\boldsymbol P}$为模板零填充后的DFT，$\boldsymbol f$为与DFT排列一致的归一化频率向量，$\mathcal T_T$表示截取前$T$个样点。
+
+候选时延只确定了“哪一段LFM”，没有确定这段LFM中哪些样点属于转发片段。按式（3），干扰片段是时延LFM被采样窗截断后的结果，因此需要为每个候选估计一个时间窗。窗网络的输入由两部分组成：一部分是13路共享特征$\boldsymbol h$；另一部分是候选专属的匹配特征，即对共轭乘积$\boldsymbol x\odot\boldsymbol t_k^{*}$分别做5、15、31点滑动平均，取每个尺度的幅值及相邻共轭积的实部与虚部，共9路。观测中与$\boldsymbol t_k$匹配的片段在$\boldsymbol x\odot\boldsymbol t_k^{*}$上表现为近似常数的复包络，其幅值高、相邻相位差接近零；不匹配的部分则表现为快速旋转的相位。多尺度平滑使窗网络能够同时看到窄片段和宽片段。22路输入经$22\to12\to1$的逐点卷积得到窗权重，经sigmoid、三点均值平滑后按峰值归一化（分母下限0.05），得到实窗$\boldsymbol m_k\in[0,1]^T$。原子定义为
+
+$$
+\boldsymbol b_k=\frac{\boldsymbol m_k\odot\boldsymbol t_k}{\|\boldsymbol m_k\odot\boldsymbol t_k\|_2+10^{-12}},\qquad
+\boldsymbol B=[\boldsymbol b_1,\ldots,\boldsymbol b_K]\in\mathbb C^{T\times K}. \tag{16}
+$$
+
+所有候选共享同一个窗网络，不同候选因模板位置和匹配特征不同而得到不同的窗。原子被归一化为单位能量，其实际复幅度由下一步的系数求解决定。这里不要求原子与物理片段一一对应：一个片段可以由几个原子共同表示，一个原子的窗也可以覆盖多个相邻片段。
+
+### 3.5 正则化变量投影
+
+**系数子问题。** 给定字典$\boldsymbol B$，干扰系数可由最小二乘确定。由于候选间隔只有数个采样点，相邻原子高度相关，$\boldsymbol B^H\boldsymbol B$可能病态，直接求解会产生幅值很大、符号相反的系数组合。为此为每个候选引入正则强度$\lambda_k>0$。设$\widehat\sigma^2$为归一化输入的稳健离差估计（以三次反距离加权迭代求中心，再取到中心距离平方的中位数除以$\log2$），候选的相关强度为$\rho_k=|\boldsymbol b_k^H\boldsymbol x|^2/\widehat\sigma^2$。正则头（$61\to16\to1$）输出实数$v_k$，并令
+
+$$
+z_k=v_k+2\big[\log 9-\log(1+\rho_k)\big],\qquad
+\lambda_k=10^{-4}+\exp\{30\tanh(z_k/30)\},\qquad
+\boldsymbol\Lambda=\operatorname{diag}(\lambda_1,\ldots,\lambda_K). \tag{17}
+$$
+
+偏置项$-2\log(1+\rho_k)$使相关强度高的候选默认获得较小正则、相关强度低的候选获得较大正则，网络输出$v_k$在此基础上调整；$\tanh$限幅与正下限保证$\lambda_k\in(10^{-4},10^{-4}+e^{30})$。系数子问题为
+
+$$
+\widehat{\boldsymbol c}=\arg\min_{\boldsymbol c\in\mathbb C^K}\;
+\|\boldsymbol x-\boldsymbol B\boldsymbol c\|_2^2+\boldsymbol c^H\boldsymbol\Lambda\boldsymbol c. \tag{18}
+$$
+
+目标函数关于$\boldsymbol c^{*}$的Wirtinger导数为零，得到正规方程$(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)\widehat{\boldsymbol c}=\boldsymbol B^H\boldsymbol x$。对任意$\boldsymbol v\neq\boldsymbol0$，有$\boldsymbol v^H(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)\boldsymbol v=\|\boldsymbol B\boldsymbol v\|_2^2+\sum_k\lambda_k|v_k|^2>0$，系数矩阵正定，故无论字典列是否相关，式（18）都有唯一解。第一阶段干扰估计为
+
+$$
+\widehat{\boldsymbol j}_1=r\,\boldsymbol B\widehat{\boldsymbol c}=\boldsymbol P\boldsymbol y,\qquad
+\boldsymbol P\triangleq\boldsymbol B(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)^{-1}\boldsymbol B^H. \tag{19}
+$$
+
+这一做法沿用了变量投影的思想[47–49]：在可分离的非线性最小二乘问题中，线性参数在给定非线性参数时有闭式解，可以先被消去，从而只需优化非线性参数。在本文中，非线性参数（时延、窗、正则）由网络估计，线性系数由式（19）解析求出，梯度通过线性方程的解反向传播到网络[31]。与展开固定步数的迭代算法[4,30,34]相比，这样处理的好处是系数在给定字典时总是精确最优的，网络不需要学习迭代本身。实现中以线性方程求解器计算$\widehat{\boldsymbol c}$，不显式求逆；系数求解使用双精度复数，其余计算使用单精度。
+
+**命题1（固定表示下的收缩性质）。** 若$\boldsymbol B$固定且$\boldsymbol\Lambda\succ0$，则$\boldsymbol P$为Hermitian半正定矩阵，其特征值位于$[0,1)$；记$\boldsymbol B\boldsymbol\Lambda^{-1/2}$的奇异值为$\sigma_1\ge\cdots\ge\sigma_K$，则$\boldsymbol P$的非零特征值为$\sigma_k^2/(1+\sigma_k^2)$，且$\operatorname{tr}\boldsymbol P=\sum_k\sigma_k^2/(1+\sigma_k^2)<K$。
+
+证明见附录A。命题1有两层含义。第一，$\|\boldsymbol P\boldsymbol y\|_2\le\frac{\sigma_1^2}{1+\sigma_1^2}\|\boldsymbol y\|_2<\|\boldsymbol y\|_2$，第一阶段在任何方向上撤销的能量都严格少于观测在该方向上的能量，$\boldsymbol I-\boldsymbol P$是非扩张的。第二，$\boldsymbol P$通常不满足$\boldsymbol P^2=\boldsymbol P$，它不是正交投影；正则越强，收缩越明显。$\operatorname{tr}\boldsymbol P$可以理解为第一阶段的有效自由度，它小于候选数$K$。
+
+**第一阶段误差的来源。** 将真实干扰分解为字典张成空间内外两部分，$\boldsymbol j=\boldsymbol B\boldsymbol c^\star+\boldsymbol j_\perp$，其中$\boldsymbol c^\star$为$\boldsymbol j$在$\operatorname{span}(\boldsymbol B)$上的最小二乘系数，$\boldsymbol B^H\boldsymbol j_\perp=\boldsymbol 0$。
+
+**命题2（第一阶段误差分解）。** 在命题1的条件下，第一阶段恢复误差满足
+
+$$
+\widehat{\boldsymbol u}_1-\boldsymbol u=
+\underbrace{\boldsymbol B(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)^{-1}\boldsymbol\Lambda\,\boldsymbol c^\star}_{\text{正则收缩偏差}}
++\underbrace{\boldsymbol j_\perp}_{\text{表示残差}}
+-\underbrace{\boldsymbol P(\boldsymbol s+\boldsymbol\epsilon)}_{\text{目标与噪声泄漏}}. \tag{20}
+$$
+
+证明只需利用$\boldsymbol P\boldsymbol j_\perp=\boldsymbol 0$以及$(\boldsymbol I-\boldsymbol P)\boldsymbol B=\boldsymbol B(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)^{-1}\boldsymbol\Lambda$，见附录A。式（20）中的三项分别对应三种失效方式。第一项随$\boldsymbol\Lambda$增大而增大：正则使系数稳定，同时让一部分可表示的干扰残留下来；它位于字典张成空间内，且与$\widehat{\boldsymbol j}_1$方向相近。第二项来自候选漏检、窗形偏差和未建模的频偏，正则无法消除它。第三项是第一阶段对目标与噪声的附带修改，当某个原子与目标在时延和窗形上重合时最为明显。三项的方向各不相同：减小$\boldsymbol\Lambda$可以降低第一项，却会放大病态字典下的第三项；扩充字典可以降低第二项，却增加了原子与目标重合的机会。单靠调节第一阶段很难同时压低三项，这是引入第二阶段的直接原因。第二阶段同时读取$\widehat{\boldsymbol u}_1$与$\widehat{\boldsymbol j}_1$：第一项与$\widehat{\boldsymbol j}_1$同源，可由两路输入的相关性识别；第二项保留在$\widehat{\boldsymbol u}_1$中，表现为未被撤销的类LFM片段；第三项则要求第二阶段在修正时不进一步削弱目标，这一要求由第4节的目标增量损失约束。
+
+### 3.6 自适应字典对目标响应的影响
+
+命题1和命题2都在字典固定的前提下成立。实际上，$\boldsymbol B$与$\boldsymbol\Lambda$都由观测估计，目标的加入会改变候选、窗和正则，因而改变整个算子。记$\boldsymbol y_0=\boldsymbol j+\boldsymbol\epsilon$为无目标受扰观测，$\boldsymbol P_0=\boldsymbol P(\boldsymbol y_0)$，$\boldsymbol P_1=\boldsymbol P(\boldsymbol y_0+\boldsymbol s)$，第一阶段的输出为$F_1(\boldsymbol y)=(\boldsymbol I-\boldsymbol P(\boldsymbol y))\boldsymbol y$。由定义直接得到第一阶段的目标增量误差
+
+$$
+\boldsymbol\eta_1=F_1(\boldsymbol y_0+\boldsymbol s)-F_1(\boldsymbol y_0)-\boldsymbol s
+=-\boldsymbol P_1\boldsymbol s-(\boldsymbol P_1-\boldsymbol P_0)\boldsymbol y_0, \tag{21}
+$$
+
+并由三角不等式得到
+
+$$
+\|\boldsymbol\eta_1\|_2\le\|\boldsymbol P_1\boldsymbol s\|_2+\|\boldsymbol P_1-\boldsymbol P_0\|_2\,\|\boldsymbol y_0\|_2. \tag{22}
+$$
+
+式（21）右侧第一项是当前算子对目标的直接修改，第二项是算子变化作用在背景上产生的附加项。在强干扰下$\|\boldsymbol y_0\|_2$很大，即使目标只引起很小的算子变化，第二项也可能超过第一项。这说明，只检验冻结字典下的$\boldsymbol P\boldsymbol s$不足以评价目标保真：候选在峰值排序发生变化处会不连续地切换，算子变化不存在全局的Lipschitz界。因此，本文在训练和评价中都对完整重估的输出计算目标增量（式（7）），而不是用冻结部分模块的结果代替。式（22）同时给出了一个可检查的量：若在实验中记录$\|\boldsymbol P_1-\boldsymbol P_0\|_2$与目标损伤的关系，可以判断损伤主要来自直接修改还是算子切换。
+
+
+### 3.7 复值残差精修
+
+**输入与复值卷积。** 第二阶段在归一化坐标中工作，输入为两路复数信号$\boldsymbol r_1=\widehat{\boldsymbol u}_1/r$与$\boldsymbol j_1=\widehat{\boldsymbol j}_1/r$。网络主干由无偏置复值卷积构成[50]。复数权重$\boldsymbol W=\boldsymbol W_R+\mathrm j\boldsymbol W_I$与复数特征$\boldsymbol z=\boldsymbol z_R+\mathrm j\boldsymbol z_I$的卷积按实部与虚部展开为
+
+$$
+\boldsymbol W*\boldsymbol z=(\boldsymbol W_R*\boldsymbol z_R-\boldsymbol W_I*\boldsymbol z_I)+\mathrm j(\boldsymbol W_R*\boldsymbol z_I+\boldsymbol W_I*\boldsymbol z_R). \tag{23}
+$$
+
+去掉偏置项是为了让每一层都与全局复数缩放交换：若输入乘以复数$c$，输出也恰好乘以$c$。
+
+**相位不变的实值门。** 复值网络的难点在于非线性。对实部和虚部分别施加ReLU或tanh等逐分量非线性，会使输出依赖于输入的绝对相位，破坏上述交换性质。本文把非线性全部放在一个相位不变的实值分支中，再把其输出作为乘性门作用回复数特征。每一层复卷积的输出$\boldsymbol v$乘以门$\boldsymbol g$：
+
+$$
+\boldsymbol z^{+}=\boldsymbol g\odot\boldsymbol v,\qquad
+\boldsymbol g=\operatorname{sigmoid}\Big(\operatorname{SiLU}\big(\mathcal K[\log(|\boldsymbol v|_\varepsilon+10^{-3}),\,\boldsymbol\psi]\big)\Big),\qquad
+|v|_\varepsilon=\sqrt{|v|^2+10^{-14}}, \tag{24}
+$$
+
+其中$\mathcal K$为实值卷积，$\boldsymbol\psi$为6路相位不变条件特征：两路输入的逐点对数幅值，$\boldsymbol r_1$相邻样点共轭积的实部与虚部，以及$\boldsymbol r_1\odot\boldsymbol j_1^{*}$的实部与虚部。最后两路衡量初步恢复与已撤销干扰在每个时刻的相关程度，是识别式（20）中收缩偏差的主要依据；低分辨率层的$\boldsymbol\psi$由平均池化得到。门只缩放复数特征的模，不改变其相位。这种以条件特征调制中间特征的做法在图像恢复中有类似形式[41]，区别在于本文的调制只有乘性项，没有会破坏相位关系的加性偏移。由于SiLU有下界$-0.278$，门的取值范围约为$(0.431,1)$，它是一个连续的强度调节器，不能把某个位置完全关闭。
+
+**网络层级。** 精修网络为四级复值U-Net：通道宽度依次为$9,13,17,21$，长度依次为$T,T/2,T/4,T/8$，每级包含复值残差块[37]；最低分辨率处设置膨胀率为1、2、4的三个复值卷积块，以扩大时间感受野而不进一步降低分辨率，使网络能够覆盖重复转发产生的相隔数十个样点的相似片段；解码端经三次上采样与跳跃连接回到全分辨率，最后由一个无偏置复卷积输出单通道修正提案$\widetilde{\boldsymbol\delta}$。上采样采用对实部与虚部分别做线性插值的方式，下采样采用平均池化，两者都与复数缩放交换。
+
+**脉冲级标量门。** 层内门在每个位置、每个通道上调节特征，但不能决定整个脉冲是否需要精修。例如无干扰输入的第一阶段输出已经接近参考，此时最好几乎不采用精修提案。为此设置一个独立的标量头：它汇总6路条件特征在全脉冲上的均值、标准差与第95百分位数（18维），再加上第一阶段干扰估计能量与观测能量之比、初步恢复结果的脉压峰均功率比，共20维输入，经$20\to4\to1$的多层感知机输出
+
+$$
+\alpha=\operatorname{sigmoid}\big(f_\alpha(\boldsymbol h_\alpha)\big)\in(0,1),\qquad
+\boldsymbol\delta_2=r\,\alpha\,\widetilde{\boldsymbol\delta}. \tag{25}
+$$
+
+前一个能量比反映第一阶段撤销了多少，后一个峰均比反映初步恢复的脉压结果是否仍有明显的假峰，两者都是判断“是否需要继续修正”的直接线索。$\alpha$只限制对当前提案的采用比例，不限制提案本身的能量。
+
+**精修何时有效。** 记第一阶段误差为$\boldsymbol e_1=\widehat{\boldsymbol u}_1-\boldsymbol u$。由$\widehat{\boldsymbol u}-\boldsymbol u=\boldsymbol e_1-\boldsymbol\delta_2$得
+
+$$
+\|\widehat{\boldsymbol u}-\boldsymbol u\|_2^2-\|\boldsymbol e_1\|_2^2=\|\boldsymbol\delta_2\|_2^2-2\operatorname{Re}\big(\boldsymbol e_1^H\boldsymbol\delta_2\big). \tag{26}
+$$
+
+因此，单个样本的恢复误差下降当且仅当$2\operatorname{Re}(\boldsymbol e_1^H\boldsymbol\delta_2)>\|\boldsymbol\delta_2\|_2^2$，即修正量与第一阶段误差在方向上足够一致，且幅度不超过该方向上误差投影的两倍。式（26）对单个样本精确成立，不依赖于独立性或线性化假设。它也说明了标量门的作用：给定方向，$\alpha$的最优值为$\operatorname{Re}(\boldsymbol e_1^H\widetilde{\boldsymbol\delta})/(r\|\widetilde{\boldsymbol\delta}\|_2^2)$截断到$(0,1)$，当提案方向不可靠时，较小的$\alpha$可以限制误差增大的幅度。同样的分析适用于目标损伤，只需把$\boldsymbol\delta_2$换为两种受扰状态精修量之差。
+
+表1列出了网络各部分的接口与规模。
+
+**表1 ReCoVP-Hybrid的模块与接口**（批量维省略）
+
+|模块|输入→输出|结构|作用|
+|---|---|---|---|
+|RMS归一化|$\mathbb C^{1800}\to\mathbb C^{1800}$，尺度$r$|式（12）|统一幅度尺度，保留物理输出尺度|
+|特征编码—解码|实$4\times1800\to13\times1800$|宽度13/26/44，两次下采样，GN+ReLU，跳连|融合能量、模板匹配和局部相位变化|
+|候选选择|相关幅值$\to$16个整数位置|13点最大池化，间隔≥6|定位可能的延迟波形|
+|时延细化头|$59\to64\to1$|MLP，$\pm2$点有界输出|吸收非整数时延与峰值偏移|
+|窗网络|实$22\times1800\to1\times1800$（每个候选）|$22\to12\to1$逐点卷积，sigmoid，平滑|估计每个原子的时间支撑|
+|字典与正则头|$\mathbb C^{1800\times16}$；$61\to16\to1$|式（16）、（17）|构造原子，确定每个候选的正则强度|
+|系数求解|$16\times16$正定线性方程|式（19），双精度|求干扰复幅度，得到$\widehat{\boldsymbol j}_1$|
+|复值编码器|2路复数$\to$复$9\times1800\to13\times900\to17\times450\to21\times225$|无偏置复卷积，残差块，相位不变实门|聚合多尺度残余结构|
+|膨胀瓶颈|复$21\times225$|膨胀率1/2/4|扩大时间感受野|
+|复值解码器|复$21\times225\to1\times1800$|三次上采样，跳连|恢复全分辨率修正提案$\widetilde{\boldsymbol\delta}$|
+|标量门|实20维$\to$标量$\alpha$|$20\to4\to1$ MLP，sigmoid|决定整个脉冲对提案的采用比例|
+
+整个网络共有57,525个有效实参数（每个复数参数计为两个实参数）。参数主要集中在特征编码器与复值精修网络中，字典构造与系数求解本身没有可训练参数。
+
+〔图3占位：第一阶段细节图。(a) 一个受扰脉冲的相关幅值及选出的16个候选；(b) 某一候选的多尺度匹配特征与估计窗$\boldsymbol m_k$，叠加真实采样窗作对照；(c) 正则强度$\lambda_k$与相关强度$\rho_k$的散点关系；(d) 第一阶段干扰估计$\widehat{\boldsymbol j}_1$与真实干扰的实部对比。〕
+
+〔图4占位：第二阶段复值精修网络结构。画出四级复值编码器、膨胀瓶颈与解码器，标注每级通道数和长度；单独画出一层“复卷积→相位不变实门→复数特征”的计算单元，以及标量门的20维输入构成。〕
+
+### 3.8 复数缩放等变性与计算复杂度
+
+**命题3（复数缩放等变）。** 设所有计算均为精确算术，且候选选择在幅值并列时采用确定的规则。对任意非零复数$c$，有
+
+$$
+F_\theta(c\boldsymbol y)=c\,F_\theta(\boldsymbol y). \tag{27}
+$$
+
+证明思路如下（细节见附录A）。由式（12），$r(c\boldsymbol y)=|c|\,r(\boldsymbol y)$，归一化输入变为$e^{\mathrm j\arg c}\boldsymbol x$，只发生全局相位旋转。式（13）的特征、相关幅值以及确定性的峰选择均不变，故候选、窗、正则与字典不变，$\widehat{\boldsymbol c}$乘以$e^{\mathrm j\arg c}$，$\widehat{\boldsymbol j}_1$乘以$c$。第二阶段中，无偏置复卷积、复数线性插值与平均池化都与相位旋转交换，相位不变条件特征和门保持不变，故$\boldsymbol\delta_2$也乘以$c$。命题3的意义在于，目标幅度与初始相位的变化不会改变处理器“如何解释”观测，网络不必从数据中学习这种对称性。群等变网络[51]讨论了更一般的对称结构，本文只涉及全局复数缩放。
+
+需要注意的是，命题3依赖精确算术与确定的并列规则。在单精度实现中，相关幅值的舍入误差可能改变峰值排序，从而引起候选切换。5.9节给出了实测的数值偏差。
+
+**计算复杂度。** 设$K$为候选数，$L$为模板长度。模板相关与非整数时延模板生成均可通过FFT实现，复杂度为$O(KN\log N)$；构造$\boldsymbol B^H\boldsymbol B$需要$O(TK^2)$，求解$K\times K$线性方程需要$O(K^3)$；两阶段卷积网络的复杂度与$T$成线性关系。在$T=1800$、$K=16$的设置下，字典相关计算与卷积网络在总计算量中处于同一量级。
+
+## 4 四状态联合训练
+
+第3节的结构限定了修正量的形式，但没有规定如何在撤销干扰与保留目标之间取舍。训练目标在四状态（式（6））上同时约束这两件事：端点损失要求每种状态的修正量逼近该状态应当撤销的干扰，目标增量损失则要求目标加入后修正量不发生不必要的变化。
+
+### 4.1 波形与脉压约束
+
+对状态$ab$，应撤销的修正量为$\boldsymbol j^\star_{ab}=b\,\boldsymbol j$，参考为$\boldsymbol u_{ab}=\boldsymbol\epsilon+a\boldsymbol s$。记$\langle\cdot\rangle$为在训练记录、脉冲和四种状态上的算术平均。对任一阶段的修正量$C$，波形损失为
+
+$$
+\mathcal L_{\mathrm{wav}}(C)=\Big\langle\frac{\|C(\boldsymbol y_{ab})-\boldsymbol j^\star_{ab}\|_2^2}{\max(\|\boldsymbol u_{ab}\|_2^2,10^{-12})}\Big\rangle. \tag{28}
+$$
+
+两种无干扰状态的监督目标为零修正，式（28）因而直接惩罚处理器对干净输入的改动。以$\boldsymbol u_{ab}$的能量归一化，使不同信噪比的样本对损失的贡献处于同一量级。
+
+波形误差在时域上平均分布，但检测只关心脉压后的峰值。参照CVEDNet[19]在波形域与脉压域同时施加约束的做法，加入脉压损失
+
+$$
+\mathcal L_{\mathrm{pc}}(C)=\Big\langle\frac{\|\mathcal H[C(\boldsymbol y_{ab})-\boldsymbol j^\star_{ab}]\|_2^2}{\max(\|\mathcal H\boldsymbol u_{ab}\|_2^2,10^{-12})}\Big\rangle, \tag{29}
+$$
+
+其中$\mathcal H$为已知LFM模板的零填充相关算子。
+
+### 4.2 目标增量约束
+
+由$F(\boldsymbol y)=\boldsymbol y-C(\boldsymbol y)$与式（6），两种受扰状态的目标增量误差恰好等于修正量之差的相反数：
+
+$$
+F(\boldsymbol y_{11})-F(\boldsymbol y_{01})-\boldsymbol s=-\big[C(\boldsymbol y_{11})-C(\boldsymbol y_{01})\big]. \tag{30}
+$$
+
+目标损伤损失因此写为
+
+$$
+\mathcal L_{\mathrm{tar}}(C)=\Big\langle\frac{\|C(\boldsymbol y_{11})-C(\boldsymbol y_{01})\|_2^2}{\max(\|\boldsymbol s\|_2^2,10^{-12})}\Big\rangle. \tag{31}
+$$
+
+式（31）惩罚的是“加入目标后干扰估计的变化”，它与式（21）中的两项都直接相关：既约束当前算子对目标的修改，也约束目标引起的算子变化。该损失只在训练时需要四状态样本，推理时不需要。
+
+### 4.3 残余尾峰约束
+
+虚警主要来自无目标单元中的残余峰值，而这些峰值在总残余能量中所占比例很小，波形损失对其不敏感。对无目标受扰状态，令残余$\boldsymbol v=\boldsymbol j-C(\boldsymbol y_{01})$（不含噪声），对一个相参处理间隔的$M$个脉冲做脉冲压缩与$M$点慢时间FFT，得到距离—多普勒功率图。以同次噪声在全部距离—多普勒单元上的平均功率为分母，取距离索引$[36,1165)$内残余功率与之的比值（dB），记前8个最大值为$q_l$，$l=1,\ldots,8$。以理想CA-CFAR的门限因子$\gamma=N_r(p_0^{-1/N_r}-1)$定义参考水平$q_0=10\log_{10}\gamma$，其中$N_r=436$、$p_0=10^{-6}$。尾峰损失为
+
+$$
+\mathcal L_{\mathrm{tail}}(C)=\frac1{q_0}\Big\langle\Big[3\log\{1+e^{(q_l-q_0)/3}\}-3\log2\Big]_+\Big\rangle_{l=1,\ldots,8}, \tag{32}
+$$
+
+其中$[x]_+=\max(x,0)$。该项只对超过检测门限水平的少数峰值施加惩罚，softplus使惩罚在门限附近平滑增长。由于前8选择与截断，该损失分段光滑；它约束的是已知干扰残余相对于噪声的峰值，并非对实际虚警率的可微替代。
+
+### 4.4 联合目标与优化设置
+
+每个阶段的损失为
+
+$$
+\mathcal L_{\mathrm{stage}}(C)=\mathcal L_{\mathrm{wav}}(C)+0.1\,\mathcal L_{\mathrm{pc}}(C)+\mathcal L_{\mathrm{tar}}(C)+0.05\,\mathcal L_{\mathrm{tail}}(C), \tag{33}
+$$
+
+总损失为$\mathcal L=\mathcal L_{\mathrm{stage}}(C_{\mathrm{final}})+0.25\,\mathcal L_{\mathrm{stage}}(C_1)$，其中$C_1=\widehat{\boldsymbol j}_1$为第一阶段修正，$C_{\mathrm{final}}=\widehat{\boldsymbol j}_1+\boldsymbol\delta_2$为总修正。第一阶段辅助项使字典分支即使在精修分支存在时也保持有意义的干扰估计，避免两阶段退化为“第一阶段任意、第二阶段全包”。两个阶段联合优化，第一阶段不单独预训练或冻结。各项权重为固定值；GradNorm[52]等自适应加权方法可用于平衡多个损失的梯度尺度，本文未采用。
+
+优化器为Adam[53]（$\beta_1=0.9$，$\beta_2=0.999$，$\varepsilon=10^{-8}$，无权重衰减）。学习率在第一轮内线性预热至$10^{-3}$，按余弦计划在第128轮降至$2\times10^{-5}$，第256轮降至$2\times10^{-6}$。有效批量为32条记录，由4个8条记录的微批次梯度累积得到，梯度范数裁剪为5。每轮48次更新，共训练256轮（12,288次更新），取最后一轮的模型参数，不依据评价集挑选轮次。
+
+
+## 5 仿真实验与结果分析
+
+### 5.1 仿真设置
+
+每个相参处理间隔包含8个脉冲。组内目标的时延、幅度和多普勒保持不变，慢时间相位按式（2）演化；噪声按脉冲独立生成。每组的受扰脉冲数从$\{1,2,4,6,8\}$中抽取，每个受扰脉冲的采样与转发参数独立抽取。同一基础场景生成直接、重复和循环三种转发变体，三者共享目标与噪声，只有干扰不同。主要参数见表2。
+
+**表2 雷达与干扰仿真参数**
+
+|参数|取值|
+|---|---|
+|采样率／带宽／脉宽|60 MHz／30 MHz／10 μs|
+|单脉冲接收长度／模板长度|1800点／600点|
+|脉冲数／脉冲重复间隔|8／30 μs|
+|目标幅度／目标时延|0.15～2.0／[64, 1136)个采样点|
+|目标多普勒|−200～200 kHz|
+|转发方式|直接、重复、循环|
+|采样窗宽度／采样周期|6～72点／36～260点|
+|转发延迟／转发次数／最大重放间隔|1～96点／1～10／64点|
+|干扰频偏|−200～200 kHz|
+|训练集|512个基础场景：常规条件256个（SNR [−20, 15] dB，JSR [−12, 35] dB），极端条件256个（SNR [−30, −20) dB，JSR [−12, 45] dB）|
+|评价集|256个基础场景，SNR [−30, 15] dB，JSR [−12, 45] dB|
+
+SNR定义为目标有效支撑内的平均功率与噪声功率之比，JSR定义为干扰非零支撑内的平均功率与目标有效支撑内平均功率之比；SNR按脉冲抽取，JSR按受扰脉冲抽取，因而一个基础场景并不对应唯一的SNR与JSR。慢时间采样率约为33.33 kHz，较大的多普勒会发生混叠，评价时将其折叠到一个PRF周期内并取最近的多普勒单元。
+
+评价集包含256个基础场景、768条记录。由于三种转发变体共享目标与噪声，统计时以基础场景为独立单元：每个基础场景先对三种变体等权平均，再在256个基础场景间平均。该评价集在方法设计阶段已被使用，本节结果属于开发集上的评价。
+
+### 5.2 评价指标与检测设置
+
+对8脉冲矩阵采用Frobenius范数，定义恢复误差、目标增量损伤和无干扰误差：
+
+$$
+E_U=\frac{\|\widehat U_{11}-(S+E)\|_F^2}{\|S+E\|_F^2},\quad
+D_S=\frac{\|\widehat U_{11}-\widehat U_{01}-S\|_F^2}{\|S\|_F^2},\quad
+E_0=\frac{\|\widehat U_{00}-E\|_F^2+\|\widehat U_{10}-(S+E)\|_F^2}{\|E\|_F^2+\|S+E\|_F^2}, \tag{34}
+$$
+
+其中$\widehat U_{ab}$为状态$ab$下的处理输出，分母下限为$10^{-24}$。$E_0$衡量处理器对两种无干扰输入的改动，理想值为零。目标复增益幅值$|g|$按式（9）在8脉冲矩阵上计算，理想值为1。
+
+脉冲压缩采用600点模板，保留0～1200的有效延迟单元。设脉冲平均距离功率为$P_v[k]$，目标单元$k_\star$由无干扰目标的脉压峰确定，干扰抑制后的信干比改善量为
+
+$$
+\mathrm{SJRIF}=10\log_{10}\frac{P_{\widehat U}[k_\star]}{\max_{k\neq k_\star}P_{\widehat U}[k]}-10\log_{10}\frac{P_{Y}[k_\star]}{\max_{k\neq k_\star}P_{Y}[k]}. \tag{35}
+$$
+
+分母中的非目标最大值包含旁瓣、干扰残余与噪声。
+
+检测采用8点慢时间FFT与二维CA-CFAR。距离维保护单元与参考单元半宽分别为12与24，多普勒维分别为1与2，慢时间方向按周期边界处理，共436个参考单元、9032个有效检测单元，名义单元虚警概率为$10^{-6}$。目标在最近的混叠多普勒单元内、目标距离单元及其左右各一个单元中至少有一次检测即记为检出。无目标受扰状态下报告两种虚警指标：单元虚警率，即虚警单元数占全部有效单元的比例；整帧虚警率，即至少出现一次虚警的处理间隔所占比例。处理会改变背景的统计分布，因此实测虚警率一般不等于名义值。
+
+置信区间采用基础场景层面的bootstrap[54]，重采样4000次，取均值的2.5%与97.5%分位数；比较两个输出时，对同一组重采样索引计算配对差值。
+
+### 5.3 对比方法
+
+对比方法分为两组。第一组是同一个训练好的ReCoVP-Hybrid的两个阶段输出：仅使用第一阶段的输出$\widehat{\boldsymbol u}_1$（记为Stage1）和最终输出$\widehat{\boldsymbol u}$（记为Final）。二者来自同一组参数，比较的是在推理时加入精修分支带来的变化。第二组是结构不同的模型：
+
+- **ReCoVP-Base**：仅包含结构化字典求解，没有复值精修分支；
+- **P0-NoDechirp-Tail**：卷积残差修正网络，以RMS归一化后的I/Q两路为输入，输出修正量，不含去斜处理；
+- **UNet-Tail**：通道宽度为18/42/74的普通实值I/Q U-Net，输出修正量；
+- **RSDR-Net**：作者先前提出的可靠度引导复数恢复模型，参数规模约为本文方法的52倍。
+
+除RSDR-Net外，其余模型的参数规模接近，且P0-NoDechirp-Tail与UNet-Tail使用与本文相同的波形、脉压、目标损伤与尾峰损失。〔表格占位：传统方法（如基于时频滤波[9]与基于高斯混合模型的片段选择[12]）和代表性学习方法（如MREDNet[17]、CVEDNet[19]）在同一数据与评价协议下的结果。〕
+
+### 5.4 精修阶段的作用
+
+表3比较同一训练实例的两个阶段输出。
+
+**表3 第一阶段输出与最终输出的比较**（概率以百分数表示，概率差以百分点表示）
+
+|指标|Stage1|Final|配对差值［95%置信区间］|
+|---|---:|---:|---|
+|$E_U$ ↓|0.40185|0.04312|−0.35873［−0.46821, −0.26552］|
+|$D_S$ ↓|0.12559|0.05967|−0.06591［−0.13931, −0.01359］|
+|SJRIF／dB ↑|10.4168|11.0968|+0.6801［+0.5301, +0.8342］|
+|受扰整帧虚警率／% ↓|7.422|5.599|−1.823［−3.125, −0.521］|
+|检测概率／% ↑|85.42|87.11|+1.693［−0.130, +3.646］|
+|目标复增益幅值$\lvert g\rvert$（理想为1）|0.98582|0.91518|−0.07064［−0.07636, −0.06482］|
+|无干扰误差$E_0$ ↓|$2.551\times10^{-6}$|$4.566\times10^{-6}$|$+2.016\times10^{-6}$［$1.248\times10^{-6}$, $3.265\times10^{-6}$］|
+|受扰单元虚警率 ↓|$5.781\times10^{-5}$|$6.026\times10^{-5}$|$+2.451\times10^{-6}$［$-5.767\times10^{-6}$, $1.283\times10^{-5}$］|
+
+精修使平均恢复误差从0.402降至0.043，约为原来的十分之一，平均目标损伤下降约一半，SJRIF提高0.68 dB，受扰整帧虚警率下降1.8个百分点，四项差值的置信区间均不含零。这与命题2的分析相符：第一阶段的收缩偏差与表示残差占恢复误差的大部分，精修分支能够有效地补偿它们。
+
+但精修也带来了可测的代价。目标复增益幅值从0.986降至0.915，即平均幅度衰减从约1.4%增加到约8.5%；无干扰误差虽然绝对值仍在$10^{-6}$量级，配对差值的区间为正。此外，目标损伤配对差值的中位数为+0.0079，第95百分位数为+0.0496，与均值的符号相反。配对中位数为正意味着至少一半场景的目标损伤有所增加，均值的下降来自少数场景的较大改善。结合式（10），平均损伤下降与平均幅值下降同时出现，一种可能的解释是精修在少数场景中显著降低了形状误差，同时在较多场景中引入了轻微的幅度收缩；确认这一解释需要逐场景的复增益分解（图6）。
+
+检测概率的点估计提高1.7个百分点，但区间包含零；受扰单元虚警率的差值区间同样包含零，与整帧虚警率的变化方向不同。整帧虚警率衡量“是否出现虚警”，单元虚警率衡量“虚警单元有多少”，精修减少了出现虚警的处理间隔，但没有明显减少虚警单元的总数。
+
+需要指出，Stage1是联合训练模型的中间输出，其参数同时受最终损失影响，因此表3回答的是“在推理时加入精修分支有什么变化”，而不是“两阶段结构是否优于同等预算的单阶段结构”。后者由5.7节的匹配对照回答。
+
+〔图5占位：典型场景的复数波形与脉压结果。按预先设定的规则（损伤配对差值的第10、50、90百分位场景）各选一例，每例给出观测、含噪参考、Stage1输出、Final输出与精修量$\boldsymbol\delta_2$的实部波形，以及相应的脉压结果；所有子图采用共同的绝对功率参考。〕
+
+〔图6占位：阶段差值的分布。(a) 恢复误差配对差值的直方图；(b) 目标损伤配对差值的直方图。标出零线、均值与中位数；(c) 逐场景的复增益偏差$|g-1|^2$与形状误差$\|\boldsymbol q\|_2^2/\|\boldsymbol s\|_2^2$（式（10））在两阶段之间的变化散点图。〕
+
+### 5.5 与其他模型的比较
+
+表4列出各模型在同一评价集上的结果。
+
+**表4 不同模型的比较**（点估计）
+
+|模型|有效实参数|$E_U$ ↓|$D_S$ ↓|$E_0$ ↓|$P_d$／% ↑|受扰帧虚警率／% ↓|SJRIF／dB ↑|
+|---|---:|---:|---:|---:|---:|---:|---:|
+|ReCoVP-Base|58,943|0.49665|0.07162|$1.94\times10^{-6}$|84.90|6.90|10.244|
+|P0-NoDechirp-Tail|59,714|0.04866|0.04479|$9.19\times10^{-5}$|87.63|10.29|10.807|
+|UNet-Tail|59,714|0.05449|0.05078|$1.17\times10^{-4}$|86.46|10.81|10.657|
+|ReCoVP-Hybrid|57,525|0.04312|0.05967|$4.57\times10^{-6}$|87.11|5.60|11.097|
+|RSDR-Net|3,017,877|0.03343|0.09470|$1.35\times10^{-5}$|86.98|5.08|11.338|
+
+与ReCoVP-Base相比，加入精修分支后恢复误差由0.497降至0.043，目标损伤也有所降低。仅有结构化字典的模型对干净输入的改动最小，但恢复误差最大，这与命题2中正则收缩与表示残差的分析相符。
+
+与参数规模相当的两个卷积修正网络相比，ReCoVP-Hybrid的恢复误差、无干扰误差与受扰帧虚警率更低，无干扰误差低一个多数量级，受扰帧虚警率低约5个百分点，SJRIF高0.29～0.44 dB；但其目标损伤较高，检测概率与P0-NoDechirp-Tail接近。两类模型的差异反映了不同的修正方式：通用卷积网络直接回归修正量，对干净输入和目标的修改更大，但目标增量更接近真实目标；ReCoVP-Hybrid把大部分修正限制在字典张成空间内，对背景的修改更小、残余峰值更低，但字典原子与目标重合时会对目标产生收缩。
+
+与参数量约为其52倍的RSDR-Net相比，ReCoVP-Hybrid的目标损伤更低，恢复误差、受扰帧虚警率与SJRIF则略差。总体上，各模型在不同指标上的排序并不一致，恢复误差、目标保真与背景虚警之间存在取舍。
+
+〔表格占位：各模型相对ReCoVP-Hybrid的逐基础场景配对差值与95%置信区间。〕
+
+### 5.6 相同实测虚警率下的检测性能
+
+名义虚警参数相同时，不同处理器输出的背景分布不同，实测虚警率也不同，直接比较检测概率并不公平。〔表5占位：在受扰帧虚警率分别为0.05与0.10的工作点下，各模型的检测概率及其与ReCoVP-Hybrid的配对差值。门限在独立的校准集上确定，在评价集上报告。〕
+
+〔图7占位：受扰整帧虚警率与检测概率的关系曲线（各模型一条），由扫描CFAR门限因子得到。〕
+
+### 5.7 消融实验
+
+〔表6占位：匹配消融。各行在相同训练数据、损失与更新次数下训练：(1) 仅第一阶段（与Hybrid第一阶段结构相同，单独训练至收敛）；(2) 仅复值精修网络（输入为观测本身）；(3) 精修分支去掉$\widehat{\boldsymbol j}_1$输入；(4) 去掉相位不变实门（改用逐分量非线性）；(5) 去掉脉冲级标量门（$\alpha=1$）；(6) 去掉目标增量损失；(7) 去掉尾峰损失；(8) 完整模型。列为有效参数、$E_U$、$D_S$、$|g|$、$E_0$、受扰帧虚警率与检测概率。〕
+
+ReCoVP-Base系列已有的结构消融表明，去掉复数缩放等变结构后，检测概率变化约为−1.04个百分点（区间约［−2.08, 0.00］），目标损伤变化为−0.0021（区间约［−0.0084, +0.0043］），两者均未显示出稳定的方向。
+
+### 5.8 训练随机性
+
+〔表7占位：8个训练实例（随机种子17、29、41、53、67、79、97、109）在评价集上的结果。列为$E_U$、$D_S$、$|g|$、受扰帧虚警率、检测概率与SJRIF；末两行给出跨训练实例的均值与标准差。〕
+
+〔图8占位：8个训练实例的训练损失曲线，以及每32轮在评价集上的$E_U$与$D_S$。〕
+
+### 5.9 门控行为与数值等变性
+
+标量门$\alpha$在四种状态$\boldsymbol y_{00},\boldsymbol y_{10},\boldsymbol y_{01},\boldsymbol y_{11}$下的均值分别为0.00045、0.00053、0.02481与0.02301。无干扰输入几乎不采用精修提案，受扰输入的采用比例高出约两个数量级，说明标量门能够区分两类输入。由于$\alpha$只是采用比例，实际修正量还取决于提案$\widetilde{\boldsymbol\delta}$的幅度。
+
+为检验命题3在实现中的偏差，对每个基础场景随机抽取复数因子（幅度$[0.2,5.0]$、相位$[-\pi,\pi]$），比较缩放输入的输出与原输出乘以同一因子的差异。在小规模检查中，最大相对误差为$2.54\times10^{-7}$，候选列置换引起的误差为零；在整个评价集上，相对误差的均值为$2.33\times10^{-5}$，第95百分位数为$8.72\times10^{-5}$，检测概率与虚警率的汇总值没有变化。整个评价集上的误差高于小规模检查，可能来自单精度下相关幅值舍入引起的个别候选切换。
+
+### 5.10 条件分析
+
+按基础场景的组内平均SNR分箱，检测概率由[−20, −15) dB内的46.2%上升至[−5, 0) dB内的99.4%。按平均JSR分箱时，样本集中于[10, 20) dB（162个基础场景），[30, 40) dB仅有3个基础场景。评价集为随机抽样，各箱内其他参数并未固定，上述结果描述的是条件关联，不是单因素响应。
+
+〔图9占位：在固定其他参数的条件下，SNR与JSR分别扫描时各模型的恢复误差、目标损伤与检测概率；三种转发方式分别绘制。〕
+
+〔图10占位：采样窗宽度与受扰脉冲数变化时的结果。〕
+
+### 5.11 计算开销
+
+在NVIDIA GeForce RTX 5060 Ti上以CUDA事件计时，经5次预热、40次测量，单脉冲推理的中位数与第95百分位数分别为27.86 ms与29.26 ms，8脉冲批量推理为29.28 ms与30.66 ms。批量处理8个脉冲的耗时与单脉冲接近，提示固定的调用与同步开销在总耗时中占比较大。该计时只包含模型的前向计算，不含数据传输与检测后处理。〔表8占位：各模型在同一硬件上的单脉冲与批量耗时，以及第一阶段与第二阶段的分项耗时。〕
+
+
+## 6 讨论
+
+### 6.1 结构化估计与残差补偿的分工
+
+ReCoVP-Hybrid把干扰修正拆成两部分：能够由“局部窗×时延LFM”表示的部分由字典与闭式系数解决，其余部分由复值网络补偿。与把迭代算法展开为固定层数的网络[4,34]相比，本文在给定字典时直接消去线性系数，网络只需估计时延、窗和正则这三类非线性参数；与先分类片段再重构目标的串联方法[32,33]相比，本文不对观测做硬性的片段取舍，而是在全长观测上估计应当减去的修正量。ISRJ-FNet利用目标的结构先验约束滤波网络[35]，本文则直接以目标增量误差约束修正量。上述区别体现在计算接口和约束对象上，其性能意义需要由同协议的对比实验检验。
+
+表3与表4从两个角度说明了两阶段的作用。只有第一阶段的ReCoVP-Base对干净输入的改动最小，但恢复误差最大；加入精修分支后，恢复误差下降一个数量级，背景改动仍明显小于通用卷积网络。这与命题2的分析一致：正则收缩偏差与表示残差是第一阶段的主要误差来源，而它们恰好是精修分支能够从$(\widehat{\boldsymbol u}_1,\widehat{\boldsymbol j}_1)$中识别的成分。另一方面，精修在降低平均误差的同时增加了平均幅度衰减，且至少一半场景的目标损伤有所增加，说明精修分支对目标并非完全透明。式（26）给出了一个解释：精修提案在受扰状态与含目标受扰状态之间的差异，即使很小，也会直接成为目标增量误差的一部分。
+
+### 6.2 目标保真的度量
+
+式（8）与式（10）说明，恢复误差、目标损伤和幅度保持是三个相互关联但不能互相推出的量。表4中各模型排序不一致，正是这一点的体现：通用卷积网络的目标损伤较低而背景改动较大，RSDR-Net的恢复误差较低而目标损伤较高，ReCoVP-Hybrid则处在背景改动与虚警较低、目标幅度有一定收缩的位置。若只报告恢复误差或SJRIF，这些差别都无法被观察到。共享背景四状态提供了一种在仿真条件下单独度量目标响应的方法；对实测数据，目标真值不可得，需要通过已知目标注入或合作目标实验近似实现。
+
+式（21）—（22）还指出，自适应处理器的目标损伤可以分为直接修改与算子变化两部分。本文目前只报告了完整输出的目标损伤，尚未区分这两部分。记录目标加入前后的候选集合与$\|\boldsymbol P_1-\boldsymbol P_0\|_2$，可以判断损伤是否集中在候选切换的场景中；局部归因图[55]与表示相似性分析[56]等可解释性工具也可用于检查两阶段特征对目标区域的响应。
+
+### 6.3 恢复与检测
+
+恢复损失、尾峰损失与CFAR检测作用于不同的对象：恢复损失约束全部样点，尾峰损失约束剥离噪声后的干扰残余峰值，而CFAR面对的是含噪输出及其自适应门限。表3中SJRIF与整帧虚警率均有改善，但检测概率与单元虚警率的差值区间都包含零，说明恢复指标的改善并不自动转化为相同虚警水平下的检测增益。比较检测性能时，应在相同的实测虚警工作点上进行（5.6节）。
+
+### 6.4 局限性
+
+本文结果存在以下局限。第一，数据全部来自仿真，信号模型为单目标、窄带、组内参数不变，未包含多目标、距离走动、接收机非线性与实测干扰；对多目标与扩展目标，共享背景下的目标增量需要按目标分别定义。第二，第5.4—5.5节的定量结果来自单个训练实例在开发集上的评价，置信区间只反映场景抽样的不确定性，不包含训练随机性与方法选择带来的偏差。第三，与传统方法和代表性学习方法的同协议比较仍不完整。第四，在当前的GPU实现中，单个相参处理间隔的推理耗时约为30 ms，远大于30 μs的脉冲重复间隔，按脉冲到达节奏的在线处理需要进一步的工程优化。
+
+## 7 结论
+
+本文研究了固定LFM波形下ISRJ的接收端复数波形恢复问题。以同次噪声实现下的无干扰观测为恢复参考，恢复误差等价于干扰估计误差，处理器对干净输入与真实目标的改动可以被单独度量。在此基础上，本文提出了ReCoVP-Hybrid：第一阶段由相位不变特征估计候选时延、局部窗和正则强度，构造复数字典后以正则化变量投影闭式求取干扰系数；第二阶段读取初步恢复与已估计干扰，以带相位不变实门的复值残差网络补偿剩余误差。
+
+理论分析表明，固定字典下的系数子问题总有唯一解，对应算子在任何方向上都只撤销部分能量；第一阶段误差可分解为正则收缩偏差、表示残差与目标噪声泄漏三项，这为引入精修阶段提供了依据；输入自适应的字典变化会使目标增量误差中出现与背景能量成比例的附加项，因此目标保真必须在完整输出上评价。整个映射在精确算术下对输入的复数缩放保持等变。
+
+仿真实验表明，精修阶段显著降低了平均恢复误差与平均目标损伤，降低了受扰整帧虚警率，同时增加了平均幅度衰减；与参数规模相当的卷积修正网络相比，本文方法对干净输入的改动更小、背景虚警更低，但目标损伤较高。恢复误差、目标保真与背景虚警之间的取舍，是评价ISRJ抑制方法时需要同时考虑的三个方面。后续工作将在匹配训练条件下完成结构消融与多训练实例统计，补充与传统及学习方法的同协议对比，并将方法推广到多目标与实测数据。
+
+## 参考文献
+
+[1] Wang X, Liu J, Zhang W, Fu Q, Liu Z, Xie X. Mathematic principles of interrupted-sampling repeater jamming (ISRJ). Science in China Series F: Information Sciences, 2007, 50(1): 113–123. https://doi.org/10.1007/s11432-007-2017-y
+
+[2] Zhou C, Liu Q, Hu C. Time-frequency analysis techniques for recognition and suppression of interrupted sampling repeater jamming. Journal of Radars, 2019, 8(1): 100–106. https://doi.org/10.12000/JR18080
+
+[3] Zhang Y, Jiu B, Peng X, Liu H, Jiang W. A new scheme of target detection for pulse Doppler radar in interrupted sampling repeater jamming environment. IET Radar, Sonar & Navigation, 2022, 16: 1836–1850. https://doi.org/10.1049/rsn2.12300
+
+[4] Huang Q, Zhang L. Interrupted sampling repeater jamming suppression using complex-valued FISTA-Net. IEEE Transactions on Aerospace and Electronic Systems, 2026, 62: 3270–3286. https://doi.org/10.1109/TAES.2025.3646182
+
+[5] Guo T, Zhan H, Su X, Wang T. Anti-interrupted sampling repeater jamming method for random pulse repetition interval and intra-pulse frequency agile radar. IET Radar, Sonar & Navigation, 2023, 17: 1796–1811. https://doi.org/10.1049/rsn2.12465
+
+[6] Zhou Y, Zhou Z, Shi Q, Cui G, Fan P. Complementary ISAC waveform and filter design based on minimized AF sidelobes against interrupted sampling repeater jamming. Signal Processing, 2026, 245: 110574. https://doi.org/10.1016/j.sigpro.2026.110574
+
+[7] Liu Y, Yu L, Wei Y. Parameter estimation and suppression of nonperiodic interrupted sampling repeater jamming based on joint transmit-receive design. Signal Processing, 2026: 110998. https://doi.org/10.1016/j.sigpro.2026.110998
+
+[8] Li J, Liu H, Wang W. An anti-interrupted sampling repeater jamming method based on SSFA-MCPC waveform design combined with segmented mismatched filtering. Progress In Electromagnetics Research C, 2026, 167: 254–264. https://doi.org/10.2528/PIERC26012303
+
+[9] Chen J, Wu W, Xu S, Chen Z, Zou J. Band pass filter design against interrupted-sampling repeater jamming based on time-frequency analysis. IET Radar, Sonar & Navigation, 2019, 13(10): 1646–1654. https://doi.org/10.1049/iet-rsn.2018.5658
+
+[10] Li J-M, Li B-Z. Anti-interrupted sampling repeater jamming via linear canonical Wigner distribution lightweight LFM detection. Signal Processing, 2026, 239: 110230. https://doi.org/10.1016/j.sigpro.2025.110230
+
+[11] Su H, Bao Q, Pan J, Guo F, Hu W. Waveform-domain adaptive matched filtering for suppressing interrupted-sampling repeater jamming. IEEE Transactions on Aerospace and Electronic Systems, 2024, 60(6): 9247–9260. https://doi.org/10.1109/TAES.2024.3439493
+
+[12] Liu Z, Liang W, Fu N, Qiao L, Zhang J. Interrupted sampling repeater jamming suppression based on Gaussian mixture model and sparse reconstruction. Digital Signal Processing, 2025, 161: 105132. https://doi.org/10.1016/j.dsp.2025.105132
+
+[13] Wei S, Han H, Wei S, Zhang L, Zhou Y. ISRJ suppression using joint morphological component analysis and signal reconstruction based on jamming parameters estimation. IEEE Transactions on Aerospace and Electronic Systems, 2026, 62. https://doi.org/10.1109/TAES.2025.3648973
+
+[14] Wei S, Zhang H, Zhou Y, Zhang L. Multiple models fusion filtering for interrupted sampling repeated jamming suppression. Digital Signal Processing, 2026, 168: 105487. https://doi.org/10.1016/j.dsp.2025.105487
+
+[15] Cai T T, Wang L. Orthogonal matching pursuit for sparse signal recovery with noise. IEEE Transactions on Information Theory, 2011, 57(7): 4680–4688. https://doi.org/10.1109/TIT.2011.2146090
+
+[16] He X, Liao K, Peng S, Tian Z, Huang J. Interrupted-sampling repeater jamming-suppression method based on a multi-stages multi-domains joint anti-jamming depth network. Remote Sensing, 2022, 14(14): 3445. https://doi.org/10.3390/rs14143445
+
+[17] Wang H, Chen B, Ye Q, Huang F. MREDNet: A multi-residual encoder-decoder network for recovering LFM interfered by intra-pulse retransmission interferences. Signal Processing, 2024, 217: 109329. https://doi.org/10.1016/j.sigpro.2023.109329
+
+[18] Wang Y, Li Y, Zhou Z, Yu G, Li Y. An attention-guided complex-valued transformer for intra-pulse retransmission interference suppression. Remote Sensing, 2024, 16(11): 1989. https://doi.org/10.3390/rs16111989
+
+[19] Dai G, Yang X, Huan S, Chen Z, Peng C, Xu Y. End-to-end interrupted sampling repeater jamming countermeasure network under low signal-to-noise ratio. Sensors, 2025, 25(13): 3925. https://doi.org/10.3390/s25133925
+
+[20] Wu Y, Duan L, Yang L, Liu Z, Xing M, Quan Y. Fine-grained recognition and suppression of ISRJ based on UNet-A. IEEE Geoscience and Remote Sensing Letters, 2024, 21: 1–5. https://doi.org/10.1109/LGRS.2024.3448611
+
+[21] Wang G, Lv Q, Liu L, Yang R, Bie B, Wu Y, Quan Y. An end-to-end deep learning framework for separation and parameter measurement of composite intermittent sampling repeater jamming. Aerospace Science and Technology, 2026, 168: 111218. https://doi.org/10.1016/j.ast.2025.111218
+
+[22] Wu Z, Ji T, Cao Y, Zhang L, Zhou C, Yang L. Suppression of radar compound interrupted sampling and repeating jamming based on self-supervised learning method. IEEE Transactions on Aerospace and Electronic Systems, 2025, 61. https://doi.org/10.1109/TAES.2025.3555247
+
+[23] Zhang H, Wei S, Wei S, Zhang L, Ren P, Zhou Y. Intensive interrupted sampling repeater jamming detection based on Transformer–CFAR fusion detection model. IEEE Transactions on Radar Systems, 2024, 2: 936–. https://doi.org/10.1109/TRS.2024.3465017
+
+[24] Fuchs A, Rock J, Tóth M, Meissner P, Pernkopf F. Complex-valued convolutional neural networks for enhanced radar signal denoising and interference mitigation. In: Proc. IEEE Radar Conference (RadarConf21), 2021. https://doi.org/10.1109/RadarConf2147009.2021.9455296
+
+[25] Ristea N-C, Anghel A, Ionescu R T. Estimating the magnitude and phase of automotive radar signals under multiple interference sources with fully convolutional networks. IEEE Access, 2021, 9: 153491–153507. https://doi.org/10.1109/ACCESS.2021.3128151
+
+[26] Wang J, Li R, He Y, Yang Y. Prior-guided deep interference mitigation for FMCW radars. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5118316. https://doi.org/10.1109/TGRS.2022.3211605
+
+[27] Wang J, Li R, Zhang X, He Y. Interference mitigation for automotive FMCW radar based on contrastive learning with dilated convolution. IEEE Transactions on Intelligent Transportation Systems, 2024, 25(1): 545–. https://doi.org/10.1109/TITS.2023.3306576
+
+[28] Rameez M, Javadi S, Dahl M, Pettersson M I. Evaluating deep learning approaches for mitigating interference in automotive radar systems. Computers and Electrical Engineering, 2026, 140: 111496. https://doi.org/10.1016/j.compeleceng.2026.111496
+
+[29] Shlezinger N, Whang J, Eldar Y C, Dimakis A G. Model-based deep learning. Proceedings of the IEEE, 2023, 111(5): 465–499. https://doi.org/10.1109/JPROC.2023.3247480
+
+[30] Zhang J, Ghanem B. ISTA-Net: Interpretable optimization-inspired deep network for image compressive sensing. In: Proc. IEEE/CVF CVPR, 2018: 1828–1837.
+
+[31] Kovács P, Bognár G, Huber C, Huemer M. VPNET: Variable projection networks. International Journal of Neural Systems, 2022, 32(1): 2150054. https://doi.org/10.1142/S0129065721500544
+
+[32] Meng Y, Yu L, Wei Y. Interrupted sampling repeater jamming suppression based on multiple extended complex-valued convolutional auto-encoders. IET Radar, Sonar & Navigation, 2024, 18(8): 1274–1290. https://doi.org/10.1049/rsn2.12568
+
+[33] Lei C, Ke W, Xiaoyi P, Zhaoyu G, Shunping X. Interrupted sampling repeater jamming suppression based on point-wise temporal classification and sparse signal reconstruction. IET Radar, Sonar & Navigation, 2026, 20: e70251. https://doi.org/10.1049/rsn2.70251
+
+[34] Wei S, Han H, Zhang H, Wei S, Zhou Y, Zhang L. Interrupted sampling repeater jamming suppression for wideband radar with MCA-ADMM-Net. IEEE Transactions on Neural Networks and Learning Systems, 2026: 1–15. https://doi.org/10.1109/TNNLS.2026.3736439
+
+[35] Liu M, Gao X, Qiu X, Zhao Y. Structure-informed deep filtering for radar HRRP ISRJ mitigation. IEEE Signal Processing Letters, 2026, 33: 3601–3605. https://doi.org/10.1109/LSP.2026.3726844
+
+[36] Luo Y, Mesgarani N. Conv-TasNet: Surpassing ideal time-frequency magnitude masking for speech separation. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2019, 27(8): 1256–1266. https://doi.org/10.1109/TASLP.2019.2915167
+
+[37] He K, Zhang X, Ren S, Sun J. Deep residual learning for image recognition. In: Proc. IEEE CVPR, 2016: 770–778. https://doi.org/10.1109/CVPR.2016.90
+
+[38] Zhang K, Zuo W, Chen Y, Meng D, Zhang L. Beyond a Gaussian denoiser: Residual learning of deep CNN for image denoising. IEEE Transactions on Image Processing, 2017, 26(7): 3142–3155. https://doi.org/10.1109/TIP.2017.2662206
+
+[39] Zamir S W, Arora A, Khan S, Hayat M, Khan F S, Yang M-H, Shao L. Multi-stage progressive image restoration. In: Proc. IEEE/CVF CVPR, 2021: 14821–14831.
+
+[40] Guo S, Yan Z, Zhang K, Zuo W, Zhang L. Toward convolutional blind denoising of real photographs. In: Proc. IEEE/CVF CVPR, 2019: 1712–1722.
+
+[41] Wang X, Yu K, Dong C, Loy C C. Recovering realistic texture in image super-resolution by deep spatial feature transform. In: Proc. IEEE/CVF CVPR, 2018: 606–615.
+
+[42] Wang X, Chan K C K, Yu K, Dong C, Loy C C. EDVR: Video restoration with enhanced deformable convolutional networks. In: Proc. IEEE/CVF CVPR Workshops, 2019.
+
+[43] Karniadakis G E, Kevrekidis I G, Lu L, Perdikaris P, Wang S, Yang L. Physics-informed machine learning. Nature Reviews Physics, 2021, 3: 422–440. https://doi.org/10.1038/s42254-021-00314-5
+
+[44] Zhu B, Liu J Z, Cauley S F, Rosen B R, Rosen M S. Image reconstruction by domain-transform manifold learning. Nature, 2018, 555: 487–492. https://doi.org/10.1038/nature25988
+
+[45] Ronneberger O, Fischer P, Brox T. U-Net: Convolutional networks for biomedical image segmentation. In: Proc. MICCAI, 2015: 234–241. https://doi.org/10.1007/978-3-319-24574-4_28
+
+[46] Wu Y, He K. Group normalization. In: Proc. ECCV, 2018: 3–19.
+
+[47] Golub G H, Pereyra V. The differentiation of pseudo-inverses and nonlinear least squares problems whose variables separate. SIAM Journal on Numerical Analysis, 1973, 10(2): 413–432. https://doi.org/10.1137/0710036
+
+[48] Golub G, Pereyra V. Separable nonlinear least squares: the variable projection method and its applications. Inverse Problems, 2003, 19(2): R1–R26. https://doi.org/10.1088/0266-5611/19/2/201
+
+[49] O'Leary D P, Rust B W. Variable projection for nonlinear least squares problems. Computational Optimization and Applications, 2013, 54: 579–593. https://doi.org/10.1007/s10589-012-9492-9
+
+[50] Trabelsi C, Bilaniuk O, Zhang Y, et al. Deep complex networks. In: Proc. ICLR, 2018.
+
+[51] Cohen T, Welling M. Group equivariant convolutional networks. In: Proc. ICML, PMLR 48, 2016: 2990–2999.
+
+[52] Chen Z, Badrinarayanan V, Lee C-Y, Rabinovich A. GradNorm: Gradient normalization for adaptive loss balancing in deep multitask networks. In: Proc. ICML, PMLR 80, 2018: 794–803.
+
+[53] Kingma D P, Ba J. Adam: A method for stochastic optimization. In: Proc. ICLR, 2015.
+
+[54] Efron B. Bootstrap methods: Another look at the jackknife. The Annals of Statistics, 1979, 7(1): 1–26. https://doi.org/10.1214/aos/1176344552
+
+[55] Gu J, Dong C. Interpreting super-resolution networks with local attribution maps. In: Proc. IEEE/CVF CVPR, 2021: 9199–9208.
+
+[56] Kornblith S, Norouzi M, Lee H, Hinton G. Similarity of neural network representations revisited. In: Proc. ICML, PMLR 97, 2019: 3519–3529.
+
+## 附录A 证明
+
+**命题1的证明。** 令$\boldsymbol A=\boldsymbol B\boldsymbol\Lambda^{-1/2}$，则$\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda=\boldsymbol\Lambda^{1/2}(\boldsymbol A^H\boldsymbol A+\boldsymbol I)\boldsymbol\Lambda^{1/2}$，于是
+$$
+\boldsymbol P=\boldsymbol A(\boldsymbol A^H\boldsymbol A+\boldsymbol I)^{-1}\boldsymbol A^H .
+$$
+设$\boldsymbol A=\boldsymbol U\boldsymbol\Sigma\boldsymbol V^H$为奇异值分解，则$\boldsymbol P=\boldsymbol U\boldsymbol\Sigma(\boldsymbol\Sigma^H\boldsymbol\Sigma+\boldsymbol I)^{-1}\boldsymbol\Sigma^H\boldsymbol U^H$，其特征值为$\sigma_k^2/(1+\sigma_k^2)\in[0,1)$及$T-K$个零。$\boldsymbol P$显然为Hermitian半正定矩阵，迹等于非零特征值之和。由于特征值严格小于1，$\|\boldsymbol P\boldsymbol y\|_2\le\frac{\sigma_1^2}{1+\sigma_1^2}\|\boldsymbol y\|_2$，且$\boldsymbol I-\boldsymbol P$的特征值位于$(0,1]$，为非扩张算子。若某个$\sigma_k\in(0,\infty)$，则对应特征值$\sigma_k^2/(1+\sigma_k^2)\neq\{\sigma_k^2/(1+\sigma_k^2)\}^2$，故$\boldsymbol P^2\neq\boldsymbol P$。证毕。
+
+**命题2的证明。** 由$\widehat{\boldsymbol u}_1=(\boldsymbol I-\boldsymbol P)\boldsymbol y$和$\boldsymbol u=\boldsymbol s+\boldsymbol\epsilon$，
+$$
+\widehat{\boldsymbol u}_1-\boldsymbol u=(\boldsymbol I-\boldsymbol P)\boldsymbol j-\boldsymbol P(\boldsymbol s+\boldsymbol\epsilon).
+$$
+以$\boldsymbol c^\star$表示$\boldsymbol j$在$\operatorname{span}(\boldsymbol B)$上的最小二乘系数（$\boldsymbol B$列不满秩时取最小范数解），则$\boldsymbol j_\perp=\boldsymbol j-\boldsymbol B\boldsymbol c^\star$满足$\boldsymbol B^H\boldsymbol j_\perp=\boldsymbol0$，从而$\boldsymbol P\boldsymbol j_\perp=\boldsymbol0$。又
+$$
+(\boldsymbol I-\boldsymbol P)\boldsymbol B=\boldsymbol B-\boldsymbol B(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)^{-1}\boldsymbol B^H\boldsymbol B
+=\boldsymbol B(\boldsymbol B^H\boldsymbol B+\boldsymbol\Lambda)^{-1}\boldsymbol\Lambda,
+$$
+代入即得式（20）。证毕。
+
+**命题3的证明。** 设$c=|c|e^{\mathrm j\varphi}\neq0$。(i) 由式（12），$r(c\boldsymbol y)=|c|r(\boldsymbol y)$，$\boldsymbol x'=e^{\mathrm j\varphi}\boldsymbol x$。(ii) 式（13）中$|x_n'|=|x_n|$，$a_n'=a_n$，$\ell_n'=x_n'x_{n-1}'^{*}=\ell_n$，故特征编码器输出、候选位置（在相同并列规则下）、时延、窗与$\boldsymbol B$均不变；$\rho_k'=|\boldsymbol b_k^He^{\mathrm j\varphi}\boldsymbol x|^2/\widehat\sigma'^2=\rho_k$（稳健离差只依赖距离，不受旋转影响），故$\boldsymbol\Lambda$不变。(iii) 正规方程右端乘以$e^{\mathrm j\varphi}$，故$\widehat{\boldsymbol c}'=e^{\mathrm j\varphi}\widehat{\boldsymbol c}$，$\widehat{\boldsymbol j}_1'=|c|r\boldsymbol B e^{\mathrm j\varphi}\widehat{\boldsymbol c}=c\widehat{\boldsymbol j}_1$，$\widehat{\boldsymbol u}_1'=c\widehat{\boldsymbol u}_1$。(iv) 第二阶段输入$\boldsymbol r_1'=e^{\mathrm j\varphi}\boldsymbol r_1$，$\boldsymbol j_1'=e^{\mathrm j\varphi}\boldsymbol j_1$；条件特征$\boldsymbol\psi$中的对数幅值、共轭积均不变；无偏置复卷积、复数线性插值、平均池化与相位旋转交换；门$\boldsymbol g$的输入$|\boldsymbol v|$不变，故每层输出乘以$e^{\mathrm j\varphi}$。标量门输入中的能量比与峰均比不变，故$\alpha'=\alpha$。于是$\boldsymbol\delta_2'=|c|r\alpha e^{\mathrm j\varphi}\widetilde{\boldsymbol\delta}=c\boldsymbol\delta_2$，$F_\theta(c\boldsymbol y)=c\widehat{\boldsymbol u}_1-c\boldsymbol\delta_2=cF_\theta(\boldsymbol y)$。证毕。
+
+## 数据与代码可用性
+
+〔作者填写：代码与配置的公开地址、数据生成方式及访问限制。〕
