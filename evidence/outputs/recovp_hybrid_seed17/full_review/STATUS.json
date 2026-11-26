@@ -1,7 +1,7 @@
 {
   "format": "recovp-hybrid-seed17-full-review-status-v1",
   "updated_date": "2026-11-26",
-  "stage": "PARTIAL_EVIDENCE_REVIEW",
+  "stage": "HANDED_OFF_PAUSED_USER_REQUEST",
   "reviewed_run": "recovp_hybrid_seed17",
   "seed": 17,
   "training_started_this_review": false,
@@ -9,8 +9,8 @@
   "training_queue": "PAUSED_FOR_HUMAN_REVIEW",
   "core_training": "TRAINING_COMPLETE",
   "core_dev": "CORE_DEV_COMPLETE_REVIEW_REQUIRED",
-  "baseline_archive": "AVAILABLE_READ_ONLY",
-  "full_review": "INCOMPLETE",
+  "baseline_archive": "AVAILABLE_READ_ONLY_SUMMARIES_ONLY",
+  "full_review": "INCOMPLETE_MISSING_RAW_AND_PAIRED_INPUTS",
   "required_deliverables": {
     "SUMMARY.json": "written; summarizes supported evidence and gaps",
     "REPORT.md": "written; conclusion is explicitly provisional",
@@ -23,8 +23,10 @@
     "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
     "hybrid_dev_result_sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
     "hybrid_parent_values_sha256_expected": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
-    "hybrid_parent_values_available_locally": false,
-    "server_b_availability": "unreadable per current machine inventory"
+    "hybrid_parent_values_available_locally": true,
+    "server_b_availability": "reachable_read_only",
+    "hybrid_parent_values_sha256_verified": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
+    "hybrid_parent_values_content_limit": "aggregate parent metrics, alpha and equivariance arrays; no raw IQ/waveforms, baseline paired scores, or type-resolved Hybrid outputs"
   },
   "completed_from_existing_receipts": [
     "training/checkpoint identity review",
@@ -34,13 +36,13 @@
     "equivariance, alpha-gate, and CUDA latency receipt review"
   ],
   "blocked_items": [
-    "Hybrid-versus-baseline paired bootstrap CIs",
-    "equal-PFA calibration and comparison",
-    "Hybrid direct/repeat/cyclic and repeat JSR >= 30 dB strata",
-    "Top-10 failed-parent audit",
-    "CPU and cross-model latency/memory comparison",
-    "Stage 1 versus Stage 2 latency decomposition",
-    "Hybrid JCR/RD/CPL/sin^2/BVR/threshold-lift results under shared formal metric code"
+    "Hybrid-versus-baseline paired bootstrap CIs: missing baseline per-parent arrays",
+    "Equal-PFA recalibration: missing per-parent detection scores/threshold distributions",
+    "Hybrid direct/repeat/cyclic and repeat JSR >= 30 dB strata: missing type-resolved outputs",
+    "Top-10 cross-model parent audit: missing paired per-parent failure scores",
+    "CPU and cross-model latency/memory: not measured; GPU utilization above admission threshold",
+    "Shared-code Hybrid physical radar metrics: missing raw IQ/restored waveforms",
+    "CONFIRM and historical TEST generalization: intentionally out of scope and not accessed"
   ],
   "scope_guards": {
     "new_training_updates": 0,
@@ -51,5 +53,40 @@
     "model_architecture_changed": false,
     "thresholds_changed": false
   },
-  "next_action": "Resume read-only DEV analysis after server B and parent-array access are available; do not unlock additional experiments before review."
+  "next_action": "Paused at user request after handoff. Resume only when the user wakes the task; do not wait on seed29 or start additional work in the meantime.",
+  "resource_snapshot": {
+    "checked_utc": "2026-11-26T06:14:58Z",
+    "gpu0_utilization_percent": 98,
+    "gpu1_utilization_percent": 87,
+    "admission_threshold_percent": 85,
+    "new_gpu_evaluation_started": false
+  },
+  "existing_seed29": {
+    "stage": "TRAINING",
+    "reported_epoch": 54,
+    "last_committed_epoch": 53,
+    "updates_in_current_epoch": 36,
+    "updates_per_epoch": 48,
+    "checkpoint_sha256": "862ca8334e5e395faa91ad6ca17a1e4e4a42a2726bcd027a767465cd406b87dc",
+    "modified_this_review": false,
+    "checkpoint_epoch": 53
+  },
+  "model_seed_pipeline": {
+    "planned_seeds": [
+      17,
+      29,
+      41
+    ],
+    "started_seeds": [
+      17,
+      29
+    ],
+    "completed_seeds": [
+      17
+    ],
+    "in_progress_seed": 29,
+    "not_started_seeds": [
+      41
+    ]
+  }
 }

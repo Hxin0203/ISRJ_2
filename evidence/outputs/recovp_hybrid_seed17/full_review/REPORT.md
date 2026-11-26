@@ -53,6 +53,17 @@ Hybrid 对 Base 的恢复误差、jammer frame Pfa、Pd、damage 和 SJRI-F 点�
 
 ## 未完成审计与决定
 
-Hybrid 的 parent 级数组只在服务器 `D:/code/Xin/ISRJ_222/outputs/recovp_hybrid_seed17/seed_17/dev_epoch_256_parent_values.npz`，其 SHA-256 收据为 `b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda`。本机设备清单当前将服务器 `rsdr-b` 标为不可读，本地该数组不存在。因此本轮无法按 parent 重采样并重校准，也无法复算 Hybrid 的物理雷达指标、Top-10 或 CPU 延迟。
+Hybrid 的 parent 汇总数组现已在服务器和本机只读副本中核验，SHA-256 均为 `b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda`。数组含 parent 级汇总指标和门控/等变性量，但不含原始 IQ 波形、逐干扰类型标签对应输出或可供基线配对的逐 parent 分数。因此跨模型配对 bootstrap、Equal-PFA、Hybrid 分类型结果、Top-10 状态回查和新物理指标仍缺必要输入；目前不能从边际统计恢复这些量。
 
-当前不应冻结 Hybrid 为论文终版，不应放行 seed 29/41、579 扫描或 CONFIRM/TEST。建议保持队列暂停；待恢复对服务器 B 的只读访问并核验 parent 数组 SHA 后，再完成同一指标代码下的配对、等虚警、分层、失败 parent 和效率审计。此复核轮次自身没有启动训练、改动架构、运行扫描或访问 CONFIRM/历史 TEST。
+ReCoVP-Hybrid 多 seed runner 将 seed 17 设为已冻结基准，并允许 seed 29、41；截至本次检查，已启动 2 个 seed（17、29），其中 seed17 已完成 256 轮，seed29 正在训练，seed41 尚未启动。
+
+本轮复核没有启动训练、推理评测、扫描，也没有访问 CONFIRM/历史 TEST。seed17 仍为单种子 DEV 证据，不能冻结为论文终版或宣称全面优于基线。seed29 是先前已启动的独立训练，2026-11-26T06:14:58Z 状态显示 epoch 54/256、36/48 update，最近提交 epoch 53，latest checkpoint SHA-256 为 `862ca8334e5e395faa91ad6ca17a1e4e4a42a2726bcd027a767465cd406b87dc`；本轮未启动或停止该作业。GPU0/GPU1 最新利用率为 98%/87%，均不满足低于 85% 的新作业准入条件。配对、等虚警、分层、失败 parent 和延迟审计仍待足够输入与资源条件满足后再做。
+
+
+## 最新进度核验（2026-11-26T06:14:58Z）
+
+- 服务器 `rsdr-b` 可读；seed17 checkpoint 与 DEV 身份不变。服务器 parent 数组 SHA-256 已远程校验为 `b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda`，本机副本同哈希。
+- 已有数组可支持当前核心摘要及少量 parent 级汇总复核，但不包含完成任务书所需的原始信号、模型间逐 parent 配对分数和延迟测量输入。
+- seed29 当前在训练：状态文件显示 epoch 54/256、update 36/48，最近已提交 epoch 53；latest checkpoint SHA-256 为 `862ca8334e5e395faa91ad6ca17a1e4e4a42a2726bcd027a767465cd406b87dc`。这是既有作业，本轮未改动。
+- GPU 利用率快照：GPU0 98%，GPU1 87%；两卡都高于新作业启动阈值 85%。
+- **结论：**Hybrid Stage-2 对 Stage1Only 的配对改善有原始 DEV 收据支持；相对各基线目前只有同集描述性点估计。新任务书列出的跨模型统计与分层审计仍未完成，暂不应冻结架构或扩展到 CONFIRM/TEST。

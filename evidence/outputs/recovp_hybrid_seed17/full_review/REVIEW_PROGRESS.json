@@ -1,0 +1,77 @@
+{
+  "format": "recovp-hybrid-seed17-review-progress-v1",
+  "checked_utc": "2026-11-26T06:14:58Z",
+  "stage": "HANDED_OFF_PAUSED_USER_REQUEST",
+  "review_scope": {
+    "training_updates": 0,
+    "new_model_inference_runs": 0,
+    "new_seeds_started": [],
+    "scans_started": false,
+    "confirm_accessed": false,
+    "historical_test_accessed": false
+  },
+  "seed17": {
+    "epochs_completed": 256,
+    "optimizer_updates": 12288,
+    "recovery_points": 257,
+    "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+    "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+    "parent_values_local_sha256": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
+    "parent_values_server_sha256": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
+    "parent_values_content": "aggregate per-parent outputs, alpha and equivariance arrays; no raw IQ/restored waveforms or baseline parent-level score vectors"
+  },
+  "existing_seed29": {
+    "state": "TRAINING",
+    "reported_epoch": 54,
+    "last_committed_epoch": 53,
+    "update_in_epoch": 36,
+    "updates_per_epoch": 48,
+    "checkpoint_sha256": "862ca8334e5e395faa91ad6ca17a1e4e4a42a2726bcd027a767465cd406b87dc",
+    "modified_this_review": false
+  },
+  "server_gpu_snapshot": {
+    "gpu0_utilization_percent": 98,
+    "gpu1_utilization_percent": 87,
+    "admission_below_percent": 85,
+    "new_gpu_work_started": false
+  },
+  "analysis_blockers": [
+    "cross-model paired bootstrap: baseline parent arrays absent",
+    "Equal-PFA: score distributions absent",
+    "Hybrid type strata: type-specific outputs absent",
+    "Top-10 audit: matched per-parent model scores absent",
+    "shared formal physical metrics: raw IQ and restored waveforms absent",
+    "CPU/cross-model latency: not measured; baseline model inputs missing"
+  ],
+  "input_sha256": {
+    "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+    "evidence/outputs/recovp_hybrid_seed17/PREFLIGHT.json": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7",
+    "evidence/outputs/recovp_hybrid_seed17/TRAINING_COMPLETE.json": "8812452c2202ae801a05d332c75e57ba4bef36d72539122b781acf4a24361d34",
+    "evidence/outputs/recovp_hybrid_seed17/POSTTRAINING_STATUS.json": "6e292d75d1c8baee9cdc486873b7ba554b5e6ad0a53ac52432d849bf162a644e",
+    "evidence/outputs/recovp_hybrid_seed17/CONFIG.json": "0af7322a5a37721e71be5a2ac56eceb6372d9567114e8fb240fd7b537e1f5251",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/SUMMARY.json": "a7f87c78ec929fe50d540c726ebd896cf21ee40e30d6017d9e5dd95e7dd1f353",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPORT.md": "64a7f08316828bdc864a3d660ef7aaaa3b55fd49126b4c70080157f93118b98b",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPRODUCE.md": "ac494c7aded7577b8a0475d1f45452dfb137efd307e9ad1d871e37d338378c14",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/STATUS.json": "4e089d75c0097a9ec4b1a9fbd1f3cb2fa5afcb0e27034eb00aaec421f5aa2b1c"
+  },
+  "decision": "Keep seed17 provisional; no comprehensive superiority/final-model claim. Do not access CONFIRM/TEST or launch scans/new seeds under the current review scope.",
+  "model_seed_pipeline": {
+    "planned_seeds": [
+      17,
+      29,
+      41
+    ],
+    "started_seeds": [
+      17,
+      29
+    ],
+    "completed_seeds": [
+      17
+    ],
+    "in_progress_seed": 29,
+    "not_started_seeds": [
+      41
+    ]
+  },
+  "handoff": "Paused by user request; no monitoring/waiting after handoff. Resume when user wakes the task."
+}

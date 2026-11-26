@@ -42,14 +42,25 @@
     "marginal_model_ci_not_misrepresented_as_cross_model_ci": true
   },
   "text_checks": {
-    "REPORT.md": {"unicode_flagged_spans": 0, "stylometry_score": 0.0325, "density_tier": "low", "confidence_level": "CLEAN"},
-    "REPRODUCE.md": {"unicode_flagged_spans": 0, "stylometry_score": 0.0325, "density_tier": "low", "confidence_level": "CLEAN"}
+    "REPORT.md": {
+      "unicode_flagged_spans": 0,
+      "stylometry_score": 0.0325,
+      "density_tier": "low",
+      "confidence_level": "CLEAN"
+    },
+    "REPRODUCE.md": {
+      "unicode_flagged_spans": 0,
+      "stylometry_score": 0.0325,
+      "density_tier": "low",
+      "confidence_level": "CLEAN"
+    }
   },
   "document_sha256": {
-    "evidence/outputs/recovp_hybrid_seed17/full_review/SUMMARY.json": "c78fedcde7a6b9092fa205606eae2bfe93d667d92a69068c10506fb59abed9d3",
-    "evidence/outputs/recovp_hybrid_seed17/full_review/REPORT.md": "0fd316bb8b4846212e296e9fe429eb7d403c0752ba1f888cc3e00ea015bba486",
-    "evidence/outputs/recovp_hybrid_seed17/full_review/REPRODUCE.md": "093f6ffea32b61e2749b8def4a238e56b57f695406d5ed0143dfd53e9df37f41",
-    "evidence/outputs/recovp_hybrid_seed17/full_review/STATUS.json": "c02ed7654564488fa8fd65255e25e1ac922edfe1bc88bbed470f7d3ecda5c5f7"
+    "evidence/outputs/recovp_hybrid_seed17/full_review/SUMMARY.json": "71b3145916a05469d11fd7162ae717936550e92ccf2f78e40c0cf6dd391125c2",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPORT.md": "4939e3dd5200b7d5a5250f0dececc513d78cdb7248be52435b27dae978cf5cdc",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPRODUCE.md": "eac8894ed1f7a9ca41d6aa168394bf89f925dfa3e44b4a1b30237a81621c9613",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/STATUS.json": "2ebb28c981c67c64bafcfdda287db223796d6ea90613a4e4d1f8965aea2663d0",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REVIEW_PROGRESS.json": "754bf009bca73f47de0f213b43286755c75028b790de34b1ab357fe14dc24e71"
   },
   "baseline_source_provenance": {
     "local_recovery_worktree": ".cindy-worktrees/recovp-hybrid",
@@ -59,17 +70,19 @@
     "sha256_values_recorded_for_each_used_baseline_receipt": true
   },
   "availability_and_limitations": {
-    "server_b_current_availability": "unreadable per current machine inventory",
+    "server_b_current_availability": "reachable_read_only; confirmed by SSH query at 2026-11-26T06:14:58Z",
     "hybrid_parent_values_expected_sha256": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
-    "hybrid_parent_values_present_on_this_workstation": false,
+    "hybrid_parent_values_present_on_this_workstation": true,
     "full_review_items_blocked": [
-      "Hybrid-versus-baseline paired bootstrap intervals",
-      "equal-PFA calibration",
-      "Hybrid type and high-JSR strata",
-      "Top-10 parent comparison",
-      "CPU and cross-model latency/memory",
-      "shared-code Hybrid physical radar metrics"
-    ]
+      "Hybrid-versus-baseline paired bootstrap intervals: missing baseline parent arrays",
+      "equal-PFA calibration: missing score distributions",
+      "Hybrid type and high-JSR strata: missing type-resolved outputs",
+      "Top-10 parent comparison: missing matched per-parent failure scores",
+      "CPU and cross-model latency/memory: not measured; baseline model assets unavailable",
+      "shared-code Hybrid physical radar metrics: missing raw IQ and restored waveforms"
+    ],
+    "hybrid_parent_values_server_sha256": "b81774bf19c0ab8f833fc916637450ed43fbba42aa29466ccd2c5dba6b537bda",
+    "hybrid_parent_values_content_limit": "Aggregate parent metrics, alpha and equivariance arrays only; no raw IQ/restored waveforms, type-resolved Hybrid output, baseline parent score arrays or threshold score distributions."
   },
   "github_reference": {
     "remote": "paper2",
@@ -77,5 +90,54 @@
     "branch": "codex/hybrid-seed17-pipeline-20261125",
     "head_observed_during_review": "b9d7fa041667d20256e9af35f11be39f3ceee595",
     "remote_contents_checked": "Core receipts and report were present; no full_review directory was present at that branch head."
+  },
+  "latest_resource_snapshot": {
+    "checked_utc": "2026-11-26T06:14:58Z",
+    "gpu0_utilization_percent": 98,
+    "gpu1_utilization_percent": 87,
+    "admission_threshold_percent": 85,
+    "new_gpu_evaluation_started": false
+  },
+  "existing_seed29_snapshot": {
+    "stage": "TRAINING",
+    "reported_epoch": 54,
+    "last_committed_epoch": 53,
+    "update_in_epoch": 36,
+    "updates_per_epoch": 48,
+    "checkpoint_sha256": "862ca8334e5e395faa91ad6ca17a1e4e4a42a2726bcd027a767465cd406b87dc",
+    "modified_this_review": false
+  },
+  "input_artifact_sha256": {
+    "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+    "evidence/outputs/recovp_hybrid_seed17/PREFLIGHT.json": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7",
+    "evidence/outputs/recovp_hybrid_seed17/TRAINING_COMPLETE.json": "8812452c2202ae801a05d332c75e57ba4bef36d72539122b781acf4a24361d34",
+    "evidence/outputs/recovp_hybrid_seed17/POSTTRAINING_STATUS.json": "6e292d75d1c8baee9cdc486873b7ba554b5e6ad0a53ac52432d849bf162a644e",
+    "evidence/outputs/recovp_hybrid_seed17/CONFIG.json": "0af7322a5a37721e71be5a2ac56eceb6372d9567114e8fb240fd7b537e1f5251",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/SUMMARY.json": "a7f87c78ec929fe50d540c726ebd896cf21ee40e30d6017d9e5dd95e7dd1f353",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPORT.md": "64a7f08316828bdc864a3d660ef7aaaa3b55fd49126b4c70080157f93118b98b",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/REPRODUCE.md": "ac494c7aded7577b8a0475d1f45452dfb137efd307e9ad1d871e37d338378c14",
+    "evidence/outputs/recovp_hybrid_seed17/full_review/STATUS.json": "4e089d75c0097a9ec4b1a9fbd1f3cb2fa5afcb0e27034eb00aaec421f5aa2b1c"
+  },
+  "backup_manifest": {
+    "directory": "C:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Temp\\\\recovp_hybrid_seed17_full_review_backup_20261126",
+    "original_files_backed_up_before_edit": true
+  },
+  "model_seed_pipeline": {
+    "planned_seeds": [
+      17,
+      29,
+      41
+    ],
+    "started_seeds": [
+      17,
+      29
+    ],
+    "completed_seeds": [
+      17
+    ],
+    "in_progress_seed": 29,
+    "not_started_seeds": [
+      41
+    ]
   }
 }
