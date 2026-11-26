@@ -1,0 +1,1144 @@
+{
+  "checked_utc": "2026-11-26 06:50:32 UTC",
+  "scope": "78 explicitly inventoried UTF-8 text sources, not whole-workspace or all-history migration",
+  "hub": "https://www.notion.so/42433a09317f8119b587d2e329f7f9aa",
+  "archive_id": "42433a09-317f-81f1-b1fa-f663baacc3c3",
+  "source_count": 78,
+  "source_bytes": 909429,
+  "archive_pages": 85,
+  "exact_readback_pages": 85,
+  "method": "Each source was SHA-256 checked against SOURCE_INVENTORY before payload creation. JSON source literals were fetched from Notion, decoded, and compared exactly to every input fragment; all volumes and source indices checked complete.",
+  "source_integrity": {
+    "changed": [],
+    "count": 78,
+    "bytes": 909429
+  },
+  "readbacks": [
+    {
+      "index": 0,
+      "volume": 0,
+      "id": "42433a09-317f-81e6-9c63-fabf9cdfd3a7",
+      "sha256": "cc657f9bc097384477c7c3b8b47ce19f59e38fbc32445911fbd2a37cc6772cbf",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 1,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8113-9293-fc39bb7d2e94",
+      "url": "https://app.notion.com/p/S002-PAPER2_1103_EXECUTION_PROTOCOL-md-42433a09317f81139293fc39bb7d2e94",
+      "sha256": "e50d4587fb28fa04bed64d960f33dd91c0f4dd944f1d60bc3678b8bf1d391520",
+      "path": "PAPER2_1103_EXECUTION_PROTOCOL.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 2,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8133-886a-e686f9b8ad97",
+      "url": "https://app.notion.com/p/S003-PAPER2_1103_EXPERIMENT_PLAN_20261114-md-42433a09317f8133886ae686f9b8ad97",
+      "sha256": "0f4bdb1de4d040186807037ff3fec57de9ce8e9d1dcdb62bdfdbf8e7fb02777a",
+      "path": "PAPER2_1103_EXPERIMENT_PLAN_20261114.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 3,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8131-9228-d34ee0f1f360",
+      "url": "https://app.notion.com/p/S004-PAPER2_1103_NEAR_TERM_PLAN_20261114-md-42433a09317f81319228d34ee0f1f360",
+      "sha256": "d4b0fbb6065a3107697d4a663883485725005b3c4280d1ae25d53327ed3690d7",
+      "path": "PAPER2_1103_NEAR_TERM_PLAN_20261114.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 4,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-810c-9060-d36304902b96",
+      "url": "https://app.notion.com/p/S005-PAPER2_1103_PROGRESS_20261114-md-42433a09317f810c9060d36304902b96",
+      "sha256": "a963de284381fcf385de9b411f9ab3e4cfcc61175a6e5afec12dbaf72dd8a87d",
+      "path": "PAPER2_1103_PROGRESS_20261114.md",
+      "exact_text": true,
+      "parts": 6
+    },
+    {
+      "index": 5,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81f7-a598-cbfa1f2d5b64",
+      "url": "https://app.notion.com/p/S006-PAPER2_256_EPOCH_8_SEED_PLAN_20261114-md-42433a09317f81f7a598cbfa1f2d5b64",
+      "sha256": "152f325bc918e78bfc4d190ef71e3439aac1cda3ed363c00e37a1d37422ff662",
+      "path": "PAPER2_256_EPOCH_8_SEED_PLAN_20261114.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 6,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8194-8fb1-d756f77d7d26",
+      "url": "https://app.notion.com/p/S007-PAPER2_DEV_CONFIRMATION-md-42433a09317f81948fb1d756f77d7d26",
+      "sha256": "810e27b347c2e480c2455f636b8948ce15c7def1dc584994e0992739389c2383",
+      "path": "PAPER2_DEV_CONFIRMATION.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 7,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-811e-bf72-f2f316fd46e0",
+      "url": "https://app.notion.com/p/S008-PAPER2_EXPERIMENT_ROADMAP_20261114-md-42433a09317f811ebf72f2f316fd46e0",
+      "sha256": "c6f82c83b4208918d95bc788f9414f4b0c8fba12b0db174478dc93f72256178e",
+      "path": "PAPER2_EXPERIMENT_ROADMAP_20261114.md",
+      "exact_text": true,
+      "parts": 6
+    },
+    {
+      "index": 8,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-817f-bd07-cc08abb485da",
+      "url": "https://app.notion.com/p/S009-PAPER2_FAMILY_RESULTS-md-42433a09317f817fbd07cc08abb485da",
+      "sha256": "cf0701f4060a4b39c0fe10ab488cc8a39a328a2ffcedd2b1105707b59c6a0dd1",
+      "path": "PAPER2_FAMILY_RESULTS.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 9,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81be-b2e7-d5b14eefdc81",
+      "url": "https://app.notion.com/p/S010-PAPER2_FORMAL_STAGE_PLAN-md-42433a09317f81beb2e7d5b14eefdc81",
+      "sha256": "0484259d7290023f3692f4e417fa5deec0a14cdadc924edea7627ee811cd55fa",
+      "path": "PAPER2_FORMAL_STAGE_PLAN.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 10,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81c2-b83c-d06160fa4127",
+      "url": "https://app.notion.com/p/S011-PAPER2_GO_NO_GO-md-42433a09317f81c2b83cd06160fa4127",
+      "sha256": "88e98efd0b203c93f8b4785c967fcb7acdfe94c2e2017c86b2559a71491de81d",
+      "path": "PAPER2_GO_NO_GO.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 11,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81f0-bf67-fde4776ff285",
+      "url": "https://app.notion.com/p/S012-PAPER2_MINIMAL_MODEL_SPEC-md-42433a09317f81f0bf67fde4776ff285",
+      "sha256": "f3076c75db6a4654e47f4a2d848e03e8e4e585b105aad702e02a542e0f03d624",
+      "path": "PAPER2_MINIMAL_MODEL_SPEC.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 12,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8124-90d2-cc24a1af86a4",
+      "url": "https://app.notion.com/p/S013-PAPER2_NEAREST_WORK_COMPARISON-md-42433a09317f812490d2cc24a1af86a4",
+      "sha256": "6c6e585839906d7a6bf977da24479de90cf8cb56c2836161f0bad9f53be72eaf",
+      "path": "PAPER2_NEAREST_WORK_COMPARISON.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 13,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8184-a8ba-c61cc8b75fea",
+      "url": "https://app.notion.com/p/S014-PAPER2_PILOT_RESULTS-md-42433a09317f8184a8bac61cc8b75fea",
+      "sha256": "e9d89632f9fa323fc23f669ff27cdc4d73cb098e08be844c11058bd13115081a",
+      "path": "PAPER2_PILOT_RESULTS.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 14,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8141-a171-d5947193fcc2",
+      "url": "https://app.notion.com/p/S015-PAPER2_PROGRESS_CHECK_20261115-md-42433a09317f8141a171d5947193fcc2",
+      "sha256": "d17e5b0b77472278ec72b187dfa78053bd54416b835910abf211a2bda024b6f2",
+      "path": "PAPER2_PROGRESS_CHECK_20261115.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 15,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81d2-8d3a-d5d54dc1bc91",
+      "url": "https://app.notion.com/p/S016-PAPER2_PROGRESS_REPORT-md-42433a09317f81d28d3ad5d54dc1bc91",
+      "sha256": "b31a06bac06aba6bfaf55d6da5e0e8bf0d64197b093af1820ece5f6d78f46cf8",
+      "path": "PAPER2_PROGRESS_REPORT.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 16,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81e9-80c2-e2e4eb3ba301",
+      "url": "https://app.notion.com/p/S017-PAPER2_RESEARCH_CONTRACT-md-42433a09317f81e980c2e2e4eb3ba301",
+      "sha256": "555f55d0fbb0036eecef6c6d098d206955b71b829c61612753eca0bac9a68d31",
+      "path": "PAPER2_RESEARCH_CONTRACT.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 17,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8173-b704-cb1d73c8522f",
+      "url": "https://app.notion.com/p/S018-PAPER2_RSDR_UNIFIED_COMPARISON_20261115-md-42433a09317f8173b704cb1d73c8522f",
+      "sha256": "b3d16d04d17c0b24e7c833ae33a0dafe562a19b377e2e3b21bdbcfe21f7cb69c",
+      "path": "PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md",
+      "exact_text": true,
+      "parts": 12
+    },
+    {
+      "index": 18,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81c0-9cb4-ded15dccc1ce",
+      "url": "https://app.notion.com/p/S019-PAPER2_UNET_ABLATION_PLAN_20261115-md-42433a09317f81c09cb4ded15dccc1ce",
+      "sha256": "a9d602743cebb0bb4027e041f1587068f403de4fb622a0c2bf30557e1e31171e",
+      "path": "PAPER2_UNET_ABLATION_PLAN_20261115.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 19,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81b8-a94c-d4859f22c0aa",
+      "url": "https://app.notion.com/p/S020-CLASSICAL_BASELINE_AND_ABLATION_STATUS_20261116-md-42433a09317f81b8a94cd4859f22c0aa",
+      "sha256": "bbe616d6e72007fadb5a329ddd3e1002f8b2e8ebc64dd84c6045cc6269b586fd",
+      "path": "evidence/outputs/CLASSICAL_BASELINE_AND_ABLATION_STATUS_20261116.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 20,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8139-b31f-ed323f8f40ba",
+      "url": "https://app.notion.com/p/S021-CLASSICAL_BASELINE_DEV_CALIBRATION_PLAN_20261116-md-42433a09317f8139b31fed323f8f40ba",
+      "sha256": "2a530b27de7e6b78f4f02014eb4c93d12fc1a6e43fb2a50c007361cfbff73fae",
+      "path": "evidence/outputs/CLASSICAL_BASELINE_DEV_CALIBRATION_PLAN_20261116.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 21,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81ff-b50f-d2f49d14325e",
+      "url": "https://app.notion.com/p/S022-CLASSICAL_BASELINE_FAIRNESS_AUDIT_20261116-md-42433a09317f81ffb50fd2f49d14325e",
+      "sha256": "b68d8cb078f7f8404571cbb16fe072fb802755b78bd3f735223cf254dd7f2afc",
+      "path": "evidence/outputs/CLASSICAL_BASELINE_FAIRNESS_AUDIT_20261116.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 22,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81b4-9a0e-da2c7419baed",
+      "url": "https://app.notion.com/p/S023-CORRECTIONNET_PRIORITY_CORRECTION_REPORT_20261117-md-42433a09317f81b49a0eda2c7419baed",
+      "sha256": "d84baef6bf4ffc68bf2d329da99bfd571a3738caeddcc05f5027cb88a43b1043",
+      "path": "evidence/outputs/CORRECTIONNET_PRIORITY_CORRECTION_REPORT_20261117.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 23,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81eb-af14-fa7c4c2cee1a",
+      "url": "https://app.notion.com/p/S024-CORRECTIONNET_TAIL_STUDY_PLAN_20261117-md-42433a09317f81ebaf14fa7c4c2cee1a",
+      "sha256": "ebda573f18d3ae28bd262d2fc06c146582dc0a818ffca228c52a5e47c6159c70",
+      "path": "evidence/outputs/CORRECTIONNET_TAIL_STUDY_PLAN_20261117.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 24,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8175-933d-f5d88da62e13",
+      "url": "https://app.notion.com/p/S025-EXPERIMENT_PROGRESS_AND_REMAINING_WORK_20261116-md-42433a09317f8175933df5d88da62e13",
+      "sha256": "8255de819fe2b0e1638f6df3a90f167bdd56c2472e364d8df60d1f7c5c27d067",
+      "path": "evidence/outputs/EXPERIMENT_PROGRESS_AND_REMAINING_WORK_20261116.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 25,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-814f-a6ee-e519ca52d2b1",
+      "url": "https://app.notion.com/p/S026-GMM_OMP_PHASE_ORIGIN_DIAGNOSTIC_20261116-md-42433a09317f814fa6eee519ca52d2b1",
+      "sha256": "c4091110c116db98c0030279f54635079221cd87db80a37973af66c9b9ca919a",
+      "path": "evidence/outputs/GMM_OMP_PHASE_ORIGIN_DIAGNOSTIC_20261116.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 26,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81bf-aefb-f8fbf214133f",
+      "url": "https://app.notion.com/p/S027-IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117-md-42433a09317f81bfaefbf8fbf214133f",
+      "sha256": "815c4dc9a621389c097feda1f01aab5366822af1fe5a8bd52a66ba2a32be6c30",
+      "path": "evidence/outputs/IDEA_TO_EXPERIMENT_PIPELINE_REVIEW_20261117.md",
+      "exact_text": true,
+      "parts": 8
+    },
+    {
+      "index": 27,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8168-9ce3-c8485896ddb6",
+      "url": "https://app.notion.com/p/S028-INNOVATION_CANDIDATES_AUDIT_20261117-md-42433a09317f81689ce3c8485896ddb6",
+      "sha256": "1b515733522db9b94c37acf8ce8cf9311746202df5275bd20cdce057b16358a6",
+      "path": "evidence/outputs/INNOVATION_CANDIDATES_AUDIT_20261117.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 28,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81b1-879f-ef96b8e5a10d",
+      "url": "https://app.notion.com/p/S029-INNOVATION_DIRECTION_REVIEW_20261117-md-42433a09317f81b1879fef96b8e5a10d",
+      "sha256": "6685a5bf063b9a77cf18f88bdb5b8dbb7be59bdb7b03c948243356d431ee0817",
+      "path": "evidence/outputs/INNOVATION_DIRECTION_REVIEW_20261117.md",
+      "exact_text": true,
+      "parts": 8
+    },
+    {
+      "index": 29,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-817a-813c-ca6b7911d3a6",
+      "url": "https://app.notion.com/p/S030-ISRJ2_AUTOMATION_INSPECTION_20261117T2021Z-md-42433a09317f817a813cca6b7911d3a6",
+      "sha256": "3e35c6a2096009382d480f2df4916aa7ae6e48d9fd90ef75a716a0431932b3f2",
+      "path": "evidence/outputs/ISRJ2_AUTOMATION_INSPECTION_20261117T2021Z.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 30,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8111-83a3-dc4789b1812f",
+      "url": "https://app.notion.com/p/S031-ISRJ2_AUTOMATION_INSPECTION_20261117T2224Z-md-42433a09317f811183a3dc4789b1812f",
+      "sha256": "0d9dd206fe4603c6a485a2775383ccacc0a7100887d41d8045aa01a9b9ab0954",
+      "path": "evidence/outputs/ISRJ2_AUTOMATION_INSPECTION_20261117T2224Z.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 31,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81b5-96e0-d86565425ba9",
+      "url": "https://app.notion.com/p/S032-ISRJ2_AUTOMATION_INSPECTION_20261118T0018Z-md-42433a09317f81b596e0d86565425ba9",
+      "sha256": "c963094516a60bea3c00244c1ae5eb0e20fe8f2329e8c2d50802e7b11e3b125f",
+      "path": "evidence/outputs/ISRJ2_AUTOMATION_INSPECTION_20261118T0018Z.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 32,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8173-959e-e2a5ce05892a",
+      "url": "https://app.notion.com/p/S033-ISRJ2_INNOVATION_EXPERIMENT_PROGRESS_REPORT_20261117-md-42433a09317f8173959ee2a5ce05892a",
+      "sha256": "a99623d22da9adc5c700f541d11556f574565645bcc540f1a80ac4b5ae3a78c3",
+      "path": "evidence/outputs/ISRJ2_INNOVATION_EXPERIMENT_PROGRESS_REPORT_20261117.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 33,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81a6-baf5-f9ae4e6154ae",
+      "url": "https://app.notion.com/p/S034-ISRJ2_ORDERED_DIAGNOSTIC_PIPELINE_STATUS_20261117-md-42433a09317f81a6baf5f9ae4e6154ae",
+      "sha256": "9c7373efedaabedbb35085375fe03565be519948ceb2de3e1b056897e920260f",
+      "path": "evidence/outputs/ISRJ2_ORDERED_DIAGNOSTIC_PIPELINE_STATUS_20261117.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 34,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81d7-9d24-ec3f2cb51406",
+      "url": "https://app.notion.com/p/S035-PARALLEL_EXPERIMENT_PROGRESS_20261117-md-42433a09317f81d79d24ec3f2cb51406",
+      "sha256": "73f963da962e4a7f38249e3c817abe824bee6d459ea452e199d44c68c0774650",
+      "path": "evidence/outputs/PARALLEL_EXPERIMENT_PROGRESS_20261117.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 35,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8140-adf8-d9bc48fa0557",
+      "url": "https://app.notion.com/p/S036-RECoVP_HYBRID_DRAFT_EVIDENCE_20261125-md-42433a09317f8140adf8d9bc48fa0557",
+      "sha256": "3c5df37128b8e7771d0a82b4d07e43ae756a89b9ce7df1c5634e4f0c3d7df0d6",
+      "path": "evidence/outputs/RECoVP_HYBRID_DRAFT_EVIDENCE_20261125.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 36,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8169-9db4-ca81afe2f9eb",
+      "url": "https://app.notion.com/p/S037-RECoVP_HYBRID_FINAL_EVIDENCE_20261126-md-42433a09317f81699db4ca81afe2f9eb",
+      "sha256": "3f823d1dc1b902eca7b4b75b031bf55bea574bced28b481611f202990de6f6e4",
+      "path": "evidence/outputs/RECoVP_HYBRID_FINAL_EVIDENCE_20261126.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 37,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8100-af2c-ee8dfba4f026",
+      "url": "https://app.notion.com/p/S038-RESIDUAL_FAILURE_DIAGNOSTIC_REPORT_20261117-md-42433a09317f8100af2cee8dfba4f026",
+      "sha256": "d6c0f46f1fa3737090edf1a7d22bc006bde6f293c60abbae4076f7b6b9e2f9db",
+      "path": "evidence/outputs/RESIDUAL_FAILURE_DIAGNOSTIC_REPORT_20261117.md",
+      "exact_text": true,
+      "parts": 5
+    },
+    {
+      "index": 38,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8109-8859-fde5208e3ecd",
+      "url": "https://app.notion.com/p/S039-UNET_CORRECTIONNET_COMPARISON_20261117-md-42433a09317f81098859fde5208e3ecd",
+      "sha256": "435ab1af2f65570ed7b60477c34056c476c6dbe6e23c43658c2dafd4db7d3034",
+      "path": "evidence/outputs/UNET_CORRECTIONNET_COMPARISON_20261117.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 39,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81f5-af5d-de8f7185a238",
+      "url": "https://app.notion.com/p/S040-UNET_EQUAL_PFA_AND_EFFICIENCY_REPORT_20261116-md-42433a09317f81f5af5dde8f7185a238",
+      "sha256": "cd777e8e88946d02e7b17d23b841cabea48486ec5c663b0cd6cae55e84a7a33d",
+      "path": "evidence/outputs/UNET_EQUAL_PFA_AND_EFFICIENCY_REPORT_20261116.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 40,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-811c-95ca-c5f91c442a40",
+      "url": "https://app.notion.com/p/S041-UNET_MF_TAIL_SCREEN_PLAN_20261117-md-42433a09317f811c95cac5f91c442a40",
+      "sha256": "d808716f20bf282d1f143876f1db0093ef2a996179bcfcb0891dc074b65f0ef5",
+      "path": "evidence/outputs/UNET_MF_TAIL_SCREEN_PLAN_20261117.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 41,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-816e-95e2-da4dd6d33c64",
+      "url": "https://app.notion.com/p/S042-UNET_NOISE_NORM_SCREEN_PLAN_20261117-md-42433a09317f816e95e2da4dd6d33c64",
+      "sha256": "055ae061c3eed7e8976db7996fb1c7d240fc03147bde0495881cce8ad4d794d2",
+      "path": "evidence/outputs/UNET_NOISE_NORM_SCREEN_PLAN_20261117.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 42,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-815c-bc15-d476926a0dbe",
+      "url": "https://app.notion.com/p/S043-UNET_REPRESENTATION_SCREEN_PLAN_20261117-md-42433a09317f815cbc15d476926a0dbe",
+      "sha256": "2e1fb1b1d216ab4b3c18ef84e99b20b76c911753ac421a7d16a48440cc738d40",
+      "path": "evidence/outputs/UNET_REPRESENTATION_SCREEN_PLAN_20261117.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 43,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81fb-b61e-f7f60625432d",
+      "url": "https://app.notion.com/p/S044-DEV_SCREEN_SUMMARY-json-42433a09317f81fbb61ef7f60625432d",
+      "sha256": "0ac3768fb4c4ee0dc0d0107f52a5b3030fed33c7755c76d54f71d919af822bcc",
+      "path": "evidence/outputs/correction_mf_tail_20261117_v1/DEV_SCREEN_SUMMARY.json",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 44,
+      "volume": 0,
+      "volumes": 3,
+      "id": "42433a09-317f-8196-bac5-c87da99a6ac5",
+      "url": "https://app.notion.com/p/S045-FOUR_CELL_DEV_SUMMARY-json-1-3-42433a09317f8196bac5c87da99a6ac5",
+      "sha256": "fbb92792e4d47a71ea8d44bb84a651bba5ef12dda0488ec859cc8b3327684266",
+      "path": "evidence/outputs/correction_mf_tail_20261117_v1/FOUR_CELL_DEV_SUMMARY.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 44,
+      "volume": 1,
+      "volumes": 3,
+      "id": "42433a09-317f-81a3-abd3-f7c8854a4b41",
+      "url": "https://app.notion.com/p/S045-FOUR_CELL_DEV_SUMMARY-json-2-3-42433a09317f81a3abd3f7c8854a4b41",
+      "sha256": "fbb92792e4d47a71ea8d44bb84a651bba5ef12dda0488ec859cc8b3327684266",
+      "path": "evidence/outputs/correction_mf_tail_20261117_v1/FOUR_CELL_DEV_SUMMARY.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 44,
+      "volume": 2,
+      "volumes": 3,
+      "id": "42433a09-317f-8109-aadb-d42e5b380e68",
+      "url": "https://app.notion.com/p/S045-FOUR_CELL_DEV_SUMMARY-json-3-3-42433a09317f8109aadbd42e5b380e68",
+      "sha256": "fbb92792e4d47a71ea8d44bb84a651bba5ef12dda0488ec859cc8b3327684266",
+      "path": "evidence/outputs/correction_mf_tail_20261117_v1/FOUR_CELL_DEV_SUMMARY.json",
+      "exact_text": true,
+      "parts": 10
+    },
+    {
+      "index": 45,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8175-b14d-d67a42e32336",
+      "url": "https://app.notion.com/p/S046-PIPELINE_STATUS-json-42433a09317f8175b14dd67a42e32336",
+      "sha256": "b68305314837d53146cfb3c55a8bebca4320dccaf0f3db503c94a6ba5986e627",
+      "path": "evidence/outputs/correction_mf_tail_20261117_v1/PIPELINE_STATUS.json",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 46,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-819f-84f0-f72d2606c4ad",
+      "url": "https://app.notion.com/p/S047-PROGRESS_20261125-md-42433a09317f819f84f0f72d2606c4ad",
+      "sha256": "075257bef1505b48cf78071a3d1c298213035c61e3a5fe3e04ce08fddbbf690a",
+      "path": "evidence/outputs/recovp_hybrid_seed17/PROGRESS_20261125.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 47,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8118-bb24-e91f544a160b",
+      "url": "https://app.notion.com/p/S048-REPRODUCE-md-42433a09317f8118bb24e91f544a160b",
+      "sha256": "541ea305a9d447f80ac949866ff0be9e3efa063f2219f5d99ad9d1e1797d5e17",
+      "path": "evidence/outputs/recovp_hybrid_seed17/REPRODUCE.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 48,
+      "volume": 0,
+      "volumes": 5,
+      "id": "42433a09-317f-8133-ba5e-fb9466bcdad0",
+      "url": "https://app.notion.com/p/S049-dev_epoch_256_v1-json-1-5-42433a09317f8133ba5efb9466bcdad0",
+      "sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+      "path": "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 48,
+      "volume": 1,
+      "volumes": 5,
+      "id": "42433a09-317f-81b3-a8ec-d3fe1d145d7b",
+      "url": "https://app.notion.com/p/S049-dev_epoch_256_v1-json-2-5-42433a09317f81b3a8ecd3fe1d145d7b",
+      "sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+      "path": "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 48,
+      "volume": 2,
+      "volumes": 5,
+      "id": "42433a09-317f-81f6-855c-f3c6c54bb4b8",
+      "url": "https://app.notion.com/p/S049-dev_epoch_256_v1-json-3-5-42433a09317f81f6855cf3c6c54bb4b8",
+      "sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+      "path": "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 48,
+      "volume": 3,
+      "volumes": 5,
+      "id": "42433a09-317f-8137-84a3-cf00cbb395b6",
+      "url": "https://app.notion.com/p/S049-dev_epoch_256_v1-json-4-5-42433a09317f813784a3cf00cbb395b6",
+      "sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+      "path": "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 48,
+      "volume": 4,
+      "volumes": 5,
+      "id": "42433a09-317f-812f-8519-f98f65251d21",
+      "url": "https://app.notion.com/p/S049-dev_epoch_256_v1-json-5-5-42433a09317f812f8519f98f65251d21",
+      "sha256": "877cfe7f6baf4fb3a59bff58da4a344e5437e43f000b3b3a9808a47acbda7df1",
+      "path": "evidence/outputs/recovp_hybrid_seed17/dev_epoch_256_v1.json",
+      "exact_text": true,
+      "parts": 11
+    },
+    {
+      "index": 49,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81c4-af9b-e61bba66ed6c",
+      "url": "https://app.notion.com/p/S050-REPORT-md-42433a09317f81c4af9be61bba66ed6c",
+      "sha256": "4939e3dd5200b7d5a5250f0dececc513d78cdb7248be52435b27dae978cf5cdc",
+      "path": "evidence/outputs/recovp_hybrid_seed17/full_review/REPORT.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 50,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8168-a19c-ec2951b83be1",
+      "url": "https://app.notion.com/p/S051-REPRODUCE-md-42433a09317f8168a19cec2951b83be1",
+      "sha256": "eac8894ed1f7a9ca41d6aa168394bf89f925dfa3e44b4a1b30237a81621c9613",
+      "path": "evidence/outputs/recovp_hybrid_seed17/full_review/REPRODUCE.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 51,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81d9-b6b4-d420cfd9bcfa",
+      "url": "https://app.notion.com/p/S052-REVIEW_PROGRESS-json-42433a09317f81d9b6b4d420cfd9bcfa",
+      "sha256": "754bf009bca73f47de0f213b43286755c75028b790de34b1ab357fe14dc24e71",
+      "path": "evidence/outputs/recovp_hybrid_seed17/full_review/REVIEW_PROGRESS.json",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 52,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-815f-a9e2-db5d244da0c0",
+      "url": "https://app.notion.com/p/S053-CLAIM_EVIDENCE_MATRIX-md-42433a09317f815fa9e2db5d244da0c0",
+      "sha256": "2edee827572e29c3ec06f62a0a904d6a33245394de80ea01401131f6a22c4823",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/CLAIM_EVIDENCE_MATRIX.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 53,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81d3-8990-cfbfddbffaec",
+      "url": "https://app.notion.com/p/S054-REPORT-md-42433a09317f81d38990cfbfddbffaec",
+      "sha256": "d83a93cf3b07a0b9f4c03b3a245afea3aab86c360fab16c7799b71ca3f94e822",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/REPORT.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 54,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81a2-b331-fcab2dadebf8",
+      "url": "https://app.notion.com/p/S055-REPRODUCE-md-42433a09317f81a2b331fcab2dadebf8",
+      "sha256": "687db1a84bbaba745e2b12f64a4b55ecd4b4f353c003787a6b5fc73f63fb44cb",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/REPRODUCE.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 55,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81f9-8592-da1ce469193a",
+      "url": "https://app.notion.com/p/S056-REPRODUCIBILITY_AUDIT-md-42433a09317f81f98592da1ce469193a",
+      "sha256": "0b2f7c6b5ec24925eb48a640ba39da85c305496c128b7d57f7a52e11a05181a1",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/REPRODUCIBILITY_AUDIT.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 56,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8111-8414-d238cb0c76e1",
+      "url": "https://app.notion.com/p/S057-RESEARCH_STAGE_SUMMARY-md-42433a09317f81118414d238cb0c76e1",
+      "sha256": "d4180cc76da991bb1c11705fa04bedf1740b09686c0e7387b08a43c35159a644",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/RESEARCH_STAGE_SUMMARY.md",
+      "exact_text": true,
+      "parts": 8
+    },
+    {
+      "index": 57,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8191-98f7-f7c65c0ea5e7",
+      "url": "https://app.notion.com/p/S058-STATISTICAL_REVIEW-md-42433a09317f819198f7f7c65c0ea5e7",
+      "sha256": "d36df8778965a847ee90f9f90cf0f7735636936977c8afbbb6f43954ceda24f9",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/STATISTICAL_REVIEW.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 58,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8180-8531-fb089551df7c",
+      "url": "https://app.notion.com/p/S059-SUMMARY-md-42433a09317f81808531fb089551df7c",
+      "sha256": "79d09ef603c5ef9188132c3a84dc309e5cf754fe8ee7d556e1d0625b5d61463e",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/SUMMARY.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 59,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81b8-8cd9-c77bc42665b5",
+      "url": "https://app.notion.com/p/S060-UNRESOLVED_ISSUES-md-42433a09317f81b88cd9c77bc42665b5",
+      "sha256": "11288fa768c0214a33254c1d37a0c45522a884bfe67e7a006e0bf45d254730c7",
+      "path": "evidence/outputs/recovp_research_stage_review_20261125_r2/UNRESOLVED_ISSUES.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 60,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8138-96c0-dbd5f6f0599b",
+      "url": "https://app.notion.com/p/S061-FORENSIC_AUDIT-md-42433a09317f813896c0dbd5f6f0599b",
+      "sha256": "308d5b064e3891608ce9f449e7ed39fa868878d8aa9b71f6fe27c81fabf94d8f",
+      "path": "manuscript/recovp_paper_20261126/FORENSIC_AUDIT.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 61,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-818c-b6a6-ffecd884ee2e",
+      "url": "https://app.notion.com/p/S062-ISRJ_2-md-42433a09317f818cb6a6ffecd884ee2e",
+      "sha256": "d15d16b6f0a69f59d48b5b0fb1673cad6b7fe9262d120bed2aec4715a05cf2b7",
+      "path": "manuscript/recovp_paper_20261126/ISRJ_2论文草稿.md",
+      "exact_text": true,
+      "parts": 23
+    },
+    {
+      "index": 62,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81c1-8001-e03898942475",
+      "url": "https://app.notion.com/p/S063-REPRODUCIBILITY-md-42433a09317f81c18001e03898942475",
+      "sha256": "7fd2fb123358f4b67315518e23134b320676488d1de495ce5f93f5879a37422c",
+      "path": "manuscript/recovp_paper_20261126/REPRODUCIBILITY.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 63,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-817b-baa1-f38091afbb6b",
+      "url": "https://app.notion.com/p/S064-REVIEW_1_MATH-md-42433a09317f817bbaa1f38091afbb6b",
+      "sha256": "cc7460875c87a727fa36746996d040cb676e4fd90bdc6546f614fecf5bad7bd5",
+      "path": "manuscript/recovp_paper_20261126/REVIEW_1_MATH.md",
+      "exact_text": true,
+      "parts": 5
+    },
+    {
+      "index": 64,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8122-b63f-d29d76fdfc51",
+      "url": "https://app.notion.com/p/S065-REVIEW_2_EVIDENCE-md-42433a09317f8122b63fd29d76fdfc51",
+      "sha256": "67f2e978c302444aada247256044f7ba14317b1da18edcf8649a18cb199f1a74",
+      "path": "manuscript/recovp_paper_20261126/REVIEW_2_EVIDENCE.md",
+      "exact_text": true,
+      "parts": 6
+    },
+    {
+      "index": 65,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-811b-b8e5-fceaf4477861",
+      "url": "https://app.notion.com/p/S066-REVIEW_3_NARRATIVE-md-42433a09317f811bb8e5fceaf4477861",
+      "sha256": "abfcdecbdec6d3eb7d8ff6ede6d12e42fba505ab143ae027a67882e53714eb4e",
+      "path": "manuscript/recovp_paper_20261126/REVIEW_3_NARRATIVE.md",
+      "exact_text": true,
+      "parts": 6
+    },
+    {
+      "index": 66,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81bf-ab15-f8c2934ef4cc",
+      "url": "https://app.notion.com/p/S067-md-42433a09317f81bfab15f8c2934ef4cc",
+      "sha256": "252f47f325bf6109464dd446191ae5ba1578853a7fe2a9da6e26b6979d3a02cb",
+      "path": "manuscript/recovp_paper_20261126/文献核对与写法借鉴.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 67,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81c0-8e4f-e6d69d6c49f0",
+      "url": "https://app.notion.com/p/S068-md-42433a09317f81c08e4fe6d69d6c49f0",
+      "sha256": "99b8e9bb5dc27edcea6cfe7f27d5ceb276fc7ff81a83d62c54d05cdb73a7bb13",
+      "path": "manuscript/recovp_paper_20261126/论文审查与投稿差距.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 68,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81f1-8f33-dca85cbd88c3",
+      "url": "https://app.notion.com/p/S069-ISRJ2_AUTO_INSPECTION_20261117_1620-md-42433a09317f81f18f33dca85cbd88c3",
+      "sha256": "16affb113c10fefca9479413b95fbf296e4c1a57401de8a27cacccd7cc0630be",
+      "path": "reports/ISRJ2_AUTO_INSPECTION_20261117_1620.md",
+      "exact_text": true,
+      "parts": 2
+    },
+    {
+      "index": 69,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81d3-b3b0-d67d9eef2fd1",
+      "url": "https://app.notion.com/p/S070-ISRJ2_PERFORMANCE_AUDIT_RSDR_20261117-md-42433a09317f81d3b3b0d67d9eef2fd1",
+      "sha256": "2df6e97c2e2737a44d3390e146f36e6726b1c17c0bb5952646fb73c3743f300d",
+      "path": "reports/ISRJ2_PERFORMANCE_AUDIT_RSDR_20261117.md",
+      "exact_text": true,
+      "parts": 4
+    },
+    {
+      "index": 70,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-818c-b960-c45a028e4e7d",
+      "url": "https://app.notion.com/p/S071-ISRJ2_RESEARCH_GAP_TRACKER-md-42433a09317f818cb960c45a028e4e7d",
+      "sha256": "a2f732d9f5f99b35b78784a658b79cf59b26e0a94117ee214a1e55e9d6ddf511",
+      "path": "reports/ISRJ2_RESEARCH_GAP_TRACKER.md",
+      "exact_text": true,
+      "parts": 1
+    },
+    {
+      "index": 71,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81e5-b33e-f9fba0b2d19b",
+      "url": "https://app.notion.com/p/S072-RECoVP_HYBRID_SEED17_EXPERIMENT_REPORT_20261126-md-42433a09317f81e5b33ef9fba0b2d19b",
+      "sha256": "61974c4978cc57fead3cf72a200b3dd175cfbd3c6ec6ba6c73b45d2c5354aab9",
+      "path": "reports/RECoVP_HYBRID_SEED17_EXPERIMENT_REPORT_20261126.md",
+      "exact_text": true,
+      "parts": 3
+    },
+    {
+      "index": 72,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81a5-9d73-ee021f41e744",
+      "url": "https://app.notion.com/p/S073-RECOVP_PAIRED_DEV_DRAFT_1125-md-42433a09317f81a59d73ee021f41e744",
+      "sha256": "61e0740472e635c4190926a3aa1cb4acaa34dedebcb142936460b5a4300b6c3a",
+      "path": "manuscript/RECOVP_PAIRED_DEV_DRAFT_1125.md",
+      "exact_text": true,
+      "parts": 5
+    },
+    {
+      "index": 73,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8181-88e8-fffa3e1639b2",
+      "url": "https://app.notion.com/p/S074-ReCoVP_Hybrid_-_20261125-md-42433a09317f818188e8fffa3e1639b2",
+      "sha256": "f5f549062af1dface4e23677ded2b6b9e6572f03f1027570714925a7ee25410b",
+      "path": "manuscript/ReCoVP_Hybrid_论文草稿_20261125.md",
+      "exact_text": true,
+      "parts": 17
+    },
+    {
+      "index": 74,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8125-8013-da26ad4a2d20",
+      "url": "https://app.notion.com/p/S075-FINAL_AUDIT-json-42433a09317f81258013da26ad4a2d20",
+      "sha256": "8ad43332aaf07248c906ad90c4be13a8dbe020ad25f02e59aa8ba5b5db204d28",
+      "path": "manuscript/recovp_paper_20261126/FINAL_AUDIT.json",
+      "exact_text": true,
+      "parts": 7
+    },
+    {
+      "index": 75,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-8117-bb36-e70c208fc363",
+      "url": "https://app.notion.com/p/S076-TARGETED_CHANGELOG-json-42433a09317f8117bb36e70c208fc363",
+      "sha256": "988e50ab0cbf8d57cb14da37a460f6e50f2cb76b79ede961721778cc76aca5b6",
+      "path": "manuscript/recovp_paper_20261126/TARGETED_CHANGELOG.json",
+      "exact_text": true,
+      "parts": 7
+    },
+    {
+      "index": 76,
+      "volume": 0,
+      "volumes": 2,
+      "id": "42433a09-317f-819e-8409-f4cfb29079dd",
+      "url": "https://app.notion.com/p/S077-doi_registry-json-1-2-42433a09317f819e8409f4cfb29079dd",
+      "sha256": "382ae255aecca45160ca8455c6a4385434328d89ed8f2c23f6bf86787abcd7cf",
+      "path": "manuscript/recovp_paper_20261126/doi_registry.json",
+      "exact_text": true,
+      "parts": 30
+    },
+    {
+      "index": 76,
+      "volume": 1,
+      "volumes": 2,
+      "id": "42433a09-317f-81c5-8c21-c78974819635",
+      "url": "https://app.notion.com/p/S077-doi_registry-json-2-2-42433a09317f81c58c21c78974819635",
+      "sha256": "382ae255aecca45160ca8455c6a4385434328d89ed8f2c23f6bf86787abcd7cf",
+      "path": "manuscript/recovp_paper_20261126/doi_registry.json",
+      "exact_text": true,
+      "parts": 14
+    },
+    {
+      "index": 77,
+      "volume": 0,
+      "volumes": 1,
+      "id": "42433a09-317f-81d0-b3b5-faa8087d6beb",
+      "url": "https://app.notion.com/p/S078-source_manifest-json-42433a09317f81d0b3b5faa8087d6beb",
+      "sha256": "8e04a7a8a1845dca8ff575fec0558affa972c7b257aaa57a0f43ab4abc991f86",
+      "path": "outputs/cvednet_literature_claim_audit_20261124/source_manifest.json",
+      "exact_text": true,
+      "parts": 2
+    }
+  ],
+  "paper_commit": "2b3d95ea01bd9962bf5b35df2355cc2646cda966",
+  "topics": [
+    {
+      "id": "42433a09-317f-81e6-97e9-ddf55c0a639e",
+      "url": "https://app.notion.com/p/01-42433a09317f81e697e9ddf55c0a639e",
+      "title": "01_研究历史与当前主线"
+    },
+    {
+      "id": "42433a09-317f-814a-b5c3-d924da3c20d8",
+      "url": "https://app.notion.com/p/02-42433a09317f814ab5c3d924da3c20d8",
+      "title": "02_方法与数学边界"
+    },
+    {
+      "id": "42433a09-317f-8185-8d14-da7bba0e4608",
+      "url": "https://app.notion.com/p/03-42433a09317f81858d14da7bba0e4608",
+      "title": "03_数据评价与证据等级"
+    },
+    {
+      "id": "42433a09-317f-8162-96fc-d9648c0ec429",
+      "url": "https://app.notion.com/p/04-42433a09317f816296fcd9648c0ec429",
+      "title": "04_实验结果负结果与缺口"
+    },
+    {
+      "id": "42433a09-317f-8169-bab3-f88f716596c5",
+      "url": "https://app.notion.com/p/05-42433a09317f8169bab3f88f716596c5",
+      "title": "05_论文文献与审阅"
+    },
+    {
+      "id": "42433a09-317f-815e-81ff-e34b8abefe23",
+      "url": "https://app.notion.com/p/06-42433a09317f815e81ffe34b8abefe23",
+      "title": "06_执行边界与版本追溯"
+    }
+  ],
+  "readable_manuscript": {
+    "object": "page",
+    "id": "42433a09-317f-8121-a11c-ea858bf9130b",
+    "created_time": "2026-11-26T06:47:00.000Z",
+    "last_edited_time": "2026-11-26T06:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "41733a09-317f-81e5-b315-0027032be854"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "41733a09-317f-81e5-b315-0027032be854"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "page_id",
+      "page_id": "42433a09-317f-8169-bab3-f88f716596c5"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "论文正文｜ReCoVP-Hybrid 完整修订稿（按章阅读）",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "论文正文｜ReCoVP-Hybrid 完整修订稿（按章阅读）",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/ReCoVP-Hybrid-42433a09317f8121a11cea858bf9130b",
+    "public_url": null,
+    "archived": false,
+    "request_id": "4ed0dc5c-b983-42d5-9752-30a9d6e4fe9f"
+  },
+  "chapters": [
+    {
+      "id": "42433a09-317f-81ab-a059-ecace1bf9adc",
+      "url": "https://app.notion.com/p/42433a09317f81aba059ecace1bf9adc",
+      "title": "摘要"
+    },
+    {
+      "id": "42433a09-317f-8159-a20e-e02e60d8811f",
+      "url": "https://app.notion.com/p/1-42433a09317f8159a20ee02e60d8811f",
+      "title": "1 引言"
+    },
+    {
+      "id": "42433a09-317f-8188-97d2-e5d2954c667d",
+      "url": "https://app.notion.com/p/2-42433a09317f818897d2e5d2954c667d",
+      "title": "2 信号模型与恢复问题"
+    },
+    {
+      "id": "42433a09-317f-816b-8c58-e7c81080c68f",
+      "url": "https://app.notion.com/p/3-ReCoVP-Hybrid-42433a09317f816b8c58e7c81080c68f",
+      "title": "3 ReCoVP-Hybrid 波形恢复方法"
+    },
+    {
+      "id": "42433a09-317f-810d-9a73-fdce482af062",
+      "url": "https://app.notion.com/p/4-42433a09317f810d9a73fdce482af062",
+      "title": "4 四状态联合训练"
+    },
+    {
+      "id": "42433a09-317f-81b0-8dfb-f771f96b571e",
+      "url": "https://app.notion.com/p/5-42433a09317f81b08dfbf771f96b571e",
+      "title": "5 实验与结果分析"
+    },
+    {
+      "id": "42433a09-317f-8179-80ac-cc5a62ccaa9b",
+      "url": "https://app.notion.com/p/6-42433a09317f817980accc5a62ccaa9b",
+      "title": "6 讨论"
+    },
+    {
+      "id": "42433a09-317f-81e1-ad46-eaf035959566",
+      "url": "https://app.notion.com/p/7-42433a09317f81e1ad46eaf035959566",
+      "title": "7 结论"
+    },
+    {
+      "id": "42433a09-317f-81c6-933c-ec6ae8babf6b",
+      "url": "https://app.notion.com/p/42433a09317f81c6933cec6ae8babf6b",
+      "title": "参考文献"
+    },
+    {
+      "id": "42433a09-317f-81da-895a-d187b2fd391c",
+      "url": "https://app.notion.com/p/A-42433a09317f81da895ad187b2fd391c",
+      "title": "附录 A 结果来源与复现说明"
+    }
+  ],
+  "existing_appended": [
+    {
+      "key": "position",
+      "id": "3f833a09-317f-8101-89a3-ce9ce0f8a067",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "methods",
+      "id": "3f833a09-317f-81e9-9677-e8f0564c2f41",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "data",
+      "id": "3f833a09-317f-81e8-bd3e-fa6046cb2020",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "experiments",
+      "id": "3f833a09-317f-8113-ad54-fdb1368cfa28",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "extreme",
+      "id": "3f833a09-317f-819a-b0fa-e1be09871f29",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "tasks",
+      "id": "3f833a09-317f-81dd-b0f0-d33f24d0b08f",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "papers",
+      "id": "3f833a09-317f-8165-ae11-eb49877fdffb",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "archives",
+      "id": "3f833a09-317f-8176-a9fc-d4a87d1c7d9d",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "decisions",
+      "id": "3f833a09-317f-81b1-a9c5-fe4ef2e81551",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "sync",
+      "id": "3f833a09-317f-817d-bd6b-e86bba2b3756",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    },
+    {
+      "key": "paper2_old",
+      "id": "3ff33a09-317f-8102-8e3b-e374fdd6083d",
+      "marker": "ISRJ_2 第二篇论文补充｜2026-11-26 UTC"
+    }
+  ]
+}

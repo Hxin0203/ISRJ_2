@@ -1,0 +1,301 @@
+{
+  "existing_page_checks": [
+    {
+      "key": "position",
+      "id": "3f833a09-317f-8101-89a3-ce9ce0f8a067",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "methods",
+      "id": "3f833a09-317f-81e9-9677-e8f0564c2f41",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "data",
+      "id": "3f833a09-317f-81e8-bd3e-fa6046cb2020",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "experiments",
+      "id": "3f833a09-317f-8113-ad54-fdb1368cfa28",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "extreme",
+      "id": "3f833a09-317f-819a-b0fa-e1be09871f29",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "tasks",
+      "id": "3f833a09-317f-81dd-b0f0-d33f24d0b08f",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "papers",
+      "id": "3f833a09-317f-8165-ae11-eb49877fdffb",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "archives",
+      "id": "3f833a09-317f-8176-a9fc-d4a87d1c7d9d",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "decisions",
+      "id": "3f833a09-317f-81b1-a9c5-fe4ef2e81551",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "sync",
+      "id": "3f833a09-317f-817d-bd6b-e86bba2b3756",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    },
+    {
+      "key": "paper2_old",
+      "id": "3ff33a09-317f-8102-8e3b-e374fdd6083d",
+      "prior_text_preserved": true,
+      "new_marker": true,
+      "truncated": false
+    }
+  ],
+  "root_checks": {
+    "root_preserved_except_labeled_heading": true,
+    "new_hub_visible": true
+  },
+  "new_page_checks": [
+    {
+      "id": "42433a09-317f-81e6-97e9-ddf55c0a639e",
+      "title": "01_研究历史与当前主线",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1620
+    },
+    {
+      "id": "42433a09-317f-814a-b5c3-d924da3c20d8",
+      "title": "02_方法与数学边界",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1018
+    },
+    {
+      "id": "42433a09-317f-8185-8d14-da7bba0e4608",
+      "title": "03_数据评价与证据等级",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1320
+    },
+    {
+      "id": "42433a09-317f-8162-96fc-d9648c0ec429",
+      "title": "04_实验结果负结果与缺口",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1783
+    },
+    {
+      "id": "42433a09-317f-8169-bab3-f88f716596c5",
+      "title": "05_论文文献与审阅",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 935
+    },
+    {
+      "id": "42433a09-317f-815e-81ff-e34b8abefe23",
+      "title": "06_执行边界与版本追溯",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1142
+    },
+    {
+      "id": "42433a09-317f-81ab-a059-ecace1bf9adc",
+      "title": "摘要",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 471
+    },
+    {
+      "id": "42433a09-317f-8159-a20e-e02e60d8811f",
+      "title": "1 引言",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1653
+    },
+    {
+      "id": "42433a09-317f-8188-97d2-e5d2954c667d",
+      "title": "2 信号模型与恢复问题",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 3326
+    },
+    {
+      "id": "42433a09-317f-816b-8c58-e7c81080c68f",
+      "title": "3 ReCoVP-Hybrid 波形恢复方法",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 8350
+    },
+    {
+      "id": "42433a09-317f-810d-9a73-fdce482af062",
+      "title": "4 四状态联合训练",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 2785
+    },
+    {
+      "id": "42433a09-317f-81b0-8dfb-f771f96b571e",
+      "title": "5 实验与结果分析",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 7695
+    },
+    {
+      "id": "42433a09-317f-8179-80ac-cc5a62ccaa9b",
+      "title": "6 讨论",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1312
+    },
+    {
+      "id": "42433a09-317f-81e1-ad46-eaf035959566",
+      "title": "7 结论",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 352
+    },
+    {
+      "id": "42433a09-317f-81c6-933c-ec6ae8babf6b",
+      "title": "参考文献",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 6170
+    },
+    {
+      "id": "42433a09-317f-81da-895a-d187b2fd391c",
+      "title": "附录 A 结果来源与复现说明",
+      "nonempty": true,
+      "truncated": false,
+      "formula_tags_match": true,
+      "chars": 1189
+    }
+  ],
+  "latex_formula_code_checks": [
+    {
+      "id": "42433a09-317f-8188-97d2-e5d2954c667d",
+      "title": "2 信号模型与恢复问题",
+      "formula_count": 10,
+      "latex_code_exact": true
+    },
+    {
+      "id": "42433a09-317f-816b-8c58-e7c81080c68f",
+      "title": "3 ReCoVP-Hybrid 波形恢复方法",
+      "formula_count": 17,
+      "latex_code_exact": true
+    },
+    {
+      "id": "42433a09-317f-810d-9a73-fdce482af062",
+      "title": "4 四状态联合训练",
+      "formula_count": 6,
+      "latex_code_exact": true
+    },
+    {
+      "id": "42433a09-317f-81b0-8dfb-f771f96b571e",
+      "title": "5 实验与结果分析",
+      "formula_count": 2,
+      "latex_code_exact": true
+    }
+  ],
+  "coverage_page": {
+    "object": "page",
+    "id": "42433a09-317f-81dc-9d6f-ee4cabe0010a",
+    "created_time": "2026-11-26T06:53:00.000Z",
+    "last_edited_time": "2026-11-26T06:53:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "41733a09-317f-81e5-b315-0027032be854"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "41733a09-317f-81e5-b315-0027032be854"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "page_id",
+      "page_id": "42433a09-317f-8119-b587-d2e329f7f9aa"
+    },
+    "in_trash": false,
+    "is_archived": false,
+    "is_locked": false,
+    "properties": {
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "08｜覆盖审计：已有、缺失、补全及回读验收",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "08｜覆盖审计：已有、缺失、补全及回读验收",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://app.notion.com/p/08-42433a09317f81dc9d6fee4cabe0010a",
+    "public_url": null,
+    "archived": false,
+    "request_id": "169b3492-9b30-4627-b87e-f94c75c25e58"
+  },
+  "all_sources_exact": true,
+  "paper_commit": "2b3d95ea01bd9962bf5b35df2355cc2646cda966",
+  "new_page_total": 105,
+  "updated_existing_pages": 12,
+  "original_pdf_fulltext_uploaded": false,
+  "new_training_or_evaluation_runs": 0,
+  "notion_native_math_blocks": false,
+  "notion_math_preservation": "35 display formulas retained as exact LaTeX code, original whole Markdown in source S062"
+}
