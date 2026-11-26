@@ -115,6 +115,14 @@ $$
 
 证明见附录A。命题1有两层含义。第一，$\|\boldsymbol P\boldsymbol y\|_2\le\frac{\sigma_1^2}{1+\sigma_1^2}\|\boldsymbol y\|_2<\|\boldsymbol y\|_2$，第一阶段在任何方向上撤销的能量都严格少于观测在该方向上的能量，$\boldsymbol I-\boldsymbol P$是非扩张的。第二，$\boldsymbol P$通常不满足$\boldsymbol P^2=\boldsymbol P$，它不是正交投影；正则越强，收缩越明显。$\operatorname{tr}\boldsymbol P$可以理解为第一阶段的有效自由度，它小于候选数$K$。
 
+**推论1（修正的自由度预算）。** 在命题1的条件下，若噪声$\boldsymbol\epsilon\sim\mathcal{CN}(\boldsymbol0,\sigma^2\boldsymbol I_T)$且与$\boldsymbol B,\boldsymbol\Lambda$独立，则
+
+$$
+\frac{\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2}{\mathbb E\|\boldsymbol\epsilon\|_2^2}=\frac{\operatorname{tr}(\boldsymbol P^2)}{T}\le\frac{\operatorname{tr}\boldsymbol P}{T}<\frac{K}{T}. \tag{19a}
+$$
+
+证明只需利用$\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2=\sigma^2\operatorname{tr}(\boldsymbol P^H\boldsymbol P)=\sigma^2\operatorname{tr}(\boldsymbol P^2)$，以及特征值$\mu_k\in[0,1)$时$\mu_k^2\le\mu_k$。在本文设置$K=16$、$T=1800$下，右端不超过0.89%。推论1说明第一阶段的修正自由度与信号长度无关：无论网络给出怎样的时延和窗，它从白噪声中平均能带走的能量不超过$K/T$。作为对照，直接输出$T$点修正波形的通用网络没有这样的结构约束，其对干净输入的改动只能依靠训练损失间接压低。需要说明的是，实际字典由观测选取，候选会对准噪声中最强的相关峰，独立性假设并不严格成立；另一方面，式（17）对相关强度低的候选施加强正则，又会使$\operatorname{tr}\boldsymbol P$远小于$K$。式（19a）给出的是自由度的量级，实测的无干扰改动见5.5节。
+
 **第一阶段误差的来源。** 将真实干扰分解为字典张成空间内外两部分，$\boldsymbol j=\boldsymbol B\boldsymbol c^\star+\boldsymbol j_\perp$，其中$\boldsymbol c^\star$为$\boldsymbol j$在$\operatorname{span}(\boldsymbol B)$上的最小二乘系数，$\boldsymbol B^H\boldsymbol j_\perp=\boldsymbol 0$。
 
 **命题2（第一阶段误差分解）。** 在命题1的条件下，第一阶段恢复误差满足

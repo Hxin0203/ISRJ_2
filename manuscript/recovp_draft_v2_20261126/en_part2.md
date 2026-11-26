@@ -115,6 +115,14 @@ This follows the idea of variable projection [45–47]: in a separable nonlinear
 
 The proof is given in Appendix A. Proposition 1 has two implications. First, $\|\boldsymbol P\boldsymbol y\|_2\le\frac{\sigma_1^2}{1+\sigma_1^2}\|\boldsymbol y\|_2<\|\boldsymbol y\|_2$: in every direction the first stage removes strictly less energy than the observation contains, and $\boldsymbol I-\boldsymbol P$ is nonexpansive. Second, $\boldsymbol P$ generally does not satisfy $\boldsymbol P^2=\boldsymbol P$ and is not an orthogonal projection; stronger regularization means stronger shrinkage. $\operatorname{tr}\boldsymbol P$ can be read as the effective degrees of freedom of the first stage and is smaller than the number of candidates $K$.
 
+**Corollary 1 (degrees-of-freedom budget of the correction).** Under the conditions of Proposition 1, if the noise $\boldsymbol\epsilon\sim\mathcal{CN}(\boldsymbol0,\sigma^2\boldsymbol I_T)$ is independent of $\boldsymbol B$ and $\boldsymbol\Lambda$, then
+
+$$
+\frac{\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2}{\mathbb E\|\boldsymbol\epsilon\|_2^2}=\frac{\operatorname{tr}(\boldsymbol P^2)}{T}\le\frac{\operatorname{tr}\boldsymbol P}{T}<\frac{K}{T}. \tag{19a}
+$$
+
+The proof uses $\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2=\sigma^2\operatorname{tr}(\boldsymbol P^H\boldsymbol P)=\sigma^2\operatorname{tr}(\boldsymbol P^2)$ and $\mu_k^2\le\mu_k$ for eigenvalues $\mu_k\in[0,1)$. With $K=16$ and $T=1800$ the right-hand side is below 0.89%. The corollary states that the degrees of freedom of the first-stage correction do not grow with the signal length: whatever delays and windows the network produces, the average energy it can remove from white noise is below $K/T$. A generic network that outputs a $T$-sample correction has no such structural constraint and can keep its changes to clean inputs small only indirectly through the training loss. In practice the dictionary is selected from the observation and candidates lock onto the strongest correlation peaks of the noise, so independence does not hold exactly; on the other hand, (17) assigns strong regularization to weakly correlated candidates, which makes $\operatorname{tr}\boldsymbol P$ much smaller than $K$. Equation (19a) therefore indicates the order of magnitude of the degrees of freedom; the measured jammer-free modification is reported in Section V-E.
+
 **Sources of first-stage error.** Decompose the true jammer into parts inside and outside the span of the dictionary, $\boldsymbol j=\boldsymbol B\boldsymbol c^\star+\boldsymbol j_\perp$, where $\boldsymbol c^\star$ is the least-squares coefficient of $\boldsymbol j$ on $\operatorname{span}(\boldsymbol B)$ and $\boldsymbol B^H\boldsymbol j_\perp=\boldsymbol 0$.
 
 **Proposition 2 (decomposition of the first-stage error).** Under the conditions of Proposition 1,
