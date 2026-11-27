@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "registered_local_utc": "2026-11-27T08:00:00Z",
+  "source_dataset": "server B equal_pfa_suite.EVAL (existing EVAL2048)",
+  "states": {
+    "y00": "epsilon",
+    "y10": "s+epsilon",
+    "y01": "j+epsilon",
+    "y11": "s+j+epsilon"
+  },
+  "seeds": [
+    17,
+    29,
+    41,
+    53,
+    67
+  ],
+  "final_epoch": 256,
+  "milestones": {
+    "seeds": [
+      17,
+      67
+    ],
+    "epochs": [
+      32,
+      64,
+      96,
+      128,
+      160
+    ]
+  },
+  "metrics": [
+    "alpha mean and median per state",
+    "disturbed-to-y00 alpha mean ratio for y01 and y11, plus pooled y10/y01/y11",
+    "alpha^2 * ||raw stage2 proposal after scale||^2 / ||input||^2 on y10/y01/y11",
+    "E0 versus SNR estimate, sigma2 estimate, rho on y00"
+  ],
+  "aggregation": "alpha and effective correction are pulse-level across 8 pulses x parent x 3 jammer variants; SNR is stored per parent x pulse and broadcast over the 3 jammer variants in matching C-order; report state-specific alpha ratios and E0/SNR, E0/sigma2, E0/rho correlations",
+  "checkpoint_policy": "read-only exact epoch checkpoint, no replacement or selection",
+  "failure_policy": "record identity/hash or state evaluation failure and stop affected checkpoint; do not silently drop",
+  "confirmation_access": false,
+  "training": false,
+  "script_sha256": "a8e1ba4d1d15c8781d763b4a7f88a8136ff62a1dd3d2704f027ad985824c1365"
+}

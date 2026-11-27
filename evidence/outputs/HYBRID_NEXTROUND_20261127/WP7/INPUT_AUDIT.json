@@ -1,0 +1,18 @@
+{
+  "work_package": "WP7",
+  "audit_status": "BLOCKED_METHOD_ENTRYPOINTS",
+  "protocol_sha256": "38ad69ee74b8b427316bd769f1245812137226bfe49faec9831a0df44f6734b2",
+  "timing_started": false,
+  "required_models": [
+    "ReCoVP-Hybrid",
+    "UNet-Tail",
+    "CorrectionNet-Tail",
+    "RSDR-Net",
+    "CVEDNet",
+    "Max-TF",
+    "GMM-OMP"
+  ],
+  "missing": "Verified frozen checkpoints, comparable inference wrappers, dependency/version and exact input bindings for the full method set",
+  "action": "Do not report partial or mixed-device timing as a formal comparison",
+  "source_receipt": "WP7/RECEIPT.md"
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "registered_local_utc": "2026-11-27T08:00:00Z",
+  "eval_source": "existing equal-PFA EVAL2048 and existing E3 residual scores",
+  "selection": "per seed top ceil(0.01*6144)=62 eval frames by stored Hybrid residual peak score; stable descending argsort; preserve parent_id and jammer variant",
+  "oracle": "for each selected frame and pulse, use that frame's observation-dependent learned dictionary; convert to complex128; remove dictionary columns with L2 norm < 1e-8; solve least squares against TRUE jammer with numpy.linalg.lstsq(rcond=1e-12); no ridge; record removed columns, minimum norm, condition number of retained Gram matrix, solver status",
+  "ratios": "(a) whole-frame pooled energy sum_p ||J_p-Jhat_p||^2 / sum_p ||J_p||^2; (b) arithmetic mean of per-pulse energy ratios. Compute Stage1 jammer residual with same definitions. Flag violations when Stage1 < oracle - 1e-6; do not relabel",
+  "classification_priority": [
+    "coverage_limited: oracle pooled ratio > 0.5",
+    "representation_residual: 0.1 < oracle <= 0.5 and stage1 <= 1.5*oracle",
+    "shrinkage_limited: stage1 > max(0.1,2*oracle)",
+    "near_oracle: oracle <= 0.1 and stage1 <= 0.1",
+    "other"
+  ],
+  "reference_test": "For each selected frame use the same parent/variant epsilon-only observation, directly into the same pulse-compression/Doppler/CA-CFAR chain without restoration; compare max valid-cell normalized statistic with that seed-specific pre-existing Hybrid 1% calibration threshold from E3 ROW.json. Since physical false-target coordinates are not present in the registered EVAL NPZ, record the jammer-only maximum cell as an explicitly labeled proxy, not as a parameter-predicted cell; do not claim parameter-cell proximity.",
+  "calibration_recheck": "select top ceil(0.01*N) calibration residual-peak frames separately and repeat diagnostics; calibration remains diagnostic only and its threshold role is unchanged",
+  "comparison_overlap": "compare selected parent-variant keys with each method's own top-1% E3 extreme set for RSDR and UNet-Tail; report Jaccard and Hybrid-set coverage",
+  "uncertainty": "95% percentile intervals by 10,000 bootstrap resamples of unique parent clusters, fixed seed 20261127; all rows from a sampled parent move together",
+  "failure_policy": "nonfinite oracle solves excluded from categories and separately counted; no imputation; missing calibration thresholds or required reference outputs are reported as blocked rather than estimated",
+  "training": false,
+  "confirmation_access": false,
+  "script_sha256": "7e97599de06f435c0031b47090c2af39897e34cb0a772e7adf9efccc9fb110e6",
+  "implementation_revision": "run_2: stage1 jammer residual corrected to u1 - epsilon; prior run outputs preserved under run_1_invalid_stage1_residual_definition and superseded because the previous expression computed estimated correction rather than residual",
+  "supersedes_run": "run 1 is invalid for the Stage1-versus-oracle attribution; retain for audit only",
+  "comparison_limit": "Physical false-target parameter coordinates are absent from registered EVAL data; report jammer-only peak location as proxy only, no predicted-cell claim."
+}

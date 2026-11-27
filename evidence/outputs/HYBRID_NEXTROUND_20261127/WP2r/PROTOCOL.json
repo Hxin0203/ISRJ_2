@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "registered_local_utc": "2026-11-27T08:30:00Z",
+  "purpose": "WP2r high-SNR implementation functional check; descriptive diagnostic only, not a held-out performance estimate",
+  "data": {
+    "generator": "paper2.data_1103.generate",
+    "role": "engineering",
+    "count": 32,
+    "seed": 2026112801,
+    "snr_db": 10,
+    "jsr_db": 20,
+    "jammer_types": [
+      "direct",
+      "repeat",
+      "cyclic"
+    ],
+    "output": "outputs/paper2_baseline_suite_20261126/WP2r/seed_2026112801/engineering_10_20.npz",
+    "split_policy": "new diagnostics-only engineering role; no TRAIN, DEV, TEST, calibration, evaluation, or confirmation files are read",
+    "parent_unit": "physical parent; 32 independent parents per each of three jammer types",
+    "parent_id_rule": "seed*1000000 + [0,31]; audit all registered data receipts recursively, including sweeps, equal-PFA, and confirmation roles; fail on any overlap"
+  },
+  "methods": {
+    "Max-TF": "paper2.baselines_1103.run_max_tf defaults (window_length=51, hop=12, n_fft=128, quantile=0.70)",
+    "GMM-OMP": "paper2.baselines_1103.run_gmm_omp defaults (OMP sparsity=8), CPU execution"
+  },
+  "metrics": {
+    "SJR_improvement": "paper2.evaluation_1103_v4.radar_metrics sjrif_db, parent-wise then averaged within jammer type",
+    "E_U": "paper2.evaluation_1103_v4.group_metrics u_nmse, parent-wise then averaged within jammer type",
+    "GMM_pure_noise": "for one preregistered parent/type/pulse y00=epsilon, record input energy, reconstructed output energy, change energy, and E0=||output-input||^2/||input||^2"
+  },
+  "uncertainty": "report per-parent values and descriptive means; no inferential claim or bootstrap decision",
+  "failure_policy": "stop on dataset identity, nonfinite output, shape, or parent overlap failure; do not silently drop scenarios",
+  "training": false,
+  "test_role_access": false,
+  "confirmation_access": false,
+  "revision": "run 1 seed 2026112707 collided with registered sweep cell_07 parent IDs and was invalid; rerun with seed 2026112801 and recursive receipt audit; output moved to a seed-specific subdirectory because the previous fixed path contains the superseded colliding-seed dataset and must be preserved"
+}

@@ -1,0 +1,120 @@
+{
+  "seed": 41,
+  "epoch": 256,
+  "binding": {
+    "path": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed41\\seed_41\\epoch_256.pt",
+    "sha256": "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+    "identity": {
+      "run": "recovp_hybrid_seed41",
+      "seed": 41,
+      "config_sha256": "ea0f4a629da5dd2c647d609d9513f364ee60c6b6c0e6df2f0e5f194b8f4cfe20",
+      "train_sha256": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+      "source_sha256": {
+        "tools/vp_1103_recovp_hybrid.py": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+        "tools/vp_1103_recovp_hybrid_train.py": "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+        "tools/vp_1103_recovp_hybrid_objective.py": "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+        "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+        "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+        "tools/unet_tail_loss/objective.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+        "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+        "tools/vp_1103_recovp_hybrid_preflight.py": "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+        "tools/vp_1103_recovp_hybrid_multiseed.py": "23314354f8b6cf7e315c4a91cde5c9a0a6e22d81a5494d0c26715d0293000aaa",
+        "tools/start_recovp_hybrid_multiseed.py": "f2d6d23fa28214b5a94def1bed01a59e1326ef89dadb44345b782263c33676c7"
+      },
+      "preflight_sha256": "609e19a08deda4e7b72aa9d6a9042a16ee05ea2c2b867f9a73ad8c96cd1c6672"
+    },
+    "gpu": {
+      "physical_gpu_index": 0,
+      "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+      "utilization_percent": 2.0,
+      "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+    }
+  },
+  "eval_sha256": "3da7c3b28afb35bedbd9eea4ad1d4bb792089a216472d0930e999128914f15f2",
+  "parent_count": 2048,
+  "frame_count": 6144,
+  "alpha": {
+    "y00": {
+      "n": 49152,
+      "mean": 6.077948450022852e-05,
+      "median": 5.885056089027785e-05,
+      "p90": 6.916337588336319e-05,
+      "p99": 9.529969633149443e-05
+    },
+    "y10": {
+      "n": 49152,
+      "mean": 8.631211557763585e-05,
+      "median": 6.675174518022686e-05,
+      "p90": 0.00012757570948451757,
+      "p99": 0.00037072398554300647
+    },
+    "y01": {
+      "n": 49152,
+      "mean": 0.019806445502808117,
+      "median": 6.578925240319222e-05,
+      "p90": 0.08725066632032397,
+      "p99": 0.1137152637541294
+    },
+    "y11": {
+      "n": 49152,
+      "mean": 0.018672816563373756,
+      "median": 9.72640555119142e-05,
+      "p90": 0.08270621970295906,
+      "p99": 0.11412635080516337
+    }
+  },
+  "effective_stage2_energy_ratio": {
+    "y00": {
+      "n": 49152,
+      "mean": 2.7938724853699415e-08,
+      "median": 2.4703860894047494e-08,
+      "p90": 3.8015625783796e-08,
+      "p99": 8.070381611489028e-08
+    },
+    "y10": {
+      "n": 49152,
+      "mean": 3.439316921069406e-07,
+      "median": 5.472829536634525e-08,
+      "p90": 3.403160286085359e-07,
+      "p99": 3.3181061979480446e-06
+    },
+    "y01": {
+      "n": 49152,
+      "mean": 0.00830178569986515,
+      "median": 3.346378385542529e-08,
+      "p90": 0.014968677658018936,
+      "p99": 0.18169659113270217
+    },
+    "y11": {
+      "n": 49152,
+      "mean": 0.008254965789366119,
+      "median": 1.9688112959479487e-07,
+      "p90": 0.01617726069073777,
+      "p99": 0.17289886729781884
+    }
+  },
+  "alpha_ratios": {
+    "y10_over_y00": 1.4200863381345614,
+    "y01_over_y00": 325.87386460531184,
+    "y11_over_y00": 307.2223582828109,
+    "pooled_disturbed_over_y00": 211.50543640875242,
+    "jammer_disturbed_y01_y11_over_y00": 316.54811144406136
+  },
+  "y00_e0": {
+    "n": 49152,
+    "mean": 4.2017357089353004e-07,
+    "median": 2.2770909718191443e-07,
+    "p90": 8.566403981039429e-07,
+    "p99": 3.1233228455846425e-06
+  },
+  "y00_correlations": {
+    "log_e0_vs_snr_db": -0.016522067363645542,
+    "log_e0_vs_sigma2": -0.11427861998523653,
+    "log_e0_vs_rho_max": 0.6520779439920192
+  },
+  "y00_mean_sigma2_estimate": 0.9987697601318359,
+  "y00_mean_rho_max": 16.866812253244046
+}

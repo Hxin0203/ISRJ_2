@@ -1,0 +1,11 @@
+{
+  "work_package": "WP8c",
+  "registered_utc": "2026-11-27T07:09:00Z",
+  "protocol_source": "G:/Files/Markdown/ISRJ_2/opus对话/01_计划/02_下一轮任务书_20261127.md",
+  "protocol_source_sha256": "3d56839b53a3a66a752bc5a11b76d63ffe1021ecf9b5a77537f539110df269c7",
+  "scope": "Recompute only seed 17 on Server B; no training and no other seed dispatch.",
+  "comparison": "Compare old and recomputed SUMMARY.json while excluding finished_utc, seconds, and GPU admission metadata. All remaining summary metrics must match exactly. Also require zero chunk_*.npz files, no pending queue items, and successful cross-check against the stored DEV result.",
+  "failure_handling": "Keep the pre-run seed_17 directory untouched as evidence; report any summary mismatch, leftover chunk, or identity mismatch without repairing values.",
+  "execution_note": "The frozen taskbook was the governing pre-run protocol. This standalone JSON was materialized after execution for the receipt; this timing deviation is disclosed.",
+  "source_sha256": "3bbded4617f3e91329363d5aa7e23a39254208db38c14bc6d24d2011ff8ae7f7"
+}

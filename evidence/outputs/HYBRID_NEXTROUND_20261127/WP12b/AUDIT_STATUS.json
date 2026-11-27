@@ -1,0 +1,16 @@
+{
+  "work_package": "WP12b",
+  "audit_status": "NOT_PASSED",
+  "run_1": "invalid_stage1_residual_definition_preserved",
+  "run_2": "source_mismatch_preserved",
+  "registered_protocol_sha256": "2ddddefef75d5f4fa72cdfa98ba1a66dcf057e01c67f7fc40bd1448e9a443b91",
+  "registered_script_sha256": "1744afce4fbef7fb79b65acec63ce5fdfd0edc99a0c6a3a4e1f75794e53dc5dc",
+  "output_protocol_sha256": "f19daf780a6de54600f17165ce2bf8035aae7b9f9db8e2bd7c4623eadd57b253",
+  "output_script_sha256": "8d7480d4d42ba635bc9cdc0e749dd1483b2a6db9e3783800fc732d7025b27f87",
+  "pooled_violation_eval": "18/310",
+  "pooled_violation_calibration": "16/155",
+  "per_pulse_ratio_extreme": "approximately 1e296–1e299; near-zero denominator instability",
+  "formal_category_claim_allowed": false,
+  "next_action": "Resolve output-to-protocol/source binding and pooled Stage1/oracle definition before any rerun or publication",
+  "source_receipt": "WP12b/RECEIPT.md"
+}

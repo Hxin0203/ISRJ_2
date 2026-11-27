@@ -1,0 +1,15 @@
+{
+  "work_package": "WP4",
+  "registered_utc": "2026-11-27T07:09:00Z",
+  "protocol_source": "G:/Files/Markdown/ISRJ_2/opus对话/01_计划/02_下一轮任务书_20261127.md",
+  "protocol_source_sha256": "3d56839b53a3a66a752bc5a11b76d63ffe1021ecf9b5a77537f539110df269c7",
+  "scope": "One search pass; no retraining and no repeated search after this pass.",
+  "searched_paths": [
+    "D:/code/Xin/ISRJ_222/outputs",
+    "D:/code/Xin/ISRJ_222/backups",
+    "D:/code/Xin/ISRJ_222/handoff",
+    "D:/code/Xin/ISRJ_222/evidence"
+  ],
+  "selection": "List files whose names contain Base, P0, publication_width, slice, or support and whose extensions are model/checkpoint or experiment metadata formats.",
+  "stop_rule": "If no bound Base/P0 checkpoint is found, report not found and preserve historical single-instance manuscript values with a footnote; do not expand the search."
+}

@@ -1,0 +1,14 @@
+{
+  "work_package": "WP6",
+  "audit_status": "BLOCKED_INPUTS",
+  "protocol_sha256": "df691978999d472cd4f06f7f136b211297540869ba6b51c6a049a465cb1cee23",
+  "available": "E1 aggregate JSON and seed-average parent arrays",
+  "missing": [
+    "paired parent-level complex outputs for all required methods",
+    "waveform/RD input products for the registered parents",
+    "verified checkpoint and source/data identities",
+    "per-parent Stage1/Hybrid quantities for Fig. 6"
+  ],
+  "action": "Do not substitute aggregate-only data; stop blocked figure components",
+  "source_receipt": "WP6/RECEIPT.md"
+}

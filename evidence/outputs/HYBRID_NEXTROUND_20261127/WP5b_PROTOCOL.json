@@ -1,0 +1,9 @@
+{
+  "work_package": "WP5b",
+  "registered_utc": "2026-11-27T07:09:00Z",
+  "protocol_source": "G:/Files/Markdown/ISRJ_2/opus对话/01_计划/02_下一轮任务书_20261127.md",
+  "protocol_source_sha256": "3d56839b53a3a66a752bc5a11b76d63ffe1021ecf9b5a77537f539110df269c7",
+  "required_grid_source": "D:/Project Code/ISRJ_publication_width_20261113_v4/",
+  "execution_rule": "Do not invent or infer width/support-fraction grid points. Copy the registered first-paper grid and definitions with SHA before generating any new evaluation set.",
+  "failure_handling": "If the exact read-only source directory is absent, stop WP5b and return to the planner. No grid generation, evaluation data generation, or model inference is allowed."
+}

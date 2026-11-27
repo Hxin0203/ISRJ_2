@@ -1,0 +1,34 @@
+{
+  "work_package": "WP7",
+  "registered_utc": "2026-11-27T08:47:00Z",
+  "protocol_source": "G:/Files/Markdown/ISRJ_2/opus对话/01_计划/02_下一轮任务书_20261127.md",
+  "protocol_source_sha256": "3d56839b53a3a66a752bc5a11b76d63ffe1021ecf9b5a77537f539110df269c7",
+  "scope": "Zero-training same-host inference timing and static complexity audit; no confirmation data.",
+  "host": "Server B (rsdr-b), one physical GPU selected after utilization snapshot below 85%; all models on same GPU.",
+  "precision": "FP32",
+  "batch_sizes": [
+    1,
+    8
+  ],
+  "warmup": 20,
+  "measured_iterations": 200,
+  "synchronization": "torch.cuda.synchronize immediately before and after each timed call",
+  "statistics": [
+    "median",
+    "p5",
+    "p95"
+  ],
+  "models": [
+    "ReCoVP-Hybrid with candidate selection/dictionary construction, Stage1 solve, Stage2 and end-to-end split",
+    "UNet-Tail",
+    "CorrectionNet-Tail",
+    "RSDR-Net",
+    "CVEDNet",
+    "Max-TF CPU",
+    "GMM-OMP CPU"
+  ],
+  "load_audit": "Record GPU model/UUID, utilization and concurrent processes before and after; if utilization changes by >20 percentage points, label the affected method/batch measurement as interfered.",
+  "cpu": "Record CPU model, thread count, Python and numerical-library versions for Max-TF and GMM-OMP.",
+  "complexity": "Record parameter count; record FLOPs/MAC only when tool and counting convention are stated; list complex arithmetic and analytical solve omissions explicitly, do not estimate missing operations.",
+  "failure_handling": "If a checkpoint, inference wrapper, dependency, or exact method input is unavailable, stop only that method and document the blocker. Do not replace missing methods with unrelated benchmarks or mix GPU/CPU results."
+}

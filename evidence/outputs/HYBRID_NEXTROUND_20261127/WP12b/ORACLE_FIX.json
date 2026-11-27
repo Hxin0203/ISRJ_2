@@ -1,0 +1,13 @@
+{
+  "protocol_sha256": "f19daf780a6de54600f17165ce2bf8035aae7b9f9db8e2bd7c4623eadd57b253",
+  "script_sha256": "8d7480d4d42ba635bc9cdc0e749dd1483b2a6db9e3783800fc732d7025b27f87",
+  "method": "complex128 np.linalg.lstsq; per-pulse; rcond=1e-12; drop ||column||<1e-8",
+  "eval_failures": 0,
+  "calibration_failures": 0,
+  "eval_removed_columns_total": 0,
+  "calibration_removed_columns_total": 0,
+  "eval_nan_frames": 0,
+  "calibration_nan_frames": 0,
+  "eval_gram_condition_max": 126193681.57969555,
+  "calibration_gram_condition_max": 48374474.334592044
+}

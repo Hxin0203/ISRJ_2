@@ -1,0 +1,30 @@
+{
+  "work_package": "WP6",
+  "registered_utc": "2026-11-27T08:47:00Z",
+  "protocol_source": "G:/Files/Markdown/ISRJ_2/opus对话/01_计划/02_下一轮任务书_20261127.md",
+  "protocol_source_sha256": "3d56839b53a3a66a752bc5a11b76d63ffe1021ecf9b5a77537f539110df269c7",
+  "scope": "Zero-training diagnostic and figure generation only; no independent confirmation set.",
+  "scenario_selection": {
+    "metric": "DEV per-parent mean across five Hybrid seeds of E_S(Hybrid)-E_S(UNet-Tail)",
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "tie_break": "smaller parent index",
+    "seed": "seed 67, fixed by median DEV E_U among seeds",
+    "inference": "rerun inference only for the three selected parents after verifying all required checkpoints and source/data bindings."
+  },
+  "inputs_required": [
+    "parent-level DEV E_S values for all five Hybrid seeds and UNet-Tail",
+    "same-parent observed/reference and outputs for Stage1, Hybrid, UNet-Tail, RSDR-Net, Max-TF",
+    "complex time-series outputs and range-Doppler inputs for selected three parents",
+    "parent identifiers and scenario metadata"
+  ],
+  "figures": {
+    "fig6": "per-parent five-seed means: E_U and E_S stage-delta histograms; |g-1|^2 versus shape-error changes across stages",
+    "fig5": "repeat in main text; direct and cyclic in supplement; real waveforms, pulse-compression magnitude with shared absolute-power reference, and RD maps for Final, UNet-Tail, RSDR-Net"
+  },
+  "statistical_rule": "five Hybrid seeds averaged within scene; quantile parent selection on DEV; no substitute seed or parent; preserve raw complex outputs on Server B only.",
+  "failure_handling": "If any required paired parent-level data, checkpoint identity, or method output is absent, record the exact missing item and stop that figure component. Do not use aggregate-only summaries as waveform evidence."
+}

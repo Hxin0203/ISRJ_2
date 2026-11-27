@@ -1,0 +1,117 @@
+{
+  "seed": 17,
+  "epoch": 128,
+  "binding": {
+    "path": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed17\\seed_17\\epoch_128.pt",
+    "sha256": "414a83cd9d2bb8cc876a9085590be296b5383d70488de645015fb108b92e6c61",
+    "identity": {
+      "run": "recovp_hybrid_seed17",
+      "seed": 17,
+      "config_sha256": "0af7322a5a37721e71be5a2ac56eceb6372d9567114e8fb240fd7b537e1f5251",
+      "train_sha256": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+      "source_sha256": {
+        "tools/vp_1103_recovp_hybrid.py": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+        "tools/vp_1103_recovp_hybrid_train.py": "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+        "tools/vp_1103_recovp_hybrid_objective.py": "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+        "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+        "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+        "tools/unet_tail_loss/objective.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+        "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208"
+      },
+      "preflight_sha256": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7"
+    },
+    "gpu": {
+      "physical_gpu_index": 0,
+      "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+      "utilization_percent": 2.0,
+      "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+    }
+  },
+  "eval_sha256": "3da7c3b28afb35bedbd9eea4ad1d4bb792089a216472d0930e999128914f15f2",
+  "parent_count": 2048,
+  "frame_count": 6144,
+  "alpha": {
+    "y00": {
+      "n": 49152,
+      "mean": 0.000581855349828686,
+      "median": 0.0005761928332503885,
+      "p90": 0.0006121507612988353,
+      "p99": 0.0007136897544842206
+    },
+    "y10": {
+      "n": 49152,
+      "mean": 0.0006425691396678701,
+      "median": 0.0005633074324578047,
+      "p90": 0.0009155753650702536,
+      "p99": 0.0024505458772182357
+    },
+    "y01": {
+      "n": 49152,
+      "mean": 0.024479235697598984,
+      "median": 0.0006002350710332394,
+      "p90": 0.09817765876650811,
+      "p99": 0.12311405703425404
+    },
+    "y11": {
+      "n": 49152,
+      "mean": 0.022643045340704642,
+      "median": 0.0006889225041959435,
+      "p90": 0.09304013475775719,
+      "p99": 0.12246262118220329
+    }
+  },
+  "effective_stage2_energy_ratio": {
+    "y00": {
+      "n": 49152,
+      "mean": 1.2119860299449453e-06,
+      "median": 1.1610902174433321e-06,
+      "p90": 1.3995184622952928e-06,
+      "p99": 2.1093640847700324e-06
+    },
+    "y10": {
+      "n": 49152,
+      "mean": 1.1437319070996321e-05,
+      "median": 1.2863727018880226e-06,
+      "p90": 7.040056574777504e-06,
+      "p99": 0.0001228410831061239
+    },
+    "y01": {
+      "n": 49152,
+      "mean": 0.009226120488035063,
+      "median": 1.3205171207360023e-06,
+      "p90": 0.02282692408918463,
+      "p99": 0.16414334007095233
+    },
+    "y11": {
+      "n": 49152,
+      "mean": 0.00896854918983692,
+      "median": 3.0242978086766333e-06,
+      "p90": 0.02274793496054054,
+      "p99": 0.15472342459292143
+    }
+  },
+  "alpha_ratios": {
+    "y10_over_y00": 1.104345160454501,
+    "y01_over_y00": 42.0709987539108,
+    "y11_over_y00": 38.915248175291964,
+    "pooled_disturbed_over_y00": 27.363530696552424,
+    "jammer_disturbed_y01_y11_over_y00": 40.49312346460138
+  },
+  "y00_e0": {
+    "n": 49152,
+    "mean": 1.5123016596563284e-06,
+    "median": 1.3073598038823254e-06,
+    "p90": 2.0390185278040425e-06,
+    "p99": 4.470800388863662e-06
+  },
+  "y00_correlations": {
+    "log_e0_vs_snr_db": -0.01943791422886662,
+    "log_e0_vs_sigma2": -0.1206773411638372,
+    "log_e0_vs_rho_max": 0.621271676774419
+  },
+  "y00_mean_sigma2_estimate": 0.9987697601318359,
+  "y00_mean_rho_max": 16.813122740966573
+}
