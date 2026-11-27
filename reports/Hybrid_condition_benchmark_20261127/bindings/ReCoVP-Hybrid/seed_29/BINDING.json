@@ -1,0 +1,21 @@
+{
+  "model": {
+    "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed29\\seed_29\\epoch_256.pt",
+    "checkpoint_sha256": "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+    "bindings": [
+      "sidecar"
+    ]
+  },
+  "threshold_row_sha256": "dfb5d48907852eb3ed9feb0b52ea03c5225058ef819f6f04609153d12643566b",
+  "thresholds": {
+    "0.01": 30.83373026094728,
+    "0.05": 14.439331183573511,
+    "0.1": 12.37195578757927
+  },
+  "master_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+  "registration_sha256": "1a603318a6695571a799e6f0324502f84351e28195d02c4fd4c8ff01ff2aeba8",
+  "host": "DESKTOP-RHKS2SI",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "policy": "Local evaluation authorized 2026-11-27 when server training GPUs busy",
+  "created_utc": "2026-11-27T12:26:28Z"
+}

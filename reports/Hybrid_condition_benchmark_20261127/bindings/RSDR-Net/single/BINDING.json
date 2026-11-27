@@ -1,0 +1,21 @@
+{
+  "model": {
+    "model": "RSDR-Net (first paper, F-R7)",
+    "native_seed": 40312102,
+    "epoch": 32,
+    "parameters": 3017877,
+    "assets": "outputs/rsdr_unified_20261115/assets (SHA-checked by adapter)"
+  },
+  "threshold_row_sha256": "398ca422580edbdf25784588878ef50df2bd0afd6700afb48f0d30b495a3b1c0",
+  "thresholds": {
+    "0.01": 21.61987875810815,
+    "0.05": 13.745707495435672,
+    "0.1": 12.175467170702074
+  },
+  "master_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+  "registration_sha256": "1a603318a6695571a799e6f0324502f84351e28195d02c4fd4c8ff01ff2aeba8",
+  "host": "DESKTOP-RHKS2SI",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "policy": "Local evaluation authorized 2026-11-27 when server training GPUs busy",
+  "created_utc": "2026-11-27T13:03:35Z"
+}

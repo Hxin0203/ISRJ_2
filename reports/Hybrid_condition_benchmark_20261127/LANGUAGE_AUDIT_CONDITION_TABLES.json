@@ -1,0 +1,26 @@
+{
+  "path": "G:\\Project Code\\ISRJ_222\\reports\\Hybrid_condition_benchmark_20261127\\CONDITION_TABLES.md",
+  "density_tier": "medium",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "G:\\Project Code\\ISRJ_222\\reports\\Hybrid_condition_benchmark_20261127\\CONDITION_TABLES.md",
+    "word_count": 3631,
+    "sentence_count": 371,
+    "burstiness_cv": 0.2098,
+    "lexical_diversity": 0.5747,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.4375,
+    "confidence_level": "LOW",
+    "density_tier": "medium",
+    "status": "ok",
+    "findings": [
+      "Unnaturally uniform sentence cadence (CV=0.21 < 0.35)"
+    ],
+    "findings_confidence": [
+      "informational"
+    ],
+    "notes": []
+  }
+}

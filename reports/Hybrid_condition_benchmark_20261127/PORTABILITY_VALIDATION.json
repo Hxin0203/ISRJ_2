@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "local": {
+    "arrays": {
+      "doppler_hz": {
+        "dtype": "float64",
+        "sha256": "331fda2e98cd9cf4c781a5d637a1cb120067c1ad010aff2f869f5479d6eba9d7",
+        "shape": [
+          1
+        ]
+      },
+      "epsilon": {
+        "dtype": "complex64",
+        "sha256": "860174794ca491fe58f8122d475640b1e6c192585f70da6a3f6dac9b8f0fbb8e",
+        "shape": [
+          1,
+          3,
+          8,
+          1800
+        ]
+      },
+      "j": {
+        "dtype": "complex64",
+        "sha256": "d09f342a49c40c4f5f4ca78b3624ba2293ce48886051b72272f5c6fb2e04c0ac",
+        "shape": [
+          1,
+          3,
+          8,
+          1800
+        ]
+      },
+      "parent_id": {
+        "dtype": "int64",
+        "sha256": "9f6ec09647223aaf638db65e907f7445bc9e9df24db8e5cf54623b432e86d41c",
+        "shape": [
+          1
+        ]
+      },
+      "s": {
+        "dtype": "complex64",
+        "sha256": "5c923f777d96b1ef79caa0f19d4f5675d025971bff78d3f3a6329d74fc63c955",
+        "shape": [
+          1,
+          3,
+          8,
+          1800
+        ]
+      }
+    },
+    "component_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235"
+  },
+  "server": {
+    "arrays": {
+      "doppler_hz": {
+        "dtype": "float64",
+        "sha256": "331fda2e98cd9cf4c781a5d637a1cb120067c1ad010aff2f869f5479d6eba9d7",
+        "shape": [
+          1
+        ]
+      },
+      "epsilon": {
+        "dtype": "complex64",
+        "sha256": "860174794ca491fe58f8122d475640b1e6c192585f70da6a3f6dac9b8f0fbb8e",
+        "shape": [
+          1,
+          3,
+          8,
+          1800
+        ]
+      },
+      "j": {
+        "dtype": "complex64",
+        "sha256": "d09f342a49c40c4f5f4ca78b3624ba2293ce48886051b72272f5c6fb2e04c0ac",
+        "shape": [
+          1,
+          3,
+          8,
+          1800
+        ]
+      },
+      "parent_id": {
+        "dtype": "int64",
+        "sha256": "9f6ec09647223aaf638db65e907f7445bc9e9df24db8e5cf54623b432e86d41c",
+        "shape": [
+          1
+        ]
+      },
+      "s": {
+        "dtype": "complex64",
+        "sha256": "5c923f777d96b1ef79caa0f19d4f5675d025971bff78d3f3a6329d74fc63c955",
+        "shape": [
+          1,
+          3,
+          8,
+          1800
+        ]
+      }
+    },
+    "component_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235"
+  },
+  "runner_sha256": "80bd1ba1a96a915829c046bb4f7b5470b170b7a4649f23ab2641a0c21a4c2c89"
+}

@@ -1,0 +1,212 @@
+{
+  "created_utc": "2026-11-27T14:05:24Z",
+  "passed": true,
+  "jobs": [
+    {
+      "method": "ReCoVP-Hybrid",
+      "seed": 17,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed17\\seed_17\\epoch_256.pt",
+        "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+        "bindings": [
+          "sidecar"
+        ]
+      },
+      "calibration_row_sha256": "b3032a53480809055c0cbddf5521f0542f74477f884b4b4d5a04143c0d90f522"
+    },
+    {
+      "method": "ReCoVP-Hybrid",
+      "seed": 29,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed29\\seed_29\\epoch_256.pt",
+        "checkpoint_sha256": "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+        "bindings": [
+          "sidecar"
+        ]
+      },
+      "calibration_row_sha256": "dfb5d48907852eb3ed9feb0b52ea03c5225058ef819f6f04609153d12643566b"
+    },
+    {
+      "method": "ReCoVP-Hybrid",
+      "seed": 41,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed41\\seed_41\\epoch_256.pt",
+        "checkpoint_sha256": "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+        "bindings": [
+          "sidecar"
+        ]
+      },
+      "calibration_row_sha256": "22b692bfdabf5b6a253be29d15edb495824045698b1e25083d1c38c52f21180c"
+    },
+    {
+      "method": "ReCoVP-Hybrid",
+      "seed": 53,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed53\\seed_53\\epoch_256.pt",
+        "checkpoint_sha256": "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147",
+        "bindings": [
+          "sidecar"
+        ]
+      },
+      "calibration_row_sha256": "487897105f582593738fbf78674185d7f3517ccffc0473b9ee7da4e24287662e"
+    },
+    {
+      "method": "ReCoVP-Hybrid",
+      "seed": 67,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed67\\seed_67\\epoch_256.pt",
+        "checkpoint_sha256": "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "calibration_row_sha256": "b1a48198d92966d8aa8b193788d13caf80db034741a8f49e32960afa0c83ac58"
+    },
+    {
+      "method": "RSDR-Net",
+      "seed": null,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "model": "RSDR-Net (first paper, F-R7)",
+        "native_seed": 40312102,
+        "epoch": 32,
+        "parameters": 3017877,
+        "assets": "outputs/rsdr_unified_20261115/assets (SHA-checked by adapter)"
+      },
+      "calibration_row_sha256": "398ca422580edbdf25784588878ef50df2bd0afd6700afb48f0d30b495a3b1c0"
+    },
+    {
+      "method": "UNet-Tail",
+      "seed": 17,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\unet_mf_tail_screen_20261117_v2\\tail\\seed_17\\epoch_256.pt",
+        "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "calibration_row_sha256": "55697d1acd340b9777c05304bb299cb7651fc08a9383c79d319dc5fa13bd80c2"
+    },
+    {
+      "method": "UNet-Tail",
+      "seed": 29,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\unet_mf_tail_screen_20261117_v2\\tail\\seed_29\\epoch_256.pt",
+        "checkpoint_sha256": "6f313d278927b8d10c116cb00c715f94afe7cc760bf549302c70aa2c637bcedf",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "calibration_row_sha256": "7219edd414b34d0f93f2f2668eedf7546dfb3cc8e15ee64e64667ef8607c3dab"
+    },
+    {
+      "method": "UNet-Tail",
+      "seed": 41,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\unet_mf_tail_screen_20261117_v2\\tail\\seed_41\\epoch_256.pt",
+        "checkpoint_sha256": "2454a60c19c04d7b4ab9ad997e318bb30312ebc97594dbec9b50ccf3185babee",
+        "bindings": [
+          "sidecar"
+        ]
+      },
+      "calibration_row_sha256": "79efb1a1f8a58e2fe8ee6454c984c063227807d7eb2e1c11078627e279002ac6"
+    },
+    {
+      "method": "CorrectionNet-Tail",
+      "seed": 17,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\correction_mf_tail_20261117_v1\\arm\\seed_17\\epoch_256.pt",
+        "checkpoint_sha256": "7ff216c12dc0e7cb4f1ce0df18aa41d7946797e7de475470997ddd25f3f0e24b",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "calibration_row_sha256": "6ec5f8d4166e8de53447acd71d57d44a3ca419ab5d96ec4796eb00f5447a293f"
+    },
+    {
+      "method": "CorrectionNet-Tail",
+      "seed": 29,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\correction_mf_tail_20261117_v1\\arm\\seed_29\\epoch_256.pt",
+        "checkpoint_sha256": "7580acb740903c077dc8f0ed0fffba74a66bcbca290aebc3b57f2ee785ab3928",
+        "bindings": [
+          "sidecar"
+        ]
+      },
+      "calibration_row_sha256": "81cf2fb50f69498f542624886ba7e63b981a3939434fbca0f44aa17e08740ee4"
+    },
+    {
+      "method": "CorrectionNet-Tail",
+      "seed": 41,
+      "cells": 48,
+      "parity_passed": true,
+      "runner_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+      "checkpoint": {
+        "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\correction_mf_tail_20261117_v1\\arm\\seed_41\\epoch_256.pt",
+        "checkpoint_sha256": "67fef54ef8071f7992a8817ac1d0367d4e5bb7c2cd2a0ca870bc2b87e6029235",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "calibration_row_sha256": "c23663ab06ae342797dceac2427b40414600a2c28e1a380ecc1168c6777980f2"
+    }
+  ],
+  "total_checkpoint_cells": 576,
+  "master_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+  "registration_sha256": "1a603318a6695571a799e6f0324502f84351e28195d02c4fd4c8ff01ff2aeba8",
+  "rsdr_asset_sha256": {
+    "u1_c32.pt": "7ae9f62434d058a57b08cc0f8c549bcad3e3c86533e87cebbfee9871195040d7",
+    "u2_32.pt": "28086570dbe946870a491b5ae92931096b6dedb6993d7e6e383e919b4956fa38",
+    "gate_e32_step16384.pt": "3a8f170f07d52149d08b2b21001e06760547a4f7d8f6e40eb907060a0624d3d1",
+    "FIT.json": "85c07a6d7ca73c6d68b8fa93b68f7694ede50821692c7cccb63efef1d1a6218b",
+    "router1.pt": "e8b70c4ca60bb6748bc93e69e8fa0d201a753407b7b5c7c477f71c1c6dc13fea",
+    "router2.pt": "9f1b502d8435a0191db5cc588c1e97109fa7ca1b4b5b62dc0a554d8dcda2b139",
+    "router3.pt": "11f2a26e2e7a6f50079671f3b1d2f15e2322aa301b6c2bc2aeb0e0a684ad1c26"
+  },
+  "checks": [
+    "master components",
+    "registered data and radar sources",
+    "fixed checkpoint SHA and calibration identity",
+    "RSDR frozen assets and native identity",
+    "all cell SHA",
+    "frozen metric and frame-score parity",
+    "cached restoration parity"
+  ]
+}

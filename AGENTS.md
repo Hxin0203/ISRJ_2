@@ -11,3 +11,11 @@
 - Preserve every completed epoch recovery point and every 32-epoch milestone, including prior models. Validate source, data and checkpoint SHA before resume or evaluation. Report saved epochs and dated status snapshots, not just process existence.
 - Apply the user's `clean-user-facing-text` preference when writing scientific reports: offline audit, backup and SHA, protected formulas/values/paths, no indiscriminate whole-document rewrite or claims of authorship detection evasion.
 - Mandatory GitHub sync after each completed task: commit and push the task's key, reviewable source/report/evidence summaries to the `paper2` remote (`Hxin0203/ISRJ_2`), then verify and record the remote commit SHA. Stage exact paths only; never upload training datasets, weights/checkpoints, raw arrays, caches, credentials, or full logs. If a task has no new durable content, state that explicitly instead of creating a meaningless commit. Never push this workspace to `origin`.
+
+
+## 2026-11-27 fixed condition benchmark and reporting
+
+- User requires future results to be reported separately for extreme SNR `-30 <= SNR < -20 dB` and ordinary SNR `-20 <= SNR <= 0 dB`. Put the shared -20 dB endpoint in the ordinary group. Also give per-SNR/per-JSR results and the individual training seeds alongside their mean and dispersion.
+- Select subsequent characterization experiments from `data/hybrid_condition_master_20261127/` using its saved components, registered amplitude transforms, parent IDs and structural labels. Record the exact subset, source/checkpoint/data SHA and threshold policy before evaluation. Register any added coverage as a new dataset version. Keep final independent confirmation separate.
+- Repeated SNR/JSR conditions, jammer variants and pulses share physical parents. Resample physical parent IDs jointly for uncertainty, and report physical sample size separately from the logical condition count.
+- User explicitly requested continuation of seeds 79/97/109 after the historical pause. Their authorized resume pipeline is active. Preserve its recovery identity and current GPU bindings. The earlier pause paragraph documents historical state.

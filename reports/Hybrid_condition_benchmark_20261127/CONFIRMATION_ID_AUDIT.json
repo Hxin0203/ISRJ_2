@@ -1,0 +1,11 @@
+{
+  "waveforms_read": false,
+  "server": "rsdr-b",
+  "checks": [
+    {
+      "path": "data\\unet_ablation_3seed_256_20261115\\confirmation\\test.npz",
+      "count": 512,
+      "overlap": 0
+    }
+  ]
+}

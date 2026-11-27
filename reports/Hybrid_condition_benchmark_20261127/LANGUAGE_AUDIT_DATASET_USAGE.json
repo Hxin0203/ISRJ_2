@@ -1,0 +1,22 @@
+{
+  "path": "G:\\Project Code\\ISRJ_222\\reports\\Hybrid_condition_benchmark_20261127\\DATASET_USAGE.md",
+  "density_tier": "low",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "G:\\Project Code\\ISRJ_222\\reports\\Hybrid_condition_benchmark_20261127\\DATASET_USAGE.md",
+    "word_count": 343,
+    "sentence_count": 22,
+    "burstiness_cv": 0.8802,
+    "lexical_diversity": 0.7856,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0325,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}

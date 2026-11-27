@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "frozen_metric_keys": [
+    "u_nmse",
+    "damage",
+    "background_nmse",
+    "h0_nmse",
+    "noise_nmse",
+    "no_jammer_pooled_nmse",
+    "amplitude",
+    "phase_deg",
+    "sjrif_db",
+    "false_peak_suppression_db",
+    "pd",
+    "pd_no_jammer",
+    "cell_pfa_noise",
+    "frame_pfa_noise",
+    "cell_pfa_jammer",
+    "frame_pfa_jammer"
+  ],
+  "frame_scores": [
+    "h0",
+    "target"
+  ],
+  "cached_state_restoration": true,
+  "at": "2026-11-27T13:33:05Z"
+}

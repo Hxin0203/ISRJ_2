@@ -1,0 +1,22 @@
+{
+  "model": {
+    "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\unet_mf_tail_screen_20261117_v2\\tail\\seed_17\\epoch_256.pt",
+    "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803",
+    "bindings": [
+      "sidecar",
+      "training_complete_milestone_256"
+    ]
+  },
+  "threshold_row_sha256": "55697d1acd340b9777c05304bb299cb7651fc08a9383c79d319dc5fa13bd80c2",
+  "thresholds": {
+    "0.01": 33.0609146097412,
+    "0.05": 19.395615814837438,
+    "0.1": 14.37875931624832
+  },
+  "master_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+  "registration_sha256": "1a603318a6695571a799e6f0324502f84351e28195d02c4fd4c8ff01ff2aeba8",
+  "host": "DESKTOP-RHKS2SI",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "policy": "Local evaluation authorized 2026-11-27 when server training GPUs busy",
+  "created_utc": "2026-11-27T13:05:56Z"
+}

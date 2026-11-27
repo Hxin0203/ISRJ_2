@@ -1,0 +1,7 @@
+{
+  "evaluated_source": "sources/hybrid_condition_benchmark_evaluated.py",
+  "evaluated_sha256": "f4c8eb3f91123fe112b221df91acec9c4503e4eed3ea95ebb592f3dda1780b5c",
+  "current_sha256": "80bd1ba1a96a915829c046bb4f7b5470b170b7a4649f23ab2641a0c21a4c2c89",
+  "change": "Resolve saved master components relative to repository root for cross-machine use",
+  "scope": "Path resolution only, after evaluation completed; historical DONE bindings retained"
+}

@@ -1,0 +1,32 @@
+{
+  "server": "rsdr-b",
+  "path": "D:/code/Xin/ISRJ_222/data/hybrid_condition_master_20261127",
+  "files": [
+    {
+      "name": "REGISTRATION.json",
+      "sha256": "1a603318a6695571a799e6f0324502f84351e28195d02c4fd4c8ff01ff2aeba8",
+      "bytes": 3079
+    },
+    {
+      "name": "DATA_MANIFEST.json",
+      "sha256": "8b1c029177b0b98cc2189d7bbe871b7af489b24502285697b0ffb63813a7eb42",
+      "bytes": 19186
+    },
+    {
+      "name": "STRUCTURAL_METADATA.json.gz",
+      "sha256": "270f574c1f4e2e728fb6c141e28d9a29f6b5618cd569ca07a2b51fa738d8d182",
+      "bytes": 364000
+    },
+    {
+      "name": "STRUCTURAL_METADATA_AUDIT.json",
+      "sha256": "28c08d053ca6126c6067650632c913c029d68a21b5517ea3d6061e4cb3240a42",
+      "bytes": 863
+    },
+    {
+      "name": "components/test_0_0.npz",
+      "sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+      "bytes": 234814964
+    }
+  ],
+  "verified": true
+}
