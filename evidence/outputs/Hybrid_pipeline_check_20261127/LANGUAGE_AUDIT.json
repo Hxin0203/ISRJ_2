@@ -1,0 +1,22 @@
+{
+  "path": "G:\\Project Code\\ISRJ_222\\reports\\Hybrid_pipeline_check_20261127.md",
+  "density_tier": "low",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "G:\\Project Code\\ISRJ_222\\reports\\Hybrid_pipeline_check_20261127.md",
+    "word_count": 161,
+    "sentence_count": 22,
+    "burstiness_cv": 0.6408,
+    "lexical_diversity": 0.828,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0325,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}
