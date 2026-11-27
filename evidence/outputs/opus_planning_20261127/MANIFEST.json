@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-11-27T03:12:15.532393+00:00",
+  "scope": "WP9 local source audit; no experiment execution",
+  "inputs": [
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\tools\\vp_1103_recovp_hybrid.py",
+      "sha256": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30"
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\01_实验执行计划_v2_20261127.md",
+      "sha256": "d6c0a04966d3a688495bd08b5a2c0d925bfb537225e9a01a72a02cf9472725b0"
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\README.md",
+      "sha256": "256bd6f561e571e7163d3f7b013bc3c65c721f5429f03b1a74f3ef8e1ba7422d"
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\backups\\20261127_wp9\\00_对话记录.md",
+      "sha256": "cf3a93c218c27c181b2067c3fdc71737e5043430e0650819c8e2107d5da1a138"
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\figures\\fig2_recovp_hybrid_DRAFT.png",
+      "sha256": "370e8ff53049ab22f21b47ee02d9c5e4b3e34073bbfce7ef3c8d5a8951318432"
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\figures\\make_fig2_recovp_hybrid.py",
+      "sha256": "5594786450728c563e7b88a90f81c3460ed98166345c3c508ea4497218e4f870"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "evidence\\outputs\\opus_planning_20261127\\ARCH_FACTS.md",
+      "sha256": "70c9186ed18a438b5550d51d7eb8a9ffba01a78989b739c79f52bcb59ef18675",
+      "bytes": 7754
+    },
+    {
+      "path": "evidence\\outputs\\opus_planning_20261127\\01_实验执行计划_v3_20261127.md",
+      "sha256": "84d87079f1c2b488a8eb85f71dcc0151a0726ed64c73600cd428909de407a891",
+      "bytes": 17037
+    },
+    {
+      "path": "evidence\\outputs\\opus_planning_20261127\\PARAMETER_REPORT.json",
+      "sha256": "cf91e54f198d436ef56c618b4f5a0b0ae47b3c16d30a3d74baf694874c660d4d",
+      "bytes": 159
+    },
+    {
+      "path": "evidence\\outputs\\opus_planning_20261127\\TEXT_AUDIT.json",
+      "sha256": "635399c08f3b9813ebcd0acdaeb7cbe6dbe9ccd30251cb9bd35222ecf5ecd215",
+      "bytes": 2669
+    },
+    {
+      "path": "evidence\\outputs\\opus_planning_20261127\\回执_WP9_20261127.md",
+      "sha256": "b30a8e812bcf52d755308391a757d26944f842e229cfffb2101c2f2b28933cdc",
+      "bytes": 1673
+    },
+    {
+      "path": "evidence\\outputs\\opus_planning_20261127\\DIALOGUE_UPDATE.md",
+      "sha256": "079d1086f88c8c39ab011e7a142aabe4fb5f9829260f8f556dff4b864cf23d8a",
+      "bytes": 3430
+    },
+    {
+      "path": "manuscript\\figures\\ReCoVP_Hybrid_Architecture_20261127\\fig2_recovp_hybrid_FINAL.pdf",
+      "sha256": "5bbd7122fa8c5d28e10e35c67a3daa4b5a5ec3f1ebee9d91ab808e7fbd6230fa",
+      "bytes": 42711
+    },
+    {
+      "path": "manuscript\\figures\\ReCoVP_Hybrid_Architecture_20261127\\fig2_recovp_hybrid_FINAL.png",
+      "sha256": "08b7b17b710ba276a87c5f4ccf1a8940e5a60e2dc9835a87482b32702e390b04",
+      "bytes": 293744
+    },
+    {
+      "path": "manuscript\\figures\\ReCoVP_Hybrid_Architecture_20261127\\fig2_recovp_hybrid_FINAL.svg",
+      "sha256": "3d47f6d8f1060cc519a6afa2b4cc052d52164fff3d65fd4e3bf010be2655b024",
+      "bytes": 74319
+    },
+    {
+      "path": "manuscript\\figures\\ReCoVP_Hybrid_Architecture_20261127\\make_fig2_recovp_hybrid.py",
+      "sha256": "e274d42ec0bfe3d3b595db156081728598bb288e1c1e08947af8068a787be921",
+      "bytes": 6015
+    }
+  ],
+  "validation": {
+    "png_size": [
+      3200,
+      2160
+    ],
+    "svg_editable_text_nodes": 53,
+    "pdf_header_ok": true,
+    "visual_review": "Rendered, inspected, corrected scale and gate/output connectors, re-rendered and inspected."
+  }
+}

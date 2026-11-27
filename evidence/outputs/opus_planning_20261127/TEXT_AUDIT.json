@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-11-27T03:12:15.532393+00:00",
+  "mode": "offline detect-only; no text rewrite",
+  "interpretation": "Chinese prose is not calibrated by the English stylometry estimator. U+3000 layout spaces are retained.",
+  "files": {
+    "ARCH_FACTS.md": {
+      "sha256": "70c9186ed18a438b5550d51d7eb8a9ffba01a78989b739c79f52bcb59ef18675",
+      "exit_code": 0,
+      "inspection": {
+        "path": "G:\\Project Code\\ISRJ_222\\evidence\\outputs\\opus_planning_20261127\\ARCH_FACTS.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\evidence\\outputs\\opus_planning_20261127\\ARCH_FACTS.md",
+          "word_count": 546,
+          "sentence_count": 65,
+          "burstiness_cv": 1.0044,
+          "lexical_diversity": 0.868,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "01_实验执行计划_v3_20261127.md": {
+      "sha256": "84d87079f1c2b488a8eb85f71dcc0151a0726ed64c73600cd428909de407a891",
+      "exit_code": 1,
+      "inspection": {
+        "path": "G:\\Project Code\\ISRJ_222\\evidence\\outputs\\opus_planning_20261127\\01_实验执行计划_v3_20261127.md",
+        "density_tier": "low",
+        "flagged_count": 1,
+        "flagged": [
+          {
+            "detector": "unicode",
+            "kind": "space",
+            "label": "U+3000 IDEOGRAPHIC SPACE (Zs)",
+            "count": 15,
+            "sample_offsets": [
+              2599,
+              3242,
+              3616,
+              4552,
+              4913,
+              5047,
+              5289,
+              5478,
+              5782,
+              6337
+            ],
+            "severity": "informational"
+          }
+        ],
+        "stylometry": {
+          "path": "G:\\Project Code\\ISRJ_222\\evidence\\outputs\\opus_planning_20261127\\01_实验执行计划_v3_20261127.md",
+          "word_count": 1190,
+          "sentence_count": 172,
+          "burstiness_cv": 1.0405,
+          "lexical_diversity": 0.9029,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    }
+  }
+}
