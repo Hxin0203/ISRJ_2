@@ -43,7 +43,7 @@ $$\hat c=\big(\tfrac12(G+G^H)+\operatorname{diag}(\lambda)\big)^{-1}\Phi^H x,\qq
 
 ## 6. 参数量
 
-待填（WP8 运行时会写出 `parameter_report`）。已知总有效实参数为 57,525，上限 59,700。
+由 `ReCoVPHybrid().parameter_report()` 在服务器 B 上读出（WP8 seed 17 运行记录）：第一阶段有效实参数 28,948，第二阶段 28,577，合计 57,525，上限 59,700。复数参数按两个实参数计。
 
 ## 7. 结构图草案需要改的地方
 
