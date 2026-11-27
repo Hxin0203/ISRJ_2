@@ -7,9 +7,10 @@ import sys
 import time
 import traceback
 
-from paper2.io import ROOT, now, read, sha
+from paper2.io import ROOT, now, read
 from tools import server_gpu_admission as admission
 from tools.durable_io import ProcessLock, atomic_json, process_alive
+from tools.stable_hash import sha
 from tools.recovp_hybrid_continue512 import (
     ARCHIVE, EXTRA_SOURCES, PIPELINE, SEEDS, STATE, parent_ready, paths,
 )

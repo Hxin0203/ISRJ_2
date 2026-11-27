@@ -14,7 +14,8 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from paper2.io import ROOT, now, read, sha
+from paper2.io import ROOT, now, read
+from tools.stable_hash import sha
 from tools import server_gpu_admission as admission
 from tools import vp_1103_recovp_hybrid_train as trainer
 from tools.durable_io import ProcessLock, atomic_copy, atomic_json
@@ -28,6 +29,7 @@ PIPELINE = "recovp_hybrid_continue512_20261127"
 STATE = ROOT / "evidence" / "outputs" / PIPELINE
 ARCHIVE = ROOT / "backups" / "recovp_hybrid_256_before512_20261127"
 EXTRA_SOURCES = (
+    "tools/stable_hash.py",
     "tools/recovp_hybrid_continue512.py",
     "tools/run_recovp_hybrid_continue512.py",
     "tools/start_recovp_hybrid_continue512.ps1",
