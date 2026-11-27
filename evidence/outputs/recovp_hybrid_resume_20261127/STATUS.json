@@ -1,0 +1,65 @@
+{
+  "pipeline_id": "recovp_hybrid_resume_20261127",
+  "stage": "STARTING",
+  "planned_epochs": 256,
+  "automatic_resume": true,
+  "placement": "79/97 retain original GPU UUID; 109 selects a GPU below 85% after first completion",
+  "seeds": {
+    "79": {
+      "stage": "RUNNING",
+      "saved_before_resume": 75,
+      "attempts": [
+        {
+          "attempt": 1,
+          "pid": 34224,
+          "gpu": 1,
+          "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+          "utilization_percent_at_start": 0.0,
+          "command": [
+            "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+            "-m",
+            "tools.resume_recovp_hybrid_paused",
+            "--seed",
+            "79",
+            "--gpu-index",
+            "1"
+          ],
+          "log": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_resume_20261127\\seed_79_attempt_1.log",
+          "started_utc": "2026-11-27T09:21:36.038697+00:00"
+        }
+      ]
+    },
+    "97": {
+      "stage": "RUNNING",
+      "saved_before_resume": 139,
+      "attempts": [
+        {
+          "attempt": 1,
+          "pid": 37032,
+          "gpu": 0,
+          "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+          "utilization_percent_at_start": 2.0,
+          "command": [
+            "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+            "-m",
+            "tools.resume_recovp_hybrid_paused",
+            "--seed",
+            "97",
+            "--gpu-index",
+            "0"
+          ],
+          "log": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_resume_20261127\\seed_97_attempt_1.log",
+          "started_utc": "2026-11-27T09:21:36.098657+00:00"
+        }
+      ]
+    },
+    "109": {
+      "stage": "PENDING",
+      "saved_before_resume": 0,
+      "attempts": []
+    }
+  },
+  "evidence_dir": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_resume_20261127",
+  "python": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+  "updated_utc": "2026-11-27T09:26:36.118390+00:00"
+}
