@@ -1,5 +1,22 @@
 # ISRJ_2: target-response-constrained restoration
 
+<!-- HYBRID_5SEED_RESULTS_START -->
+## Hybrid 五种子结果（固定更新入口）
+
+本轮完成 seed **17、29、41、53、67** 的 epoch 256 汇总与零训练补测，共 **15 张图（PNG + PDF）**。覆盖训练收敛、Equal-PFA、32 格 SNR×JSR、12 类卷积对照、背景长尾、脉压/相位/多普勒和五种子冻结推理干预。
+
+- 综合报告：[REPORT.md](reports/Hybrid_5seed_20261127/REPORT.md)。
+- 数值与证据：同目录 `ANALYSIS.json`、`TRAINING.json`、各项 CSV、`VALIDATION.json` 和逐文件 SHA256 的 `MANIFEST.json`。
+- 项目备份：`G:/Project Code/ISRJ_222/reports/Hybrid_5seed_20261127/`。
+- 交接备份：`G:/Files/Markdown/ISRJ_2/opus对话/03_分析/Hybrid_5seed_20261127/`。
+- GitHub 同步回执：`handoff/Hybrid_5seed_20261127/GITHUB_SYNC.json`（推送核验后写入）。
+
+主要结论：Hybrid 在 5%/10% 校准虚警点超过两种 Tail 基线；对第一篇 RSDR-Net，5% 点略低、10% 点持平、1% 点明显落后。受控扫描中平均 E_U 和 E_S 更低；DEV 脉压目标相干功率少损失约 0.323 dB，但实际含噪多普勒估计未证实改善。seed 67 的 E0 异常已保留并单列。不同评测分布的排名不能混用；BVR01/JCR、独立确认集和公平计时尚未封口。这是五种子阶段报告，不是八种子最终结论。
+
+维护规则：以后本项结果、路径或结论变更时，**直接更新本 README 的这个固定段落**，保留本说明入口，不另建新的主目录说明报告。历史备份放入对应备份目录。
+<!-- HYBRID_5SEED_RESULTS_END -->
+
+
 This repository contains the controlled source and evidence snapshot for the second ISRJ paper. The active server-only U-Net comparison and four ablations are specified in [PAPER2_UNET_ABLATION_PLAN_20261115.md](PAPER2_UNET_ABLATION_PLAN_20261115.md). Read [PAPER2_PROGRESS_CHECK_20261115.md](PAPER2_PROGRESS_CHECK_20261115.md) for the completed original training and TEST audit, and [PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md](PAPER2_RSDR_UNIFIED_COMPARISON_20261115.md) for the additive comparison with the first-paper RSDR-Net. [ISRJ_2_CURRENT_STATE_REPORT_20261113.md](ISRJ_2_CURRENT_STATE_REPORT_20261113.md) preserves the earlier project history, model structure and mathematical formulation. Results concern the stated simulation distributions; novelty and field performance remain unestablished.
 
 The 1103-aligned execution is documented in [PAPER2_1103_PROGRESS_20261114.md](PAPER2_1103_PROGRESS_20261114.md) and [PAPER2_1103_NEAR_TERM_PLAN_20261114.md](PAPER2_1103_NEAR_TERM_PLAN_20261114.md). The independent original TEST completed with the frozen seed-29/epoch-128 checkpoint: 2,237 method-condition receipts and 103,826 audited parent blocks. The additive RSDR-Net comparison has its own 564-condition freeze and completion receipts under `evidence/outputs/RSDR_UNIFIED_20261115/`; read its current report for audited coverage. Both models use the same second-paper TEST parents, pulse compression, Doppler processing and CFAR. This is one frozen seed per model with different training budgets; Pd must be interpreted alongside empirical false alarms. MCA-ADMM-Net and FNet remain paused. The user authorized the new U-Net comparison and structural/loss ablations on 2026-11-15.

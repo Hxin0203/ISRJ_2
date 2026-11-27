@@ -1,0 +1,34 @@
+{
+  "validated_utc": "2026-11-27T03:53:14.130097+00:00",
+  "status": "PASS",
+  "seeds": [
+    17,
+    29,
+    41,
+    53,
+    67
+  ],
+  "epochs_per_seed": 256,
+  "epoch_rows": 1280,
+  "milestones": 40,
+  "equal_pfa_methods": 19,
+  "sweep_cells": 32,
+  "dev_labels": 6,
+  "dev_convolutional_controls": 12,
+  "wp8_seeds": 5,
+  "figures_png": 15,
+  "figures_pdf": 15,
+  "checks": [
+    "checkpoint SHA matches training completion, milestone256, DEV and WP8",
+    "nine common core source hashes and train dataset identical; wrapper inventories differ",
+    "same DEV SHA across main and intervention evaluation",
+    "all numeric values finite",
+    "all 15 report image links resolve"
+  ],
+  "limitations": [
+    "No new training",
+    "No independent confirmation opened",
+    "RSDR has one frozen seed; convolutional controls usually three",
+    "No same-definition five-seed BVR01/JCR or fair runtime claim"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-11-27T03:53:14.130097+00:00",
+  "mode": "offline detect-only; no auto rewrite",
+  "note": "Chinese stylometry is not calibrated; protected formulas, values and paths unchanged",
+  "report_sha256": "53ee787451b26495ef7e567e754166d74cfc59068cb404685fd641d65c7a773b",
+  "returncode": 0,
+  "audit": {
+    "path": "reports\\Hybrid_5seed_20261127\\REPORT.md",
+    "density_tier": "low",
+    "flagged_count": 0,
+    "flagged": [],
+    "stylometry": {
+      "path": "reports\\Hybrid_5seed_20261127\\REPORT.md",
+      "word_count": 2757,
+      "sentence_count": 238,
+      "burstiness_cv": 0.7501,
+      "lexical_diversity": 0.7603,
+      "ai_ngram_density": 0.0,
+      "matched_markers": [],
+      "score": 0.0325,
+      "confidence_level": "CLEAN",
+      "density_tier": "low",
+      "status": "ok",
+      "findings": [],
+      "findings_confidence": [],
+      "notes": []
+    }
+  }
+}
