@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-11-27T11:55:02.984416+00:00",
+  "files": [
+    {
+      "path": "figures/01_equal_pfa.png",
+      "bytes": 214145,
+      "sha256": "99082ffbae433754229d3f0a7c152132c6e7585abc4bb99143d294fcf0a2794b"
+    },
+    {
+      "path": "figures/04_snr_u_nmse.png",
+      "bytes": 144299,
+      "sha256": "6b172fa67d589b777bf506ac414de263a67db2d2a4d5aa406e7494f1c5cf19ea"
+    },
+    {
+      "path": "figures/05_snr_damage.png",
+      "bytes": 178953,
+      "sha256": "85a7e28915efdbf74e6ba740981893263077e09d8cc5974658447c9b184b3691"
+    },
+    {
+      "path": "figures/06_snr_pd.png",
+      "bytes": 93256,
+      "sha256": "9b6e6c2e72a4ca64a6f4f420f0353badaccbee968be803031970653005ba6679"
+    },
+    {
+      "path": "figures/07_snr_frame_pfa_jammer.png",
+      "bytes": 139081,
+      "sha256": "3a7b61ceecfaeee3ea1a089fb3d8aa85bbc7de57c4a146a3da6cbdcdd7597eed"
+    },
+    {
+      "path": "figures/08_snr_sjrif_db.png",
+      "bytes": 107669,
+      "sha256": "f9e68ac0b1d6f971099636752b1cfa5591eb422d941fcfa01e0f98f502f6c09a"
+    },
+    {
+      "path": "figures/09_snr_amplitude.png",
+      "bytes": 235959,
+      "sha256": "051ebd4e7df4f26a8ead1ba1d7cec632de6f9fdb01313af504351f88ebd3376c"
+    },
+    {
+      "path": "figures/13_dev_and_doppler.png",
+      "bytes": 118536,
+      "sha256": "0384d24b235dc1c594c4c38c7fec4a042b5263f2c80dfb7c4b46226e454c7b3f"
+    },
+    {
+      "path": "figures/structure_sweep.png",
+      "bytes": 367682,
+      "sha256": "1d74cfd99b8d1ab03cc688708e7bde0cf1a04fea2f780f584d389927aaa9f016"
+    },
+    {
+      "path": "LANGUAGE_AUDIT.json",
+      "bytes": 849,
+      "sha256": "3d046ae01307e5d01cba52412087a2fb04f86b6eb97e26765e07625108645173"
+    },
+    {
+      "path": "METHOD_MACRO_AVERAGES.csv",
+      "bytes": 2935,
+      "sha256": "5ecb2cd56bd0ea85e0d98963e0dab834ae6275e1c3aa94c63ebc3e4a7e6590f6"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 26333,
+      "sha256": "2a7dca33fa6da4b8580db74d521379f1ca7d62fd75a6c69cf61bcf5fc46fc483"
+    },
+    {
+      "path": "SNR_JSR_METRICS.csv",
+      "bytes": 140330,
+      "sha256": "82cc0929beae96ebfc53e138a1969171799620b4130bec6b88db5efa48f50a91"
+    },
+    {
+      "path": "STATUS.json",
+      "bytes": 23272,
+      "sha256": "2be42a2df3eff00a1036d58fc6232920186128fe5fa6634b5e92321bb7389d9c"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 3810,
+      "sha256": "70140070cf364d87263a1dcf1206faffdcc7772d31904b38378d93df987e3e56"
+    }
+  ]
+}

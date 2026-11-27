@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-11-27T11:54:00.850396+00:00",
+  "status_snapshot_utc": "2026-11-27T11:46:30.6552275Z",
+  "completed_performance_seeds": [
+    17,
+    29,
+    41,
+    53,
+    67
+  ],
+  "epoch_selection": "fixed epoch 256",
+  "method_count": 17,
+  "grid_rows": 544,
+  "hybrid_old_grid_max_abs_difference": 0.0,
+  "verified_saved_checkpoint_count": 7,
+  "completed_seeds": 5,
+  "total_saved_epochs": 1664,
+  "training_dataset_identity_equal": true,
+  "shared_core_source_manifest_equal": true,
+  "shared_core_source_count": 9,
+  "wp12_eval_oracle_violations": 0,
+  "wp12_calibration_oracle_violations": 0,
+  "sources": [
+    {
+      "path": "reports/Hybrid_5seed_20261127/ANALYSIS.json",
+      "sha256": "a53d863560fabf66d905f3660063c7edc938cf8a11c33b2015db6c10d7fb8aba"
+    },
+    {
+      "path": "reports/Hybrid_5seed_20261127/TRAINING.json",
+      "sha256": "12d52d972816c7db92900482dd0ee5c78b40b84af1e7e63f134deb85c8921c76"
+    },
+    {
+      "path": "reports/Hybrid_5seed_20261127/snr_jsr.csv",
+      "sha256": "309e1e4856cd7a255208ff8985d37899b82b031be4348f12100d755092f34150"
+    },
+    {
+      "path": "evidence/outputs/HYBRID_WP11_WP12_20261127/WP13_SWEEP_SUMMARY.json",
+      "sha256": "c9f739ce02d9cea43a5031aef00579d7aaca75f7bc48f06fd6201be4942aa36c"
+    },
+    {
+      "path": "evidence/outputs/HYBRID_NEXTROUND_20261127/WP12b/run_3/ATTRIBUTION_run3.json",
+      "sha256": "2d231c2ad12657a236b586f1ec1ca5c4fb074f7f68f76e6509e690e3a149ffb8"
+    },
+    {
+      "path": "evidence/outputs/paper2_baseline_suite_20261126/WP5b/SUMMARY.json",
+      "sha256": "ecdf9e75f6989227db13f2a926d4d6cf75c69e071eca8f9abb2d5b8cdb34559d"
+    },
+    {
+      "path": "evidence/outputs/paper2_baseline_suite_20261126/WP7/TIMING_RR.json",
+      "sha256": "db93caac7ed8d148fba1855dd7c34719f09c267db6985e488a077a4cb069f42a"
+    },
+    {
+      "path": "paper2/radar_eval.py",
+      "sha256": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea"
+    },
+    {
+      "path": "tools/run_recovp_hybrid_resume_pipeline.py",
+      "sha256": "663095c8158da7d9a8d9c32dff0e5eeb1bc7d767248c174b4a8f7d8e4d96ed22"
+    },
+    {
+      "path": "evidence/outputs/HYBRID_NEXTROUND_20261127/WP11b/RECEIPT.md",
+      "sha256": "093635844c4924aac6d87029a56c5648832f5a9c49af7a9200be2dbc158231f0"
+    },
+    {
+      "path": "evidence/outputs/HYBRID_NEXTROUND_20261127/WP8c/RECEIPT.md",
+      "sha256": "92dede1ae696f5dee8041a40a121ae7d486c7605905c0280f7f299447ded1c84"
+    }
+  ],
+  "limitations": [
+    "5 complete performance seeds; 2 training and 1 pending",
+    "baseline training replicate counts and protocols differ",
+    "grid fixed-CFAR and calibrated Equal-PFA are separate protocols",
+    "confirmation set not evaluated",
+    "WP11b correlations and WP8c independent wrapper remain incomplete",
+    "WP14 definitions/bindings and Base/P0 checkpoints unavailable"
+  ],
+  "index_backups": [
+    {
+      "original": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\实验结果与文件存放说明.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\能力与进度报告更新_20261127_115502UTC\\实验结果与文件存放说明.md",
+      "sha256": "8cc95bcf3a530c44835fbcac21aa140e78998c3fe4dcd82329446cdce2c13a04"
+    },
+    {
+      "original": "G:\\Project Code\\ISRJ_222\\handoff\\实验结果与文件存放说明.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\能力与进度报告更新_20261127_115502UTC\\项目镜像_实验结果与文件存放说明.md",
+      "sha256": "8cc95bcf3a530c44835fbcac21aa140e78998c3fe4dcd82329446cdce2c13a04"
+    }
+  ],
+  "index_sha256": "abd34c0f5e6d094404b28d241ff742402683063d913a717e3f59ecec1cde984c",
+  "text_audit_flagged_count": 0
+}
