@@ -19,3 +19,11 @@
 - Select subsequent characterization experiments from `data/hybrid_condition_master_20261127/` using its saved components, registered amplitude transforms, parent IDs and structural labels. Record the exact subset, source/checkpoint/data SHA and threshold policy before evaluation. Register any added coverage as a new dataset version. Keep final independent confirmation separate.
 - Repeated SNR/JSR conditions, jammer variants and pulses share physical parents. Resample physical parent IDs jointly for uncertainty, and report physical sample size separately from the logical condition count.
 - User explicitly requested continuation of seeds 79/97/109 after the historical pause. Their authorized resume pipeline is active. Preserve its recovery identity and current GPU bindings. The earlier pause paragraph documents historical state.
+
+## 2026-11-27 user-authorized Hybrid continuation to epoch 512
+
+- After all eight existing Hybrid seeds (17, 29, 41, 53, 67, 79, 97, 109) finish epoch 256, continue each seed through epoch 512. The successor controller is `tools/run_recovp_hybrid_continue512.py`, launched on server B with `tools/start_recovp_hybrid_continue512.ps1`.
+- Preserve each original `outputs/recovp_hybrid_seed{seed}/` directory and its epoch 0..256 recovery history. Separately copy the complete epoch-256 endpoint, optimizer/RNG state, config, preflight and frozen sources to `backups/recovp_hybrid_256_before512_20261127/seed_{seed}/`, with SHA manifests.
+- Write continuation runs to `outputs/recovp_hybrid_512_seed{seed}/` and their evidence to the matching evidence directory. Restore the full parent state and start at epoch 257. Preserve every continuation epoch and every 32-epoch milestone through 512.
+- The continuation uses the original architecture, objective, training data and Adam state, with constant learning rate `2e-6` after epoch 256. This is a separately recorded extension schedule. Both GPUs remain eligible under the existing below-85-percent utilization policy. A continuation's first dispatch freezes its physical GPU UUID for recovery.
+- The user will select among the retained models. Keep the 256-epoch results and the 512-epoch continuation identities explicit in subsequent comparisons.

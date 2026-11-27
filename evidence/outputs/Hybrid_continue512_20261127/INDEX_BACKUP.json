@@ -1,0 +1,19 @@
+{
+  "backups": [
+    {
+      "original": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\实验结果与文件存放说明.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\Hybrid续训512部署_20261127_161101UTC\\实验结果与文件存放说明.md",
+      "sha256": "691640d6e6cf679ea943f9794a72f92e29f74abf0bb4ffdedcefd5998295fa9d"
+    },
+    {
+      "original": "G:\\Project Code\\ISRJ_222\\handoff\\实验结果与文件存放说明.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\Hybrid续训512部署_20261127_161101UTC\\项目镜像_实验结果与文件存放说明.md",
+      "sha256": "691640d6e6cf679ea943f9794a72f92e29f74abf0bb4ffdedcefd5998295fa9d"
+    },
+    {
+      "original": "G:\\Project Code\\ISRJ_222\\AGENTS.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\Hybrid续训512部署_20261127_161101UTC\\AGENTS.md",
+      "sha256": "52131d273ca29c1fc90acb6aba58f0ecef4e1f1128e3e1db9a60976d82239103"
+    }
+  ]
+}

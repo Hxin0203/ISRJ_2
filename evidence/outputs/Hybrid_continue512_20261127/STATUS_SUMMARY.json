@@ -1,0 +1,89 @@
+{
+  "checked_utc": "2026-11-27T16:13:23.4888566Z",
+  "stage": "WAITING_FOR_ALL_256",
+  "controller_alive": true,
+  "target_epoch": 512,
+  "parent_epoch": 256,
+  "lr": 2e-06,
+  "lr_decision": "constant continuation at parent terminal learning rate",
+  "seeds": [
+    {
+      "seed": 17,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 15,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 29,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 17,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 41,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 17,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 53,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 22,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 67,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 22,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 79,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 22,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 97,
+      "saved_epoch": 256,
+      "parent_complete": true,
+      "archive_present": true,
+      "archive_files_checked": 22,
+      "archive_sha_pass": true
+    },
+    {
+      "seed": 109,
+      "saved_epoch": 125,
+      "parent_complete": false,
+      "archive_present": false,
+      "archive_files_checked": 0,
+      "archive_sha_pass": false
+    }
+  ],
+  "sources": {
+    "tools/recovp_hybrid_continue512.py": "4a87a35842dc1b98402bd4d9692020a9459a1775515edbf98c8b60246486c10c",
+    "tools/run_recovp_hybrid_continue512.py": "d3925805a193fc060b342be1131530a3698859b074855a470fc9bac6985a6cdf",
+    "tools/start_recovp_hybrid_continue512.ps1": "7e9b1f4aeae794ed89bee8c852d67db6ba302d19c1e14233e534c29cfb8ff28e",
+    "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+  },
+  "tests_passed": 16,
+  "continuation_workers": [],
+  "controller_error_present": false,
+  "stderr_length": 0,
+  "gpu_csv": [
+    "0, GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d, 99, 9046",
+    "1, GPU-bb60dd3a-738e-2398-908f-7f77ac05549b, 0, 0"
+  ]
+}

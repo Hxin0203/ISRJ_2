@@ -1,0 +1,60 @@
+# ReCoVP-Hybrid 八种子续训至512轮部署报告
+
+核验时间为2026年11月27日08:13:23 PST，对应16:13:23 UTC。
+
+## 授权范围与当前进度
+
+本次覆盖seed 17、29、41、53、67、79、97、109。八个种子全部完成256轮并通过归档审计后，流水线自动分别从257轮续训到512轮，每个种子追加256轮，共追加2048轮。
+
+| seed | 已保存轮数 | 256轮完成 | 独立归档SHA核验 |
+|---|---:|---|---|
+| 17 | 256 | 完成 | 通过 |
+| 29 | 256 | 完成 | 通过 |
+| 41 | 256 | 完成 | 通过 |
+| 53 | 256 | 完成 | 通过 |
+| 67 | 256 | 完成 | 通过 |
+| 79 | 256 | 完成 | 通过 |
+| 97 | 256 | 完成 | 通过 |
+| 109 | 125 | 训练中 | 完成后自动归档 |
+
+seed 109正在服务器GPU0训练。续训控制器PID为19800，状态为`WAITING_FOR_ALL_256`，本次核验心跳正常，错误记录缺省且标准错误日志长度为0。GPU0利用率99%，GPU1利用率0%。512轮续训处于等待阶段，其性能需在训练完成后评测。
+
+## 模型和恢复点留存
+
+所有模型均位于服务器B，连接方式为`ssh rsdr-b`。下表中的`{seed}`替换为对应种子编号。
+
+| 用途 | 服务器路径 |
+|---|---|
+| 原256轮模型及逐轮恢复点 | `D:/code/Xin/ISRJ_222/outputs/recovp_hybrid_seed{seed}/seed_{seed}/` |
+| 256轮独立端点归档 | `D:/code/Xin/ISRJ_222/backups/recovp_hybrid_256_before512_20261127/seed_{seed}/` |
+| 512轮续训输出 | `D:/code/Xin/ISRJ_222/outputs/recovp_hybrid_512_seed{seed}/seed_{seed}/` |
+| 自动控制器状态 | `D:/code/Xin/ISRJ_222/evidence/outputs/recovp_hybrid_continue512_20261127/STATUS.json` |
+
+原训练目录保留0至256轮恢复历史及每32轮里程碑。独立归档保存`epoch_256.pt`及其JSON回执、完整Adam和RNG状态、CONFIG、PREFLIGHT、完成记录、冻结源码及SHA清单。归档遇到已有文件时先校验SHA，内容不同则报错。
+
+新训练使用独立目录，逐轮保存257至512轮恢复点，并保存288、320、352、384、416、448、480、512轮里程碑。用户后续可依据保留的各轮模型选择使用版本。
+
+## 续训协议和自主决策
+
+续训沿用各自父模型绑定的架构、目标函数、训练数据及Adam状态。恢复前验证数据、源码、配置、preflight、完整257个父恢复点及里程碑SHA。
+
+用户没有指定扩展阶段的学习率。本次选择固定`2e-6`，延续原256轮末尾的学习率，完整恢复优化器动量及步数。这个扩展学习率方案已写入续训配置，供后续比较时核对。
+
+两块服务器GPU均参与后续调度。控制器每30秒检查状态，每次派发前选择利用率低于85%的GPU，允许同卡并发。每个续训任务首次派发后记录物理GPU及UUID，恢复使用该绑定。
+
+控制器通过独立Windows进程运行，可跨SSH断开继续执行。worker失败后间隔120秒重试，最多5次。资源利用率竞争导致的等待单独重试。控制器异常最多自动恢复5次，达到上限时留下错误记录和需处理状态。已写检查点而回执缺失时，验证payload后补齐回执。服务器重启后的恢复需重新运行启动脚本。
+
+## 已完成验证
+
+- seed 17真实256轮检查点在服务器GPU1上完成恢复验证，逐项核对模型张量、100个Adam参数槽、动量、步数12288以及CPU/CUDA随机状态。验证回执保存在`evidence/outputs/Hybrid_continue512_20261127/RESTORE_VERIFIED_seed17.json`。
+- 七个已完成种子的独立归档逐文件SHA全部通过。最新服务器快照为`evidence/outputs/Hybrid_continue512_20261127/DEPLOYMENT_CHECK_2.json`。
+- 本地执行`python -m pytest tests/test_recovp_hybrid_continue512.py tests/test_server_gpu_admission.py -q`，结果为16项通过。覆盖父阶段完成屏障、归档防覆盖、完整状态恢复、从257轮继续、断点幂等恢复、回执补齐及双GPU派发。
+- `tools/recovp_hybrid_continue512.py`与`tools/run_recovp_hybrid_continue512.py`通过Python编译检查。续训源码SHA与已部署控制器记录一致。
+
+## 文件位置与结论
+
+项目报告为`G:/Project Code/ISRJ_222/reports/Hybrid_continue512_20261127.md`。项目核验摘要位于`G:/Project Code/ISRJ_222/evidence/outputs/Hybrid_continue512_20261127/`。
+
+交接报告为`G:/Files/Markdown/ISRJ_2/opus对话/02_回执/Hybrid_continue512_20261127/REPORT.md`。固定说明继续维护`G:/Files/Markdown/ISRJ_2/opus对话/实验结果与文件存放说明.md`，仓库镜像为`handoff/实验结果与文件存放说明.md`。修改前备份及SHA见本轮证据目录的`INDEX_BACKUP.json`。
+
+八种子256至512轮自动续训已部署，当前等待seed 109完成256轮及归档。256轮端点和512轮扩展训练具有独立存储路径与身份记录，可支持后续模型选择。512轮训练效果尚待验证。

@@ -1,0 +1,403 @@
+﻿{
+    "checked_utc":  "2026-11-27T16:13:23.4888566Z",
+    "seeds":  [
+                  {
+                      "seed":  17,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed17",
+                                                      "seed":  17,
+                                                      "config_sha256":  "0af7322a5a37721e71be5a2ac56eceb6372d9567114e8fb240fd7b537e1f5251",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208"
+                                                                        },
+                                                      "preflight_sha256":  "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7"
+                                                  },
+                                     "checkpoint_sha256":  "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+                                     "updated_utc":  "2026-11-25T17:24:29.123883+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  15,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  29,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed29",
+                                                      "seed":  29,
+                                                      "config_sha256":  "1503ad0eea77061381e99b2920f59f89679585e4d81294b0cdb4ad18e3793080",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_multiseed.py":  "23314354f8b6cf7e315c4a91cde5c9a0a6e22d81a5494d0c26715d0293000aaa",
+                                                                            "tools/start_recovp_hybrid_multiseed.py":  "f2d6d23fa28214b5a94def1bed01a59e1326ef89dadb44345b782263c33676c7"
+                                                                        },
+                                                      "preflight_sha256":  "cce84aa7a9103816e3378fa9f30641847e0daef95482e6c1e00b2845a0f29786"
+                                                  },
+                                     "checkpoint_sha256":  "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+                                     "updated_utc":  "2026-11-26T11:36:52.462211+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  17,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  41,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed41",
+                                                      "seed":  41,
+                                                      "config_sha256":  "ea0f4a629da5dd2c647d609d9513f364ee60c6b6c0e6df2f0e5f194b8f4cfe20",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_multiseed.py":  "23314354f8b6cf7e315c4a91cde5c9a0a6e22d81a5494d0c26715d0293000aaa",
+                                                                            "tools/start_recovp_hybrid_multiseed.py":  "f2d6d23fa28214b5a94def1bed01a59e1326ef89dadb44345b782263c33676c7"
+                                                                        },
+                                                      "preflight_sha256":  "609e19a08deda4e7b72aa9d6a9042a16ee05ea2c2b867f9a73ad8c96cd1c6672"
+                                                  },
+                                     "checkpoint_sha256":  "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+                                     "updated_utc":  "2026-11-26T15:10:37.369233+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  17,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  53,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed53",
+                                                      "seed":  53,
+                                                      "config_sha256":  "2a1be5b01b752f47fb728a14d38da54bae74160863e7d3b4aedf6a7fab9ef7a1",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_extended.py":  "4ccd9684cef64d98d1875af800086a48a26873f69243e4d4ffa07078a9f52fff",
+                                                                            "tools/start_recovp_hybrid_extended.py":  "1398932edb99b3a5707849b6bef9b4cab88ec9264c6cbbcf5ae79619be656d9d",
+                                                                            "tools/recovp_hybrid_seed_schedule.py":  "37777be530ef2fc09e70bb4bd40f54592714c9a4898eec0951a494e8a73967da",
+                                                                            "tools/run_recovp_hybrid_split_pipeline.py":  "af852423394c9c1b3fe46dacdbc10ba940812177ae3dfdd22de4df661dbb76ed",
+                                                                            "tools/evaluate_recovp_hybrid_extended.py":  "a8e8d0d5fc36d3df9dc1cf86d837e82ed3639d863b567d861ac186e5b4f0e023",
+                                                                            "tools/start_recovp_hybrid_extended_eval.py":  "8ecea6c399fff1c249b8c5b2b2d1375fe1396cd4fbe8fb0e1f0cbb8eed6ce611",
+                                                                            "tools/run_recovp_hybrid_8seed_pipeline.py":  "c7e41c8a03070a8a98b042550eb9a6cffe62999ded42b9113d5f2e0d721b4a61"
+                                                                        },
+                                                      "preflight_sha256":  "98c29b53ceabf3fbc20999a80d2474c47147817f8011a55fed96f323165ee245"
+                                                  },
+                                     "checkpoint_sha256":  "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147",
+                                     "updated_utc":  "2026-11-26T19:58:27.154267+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  22,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  67,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed67",
+                                                      "seed":  67,
+                                                      "config_sha256":  "73e1e9ba435c5ed223c9b0d82f59b302743e85336ec16f640639208c48631306",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_extended.py":  "4ccd9684cef64d98d1875af800086a48a26873f69243e4d4ffa07078a9f52fff",
+                                                                            "tools/start_recovp_hybrid_extended.py":  "1398932edb99b3a5707849b6bef9b4cab88ec9264c6cbbcf5ae79619be656d9d",
+                                                                            "tools/recovp_hybrid_seed_schedule.py":  "37777be530ef2fc09e70bb4bd40f54592714c9a4898eec0951a494e8a73967da",
+                                                                            "tools/run_recovp_hybrid_split_pipeline.py":  "af852423394c9c1b3fe46dacdbc10ba940812177ae3dfdd22de4df661dbb76ed",
+                                                                            "tools/evaluate_recovp_hybrid_extended.py":  "a8e8d0d5fc36d3df9dc1cf86d837e82ed3639d863b567d861ac186e5b4f0e023",
+                                                                            "tools/start_recovp_hybrid_extended_eval.py":  "8ecea6c399fff1c249b8c5b2b2d1375fe1396cd4fbe8fb0e1f0cbb8eed6ce611",
+                                                                            "tools/run_recovp_hybrid_8seed_pipeline.py":  "c7e41c8a03070a8a98b042550eb9a6cffe62999ded42b9113d5f2e0d721b4a61"
+                                                                        },
+                                                      "preflight_sha256":  "2f36841edc64e6980819849217701e5240fd66b3b8fa059a8c56d9aff72444b2"
+                                                  },
+                                     "checkpoint_sha256":  "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2",
+                                     "updated_utc":  "2026-11-27T02:48:54.518053+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  22,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  79,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed79",
+                                                      "seed":  79,
+                                                      "config_sha256":  "07710b9acffd260cdb2137e434748530d81c78a90f6236771c79ab3ce2b2549e",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_extended.py":  "4ccd9684cef64d98d1875af800086a48a26873f69243e4d4ffa07078a9f52fff",
+                                                                            "tools/start_recovp_hybrid_extended.py":  "1398932edb99b3a5707849b6bef9b4cab88ec9264c6cbbcf5ae79619be656d9d",
+                                                                            "tools/recovp_hybrid_seed_schedule.py":  "37777be530ef2fc09e70bb4bd40f54592714c9a4898eec0951a494e8a73967da",
+                                                                            "tools/run_recovp_hybrid_split_pipeline.py":  "af852423394c9c1b3fe46dacdbc10ba940812177ae3dfdd22de4df661dbb76ed",
+                                                                            "tools/evaluate_recovp_hybrid_extended.py":  "a8e8d0d5fc36d3df9dc1cf86d837e82ed3639d863b567d861ac186e5b4f0e023",
+                                                                            "tools/start_recovp_hybrid_extended_eval.py":  "8ecea6c399fff1c249b8c5b2b2d1375fe1396cd4fbe8fb0e1f0cbb8eed6ce611",
+                                                                            "tools/run_recovp_hybrid_8seed_pipeline.py":  "c7e41c8a03070a8a98b042550eb9a6cffe62999ded42b9113d5f2e0d721b4a61"
+                                                                        },
+                                                      "preflight_sha256":  "a3cf3d70a552f6629c9f9f5334a7aeafd80a8c1cf4cd053eafc7cb9a147f66b2"
+                                                  },
+                                     "checkpoint_sha256":  "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3",
+                                     "updated_utc":  "2026-11-27T14:18:17.968540+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  22,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  97,
+                      "latest":  {
+                                     "epoch":  256,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed97",
+                                                      "seed":  97,
+                                                      "config_sha256":  "3c956ac550ab6090f5b0629b59650c1bf2d48e2e05f5c56a02a557db9848f324",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_extended.py":  "4ccd9684cef64d98d1875af800086a48a26873f69243e4d4ffa07078a9f52fff",
+                                                                            "tools/start_recovp_hybrid_extended.py":  "1398932edb99b3a5707849b6bef9b4cab88ec9264c6cbbcf5ae79619be656d9d",
+                                                                            "tools/recovp_hybrid_seed_schedule.py":  "37777be530ef2fc09e70bb4bd40f54592714c9a4898eec0951a494e8a73967da",
+                                                                            "tools/run_recovp_hybrid_split_pipeline.py":  "af852423394c9c1b3fe46dacdbc10ba940812177ae3dfdd22de4df661dbb76ed",
+                                                                            "tools/evaluate_recovp_hybrid_extended.py":  "a8e8d0d5fc36d3df9dc1cf86d837e82ed3639d863b567d861ac186e5b4f0e023",
+                                                                            "tools/start_recovp_hybrid_extended_eval.py":  "8ecea6c399fff1c249b8c5b2b2d1375fe1396cd4fbe8fb0e1f0cbb8eed6ce611",
+                                                                            "tools/run_recovp_hybrid_8seed_pipeline.py":  "c7e41c8a03070a8a98b042550eb9a6cffe62999ded42b9113d5f2e0d721b4a61"
+                                                                        },
+                                                      "preflight_sha256":  "5b59bee130922fc9b9a32ad148c0fa75c6290e4d2d4fe7c9e194a88c923e88b9"
+                                                  },
+                                     "checkpoint_sha256":  "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c",
+                                     "updated_utc":  "2026-11-27T12:41:40.262099+00:00"
+                                 },
+                      "complete":  true,
+                      "archive_manifest_present":  true,
+                      "archive_files_checked":  22,
+                      "archive_sha_pass":  true
+                  },
+                  {
+                      "seed":  109,
+                      "latest":  {
+                                     "epoch":  125,
+                                     "identity":  {
+                                                      "run":  "recovp_hybrid_seed109",
+                                                      "seed":  109,
+                                                      "config_sha256":  "0818f758a27e883ec1a754de9d4d8f83698376914b13a4101fe77eb7e27b7dc8",
+                                                      "train_sha256":  "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+                                                      "source_sha256":  {
+                                                                            "tools/vp_1103_recovp_hybrid.py":  "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+                                                                            "tools/vp_1103_recovp_hybrid_train.py":  "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+                                                                            "tools/vp_1103_recovp_hybrid_objective.py":  "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+                                                                            "paper2/train_1103.py":  "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+                                                                            "paper2/network.py":  "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+                                                                            "paper2/train_256_8seed.py":  "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+                                                                            "paper2/io.py":  "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+                                                                            "tools/unet_tail_loss/objective.py":  "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+                                                                            "tools/durable_io.py":  "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208",
+                                                                            "tools/vp_1103_recovp_hybrid_preflight.py":  "256bd16e664bd9970cf9c3ab1a5b7ab66b8f4aeb10b1dc53e2d9a36d1b45ec6c",
+                                                                            "tools/vp_1103_recovp_hybrid_extended.py":  "4ccd9684cef64d98d1875af800086a48a26873f69243e4d4ffa07078a9f52fff",
+                                                                            "tools/start_recovp_hybrid_extended.py":  "1398932edb99b3a5707849b6bef9b4cab88ec9264c6cbbcf5ae79619be656d9d",
+                                                                            "tools/recovp_hybrid_seed_schedule.py":  "37777be530ef2fc09e70bb4bd40f54592714c9a4898eec0951a494e8a73967da",
+                                                                            "tools/run_recovp_hybrid_split_pipeline.py":  "af852423394c9c1b3fe46dacdbc10ba940812177ae3dfdd22de4df661dbb76ed",
+                                                                            "tools/evaluate_recovp_hybrid_extended.py":  "a8e8d0d5fc36d3df9dc1cf86d837e82ed3639d863b567d861ac186e5b4f0e023",
+                                                                            "tools/start_recovp_hybrid_extended_eval.py":  "8ecea6c399fff1c249b8c5b2b2d1375fe1396cd4fbe8fb0e1f0cbb8eed6ce611",
+                                                                            "tools/run_recovp_hybrid_8seed_pipeline.py":  "c7e41c8a03070a8a98b042550eb9a6cffe62999ded42b9113d5f2e0d721b4a61"
+                                                                        },
+                                                      "preflight_sha256":  "ff5dda96ca4278eaa4f6e8465d99f50cc69351348441c9745c632153849fbaa1"
+                                                  },
+                                     "checkpoint_sha256":  "c7406eb8383d9c5c77b10305b64898bfb5fbe0a12cb8c9ef4ed6cf301db7c646",
+                                     "updated_utc":  "2026-11-27T16:12:51.064717+00:00"
+                                 },
+                      "complete":  false,
+                      "archive_manifest_present":  false,
+                      "archive_files_checked":  0,
+                      "archive_sha_pass":  false
+                  }
+              ],
+    "controller":  {
+                       "pipeline":  "recovp_hybrid_continue512_20261127",
+                       "stage":  "WAITING_FOR_ALL_256",
+                       "seeds":  {
+                                     "17":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212"
+                                            },
+                                     "29":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30"
+                                            },
+                                     "41":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1"
+                                            },
+                                     "53":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147"
+                                            },
+                                     "67":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2"
+                                            },
+                                     "79":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3"
+                                            },
+                                     "97":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c"
+                                            },
+                                     "109":  {
+                                                 "stage":  "PENDING",
+                                                 "attempts":  [
+
+                                                              ],
+                                                 "failures":  0
+                                             }
+                                 },
+                       "sources":  {
+                                       "tools/recovp_hybrid_continue512.py":  "4a87a35842dc1b98402bd4d9692020a9459a1775515edbf98c8b60246486c10c",
+                                       "tools/run_recovp_hybrid_continue512.py":  "d3925805a193fc060b342be1131530a3698859b074855a470fc9bac6985a6cdf",
+                                       "tools/start_recovp_hybrid_continue512.ps1":  "7e9b1f4aeae794ed89bee8c852d67db6ba302d19c1e14233e534c29cfb8ff28e",
+                                       "tools/server_gpu_admission.py":  "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+                                   },
+                       "archive":  "D:\\code\\Xin\\ISRJ_222\\backups\\recovp_hybrid_256_before512_20261127",
+                       "target_epochs":  512,
+                       "lr":  2E-06,
+                       "barrier":  "all eight original seeds complete epoch256",
+                       "admission":  "concurrent use allowed; selected GPU utilization must be below 85 percent",
+                       "created_utc":  "2026-11-27T16:09:06.100724+00:00",
+                       "parent256_complete":  {
+                                                  "17":  true,
+                                                  "29":  true,
+                                                  "41":  true,
+                                                  "53":  true,
+                                                  "67":  true,
+                                                  "79":  true,
+                                                  "97":  true,
+                                                  "109":  false
+                                              },
+                       "parent_archived_seeds":  [
+                                                     17,
+                                                     29,
+                                                     41,
+                                                     53,
+                                                     67,
+                                                     79,
+                                                     97
+                                                 ],
+                       "updated_utc":  "2026-11-27T16:13:14.629684+00:00",
+                       "controller_pid":  19800
+                   },
+    "controller_alive":  true,
+    "gpu_csv":  [
+                    "0, GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d, 99, 9046",
+                    "1, GPU-bb60dd3a-738e-2398-908f-7f77ac05549b, 0, 0"
+                ],
+    "continuation_workers":  [
+
+                             ],
+    "controller_error_present":  false,
+    "stderr_length":  0
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "CONTINUATION_RESTORE_VERIFIED",
+  "seed": 17,
+  "parent_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+  "optimizer_slots": 100,
+  "rng_restored": true,
+  "model_restored": true,
+  "gpu": 1,
+  "updated_utc": "2026-11-27T16:08:12.525298+00:00"
+}
