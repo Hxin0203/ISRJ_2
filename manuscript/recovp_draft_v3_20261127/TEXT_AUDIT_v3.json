@@ -1,0 +1,47 @@
+﻿{
+  "length": 77085,
+  "suspicious_total": 19,
+  "hits": [
+    {
+      "codepoint": "U+3000",
+      "label": "U+3000 IDEOGRAPHIC SPACE (Zs)",
+      "count": 19,
+      "kind": "space",
+      "confidence": "informational",
+      "sample_offsets": [
+        10702,
+        32092,
+        34178,
+        34531,
+        40116,
+        43279,
+        44278,
+        46827,
+        48133,
+        49251
+      ]
+    }
+  ],
+  "notes": [
+    "Layer A only: invisible/format Unicode and space homoglyphs (edit-based carriers).",
+    "Statistical (token-sampling) watermarks are not detectable here; use Layer B rewrite.",
+    "Inspect kinds: strip, bidi, tag_chars, variation_selector, zwj_family, private_use, space, confusable, other_cf.",
+    "Load-bearing invisibles are preserved by default during cleaning: emoji glue, CJK/Mongolian variation selectors, script joiners, complete flag tag sequences, same-script fillers/selectors (Mongolian FVS, Khmer inherent vowels, Hangul jamo fillers), RTL directional marks/paired embeddings, orthographic Arabic/Syriac Cf marks, and visible-layout format controls next to their own script (Egyptian hieroglyph quadrat, Duployan shorthand, musical beaming). Inspection still reports bidi controls. Use explicit strip flags only after review."
+  ],
+  "stylometry": {
+    "path": "G:\\Files\\Markdown\\ISRJ_2\\草稿\\草稿1127\\ReCoVP_Hybrid_中文_draft_v3.md",
+    "word_count": 11358,
+    "sentence_count": 855,
+    "burstiness_cv": 1.0335,
+    "lexical_diversity": 0.7418,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0625,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}
