@@ -1,0 +1,23 @@
+{
+ "created_utc": "2026-11-27T10:21:00Z",
+ "host": "local workstation GPU",
+ "picks": {
+  "P10": 100,
+  "P50": 145,
+  "P90": 77
+ },
+ "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+ "hybrid_seed": 67,
+ "unet_tail_seed": 17,
+ "bindings": {
+  "hybrid": {
+   "checkpoint": "outputs/recovp_hybrid_seed67/seed_67/epoch_256.pt",
+   "checkpoint_sha256": "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2"
+  },
+  "unet_tail": {
+   "checkpoint": "outputs/unet_mf_tail_screen_20261117_v2/tail/seed_17/epoch_256.pt",
+   "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803"
+  }
+ },
+ "script_sha256": "b4e14f89d389d09b2012f80261690ba9bc0ea4114c0f25d2af0dd80072585c98"
+}

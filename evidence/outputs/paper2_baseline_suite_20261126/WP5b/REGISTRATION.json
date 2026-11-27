@@ -1,0 +1,137 @@
+{
+ "registered_utc": "2026-11-27T09:26:18Z",
+ "purpose": "WP5b jammer-structure sweep; evaluation only",
+ "never_used_for": [
+  "training",
+  "threshold calibration",
+  "model/epoch/seed selection"
+ ],
+ "script_sha256": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+ "seed": 2026112800,
+ "parents_per_cell": 64,
+ "snr_db": -10.0,
+ "jsr_db": 20.0,
+ "jsr_definition": "active-support power per pulse (E5/TRAIN)",
+ "repeat_count": 2,
+ "cells": [
+  {
+   "name": "w06",
+   "width": 6,
+   "period": 19,
+   "scan": "width",
+   "extrapolation": [
+    "period outside training range"
+   ]
+  },
+  {
+   "name": "w18",
+   "width": 18,
+   "period": 55,
+   "scan": "width",
+   "extrapolation": []
+  },
+  {
+   "name": "w36",
+   "width": 36,
+   "period": 109,
+   "scan": "width",
+   "extrapolation": []
+  },
+  {
+   "name": "w54",
+   "width": 54,
+   "period": 163,
+   "scan": "width",
+   "extrapolation": []
+  },
+  {
+   "name": "w72",
+   "width": 72,
+   "period": 217,
+   "scan": "width",
+   "extrapolation": []
+  },
+  {
+   "name": "eta_p145",
+   "width": 36,
+   "period": 145,
+   "scan": "eta",
+   "extrapolation": []
+  },
+  {
+   "name": "eta_p217",
+   "width": 36,
+   "period": 217,
+   "scan": "eta",
+   "extrapolation": []
+  }
+ ],
+ "eta_note": "period 109 at w=36 is shared with width cell w36",
+ "primary_jammer_type": "repeat",
+ "training_range": {
+  "window": [
+   6,
+   72
+  ],
+  "period": [
+   36,
+   260
+  ],
+  "repeats": [
+   1,
+   10
+  ]
+ },
+ "thresholds": "method's own E3/E6/E7 calibration curve at target frame Pfa 1% and 5%; not refit",
+ "paper1_sources": [
+  "D:/Project Code/ISRJ_publication_width_20261113_v4/evidence/outputs/width_dense_m2_20261114/code/PROTOCOL_LOCK.json",
+  "D:/Project Code/ISRJ_publication_width_20261113_v4/evidence/outputs/eta_m2_20261114/code/PROTOCOL_LOCK.json"
+ ],
+ "methods": [
+  "ReCoVP-Hybrid",
+  "ReCoVP-Hybrid",
+  "ReCoVP-Hybrid",
+  "ReCoVP-Hybrid",
+  "ReCoVP-Hybrid",
+  "CorrectionNet",
+  "CorrectionNet",
+  "CorrectionNet",
+  "CN-NoDechirp",
+  "CN-NoDechirp",
+  "CN-NoDechirp",
+  "CN-NoRMS",
+  "CN-NoRMS",
+  "CN-NoRMS",
+  "CN-NoPC",
+  "CN-NoPC",
+  "CN-NoPC",
+  "CN-NoDamage",
+  "CN-NoDamage",
+  "CN-NoDamage",
+  "UNet",
+  "UNet",
+  "UNet",
+  "CorrectionNet-Ctrl",
+  "CorrectionNet-Ctrl",
+  "CorrectionNet-Ctrl",
+  "CorrectionNet-Tail",
+  "CorrectionNet-Tail",
+  "CorrectionNet-Tail",
+  "UNet-Tail",
+  "UNet-Tail",
+  "UNet-Tail",
+  "UNet-NoiseNorm",
+  "UNet-NoiseNorm",
+  "UNet-NoiseNorm",
+  "UNet-Freq",
+  "UNet-Freq",
+  "UNet-Freq",
+  "UNet-Dilation",
+  "UNet-Dilation",
+  "UNet-Dilation",
+  "RSDR-Net",
+  "CVEDNet",
+  "Max-TF",
+  "GMM-OMP"
+ ]
+}

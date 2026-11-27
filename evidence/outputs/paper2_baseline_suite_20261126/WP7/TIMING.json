@@ -1,0 +1,431 @@
+{
+ "created_utc": "2026-11-27T10:04:27Z",
+ "host": "DESKTOP-RHKS2SI",
+ "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+ "torch": "2.9.1+cu126",
+ "cuda": "12.6",
+ "gpu": "NVIDIA GeForce RTX 4060",
+ "gpu_before": [
+  "0, NVIDIA GeForce RTX 4060, GPU-d23ab9c1-073a-1ae7-92a6-7690b8f578d3, 45 %, 5143 MiB, 8188 MiB"
+ ],
+ "gpu_after": [
+  "0, NVIDIA GeForce RTX 4060, GPU-d23ab9c1-073a-1ae7-92a6-7690b8f578d3, 18 %, 1596 MiB, 8188 MiB"
+ ],
+ "interfered": true,
+ "note_concurrency": "local desktop applications (browser, Lightroom, wallpaper) share this GPU; no compute jobs",
+ "input_sha256": "9885a204df0b73349d05234209764a2d87f6129510cf1485b4b69334ddfcba28",
+ "precision": "FP32, TF32 off",
+ "protocol": "WP7: same-machine inference timing on the LOCAL workstation GPU (evaluation only, no training).\n\nUser authorization 2026-11-27: when server-B GPUs are busy, the idle local GPU may be used for\nevaluation/inference. Server GPUs were saturated by the resumed seed-79/97 training, so timing\nthere would be contaminated. All methods are timed here, on one GPU, same precision and inputs.\n\nIdentity: every checkpoint is SHA-checked against the server copy (values below, read on\nserver B); Hybrid source bindings are checked against local files (byte-identical to server).\nInput: 4 parents from the frozen generator, role 'engineering', seed 2026112790, SNR -10 dB,\nJSR 20 dB, operational observation y = S+J+E only (the four-state construction is an\nevaluation device and is not timed). Unit: pulses (1800 complex samples); one CPI = 8 pulses.\nProtocol: FP32, TF32 off, warm-up 20, measure 200, torch.cuda.synchronize() before/after each\ncall; end-to-end = numpy complex in -> numpy complex out; network-only = device tensors in/out.\n",
+ "seconds": 599.1776072978973,
+ "script_sha256": "ba0ad4ca2012273728c71db1671aca2d32e75d8cba582fa23b44aedd563142ae",
+ "flops_note": "torch FlopCounterMode; FFT/linalg/complex elementwise may be uncounted",
+ "methods": {
+  "UNet-Tail": {
+   "binding": {
+    "checkpoint": "outputs/unet_mf_tail_screen_20261117_v2/tail/seed_17/epoch_256.pt",
+    "checkpoint_sha256": "ba7ce8f34d59ad7c071b23a9bd61c2f66a58bd78f675772f4ebbcbc549461803"
+   },
+   "parameters": 59714,
+   "by_pulses": {
+    "1": {
+     "end_to_end": {
+      "median_ms": 4.639549999410519,
+      "p5_ms": 2.1908449965849286,
+      "p95_ms": 17.515205000745446,
+      "mean_ms": 6.5261860000828165,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 2.344600001379149,
+      "p5_ms": 1.3385950020165183,
+      "p95_ms": 7.629500002076267,
+      "mean_ms": 3.584719500031497,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "8": {
+     "end_to_end": {
+      "median_ms": 4.0065499997581355,
+      "p5_ms": 2.4119649970089085,
+      "p95_ms": 11.736369999198354,
+      "mean_ms": 5.164776999881724,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 3.058350001083454,
+      "p5_ms": 1.9573499979742337,
+      "p95_ms": 12.024209997616678,
+      "mean_ms": 4.14292999994359,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 11.082900000474183,
+      "p5_ms": 8.596105000469834,
+      "p95_ms": 34.018730001116616,
+      "mean_ms": 14.567315999993298,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 7.2454499968444,
+      "p5_ms": 5.686689996582572,
+      "p95_ms": 18.84533499760437,
+      "mean_ms": 9.04459350011166,
+      "n": 200,
+      "warmup": 20
+     }
+    }
+   },
+   "flops_per_pulse": 91800000
+  },
+  "CorrectionNet-Tail": {
+   "binding": {
+    "checkpoint": "outputs/correction_mf_tail_20261117_v1/arm/seed_17/epoch_256.pt",
+    "checkpoint_sha256": "7ff216c12dc0e7cb4f1ce0df18aa41d7946797e7de475470997ddd25f3f0e24b"
+   },
+   "parameters": 112756,
+   "by_pulses": {
+    "1": {
+     "end_to_end": {
+      "median_ms": 6.653799999185139,
+      "p5_ms": 3.472019999026088,
+      "p95_ms": 26.991665004243252,
+      "mean_ms": 9.004845000308705,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 5.019300002459204,
+      "p5_ms": 2.937224998095189,
+      "p95_ms": 17.136555005708924,
+      "mean_ms": 6.635473999849637,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "8": {
+     "end_to_end": {
+      "median_ms": 7.191000004240777,
+      "p5_ms": 4.2179349962680135,
+      "p95_ms": 33.13079499785084,
+      "mean_ms": 10.958596000273246,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 7.26839999697404,
+      "p5_ms": 3.8172849992406555,
+      "p95_ms": 28.647945003467594,
+      "mean_ms": 9.980916000095021,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 11.511249998875428,
+      "p5_ms": 9.14444999943953,
+      "p95_ms": 27.043535000120727,
+      "mean_ms": 13.741353999976127,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 8.826150002278155,
+      "p5_ms": 7.108144995800103,
+      "p95_ms": 17.5517799991212,
+      "mean_ms": 10.22716399987985,
+      "n": 200,
+      "warmup": 20
+     }
+    }
+   },
+   "flops_per_pulse": 94809600
+  },
+  "ReCoVP-Hybrid": {
+   "binding": {
+    "checkpoint": "outputs/recovp_hybrid_seed67/seed_67/epoch_256.pt",
+    "checkpoint_sha256": "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2"
+   },
+   "parameters_effective_real": {
+    "stage1_effective_real_parameters": 28948,
+    "stage2_effective_real_parameters": 28577,
+    "total_effective_real_parameters": 57525,
+    "limit": 59700
+   },
+   "by_pulses": {
+    "1": {
+     "end_to_end": {
+      "median_ms": 38.25169999981881,
+      "p5_ms": 25.223595001807553,
+      "p95_ms": 73.33835500285204,
+      "mean_ms": 41.75872250038083,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 39.97815000184346,
+      "p5_ms": 24.64546500123106,
+      "p95_ms": 66.46689999979569,
+      "mean_ms": 42.64504750030028,
+      "n": 200,
+      "warmup": 20
+     },
+     "stage1_only": {
+      "median_ms": 24.240349997853627,
+      "p5_ms": 15.981000001556822,
+      "p95_ms": 45.401369998944574,
+      "mean_ms": 27.006956500081287,
+      "n": 200,
+      "warmup": 20
+     },
+     "stage2_only": {
+      "median_ms": 6.723000002239132,
+      "p5_ms": 5.087940000157687,
+      "p95_ms": 23.568540001360777,
+      "mean_ms": 9.969837000244297,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "8": {
+     "end_to_end": {
+      "median_ms": 43.73629999827244,
+      "p5_ms": 29.516285000136122,
+      "p95_ms": 92.92393999821795,
+      "mean_ms": 51.329376499852515,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 52.732549997017486,
+      "p5_ms": 35.345540000344045,
+      "p95_ms": 94.36065000409143,
+      "mean_ms": 56.55068299980485,
+      "n": 200,
+      "warmup": 20
+     },
+     "stage1_only": {
+      "median_ms": 32.20650000002934,
+      "p5_ms": 20.58870499568002,
+      "p95_ms": 62.60427499801152,
+      "mean_ms": 36.122894500040275,
+      "n": 200,
+      "warmup": 20
+     },
+     "stage2_only": {
+      "median_ms": 17.743349999364,
+      "p5_ms": 11.139294999156846,
+      "p95_ms": 36.71093499906419,
+      "mean_ms": 20.344926500001748,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 78.77429999643937,
+      "p5_ms": 61.06271500248113,
+      "p95_ms": 120.57062500571192,
+      "mean_ms": 82.47666950017447,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 77.11790000030305,
+      "p5_ms": 60.89314999735507,
+      "p95_ms": 104.12367499920944,
+      "mean_ms": 79.3683664996206,
+      "n": 200,
+      "warmup": 20
+     },
+     "stage1_only": {
+      "median_ms": 56.84399999881862,
+      "p5_ms": 48.240625001926674,
+      "p95_ms": 79.10163500055201,
+      "mean_ms": 58.60043549982947,
+      "n": 200,
+      "warmup": 20
+     },
+     "stage2_only": {
+      "median_ms": 15.82235000023502,
+      "p5_ms": 9.413860000495333,
+      "p95_ms": 36.82277500229245,
+      "mean_ms": 18.41494199976296,
+      "n": 200,
+      "warmup": 20
+     }
+    }
+   },
+   "flops_per_pulse": 137956942,
+   "flops_stage1_per_pulse": 85899424
+  },
+  "CVEDNet": {
+   "binding": {
+    "checkpoint": "outputs/wp7_external/cvednet_e320.pt",
+    "checkpoint_sha256": "8cbdad0225b315ba34d0f2b3ed8d456995760eba0d2498b515087f7da923663a"
+   },
+   "parameters": 11024690,
+   "by_pulses": {
+    "1": {
+     "end_to_end": {
+      "median_ms": 27.651650001644157,
+      "p5_ms": 24.79984999736189,
+      "p95_ms": 35.00043000058213,
+      "mean_ms": 28.729699999894365,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 79.82635000007576,
+      "p5_ms": 30.605120000473107,
+      "p95_ms": 144.27725499808727,
+      "mean_ms": 83.29502949993184,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "8": {
+     "end_to_end": {
+      "median_ms": 72.84790000267094,
+      "p5_ms": 42.36728499927267,
+      "p95_ms": 168.8448100019741,
+      "mean_ms": 85.04569900018396,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 80.55620000595809,
+      "p5_ms": 48.40733500495844,
+      "p95_ms": 132.4194549983076,
+      "mean_ms": 83.93950099954964,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 609.5914499965147,
+      "p5_ms": 542.5458599864214,
+      "p95_ms": 653.9335450026556,
+      "mean_ms": 608.2668125003693,
+      "n": 200,
+      "warmup": 20
+     },
+     "network_only": {
+      "median_ms": 577.3391499969875,
+      "p5_ms": 556.271929997456,
+      "p95_ms": 628.276174988423,
+      "mean_ms": 584.1708339998877,
+      "n": 200,
+      "warmup": 20
+     }
+    }
+   },
+   "flops_per_pulse": 9740271616
+  },
+  "RSDR-Net": {
+   "parameters": 3017877,
+   "unit_note": "processes whole CPIs (8 pulses); restore(..., state_indexes=[3]) runs experts/routers on y only",
+   "network_only": "not separated (adapter is numpy in/out)",
+   "by_pulses": {
+    "8": {
+     "end_to_end": {
+      "median_ms": 28.903099992021453,
+      "p5_ms": 27.01799999558716,
+      "p95_ms": 33.11721500285784,
+      "mean_ms": 29.33093950028706,
+      "n": 200,
+      "warmup": 20
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 183.28939999628346,
+      "p5_ms": 176.7194549931446,
+      "p95_ms": 191.36976501104073,
+      "mean_ms": 183.71098599986,
+      "n": 200,
+      "warmup": 20
+     }
+    }
+   }
+  },
+  "Max-TF": {
+   "device": "CPU",
+   "by_pulses": {
+    "1": {
+     "end_to_end": {
+      "median_ms": 0.6881500012241304,
+      "p5_ms": 0.6504449920612387,
+      "p95_ms": 2.067020001413766,
+      "mean_ms": 0.8778480003820732,
+      "n": 50,
+      "warmup": 5
+     }
+    },
+    "8": {
+     "end_to_end": {
+      "median_ms": 10.621049994369969,
+      "p5_ms": 9.401589991466608,
+      "p95_ms": 15.446664999763016,
+      "mean_ms": 11.13810599927092,
+      "n": 50,
+      "warmup": 5
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 80.98669999890262,
+      "p5_ms": 75.15647499967599,
+      "p95_ms": 96.32633000073838,
+      "mean_ms": 82.24944800051162,
+      "n": 50,
+      "warmup": 5
+     }
+    }
+   }
+  },
+  "GMM-OMP": {
+   "device": "CPU",
+   "by_pulses": {
+    "1": {
+     "end_to_end": {
+      "median_ms": 29.986749999807216,
+      "p5_ms": 28.2026649954787,
+      "p95_ms": 38.77499500231351,
+      "mean_ms": 31.13505799934501,
+      "n": 50,
+      "warmup": 5
+     }
+    },
+    "8": {
+     "end_to_end": {
+      "median_ms": 174.4664500001818,
+      "p5_ms": 166.80622000058065,
+      "p95_ms": 205.62138999739545,
+      "mean_ms": 177.55348799953936,
+      "n": 50,
+      "warmup": 5
+     }
+    },
+    "64": {
+     "end_to_end": {
+      "median_ms": 726.9500500042341,
+      "p5_ms": 641.475519999949,
+      "p95_ms": 914.4429999978456,
+      "mean_ms": 746.1152720003156,
+      "n": 50,
+      "warmup": 5
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "parents": 256,
+ "seeds": [
+  17,
+  29,
+  41,
+  53,
+  67
+ ],
+ "dE_U": {
+  "mean": -0.3529539440662281,
+  "median": -0.0753486291650213,
+  "frac_improved": 0.96484375
+ },
+ "dE_S": {
+  "mean": -0.06661922994435446,
+  "median": 0.005531309470837759,
+  "p95": 0.04412416475707086,
+  "frac_improved": 0.31640625
+ },
+ "d_amplitude": {
+  "mean": -0.06433458438120583,
+  "median": -0.058818898105217066,
+  "frac_decreased": 1.0
+ },
+ "quadrants": {
+  "damage_down_amp_down": 0.31640625,
+  "damage_down_amp_up": 0.0,
+  "damage_up_amp_down": 0.68359375,
+  "damage_up_amp_up": 0.0
+ },
+ "corr_dd_da": 0.03758043079903899,
+ "fig5_rule": "per-parent 5-seed Hybrid E_S minus 3-seed UNet-Tail E_S; nearest to P10/P50/P90, ties -> smaller index",
+ "fig5_seed": 67,
+ "fig5_picks": {
+  "10": {
+   "index": 100,
+   "parent_id": 2026111302000100,
+   "diff": -0.01685856117537149
+  },
+  "50": {
+   "index": 145,
+   "parent_id": 2026111302000145,
+   "diff": 0.0006326941598257946
+  },
+  "90": {
+   "index": 77,
+   "parent_id": 2026111302000077,
+   "diff": 0.021761037086856172
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "source": "WP8 PARENT_VALUES.npz (DEV256, K=16 learned)",
+ "source_sha256": {
+  "17": "7ffe30ce6c6eaa29c630911ae1d18082ae64f97c28c3d0ecb4030b8000d298a6",
+  "29": "135fb4776666319176a41db2a89dacb139d4f5d789e1997df8060dd48ebb9a27",
+  "41": "04f958a16c7abb3a75e2a724b879c12f429c1efedf221afc49569e9ed5d63d65",
+  "53": "b17d837f36f871c306f7d8539e7ad686338c1332228f6b8e61e33d8dfbf74103",
+  "67": "159d788d607723dc19874df133943f722bbeb396a85dda9e1cb69eadf403540a"
+ },
+ "keys": [
+  "u_nmse",
+  "damage",
+  "amplitude",
+  "phase_deg",
+  "noise_nmse",
+  "frame_pfa_jammer",
+  "pd"
+ ]
+}

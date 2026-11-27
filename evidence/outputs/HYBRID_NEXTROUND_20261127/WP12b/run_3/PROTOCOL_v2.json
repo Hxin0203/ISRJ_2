@@ -1,0 +1,16 @@
+{
+ "version": 2,
+ "registered_utc": "2026-11-27T10:05:42Z",
+ "base_protocol_sha256": "2ddddefef75d5f4fa72cdfa98ba1a66dcf057e01c67f7fc40bd1448e9a443b91",
+ "base_script_sha256": "1744afce4fbef7fb79b65acec63ce5fdfd0edc99a0c6a3a4e1f75794e53dc5dc",
+ "script_sha256": "0f1662e93a84224830ab75e08474eeef41b043e6aef8f36118279a2a4832d519",
+ "amendments": [
+  "per-pulse mean ratios over jammed pulses only (||J_p||^2 > 0); unjammed-pulse correction reported separately",
+  "per-frame span self-check: Stage-1 correction outside span(D) must be < 1e-6",
+  "overlap: Hybrid 5-seed union of per-seed top-1% vs UNet-Tail 3-seed union (E3) and RSDR-Net (E7)",
+  "labels from pooled (a) ratios as registered; mean-pulse (b) labels reported alongside"
+ ],
+ "host": "local workstation GPU (user authorization 2026-11-27; server GPUs saturated by resumed training)",
+ "training": false,
+ "confirmation_access": false
+}
