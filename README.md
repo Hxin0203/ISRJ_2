@@ -1,19 +1,11 @@
 # ISRJ_2: target-response-constrained restoration
 
 <!-- HYBRID_5SEED_RESULTS_START -->
-## Hybrid 五种子结果（固定更新入口）
+## 实验结果与文件存放说明（固定入口）
 
-本轮完成 seed **17、29、41、53、67** 的 epoch 256 汇总与零训练补测，共 **15 张图（PNG + PDF）**。覆盖训练收敛、Equal-PFA、32 格 SNR×JSR、12 类卷积对照、背景长尾、脉压/相位/多普勒和五种子冻结推理干预。
+请阅读根目录固定说明报告：[实验结果与文件存放说明.md](handoff/实验结果与文件存放说明.md)。其中列出项目与交接备份的完整路径、报告与图表用途、五种子结论及未完成项。
 
-- 综合报告：[REPORT.md](reports/Hybrid_5seed_20261127/REPORT.md)。
-- 数值与证据：同目录 `ANALYSIS.json`、`TRAINING.json`、各项 CSV、`VALIDATION.json` 和逐文件 SHA256 的 `MANIFEST.json`。
-- 项目备份：`G:/Project Code/ISRJ_222/reports/Hybrid_5seed_20261127/`。
-- 交接备份：`G:/Files/Markdown/ISRJ_2/opus对话/03_分析/Hybrid_5seed_20261127/`。
-- GitHub 同步回执：`handoff/Hybrid_5seed_20261127/GITHUB_SYNC.json`（推送核验后写入）。
-
-主要结论：Hybrid 在 5%/10% 校准虚警点超过两种 Tail 基线；对第一篇 RSDR-Net，5% 点略低、10% 点持平、1% 点明显落后。受控扫描中平均 E_U 和 E_S 更低；DEV 脉压目标相干功率少损失约 0.323 dB，但实际含噪多普勒估计未证实改善。seed 67 的 E0 异常已保留并单列。不同评测分布的排名不能混用；BVR01/JCR、独立确认集和公平计时尚未封口。这是五种子阶段报告，不是八种子最终结论。
-
-维护规则：以后本项结果、路径或结论变更时，**直接更新本 README 的这个固定段落**，保留本说明入口，不另建新的主目录说明报告。历史备份放入对应备份目录。
+以后每次实验或交接内容变更，直接更新这份固定说明报告及项目镜像；本 README 保留入口，不另建新的根目录说明报告。
 <!-- HYBRID_5SEED_RESULTS_END -->
 
 
