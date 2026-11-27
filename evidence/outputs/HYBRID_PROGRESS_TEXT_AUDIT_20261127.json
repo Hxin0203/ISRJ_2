@@ -1,0 +1,17 @@
+{
+  "report": "evidence/outputs/HYBRID_PROGRESS_REPORT_20261127.md",
+  "method": "offline clean-user-facing-text inspect_text.py --audit",
+  "backup_before_append": "%TEMP%/HYBRID_PROGRESS_REPORT_20261127.pre_audit.md",
+  "backup_sha256": "89c611909ce258b4a6044ad149e9e320eba3767a3dd3b49a70f0ead25c5c2bc0",
+  "protected_spans": "all values, formulas, code, paths, model names and identifiers",
+  "initial_flagged_count": 0,
+  "initial_density_tier": "low",
+  "initial_score": 0.0325,
+  "final_flagged_count": 0,
+  "final_density_tier": "low",
+  "final_score": 0.0325,
+  "final_report_sha256": "8ee521281e1f6defb1e7eef73eda2322e008e58321e4d4707c47040668599400",
+  "chinese_heuristic_limitation": "English stylometry is not a calibrated quality or authorship measure for Chinese prose",
+  "cleanup": "none; no flagged spans; factual verification update appended without rewriting original prose",
+  "tests": "python -m pytest tests/test_recovp_hybrid_queue_recovery.py tests/test_recovp_hybrid_split_pipeline.py -q: 5 passed"
+}

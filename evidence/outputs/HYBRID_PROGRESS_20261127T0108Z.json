@@ -1,0 +1,275 @@
+{
+  "checked_utc": "2026-11-27T01:07:55.450437+00:00",
+  "seeds": {
+    "17": {
+      "status": {
+        "stage": "TRAINING_COMPLETE",
+        "epoch": null,
+        "update": null,
+        "last_committed_epoch": null,
+        "updated_utc": "2026-11-25T17:24:38.082902+00:00"
+      },
+      "complete": true,
+      "recovery_receipt_count": 257,
+      "completed_utc": "2026-11-25T17:24:38.021859+00:00",
+      "source_sha_mismatches": [],
+      "data_sha256_bound": {
+        "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+        "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+        "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+      },
+      "verified_checkpoint_epoch": 256,
+      "checkpoint_sha_matches": true
+    },
+    "29": {
+      "status": {
+        "stage": "TRAINING_COMPLETE",
+        "epoch": null,
+        "update": null,
+        "last_committed_epoch": null,
+        "updated_utc": "2026-11-26T11:37:01.840315+00:00"
+      },
+      "complete": true,
+      "recovery_receipt_count": 257,
+      "completed_utc": "2026-11-26T11:37:01.784832+00:00",
+      "source_sha_mismatches": [],
+      "data_sha256_bound": {
+        "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+        "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+        "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+      },
+      "verified_checkpoint_epoch": 256,
+      "checkpoint_sha_matches": true
+    },
+    "41": {
+      "status": {
+        "stage": "TRAINING_COMPLETE",
+        "epoch": null,
+        "update": null,
+        "last_committed_epoch": null,
+        "updated_utc": "2026-11-26T15:10:45.737971+00:00"
+      },
+      "complete": true,
+      "recovery_receipt_count": 257,
+      "completed_utc": "2026-11-26T15:10:45.681507+00:00",
+      "source_sha_mismatches": [],
+      "data_sha256_bound": {
+        "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+        "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+        "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+      },
+      "verified_checkpoint_epoch": 256,
+      "checkpoint_sha_matches": true
+    },
+    "53": {
+      "status": {
+        "stage": "TRAINING_COMPLETE",
+        "epoch": null,
+        "update": null,
+        "last_committed_epoch": null,
+        "updated_utc": "2026-11-26T19:58:33.696255+00:00"
+      },
+      "complete": true,
+      "recovery_receipt_count": 257,
+      "completed_utc": "2026-11-26T19:58:33.641175+00:00",
+      "source_sha_mismatches": [],
+      "data_sha256_bound": {
+        "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+        "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+        "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+      },
+      "verified_checkpoint_epoch": 256,
+      "checkpoint_sha_matches": true
+    },
+    "67": {
+      "status": {
+        "stage": "TRAINING",
+        "epoch": 193,
+        "update": 24,
+        "last_committed_epoch": 192,
+        "updated_utc": "2026-11-27T01:07:45.978176+00:00"
+      },
+      "complete": false,
+      "recovery_receipt_count": 0,
+      "completed_utc": null,
+      "source_sha_mismatches": [],
+      "data_sha256_bound": {
+        "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+        "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+        "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+      },
+      "verified_checkpoint_epoch": 192,
+      "checkpoint_sha_matches": true
+    },
+    "79": {
+      "status": null,
+      "complete": false,
+      "recovery_receipt_count": 0,
+      "completed_utc": null
+    },
+    "97": {
+      "status": {
+        "stage": "TRAINING",
+        "epoch": 2,
+        "update": 1,
+        "last_committed_epoch": 1,
+        "updated_utc": "2026-11-27T01:07:49.451386+00:00"
+      },
+      "complete": false,
+      "recovery_receipt_count": 0,
+      "completed_utc": null,
+      "source_sha_mismatches": [],
+      "data_sha256_bound": {
+        "train.npz": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+        "train.receipt.json": "93567c81489b6e78b4120b6b4e1e5aedf56e08338d29c96b6236d992a269aed3",
+        "dev.npz": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "dev.receipt.json": "61e439503223258b969fcb8dd53a709bc5f60b1a128cde232ef645f98c1e2092"
+      },
+      "verified_checkpoint_epoch": 1,
+      "checkpoint_sha_matches": true
+    },
+    "109": {
+      "status": null,
+      "complete": false,
+      "recovery_receipt_count": 0,
+      "completed_utc": null
+    }
+  },
+  "gpu_csv": "0, GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d, 97, 8054, 16311\n1, GPU-bb60dd3a-738e-2398-908f-7f77ac05549b, 87, 7170, 16311",
+  "recovery": {
+    "stage": "RUNNING_SEED",
+    "pid": 20812,
+    "seeds": [
+      97,
+      109
+    ],
+    "controller_sha256": "7d60385a5b05ed6deac35d65dcee54be8e2e3aa0f8e192f1117f2aa63cfbdb41",
+    "completed": [],
+    "current_seed": 97,
+    "attempt": 1,
+    "selected_gpu": {
+      "physical_gpu_index": 0,
+      "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+      "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+      "utilization_percent": 3,
+      "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+    },
+    "log": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_queue_recovery_20261127\\seed97_attempt001.log",
+    "training_errors": 0,
+    "updated_utc": "2026-11-27T01:05:49.573045+00:00"
+  },
+  "split": {
+    "stage": "STARTING",
+    "controller_source_sha256": "af852423394c9c1b3fe46dacdbc10ba940812177ae3dfdd22de4df661dbb76ed",
+    "updated_utc": "2026-11-26T19:58:34.684013+00:00",
+    "epochs_per_seed": 256,
+    "gpu_lanes": {
+      "0": {
+        "seeds": [
+          97,
+          109
+        ],
+        "stage": "FAILED",
+        "current_seed": 97,
+        "attempt": 8,
+        "max_attempts": 8,
+        "admission": "fixed GPU utilization < 85%",
+        "exit_code": 1,
+        "retry_after_seconds": 60,
+        "attempts": 8,
+        "error_type": "RuntimeError",
+        "error": "seed 97 failed 8 dispatch attempts"
+      },
+      "1": {
+        "seeds": [
+          53,
+          67,
+          79
+        ],
+        "stage": "RUNNING_SEED",
+        "current_seed": 67,
+        "attempt": 1,
+        "max_attempts": 8,
+        "admission": "fixed GPU utilization < 85%",
+        "completed_seed": {
+          "seed": 53,
+          "receipt": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed53\\TRAINING_COMPLETE.json",
+          "completed_utc": "2026-11-26T19:58:33.641175+00:00",
+          "epochs": 256
+        },
+        "receipt_sha256": "bdc8009f65463f4fe2effc89c2a78b905d026766a6aed9f655753aee3163ead3"
+      }
+    },
+    "dev_evaluation": "handled by the existing eight-seed controller after all training receipts validate"
+  },
+  "eight_seed": {
+    "stage": "RUNNING",
+    "updated_utc": "2026-11-26T19:58:47.713063+00:00",
+    "seeds": [
+      17,
+      29,
+      41,
+      53,
+      67,
+      79,
+      97,
+      109
+    ],
+    "epochs_per_seed": 256,
+    "queue": [
+      41,
+      53,
+      67,
+      79,
+      97,
+      109
+    ],
+    "current_seed": 67,
+    "attempt": 1,
+    "max_attempts": 8,
+    "completed": {
+      "17": {
+        "seed": 17,
+        "receipt": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed17\\TRAINING_COMPLETE.json",
+        "receipt_sha256": "8812452c2202ae801a05d332c75e57ba4bef36d72539122b781acf4a24361d34",
+        "completed_utc": "2026-11-25T17:24:38.021859+00:00",
+        "epochs": 256
+      },
+      "29": null,
+      "41": {
+        "seed": 41,
+        "receipt": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed41\\TRAINING_COMPLETE.json",
+        "receipt_sha256": "9f2e04d098e09c54aa235791563ed7aec609aea7f5d2b9a201738c5a65798a5a",
+        "completed_utc": "2026-11-26T15:10:45.681507+00:00",
+        "epochs": 256
+      },
+      "53": {
+        "seed": 53,
+        "receipt": "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_seed53\\TRAINING_COMPLETE.json",
+        "receipt_sha256": "bdc8009f65463f4fe2effc89c2a78b905d026766a6aed9f655753aee3163ead3",
+        "completed_utc": "2026-11-26T19:58:33.641175+00:00",
+        "epochs": 256
+      },
+      "67": null,
+      "79": null,
+      "97": null,
+      "109": null
+    },
+    "gpu_admission": "selected device must be below 85%; no existing process is stopped"
+  },
+  "evaluation": {
+    "stage": "FOLLOW_HYBRID",
+    "heartbeat_utc": "2026-11-27T00:53:29Z",
+    "hybrid_seeds_included": [
+      17,
+      29,
+      41,
+      53
+    ]
+  }
+}
