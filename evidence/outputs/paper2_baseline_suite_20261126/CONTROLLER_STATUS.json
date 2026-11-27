@@ -1,0 +1,162 @@
+{
+ "started_utc": "2026-11-26T17:07:52Z",
+ "pid": 29072,
+ "steps": {
+  "E7b/RSDR-Net": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T17:27:52Z",
+   "updated_utc": "2026-11-26T17:40:16Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E7b_RSDR-Net_20261127_012752.log"
+  },
+  "aggregate": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:25Z",
+   "updated_utc": "2026-11-26T20:23:29Z",
+   "exit_code": 0,
+   "gpu": null,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\aggregate_20261127_042325.log"
+  },
+  "E5/generate": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T17:40:20Z",
+   "updated_utc": "2026-11-26T17:41:16Z",
+   "exit_code": 0,
+   "gpu": null,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_generate_20261127_014020.log"
+  },
+  "E5/Max-TF": {
+   "state": "DONE",
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_Max-TF.log",
+   "updated_utc": "2026-11-26T20:23:25Z",
+   "exit_code": 0
+  },
+  "E5/GMM-OMP": {
+   "state": "DONE",
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_GMM-OMP.log",
+   "updated_utc": "2026-11-26T20:23:25Z",
+   "exit_code": 0
+  },
+  "E5/ReCoVP-Hybrid/17": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:19:41Z",
+   "updated_utc": "2026-11-26T20:19:41Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_ReCoVP-Hybrid_17_20261127_041941.log"
+  },
+  "E5/ReCoVP-Hybrid/29": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:19:41Z",
+   "updated_utc": "2026-11-26T20:19:42Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_ReCoVP-Hybrid_29_20261127_041942.log"
+  },
+  "E5/ReCoVP-Hybrid/41": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:19:42Z",
+   "updated_utc": "2026-11-26T20:19:42Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_ReCoVP-Hybrid_41_20261127_041942.log"
+  },
+  "E5/CorrectionNet/17": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:23Z",
+   "updated_utc": "2026-11-26T20:23:23Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_CorrectionNet_17_20261127_042323.log"
+  },
+  "E5/CorrectionNet/29": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:23Z",
+   "updated_utc": "2026-11-26T20:23:24Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_CorrectionNet_29_20261127_042323.log"
+  },
+  "E5/CorrectionNet/41": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:24Z",
+   "updated_utc": "2026-11-26T20:23:24Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_CorrectionNet_41_20261127_042324.log"
+  },
+  "E5/UNet/17": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:24Z",
+   "updated_utc": "2026-11-26T20:23:24Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_UNet_17_20261127_042324.log"
+  },
+  "E5/UNet/29": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:24Z",
+   "updated_utc": "2026-11-26T20:23:24Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_UNet_29_20261127_042324.log"
+  },
+  "E5/UNet/41": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:24Z",
+   "updated_utc": "2026-11-26T20:23:24Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_UNet_41_20261127_042324.log"
+  },
+  "E5/CVEDNet/None": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:24Z",
+   "updated_utc": "2026-11-26T20:23:25Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_CVEDNet_None_20261127_042324.log"
+  },
+  "E5/RSDR-Net/None": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:25Z",
+   "updated_utc": "2026-11-26T20:23:25Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_RSDR-Net_None_20261127_042325.log"
+  },
+  "E5/summarize": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:23:25Z",
+   "updated_utc": "2026-11-26T20:23:25Z",
+   "exit_code": 0,
+   "gpu": null,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_summarize_20261127_042325.log"
+  },
+  "E3/hybrid_update": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:12:36Z",
+   "updated_utc": "2026-11-26T20:19:41Z",
+   "exit_code": 0,
+   "gpu": null,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E3_hybrid_update_20261127_041236.log"
+  },
+  "E5/ReCoVP-Hybrid/53": {
+   "state": "DONE",
+   "started_utc": "2026-11-26T20:19:42Z",
+   "updated_utc": "2026-11-26T20:23:23Z",
+   "exit_code": 0,
+   "gpu": 0,
+   "log": "D:\\code\\Xin\\ISRJ_222\\outputs\\paper2_baseline_suite_20261126\\controller_logs\\E5_ReCoVP-Hybrid_53_20261127_041942.log"
+  }
+ },
+ "stage": "FOLLOW_HYBRID",
+ "heartbeat_utc": "2026-11-27T00:23:29Z",
+ "hybrid_seeds_included": [
+  17,
+  29,
+  41,
+  53
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "registered_utc": "2026-11-26T17:40:20Z",
+ "purpose": "E5 controlled SNR x JSR sweep; evaluation only",
+ "never_used_for": [
+  "training",
+  "threshold calibration",
+  "model/epoch/seed selection"
+ ],
+ "generator": "paper2.data_1103.generate fixed-condition mode, role 'test'",
+ "snr_db": [
+  -25,
+  -20,
+  -15,
+  -10,
+  -5,
+  0,
+  5,
+  10
+ ],
+ "jsr_db": [
+  0,
+  10,
+  20,
+  30
+ ],
+ "parents_per_cell": 64,
+ "seed_rule": "cell k (row-major over SNR then JSR) uses seed 2026112700+k",
+ "data_dir": "D:\\code\\Xin\\ISRJ_222\\data\\paper2_baseline_suite_20261126\\sweep"
+}
