@@ -1,0 +1,54 @@
+{
+  "status": "USER_PAUSED",
+  "requested_seeds": [
+    79,
+    97,
+    109
+  ],
+  "started_utc": "2026-11-27T04:56:29.687061+00:00",
+  "automatic_resume": false,
+  "resume_requires": "A new explicit user instruction; do not restart controllers.",
+  "seeds": {
+    "79": {
+      "status": "USER_PAUSED",
+      "saved_epoch": 75,
+      "global_step": 3600,
+      "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed79\\seed_79\\recovery\\epoch_075.pt",
+      "checkpoint_sha256": "1c215e815c5cc114cfe33e68f2e09fde29b99c988e45ebc9d73ce6d1eae067f8",
+      "stopped_workers": [
+        {
+          "ProcessId": 34492,
+          "ParentProcessId": 38344,
+          "Name": "python.exe",
+          "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.vp_1103_recovp_hybrid_extended --seed 79 --gpu-index 1"
+        }
+      ],
+      "stopped_utc": "2026-11-27T04:56:45.389690+00:00",
+      "partial_next_epoch": "Any updates after this committed checkpoint are discarded and recomputed on resume."
+    },
+    "97": {
+      "status": "USER_PAUSED",
+      "saved_epoch": 139,
+      "global_step": 6672,
+      "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed97\\seed_97\\recovery\\epoch_139.pt",
+      "checkpoint_sha256": "9c71cc2b1ecf1b9121d493ed85beb452713643ff58eefff3472c0dae66ce11f9",
+      "stopped_workers": [
+        {
+          "ProcessId": 24876,
+          "ParentProcessId": 30876,
+          "Name": "python.exe",
+          "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.vp_1103_recovp_hybrid_extended --seed 97 --gpu-index 0"
+        }
+      ],
+      "stopped_utc": "2026-11-27T04:57:36.783324+00:00",
+      "partial_next_epoch": "Any updates after this committed checkpoint are discarded and recomputed on resume."
+    },
+    "109": {
+      "status": "NOT_STARTED_USER_PAUSED",
+      "saved_epoch": null
+    }
+  },
+  "stopped_controllers": [],
+  "remaining_related_processes": [],
+  "finished_utc": "2026-11-27T04:57:42.063405+00:00"
+}

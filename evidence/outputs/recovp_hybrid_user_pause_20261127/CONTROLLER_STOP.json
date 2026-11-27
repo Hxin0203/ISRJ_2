@@ -1,0 +1,17 @@
+{
+  "action": "Stopped exact Python controller/launcher PIDs without tree termination before running the boundary-pause helper",
+  "pids": [
+    17668,
+    38336,
+    34964,
+    29556,
+    32084,
+    20812,
+    1256,
+    21028,
+    2524,
+    26912
+  ],
+  "inventory_rechecked_before_stop": true,
+  "result": "All calls succeeded. Workers left running until next full epoch commit. Helper therefore found no remaining controllers to stop."
+}

@@ -1,0 +1,19 @@
+{
+  "updated_local": "2026-11-26 20:59 PST",
+  "backups": [
+    {
+      "source": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\实验结果与文件存放说明.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\实验结果与文件存放说明_交接根目录_暂停前_20261126_205931.md",
+      "sha256": "71054b260e5b908b331a79a69024bb2755da35bc416c4fb4e455fe18ee00bd9f",
+      "backup_sha256": "71054b260e5b908b331a79a69024bb2755da35bc416c4fb4e455fe18ee00bd9f"
+    },
+    {
+      "source": "G:\\Project Code\\ISRJ_222\\handoff\\实验结果与文件存放说明.md",
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\实验结果与文件存放说明_项目镜像_暂停前_20261126_205931.md",
+      "sha256": "71054b260e5b908b331a79a69024bb2755da35bc416c4fb4e455fe18ee00bd9f",
+      "backup_sha256": "71054b260e5b908b331a79a69024bb2755da35bc416c4fb4e455fe18ee00bd9f"
+    }
+  ],
+  "fixed_note_sha256": "d6b6c571fd52dc6e2fba7d043cca4cea08467f1757f8598c2f787f125d011e53",
+  "mirror_sha256": "d6b6c571fd52dc6e2fba7d043cca4cea08467f1757f8598c2f787f125d011e53"
+}

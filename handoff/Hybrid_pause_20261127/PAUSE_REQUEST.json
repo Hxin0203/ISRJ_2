@@ -1,0 +1,13 @@
+{
+  "status": "PAUSING",
+  "requested_seeds": [
+    79,
+    97,
+    109
+  ],
+  "started_utc": "2026-11-27T04:56:29.687061+00:00",
+  "automatic_resume": false,
+  "resume_requires": "A new explicit user instruction; do not restart controllers.",
+  "seeds": {},
+  "stopped_controllers": []
+}
