@@ -18,7 +18,9 @@ $$
 
 方法中实值与复值两类计算的分工也由同一原则决定。凡是需要在全局相位旋转下保持不变的判断（候选位置、窗形、正则强度、门控强度），都由相位不变的实值特征计算；凡是需要保留相位关系的量（字典原子、系数、修正波形），都在复数域计算。3.8节将说明，这一分工使整个映射对输入的复数缩放保持等变。
 
-〔图2占位：ReCoVP-Hybrid总体框架。左侧为第一阶段：RMS归一化→相位不变特征编码器→候选时延选择与细化→局部窗估计→复数字典与正则矩阵→正则化系数求解→$\widehat{\boldsymbol j}_1$；右侧为第二阶段：$(\widehat{\boldsymbol u}_1,\widehat{\boldsymbol j}_1)$→复值编码器（含相位不变实门）→膨胀瓶颈→跳连解码→脉冲级标量门→$\boldsymbol\delta_2$。用不同颜色区分复数数据流、实值条件流和仅用于训练的真值，标注每个节点的通道数与长度。〕
+![图2 ReCoVP-Hybrid总体框架](figures/fig2_recovp_hybrid_v2.png)
+
+图2　ReCoVP-Hybrid总体框架。(a) 总体结构：第一阶段由匹配滤波输出选取候选峰，估计时延与窗，构成原子字典$\boldsymbol B$，在证据门控下解析求出系数，得到$\widehat{\boldsymbol j}_1$与$\widehat{\boldsymbol u}_1=\boldsymbol y-\widehat{\boldsymbol j}_1$；第二阶段以$(\widehat{\boldsymbol u}_1,\widehat{\boldsymbol j}_1)/r$为输入，输出$\widehat{\boldsymbol u}=\widehat{\boldsymbol u}_1-r\alpha\widetilde{\boldsymbol\delta}$。(b) 开窗时延LFM原子与证据门：$\rho_k$为原子匹配能量与稳健噪声底之比，决定正则强度$\lambda_k$，无证据的原子被压向零。(c) 复值精修网络：三层复值U-Net，通道宽度9/13/17/21，瓶颈膨胀率1/2/4；每个块为无偏置复卷积加相位不变的幅度门；标量门$\alpha$由不变特征统计量与两个物理标量驱动。实线为复数数据流，青色虚线为实值条件流。
 
 算法1概括了推理过程。
 
@@ -115,13 +117,23 @@ $$
 
 证明见附录A。命题1有两层含义。第一，$\|\boldsymbol P\boldsymbol y\|_2\le\frac{\sigma_1^2}{1+\sigma_1^2}\|\boldsymbol y\|_2<\|\boldsymbol y\|_2$，第一阶段在任何方向上撤销的能量都严格少于观测在该方向上的能量，$\boldsymbol I-\boldsymbol P$是非扩张的。第二，$\boldsymbol P$通常不满足$\boldsymbol P^2=\boldsymbol P$，它不是正交投影；正则越强，收缩越明显。$\operatorname{tr}\boldsymbol P$可以理解为第一阶段的有效自由度，它小于候选数$K$。
 
-**推论1（修正的自由度预算）。** 在命题1的条件下，若噪声$\boldsymbol\epsilon\sim\mathcal{CN}(\boldsymbol0,\sigma^2\boldsymbol I_T)$且与$\boldsymbol B,\boldsymbol\Lambda$独立，则
+**推论1（固定字典下的修正自由度）。** 在命题1的条件下，若噪声$\boldsymbol\epsilon\sim\mathcal{CN}(\boldsymbol0,\sigma^2\boldsymbol I_T)$且与$\boldsymbol B,\boldsymbol\Lambda$独立，则
 
 $$
 \frac{\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2}{\mathbb E\|\boldsymbol\epsilon\|_2^2}=\frac{\operatorname{tr}(\boldsymbol P^2)}{T}\le\frac{\operatorname{tr}\boldsymbol P}{T}<\frac{K}{T}. \tag{19a}
 $$
 
-证明只需利用$\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2=\sigma^2\operatorname{tr}(\boldsymbol P^H\boldsymbol P)=\sigma^2\operatorname{tr}(\boldsymbol P^2)$，以及特征值$\mu_k\in[0,1)$时$\mu_k^2\le\mu_k$。在本文设置$K=16$、$T=1800$下，右端不超过0.89%。推论1说明第一阶段的修正自由度与信号长度无关：无论网络给出怎样的时延和窗，它从白噪声中平均能带走的能量不超过$K/T$。作为对照，直接输出$T$点修正波形的通用网络没有这样的结构约束，其对干净输入的改动只能依靠训练损失间接压低。需要说明的是，实际字典由观测选取，候选会对准噪声中最强的相关峰，独立性假设并不严格成立；另一方面，式（17）对相关强度低的候选施加强正则，又会使$\operatorname{tr}\boldsymbol P$远小于$K$。式（19a）给出的是自由度的量级，实测的无干扰改动见5.5节。
+证明只需利用$\mathbb E\|\boldsymbol P\boldsymbol\epsilon\|_2^2=\sigma^2\operatorname{tr}(\boldsymbol P^H\boldsymbol P)=\sigma^2\operatorname{tr}(\boldsymbol P^2)$，以及特征值$\mu_k\in[0,1)$时$\mu_k^2\le\mu_k$。在本文设置$K=16$、$T=1800$下，右端不超过0.89%。该上界只对与噪声独立的固定字典成立。实际字典由观测选取，数据自适应的选择会把原子推向噪声中最强的相关峰，使投影带走的能量超过$K/T$。设各位置的匹配能量近似为独立的单位均值指数变量，且原子近似正交，则选出的$K$个最大值之和的期望为$K(1+H_T-H_K)\approx K[1+\ln(T/K)]$，其中$H_n$为第$n$个调和数。在$K=16$、$T=1800$时该值约为91，即不加正则的最小二乘会移除约5.1%的噪声能量，约为式（19a）上界的6倍；5.7节的零训练诊断实测为5.6%。因此，仅凭$K$个候选的结构并不能解释背景几乎不被改动，这一性质来自式（17）中依赖证据的正则。
+
+**推论2（证据门控下的修正能量）。** 对任意列向量为单位范数的字典$\boldsymbol B$（允许$\boldsymbol B$依赖于$\boldsymbol y$）及$\boldsymbol\Lambda=\operatorname{diag}(\lambda_1,\ldots,\lambda_K)$，记$\lambda_{\min}=\min_k\lambda_k>0$，第一阶段修正满足
+
+$$
+\frac{\|\widehat{\boldsymbol j}_1\|_2^2}{\|\boldsymbol y\|_2^2}\le\frac{K\,\widehat\sigma^2}{T\,\lambda_{\min}^2}\sum_{k=1}^{K}\rho_k. \tag{19b}
+$$
+
+证明：记$\boldsymbol G=\boldsymbol B^H\boldsymbol B$，$\boldsymbol v=(\boldsymbol G+\boldsymbol\Lambda)^{-1}\boldsymbol B^H\boldsymbol x$，则$\widehat{\boldsymbol j}_1=r\boldsymbol B\boldsymbol v$。一方面$\|\boldsymbol B\boldsymbol v\|_2^2=\boldsymbol v^H\boldsymbol G\boldsymbol v\le\|\boldsymbol G\|_2\|\boldsymbol v\|_2^2$，列为单位范数时$\|\boldsymbol G\|_2\le\operatorname{tr}\boldsymbol G=K$；另一方面$\boldsymbol G\succeq0$，故$\boldsymbol G+\boldsymbol\Lambda$的最小特征值不小于$\lambda_{\min}$，$\|\boldsymbol v\|_2\le\|\boldsymbol B^H\boldsymbol x\|_2/\lambda_{\min}$。再由$\|\boldsymbol B^H\boldsymbol x\|_2^2=\widehat\sigma^2\sum_k\rho_k$、$\|\boldsymbol y\|_2^2=r^2\|\boldsymbol x\|_2^2$与$\|\boldsymbol x\|_2^2=T$即得式（19b）。$\square$
+
+式（19b）对每个样本成立，与候选如何选出无关，右端各量都由同一次观测算出，因而不需要推论1的独立性假设。它说明修正能量由证据$\rho_k$与最小正则强度共同控制，而不是由候选数$K$控制。按式（17），匹配能量小的原子对应很大的$\lambda_k$：所有原子都缺少证据时，式（19b）右端极小，第一阶段几乎不触碰观测；出现干扰片段时，相应原子的$\rho_k$变大、$\lambda_k$变小，修正接近该原子上的最小二乘解。强、弱原子并存时$\lambda_{\min}$由强原子决定，式（19b）随之变松，所以它刻画的是机制，不用于预测数值；实测值见5.7节。
 
 **第一阶段误差的来源。** 将真实干扰分解为字典张成空间内外两部分，$\boldsymbol j=\boldsymbol B\boldsymbol c^\star+\boldsymbol j_\perp$，其中$\boldsymbol c^\star$为$\boldsymbol j$在$\operatorname{span}(\boldsymbol B)$上的最小二乘系数，$\boldsymbol B^H\boldsymbol j_\perp=\boldsymbol 0$。
 
