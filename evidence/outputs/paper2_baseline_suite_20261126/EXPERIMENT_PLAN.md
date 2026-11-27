@@ -52,3 +52,9 @@
 - E4 决定：RSDR-Net 接入同一评测（E7b）。ReCoVP-Base/P0 的检查点所在工作树已不存在、权重未上传 GitHub，不重新训练；论文中只引用已封存的 DEV 点估计与各自区间。
 - E5 决定：SNR {-25,…,10} dB × JSR {0,10,20,30} dB，共 32 格，每格 64 个物理场景，第 k 格种子 2026112700+k；先写 `E5/REGISTRATION.json` 再生成，生成后核对与 TRAIN/DEV/确认集/两套等虚警集无场景重叠；只用于评测。方法：Hybrid（已完成种子）、CorrectionNet、U-Net（各3种子）、CVEDNet、RSDR-Net、Max-TF（第一篇配置）、GMM-OMP。切片宽度与未受扰比例扫描需要生成器新接口，本轮不做。
 - BCS 按用户要求不进论文表格，汇总时排除。
+
+## 6 2026-11-27 00:50 UTC 状态
+
+- 服务器总控已完成：E3 等虚警（12类基线×3实例、Hybrid 17/29/41/53、Stage1、Max-TF 两种配置、GMM-OMP、CVEDNet、RSDR-Net）；E7b RSDR-Net；E5 登记、生成（32格×64场景，共2048个，与 TRAIN/DEV/确认集/两套等虚警集重叠均为0）、评测与汇总。总控现处于 FOLLOW_HYBRID，Hybrid 67/79/97/109 训练完成后自动接入 E3/E5 并重新汇总。
+- 结果：`SUITE_SUMMARY.json`、`SUITE_TABLES.md`、`E5/SWEEP_SUMMARY.json`、`E5/SWEEP_TABLES.md`（提交 b14b840）。已写入草稿 5.3（对比方法、表4c）、5.6（表5）、5.10（表9）与结论。
+- 尚未做：E8 统一计时、E9 典型场景图、E10 残余相干度分布图（数据已在 E3 的 SCORES.npz 中，只需作图）、切片宽度与未受扰比例扫描（需生成器新接口）。DEV256 配对统计目前只有 Hybrid seed17 的逐场景数组。
