@@ -1,0 +1,192 @@
+{
+  "created_utc": "2026-11-27T11:31:55.799034+00:00",
+  "local_time": "2026-11-27 03:31 PST",
+  "python": "3.13.3",
+  "torch": "2.9.1+cu126",
+  "device": "cpu",
+  "scope": "Fresh synthetic forward/backward count of current CorrectionNet-Tail and PlainUNet definitions",
+  "active_definition": "numel of parameter tensors with grad is not None after zero_grad(set_to_none=True) and backward",
+  "models": {
+    "CorrectionNet-Tail": {
+      "registered": 112756,
+      "requires_grad": 112756,
+      "active": 59714,
+      "inactive": 53042,
+      "modules": {
+        "core.enc0": {
+          "registered": 1072,
+          "requires_grad": 1072,
+          "active": 1072
+        },
+        "core.enc1": {
+          "registered": 6368,
+          "requires_grad": 6368,
+          "active": 6368
+        },
+        "core.enc2": {
+          "registered": 25024,
+          "requires_grad": 25024,
+          "active": 25024
+        },
+        "core.gate0": {
+          "registered": 1072,
+          "requires_grad": 1072,
+          "active": 0
+        },
+        "core.gate1": {
+          "registered": 4192,
+          "requires_grad": 4192,
+          "active": 0
+        },
+        "core.gate2": {
+          "registered": 16576,
+          "requires_grad": 16576,
+          "active": 0
+        },
+        "core.decode1": {
+          "registered": 21728,
+          "requires_grad": 21728,
+          "active": 21728
+        },
+        "core.decode0": {
+          "registered": 5488,
+          "requires_grad": 5488,
+          "active": 5488
+        },
+        "core.out": {
+          "registered": 34,
+          "requires_grad": 34,
+          "active": 34
+        },
+        "core.prop1": {
+          "registered": 6305,
+          "requires_grad": 6305,
+          "active": 0
+        },
+        "core.prop2": {
+          "registered": 24897,
+          "requires_grad": 24897,
+          "active": 0
+        }
+      },
+      "trials": [
+        {
+          "shape": [
+            2,
+            2,
+            1800
+          ],
+          "active": 59714,
+          "finite_output": true,
+          "finite_gradients": true
+        },
+        {
+          "shape": [
+            1,
+            2,
+            1800
+          ],
+          "active": 59714,
+          "finite_output": true,
+          "finite_gradients": true
+        }
+      ]
+    },
+    "UNet": {
+      "registered": 59714,
+      "requires_grad": 59714,
+      "active": 59714,
+      "inactive": 0,
+      "modules": {
+        "enc0": {
+          "registered": 1188,
+          "requires_grad": 1188,
+          "active": 1188
+        },
+        "enc1": {
+          "registered": 7812,
+          "requires_grad": 7812,
+          "active": 7812
+        },
+        "enc2": {
+          "registered": 26196,
+          "requires_grad": 26196,
+          "active": 26196
+        },
+        "dec1": {
+          "registered": 20160,
+          "requires_grad": 20160,
+          "active": 20160
+        },
+        "dec0": {
+          "registered": 4320,
+          "requires_grad": 4320,
+          "active": 4320
+        },
+        "out": {
+          "registered": 38,
+          "requires_grad": 38,
+          "active": 38
+        }
+      },
+      "trials": [
+        {
+          "shape": [
+            2,
+            2,
+            1800
+          ],
+          "active": 59714,
+          "finite_output": true,
+          "finite_gradients": true
+        },
+        {
+          "shape": [
+            1,
+            2,
+            1800
+          ],
+          "active": 59714,
+          "finite_output": true,
+          "finite_gradients": true
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+    "paper2/vendor/legacy_model.py": "7c74fbc5cedfbea4d63ddd3007413d96459d5a8b19d649733c1cb6ecca68905e",
+    "tools/unet_ablation/models.py": "60a6803f3f68c9f0c8f9dd0943e863581908e0c16dc6be9f887d6c30f367803f",
+    "tools/correction_tail_study/preflight.py": "48b4cbda8f03526af083c494122b0805305e10f763cf61432a0883d80e86798c",
+    "tools/paper2_baseline_suite/wp7_local_timing.py": "ba0ad4ca2012273728c71db1671aca2d32e75d8cba582fa23b44aedd563142ae"
+  },
+  "historical_preflight_source_matches": {
+    "paper2/network.py": true,
+    "paper2/vendor/legacy_model.py": true,
+    "tools/unet_ablation/models.py": true,
+    "tools/correction_tail_study/preflight.py": true
+  },
+  "backups": {
+    "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\03_分析\\17_说明_CorrectionNet参数计数口径_20261127.md": {
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\参数独立复核_20261127T113155Z\\17_说明_CorrectionNet参数计数口径_20261127.md",
+      "sha256": "ba87a7a81612f23b75731424c6b5b71cd099c94e892ef29955696d476ea6116e"
+    },
+    "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\实验结果与文件存放说明.md": {
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\参数独立复核_20261127T113155Z\\实验结果与文件存放说明.md",
+      "sha256": "ab87edebb9f105adab75df0f8ee3e65640301a3a727b67c5eece3014b890d454"
+    },
+    "G:\\Project Code\\ISRJ_222\\handoff\\实验结果与文件存放说明.md": {
+      "backup": "G:\\Files\\Markdown\\ISRJ_2\\opus对话\\99_备份\\参数独立复核_20261127T113155Z\\项目镜像_实验结果与文件存放说明.md",
+      "sha256": "ab87edebb9f105adab75df0f8ee3e65640301a3a727b67c5eece3014b890d454"
+    }
+  },
+  "report_sha256": "dcede13490abccd7b7fb988e1065bc2de1ea9bf473a7e3e05940194a9bd564df",
+  "handoff_report_sha256": "2c6a6a600f6419518faabd87edf88b2e3d64a7f7978ad668964bc9e1209a660f",
+  "index_sha256": "8cc95bcf3a530c44835fbcac21aa140e78998c3fe4dcd82329446cdce2c13a04",
+  "language_audit": {
+    "tool": "clean-user-facing-text/scripts/inspect_text.py --audit",
+    "target": "reports/CorrectionNet_parameter_audit_20261127.md",
+    "flagged_count": 0,
+    "prose_review": "Chinese natural language checked; numbers, identifiers, paths and code protected; no automated rewrite applied"
+  }
+}
