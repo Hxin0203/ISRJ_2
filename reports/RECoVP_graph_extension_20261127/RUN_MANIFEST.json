@@ -1,0 +1,328 @@
+{
+  "created_utc": "2026-11-27T15:07:35Z",
+  "host": "DESKTOP-RHKS2SI",
+  "root": "G:\\Project Code\\ISRJ_222",
+  "device": "NVIDIA GeForce RTX 4060",
+  "gpu_snapshot_before_run": {
+    "host": "DESKTOP-RHKS2SI",
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4060",
+        "uuid": "GPU-d23ab9c1-073a-1ae7-92a6-7690b8f578d3",
+        "utilization_percent": 0,
+        "memory_used_mib": 1144,
+        "memory_total_mib": 8188
+      }
+    ]
+  },
+  "gpu_snapshot_after_run": {
+    "host": "DESKTOP-RHKS2SI",
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4060",
+        "uuid": "GPU-d23ab9c1-073a-1ae7-92a6-7690b8f578d3",
+        "utilization_percent": 6,
+        "memory_used_mib": 3045,
+        "memory_total_mib": 8188
+      }
+    ]
+  },
+  "run_signature": "b481ba57d9eeaf4b4271c9b6472863e3984bc3c1142e9da2928a685265c696e9",
+  "script_sha256": "bb4c3f555f6e45eb6cf304c61afdc465f084680709195c1251cc3508960adaf5",
+  "pre_registration_sha256": "1c981f36e9ccdc875532d5e9ef4e5d2e6cb0c50b3f34bda0e7952875235ebfd4",
+  "bindings": {
+    "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+    "checkpoint_sidecar_sha256": "41143b3426a1d3719eaedeb90257d7d540b6ce4a4aa882876ed5453be2370591",
+    "checkpoint_identity": {
+      "run": "recovp_hybrid_seed17",
+      "seed": 17,
+      "config_sha256": "0af7322a5a37721e71be5a2ac56eceb6372d9567114e8fb240fd7b537e1f5251",
+      "train_sha256": "6148d097fecb0381e56227eb80cf1379e5f2750816ba65ce12f5457ee678f0fd",
+      "source_sha256": {
+        "tools/vp_1103_recovp_hybrid.py": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+        "tools/vp_1103_recovp_hybrid_train.py": "5be4c85e7f45cf3a645afe2c284bdda3697aff9d159de2344717ee52968d3360",
+        "tools/vp_1103_recovp_hybrid_objective.py": "caf19f45af39afbca9c6c1ebbc47bfb54144d6a0a27c1f70974488a28b4fd074",
+        "paper2/train_1103.py": "5ed0d495cdaf73170c1a1af482306a23c32963fea9edfad95ea3a5c74ff59fa7",
+        "paper2/network.py": "121c709ce117e4eb000835c87fe6c16ceeab1142dabdd6d296ead5593ee87b30",
+        "paper2/train_256_8seed.py": "bb90faa4cf4086c9379a499cd534aa7d805ae0067dde98057f17f01152fa97ab",
+        "paper2/io.py": "b25922e00b0482b0b1ca8dc04dfa56d7cf62d9ce6ea0ff4ed65a1fea932b28bd",
+        "tools/unet_tail_loss/objective.py": "69430d6acb597312770e997f1f4cafb39ad7e7bfe96f76eddcb25c29c6079c3d",
+        "tools/durable_io.py": "befa41034a4582c121c0439b992929128df006ab16ec69a3a5ab2f982c1b7208"
+      },
+      "preflight_sha256": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7"
+    },
+    "config_sha256": "0af7322a5a37721e71be5a2ac56eceb6372d9567114e8fb240fd7b537e1f5251",
+    "preflight_sha256": "370cc71f35a718bd39e7fed01ba6f9d1982259fc89576efb6d974db66acecac7",
+    "baseline_row_sha256": "b3032a53480809055c0cbddf5521f0542f74477f884b4b4d5a04143c0d90f522",
+    "master_registration_sha256": "1a603318a6695571a799e6f0324502f84351e28195d02c4fd4c8ff01ff2aeba8",
+    "master_manifest_sha256": "8b1c029177b0b98cc2189d7bbe871b7af489b24502285697b0ffb63813a7eb42",
+    "master_component_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+    "master_parent_count": 512,
+    "primary_parent_ids_sha256": "0abb9e2783b2beaa28a7cdd9fceda15db4a3642a44710593ba4e5ff7a4a76481",
+    "primary_shapes": {
+      "s": [
+        128,
+        3,
+        8,
+        1800
+      ],
+      "j": [
+        128,
+        3,
+        8,
+        1800
+      ],
+      "epsilon": [
+        128,
+        3,
+        8,
+        1800
+      ]
+    },
+    "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+    "calibration_parent_count": 1024,
+    "calibration_parent_ids_sha256": "e98797a3526ff6a52bb658090083976b422438c70f77b0e5ade4feda6fc39e4e",
+    "calibration_shapes": {
+      "s": [
+        1024,
+        3,
+        8,
+        1800
+      ],
+      "j": [
+        1024,
+        3,
+        8,
+        1800
+      ],
+      "epsilon": [
+        1024,
+        3,
+        8,
+        1800
+      ],
+      "doppler_hz": [
+        1024
+      ]
+    },
+    "calibration_primary_overlap": 0,
+    "host": "DESKTOP-RHKS2SI",
+    "loaded_model": {
+      "checkpoint": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_hybrid_seed17\\seed_17\\epoch_256.pt",
+      "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+      "bindings": [
+        "sidecar"
+      ]
+    }
+  },
+  "conditions": [
+    {
+      "snr_db": -30,
+      "jsr_db": 10
+    },
+    {
+      "snr_db": -30,
+      "jsr_db": 30
+    },
+    {
+      "snr_db": -20,
+      "jsr_db": 10
+    },
+    {
+      "snr_db": -20,
+      "jsr_db": 30
+    }
+  ],
+  "parents_per_condition": 128,
+  "physical_parent_unit": "parent_id; jammer types are repeated measurements averaged within parent",
+  "variants": [
+    "baseline",
+    "graph_weak",
+    "graph_strong",
+    "permuted_graph_strong",
+    "diagonal_strong"
+  ],
+  "permutation_seed": 20261128,
+  "permutation": [
+    10,
+    1,
+    14,
+    0,
+    3,
+    12,
+    15,
+    5,
+    13,
+    7,
+    11,
+    9,
+    6,
+    2,
+    8,
+    4
+  ],
+  "calibration_thresholds": {
+    "baseline": {
+      "0.01": 33.654331886422874,
+      "0.05": 14.487848669772939,
+      "0.1": 12.282918354871772
+    },
+    "graph_weak": {
+      "0.01": 45.05477925636289,
+      "0.05": 28.43333650364128,
+      "0.1": 20.672718546827245
+    },
+    "graph_strong": {
+      "0.01": 46.22937261027166,
+      "0.05": 30.680039632513044,
+      "0.1": 22.652313925007075
+    },
+    "permuted_graph_strong": {
+      "0.01": 46.98028473552774,
+      "0.05": 32.39576342033278,
+      "0.1": 23.84635407775081
+    },
+    "diagonal_strong": {
+      "0.01": 46.76356803191865,
+      "0.05": 31.792995318527833,
+      "0.1": 23.729729365661502
+    }
+  },
+  "zero_gamma_and_psd_validation": {
+    "zero_penalty_max_abs_output_error": 0.0,
+    "zero_penalty_pass": true,
+    "zero_penalty_trace": 0.0,
+    "graph_diagnostics": {
+      "strong": {
+        "hermitian_max_abs_error": 0.0,
+        "minimum_eigenvalue": -2.7956190386711115e-11
+      },
+      "weak": {
+        "hermitian_max_abs_error": 0.0,
+        "minimum_eigenvalue": -1.0666489871601051e-11
+      },
+      "permuted": {
+        "hermitian_max_abs_error": 0.0,
+        "minimum_eigenvalue": -3.4707200975135393e-10
+      },
+      "diagonal": {
+        "hermitian_max_abs_error": 0.0,
+        "minimum_eigenvalue": 76.01024054337036
+      }
+    },
+    "trace_ratios": {
+      "strong": 1.0,
+      "weak": 0.1,
+      "permuted": 1.0,
+      "diagonal": 1.0
+    },
+    "regularizer_diagnostics": {
+      "strong": {
+        "atom_basis_relative_reconstruction_error": 0.0,
+        "gamma_trace_ratio_mean": 1.0,
+        "mean_dictionary_coherence_sq": 0.018465891001442216
+      },
+      "weak": {
+        "atom_basis_relative_reconstruction_error": 0.0,
+        "gamma_trace_ratio_mean": 0.1,
+        "mean_dictionary_coherence_sq": 0.018465891001442216
+      },
+      "permuted": {
+        "atom_basis_relative_reconstruction_error": 0.0,
+        "gamma_trace_ratio_mean": 1.0,
+        "mean_dictionary_coherence_sq": 0.018465891001442216
+      },
+      "diagonal": {
+        "atom_basis_relative_reconstruction_error": 0.0,
+        "gamma_trace_ratio_mean": 1.0,
+        "mean_dictionary_coherence_sq": 0.018465891001442216
+      }
+    },
+    "permutation": [
+      10,
+      1,
+      14,
+      0,
+      3,
+      12,
+      15,
+      5,
+      13,
+      7,
+      11,
+      9,
+      6,
+      2,
+      8,
+      4
+    ]
+  },
+  "latency": {
+    "baseline": {
+      "1_pulse": {
+        "median_ms": 128.77618789672852,
+        "p95_ms": 223.39277114868156,
+        "samples": 12
+      },
+      "8_pulse": {
+        "median_ms": 88.63644790649414,
+        "p95_ms": 108.71936111450195,
+        "samples": 12
+      }
+    },
+    "graph_weak": {
+      "1_pulse": {
+        "median_ms": 93.18246078491211,
+        "p95_ms": 131.23056488037105,
+        "samples": 12
+      },
+      "8_pulse": {
+        "median_ms": 132.84607696533203,
+        "p95_ms": 193.4588424682617,
+        "samples": 12
+      }
+    },
+    "graph_strong": {
+      "1_pulse": {
+        "median_ms": 89.22470092773438,
+        "p95_ms": 112.09564285278319,
+        "samples": 12
+      },
+      "8_pulse": {
+        "median_ms": 106.85696029663086,
+        "p95_ms": 227.85740585327142,
+        "samples": 12
+      }
+    },
+    "permuted_graph_strong": {
+      "1_pulse": {
+        "median_ms": 96.67327880859375,
+        "p95_ms": 151.25974502563474,
+        "samples": 12
+      },
+      "8_pulse": {
+        "median_ms": 114.02598571777344,
+        "p95_ms": 195.10466842651365,
+        "samples": 12
+      }
+    },
+    "diagonal_strong": {
+      "1_pulse": {
+        "median_ms": 95.45881652832031,
+        "p95_ms": 164.35880966186522,
+        "samples": 12
+      },
+      "8_pulse": {
+        "median_ms": 105.00761795043945,
+        "p95_ms": 181.25860519409179,
+        "samples": 12
+      }
+    }
+  },
+  "bootstrap_seed": 20261127,
+  "bootstrap_replicates": 10000,
+  "elapsed_outputs": "See per-variant calibration and condition partial files under outputs/.",
+  "local_arrays_directory": "G:\\Project Code\\ISRJ_222\\outputs\\recovp_graph_extension_20261127"
+}

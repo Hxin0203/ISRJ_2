@@ -1,0 +1,83 @@
+{
+  "scope": "single-checkpoint development screen",
+  "criteria": [
+    "macro E_U improvement at least 5 percent and paired parent-bootstrap CI95 excludes zero",
+    "macro E_S increase CI95 upper no greater than 5 percent of baseline",
+    "macro 1 percent equal-PFA detection decline no greater than 2 percentage points",
+    "macro 1 percent equal-PFA false-alarm increase CI95 upper no greater than 1 percentage point",
+    "graph_strong must outperform both permuted-graph and diagonal controls in paired macro E_U CI95",
+    "passing only supports advancing to a trained multi-seed ablation, not final adoption"
+  ],
+  "candidates": {
+    "graph_weak": {
+      "macro_eu_relative_reduction": -2.568219024537435,
+      "macro_damage_relative_increase": 48.69870157834434,
+      "macro_damage_relative_increase_ci95_upper": 69.05234446762972,
+      "macro_pd_1pct_difference": -0.208984375,
+      "macro_pfa_1pct_difference": -0.009765625,
+      "eu_ci95": [
+        0.063785247759568,
+        0.08701216211002628
+      ],
+      "damage_ci95": [
+        0.5229498122936163,
+        1.1770719574895059
+      ],
+      "pd_1pct_ci95": [
+        -0.24348958333333331,
+        -0.17578125
+      ],
+      "pfa_1pct_ci95": [
+        -0.015624999999999998,
+        -0.004557291666666666
+      ],
+      "performance_gate_pass": false,
+      "graph_specificity": null,
+      "screening_gate_pass": false
+    },
+    "graph_strong": {
+      "macro_eu_relative_reduction": -3.0997788548624152,
+      "macro_damage_relative_increase": 36.76366301501316,
+      "macro_damage_relative_increase_ci95_upper": 54.07996716699003,
+      "macro_pd_1pct_difference": -0.22005208333333331,
+      "macro_pfa_1pct_difference": -0.01171875,
+      "eu_ci95": [
+        0.07756845229303841,
+        0.10446852702870021
+      ],
+      "damage_ci95": [
+        0.37640575278604005,
+        0.9218515794790683
+      ],
+      "pd_1pct_ci95": [
+        -0.255859375,
+        -0.185546875
+      ],
+      "pfa_1pct_ci95": [
+        -0.017578125,
+        -0.006510416666666666
+      ],
+      "performance_gate_pass": false,
+      "graph_specificity": {
+        "controls": {
+          "permuted_graph_strong": {
+            "mean_difference": -0.007471756168575998,
+            "ci95": [
+              -0.009294639170446328,
+              -0.005715315969994429
+            ]
+          },
+          "diagonal_strong": {
+            "mean_difference": -0.014814968726976838,
+            "ci95": [
+              -0.017821880717371636,
+              -0.01205076658499353
+            ]
+          }
+        },
+        "pass": true
+      },
+      "screening_gate_pass": false
+    }
+  }
+}
