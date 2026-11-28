@@ -1,0 +1,60 @@
+{
+  "model": "ReCoVP-Hybrid",
+  "stage": 1,
+  "seed": 17,
+  "epoch": 256,
+  "model_source": "tools/vp_1103_recovp_hybrid.py",
+  "model_source_sha256": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+  "checkpoint": "outputs/recovp_hybrid_seed17/seed_17/epoch_256.pt",
+  "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+  "identity_sha256": "41143b3426a1d3719eaedeb90257d7d540b6ce4a4aa882876ed5453be2370591",
+  "observation": {
+    "parent_id": 2026112901000000,
+    "parent_index": 0,
+    "pulse_index": 0,
+    "snr_db": 10,
+    "jsr_db": 30,
+    "jam_type": "repeat",
+    "source_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235"
+  },
+  "observations_npz_sha256": "edde982b6bd81f6c44373c7e630e18c1c955f3994033063f9506c4df251cfb43",
+  "input_key": "y",
+  "input_complex64_sha256": "aaa4a6e18aea4dbb4765e2f0b534fd4eadab1103d965fe0595dcac802ce0255a",
+  "matrix": "outputs/jest_signal_insets/dictionary.npz",
+  "matrix_key": "B",
+  "matrix_file_sha256": "beb42b340cf2f04e7959987372fc2c6475d632610c4761cf8cf5d0526456b47c",
+  "matrix_shape_time_atom": [
+    1800,
+    16
+  ],
+  "dtype": "complex128",
+  "max_unit_norm_error": 2.0581869542013465e-11,
+  "max_gram_error": 3.3306690738754696e-16,
+  "display": "abs(B).T, original atom order, time increases left to right, atom 1 at top",
+  "scale": "global linear, 256 colours, zero to global maximum",
+  "vmin": 0.0,
+  "vmax": 0.4735949156032611,
+  "detail_time_range_zero_based_half_open": [
+    1281,
+    1795
+  ],
+  "detail_db": {
+    "time_range_zero_based_half_open": [
+      1282,
+      1794
+    ],
+    "limits_db": [
+      -48.0,
+      0
+    ],
+    "reference": "global peak of abs(B), preserved atom order"
+  },
+  "figure_sha256": {
+    "03_dictionary_magnitude.png": "58374d5d69d42b80b41f103385f9bcb644102bc0980f7e3d60488ef78c1cecf9",
+    "03_dictionary_magnitude.svg": "6c3e2d7172bb4864213c09894f30a547b5c3dff6230b63d0237abc6a53964d29",
+    "03_dictionary_magnitude_detail.png": "4bbfe58338ba3efa69841bc58420c4cf46ef1054773dde73acf57e6914768948",
+    "03_dictionary_magnitude_detail.svg": "e89f4c75dda5c58cbd26c059abc70bf32cf1b0f8699a525f2bf9d3a85c774555",
+    "03_dictionary_magnitude_detail_db.png": "2d66981df77af5d474ec6dc2005a8f330dded0c43b678121be55092243535113",
+    "03_dictionary_magnitude_detail_db.svg": "8dbfe5a00789e17411ef329b8aa7c6d585da56e933877ea33d967d9c70f2bf90"
+  }
+}
