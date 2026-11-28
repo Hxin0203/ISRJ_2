@@ -1,0 +1,344 @@
+{
+  "plan_version": "1.2",
+  "updated_utc": "2026-11-28T09:02:18+00:00",
+  "plan": "reports/Original_paper_replication_256/MASTER_PLAN.md",
+  "priority": "ISRJ_2 ReCoVP-Hybrid epoch256 replication and ablations",
+  "primary_model": "ReCoVP-Hybrid",
+  "historical_reference_only": [
+    "RSDR-Net"
+  ],
+  "candidates": [
+    17,
+    29,
+    41,
+    53,
+    67,
+    79,
+    97,
+    109
+  ],
+  "selected_seeds": [
+    67,
+    97,
+    53,
+    41,
+    109
+  ],
+  "progress_unit": "Verified completion receipts; completed/total cells and training epochs",
+  "tasks": [
+    {
+      "id": "P0",
+      "title": "暂停512与完整恢复点审计",
+      "depends_on": [],
+      "status": "COMPLETED_VERIFIED",
+      "completed_units": 8,
+      "evidence": [
+        "evidence/outputs/Original_paper_replication_256/USER_PRIORITY_PAUSE.json",
+        "evidence/outputs/Original_paper_replication_256/PRIORITY_PAUSE_RECOVERY_AUDIT.json"
+      ],
+      "total_units": 8,
+      "unit": "seed recovery audit"
+    },
+    {
+      "id": "P1",
+      "title": "统一8seed DEV并固定前5名",
+      "depends_on": [
+        "P0"
+      ],
+      "status": "COMPLETED_VERIFIED",
+      "completed_units": 8,
+      "evidence": [
+        "tools/hybrid_256_seed_selection.py",
+        "tools/start_hybrid_256_seed_selection.ps1",
+        "outputs/original_paper_replication_256_v1/seed_selection/SELECTED_SEEDS.json"
+      ],
+      "total_units": 8,
+      "unit": "uniform DEV seed result",
+      "server_status": "outputs/original_paper_replication_256_v1/seed_selection/QUEUE_STATUS.json",
+      "selected_seeds": [
+        67,
+        97,
+        53,
+        41,
+        109
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "新数据版本与四方法指标一致性",
+      "depends_on": [
+        "P1"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "R1",
+      "title": "全时域、脉压、多普勒与相干诊断",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "R2",
+      "title": "M2/M4两口径切片宽度扫描",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": [],
+      "total_units": 1100,
+      "unit": "condition cell with all planned model instances"
+    },
+    {
+      "id": "R3",
+      "title": "四方法35格三机制主表和原稿式比较图",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": [],
+      "total_units": 105,
+      "unit": "requested main condition cell with all planned model instances",
+      "original_grid_cells": 168,
+      "main_and_original_union_cells": 189
+    },
+    {
+      "id": "R4a",
+      "title": "背景统计与虚警控制",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "R4b",
+      "title": "三机制泛化与留一机制训练",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "R4c",
+      "title": "CVED-Net无噪声监督比较",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "R4d",
+      "title": "无干扰输入保持",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "R5",
+      "title": "150格主图与310格完整检测网格",
+      "depends_on": [
+        "P2"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": [],
+      "total_units": 930,
+      "unit": "mechanism-condition cell with all planned model instances",
+      "priority_cells": 450
+    },
+    {
+      "id": "R6",
+      "title": "模块损失消融及同量级U-Net/U-Net-tail",
+      "depends_on": [
+        "P1"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": [],
+      "total_units": 13,
+      "unit": "ablation variant with three paired seeds",
+      "maximum_initial_training_instances": 39
+    },
+    {
+      "id": "P5",
+      "title": "冻结独立确认方案",
+      "depends_on": [
+        "R1",
+        "R2",
+        "R3",
+        "R4a",
+        "R4b",
+        "R4c",
+        "R4d",
+        "R5",
+        "R6"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    },
+    {
+      "id": "P6",
+      "title": "独立确认和完整交付",
+      "depends_on": [
+        "P5"
+      ],
+      "status": "PENDING",
+      "completed_units": 0,
+      "evidence": []
+    }
+  ],
+  "condition_counts": {
+    "main_per_scheme": 35,
+    "main_all_schemes": 105,
+    "slice_per_ratio_policy": 550,
+    "slice_both_policies": 1100,
+    "detection_priority_per_scheme": 150,
+    "detection_complete_per_scheme": 310
+  },
+  "grids": {
+    "main_snr": [
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0
+    ],
+    "main_jsr": [
+      0,
+      10,
+      20,
+      30,
+      35
+    ],
+    "heatmap_jsr": [
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "heatmap_snr_complete": [
+      -30,
+      -29,
+      -28,
+      -27,
+      -26,
+      -25,
+      -24,
+      -23,
+      -22,
+      -21,
+      -20,
+      -19,
+      -18,
+      -17,
+      -16,
+      -15,
+      -14,
+      -13,
+      -12,
+      -11,
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0
+    ],
+    "heatmap_snr_priority": [
+      -30,
+      -29,
+      -28,
+      -27,
+      -26,
+      -25,
+      -24,
+      -23,
+      -22,
+      -21,
+      -20,
+      -15,
+      -10,
+      -5,
+      0
+    ],
+    "width_samples": [
+      6,
+      18,
+      36,
+      54,
+      72
+    ],
+    "slice_snr": [
+      -20,
+      -18,
+      -16,
+      -14,
+      -12,
+      -10,
+      -8,
+      -6,
+      -4,
+      -2,
+      0
+    ],
+    "repeat_count": [
+      2,
+      4
+    ]
+  },
+  "review_interval_hours": 2,
+  "selection_policy": {
+    "primary": "equal-Pfa 5% DEV Pd descending",
+    "ties": [
+      "damage ascending",
+      "u_nmse ascending",
+      "seed ascending"
+    ],
+    "dev_physical_parents": 256,
+    "calibration_physical_parents": 1024,
+    "calibration_quantile_method": "higher",
+    "test_relation": ">",
+    "predeclared_before_uniform_evaluation": true
+  },
+  "model_instances": {
+    "Hybrid": 5,
+    "Max-TF": 1,
+    "GMM-OMP": 1,
+    "CVED-Net": 3
+  },
+  "historical_cvednet": {
+    "epoch": 320,
+    "training_data": "first-paper TRAIN512/DEV256",
+    "role": "adapter verification and historical reference"
+  }
+}

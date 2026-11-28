@@ -1,0 +1,531 @@
+{
+  "created_utc": "2026-11-28T08:31:30.077586+00:00",
+  "status": "COMPLETED_VERIFIED",
+  "epoch": 256,
+  "selected_seeds": [
+    67,
+    97,
+    53,
+    41,
+    109
+  ],
+  "ranking_rows": [
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:23:01.202155+00:00",
+      "binding": {
+        "seed": 67,
+        "epoch": 256,
+        "checkpoint_sha256": "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed67\\seed_67\\epoch_256.pt",
+        "checkpoint_sha256": "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 0.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.04291278163188,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.042885468547416324,
+        "damage": 0.05604937112663566,
+        "background_nmse": 0.043004370269214436,
+        "h0_nmse": 7.783826914472919e-05,
+        "noise_nmse": 7.211815644579964e-05,
+        "no_jammer_pooled_nmse": 7.503292767380501e-05,
+        "amplitude": 0.9249182453120416,
+        "phase_deg": -0.011602304072382094,
+        "sjrif_db": 11.16812452557672,
+        "false_peak_suppression_db": 13.485074585158273,
+        "pd": 0.8815104166666666,
+        "pd_no_jammer": 0.91796875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 5.579121457041629e-05,
+        "frame_pfa_jammer": 0.053385416666666664,
+        "equal_pfa_pd": 0.8815104166666666,
+        "equal_pfa_frame_fa": 0.053385416666666664,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "718a60da08a09a17f19e33f1a572b5119969aea122efba7582f089dcb163ad13"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:28:35.816610+00:00",
+      "binding": {
+        "seed": 97,
+        "epoch": 256,
+        "checkpoint_sha256": "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed97\\seed_97\\epoch_256.pt",
+        "checkpoint_sha256": "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 1.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.23066874132034,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.0404036506169286,
+        "damage": 0.05142357862055063,
+        "background_nmse": 0.04049484061999123,
+        "h0_nmse": 1.313084998635351e-05,
+        "noise_nmse": 2.7738060112195568e-06,
+        "no_jammer_pooled_nmse": 8.023327487509336e-06,
+        "amplitude": 0.929710435366324,
+        "phase_deg": 0.016037063827142203,
+        "sjrif_db": 11.185251043253949,
+        "false_peak_suppression_db": 13.446895025834337,
+        "pd": 0.8815104166666666,
+        "pd_no_jammer": 0.91796875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 5.06013341452613e-05,
+        "frame_pfa_jammer": 0.06380208333333333,
+        "equal_pfa_pd": 0.87890625,
+        "equal_pfa_frame_fa": 0.0546875,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "fb48dbe967466059941f63d456b4a2bb69d3d096a6d6fba279fae9ce3e57d8dd"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:20:19.445886+00:00",
+      "binding": {
+        "seed": 53,
+        "epoch": 256,
+        "checkpoint_sha256": "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed53\\seed_53\\epoch_256.pt",
+        "checkpoint_sha256": "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 0.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.003520792942046,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.041575258409224526,
+        "damage": 0.05625138356777857,
+        "background_nmse": 0.04171251646005945,
+        "h0_nmse": 5.57388641622081e-06,
+        "noise_nmse": 1.1347833544115014e-06,
+        "no_jammer_pooled_nmse": 3.4221784899847e-06,
+        "amplitude": 0.9251243124361342,
+        "phase_deg": 0.023222642799300114,
+        "sjrif_db": 11.144551669952923,
+        "false_peak_suppression_db": 13.468425674756238,
+        "pd": 0.8763020833333334,
+        "pd_no_jammer": 0.91796875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 5.2187130941836435e-05,
+        "frame_pfa_jammer": 0.0546875,
+        "equal_pfa_pd": 0.8763020833333334,
+        "equal_pfa_frame_fa": 0.055989583333333336,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "fbaca93f6aa76a790222c3c8e744d0901aea08ca4c4ed1cd1590aab6fb4ae22d"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:17:32.343426+00:00",
+      "binding": {
+        "seed": 41,
+        "epoch": 256,
+        "checkpoint_sha256": "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed41\\seed_41\\epoch_256.pt",
+        "checkpoint_sha256": "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 1.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 13.929343874988609,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.04077767864544194,
+        "damage": 0.05499119665485142,
+        "background_nmse": 0.04078749446479795,
+        "h0_nmse": 2.894678460363541e-06,
+        "noise_nmse": 3.928891014706204e-07,
+        "no_jammer_pooled_nmse": 1.6842510250889448e-06,
+        "amplitude": 0.9216994583682679,
+        "phase_deg": 0.003144784061494023,
+        "sjrif_db": 11.158454135604075,
+        "false_peak_suppression_db": 13.493083625164473,
+        "pd": 0.8736979166666666,
+        "pd_no_jammer": 0.91796875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 4.7285577206967815e-05,
+        "frame_pfa_jammer": 0.05078125,
+        "equal_pfa_pd": 0.8736979166666666,
+        "equal_pfa_frame_fa": 0.052083333333333336,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "8c755a659d787011a9e5e5712420a06c77b902ccbe8caae80163e051168950d8"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:31:20.197689+00:00",
+      "binding": {
+        "seed": 109,
+        "epoch": 256,
+        "checkpoint_sha256": "f533891830764e2e06523b114b2bd6dc73f4dd3689591cfa7f1f34cfd160c371",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": {
+          "recorded_sha256": "ff5dda96ca4278eaa4f6e8465d99f50cc69351348441c9745c632153849fbaa1",
+          "available_sha256": "9e124798345223d591d2401670d98a4090e77c77229af27d15baca5d40be1346",
+          "limitation": "Original seed109 preflight bytes missing; documented recovery bridge retained."
+        },
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed109\\seed_109\\epoch_256.pt",
+        "checkpoint_sha256": "f533891830764e2e06523b114b2bd6dc73f4dd3689591cfa7f1f34cfd160c371",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 1,
+        "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 0.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.022065143274396,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.04457887067430133,
+        "damage": 0.06202288674316906,
+        "background_nmse": 0.04486936208064216,
+        "h0_nmse": 5.923459192890133e-06,
+        "noise_nmse": 4.3204390072740824e-07,
+        "no_jammer_pooled_nmse": 3.2407834179558786e-06,
+        "amplitude": 0.9134932209994564,
+        "phase_deg": 0.03809537250590764,
+        "sjrif_db": 11.099072970306146,
+        "false_peak_suppression_db": 13.472438844327664,
+        "pd": 0.8736979166666666,
+        "pd_no_jammer": 0.91796875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 5.276378432240921e-05,
+        "frame_pfa_jammer": 0.059895833333333336,
+        "equal_pfa_pd": 0.8736979166666666,
+        "equal_pfa_frame_fa": 0.059895833333333336,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "3b8044377e0c83f5dee68ca380d743f76027c9d0c5107330215c7c51220e152e"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:25:47.777969+00:00",
+      "binding": {
+        "seed": 79,
+        "epoch": 256,
+        "checkpoint_sha256": "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed79\\seed_79\\epoch_256.pt",
+        "checkpoint_sha256": "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 0.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.073126933525954,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.04007876648587689,
+        "damage": 0.05668944671804694,
+        "background_nmse": 0.040177617058146035,
+        "h0_nmse": 3.0464583231345034e-06,
+        "noise_nmse": 1.3652653900518063e-06,
+        "no_jammer_pooled_nmse": 2.2223654044145396e-06,
+        "amplitude": 0.9223516828420592,
+        "phase_deg": 0.018164884396942374,
+        "sjrif_db": 11.167174523744242,
+        "false_peak_suppression_db": 13.4897602940388,
+        "pd": 0.8723958333333334,
+        "pd_no_jammer": 0.921875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 5.434958111898435e-05,
+        "frame_pfa_jammer": 0.055989583333333336,
+        "equal_pfa_pd": 0.8723958333333334,
+        "equal_pfa_frame_fa": 0.055989583333333336,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "44f456cf45ea89693457f9d9a5d43d21d157e63ceb463513900dc11e6f014c31"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:14:43.287093+00:00",
+      "binding": {
+        "seed": 29,
+        "epoch": 256,
+        "checkpoint_sha256": "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed29\\seed_29\\epoch_256.pt",
+        "checkpoint_sha256": "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 0.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.439331183573511,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.04587893961725087,
+        "damage": 0.0633337028205853,
+        "background_nmse": 0.04640955459195024,
+        "h0_nmse": 6.260625517070612e-06,
+        "noise_nmse": 1.2581794129810983e-06,
+        "no_jammer_pooled_nmse": 3.789947175235346e-06,
+        "amplitude": 0.9216726735584602,
+        "phase_deg": 0.04996628988689778,
+        "sjrif_db": 11.06581189572105,
+        "false_peak_suppression_db": 13.357741224190542,
+        "pd": 0.8763020833333334,
+        "pd_no_jammer": 0.91796875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 6.227856510186006e-05,
+        "frame_pfa_jammer": 0.06770833333333333,
+        "equal_pfa_pd": 0.8697916666666666,
+        "equal_pfa_frame_fa": 0.0625,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "f3e4cc5b3171343cb1b07244d8ab1db8a3b4ec86aa414c585b409c83d129e0f8"
+    },
+    {
+      "status": "COMPLETED_VERIFIED",
+      "created_utc": "2026-11-28T08:11:50.149436+00:00",
+      "binding": {
+        "seed": 17,
+        "epoch": 256,
+        "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+        "dev_sha256": "0e71bf9ddb43a0a89f62ce3e09e741d9ea20c19596ab75aebc787cd1e7796dc1",
+        "calibration_sha256": "5ae29b5af490c5145bfda3c936fa7bfa5cf83331433cae63e1679fd3a3cd525f",
+        "source_sha256": {
+          "tools/hybrid_256_seed_selection.py": "ee7c9a580f775c443eccdc24f9b9e79ea6e0654089c24ebed73803c4f86f4a27",
+          "tools/paper2_baseline_suite/equal_pfa_suite.py": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+          "tools/paper2_baseline_suite/wp5b_suite.py": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+          "paper2/evaluation_1103_v4.py": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+          "paper2/radar_eval.py": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+          "tools/server_gpu_admission.py": "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563"
+        },
+        "pause_recovery_audit_sha256": "0229a6e8eecfd920f25bf637259b195ac7444ed2a6745c9a6fd4ae0241a5a338",
+        "preflight_exception": null,
+        "ranking": "DEV Pd at independent calibration frame-Pfa 0.05 descending, damage ascending, E_U ascending, seed ascending"
+      },
+      "checkpoint": {
+        "checkpoint": "D:\\code\\Xin\\ISRJ_222\\outputs\\recovp_hybrid_seed17\\seed_17\\epoch_256.pt",
+        "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+        "bindings": [
+          "sidecar",
+          "training_complete_milestone_256"
+        ]
+      },
+      "gpu": {
+        "physical_gpu_index": 1,
+        "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 0.0,
+        "admission_policy": "concurrent use allowed; selected GPU utilization must be below 85 percent"
+      },
+      "threshold_ratio": 14.487848257985423,
+      "target_frame_pfa": 0.05,
+      "calibration_frame_pfa": 0.0498046875,
+      "physical_dev_parents": 256,
+      "jammer_variants": 3,
+      "means": {
+        "u_nmse": 0.04312281721323611,
+        "damage": 0.0596725278316633,
+        "background_nmse": 0.043225699766411524,
+        "h0_nmse": 8.085765316801436e-06,
+        "noise_nmse": 9.707822722078093e-07,
+        "no_jammer_pooled_nmse": 4.568680811295596e-06,
+        "amplitude": 0.9151803476299619,
+        "phase_deg": -0.033267116572094683,
+        "sjrif_db": 11.096855591535776,
+        "false_peak_suppression_db": 13.459640475265829,
+        "pd": 0.87109375,
+        "pd_no_jammer": 0.921875,
+        "cell_pfa_noise": 4.3249003542958366e-07,
+        "frame_pfa_noise": 0.00390625,
+        "cell_pfa_jammer": 6.0260278269855335e-05,
+        "frame_pfa_jammer": 0.055989583333333336,
+        "equal_pfa_pd": 0.8645833333333334,
+        "equal_pfa_frame_fa": 0.049479166666666664,
+        "equal_pfa_noise_frame_fa": 0.00390625
+      },
+      "parent_values_sha256": "494b8735faf9f2871351bfbba071e31e352e755d250f62a02dbbc2e4b84bc2db"
+    }
+  ],
+  "selection_scope": "DEV-only; conditional on independently calibrated 5% frame-Pfa thresholds"
+}
