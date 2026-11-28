@@ -1,0 +1,14 @@
+{
+    "checked_utc":  "2026-11-28T08:59:28.7891193Z",
+    "target_processes":  [
+
+                         ],
+    "large_powershell_processes":  [
+
+                                   ],
+    "python_processes":  [
+
+                         ],
+    "free_physical_gib":  92.302,
+    "committed_gib":  43.47
+}

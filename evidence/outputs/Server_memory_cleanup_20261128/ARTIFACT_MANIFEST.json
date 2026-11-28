@@ -1,0 +1,10 @@
+{
+  "files": {
+    "reports/Server_memory_cleanup_20261128.md": "c8da431e613a825f6b47db9c51847322957f3b5aadf454883b961c1adc8ad851",
+    "evidence/outputs/Server_memory_cleanup_20261128/BEFORE.json": "351894bb51501655758ce21938ade3966a967b86a1d35cb232e3c7b7cd5e2566",
+    "evidence/outputs/Server_memory_cleanup_20261128/ACTIVITY_RECHECK.json": "f65084ad355126161494a0b9017d622761aa5212666a5efd506143847ab79d9d",
+    "evidence/outputs/Server_memory_cleanup_20261128/AFTER.json": "f5116c17fdf1af4c6eb16c3fc6b6f96f1ff381aa49266404bf3f4f4e7a86a4e3",
+    "evidence/outputs/Server_memory_cleanup_20261128/FOLLOWUP.json": "77316a4b4797b126f8e32c8132e8b300a874e3bdf2960b865dc83f889193aa65"
+  },
+  "content_checks": "passed"
+}

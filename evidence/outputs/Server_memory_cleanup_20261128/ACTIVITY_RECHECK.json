@@ -1,0 +1,19 @@
+{
+    "utc":  "2026-11-28T08:58:44.2304898Z",
+    "samples":  [
+                    {
+                        "pid":  30784,
+                        "cpu_delta_seconds":  3.95,
+                        "read_delta_bytes":  0,
+                        "write_delta_bytes":  0,
+                        "private_gib":  118.606
+                    },
+                    {
+                        "pid":  38952,
+                        "cpu_delta_seconds":  3.84,
+                        "read_delta_bytes":  0,
+                        "write_delta_bytes":  0,
+                        "private_gib":  50.135
+                    }
+                ]
+}

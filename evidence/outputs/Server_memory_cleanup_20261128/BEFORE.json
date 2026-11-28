@@ -1,0 +1,38 @@
+{
+    "host":  "DESKTOP-RFFERM3",
+    "memory":  {
+                   "utc":  "2026-11-28T08:58:38.4610334Z",
+                   "free_physical_gib":  35.606,
+                   "total_physical_gib":  127.691,
+                   "committed_gib":  210.172,
+                   "commit_limit_gib":  244.078
+               },
+    "targets":  [
+                    {
+                        "pid":  30784,
+                        "ppid":  34296,
+                        "name":  "powershell.exe",
+                        "created_utc":  "2026-11-28T04:59:11.0539590Z",
+                        "working_set_gib":  14.186,
+                        "private_gib":  118.618,
+                        "cpu_seconds":  11821.890625,
+                        "read_bytes":  2596292,
+                        "write_bytes":  120,
+                        "purpose":  "Historical status snapshot with deep PowerShell JSON serialization",
+                        "child_count":  0
+                    },
+                    {
+                        "pid":  38952,
+                        "ppid":  34672,
+                        "name":  "powershell.exe",
+                        "created_utc":  "2026-11-28T06:56:19.4950400Z",
+                        "working_set_gib":  41.767,
+                        "private_gib":  50.082,
+                        "cpu_seconds":  5062.703125,
+                        "read_bytes":  10640622,
+                        "write_bytes":  120,
+                        "purpose":  "Historical status snapshot with deep PowerShell JSON serialization",
+                        "child_count":  0
+                    }
+                ]
+}

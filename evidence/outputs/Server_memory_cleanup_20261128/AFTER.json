@@ -1,0 +1,70 @@
+{
+    "status":  "TERMINATED_VERIFIED",
+    "memory":  {
+                   "utc":  "2026-11-28T08:58:53.0096695Z",
+                   "free_physical_gib":  91.697,
+                   "total_physical_gib":  127.691,
+                   "committed_gib":  41.742,
+                   "commit_limit_gib":  185.885
+               },
+    "terminated_pids":  [
+                            30784,
+                            38952
+                        ],
+    "remaining_target_processes":  [
+
+                                   ],
+    "released_commit_gib":  168.43,
+    "increased_free_physical_gib":  56.091,
+    "top_private_memory":  [
+                               {
+                                   "pid":  25864,
+                                   "name":  "pycharm64.exe",
+                                   "private_gib":  8.372,
+                                   "working_set_gib":  3.534
+                               },
+                               {
+                                   "pid":  7208,
+                                   "name":  "StarFans.exe",
+                                   "private_gib":  7.628,
+                                   "working_set_gib":  1.319
+                               },
+                               {
+                                   "pid":  40680,
+                                   "name":  "StarFans.exe",
+                                   "private_gib":  4.918,
+                                   "working_set_gib":  0.095
+                               },
+                               {
+                                   "pid":  14616,
+                                   "name":  "MATLAB.exe",
+                                   "private_gib":  2.496,
+                                   "working_set_gib":  0.171
+                               },
+                               {
+                                   "pid":  5220,
+                                   "name":  "MsMpEng.exe",
+                                   "private_gib":  0.361,
+                                   "working_set_gib":  0.23
+                               },
+                               {
+                                   "pid":  728,
+                                   "name":  "full-line-inference.exe",
+                                   "private_gib":  0.353,
+                                   "working_set_gib":  0.001
+                               },
+                               {
+                                   "pid":  39596,
+                                   "name":  "explorer.exe",
+                                   "private_gib":  0.336,
+                                   "working_set_gib":  0.158
+                               },
+                               {
+                                   "pid":  28068,
+                                   "name":  "AweSun.exe",
+                                   "private_gib":  0.275,
+                                   "working_set_gib":  0.006
+                               }
+                           ],
+    "cause_assessment":  "Historical diagnostic PowerShell jobs retained large allocations during deep JSON serialization. Exact allocation stack was not profiled."
+}
