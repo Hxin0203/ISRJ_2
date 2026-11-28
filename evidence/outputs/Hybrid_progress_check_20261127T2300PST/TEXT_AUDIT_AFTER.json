@@ -1,0 +1,22 @@
+{
+  "path": "reports/Hybrid_continue512_20261127.md",
+  "density_tier": "low",
+  "flagged_count": 0,
+  "flagged": [],
+  "stylometry": {
+    "path": "reports/Hybrid_continue512_20261127.md",
+    "word_count": 606,
+    "sentence_count": 89,
+    "burstiness_cv": 0.677,
+    "lexical_diversity": 0.8112,
+    "ai_ngram_density": 0.0,
+    "matched_markers": [],
+    "score": 0.0325,
+    "confidence_level": "CLEAN",
+    "density_tier": "low",
+    "status": "ok",
+    "findings": [],
+    "findings_confidence": [],
+    "notes": []
+  }
+}

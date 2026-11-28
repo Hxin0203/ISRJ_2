@@ -1,0 +1,149 @@
+{
+  "checked_utc": "2026-11-28T07:01:18.445659+00:00",
+  "checked_pst": "2026-11-27T23:01:18.445659-08:00",
+  "assessment": "PARTIAL_PROGRESS_WITH_MEMORY_FAILURES_WAITING_FOR_GPU_ADMISSION",
+  "controller_heartbeat_advancing": true,
+  "active_seeds": [
+    29,
+    67,
+    79,
+    97
+  ],
+  "retry_seeds": [
+    17,
+    41,
+    53
+  ],
+  "pending_seeds": [
+    109
+  ],
+  "extension_saved_seed_epochs": 318,
+  "extension_target_seed_epochs": 2048,
+  "progress_comparison": [
+    {
+      "seed": 17,
+      "saved_before": 326,
+      "saved_after": 326,
+      "status_updated_before": "2026-11-28T06:31:27.276521+00:00",
+      "status_updated_after": "2026-11-28T06:31:27.276521+00:00"
+    },
+    {
+      "seed": 29,
+      "saved_before": 339,
+      "saved_after": 339,
+      "status_updated_before": "2026-11-28T06:59:52.785538+00:00",
+      "status_updated_after": "2026-11-28T07:00:40.133575+00:00"
+    },
+    {
+      "seed": 41,
+      "saved_before": 325,
+      "saved_after": 325,
+      "status_updated_before": "2026-11-28T06:31:57.868196+00:00",
+      "status_updated_after": "2026-11-28T06:31:57.868196+00:00"
+    },
+    {
+      "seed": 53,
+      "saved_before": 326,
+      "saved_after": 326,
+      "status_updated_before": "2026-11-28T06:32:05.051957+00:00",
+      "status_updated_after": "2026-11-28T06:32:05.051957+00:00"
+    },
+    {
+      "seed": 67,
+      "saved_before": 264,
+      "saved_after": 265,
+      "status_updated_before": "2026-11-28T06:59:16.442483+00:00",
+      "status_updated_after": "2026-11-28T07:00:55.728061+00:00"
+    },
+    {
+      "seed": 79,
+      "saved_before": 264,
+      "saved_after": 265,
+      "status_updated_before": "2026-11-28T06:59:44.642988+00:00",
+      "status_updated_after": "2026-11-28T07:00:38.017530+00:00"
+    },
+    {
+      "seed": 97,
+      "saved_before": 263,
+      "saved_after": 264,
+      "status_updated_before": "2026-11-28T06:59:30.856981+00:00",
+      "status_updated_after": "2026-11-28T07:01:09.026427+00:00"
+    },
+    {
+      "seed": 109,
+      "saved_before": 256,
+      "saved_after": 256,
+      "status_updated_before": "2026-11-28T02:40:34.739141+00:00",
+      "status_updated_after": "2026-11-28T02:40:34.739141+00:00"
+    }
+  ],
+  "latest_checkpoint_and_config_sha_passed": true,
+  "source_audit_passed": true,
+  "resource_snapshot": {
+    "checked_utc": "2026-11-28T07:00:15.5186974+00:00",
+    "memory_kib": {
+      "free_physical": 6997448,
+      "total_physical": 133893940,
+      "free_virtual": 331028,
+      "total_virtual": 180994808
+    },
+    "gpus": [
+      "0, GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d, 99 %, 14846 MiB",
+      "1, GPU-bb60dd3a-738e-2398-908f-7f77ac05549b, 100 %, 14175 MiB"
+    ],
+    "processes": [
+      {
+        "ProcessId": 24592,
+        "ParentProcessId": 36772,
+        "CommandLine": "\"D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe\" -m tools.run_recovp_hybrid_continue512"
+      },
+      {
+        "ProcessId": 34396,
+        "ParentProcessId": 24592,
+        "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.run_recovp_hybrid_continue512"
+      },
+      {
+        "ProcessId": 32348,
+        "ParentProcessId": 34396,
+        "CommandLine": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -m tools.recovp_hybrid_continue512 --seed 29 --gpu-index 1"
+      },
+      {
+        "ProcessId": 23772,
+        "ParentProcessId": 32348,
+        "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.recovp_hybrid_continue512 --seed 29 --gpu-index 1"
+      },
+      {
+        "ProcessId": 32048,
+        "ParentProcessId": 34396,
+        "CommandLine": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -m tools.recovp_hybrid_continue512 --seed 67 --gpu-index 1"
+      },
+      {
+        "ProcessId": 20904,
+        "ParentProcessId": 32048,
+        "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.recovp_hybrid_continue512 --seed 67 --gpu-index 1"
+      },
+      {
+        "ProcessId": 23648,
+        "ParentProcessId": 34396,
+        "CommandLine": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -m tools.recovp_hybrid_continue512 --seed 79 --gpu-index 0"
+      },
+      {
+        "ProcessId": 32240,
+        "ParentProcessId": 23648,
+        "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.recovp_hybrid_continue512 --seed 79 --gpu-index 0"
+      },
+      {
+        "ProcessId": 16664,
+        "ParentProcessId": 34396,
+        "CommandLine": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -m tools.recovp_hybrid_continue512 --seed 97 --gpu-index 0"
+      },
+      {
+        "ProcessId": 40912,
+        "ParentProcessId": 16664,
+        "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe\" -m tools.recovp_hybrid_continue512 --seed 97 --gpu-index 0"
+      }
+    ]
+  },
+  "decision": "Existing controller continues active runs and retries failed seeds on their frozen GPUs when utilization is below 85 percent. Current samples do not permit dispatch.",
+  "limitation": "Failed seeds have not resumed during this check; post-512 detection and false-alarm evaluation remains pending."
+}

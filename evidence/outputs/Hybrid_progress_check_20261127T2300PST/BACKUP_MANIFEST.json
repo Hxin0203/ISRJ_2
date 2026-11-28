@@ -1,0 +1,22 @@
+[
+  {
+    "path": "reports/Hybrid_continue512_20261127.md",
+    "backup": "backups\\continue512_progress_20261127T2300PST\\0.bak",
+    "sha256": "F40B4D614935E1491A03E986C683EFC41244455214A25F11A01B90A6E2227A87"
+  },
+  {
+    "path": "G:/Files/Markdown/ISRJ_2/opus对话/实验结果与文件存放说明.md",
+    "backup": "backups\\continue512_progress_20261127T2300PST\\1.bak",
+    "sha256": "8C88F888A42EA4AE0D974E2798DD6CB273E59F9A9A1BEDD262C9996AEC6149BA"
+  },
+  {
+    "path": "G:/Files/Markdown/ISRJ_2/opus对话/02_回执/Hybrid_continue512_20261127/REPORT.md",
+    "backup": "backups\\continue512_progress_20261127T2300PST\\2.bak",
+    "sha256": "F40B4D614935E1491A03E986C683EFC41244455214A25F11A01B90A6E2227A87"
+  },
+  {
+    "path": "G:/Files/Markdown/ISRJ_2/opus对话/02_回执/Hybrid_continue512_20261127/STATUS_SUMMARY.json",
+    "backup": "backups\\continue512_progress_20261127T2300PST\\3.bak",
+    "sha256": "F95D4B3356CC6C0EB2D210DED569A9B566EBF0B5702C726C2868394701F11F7F"
+  }
+]
