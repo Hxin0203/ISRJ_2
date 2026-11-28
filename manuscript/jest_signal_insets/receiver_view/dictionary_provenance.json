@@ -1,0 +1,41 @@
+{
+  "model": "ReCoVP-Hybrid Stage 1",
+  "seed": 17,
+  "epoch": 256,
+  "device": "cpu",
+  "observation": {
+    "parent_id": 2026112901000017,
+    "parent_index": 17,
+    "pulse_index": 2,
+    "snr_db": 10,
+    "jsr_db": 20,
+    "jam_type": "repeat",
+    "source_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235"
+  },
+  "observations_npz_sha256": "2f16f92b8f56468372f9f5975253af4bac191702c49c5f54724438c645c90fd8",
+  "input_y_sha256": "634d3efd298244f50ad8fcadf21180edda5dee7abf4cd7d0d96f3ec33e83ba3b",
+  "checkpoint": "outputs/recovp_hybrid_seed17/seed_17/epoch_256.pt",
+  "checkpoint_sha256": "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+  "model_source": "tools/vp_1103_recovp_hybrid.py",
+  "source_sha256": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+  "matrix": "outputs/jest_signal_insets/receiver_view/dictionary.npz",
+  "matrix_key": "B",
+  "matrix_file_sha256": "7c3c4dbf90f6b195c28b5e757d460386238ea55f8c82b899e952935236012c88",
+  "matrix_shape": [
+    1800,
+    16
+  ],
+  "matrix_dtype": "complex128",
+  "max_unit_norm_error": 4.471867320887668e-12,
+  "max_gram_error": 0.0,
+  "display": "abs(B).T, atoms 1 to 16 top to bottom, input samples 0 to 1799 left to right",
+  "limits_db": [
+    -48.0,
+    0.0
+  ],
+  "reference_amplitude": 0.1826358907609265,
+  "figure_sha256": {
+    "dictionary_full_db.png": "47de7a6417fe3fffe57830e30485b8d812c93af664c3b1b2f54af6d158d17199",
+    "dictionary_full_db.svg": "b3f982e4bbd2d8374f537f565190897d3a426a89a239ebe4bd246f4f69d8dcb8"
+  }
+}

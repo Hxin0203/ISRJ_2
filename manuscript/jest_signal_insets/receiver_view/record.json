@@ -1,0 +1,26 @@
+{
+  "parent_id": 2026112901000017,
+  "pulse_index": 2,
+  "source_sha256": "0c7f029b0d89c2fdaa9503dafd45c63e52874885337e139f63543622cafb6235",
+  "number_of_samples": 1800,
+  "sample_rate_hz": 60000000.0,
+  "nominal_snr_db": 10,
+  "nominal_jsr_db": 20,
+  "target_sample_range": [
+    86,
+    686
+  ],
+  "instantaneous_frequency_mhz": [
+    -14.908969480968391,
+    14.991030810395744
+  ],
+  "slope_mhz_per_us": 3.0000000002601195,
+  "full_window_us": [
+    0,
+    30
+  ],
+  "inset_window_us": [
+    0,
+    16
+  ]
+}
