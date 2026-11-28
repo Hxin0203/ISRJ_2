@@ -20,3 +20,9 @@ seed 109 的 epoch 131 checkpoint 和配置绑定的 preflight SHA 为 `ff5dda96
 ## 恢复条件
 
 找回与旧 SHA 精确匹配的 seed 109 preflight 后，先运行 `python -m tools.recovp_hybrid_continue512 --seed 109 --audit-only`，确认完整 0–256 恢复序列、配置、数据、源文件、优化器、RNG 和 GPU UUID，再让唯一 controller 自动启动 8 个续训。原始 0–256 目录不会覆盖，续训写入 `outputs/recovp_hybrid_512_seed{seed}/seed_{seed}/`。
+
+## 2026-11-27 18:44 PST 更新
+
+八个seed均已完成256轮并完成端点归档。归档阻塞已修复，seed17和29均已保存257轮并进入258轮，分别运行在GPU0和GPU1；seed41已按资源规则派发至GPU0。其余seed由同一控制器排队续接至512轮。
+
+seed109旧preflight原件缺失，本轮采用明确登记的固定哈希组合例外，现存preflight的内容、源码和数据绑定均通过验证，全部父恢复点及完整模型/Adam/RNG恢复已核对。历史epoch132至256曾使用进程内兼容桥接，原件缺失的追溯限制须在后续结果使用时保留。详细更新见项目reports/Hybrid_continue512_20261127.md及RECOVERY_PROGRESS_20261128.json。

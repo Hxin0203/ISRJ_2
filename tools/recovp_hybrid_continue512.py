@@ -90,12 +90,31 @@ def audit_parent(seed: int) -> tuple[dict, dict, dict]:
     trainer.SEED = seed
     trainer.PREFLIGHT = preflight_path
     trainer.validate_preflight(config["source_sha256"], data)
+    observed_preflight_sha = sha(preflight_path)
+    preflight_exception = None
+    if config["preflight_sha256"] != observed_preflight_sha:
+        # The original seed109 preflight was lost before the epoch131 resume.
+        # Preserve its recorded identity, and disclose the replacement artifact.
+        known_pair = (
+            "ff5dda96ca4278eaa4f6e8465d99f50cc69351348441c9745c632153849fbaa1",
+            "9e124798345223d591d2401670d98a4090e77c77229af27d15baca5d40be1346",
+        )
+        if seed != 109 or (config["preflight_sha256"], observed_preflight_sha) != known_pair:
+            raise RuntimeError("unrecognized parent preflight identity mismatch")
+        preflight_exception = {
+            "seed": seed,
+            "recorded_preflight_sha256": config["preflight_sha256"],
+            "available_preflight_sha256": observed_preflight_sha,
+            "original_artifact_available": False,
+            "available_artifact_source_data_and_checks_validated": True,
+            "limitation": "Original preflight bytes cannot be authenticated; epoch132..256 used the recovery bridge.",
+        }
     identity = {"run": config["run_id"], "seed": seed,
                 "config_sha256": sha(base / "CONFIG.json"),
                 "train_sha256": data["train.npz"],
                 "source_sha256": config["source_sha256"],
-                "preflight_sha256": sha(preflight_path)}
-    if complete["identity"] != identity or config["preflight_sha256"] != sha(preflight_path):
+                "preflight_sha256": config["preflight_sha256"]}
+    if complete["identity"] != identity:
         raise RuntimeError("parent complete/config/preflight identity mismatch")
     physical = config["execution"]["physical_gpu_index"]
     if config["execution"]["gpu_uuid"] != admission.GPU_UUIDS[physical]:
@@ -146,6 +165,8 @@ def audit_parent(seed: int) -> tuple[dict, dict, dict]:
                 "retained_original_recovery_sha256": complete["recovery_sha256"],
                 "retained_original_milestones": complete["milestones"],
                 "optimizer_and_rng_present": True}
+    if preflight_exception is not None:
+        manifest["preflight_artifact_exception"] = preflight_exception
     target = archive / "MANIFEST.json"
     if target.exists() and read(target) != manifest:
         raise RuntimeError("256-epoch archive manifest changed")

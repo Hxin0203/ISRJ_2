@@ -1,0 +1,485 @@
+{
+    "checked_utc":  "2026-11-28T02:43:43.2998074Z",
+    "pipeline":  {
+                     "pipeline":  "recovp_hybrid_continue512_20261127",
+                     "stage":  "RUNNING",
+                     "seeds":  {
+                                   "17":  {
+                                              "stage":  "RUNNING",
+                                              "attempts":  [
+                                                               {
+                                                                   "pid":  32456,
+                                                                   "gpu":  0,
+                                                                   "started_utc":  "2026-11-28T02:41:47.485044+00:00",
+                                                                   "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_17_attempt_1.log",
+                                                                   "command":  [
+                                                                                   "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                   "-m",
+                                                                                   "tools.recovp_hybrid_continue512",
+                                                                                   "--seed",
+                                                                                   "17",
+                                                                                   "--gpu-index",
+                                                                                   "0"
+                                                                               ]
+                                                               }
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+                                              "pid":  32456,
+                                              "gpu":  0
+                                          },
+                                   "29":  {
+                                              "stage":  "RUNNING",
+                                              "attempts":  [
+                                                               {
+                                                                   "pid":  32348,
+                                                                   "gpu":  1,
+                                                                   "started_utc":  "2026-11-28T02:42:17.595096+00:00",
+                                                                   "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_29_attempt_1.log",
+                                                                   "command":  [
+                                                                                   "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                   "-m",
+                                                                                   "tools.recovp_hybrid_continue512",
+                                                                                   "--seed",
+                                                                                   "29",
+                                                                                   "--gpu-index",
+                                                                                   "1"
+                                                                               ]
+                                                               }
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+                                              "pid":  32348,
+                                              "gpu":  1
+                                          },
+                                   "41":  {
+                                              "stage":  "RUNNING",
+                                              "attempts":  [
+                                                               {
+                                                                   "pid":  33084,
+                                                                   "gpu":  0,
+                                                                   "started_utc":  "2026-11-28T02:43:17.774793+00:00",
+                                                                   "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_41_attempt_1.log",
+                                                                   "command":  [
+                                                                                   "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                   "-m",
+                                                                                   "tools.recovp_hybrid_continue512",
+                                                                                   "--seed",
+                                                                                   "41",
+                                                                                   "--gpu-index",
+                                                                                   "0"
+                                                                               ]
+                                                               }
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+                                              "pid":  33084,
+                                              "gpu":  0
+                                          },
+                                   "53":  {
+                                              "stage":  "PENDING",
+                                              "attempts":  [
+
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147"
+                                          },
+                                   "67":  {
+                                              "stage":  "PENDING",
+                                              "attempts":  [
+
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2"
+                                          },
+                                   "79":  {
+                                              "stage":  "PENDING",
+                                              "attempts":  [
+
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3"
+                                          },
+                                   "97":  {
+                                              "stage":  "PENDING",
+                                              "attempts":  [
+
+                                                           ],
+                                              "failures":  0,
+                                              "parent_sha256":  "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c"
+                                          },
+                                   "109":  {
+                                               "stage":  "PENDING",
+                                               "attempts":  [
+
+                                                            ],
+                                               "failures":  0,
+                                               "parent_sha256":  "f533891830764e2e06523b114b2bd6dc73f4dd3689591cfa7f1f34cfd160c371"
+                                           }
+                               },
+                     "sources":  {
+                                     "tools/recovp_hybrid_continue512.py":  "17d6491761ea56a7f1975fa570594d7727a457ac315da6220b080fe20cedbee3",
+                                     "tools/run_recovp_hybrid_continue512.py":  "50e8914daff3f9e62059e7246b9bc4b2df7441c2370c85d67e905a32b8961f4e",
+                                     "tools/start_recovp_hybrid_continue512.ps1":  "7e9b1f4aeae794ed89bee8c852d67db6ba302d19c1e14233e534c29cfb8ff28e",
+                                     "tools/server_gpu_admission.py":  "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563",
+                                     "tools/stable_hash.py":  "bb6847ed1d4f8e090240a05d3a5742dcda005c344493fd4c9ad0bbe2e76f1015"
+                                 },
+                     "archive":  "D:\\code\\Xin\\ISRJ_222\\backups\\recovp_hybrid_256_before512_20261127",
+                     "target_epochs":  512,
+                     "lr":  2E-06,
+                     "barrier":  "all eight original seeds complete epoch256",
+                     "admission":  "concurrent use allowed; selected GPU utilization must be below 85 percent",
+                     "created_utc":  "2026-11-27T16:09:06.100724+00:00",
+                     "parent256_complete":  {
+                                                "17":  true,
+                                                "29":  true,
+                                                "41":  true,
+                                                "53":  true,
+                                                "67":  true,
+                                                "79":  true,
+                                                "97":  true,
+                                                "109":  true
+                                            },
+                     "parent_archived_seeds":  [
+                                                   17,
+                                                   29,
+                                                   41,
+                                                   53,
+                                                   67,
+                                                   79,
+                                                   97,
+                                                   109
+                                               ],
+                     "updated_utc":  "2026-11-28T02:43:17.795793+00:00",
+                     "controller_pid":  34396,
+                     "source_binding_update":  {
+                                                   "reason":  "Explicit seed109 missing preflight artifact exception; all available source/data/checkpoint bindings audited",
+                                                   "updated_utc":  "2026-11-28T02:40:35.2598258Z"
+                                               },
+                     "parent_archives_verified_utc":  "2026-11-28T02:41:47.424054+00:00",
+                     "gpu_samples":  [
+                                         {
+                                             "physical_gpu_index":  0,
+                                             "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                             "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                             "utilization_percent":  70.0
+                                         },
+                                         {
+                                             "physical_gpu_index":  1,
+                                             "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                             "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                             "utilization_percent":  99.0
+                                         }
+                                     ],
+                     "resource_wait":  "both GPUs at or above 85 percent"
+                 },
+    "seeds":  [
+                  {
+                      "seed":  17,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed17",
+                                               "seed":  17,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.3364396166240719,
+                                               "final_total":  0.06372834363234385,
+                                               "stage1_total":  1.0908450876304414,
+                                               "endpoint":  0.2635372780981318,
+                                               "pc":  0.3780480986315524,
+                                               "damage":  0.033716730773448944,
+                                               "tail":  0.027616003913882043,
+                                               "tail_peak_db":  -0.889132354563723,
+                                               "stage1_tail_peak_db":  1.7111982996575534,
+                                               "gradient_norm":  0.8800774036596218,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  96.18131079990417,
+                                               "updated_utc":  "2026-11-25T17:24:28.905474+00:00",
+                                               "checkpoint_sha256":  "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212"
+                                           },
+                      "continuation":  {
+                                           "stage":  "EPOCH_SAVED",
+                                           "seed":  17,
+                                           "epoch":  257,
+                                           "checkpoint_sha256":  "420df70c6e5a512f8fd8d02b98a60909047335be10002fbb0f8d5126e3d3e710",
+                                           "gpu":  0,
+                                           "pid":  9408,
+                                           "metrics":  {
+                                                           "total":  0.33642651319193345,
+                                                           "endpoint":  0.2635275769328776,
+                                                           "pc":  0.3780278461345006,
+                                                           "damage":  0.033715429509660076,
+                                                           "tail":  0.027614418978027782,
+                                                           "final_total":  0.06374071475875098,
+                                                           "stage1_total":  1.0907431854769432,
+                                                           "final_tail":  0.017088627232520064,
+                                                           "stage1_tail":  0.04210316645895773,
+                                                           "tail_peak_db":  -0.8868180319356421,
+                                                           "stage1_tail_peak_db":  1.7139855317460995,
+                                                           "gradient_norm":  0.8628605743870139,
+                                                           "lr":  2E-06
+                                                       },
+                                           "updated_utc":  "2026-11-28T02:43:42.477896+00:00"
+                                       },
+                      "saved_continuation_epochs":  [
+                                                        "epoch_256",
+                                                        "epoch_257"
+                                                    ]
+                  },
+                  {
+                      "seed":  29,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed29",
+                                               "seed":  29,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.33229868053846684,
+                                               "final_total":  0.06544035182256873,
+                                               "stage1_total":  1.0674333229253534,
+                                               "endpoint":  0.2597637719712414,
+                                               "pc":  0.37342153110754833,
+                                               "damage":  0.03398515797501508,
+                                               "tail":  0.024152059258989073,
+                                               "tail_peak_db":  -1.0006528226658702,
+                                               "stage1_tail_peak_db":  1.6120778488305707,
+                                               "gradient_norm":  0.820143647181491,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  95.67235270002857,
+                                               "updated_utc":  "2026-11-26T11:36:52.282138+00:00",
+                                               "checkpoint_sha256":  "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30"
+                                           },
+                      "continuation":  {
+                                           "stage":  "TRAINING",
+                                           "seed":  29,
+                                           "epoch":  257,
+                                           "epochs":  512,
+                                           "last_committed_epoch":  256,
+                                           "update":  36,
+                                           "metrics":  {
+                                                           "total":  0.1843133680522442,
+                                                           "endpoint":  0.1283763162791729,
+                                                           "pc":  0.17459204606711864,
+                                                           "damage":  0.03787306044250727,
+                                                           "tail":  0.01209569694037782,
+                                                           "final_total":  0.0718332938849926,
+                                                           "stage1_total":  0.44992030411958694,
+                                                           "final_tail":  0.004845253104576841,
+                                                           "stage1_tail":  0.0290017768566031,
+                                                           "tail_peak_db":  2.0011243373155594,
+                                                           "stage1_tail_peak_db":  4.543876051902771,
+                                                           "gradient_norm":  0.5021981000900269,
+                                                           "lr":  2E-06
+                                                       },
+                                           "gpu":  1,
+                                           "pid":  23772,
+                                           "updated_utc":  "2026-11-28T02:43:37.456316+00:00"
+                                       },
+                      "saved_continuation_epochs":  [
+                                                        "epoch_256"
+                                                    ]
+                  },
+                  {
+                      "seed":  41,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed41",
+                                               "seed":  41,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.3341574503914065,
+                                               "final_total":  0.0584093310511283,
+                                               "stage1_total":  1.102992480082321,
+                                               "endpoint":  0.26319766403078876,
+                                               "pc":  0.3796690180946219,
+                                               "damage":  0.031773323570329616,
+                                               "tail":  0.02439126505942113,
+                                               "tail_peak_db":  -1.1822785042847197,
+                                               "stage1_tail_peak_db":  1.269613283065458,
+                                               "gradient_norm":  0.8671157322824001,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  99.5812156999018,
+                                               "updated_utc":  "2026-11-26T15:10:37.196947+00:00",
+                                               "checkpoint_sha256":  "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1"
+                                           },
+                      "continuation":  {
+                                           "stage":  "TRAINING",
+                                           "seed":  41,
+                                           "epoch":  257,
+                                           "epochs":  512,
+                                           "last_committed_epoch":  256,
+                                           "update":  1,
+                                           "metrics":  {
+                                                           "total":  0.14187616109848022,
+                                                           "endpoint":  0.1021655984222889,
+                                                           "pc":  0.15181761048734188,
+                                                           "damage":  0.024422010872513056,
+                                                           "tail":  0.0021357369259931147,
+                                                           "final_total":  0.04682690557092428,
+                                                           "stage1_total":  0.3801970109343529,
+                                                           "final_tail":  0.00040738520328886807,
+                                                           "stage1_tail":  0.006913406716194004,
+                                                           "tail_peak_db":  -2.530698835849762,
+                                                           "stage1_tail_peak_db":  -0.3247228264808655,
+                                                           "gradient_norm":  0.577913761138916,
+                                                           "lr":  2E-06
+                                                       },
+                                           "gpu":  0,
+                                           "pid":  28760,
+                                           "updated_utc":  "2026-11-28T02:43:30.529503+00:00"
+                                       },
+                      "saved_continuation_epochs":  [
+                                                        "epoch_256"
+                                                    ]
+                  },
+                  {
+                      "seed":  53,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed53",
+                                               "seed":  53,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.337704635807313,
+                                               "final_total":  0.06066449961508624,
+                                               "stage1_total":  1.108160546097982,
+                                               "endpoint":  0.2665077781954703,
+                                               "pc":  0.3830562385264784,
+                                               "damage":  0.031549136891650655,
+                                               "tail":  0.026841940375782986,
+                                               "tail_peak_db":  -1.2863958839637537,
+                                               "stage1_tail_peak_db":  1.169788855438431,
+                                               "gradient_norm":  0.9984018498410782,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  96.21217050007544,
+                                               "updated_utc":  "2026-11-26T19:58:26.995236+00:00",
+                                               "checkpoint_sha256":  "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147"
+                                           },
+                      "saved_continuation_epochs":  [
+
+                                                    ]
+                  },
+                  {
+                      "seed":  67,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed67",
+                                               "seed":  67,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.3369805823798136,
+                                               "final_total":  0.06149736883041138,
+                                               "stage1_total":  1.1019328587766115,
+                                               "endpoint":  0.2650237343477784,
+                                               "pc":  0.38177510306801804,
+                                               "damage":  0.032371163234832544,
+                                               "tail":  0.028163513581262123,
+                                               "tail_peak_db":  -1.0446824388733755,
+                                               "stage1_tail_peak_db":  1.5239946817358334,
+                                               "gradient_norm":  0.9189839971562227,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  95.58426010003313,
+                                               "updated_utc":  "2026-11-27T02:48:54.320982+00:00",
+                                               "checkpoint_sha256":  "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2"
+                                           },
+                      "saved_continuation_epochs":  [
+
+                                                    ]
+                  },
+                  {
+                      "seed":  79,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed79",
+                                               "seed":  79,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.32664120296249166,
+                                               "final_total":  0.0577414725945952,
+                                               "stage1_total":  1.07559891937611,
+                                               "endpoint":  0.2570730864147966,
+                                               "pc":  0.36787663971093326,
+                                               "damage":  0.031585427386744414,
+                                               "tail":  0.023900535868354684,
+                                               "tail_peak_db":  -1.1680695566659172,
+                                               "stage1_tail_peak_db":  1.330430464508633,
+                                               "gradient_norm":  0.6963671511039138,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  95.89778380002826,
+                                               "updated_utc":  "2026-11-27T14:18:17.817341+00:00",
+                                               "checkpoint_sha256":  "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3"
+                                           },
+                      "saved_continuation_epochs":  [
+
+                                                    ]
+                  },
+                  {
+                      "seed":  97,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed97",
+                                               "seed":  97,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.3292139000647391,
+                                               "final_total":  0.057443058705151394,
+                                               "stage1_total":  1.0870833695419908,
+                                               "endpoint":  0.2599740998072472,
+                                               "pc":  0.374107051466126,
+                                               "damage":  0.030638341845284838,
+                                               "tail":  0.02381505793317018,
+                                               "tail_peak_db":  -1.1380639692458014,
+                                               "stage1_tail_peak_db":  1.455117894957463,
+                                               "gradient_norm":  0.8385021438201269,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  101.80482940003276,
+                                               "updated_utc":  "2026-11-27T12:41:40.070619+00:00",
+                                               "checkpoint_sha256":  "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c"
+                                           },
+                      "saved_continuation_epochs":  [
+
+                                                    ]
+                  },
+                  {
+                      "seed":  109,
+                      "epoch256_metrics":  {
+                                               "run":  "recovp_hybrid_seed109",
+                                               "seed":  109,
+                                               "epoch":  256,
+                                               "global_step":  12288,
+                                               "updates_this_epoch":  48,
+                                               "total":  0.3392820421140641,
+                                               "final_total":  0.06582936642613883,
+                                               "stage1_total":  1.0938107053904484,
+                                               "endpoint":  0.26549434263142757,
+                                               "pc":  0.3799049704587863,
+                                               "damage":  0.03460504700584958,
+                                               "tail":  0.023843136855693576,
+                                               "tail_peak_db":  -1.0852330390674372,
+                                               "stage1_tail_peak_db":  1.3590631301825244,
+                                               "gradient_norm":  0.946546444358925,
+                                               "lr":  2.0008758074411896E-06,
+                                               "epoch_elapsed_seconds":  99.01736230007373,
+                                               "updated_utc":  "2026-11-27T23:30:54.604168+00:00",
+                                               "checkpoint_sha256":  "f533891830764e2e06523b114b2bd6dc73f4dd3689591cfa7f1f34cfd160c371"
+                                           },
+                      "continuation":  {
+                                           "stage":  "CONTINUATION_RESTORE_VERIFIED",
+                                           "seed":  109,
+                                           "parent_sha256":  "f533891830764e2e06523b114b2bd6dc73f4dd3689591cfa7f1f34cfd160c371",
+                                           "optimizer_slots":  100,
+                                           "rng_restored":  true,
+                                           "model_restored":  true,
+                                           "gpu":  0,
+                                           "updated_utc":  "2026-11-28T02:40:34.739141+00:00"
+                                       },
+                      "saved_continuation_epochs":  [
+
+                                                    ]
+                  }
+              ],
+    "gpu":  [
+                "0, 99 %, 14856 MiB",
+                "1, 100 %, 7088 MiB"
+            ]
+}
