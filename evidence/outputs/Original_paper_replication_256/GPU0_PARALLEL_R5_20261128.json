@@ -1,0 +1,482 @@
+﻿{
+    "captured_utc":  "2026-11-28T12:50:51.1946510Z",
+    "gpu_rows":  [
+                     "0, GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d, 0, 15860, 16311",
+                     "1, GPU-bb60dd3a-738e-2398-908f-7f77ac05549b, 100, 16005, 16311"
+                 ],
+    "physical_memory_used_percent":  44.475097229941852,
+    "queue":  {
+                  "created_utc":  "2026-11-28T12:47:20Z",
+                  "tasks":  {
+                                "67":  {
+                                           "state":  "RUNNING",
+                                           "attempts":  1,
+                                           "pid":  9100,
+                                           "create_time":  1795870041.5494604,
+                                           "gpu":  {
+                                                       "physical_gpu_index":  0,
+                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                       "utilization_percent":  1.0,
+                                                       "memory_used_mib":  571.0,
+                                                       "memory_total_mib":  16311.0,
+                                                       "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                                       "host_memory":  {
+                                                                           "total_bytes":  137107394560,
+                                                                           "available_bytes":  103511752704,
+                                                                           "source":  "GlobalMemoryStatusEx",
+                                                                           "used_bytes":  33595641856,
+                                                                           "utilization_percent":  24.503158245996794
+                                                                       }
+                                                   },
+                                           "dispatch_resources":  {
+                                                                      "gpus":  [
+                                                                                   {
+                                                                                       "physical_gpu_index":  0,
+                                                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  1.0,
+                                                                                       "memory_used_mib":  571.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   },
+                                                                                   {
+                                                                                       "physical_gpu_index":  1,
+                                                                                       "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  99.0,
+                                                                                       "memory_used_mib":  16037.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   }
+                                                                               ],
+                                                                      "memory":  {
+                                                                                     "total_bytes":  137107394560,
+                                                                                     "available_bytes":  103511752704,
+                                                                                     "source":  "GlobalMemoryStatusEx",
+                                                                                     "used_bytes":  33595641856,
+                                                                                     "utilization_percent":  24.503158245996794
+                                                                                 },
+                                                                      "queried_utc":  "2026-11-28T12:47:21.541866+00:00"
+                                                                  },
+                                           "started_utc":  "2026-11-28T12:47:21Z",
+                                           "processes":  [
+                                                             {
+                                                                 "pid":  9100,
+                                                                 "create_time":  1795870041.5494604
+                                                             },
+                                                             {
+                                                                 "pid":  35968,
+                                                                 "create_time":  1795870041.5546684
+                                                             }
+                                                         ]
+                                       },
+                                "97":  {
+                                           "state":  "RUNNING",
+                                           "attempts":  1,
+                                           "pid":  32684,
+                                           "create_time":  1795870062.8459923,
+                                           "gpu":  {
+                                                       "physical_gpu_index":  0,
+                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                       "utilization_percent":  0.0,
+                                                       "memory_used_mib":  4070.0,
+                                                       "memory_total_mib":  16311.0,
+                                                       "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                                       "host_memory":  {
+                                                                           "total_bytes":  137107394560,
+                                                                           "available_bytes":  101225746432,
+                                                                           "source":  "GlobalMemoryStatusEx",
+                                                                           "used_bytes":  35881648128,
+                                                                           "utilization_percent":  26.17046895475628
+                                                                       }
+                                                   },
+                                           "dispatch_resources":  {
+                                                                      "gpus":  [
+                                                                                   {
+                                                                                       "physical_gpu_index":  0,
+                                                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  0.0,
+                                                                                       "memory_used_mib":  4070.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   },
+                                                                                   {
+                                                                                       "physical_gpu_index":  1,
+                                                                                       "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  100.0,
+                                                                                       "memory_used_mib":  16037.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   }
+                                                                               ],
+                                                                      "memory":  {
+                                                                                     "total_bytes":  137107394560,
+                                                                                     "available_bytes":  101225746432,
+                                                                                     "source":  "GlobalMemoryStatusEx",
+                                                                                     "used_bytes":  35881648128,
+                                                                                     "utilization_percent":  26.17046895475628
+                                                                                 },
+                                                                      "queried_utc":  "2026-11-28T12:47:42.845458+00:00"
+                                                                  },
+                                           "started_utc":  "2026-11-28T12:47:42Z",
+                                           "processes":  [
+                                                             {
+                                                                 "pid":  15672,
+                                                                 "create_time":  1795870062.8525207
+                                                             },
+                                                             {
+                                                                 "pid":  32684,
+                                                                 "create_time":  1795870062.8459923
+                                                             }
+                                                         ]
+                                       },
+                                "53":  {
+                                           "state":  "RUNNING",
+                                           "attempts":  1,
+                                           "pid":  15752,
+                                           "create_time":  1795870080.1580193,
+                                           "gpu":  {
+                                                       "physical_gpu_index":  0,
+                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                       "utilization_percent":  1.0,
+                                                       "memory_used_mib":  7570.0,
+                                                       "memory_total_mib":  16311.0,
+                                                       "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                                       "host_memory":  {
+                                                                           "total_bytes":  137107394560,
+                                                                           "available_bytes":  99462234112,
+                                                                           "source":  "GlobalMemoryStatusEx",
+                                                                           "used_bytes":  37645160448,
+                                                                           "utilization_percent":  27.456695949047432
+                                                                       }
+                                                   },
+                                           "dispatch_resources":  {
+                                                                      "gpus":  [
+                                                                                   {
+                                                                                       "physical_gpu_index":  0,
+                                                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  1.0,
+                                                                                       "memory_used_mib":  7570.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   },
+                                                                                   {
+                                                                                       "physical_gpu_index":  1,
+                                                                                       "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  100.0,
+                                                                                       "memory_used_mib":  16037.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   }
+                                                                               ],
+                                                                      "memory":  {
+                                                                                     "total_bytes":  137107394560,
+                                                                                     "available_bytes":  99462234112,
+                                                                                     "source":  "GlobalMemoryStatusEx",
+                                                                                     "used_bytes":  37645160448,
+                                                                                     "utilization_percent":  27.456695949047432
+                                                                                 },
+                                                                      "queried_utc":  "2026-11-28T12:48:00.152096+00:00"
+                                                                  },
+                                           "started_utc":  "2026-11-28T12:48:00Z",
+                                           "processes":  [
+                                                             {
+                                                                 "pid":  15752,
+                                                                 "create_time":  1795870080.1580193
+                                                             },
+                                                             {
+                                                                 "pid":  34972,
+                                                                 "create_time":  1795870080.164768
+                                                             }
+                                                         ]
+                                       },
+                                "41":  {
+                                           "state":  "RUNNING",
+                                           "attempts":  1,
+                                           "pid":  22968,
+                                           "create_time":  1795870122.606871,
+                                           "gpu":  {
+                                                       "physical_gpu_index":  0,
+                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                       "utilization_percent":  1.0,
+                                                       "memory_used_mib":  11069.0,
+                                                       "memory_total_mib":  16311.0,
+                                                       "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                                       "host_memory":  {
+                                                                           "total_bytes":  137107394560,
+                                                                           "available_bytes":  95570726912,
+                                                                           "source":  "GlobalMemoryStatusEx",
+                                                                           "used_bytes":  41536667648,
+                                                                           "utilization_percent":  30.294987211519803
+                                                                       }
+                                                   },
+                                           "dispatch_resources":  {
+                                                                      "gpus":  [
+                                                                                   {
+                                                                                       "physical_gpu_index":  0,
+                                                                                       "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  1.0,
+                                                                                       "memory_used_mib":  11069.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   },
+                                                                                   {
+                                                                                       "physical_gpu_index":  1,
+                                                                                       "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                                                                       "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                       "utilization_percent":  100.0,
+                                                                                       "memory_used_mib":  16037.0,
+                                                                                       "memory_total_mib":  16311.0
+                                                                                   }
+                                                                               ],
+                                                                      "memory":  {
+                                                                                     "total_bytes":  137107394560,
+                                                                                     "available_bytes":  95570726912,
+                                                                                     "source":  "GlobalMemoryStatusEx",
+                                                                                     "used_bytes":  41536667648,
+                                                                                     "utilization_percent":  30.294987211519803
+                                                                                 },
+                                                                      "queried_utc":  "2026-11-28T12:48:42.605323+00:00"
+                                                                  },
+                                           "started_utc":  "2026-11-28T12:48:42Z",
+                                           "processes":  [
+                                                             {
+                                                                 "pid":  22968,
+                                                                 "create_time":  1795870122.606871
+                                                             },
+                                                             {
+                                                                 "pid":  36500,
+                                                                 "create_time":  1795870122.6126442
+                                                             }
+                                                         ]
+                                       },
+                                "109":  {
+                                            "state":  "RUNNING",
+                                            "attempts":  1,
+                                            "pid":  13660,
+                                            "create_time":  1795870160.337071,
+                                            "gpu":  {
+                                                        "physical_gpu_index":  0,
+                                                        "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                        "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                        "utilization_percent":  1.0,
+                                                        "memory_used_mib":  14568.0,
+                                                        "memory_total_mib":  16311.0,
+                                                        "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                                        "host_memory":  {
+                                                                            "total_bytes":  137107394560,
+                                                                            "available_bytes":  91017515008,
+                                                                            "source":  "GlobalMemoryStatusEx",
+                                                                            "used_bytes":  46089879552,
+                                                                            "utilization_percent":  33.615896283282126
+                                                                        }
+                                                    },
+                                            "dispatch_resources":  {
+                                                                       "gpus":  [
+                                                                                    {
+                                                                                        "physical_gpu_index":  0,
+                                                                                        "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                                                                        "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                        "utilization_percent":  1.0,
+                                                                                        "memory_used_mib":  14568.0,
+                                                                                        "memory_total_mib":  16311.0
+                                                                                    },
+                                                                                    {
+                                                                                        "physical_gpu_index":  1,
+                                                                                        "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                                                                        "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                                                                        "utilization_percent":  99.0,
+                                                                                        "memory_used_mib":  16005.0,
+                                                                                        "memory_total_mib":  16311.0
+                                                                                    }
+                                                                                ],
+                                                                       "memory":  {
+                                                                                      "total_bytes":  137107394560,
+                                                                                      "available_bytes":  91017515008,
+                                                                                      "source":  "GlobalMemoryStatusEx",
+                                                                                      "used_bytes":  46089879552,
+                                                                                      "utilization_percent":  33.615896283282126
+                                                                                  },
+                                                                       "queried_utc":  "2026-11-28T12:49:20.327908+00:00"
+                                                                   },
+                                            "started_utc":  "2026-11-28T12:49:20Z",
+                                            "processes":  [
+                                                              {
+                                                                  "pid":  13660,
+                                                                  "create_time":  1795870160.337071
+                                                              },
+                                                              {
+                                                                  "pid":  34580,
+                                                                  "create_time":  1795870160.350804
+                                                              }
+                                                          ]
+                                        }
+                            },
+                  "controller_pid":  33372,
+                  "heartbeat_utc":  "2026-11-28T12:50:40Z",
+                  "state":  "RUNNING"
+              },
+    "progress":  [
+                     {
+                         "state":  "RUNNING",
+                         "pid":  35968,
+                         "seed":  67,
+                         "gpu_admission":  {
+                                               "physical_gpu_index":  0,
+                                               "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  1.0,
+                                               "memory_used_mib":  571.0,
+                                               "memory_total_mib":  16311.0,
+                                               "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                               "host_memory":  {
+                                                                   "total_bytes":  137107394560,
+                                                                   "available_bytes":  103493505024,
+                                                                   "source":  "GlobalMemoryStatusEx",
+                                                                   "used_bytes":  33613889536,
+                                                                   "utilization_percent":  24.516467287466483
+                                                               }
+                                           },
+                         "started_utc":  "2026-11-28T12:47:25Z",
+                         "total_cells":  310,
+                         "completed_cells":  1,
+                         "completed_parent_chunks":  36,
+                         "last_update_utc":  "2026-11-28T12:50:36Z",
+                         "snr_db":  -30,
+                         "jsr_db":  -5,
+                         "last_parent_stop":  64
+                     },
+                     {
+                         "state":  "RUNNING",
+                         "pid":  15672,
+                         "seed":  97,
+                         "gpu_admission":  {
+                                               "physical_gpu_index":  0,
+                                               "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  0.0,
+                                               "memory_used_mib":  4070.0,
+                                               "memory_total_mib":  16311.0,
+                                               "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                               "host_memory":  {
+                                                                   "total_bytes":  137107394560,
+                                                                   "available_bytes":  101191380992,
+                                                                   "source":  "GlobalMemoryStatusEx",
+                                                                   "used_bytes":  35916013568,
+                                                                   "utilization_percent":  26.19553356933107
+                                                               }
+                                           },
+                         "started_utc":  "2026-11-28T12:47:45Z",
+                         "total_cells":  310,
+                         "completed_cells":  0,
+                         "completed_parent_chunks":  29,
+                         "last_update_utc":  "2026-11-28T12:50:35Z",
+                         "snr_db":  -30,
+                         "jsr_db":  -10,
+                         "last_parent_stop":  464
+                     },
+                     {
+                         "state":  "RUNNING",
+                         "pid":  34972,
+                         "seed":  53,
+                         "gpu_admission":  {
+                                               "physical_gpu_index":  0,
+                                               "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  83.0,
+                                               "memory_used_mib":  7570.0,
+                                               "memory_total_mib":  16311.0,
+                                               "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                               "host_memory":  {
+                                                                   "total_bytes":  137107394560,
+                                                                   "available_bytes":  99491016704,
+                                                                   "source":  "GlobalMemoryStatusEx",
+                                                                   "used_bytes":  37616377856,
+                                                                   "utilization_percent":  27.43570321405136
+                                                               }
+                                           },
+                         "started_utc":  "2026-11-28T12:48:03Z",
+                         "total_cells":  310,
+                         "completed_cells":  0,
+                         "completed_parent_chunks":  22,
+                         "last_update_utc":  "2026-11-28T12:50:36Z",
+                         "snr_db":  -30,
+                         "jsr_db":  -10,
+                         "last_parent_stop":  352
+                     },
+                     {
+                         "state":  "RUNNING",
+                         "pid":  36500,
+                         "seed":  41,
+                         "gpu_admission":  {
+                                               "physical_gpu_index":  0,
+                                               "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  1.0,
+                                               "memory_used_mib":  11069.0,
+                                               "memory_total_mib":  16311.0,
+                                               "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                               "host_memory":  {
+                                                                   "total_bytes":  137107394560,
+                                                                   "available_bytes":  95533621248,
+                                                                   "source":  "GlobalMemoryStatusEx",
+                                                                   "used_bytes":  41573773312,
+                                                                   "utilization_percent":  30.32205042289442
+                                                               }
+                                           },
+                         "started_utc":  "2026-11-28T12:48:52Z",
+                         "total_cells":  310,
+                         "completed_cells":  0,
+                         "completed_parent_chunks":  9,
+                         "last_update_utc":  "2026-11-28T12:50:33Z",
+                         "snr_db":  -30,
+                         "jsr_db":  -10,
+                         "last_parent_stop":  144
+                     },
+                     {
+                         "state":  "RUNNING",
+                         "pid":  34580,
+                         "seed":  109,
+                         "gpu_admission":  {
+                                               "physical_gpu_index":  0,
+                                               "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  1.0,
+                                               "memory_used_mib":  14568.0,
+                                               "memory_total_mib":  16311.0,
+                                               "admission_policy":  "concurrent use allowed; selected GPU utilization must be below 85 percent and host physical memory must be below 90 percent",
+                                               "host_memory":  {
+                                                                   "total_bytes":  137107394560,
+                                                                   "available_bytes":  91188473856,
+                                                                   "source":  "GlobalMemoryStatusEx",
+                                                                   "used_bytes":  45918920704,
+                                                                   "utilization_percent":  33.491206547510664
+                                                               }
+                                           },
+                         "started_utc":  "2026-11-28T12:49:25Z",
+                         "total_cells":  310,
+                         "completed_cells":  0,
+                         "completed_parent_chunks":  4,
+                         "last_update_utc":  "2026-11-28T12:50:34Z",
+                         "snr_db":  -30,
+                         "jsr_db":  -10,
+                         "last_parent_stop":  64
+                     }
+                 ],
+    "verification":  {
+                         "all_five_seed_chunks_present":  true,
+                         "metric_shape_per_chunk":  [
+                                                        16,
+                                                        3
+                                                    ],
+                         "aliases_checked":  [
+                                                 "E_U=u_nmse",
+                                                 "D_S=e_S",
+                                                 "E_0=no_jammer_pooled_nmse",
+                                                 "Hits=pd"
+                                             ],
+                         "independent_of_ssh":  true
+                     }
+}

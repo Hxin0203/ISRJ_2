@@ -1,6 +1,6 @@
 {
   "plan_version": "1.2",
-  "updated_utc": "2026-11-28T10:28:00+00:00",
+  "updated_utc": "2026-11-28T12:50:51.1946510Z",
   "plan": "reports/Original_paper_replication_256/MASTER_PLAN.md",
   "priority": "ISRJ_2 ReCoVP-Hybrid epoch256 replication and ablations",
   "primary_model": "ReCoVP-Hybrid",
@@ -173,12 +173,52 @@
       "depends_on": [
         "P2"
       ],
-      "status": "PENDING",
+      "status": "RUNNING_HYBRID",
       "completed_units": 0,
-      "evidence": [],
+      "evidence": [
+        "tools/original_replication_detection.py",
+        "tools/start_original_replication_detection.ps1",
+        "evidence/outputs/Original_paper_replication_256/GPU0_PARALLEL_R5_20261128.json"
+      ],
       "total_units": 930,
       "unit": "mechanism-condition cell with all planned model instances",
-      "priority_cells": 450
+      "priority_cells": 450,
+      "server_status": "outputs/original_paper_replication_256_v1/R5_detection/QUEUE_STATUS.json",
+      "hybrid_progress": {
+        "captured_utc": "2026-11-28T12:50:51.1946510Z",
+        "physical_gpu_index": 0,
+        "seed_progress": [
+          {
+            "seed": 67,
+            "completed_cells": 1,
+            "completed_parent_chunks": 36
+          },
+          {
+            "seed": 97,
+            "completed_cells": 0,
+            "completed_parent_chunks": 29
+          },
+          {
+            "seed": 53,
+            "completed_cells": 0,
+            "completed_parent_chunks": 22
+          },
+          {
+            "seed": 41,
+            "completed_cells": 0,
+            "completed_parent_chunks": 9
+          },
+          {
+            "seed": 109,
+            "completed_cells": 0,
+            "completed_parent_chunks": 4
+          }
+        ],
+        "parents_per_chunk": 16,
+        "mechanisms_per_chunk": 3,
+        "full_condition_cells_per_seed": 310,
+        "total_seed_condition_cells": 1550
+      }
     },
     {
       "id": "R6",
@@ -360,13 +400,13 @@
     "role": "adapter verification and historical reference"
   },
   "execution_snapshot": {
-    "captured_utc": "2026-11-28T10:28:00+00:00",
+    "captured_utc": "2026-11-28T12:50:51.1946510Z",
     "controller": "tools/original_replication_pipeline.py",
     "launcher": "tools/start_original_replication_pipeline.ps1",
     "server": "rsdr-b",
     "server_root": "D:/code/Xin/ISRJ_222",
     "resource_policy": "dispatch when selected GPU utilization <85% and host physical memory utilization <90%; concurrent jobs allowed",
-    "active_priority": "P2 verified; R3 main grid running; 512 continuation remains paused",
+    "active_priority": "GPU0 runs R5 Hybrid seeds; GPU1 runs existing R3 workers",
     "selected_seeds": [
       67,
       97,
@@ -376,6 +416,7 @@
     ],
     "historical_reference_excluded": [
       "RSDR-Net"
-    ]
+    ],
+    "r5_controller": "tools/original_replication_detection.py"
   }
 }
