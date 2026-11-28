@@ -1,0 +1,302 @@
+{
+    "checked_utc":  "2026-11-28T05:00:43.3312075Z",
+    "controller":  {
+                       "pipeline":  "recovp_hybrid_continue512_20261127",
+                       "stage":  "RUNNING",
+                       "seeds":  {
+                                     "17":  {
+                                                "stage":  "RUNNING",
+                                                "attempts":  [
+                                                                 {
+                                                                     "pid":  32456,
+                                                                     "gpu":  0,
+                                                                     "started_utc":  "2026-11-28T02:41:47.485044+00:00",
+                                                                     "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_17_attempt_1.log",
+                                                                     "command":  [
+                                                                                     "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                     "-m",
+                                                                                     "tools.recovp_hybrid_continue512",
+                                                                                     "--seed",
+                                                                                     "17",
+                                                                                     "--gpu-index",
+                                                                                     "0"
+                                                                                 ]
+                                                                 }
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "e0b6cb1be9559ed5e75a9ce3c4e178e85aba22f0cec753f52d3f523cbaf05212",
+                                                "pid":  32456,
+                                                "gpu":  0
+                                            },
+                                     "29":  {
+                                                "stage":  "RUNNING",
+                                                "attempts":  [
+                                                                 {
+                                                                     "pid":  32348,
+                                                                     "gpu":  1,
+                                                                     "started_utc":  "2026-11-28T02:42:17.595096+00:00",
+                                                                     "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_29_attempt_1.log",
+                                                                     "command":  [
+                                                                                     "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                     "-m",
+                                                                                     "tools.recovp_hybrid_continue512",
+                                                                                     "--seed",
+                                                                                     "29",
+                                                                                     "--gpu-index",
+                                                                                     "1"
+                                                                                 ]
+                                                                 }
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "14d7740c45ed8785fc61e27a1c5151ee45e50dfddd4ad182146c4fc6e55beb30",
+                                                "pid":  32348,
+                                                "gpu":  1
+                                            },
+                                     "41":  {
+                                                "stage":  "RUNNING",
+                                                "attempts":  [
+                                                                 {
+                                                                     "pid":  33084,
+                                                                     "gpu":  0,
+                                                                     "started_utc":  "2026-11-28T02:43:17.774793+00:00",
+                                                                     "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_41_attempt_1.log",
+                                                                     "command":  [
+                                                                                     "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                     "-m",
+                                                                                     "tools.recovp_hybrid_continue512",
+                                                                                     "--seed",
+                                                                                     "41",
+                                                                                     "--gpu-index",
+                                                                                     "0"
+                                                                                 ]
+                                                                 }
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "07697294408c9b3e4cf2afc25b685c21621f107d195746d14f6916d2f92b37b1",
+                                                "pid":  33084,
+                                                "gpu":  0
+                                            },
+                                     "53":  {
+                                                "stage":  "RUNNING",
+                                                "attempts":  [
+                                                                 {
+                                                                     "pid":  5904,
+                                                                     "gpu":  1,
+                                                                     "started_utc":  "2026-11-28T02:48:18.664700+00:00",
+                                                                     "log":  "D:\\code\\Xin\\ISRJ_222\\evidence\\outputs\\recovp_hybrid_continue512_20261127\\seed_53_attempt_1.log",
+                                                                     "command":  [
+                                                                                     "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe",
+                                                                                     "-m",
+                                                                                     "tools.recovp_hybrid_continue512",
+                                                                                     "--seed",
+                                                                                     "53",
+                                                                                     "--gpu-index",
+                                                                                     "1"
+                                                                                 ]
+                                                                 }
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "8fafaabe762d3af1c90204d340bc2ecfea2312d5b11ec073d16f1a152aa3b147",
+                                                "pid":  5904,
+                                                "gpu":  1
+                                            },
+                                     "67":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "de7f659217ef597dd4ff6b9da746099ccf5466cffd3489270a15bea0855817b2"
+                                            },
+                                     "79":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "0d4ade59b28782627ac51d00704287c6a12006ce19772a38880f3964628e5fb3"
+                                            },
+                                     "97":  {
+                                                "stage":  "PENDING",
+                                                "attempts":  [
+
+                                                             ],
+                                                "failures":  0,
+                                                "parent_sha256":  "268b782783e67d3ac1664c0c56c4e2af281a956ee70c1cdf6f781fc5d909091c"
+                                            },
+                                     "109":  {
+                                                 "stage":  "PENDING",
+                                                 "attempts":  [
+
+                                                              ],
+                                                 "failures":  0,
+                                                 "parent_sha256":  "f533891830764e2e06523b114b2bd6dc73f4dd3689591cfa7f1f34cfd160c371"
+                                             }
+                                 },
+                       "sources":  {
+                                       "tools/recovp_hybrid_continue512.py":  "17d6491761ea56a7f1975fa570594d7727a457ac315da6220b080fe20cedbee3",
+                                       "tools/run_recovp_hybrid_continue512.py":  "50e8914daff3f9e62059e7246b9bc4b2df7441c2370c85d67e905a32b8961f4e",
+                                       "tools/start_recovp_hybrid_continue512.ps1":  "7e9b1f4aeae794ed89bee8c852d67db6ba302d19c1e14233e534c29cfb8ff28e",
+                                       "tools/server_gpu_admission.py":  "c4bfa33a4440cc15f8f47c89c801875ec7616f8193d991ed888352c39318d563",
+                                       "tools/stable_hash.py":  "bb6847ed1d4f8e090240a05d3a5742dcda005c344493fd4c9ad0bbe2e76f1015"
+                                   },
+                       "archive":  "D:\\code\\Xin\\ISRJ_222\\backups\\recovp_hybrid_256_before512_20261127",
+                       "target_epochs":  512,
+                       "lr":  2E-06,
+                       "barrier":  "all eight original seeds complete epoch256",
+                       "admission":  "concurrent use allowed; selected GPU utilization must be below 85 percent",
+                       "created_utc":  "2026-11-27T16:09:06.100724+00:00",
+                       "parent256_complete":  {
+                                                  "17":  true,
+                                                  "29":  true,
+                                                  "41":  true,
+                                                  "53":  true,
+                                                  "67":  true,
+                                                  "79":  true,
+                                                  "97":  true,
+                                                  "109":  true
+                                              },
+                       "parent_archived_seeds":  [
+                                                     17,
+                                                     29,
+                                                     41,
+                                                     53,
+                                                     67,
+                                                     79,
+                                                     97,
+                                                     109
+                                                 ],
+                       "updated_utc":  "2026-11-28T05:00:42.439676+00:00",
+                       "controller_pid":  34396,
+                       "source_binding_update":  {
+                                                     "reason":  "Explicit seed109 missing preflight artifact exception; all available source/data/checkpoint bindings audited",
+                                                     "updated_utc":  "2026-11-28T02:40:35.2598258Z"
+                                                 },
+                       "parent_archives_verified_utc":  "2026-11-28T02:41:47.424054+00:00",
+                       "gpu_samples":  [
+                                           {
+                                               "physical_gpu_index":  0,
+                                               "gpu_uuid":  "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  99.0
+                                           },
+                                           {
+                                               "physical_gpu_index":  1,
+                                               "gpu_uuid":  "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+                                               "gpu_name":  "NVIDIA GeForce RTX 5060 Ti",
+                                               "utilization_percent":  99.0
+                                           }
+                                       ],
+                       "resource_wait":  "both GPUs at or above 85 percent"
+                   },
+    "workers":  [
+                    {
+                        "stage":  "TRAINING",
+                        "seed":  17,
+                        "epoch":  299,
+                        "epochs":  512,
+                        "last_committed_epoch":  298,
+                        "update":  36,
+                        "metrics":  {
+                                        "total":  0.2046663574874401,
+                                        "endpoint":  0.15951581252738833,
+                                        "pc":  0.23134406935423613,
+                                        "damage":  0.021813231287524104,
+                                        "tail":  0.004057739299241803,
+                                        "final_total":  0.045240252278745174,
+                                        "stage1_total":  0.6377044077962637,
+                                        "final_tail":  0.0014362998772412539,
+                                        "stage1_tail":  0.010485757688002195,
+                                        "tail_peak_db":  -2.2860426902770996,
+                                        "stage1_tail_peak_db":  -0.9026703238487244,
+                                        "gradient_norm":  2.2144598960876465,
+                                        "lr":  2E-06
+                                    },
+                        "gpu":  0,
+                        "pid":  9408,
+                        "updated_utc":  "2026-11-28T05:00:28.714456+00:00"
+                    },
+                    {
+                        "stage":  "TRAINING",
+                        "seed":  29,
+                        "epoch":  302,
+                        "epochs":  512,
+                        "last_committed_epoch":  301,
+                        "update":  12,
+                        "metrics":  {
+                                        "total":  0.43630369007587433,
+                                        "endpoint":  0.35181827284395695,
+                                        "pc":  0.47413529455661774,
+                                        "damage":  0.0357252205722034,
+                                        "tail":  0.026933060958981514,
+                                        "final_total":  0.07219843659549952,
+                                        "stage1_total":  1.4564210176467896,
+                                        "final_tail":  0.015880800783634186,
+                                        "stage1_tail":  0.044209036976099014,
+                                        "tail_peak_db":  -0.8025008141994476,
+                                        "stage1_tail_peak_db":  2.414285659790039,
+                                        "gradient_norm":  1.0310053825378418,
+                                        "lr":  2E-06
+                                    },
+                        "gpu":  1,
+                        "pid":  23772,
+                        "updated_utc":  "2026-11-28T05:00:00.929924+00:00"
+                    },
+                    {
+                        "stage":  "TRAINING",
+                        "seed":  41,
+                        "epoch":  298,
+                        "epochs":  512,
+                        "last_committed_epoch":  297,
+                        "update":  36,
+                        "metrics":  {
+                                        "total":  0.3403470441699028,
+                                        "endpoint":  0.26666200160980225,
+                                        "pc":  0.34709279611706734,
+                                        "damage":  0.03697564639151096,
+                                        "tail":  0.04000213208200876,
+                                        "final_total":  0.07437857985496521,
+                                        "stage1_total":  1.0638738498091698,
+                                        "final_tail":  0.025029721116879955,
+                                        "stage1_tail":  0.05988964141579345,
+                                        "tail_peak_db":  0.7058762907981873,
+                                        "stage1_tail_peak_db":  3.6948081254959106,
+                                        "gradient_norm":  1.1035168170928955,
+                                        "lr":  2E-06
+                                    },
+                        "gpu":  0,
+                        "pid":  28760,
+                        "updated_utc":  "2026-11-28T05:00:12.816158+00:00"
+                    },
+                    {
+                        "stage":  "TRAINING",
+                        "seed":  53,
+                        "epoch":  298,
+                        "epochs":  512,
+                        "last_committed_epoch":  297,
+                        "update":  24,
+                        "metrics":  {
+                                        "total":  0.11773356795310974,
+                                        "endpoint":  0.07808271422982216,
+                                        "pc":  0.09535506926476955,
+                                        "damage":  0.029452119953930378,
+                                        "tail":  0.013264572015032172,
+                                        "final_total":  0.05279200430959463,
+                                        "stage1_total":  0.2597662527114153,
+                                        "final_tail":  0.007141446694731712,
+                                        "stage1_tail":  0.02449250314384699,
+                                        "tail_peak_db":  -3.5692671090364456,
+                                        "stage1_tail_peak_db":  -1.096384346485138,
+                                        "gradient_norm":  0.7004565596580505,
+                                        "lr":  2E-06
+                                    },
+                        "gpu":  1,
+                        "pid":  37932,
+                        "updated_utc":  "2026-11-28T05:00:05.720794+00:00"
+                    }
+                ],
+    "gpu":  [
+                "0, 99 %, 14867 MiB",
+                "1, 99 %, 14175 MiB"
+            ]
+}
