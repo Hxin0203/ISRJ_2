@@ -1,0 +1,152 @@
+{
+  "figures": [
+    {
+      "stem": "fig1_recovp_overview",
+      "page_mm": [
+        176,
+        64
+      ],
+      "png_px": [
+        4157,
+        1511
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_min_font_pt": 7.28,
+      "pdf_embedded_fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-BoldItalic",
+        "STIXGeneral-Italic",
+        "STIXSizeOneSym-Regular",
+        "TimesNewRomanPSMT",
+        "TimesNewRomanPS-BoldMT"
+      ],
+      "pdf_raster_images": 0,
+      "pdf_text_collisions": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 13,
+        "contained_image_overlays": 0
+      },
+      "editable_svg_text_objects": 37,
+      "outlined_svg_text_objects": 0
+    },
+    {
+      "stem": "fig2_complex_refiner",
+      "page_mm": [
+        176,
+        82
+      ],
+      "png_px": [
+        4157,
+        1937
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_min_font_pt": 7.28,
+      "pdf_embedded_fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-BoldItalic",
+        "STIXGeneral-Italic",
+        "STIXSizeOneSym-Regular",
+        "TimesNewRomanPSMT",
+        "TimesNewRomanPS-BoldMT"
+      ],
+      "pdf_raster_images": 0,
+      "pdf_text_collisions": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 6,
+        "contained_image_overlays": 0
+      },
+      "editable_svg_text_objects": 32,
+      "outlined_svg_text_objects": 0
+    },
+    {
+      "stem": "fig3_single_pulse_mechanism",
+      "page_mm": [
+        176,
+        54
+      ],
+      "png_px": [
+        4157,
+        1275
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_min_font_pt": 7.2,
+      "pdf_embedded_fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "TimesNewRomanPSMT",
+        "TimesNewRomanPS-BoldMT"
+      ],
+      "pdf_raster_images": 0,
+      "pdf_text_collisions": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 3,
+        "contained_image_overlays": 0
+      },
+      "editable_svg_text_objects": 40,
+      "outlined_svg_text_objects": 0
+    }
+  ],
+  "shared_axes": {
+    "alignment_atoms.json": "PASS",
+    "alignment_profiles.json": "PASS"
+  },
+  "cached_example": {
+    "physical_parent_id": 2026112901000017,
+    "pulse_index_zero_based": 2,
+    "seed": 17,
+    "epoch": 256,
+    "valid_lags": 1201,
+    "peak_lags": [
+      278,
+      85,
+      85
+    ],
+    "peaks_db_relative_to_input": [
+      0.0,
+      -14.778576963398166,
+      -20.201628201136405
+    ],
+    "same_lag_stage1_to_stage2_change_db": -5.423051237738239,
+    "atom_rank_one_based": [
+      1,
+      2,
+      3,
+      6,
+      8,
+      4,
+      9,
+      5,
+      7,
+      10,
+      12,
+      14,
+      11,
+      15,
+      13,
+      16
+    ],
+    "sample_window_half_open": [
+      213,
+      686
+    ],
+    "sample_rate_hz": 60000000
+  },
+  "data_sha256": "f0ed4f5f28a96716f35f85aca1299a8b9296450a008d27d409dd36ba732a2564",
+  "checked_model_source_sha256": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+  "scope": "Figure rendering from existing cached data. No training, model forward pass or new evaluation sample.",
+  "visual_review": "Final PNGs inspected as complete figures and in magnified detail; signal taps, operator signs, lower-band glyphs and row ordering checked.",
+  "typography": "The requested 176 mm Times/STIX specification is used. Generic Nature defaults of 89/183 mm and sans serif in the style checker do not apply to this layout. Actual PDF/SVG type sizes were checked at print scale."
+}

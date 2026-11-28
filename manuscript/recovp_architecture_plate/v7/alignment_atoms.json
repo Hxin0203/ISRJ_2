@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "python-matplotlib",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 1,
+    "exemptions": 1
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "python-matplotlib",
+    "figure": {
+      "width_pt": 498.8976377952756,
+      "height_pt": 153.0708661417323
+    },
+    "panels": [
+      {
+        "id": "dictionary",
+        "bbox_pt": [
+          286.8661417322835,
+          29.33858267716536,
+          421.228346456693,
+          121.60629921259843
+        ]
+      },
+      {
+        "id": "evidence",
+        "bbox_pt": [
+          433.7007874015748,
+          29.33858267716536,
+          487.84251968503935,
+          121.60629921259843
+        ]
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "dictionary",
+          "evidence"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [],
+    "exemptions": [
+      {
+        "panels": [
+          "evidence"
+        ],
+        "checks": [
+          "panel-width"
+        ],
+        "reason": "One scalar bar per dictionary row. Only row alignment is shared."
+      }
+    ]
+  },
+  "findings": []
+}
