@@ -108,7 +108,7 @@
       "depends_on": [
         "P2"
       ],
-      "status": "RUNNING",
+      "status": "RECOVERING",
       "completed_units": 0,
       "evidence": [
         "outputs/original_paper_replication_256_v1/R3_main/REGISTRATION.json",
@@ -119,7 +119,13 @@
       "unit": "requested main condition cell with all planned model instances",
       "original_grid_cells": 168,
       "main_and_original_union_cells": 189,
-      "server_status": "outputs/original_paper_replication_256_v1/R3_main/QUEUE_STATUS.json"
+      "server_status": "outputs/original_paper_replication_256_v1/R3_main/QUEUE_STATUS.json",
+      "recovery": {
+        "controller_failure": "WindowsPath object had no close method during child log cleanup",
+        "saved_condition_files": 89,
+        "recovery_launcher": "tools/recover_original_replication_r3.ps1",
+        "postprocessing_launcher": "tools/recover_original_replication_postprocessing.ps1"
+      }
     },
     {
       "id": "R4a",
