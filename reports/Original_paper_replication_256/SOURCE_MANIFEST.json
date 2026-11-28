@@ -1,0 +1,120 @@
+{
+  "created_utc": "2026-11-28T08:03:42.194371+00:00",
+  "sources": [
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\LaTeX_source\\main.tex",
+      "sha256": "a1fcd3e96b425470763eaf57d226cb105bcc8ada4cf45fc8fab4a9942aa42a6b",
+      "bytes": 79624
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\ESM_1\\S2_per_condition_results.csv",
+      "sha256": "3d56a5b27ba31714df8e2bddb071ec50d8b162f675be5a3bc1fbebcf4b36d648",
+      "bytes": 78820
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\ESM_1\\S3_detection_grid.csv",
+      "sha256": "71212fb8babe120cd1b61923bb58ae29dd4f0a997e013a32cc1bab7591611284",
+      "bytes": 11639
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\Manuscript.pdf",
+      "sha256": "6d3a5fa07a347104cf7f6e4740c18defc3ba8d62c0638c9ffe531cf17f2d56e1",
+      "bytes": 4184390
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\ESM_1\\Online_Resource_1.pdf",
+      "sha256": "3f94d314e2f1898135847b83a57e7544f8422d6cb88896e846cdf9719a10e5df",
+      "bytes": 236831
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\LaTeX_source\\Fig3.png",
+      "sha256": "29b4167d3fa27fd79b137f1bf6d3ad3196dfc1c70f3215ecedd8c69b8f07b073",
+      "bytes": 1330664
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\LaTeX_source\\Fig4.png",
+      "sha256": "54a5cb297deb9c5e82ae93f630e6a27523d30cf3bb2fdf06bfa10aeffdab1c72",
+      "bytes": 741786
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\LaTeX_source\\Fig5.png",
+      "sha256": "eb3cc16f9e04854c531e6a5cafa8eab5e6683d6595a56a29635fcdb5d350f3fd",
+      "bytes": 319690
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\LaTeX_source\\Fig6.png",
+      "sha256": "1037b388ead4ae32ed829d5cd59139bc9e360336049bd130a009dd1bf62c676f",
+      "bytes": 313523
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\终稿1124\\投稿包_Applied_Intelligence_20261126_v2\\LaTeX_source\\Fig7.png",
+      "sha256": "a172af526a4b48906b4780a4209c66527ee318286e0e17832f350c471cbc41ee",
+      "bytes": 292239
+    },
+    {
+      "path": "G:\\Files\\Markdown\\ISRJ\\草稿\\草稿1103(全）\\1103.md",
+      "sha256": "253fa6ac1a1395e265732139a640de81e32493565a99b605dc07aa7e1df46475",
+      "bytes": 119157
+    },
+    {
+      "path": "C:\\Users\\admin\\AppData\\Local\\Temp\\codex-clipboard-9811db8f-d786-4db4-9e4b-ea60e59b8aef.png",
+      "sha256": "c1b6a9b58540ed2d058c9ff2dc66319d5e035b2002cd4fadfa7c1ca224b66d07",
+      "bytes": 237775
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\manuscript\\recovp_draft_v2_20261126\\zh_part4.md",
+      "sha256": "7140b4a1f902dd1c50705f2166c2851b2638166f55a295f417636c71bc1fd96d",
+      "bytes": 33326
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\paper2\\evaluation_1103_v4.py",
+      "sha256": "ac719612cea2feb79c214c984de76378ebe1dc90e0f9040a7d033340f7216655",
+      "bytes": 5849
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\paper2\\radar_eval.py",
+      "sha256": "f643a33ee033ef08be6575243b4ede123d2fe8a4f4d2be1239d20bdfb6dd8eea",
+      "bytes": 8438
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\paper2\\baselines_1103.py",
+      "sha256": "a466597a2f65bee6bd9abdb023289583d4a91fd87195d3ae0317b2bf2b9c32c0",
+      "bytes": 3352
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\tools\\paper2_baseline_suite\\wp5b_suite.py",
+      "sha256": "1af45897537655ca2c5d4d6550b28c4df22e2957328cfc40f43c0cb7dc83ee83",
+      "bytes": 20598
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\tools\\paper2_baseline_suite\\equal_pfa_suite.py",
+      "sha256": "eff8fa9266af6d7efdc4fa49b64e9dff0e95214f885ed1ad45e8758128b4981d",
+      "bytes": 20679
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\tools\\vp_1103_recovp_hybrid.py",
+      "sha256": "8fa2a6625a08fb00ed1e33c472199fd6b1f89c4f80fc5ee71b07e25c62314c30",
+      "bytes": 20658
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\tools\\paper2_baseline_suite\\external_suite.py",
+      "sha256": "5095479afb06e35a00860738e7ad289014f3692ca0f06f9e0dbd1a5465a77e9e",
+      "bytes": 8838,
+      "locator": "load_model and module header bind first-paper e320 CVED-Net"
+    }
+  ],
+  "codegraph": {
+    "first_paper_index_exists": true,
+    "attempt": "codegraph explore original figure and metric definitions",
+    "outcome": "No output after multiple checks, interrupted. Read-only file and text fallback used."
+  },
+  "verified_metric_alias": {
+    "original": "e_S",
+    "current": "D_S",
+    "source_locators": [
+      "main.tex target increment metric",
+      "zh_part4.md equation 34",
+      "evaluation_1103_v4.py group_metrics damage"
+    ]
+  }
+}
