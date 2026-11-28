@@ -1,6 +1,12 @@
 # ISRJ_2 ReCoVP-Hybrid 256轮原稿参照实验进度
 
-本次核查快照为UTC 2026年11月28日09时02分。总协议见MASTER_PLAN.md v1.2，任务状态见TASKS.json。当前实验对象明确为 ISRJ_2 的 ReCoVP-Hybrid。RSDR-Net 只作为前期 ISRJ1 的历史冻结参照或协议来源，不启动 ISRJ1 新实验。512暂停审计和8seed统一DEV评价已完成，六组正式实验按依赖推进。
+本次核查快照为UTC 2026年11月28日10时28分。总协议见MASTER_PLAN.md v1.2，任务状态见TASKS.json。当前实验对象明确为 ISRJ_2 的 ReCoVP-Hybrid。RSDR-Net 只作为前期 ISRJ1 的历史冻结参照或协议来源，不启动 ISRJ1 新实验。512暂停审计、8seed统一DEV评价和P2数据/源码核验已完成，R3主条件网格已在服务器B持久流水线中运行。
+
+## 2026-11-28 10:28 UTC 流水线现场
+
+服务器入口为 `rsdr-b`，工程根目录为 `D:/code/Xin/ISRJ_222`。持久控制器为 `tools/original_replication_pipeline.py`，由 `tools/start_original_replication_pipeline.ps1` 通过WMI启动，状态文件为 `outputs/original_paper_replication_256_v1/pipeline/PIPELINE_STATUS.json`。P2已生成并核验 `P2_COMPLETE.json`，R3主网格已派发五个冻结Hybrid seed、CVEDNet、Max-TF和GMM-OMP，输出和日志均使用独立目录。缺失的97、109等帧校准已另行以WMI持久进程启动，等待GPU0资源后继续。
+
+最近一次资源快照记录GPU0利用率约85%、GPU1约99%，主机物理内存占用约11%。当前运行任务沿用已登记设备，后续派发严格重新查询资源并使用利用率低于85%的设备，主机物理内存低于90%时继续。512轮续训仍保持暂停。
 
 ## 512轮暂停与恢复资料
 
@@ -37,10 +43,10 @@ seed109原preflight字节缺失，配置中记录SHA为 `ff5dda96ca4278eaa4f6e84
 |---|---:|---|---|
 |P0 暂停与恢复审计|8/8 seed|全部既有恢复点及端点备份|已核验|
 |P1 统一DEV筛选|0/8 seed|完整排序后选5seed|seed17校准中|
-|P2 数据和指标一致性|0|新版本、配对、阈值、四方法小样本|准备中|
-|R1 全视野时域/脉压/多普勒|0|ReCoVP-Hybrid前5seed及三种对照方法同场景图|待评价|
+|P2 数据和指标一致性|1|新版本、配对、阈值、四方法小样本|已核验，收据已保存|
+|R1 全视野时域/脉压/多普勒|0|ReCoVP-Hybrid前5seed及三种对照方法同场景图|待R3后按依赖派发|
 |R2 切片宽度|0/1100条件格|M2/M4、5强度、5宽度、11SNR、2种JSR口径|待评价|
-|R3 主条件表|0/105条件格|7SNR×5JSR×3机制，另补原稿网格|待评价|
+|R3 主条件表|运行中/105条件格|7SNR×5JSR×3机制，另补原稿网格|四方法主网格已持久派发|
 |R4 四专题|0/4专题|背景FA、机制泛化、无噪声目标、无干扰保持|待评价|
 |R5 原稿热图|0/930机制条件格|优先450格，补齐930格|待评价|
 |R6 初轮消融|0/13变体|3配对seed，最多39个新训练实例|待训练与复用核验|

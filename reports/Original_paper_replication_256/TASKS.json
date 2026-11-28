@@ -1,6 +1,6 @@
 {
   "plan_version": "1.2",
-  "updated_utc": "2026-11-28T09:02:18+00:00",
+  "updated_utc": "2026-11-28T10:28:00+00:00",
   "plan": "reports/Original_paper_replication_256/MASTER_PLAN.md",
   "priority": "ISRJ_2 ReCoVP-Hybrid epoch256 replication and ablations",
   "primary_model": "ReCoVP-Hybrid",
@@ -69,9 +69,12 @@
       "depends_on": [
         "P1"
       ],
-      "status": "PENDING",
-      "completed_units": 0,
-      "evidence": []
+      "status": "COMPLETED_VERIFIED",
+      "completed_units": 1,
+      "evidence": [
+        "outputs/original_paper_replication_256_v1/P2/P2_COMPLETE.json",
+        "tools/original_replication_p2.py"
+      ]
     },
     {
       "id": "R1",
@@ -101,13 +104,18 @@
       "depends_on": [
         "P2"
       ],
-      "status": "PENDING",
+      "status": "RUNNING",
       "completed_units": 0,
-      "evidence": [],
+      "evidence": [
+        "outputs/original_paper_replication_256_v1/R3_main/REGISTRATION.json",
+        "outputs/original_paper_replication_256_v1/R3_main/QUEUE_STATUS.json",
+        "tools/original_replication_suite.py"
+      ],
       "total_units": 105,
       "unit": "requested main condition cell with all planned model instances",
       "original_grid_cells": 168,
-      "main_and_original_union_cells": 189
+      "main_and_original_union_cells": 189,
+      "server_status": "outputs/original_paper_replication_256_v1/R3_main/QUEUE_STATUS.json"
     },
     {
       "id": "R4a",
@@ -340,5 +348,24 @@
     "epoch": 320,
     "training_data": "first-paper TRAIN512/DEV256",
     "role": "adapter verification and historical reference"
+  },
+  "execution_snapshot": {
+    "captured_utc": "2026-11-28T10:28:00+00:00",
+    "controller": "tools/original_replication_pipeline.py",
+    "launcher": "tools/start_original_replication_pipeline.ps1",
+    "server": "rsdr-b",
+    "server_root": "D:/code/Xin/ISRJ_222",
+    "resource_policy": "dispatch when selected GPU utilization <85% and host physical memory utilization <90%; concurrent jobs allowed",
+    "active_priority": "P2 verified; R3 main grid running; 512 continuation remains paused",
+    "selected_seeds": [
+      67,
+      97,
+      53,
+      41,
+      109
+    ],
+    "historical_reference_excluded": [
+      "RSDR-Net"
+    ]
   }
 }
