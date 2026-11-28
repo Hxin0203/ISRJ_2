@@ -82,9 +82,13 @@
       "depends_on": [
         "P2"
       ],
-      "status": "PENDING",
+      "status": "QUEUED_AFTER_R3",
       "completed_units": 0,
-      "evidence": []
+      "evidence": [
+        "tools/original_replication_r1.py",
+        "tools/start_original_replication_postpriority.ps1"
+      ],
+      "server_status": "outputs/original_paper_replication_256_v1/pipeline/R1_LAUNCH_RECEIPT.json"
     },
     {
       "id": "R2",
