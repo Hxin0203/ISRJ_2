@@ -178,7 +178,7 @@ def queue() -> None:
             state["records"][f"{method}:{seed}"] = {"state": "DONE"}
             continue
         pending.append((method, seed))
-    running: dict[int, tuple[str, int | None, object, Path]] = {}
+    running: dict[int, tuple[str, int | None, object, object, Path]] = {}
     while pending or running:
         for method, seed in list(pending):
             try:
@@ -205,14 +205,14 @@ def queue() -> None:
             key = f"{method}:{seed}"
             state["records"][key] = {"state": "RUNNING", "pid": proc.pid,
                                      "gpu": gpu, "log": str(log), "started_utc": now()}
-            running[proc.pid] = (method, seed, proc, log)
+            running[proc.pid] = (method, seed, proc, handle, log)
             pending.remove((method, seed))
             write_json(state_path, state)
-        for pid, (method, seed, proc, log) in list(running.items()):
+        for pid, (method, seed, proc, handle, log) in list(running.items()):
             rc = proc.poll()
             if rc is None:
                 continue
-            log.close()
+            handle.close()
             key = f"{method}:{seed}"
             state["records"][key].update({"state": "DONE" if rc == 0 else "FAILED",
                                            "exit_code": rc, "finished_utc": now()})
