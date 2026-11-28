@@ -1,0 +1,359 @@
+{
+  "captured_utc": "2026-11-28T13:04:28.184208+00:00",
+  "resources": {
+    "gpus": [
+      {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 85.0,
+        "memory_used_mib": 15937.0,
+        "memory_total_mib": 16311.0
+      },
+      {
+        "physical_gpu_index": 1,
+        "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 100.0,
+        "memory_used_mib": 16005.0,
+        "memory_total_mib": 16311.0
+      }
+    ],
+    "memory": {
+      "total_bytes": 137107394560,
+      "available_bytes": 77568036864,
+      "source": "GlobalMemoryStatusEx",
+      "used_bytes": 59539357696,
+      "utilization_percent": 43.42534397001089
+    },
+    "queried_utc": "2026-11-28T13:04:28.341447+00:00"
+  },
+  "R5": {
+    "seed_67": {
+      "state": "RUNNING",
+      "pid": 35968,
+      "completed_cells": 2,
+      "completed_parent_chunks": 85,
+      "completed_chunks": null,
+      "snr_db": -30,
+      "jsr_db": 0,
+      "last_update_utc": "2026-11-28T13:04:16Z",
+      "updated_utc": null,
+      "saved_chunks": 85,
+      "verified_chunks": 85,
+      "done_cells": 2,
+      "last_error": null
+    },
+    "seed_97": {
+      "state": "RUNNING",
+      "pid": 15672,
+      "completed_cells": 2,
+      "completed_parent_chunks": 86,
+      "completed_chunks": null,
+      "snr_db": -30,
+      "jsr_db": 0,
+      "last_update_utc": "2026-11-28T13:04:13Z",
+      "updated_utc": null,
+      "saved_chunks": 86,
+      "verified_chunks": 86,
+      "done_cells": 2,
+      "last_error": null
+    },
+    "seed_53": {
+      "state": "RUNNING",
+      "pid": 34972,
+      "completed_cells": 2,
+      "completed_parent_chunks": 77,
+      "completed_chunks": null,
+      "snr_db": -30,
+      "jsr_db": 0,
+      "last_update_utc": "2026-11-28T13:04:14Z",
+      "updated_utc": null,
+      "saved_chunks": 77,
+      "verified_chunks": 77,
+      "done_cells": 2,
+      "last_error": null
+    },
+    "seed_41": {
+      "state": "RUNNING",
+      "pid": 36500,
+      "completed_cells": 1,
+      "completed_parent_chunks": 57,
+      "completed_chunks": null,
+      "snr_db": -30,
+      "jsr_db": -5,
+      "last_update_utc": "2026-11-28T13:04:13Z",
+      "updated_utc": null,
+      "saved_chunks": 57,
+      "verified_chunks": 57,
+      "done_cells": 1,
+      "last_error": null
+    },
+    "seed_109": {
+      "state": "RUNNING",
+      "pid": 34580,
+      "completed_cells": 1,
+      "completed_parent_chunks": 50,
+      "completed_chunks": null,
+      "snr_db": -30,
+      "jsr_db": -5,
+      "last_update_utc": "2026-11-28T13:04:28Z",
+      "updated_utc": null,
+      "saved_chunks": 50,
+      "verified_chunks": 50,
+      "done_cells": 1,
+      "last_error": null
+    }
+  },
+  "R3_classical_recovery": {
+    "Max-TF": {
+      "state": "RUNNING",
+      "pid": 32048,
+      "completed_cells": 4,
+      "completed_parent_chunks": null,
+      "completed_chunks": 64,
+      "snr_db": -30,
+      "jsr_db": 30,
+      "last_update_utc": null,
+      "updated_utc": "2026-11-28T13:04:20Z",
+      "saved_chunks": 64,
+      "verified_chunks": 64,
+      "done_cells": 4,
+      "last_error": null
+    },
+    "GMM-OMP": {
+      "state": "RUNNING",
+      "pid": 35704,
+      "completed_cells": 0,
+      "completed_parent_chunks": null,
+      "completed_chunks": 5,
+      "snr_db": -30,
+      "jsr_db": 0,
+      "last_update_utc": null,
+      "updated_utc": "2026-11-28T13:03:25Z",
+      "saved_chunks": 5,
+      "verified_chunks": 5,
+      "done_cells": 0,
+      "last_error": null
+    }
+  },
+  "R3_legacy_averaged": {
+    "CVEDNet\\single": {
+      "condition_files": 15,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "GMM-OMP\\single": {
+      "condition_files": 14,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "Max-TF\\single": {
+      "condition_files": 35,
+      "done": true,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "ReCoVP-Hybrid\\seed_109": {
+      "condition_files": 21,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "ReCoVP-Hybrid\\seed_41": {
+      "condition_files": 21,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "ReCoVP-Hybrid\\seed_53": {
+      "condition_files": 20,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "ReCoVP-Hybrid\\seed_67": {
+      "condition_files": 32,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    },
+    "ReCoVP-Hybrid\\seed_97": {
+      "condition_files": 21,
+      "done": false,
+      "mechanism_axis": "averaged before persistence"
+    }
+  },
+  "postprocessing": {
+    "state": "RECONCILING",
+    "updated_utc": "2026-11-28T13:04:07Z",
+    "coverage": {
+      "ReCoVP-Hybrid_67": 1,
+      "ReCoVP-Hybrid_97": 1,
+      "ReCoVP-Hybrid_53": 0,
+      "ReCoVP-Hybrid_41": 0,
+      "ReCoVP-Hybrid_109": 0,
+      "Max-TF": 3,
+      "GMM-OMP": 0
+    },
+    "cells_per_instance": 35,
+    "physical_parents": 256,
+    "hybrid_source": "R5 first 256 parent IDs, component equality audited against R3",
+    "classical_source": "R3 independently recomputed per-mechanism chunks",
+    "formal_cved256": "PENDING_SAME_DATA_TRAINING_AND_EVALUATION",
+    "full_r3_completed": false,
+    "seed109_preflight_limitation": "original bytes missing; recovery bridge retained"
+  },
+  "controllers": {
+    "R5": {
+      "controller_pid": 33372,
+      "heartbeat_utc": "2026-11-28T13:04:25Z"
+    },
+    "R3_classical": {
+      "controller_pid": 19460,
+      "heartbeat_utc": "2026-11-28T13:04:23Z"
+    }
+  },
+  "related_processes": [
+    {
+      "pid": 2168,
+      "parent_pid": 40796,
+      "creation_unix": 1795870556.2145429,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_classical_by_mechanism queue"
+    },
+    {
+      "pid": 7284,
+      "parent_pid": 19460,
+      "creation_unix": 1795870557.483066,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_classical_by_mechanism worker --method Max-TF"
+    },
+    {
+      "pid": 8668,
+      "parent_pid": 15920,
+      "creation_unix": 1795870040.2644987,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_detection queue"
+    },
+    {
+      "pid": 9100,
+      "parent_pid": 33372,
+      "creation_unix": 1795870041.5494604,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_detection worker --seed 67"
+    },
+    {
+      "pid": 10584,
+      "parent_pid": 6604,
+      "creation_unix": 1795862708.4028983,
+      "command": "powershell.exe -NoProfile -WindowStyle Hidden -Command Set-Location 'D:\\code\\Xin\\ISRJ_222'; while(-not (Test-Path 'D:\\code\\Xin\\ISRJ_222\\\\outputs\\\\original_paper_replication_256_v1\\\\R3_main\\\\ALL_COMPLETE.json')){ Start-Sleep -Seconds 60 }; & 'D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe' -u -m tools.original_replication_r1 1>> 'D:\\code\\Xin\\ISRJ_222\\outputs\\original_paper_replication_256_v1\\pipeline\\\\r1.stdout.log' 2>> 'D:\\code\\Xin\\ISRJ_222\\outputs\\original_paper_replication_256_v1\\pipeline\\\\r1.stderr.log'"
+    },
+    {
+      "pid": 13660,
+      "parent_pid": 33372,
+      "creation_unix": 1795870160.337071,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_detection worker --seed 109"
+    },
+    {
+      "pid": 15672,
+      "parent_pid": 32684,
+      "creation_unix": 1795870062.8525207,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_detection worker --seed 97"
+    },
+    {
+      "pid": 15752,
+      "parent_pid": 33372,
+      "creation_unix": 1795870080.1580193,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_detection worker --seed 53"
+    },
+    {
+      "pid": 15920,
+      "parent_pid": 6604,
+      "creation_unix": 1795870040.066147,
+      "command": "powershell.exe -NoProfile -WindowStyle Hidden -Command Set-Location 'D:/code/Xin/ISRJ_222'; & 'D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe' -u -m tools.original_replication_detection queue 1>> 'D:\\code\\Xin\\ISRJ_222\\outputs\\original_paper_replication_256_v1\\R5_detection/controller.stdout.log' 2>> 'D:\\code\\Xin\\ISRJ_222\\outputs\\original_paper_replication_256_v1\\R5_detection/controller.stderr.log'"
+    },
+    {
+      "pid": 16312,
+      "parent_pid": 18320,
+      "creation_unix": 1795870862.1723244,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_mechanism_summary watch"
+    },
+    {
+      "pid": 19460,
+      "parent_pid": 2168,
+      "creation_unix": 1795870556.2208517,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_classical_by_mechanism queue"
+    },
+    {
+      "pid": 22968,
+      "parent_pid": 33372,
+      "creation_unix": 1795870122.606871,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_detection worker --seed 41"
+    },
+    {
+      "pid": 27132,
+      "parent_pid": 19460,
+      "creation_unix": 1795870558.6319273,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_classical_by_mechanism worker --method GMM-OMP"
+    },
+    {
+      "pid": 30544,
+      "parent_pid": 16312,
+      "creation_unix": 1795870862.1839075,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_mechanism_summary watch"
+    },
+    {
+      "pid": 32048,
+      "parent_pid": 7284,
+      "creation_unix": 1795870557.488707,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_classical_by_mechanism worker --method Max-TF"
+    },
+    {
+      "pid": 32684,
+      "parent_pid": 33372,
+      "creation_unix": 1795870062.8459923,
+      "command": "D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe -u -m tools.original_replication_detection worker --seed 97"
+    },
+    {
+      "pid": 33372,
+      "parent_pid": 8668,
+      "creation_unix": 1795870040.2711744,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_detection queue"
+    },
+    {
+      "pid": 34580,
+      "parent_pid": 13660,
+      "creation_unix": 1795870160.350804,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_detection worker --seed 109"
+    },
+    {
+      "pid": 34972,
+      "parent_pid": 15752,
+      "creation_unix": 1795870080.164768,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_detection worker --seed 53"
+    },
+    {
+      "pid": 35704,
+      "parent_pid": 27132,
+      "creation_unix": 1795870558.6382384,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_classical_by_mechanism worker --method GMM-OMP"
+    },
+    {
+      "pid": 35968,
+      "parent_pid": 9100,
+      "creation_unix": 1795870041.5546684,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_detection worker --seed 67"
+    },
+    {
+      "pid": 36500,
+      "parent_pid": 22968,
+      "creation_unix": 1795870122.6126442,
+      "command": "C:\\Users\\admin\\AppData\\Local\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -u -m tools.original_replication_detection worker --seed 41"
+    },
+    {
+      "pid": 40796,
+      "parent_pid": 6604,
+      "creation_unix": 1795870556.0095153,
+      "command": "powershell.exe -NoProfile -WindowStyle Hidden -Command Set-Location 'D:/code/Xin/ISRJ_222'; & 'D:\\code\\Xin\\ISRJ_222\\.venv\\Scripts\\python.exe' -u -m tools.original_replication_classical_by_mechanism queue 1>> 'D:\\code\\Xin\\ISRJ_222\\outputs\\original_paper_replication_256_v1\\R3_by_mechanism/controller.stdout.log' 2>> 'D:\\code\\Xin\\ISRJ_222\\outputs\\original_paper_replication_256_v1\\R3_by_mechanism/controller.stderr.log'"
+    }
+  ],
+  "source_sha256": {
+    "tools\\original_replication_detection.py": "ac2ee0c88aa01ecf6f29cdb68cf074ff6cd3152961d917deb890e6cfd944e4a9",
+    "tools\\original_replication_classical_by_mechanism.py": "e5c513c9047de0ebeceaca9dd7ae9506ef9a729facc47acdd2b83912c7f9485e",
+    "tools\\original_replication_mechanism_summary.py": "6294d15e8c1c9fd01ba051764b7b73aec99d619780406c0a9a2cef1458d91195",
+    "tools\\original_replication_suite.py": "151095613139469f0d655de3b38669e504e97a063a8171f53c07b85803adefcb",
+    "tools\\original_replication_r1.py": "d501ebb8fb8e90f18f2bfc2cbaed0c4f9ca2317a5ffe0901acd487ea09d8a19f"
+  }
+}

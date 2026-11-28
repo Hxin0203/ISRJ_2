@@ -1,5 +1,19 @@
 # ISRJ_2 ReCoVP-Hybrid 256轮原稿参照实验进度
 
+## 2026年11月28日05时04分PST核验与分机制补算
+
+本次服务器快照对应UTC 13时04分。GPU0利用率85%，显存15937/16311 MiB，GPU1利用率100%，显存16005/16311 MiB，物理内存占用43.43%。运行负载随推理和CPU评价变化，后续GPU任务在利用率低于85%、物理内存低于90%时自动派发。
+
+GPU0的R5五个Hybrid seed持续并行。seed67、97、53、41、109分别保存85、86、77、57、50个分块，合计355块，每块16个父场景、三种机制。五seed完整条件格分别为2、2、2、1、1。已逐块核验本快照全部355块的parent ID、绑定SHA、三机制形状、有限值及指标别名。独立物理样本量仍为共享的512个父场景。
+
+核查发现，旧R3入口在保存前对三类机制求均值，落盘指标形状为父场景一维。旧文件按三机制平均的聚合参照登记。三机制主表由新补算入口生成。Max-TF已核验64块并完成4个条件格，GMM-OMP已核验5块。两个CPU worker与双卡任务并行，资源和进度证据见`DUAL_GPU_MECHANISM_RECOVERY_20261128.json`。
+
+新后处理`tools/original_replication_mechanism_summary.py`已通过WMI持久启动。它检查R3/R5组件与幅度变换完全一致，在重叠条件直接引用R5前256个物理父场景，逐块验证绑定并生成分机制、逐seed表。该路径复用已有Hybrid推理。传统方法使用独立补算分块。旧后处理监督脚本的自身进程匹配已修复，旧汇总调用已转接新入口。
+
+P2收据覆盖资产和工程检查，完整科学一致性验收正在补做。正式CVED-Net同数据、256轮、3seed训练仍待实现和派发。R1已修正典型JSR至20 dB、四状态/脉冲索引和设备准入，工程维度检查通过，服务器运行及完整图件验收待资源与后续扩展。R1预览收据单列，参考曲线、三机制、16父场景相干诊断及图件QA列为后续验收项。
+
+本次持久执行已覆盖R5 Hybrid队列、R3传统方法分机制补算和分机制结果衔接。R2、R4、R6及正式CVED-Net的完整执行入口继续列在任务书中待补齐。seed109沿用原始preflight缺失及恢复桥接的追溯限制。
+
 ## 2026年11月28日04时50分PST双卡并行快照
 
 根据用户要求，R5检测网格已提前与R3并行。GPU0正在运行ReCoVP-Hybrid的67、97、53、41、109五个256轮seed，GPU1继续运行R3已有任务。R5已写入100个父场景分块，各块包含16个物理父场景与三种干扰机制，seed67已完成首个512父场景条件格。运行期间已观测到GPU0利用率100%、GPU1利用率99%；随后快照的服务器物理内存占用为44.48%。利用率随推理和CPU指标计算阶段变化。
@@ -18,7 +32,7 @@ R5入口为`tools/original_replication_detection.py`及`tools/start_original_rep
 
 最近一次资源快照记录GPU0利用率1%、显存570/16311 MiB，GPU1利用率100%、显存16037/16311 MiB，主机物理内存占用24.29%。当前运行任务沿用已登记设备，后续派发严格重新查询资源并使用利用率低于85%的设备，主机物理内存低于90%时继续。512轮续训仍保持暂停。
 
-R3原控制器在UTC 11:04:20因恢复代码将日志路径当作文件句柄调用`close()`而退出，已保存89个条件文件，现有计算worker未被停止。修复后的`tools/original_replication_suite.py`已部署，`recover_original_replication_r3.ps1`等待现有worker自然完成后从已保存条件继续，`recover_original_replication_postprocessing.ps1`随后执行R3汇总。该故障属于调度器错误，未发现模型、数据或checkpoint身份错误。
+R3原控制器在UTC 11:04:20因恢复代码将日志路径当作文件句柄调用`close()`而退出，已保存89个条件文件，现有计算worker未被停止。修复后的`tools/original_replication_suite.py`已部署，`recover_original_replication_r3.ps1`等待现有worker自然完成后从已保存条件继续，`recover_original_replication_postprocessing.ps1`现已衔接分机制增量核验。该故障属于调度器错误，未发现模型、数据或checkpoint身份错误。
 
 ## 512轮暂停与恢复资料
 
@@ -47,20 +61,20 @@ seed109原preflight字节缺失，配置中记录SHA为 `ff5dda96ca4278eaa4f6e84
 
 服务器已在UTC 08时08分33秒通过WMI启动持久控制器。8个 ReCoVP-Hybrid seed 的统一 DEV 收据和 SHA 核验已完成。冻结的前5名为 **67、97、53、41、109**，详见服务器 `outputs/original_paper_replication_256_v1/seed_selection/SELECTED_SEEDS.json`。seed109 的原始 preflight 字节缺失，保留恢复桥接限制。
 
-首个Start-Process启动尝试在SSH会话退出后未存活，已依据项目既有WMI模式修复。新入口为 `tools/start_hybrid_256_seed_selection.ps1`，评价入口为 `tools/hybrid_256_seed_selection.py`。进程锁用于约束同目录并发写入。现场快照和启动收据保存在 `evidence/outputs/Original_paper_replication_256/`，完整运行日志与父场景数组保留服务器。
+首个Start-Process启动尝试在SSH会话退出后未存活，已依据项目既有WMI模式修复。新入口为 `tools/start_hybrid_256_seed_selection.ps1`，评价入口为 `tools/hybrid_256_seed_selection.py`。后续并行队列使用独立目录、任务身份登记及原子写入。现场快照和启动收据保存在 `evidence/outputs/Original_paper_replication_256/`，完整运行日志与父场景数组保留服务器。
 
 ## 四方法与后续实验
 
 |工作包|当前完成数|计划范围|状态|
 |---|---:|---|---|
 |P0 暂停与恢复审计|8/8 seed|全部既有恢复点及端点备份|已核验|
-|P1 统一DEV筛选|0/8 seed|完整排序后选5seed|seed17校准中|
-|P2 数据和指标一致性|1|新版本、配对、阈值、四方法小样本|已核验，收据已保存|
-|R1 全视野时域/脉压/多普勒|0|ReCoVP-Hybrid前5seed及三种对照方法同场景图|待R3后按依赖派发|
+|P1 统一DEV筛选|8/8 seed|完整排序后选5seed|已冻结67、97、53、41、109|
+|P2 数据和指标一致性|工程核验完成|新版本、配对、阈值、四方法小样本|逐机制科学一致性补验中|
+|R1 全视野时域/脉压/多普勒|0|ReCoVP-Hybrid前5seed及三种对照方法同场景图|典型预览等待派发，完整协议待扩展|
 |R2 切片宽度|0/1100条件格|M2/M4、5强度、5宽度、11SNR、2种JSR口径|待评价|
-|R3 主条件表|恢复中/105条件格|7SNR×5JSR×3机制，另补原稿网格|89个方法-条件文件已保存，等待现有worker完成后续跑|
+|R3 主条件表|分机制补算中/105条件格|7SNR×5JSR×3机制，另补原稿网格|传统方法补算及Hybrid重叠条件复用已接通|
 |R4 四专题|0/4专题|背景FA、机制泛化、无噪声目标、无干扰保持|待评价|
-|R5 原稿热图|Hybrid首个seed已完成3个机制条件格|优先450格，补齐930格|GPU0上五个Hybrid seed并行计算|
+|R5 原稿热图|五seed合计8个SNR/JSR实例格|优先450格，补齐930格|GPU0五Hybrid seed并行，完整四方法继续推进|
 |R6 初轮消融|0/13变体|3配对seed，最多39个新训练实例|待训练与复用核验|
 
 现有 CVED-Net 适配器实际绑定第一篇数据训练、epoch320封存端点。计划 v1.1 已据此更正来源。它用于历史参照与适配核验，正式主比较安排本工程数据上的3seed、epoch256 CVED-Net。新训练和扩展实验的性能结果按实际完成收据填报。前期 RSDR-Net 仅保留为论文中已有的历史冻结参照，不纳入本轮新实验任务。

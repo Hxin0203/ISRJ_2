@@ -232,91 +232,17 @@ def summarize() -> None:
         payload = json.loads(summary.read_text(encoding="utf-8"))
         payload["runner_sha256"] = sha(Path(__file__))
         payload["selected_hybrid_seeds"] = list(SEEDS)
+        payload["mechanism_aggregation"] = "three-mechanism average from the legacy R3 evaluator"
+        payload["cvednet_role"] = "historical first-paper-data epoch320 reference"
+        payload["per_mechanism_results"] = "R3_by_mechanism/postprocessing/R3_PER_SEED_BY_MECHANISM.csv"
         write_json(summary, payload)
     _summarize_by_mechanism()
 
 
 def _summarize_by_mechanism() -> None:
-    """Write per-jammer-type tables and the ISRRJ Fig.6/Fig.7-style curves."""
-    import csv
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-
-    methods = ["ReCoVP-Hybrid", "Max-TF", "GMM-OMP", "CVEDNet"]
-    metrics = ("pd", "u_nmse", "damage", "sjrif_db", "frame_pfa_jammer")
-    variants = ("ISDRJ", "ISRRJ", "ISCRJ")
-    rows = []
-    for method in methods:
-        seed_dirs = sorted((OUT / "results" / method).glob("*"))
-        seed_dirs = [d for d in seed_dirs if (d / "DONE.json").is_file()]
-        if not seed_dirs:
-            continue
-        for snr in SNRS:
-            for jsr in JSRS:
-                name = f"cell_snr_{snr:g}_jsr_{jsr:g}.npz"
-                arrays = []
-                for folder in seed_dirs:
-                    path = folder / name
-                    if path.is_file():
-                        with np.load(path, allow_pickle=False) as z:
-                            arrays.append({metric: z[metric].copy() for metric in metrics})
-                if not arrays:
-                    continue
-                for variant_index, variant in enumerate(variants):
-                    for metric in metrics:
-                        values = [a[metric][:, variant_index].mean() for a in arrays]
-                        rows.append({"method": method, "variant": variant, "snr_db": snr,
-                                     "jsr_db": jsr, "metric": metric,
-                                     "mean": float(np.mean(values)),
-                                     "seed_sd": float(np.std(values, ddof=1)) if len(values) > 1 else None,
-                                     "n_seeds": len(values), "parents": 256})
-    table = OUT / "SUMMARY_BY_MECHANISM.json"
-    write_json(table, {"created_utc": now(), "methods": methods, "variants": variants,
-                       "metrics": metrics, "rows": rows, "selected_hybrid_seeds": list(SEEDS),
-                       "source_runner_sha256": sha(Path(__file__))})
-    csv_path = OUT / "R3_METRICS_BY_MECHANISM.csv"
-    with csv_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else
-                                ["method", "variant", "snr_db", "jsr_db", "metric", "mean", "seed_sd", "n_seeds", "parents"])
-        writer.writeheader()
-        writer.writerows(rows)
-    if not rows:
-        return
-    colors = {0: "#0072B2", 10: "#009E73", 20: "#E69F00", 30: "#D55E00", 35: "#7B61A8"}
-    labels = {"ReCoVP-Hybrid": "ReCoVP-Hybrid", "Max-TF": "Max-TF",
-              "GMM-OMP": "GMM-OMP", "CVEDNet": "CVED-Net"}
-    lookup = {(r["method"], r["metric"], r["snr_db"], r["jsr_db"]): r["mean"]
-              for r in rows if r["variant"] == "ISRRJ"}
-    for metric, ylabel, filename in (("pd", "Pd", "Fig6_ISRRJ_Pd"),
-                                     ("u_nmse", "E_U", "Fig6_ISRRJ_EU"),
-                                     ("damage", "D_S (original e_S)", "Fig7_ISRRJ_DS"),
-                                     ("sjrif_db", "SJRIF (dB)", "Fig7_ISRRJ_SJRIF")):
-        fig, axes = plt.subplots(1, 4, figsize=(11.2, 2.8), sharex=True, constrained_layout=True)
-        for ax, method in zip(axes, methods):
-            for jsr in JSRS:
-                values = [lookup.get((method, metric, snr, jsr), np.nan) for snr in SNRS]
-                ax.plot(SNRS, values, marker="o", ms=3.2, lw=1.3, color=colors[jsr], label=f"JSR {jsr} dB")
-            ax.set_title(labels[method], fontsize=9)
-            ax.set_xlabel("SNR (dB)")
-            ax.grid(True, alpha=0.22)
-            if metric in ("u_nmse", "damage"):
-                ax.set_yscale("log")
-            if metric == "pd":
-                ax.set_ylim(0, 1.02)
-        axes[0].set_ylabel(ylabel)
-        axes[-1].legend(frameon=False, fontsize=7, loc="best")
-        for ext in ("png", "pdf", "svg"):
-            fig.savefig(OUT / f"{filename}.{ext}", dpi=600 if ext == "png" else None,
-                        bbox_inches="tight", facecolor="white")
-        plt.close(fig)
-    write_json(OUT / "FIGURE_MANIFEST.json", {
-        "created_utc": now(), "variant": "ISRRJ", "files": [
-            f"Fig6_ISRRJ_Pd.{ext}" for ext in ("png", "pdf", "svg")
-        ] + [f"Fig6_ISRRJ_EU.{ext}" for ext in ("png", "pdf", "svg")]
-        + [f"Fig7_ISRRJ_DS.{ext}" for ext in ("png", "pdf", "svg")]
-        + [f"Fig7_ISRRJ_SJRIF.{ext}" for ext in ("png", "pdf", "svg")],
-        "data": str(csv_path), "runner_sha256": sha(Path(__file__))})
+    """Reconcile the independently persisted mechanism arrays."""
+    from tools.original_replication_mechanism_summary import reconcile_once
+    reconcile_once()
 
 
 def main() -> None:

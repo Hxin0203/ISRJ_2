@@ -1,0 +1,173 @@
+{
+  "at_utc": "2026-11-28T13:08:10.422724+00:00",
+  "compile": "PASS",
+  "source_sha256": {
+    "tools/original_replication_r1.py": "43e7dc4535c1f3bf676041bc84e1d93fe05fb2d25233ae1ff06fc29f389370d7",
+    "tools/original_replication_suite.py": "b2c28c8e5c8127b07d3fb0b4d085d788809bc3de766425b5491d3ca9f54d4abd",
+    "tools/original_replication_mechanism_summary.py": "6294d15e8c1c9fd01ba051764b7b73aec99d619780406c0a9a2cef1458d91195",
+    "tools/original_replication_classical_by_mechanism.py": "e5c513c9047de0ebeceaca9dd7ae9506ef9a729facc47acdd2b83912c7f9485e",
+    "tools/start_original_replication_classical_by_mechanism.ps1": "d1e65953acf5268031ded2844add2e7f78ac2d58b6e109a94f72f23fc4f126bc",
+    "tools/recover_original_replication_postprocessing.ps1": "552d56ea863c2f4c6deb7bbd6994536ec5187665f56794447f55c0f79514308b",
+    "tools/start_original_replication_postpriority.ps1": "0b3a6c1cb16403b8d7bd3d5a67c70387d197edf3d3b7ba356be13685e32b4b3e",
+    "reports/Original_paper_replication_256/STATUS.md": "eb16292446a3fd53d8f78defaaa75a2d32e5d07901188f8bedfcc3d988509aa9",
+    "reports/Original_paper_replication_256/TASKS.json": "6068abdbb8911cd4b3deb8eba0ffe99bb83568e1c24e4470a71f46a5def90d71"
+  },
+  "resources": {
+    "gpus": [
+      {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 100.0,
+        "memory_used_mib": 15937.0,
+        "memory_total_mib": 16311.0
+      },
+      {
+        "physical_gpu_index": 1,
+        "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 100.0,
+        "memory_used_mib": 16005.0,
+        "memory_total_mib": 16311.0
+      }
+    ],
+    "memory": {
+      "total_bytes": 137107394560,
+      "available_bytes": 77346983936,
+      "source": "GlobalMemoryStatusEx",
+      "used_bytes": 59760410624,
+      "utilization_percent": 43.58657008674179
+    },
+    "queried_utc": "2026-11-28T13:08:10.724027+00:00"
+  },
+  "R5": {
+    "67": {
+      "state": "RUNNING",
+      "completed_cells": 2,
+      "completed_parent_chunks": 92,
+      "last_update_utc": "2026-11-28T13:08:07Z"
+    },
+    "97": {
+      "state": "RUNNING",
+      "completed_cells": 3,
+      "completed_parent_chunks": 100,
+      "last_update_utc": "2026-11-28T13:08:03Z"
+    },
+    "53": {
+      "state": "RUNNING",
+      "completed_cells": 2,
+      "completed_parent_chunks": 92,
+      "last_update_utc": "2026-11-28T13:08:09Z"
+    },
+    "41": {
+      "state": "RUNNING",
+      "completed_cells": 2,
+      "completed_parent_chunks": 68,
+      "last_update_utc": "2026-11-28T13:07:58Z"
+    },
+    "109": {
+      "state": "RUNNING",
+      "completed_cells": 1,
+      "completed_parent_chunks": 60,
+      "last_update_utc": "2026-11-28T13:08:04Z"
+    }
+  },
+  "R3_classical": {
+    "Max-TF": {
+      "state": "RUNNING",
+      "completed_cells": 5,
+      "completed_chunks": 90,
+      "updated_utc": "2026-11-28T13:08:05Z"
+    },
+    "GMM-OMP": {
+      "state": "RUNNING",
+      "completed_cells": 0,
+      "completed_chunks": 7,
+      "updated_utc": "2026-11-28T13:06:43Z"
+    }
+  },
+  "postprocessing": {
+    "state": "RECONCILING",
+    "updated_utc": "2026-11-28T13:07:15Z",
+    "coverage": {
+      "ReCoVP-Hybrid_67": 1,
+      "ReCoVP-Hybrid_97": 1,
+      "ReCoVP-Hybrid_53": 1,
+      "ReCoVP-Hybrid_41": 0,
+      "ReCoVP-Hybrid_109": 0,
+      "Max-TF": 5,
+      "GMM-OMP": 0
+    },
+    "cells_per_instance": 35,
+    "physical_parents": 256,
+    "hybrid_source": "R5 first 256 parent IDs, component equality audited against R3",
+    "classical_source": "R3 independently recomputed per-mechanism chunks",
+    "formal_cved256": "PENDING_SAME_DATA_TRAINING_AND_EVALUATION",
+    "full_r3_completed": false,
+    "seed109_preflight_limitation": "original bytes missing; recovery bridge retained"
+  },
+  "text_audit": {
+    "offline": true,
+    "mode": "audit only",
+    "report": {
+      "path": "reports/Original_paper_replication_256/STATUS.md",
+      "density_tier": "low",
+      "flagged_count": 0,
+      "flagged": [],
+      "stylometry": {
+        "path": "reports/Original_paper_replication_256/STATUS.md",
+        "word_count": 552,
+        "sentence_count": 55,
+        "burstiness_cv": 0.7194,
+        "lexical_diversity": 0.9185,
+        "ai_ngram_density": 0.0,
+        "matched_markers": [],
+        "score": 0.0325,
+        "confidence_level": "CLEAN",
+        "density_tier": "low",
+        "status": "ok",
+        "findings": [],
+        "findings_confidence": [],
+        "notes": []
+      }
+    },
+    "language_limitation": "English stylometry is uncalibrated for this Chinese report",
+    "protected": "numbers, formulas, identifiers, code, paths, citations"
+  },
+  "regression_checks": {
+    "accepted_parent_mechanism_shape": [
+      16,
+      3
+    ],
+    "collapsed_arrays_rejected": true,
+    "metric_alias_mismatch_rejected": true,
+    "r1_state_pulse_pc_rd_shape_check": "PASS",
+    "r1_server_full_figure_verification": "PENDING"
+  },
+  "edit_backups": [
+    {
+      "path": "backups\\original_replication_mechanism_recovery_20261128T1300Z\\reports\\Original_paper_replication_256\\STATUS.md",
+      "sha256": "c62fe315c16d24a140db9de3e5fed404a7ccdd5e3844b6f01aa497dbf19a5216"
+    },
+    {
+      "path": "backups\\original_replication_mechanism_recovery_20261128T1300Z\\reports\\Original_paper_replication_256\\TASKS.json",
+      "sha256": "681b9e9559d2daffcdb2534f41e982b429f7dec1a1d14f58cdbe63253847877f"
+    },
+    {
+      "path": "backups\\original_replication_mechanism_recovery_20261128T1300Z\\tools\\original_replication_r1.py",
+      "sha256": "e9e99a405dcc1c0aa7b1a87b915326c82418cafb1ba665cdd7ca25929f97ad83"
+    },
+    {
+      "path": "backups\\original_replication_mechanism_recovery_20261128T1300Z\\tools\\original_replication_suite.py",
+      "sha256": "c25de01d0f398679f160aa98a9a8cb6e422ec415a9f7aaeacea1f4bab0ad3b9d"
+    },
+    {
+      "path": "backups\\original_replication_mechanism_recovery_20261128T1300Z\\tools\\recover_original_replication_postprocessing.ps1",
+      "sha256": "fe1290678c31bd25266dac8b9203e7950832a2efd37a2998b738e46b57c74a0a"
+    },
+    {
+      "path": "backups\\original_replication_mechanism_recovery_20261128T1300Z\\tools\\start_original_replication_postpriority.ps1",
+      "sha256": "c64722cdc026b48aa4976a2ee94187d9bdb7f84f86741c07f60bff0299a541aa"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "plan_version": "1.2",
-  "updated_utc": "2026-11-28T12:50:51.1946510Z",
+  "updated_utc": "2026-11-28T13:04:28.184208+00:00",
   "plan": "reports/Original_paper_replication_256/MASTER_PLAN.md",
   "priority": "ISRJ_2 ReCoVP-Hybrid epoch256 replication and ablations",
   "primary_model": "ReCoVP-Hybrid",
@@ -69,12 +69,13 @@
       "depends_on": [
         "P1"
       ],
-      "status": "COMPLETED_VERIFIED",
-      "completed_units": 1,
+      "status": "ENGINEERING_VERIFIED_SCIENTIFIC_REVALIDATION",
+      "completed_units": 0,
       "evidence": [
         "outputs/original_paper_replication_256_v1/P2/P2_COMPLETE.json",
         "tools/original_replication_p2.py"
-      ]
+      ],
+      "acceptance_gap": "Existing receipt checked assets and compilation; per-mechanism metric acceptance is being repeated after the R3 axis-collapse finding."
     },
     {
       "id": "R1",
@@ -82,13 +83,19 @@
       "depends_on": [
         "P2"
       ],
-      "status": "QUEUED_AFTER_R3",
+      "status": "QUEUED_PRELIMINARY_FULL_PROTOCOL_PENDING",
       "completed_units": 0,
       "evidence": [
         "tools/original_replication_r1.py",
         "tools/start_original_replication_postpriority.ps1"
       ],
-      "server_status": "outputs/original_paper_replication_256_v1/pipeline/R1_LAUNCH_RECEIPT.json"
+      "server_status": "outputs/original_paper_replication_256_v1/pipeline/R1_LAUNCH_RECEIPT.json",
+      "pending_acceptance": [
+        "full reference and Doppler panels",
+        "three mechanisms and coherence cases",
+        "formal CVED256",
+        "rendered figure QA"
+      ]
     },
     {
       "id": "R2",
@@ -108,12 +115,15 @@
       "depends_on": [
         "P2"
       ],
-      "status": "RECOVERING",
+      "status": "RUNNING_MECHANISM_RECOVERY",
       "completed_units": 0,
       "evidence": [
         "outputs/original_paper_replication_256_v1/R3_main/REGISTRATION.json",
         "outputs/original_paper_replication_256_v1/R3_main/QUEUE_STATUS.json",
-        "tools/original_replication_suite.py"
+        "tools/original_replication_suite.py",
+        "evidence/outputs/Original_paper_replication_256/DUAL_GPU_MECHANISM_RECOVERY_20261128.json",
+        "tools/original_replication_classical_by_mechanism.py",
+        "tools/original_replication_mechanism_summary.py"
       ],
       "total_units": 105,
       "unit": "requested main condition cell with all planned model instances",
@@ -124,8 +134,87 @@
         "controller_failure": "WindowsPath object had no close method during child log cleanup",
         "saved_condition_files": 89,
         "recovery_launcher": "tools/recover_original_replication_r3.ps1",
-        "postprocessing_launcher": "tools/recover_original_replication_postprocessing.ps1"
-      }
+        "postprocessing_launcher": "tools/recover_original_replication_postprocessing.ps1",
+        "mechanism_axis_failure": "Legacy R3 averaged mechanisms before persistence",
+        "classical_recompute": "tools/original_replication_classical_by_mechanism.py",
+        "hybrid_reuse": "Validated first 256 physical parents of overlapping R5 cells",
+        "postprocessing": "tools/original_replication_mechanism_summary.py",
+        "legacy_averaged_file_counts": {
+          "CVEDNet\\single": {
+            "condition_files": 15,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "GMM-OMP\\single": {
+            "condition_files": 14,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "Max-TF\\single": {
+            "condition_files": 35,
+            "done": true,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "ReCoVP-Hybrid\\seed_109": {
+            "condition_files": 21,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "ReCoVP-Hybrid\\seed_41": {
+            "condition_files": 21,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "ReCoVP-Hybrid\\seed_53": {
+            "condition_files": 20,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "ReCoVP-Hybrid\\seed_67": {
+            "condition_files": 32,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          },
+          "ReCoVP-Hybrid\\seed_97": {
+            "condition_files": 21,
+            "done": false,
+            "mechanism_axis": "averaged before persistence"
+          }
+        },
+        "snapshot": {
+          "Max-TF": {
+            "state": "RUNNING",
+            "pid": 32048,
+            "completed_cells": 4,
+            "completed_parent_chunks": null,
+            "completed_chunks": 64,
+            "snr_db": -30,
+            "jsr_db": 30,
+            "last_update_utc": null,
+            "updated_utc": "2026-11-28T13:04:20Z",
+            "saved_chunks": 64,
+            "verified_chunks": 64,
+            "done_cells": 4,
+            "last_error": null
+          },
+          "GMM-OMP": {
+            "state": "RUNNING",
+            "pid": 35704,
+            "completed_cells": 0,
+            "completed_parent_chunks": null,
+            "completed_chunks": 5,
+            "snr_db": -30,
+            "jsr_db": 0,
+            "last_update_utc": null,
+            "updated_utc": "2026-11-28T13:03:25Z",
+            "saved_chunks": 5,
+            "verified_chunks": 5,
+            "done_cells": 0,
+            "last_error": null
+          }
+        }
+      },
+      "formal_cved256_status": "PENDING_SAME_DATA_THREE_SEED_TRAINING"
     },
     {
       "id": "R4a",
@@ -178,40 +267,96 @@
       "evidence": [
         "tools/original_replication_detection.py",
         "tools/start_original_replication_detection.ps1",
-        "evidence/outputs/Original_paper_replication_256/GPU0_PARALLEL_R5_20261128.json"
+        "evidence/outputs/Original_paper_replication_256/GPU0_PARALLEL_R5_20261128.json",
+        "evidence/outputs/Original_paper_replication_256/DUAL_GPU_MECHANISM_RECOVERY_20261128.json"
       ],
       "total_units": 930,
       "unit": "mechanism-condition cell with all planned model instances",
       "priority_cells": 450,
       "server_status": "outputs/original_paper_replication_256_v1/R5_detection/QUEUE_STATUS.json",
       "hybrid_progress": {
-        "captured_utc": "2026-11-28T12:50:51.1946510Z",
+        "captured_utc": "2026-11-28T13:04:28.184208+00:00",
         "physical_gpu_index": 0,
         "seed_progress": [
           {
             "seed": 67,
-            "completed_cells": 1,
-            "completed_parent_chunks": 36
+            "state": "RUNNING",
+            "pid": 35968,
+            "completed_cells": 2,
+            "completed_parent_chunks": 85,
+            "completed_chunks": null,
+            "snr_db": -30,
+            "jsr_db": 0,
+            "last_update_utc": "2026-11-28T13:04:16Z",
+            "updated_utc": null,
+            "saved_chunks": 85,
+            "verified_chunks": 85,
+            "done_cells": 2,
+            "last_error": null
           },
           {
             "seed": 97,
-            "completed_cells": 0,
-            "completed_parent_chunks": 29
+            "state": "RUNNING",
+            "pid": 15672,
+            "completed_cells": 2,
+            "completed_parent_chunks": 86,
+            "completed_chunks": null,
+            "snr_db": -30,
+            "jsr_db": 0,
+            "last_update_utc": "2026-11-28T13:04:13Z",
+            "updated_utc": null,
+            "saved_chunks": 86,
+            "verified_chunks": 86,
+            "done_cells": 2,
+            "last_error": null
           },
           {
             "seed": 53,
-            "completed_cells": 0,
-            "completed_parent_chunks": 22
+            "state": "RUNNING",
+            "pid": 34972,
+            "completed_cells": 2,
+            "completed_parent_chunks": 77,
+            "completed_chunks": null,
+            "snr_db": -30,
+            "jsr_db": 0,
+            "last_update_utc": "2026-11-28T13:04:14Z",
+            "updated_utc": null,
+            "saved_chunks": 77,
+            "verified_chunks": 77,
+            "done_cells": 2,
+            "last_error": null
           },
           {
             "seed": 41,
-            "completed_cells": 0,
-            "completed_parent_chunks": 9
+            "state": "RUNNING",
+            "pid": 36500,
+            "completed_cells": 1,
+            "completed_parent_chunks": 57,
+            "completed_chunks": null,
+            "snr_db": -30,
+            "jsr_db": -5,
+            "last_update_utc": "2026-11-28T13:04:13Z",
+            "updated_utc": null,
+            "saved_chunks": 57,
+            "verified_chunks": 57,
+            "done_cells": 1,
+            "last_error": null
           },
           {
             "seed": 109,
-            "completed_cells": 0,
-            "completed_parent_chunks": 4
+            "state": "RUNNING",
+            "pid": 34580,
+            "completed_cells": 1,
+            "completed_parent_chunks": 50,
+            "completed_chunks": null,
+            "snr_db": -30,
+            "jsr_db": -5,
+            "last_update_utc": "2026-11-28T13:04:28Z",
+            "updated_utc": null,
+            "saved_chunks": 50,
+            "verified_chunks": 50,
+            "done_cells": 1,
+            "last_error": null
           }
         ],
         "parents_per_chunk": 16,
@@ -400,13 +545,13 @@
     "role": "adapter verification and historical reference"
   },
   "execution_snapshot": {
-    "captured_utc": "2026-11-28T12:50:51.1946510Z",
+    "captured_utc": "2026-11-28T13:04:28.184208+00:00",
     "controller": "tools/original_replication_pipeline.py",
     "launcher": "tools/start_original_replication_pipeline.ps1",
     "server": "rsdr-b",
     "server_root": "D:/code/Xin/ISRJ_222",
     "resource_policy": "dispatch when selected GPU utilization <85% and host physical memory utilization <90%; concurrent jobs allowed",
-    "active_priority": "GPU0 runs R5 Hybrid seeds; GPU1 runs existing R3 workers",
+    "active_priority": "GPU0 R5 Hybrid; GPU1 legacy R3; CPU R3 mechanism recovery",
     "selected_seeds": [
       67,
       97,
@@ -417,6 +562,8 @@
     "historical_reference_excluded": [
       "RSDR-Net"
     ],
-    "r5_controller": "tools/original_replication_detection.py"
+    "r5_controller": "tools/original_replication_detection.py",
+    "postprocessing": "tools/original_replication_mechanism_summary.py",
+    "full_queue_implementation": "R3/R5 controllers and reconciliation active; R1 preliminary queued; remaining work packages require implementation"
   }
 }
