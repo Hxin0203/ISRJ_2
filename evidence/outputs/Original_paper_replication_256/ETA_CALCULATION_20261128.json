@@ -1,0 +1,103 @@
+{
+  "snapshot_utc": "2026-11-28T13:27:12.698989+00:00",
+  "r5_hybrid": {
+    "saved_chunks": 720,
+    "total_priority_chunks": 24000,
+    "total_full_chunks": 49600,
+    "recent_chunks_per_hour": {
+      "300": 984.0,
+      "600": 1008.0,
+      "900": 984.0,
+      "1800": 976.0
+    },
+    "priority_remaining_hours": [
+      23.095238095238095,
+      23.852459016393443
+    ],
+    "full_remaining_hours": [
+      48.492063492063494,
+      50.08196721311475
+    ]
+  },
+  "classical": {
+    "Max-TF": {
+      "saved_chunks": 225,
+      "r3_total_chunks": 560,
+      "recent_chunks_per_hour": [
+        432.0,
+        412.0,
+        434.0
+      ],
+      "r3_remaining_hours": [
+        0.771889400921659,
+        0.8131067961165048
+      ],
+      "r5_full_cpu_hours": [
+        22.857142857142858,
+        24.07766990291262
+      ],
+      "r2_single_mechanism_scaled_hours": [
+        6.7588325652841785,
+        7.119741100323625
+      ]
+    },
+    "GMM-OMP": {
+      "saved_chunks": 20,
+      "r3_total_chunks": 560,
+      "recent_chunks_per_hour": [
+        42.0,
+        40.0,
+        40.0
+      ],
+      "r3_remaining_hours": [
+        12.857142857142858,
+        13.5
+      ],
+      "r5_full_cpu_hours": [
+        236.1904761904762,
+        248.0
+      ],
+      "r2_single_mechanism_scaled_hours": [
+        69.84126984126985,
+        73.33333333333334
+      ]
+    }
+  },
+  "training": {
+    "historical_hybrid_epoch_median_seconds": [
+      96.25627524987794,
+      96.17121844994836,
+      99.33927115006372
+    ],
+    "base_variant_instances_up_to": 39,
+    "leave_one_mechanism_instances": 9,
+    "planned_epochs": 12288,
+    "dual_gpu_ideal_hours_full_model_proxy": [
+      164.1322128212452,
+      169.53902276277543
+    ],
+    "additional_eight_seed_extension_hours_dual_gpu_proxy": 27.37956273774306,
+    "optional_cved_training_excluded": true
+  },
+  "cved_inference_proxy": {
+    "measured_shared_gpu_seconds_per_256_parent_cell": 648.4063602685928,
+    "legacy_r3_remaining_hours": 3.2420318013429643,
+    "r5_512_parent_full_hours_linear_proxy": 111.66998426847988,
+    "r2_128_parent_single_mechanism_hours_linear_proxy": 33.020694272937604
+  },
+  "scope_budget": {
+    "all_requested_work_days": [
+      14,
+      28
+    ],
+    "basis": "current unsharded GMM extrapolation plus dual-GPU training and evaluation budgets; independent stages overlap",
+    "status": "planning range, executable stages measured and remaining stages unbenchmarked",
+    "limitations": [
+      "M4 and width-dependent GMM cost unmeasured",
+      "R2/R4/R6 and comparator full-grid entry points pending",
+      "CPU condition sharding can change wall time after measurement",
+      "training variants use full-Hybrid historical timing as a proxy",
+      "independent confirmation and figure QA need final per-stage measurements"
+    ]
+  }
+}

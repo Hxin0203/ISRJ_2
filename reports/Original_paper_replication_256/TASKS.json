@@ -1,6 +1,6 @@
 {
-  "plan_version": "1.2",
-  "updated_utc": "2026-11-28T13:04:28.184208+00:00",
+  "plan_version": "1.3",
+  "updated_utc": "2026-11-28T13:34:22.046901+00:00",
   "plan": "reports/Original_paper_replication_256/MASTER_PLAN.md",
   "priority": "ISRJ_2 ReCoVP-Hybrid epoch256 replication and ablations",
   "primary_model": "ReCoVP-Hybrid",
@@ -214,7 +214,8 @@
           }
         }
       },
-      "formal_cved256_status": "PENDING_SAME_DATA_THREE_SEED_TRAINING"
+      "formal_cved256_status": "SUPPLEMENTARY",
+      "cvednet_evaluation": "REUSE_SEALED_E320_PER_MECHANISM_PENDING"
     },
     {
       "id": "R4a",
@@ -244,7 +245,8 @@
       ],
       "status": "PENDING",
       "completed_units": 0,
-      "evidence": []
+      "evidence": [],
+      "cvednet_policy": "reuse sealed e320 noise-free-target model; same-data retraining supplementary"
     },
     {
       "id": "R4d",
@@ -537,16 +539,16 @@
     "Hybrid": 5,
     "Max-TF": 1,
     "GMM-OMP": 1,
-    "CVED-Net": 3
+    "CVED-Net": 1
   },
   "historical_cvednet": {
     "epoch": 320,
     "training_data": "first-paper TRAIN512/DEV256",
-    "role": "adapter verification and historical reference"
+    "role": "reused sealed comparator for the current paired evaluation; training differences disclosed"
   },
   "execution_snapshot": {
-    "captured_utc": "2026-11-28T13:04:28.184208+00:00",
-    "controller": "tools/original_replication_pipeline.py",
+    "captured_utc": "2026-11-28T13:34:22.046901+00:00",
+    "controller": "tools/original_replication_pipeline.py (revised persistent supervisor)",
     "launcher": "tools/start_original_replication_pipeline.ps1",
     "server": "rsdr-b",
     "server_root": "D:/code/Xin/ISRJ_222",
@@ -564,6 +566,37 @@
     ],
     "r5_controller": "tools/original_replication_detection.py",
     "postprocessing": "tools/original_replication_mechanism_summary.py",
-    "full_queue_implementation": "R3/R5 controllers and reconciliation active; R1 preliminary queued; remaining work packages require implementation"
+    "full_queue_implementation": "R3/R5 controllers and reconciliation active; R1 preliminary queued; remaining work packages require implementation",
+    "controller_pid": 21528,
+    "state": "RUNNING_WITH_IMPLEMENTATION_GAPS",
+    "health_evidence": "evidence/outputs/Original_paper_replication_256/PIPELINE_HEALTH_ETA_20261128.json"
+  },
+  "supplementary_cvednet_training": {
+    "status": "SUPPLEMENTARY",
+    "seeds": [
+      17,
+      29,
+      41
+    ],
+    "epochs": 256,
+    "instances": 3,
+    "blocks_current_comparison": false,
+    "reason": "additional same-data and same-budget control introduced in the prior plan"
+  },
+  "eta": {
+    "report": "reports/Original_paper_replication_256/ETA_AND_PIPELINE_20261128.md",
+    "r5_hybrid_priority_remaining_hours": [
+      20,
+      30
+    ],
+    "r5_hybrid_full_remaining_hours": [
+      40,
+      60
+    ],
+    "whole_scope_budget_days": [
+      14,
+      28
+    ],
+    "status": "planning budget; remaining implementation and runtime benchmarking required"
   }
 }

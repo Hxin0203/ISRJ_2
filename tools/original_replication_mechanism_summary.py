@@ -160,10 +160,11 @@ def reconcile_once(context=None):
               "cells_per_instance": 35, "physical_parents": PARENTS,
               "hybrid_source": "R5 first 256 parent IDs, component equality audited against R3",
               "classical_source": "R3 independently recomputed per-mechanism chunks",
-              "formal_cved256": "PENDING_SAME_DATA_TRAINING_AND_EVALUATION",
+              "cvednet_evaluation": "PENDING_SEALED_E320_PER_MECHANISM_EVALUATION",
+              "same_data_cved256_training": "SUPPLEMENTARY",
               "full_r3_completed": False, "seed109_preflight_limitation": "original bytes missing; recovery bridge retained"}
     if all(count == 35 for count in coverage.values()):
-        status["state"] = "HYBRID_CLASSICAL_READY_FORMAL_CVED_PENDING"
+        status["state"] = "HYBRID_CLASSICAL_READY_CVED_PENDING"
     atomic_json(OUT / "STATUS.json", status)
     return context, status
 
@@ -176,7 +177,7 @@ def main():
     while True:
         try:
             context, status = reconcile_once(context)
-            if args.action == "once" or status["state"] == "HYBRID_CLASSICAL_READY_FORMAL_CVED_PENDING":
+            if args.action == "once" or status["state"] == "HYBRID_CLASSICAL_READY_CVED_PENDING":
                 return
         except Exception:
             atomic_json(OUT / "LAST_ERROR.json", {"at_utc": now(), "error": traceback.format_exc()})

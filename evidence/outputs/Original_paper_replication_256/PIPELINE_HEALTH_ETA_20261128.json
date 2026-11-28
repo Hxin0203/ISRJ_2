@@ -1,0 +1,217 @@
+{
+  "captured_utc": "2026-11-28T13:34:22.046901+00:00",
+  "resources": {
+    "gpus": [
+      {
+        "physical_gpu_index": 0,
+        "gpu_uuid": "GPU-f12e73b1-3bed-5a1e-bcb0-f9726dd1621d",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 100.0,
+        "memory_used_mib": 15662.0,
+        "memory_total_mib": 16311.0
+      },
+      {
+        "physical_gpu_index": 1,
+        "gpu_uuid": "GPU-bb60dd3a-738e-2398-908f-7f77ac05549b",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "utilization_percent": 99.0,
+        "memory_used_mib": 15338.0,
+        "memory_total_mib": 16311.0
+      }
+    ],
+    "memory": {
+      "total_bytes": 137107394560,
+      "available_bytes": 80388046848,
+      "source": "GlobalMemoryStatusEx",
+      "used_bytes": 56719347712,
+      "utilization_percent": 41.368554842735975
+    },
+    "queried_utc": "2026-11-28T13:34:22.212706+00:00"
+  },
+  "master_pid": 21528,
+  "master_alive": true,
+  "state": "RUNNING_WITH_IMPLEMENTATION_GAPS",
+  "heartbeat_before": "2026-11-28T13:31:46Z",
+  "heartbeat_after": "2026-11-28T13:34:04Z",
+  "progress_between_snapshots": {
+    "R5_Hybrid_67": {
+      "before": 165,
+      "after": 175,
+      "delta": 10
+    },
+    "R5_Hybrid_97": {
+      "before": 195,
+      "after": 206,
+      "delta": 11
+    },
+    "R5_Hybrid_53": {
+      "before": 174,
+      "after": 183,
+      "delta": 9
+    },
+    "R5_Hybrid_41": {
+      "before": 151,
+      "after": 163,
+      "delta": 12
+    },
+    "R5_Hybrid_109": {
+      "before": 136,
+      "after": 144,
+      "delta": 8
+    },
+    "R3_Max-TF": {
+      "before": 257,
+      "after": 276,
+      "delta": 19
+    },
+    "R3_GMM-OMP": {
+      "before": 23,
+      "after": 26,
+      "delta": 3
+    }
+  },
+  "tasks": {
+    "P2_AUDIT": {
+      "state": "DONE",
+      "processes": []
+    },
+    "P2_CALIBRATION": {
+      "state": "DONE",
+      "processes": []
+    },
+    "R3_MAIN": {
+      "state": "RUNNING",
+      "processes": [
+        {
+          "pid": 16488,
+          "create_time": 1795864975.325482
+        }
+      ]
+    },
+    "R3_SUMMARY": {
+      "state": "WAITING_DEPENDENCIES",
+      "processes": []
+    },
+    "R3_CLASSICAL_MECHANISMS": {
+      "state": "RUNNING",
+      "processes": [
+        {
+          "pid": 2168,
+          "create_time": 1795870556.2145429
+        },
+        {
+          "pid": 19460,
+          "create_time": 1795870556.2208517
+        }
+      ]
+    },
+    "R5_HYBRID": {
+      "state": "RUNNING",
+      "processes": [
+        {
+          "pid": 8668,
+          "create_time": 1795870040.2644987
+        },
+        {
+          "pid": 33372,
+          "create_time": 1795870040.2711744
+        }
+      ]
+    },
+    "R3_MECHANISM_SUMMARY": {
+      "state": "RUNNING",
+      "processes": [
+        {
+          "pid": 14916,
+          "create_time": 1795872702.7429545
+        },
+        {
+          "pid": 26152,
+          "create_time": 1795872702.7567575
+        }
+      ]
+    },
+    "R1_PREVIEW": {
+      "state": "WAITING_EXTERNAL_DEPENDENCIES",
+      "processes": [
+        {
+          "pid": 10584,
+          "create_time": 1795862708.4028983,
+          "waiting_for_external_dependency": true
+        }
+      ]
+    }
+  },
+  "implementation_gaps": {
+    "P2_SCIENTIFIC_ACCEPTANCE": "Four-method per-mechanism scientific acceptance pending",
+    "R1_FULL": "Reference spectra, all mechanisms, coherence examples and rendered QA pending",
+    "R2": "Full M2/M4 two-JSR-definition width execution pending",
+    "R3_CVED_MECHANISMS": "Existing sealed CVED-Net per-mechanism evaluation pending",
+    "R4": "Four-topic execution pending",
+    "R5_COMPARATORS": "Max-TF, GMM-OMP and sealed CVED-Net full-grid execution pending",
+    "R6": "Hybrid ablation and matched U-Net training/evaluation execution pending"
+  },
+  "postprocessing": {
+    "state": "RECONCILING",
+    "updated_utc": "2026-11-28T13:33:49Z",
+    "coverage": {
+      "ReCoVP-Hybrid_67": 2,
+      "ReCoVP-Hybrid_97": 2,
+      "ReCoVP-Hybrid_53": 2,
+      "ReCoVP-Hybrid_41": 2,
+      "ReCoVP-Hybrid_109": 1,
+      "Max-TF": 17,
+      "GMM-OMP": 1
+    },
+    "cells_per_instance": 35,
+    "physical_parents": 256,
+    "hybrid_source": "R5 first 256 parent IDs, component equality audited against R3",
+    "classical_source": "R3 independently recomputed per-mechanism chunks",
+    "cvednet_evaluation": "PENDING_SEALED_E320_PER_MECHANISM_EVALUATION",
+    "same_data_cved256_training": "SUPPLEMENTARY",
+    "full_r3_completed": false,
+    "seed109_preflight_limitation": "original bytes missing; recovery bridge retained"
+  },
+  "errors": {},
+  "source_sha256": {
+    "tools/original_replication_pipeline.py": "0eb59d5bc1468f441a8971d476951d3613a55953e15a2840bda292e90ea23da8",
+    "tools/original_replication_mechanism_summary.py": "07260be1085233613b608c89868e1ce340994a6d4a1e826764fb4a3b017dd894"
+  },
+  "cvednet": {
+    "path": "D:\\code\\Xin\\RSDR_Net\\cvednet_baseline_20261125_r1\\sealed_e320\\cvednet_e320.pt",
+    "sha256": "8cbdad0225b315ba34d0f2b3ed8d456995760eba0d2498b515087f7da923663a",
+    "bytes": 44314267
+  },
+  "final_deployment": {
+    "verified_utc": "2026-11-28T13:36:46.862032+00:00",
+    "master_alive": true,
+    "master_pid": 21528,
+    "heartbeat_utc": "2026-11-28T13:36:36Z",
+    "source_sha256": {
+      "AGENTS.md": "9461f1c1079b2cb06ee520100228711cdc796d303dd239d0778e543e6f34fbf3",
+      "tools/original_replication_pipeline.py": "7a881016e4773255a61d22f2e9b3cb2245ecb21de2e5ac1d359917940833f9c6",
+      "tools/original_replication_mechanism_summary.py": "07260be1085233613b608c89868e1ce340994a6d4a1e826764fb4a3b017dd894",
+      "reports/Original_paper_replication_256/MASTER_PLAN.md": "02f91e51fc0344de358d273e7e62b4fa9ce55c9bf393b5f7d701d8f515ed044e",
+      "reports/Original_paper_replication_256/TASKS.json": "3299a62cf0c7e2305654b23ce954eb328230e7a1cd83458582fba5bbd06af3f8",
+      "reports/Original_paper_replication_256/STATUS.md": "07b3a899b3194cc2575316c541aeb61481cbf473108cd5aae0d769061f72efc3",
+      "reports/Original_paper_replication_256/ETA_AND_PIPELINE_20261128.md": "43a7b1ec76d72dd5ba1dff219c45eb9d9154c40d28deddff1c9d89cbe3424c5a"
+    },
+    "task_states": {
+      "P2_AUDIT": "DONE",
+      "P2_CALIBRATION": "DONE",
+      "R3_MAIN": "RUNNING",
+      "R3_SUMMARY": "WAITING_DEPENDENCIES",
+      "R3_CLASSICAL_MECHANISMS": "RUNNING",
+      "R5_HYBRID": "RUNNING",
+      "R3_MECHANISM_SUMMARY": "RUNNING",
+      "R1_PREVIEW": "WAITING_EXTERNAL_DEPENDENCIES"
+    }
+  },
+  "targeted_regression_checks": {
+    "completion_receipts": "PASS",
+    "existing_controller_vs_worker_identity": "PASS",
+    "explicit_implementation_gaps": "PASS",
+    "waiting_R1_dependency_status": "PASS",
+    "server_compilation": "PASS"
+  }
+}

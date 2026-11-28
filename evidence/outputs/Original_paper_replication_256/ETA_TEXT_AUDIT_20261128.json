@@ -1,0 +1,83 @@
+{
+  "offline": true,
+  "mode": "audit only",
+  "protected": "numbers, formulas, identifiers, paths, code, citations",
+  "language_limitation": "English stylometry heuristic is uncalibrated for these Chinese reports",
+  "files": {
+    "reports\\Original_paper_replication_256\\MASTER_PLAN.md": {
+      "sha256": "02f91e51fc0344de358d273e7e62b4fa9ce55c9bf393b5f7d701d8f515ed044e",
+      "audit": {
+        "path": "reports\\Original_paper_replication_256\\MASTER_PLAN.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "reports\\Original_paper_replication_256\\MASTER_PLAN.md",
+          "word_count": 1532,
+          "sentence_count": 160,
+          "burstiness_cv": 0.7133,
+          "lexical_diversity": 0.8959,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "reports\\Original_paper_replication_256\\STATUS.md": {
+      "sha256": "07b3a899b3194cc2575316c541aeb61481cbf473108cd5aae0d769061f72efc3",
+      "audit": {
+        "path": "reports\\Original_paper_replication_256\\STATUS.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "reports\\Original_paper_replication_256\\STATUS.md",
+          "word_count": 584,
+          "sentence_count": 59,
+          "burstiness_cv": 0.722,
+          "lexical_diversity": 0.9218,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    },
+    "reports\\Original_paper_replication_256\\ETA_AND_PIPELINE_20261128.md": {
+      "sha256": "43a7b1ec76d72dd5ba1dff219c45eb9d9154c40d28deddff1c9d89cbe3424c5a",
+      "audit": {
+        "path": "reports\\Original_paper_replication_256\\ETA_AND_PIPELINE_20261128.md",
+        "density_tier": "low",
+        "flagged_count": 0,
+        "flagged": [],
+        "stylometry": {
+          "path": "reports\\Original_paper_replication_256\\ETA_AND_PIPELINE_20261128.md",
+          "word_count": 244,
+          "sentence_count": 32,
+          "burstiness_cv": 0.5939,
+          "lexical_diversity": 0.9661,
+          "ai_ngram_density": 0.0,
+          "matched_markers": [],
+          "score": 0.0325,
+          "confidence_level": "CLEAN",
+          "density_tier": "low",
+          "status": "ok",
+          "findings": [],
+          "findings_confidence": [],
+          "notes": []
+        }
+      }
+    }
+  }
+}
