@@ -1,0 +1,42 @@
+{
+    "host":  "DESKTOP-RFFERM3",
+    "updated_utc":  "2026-11-28T09:40:36.3645581Z",
+    "status":  "ENTRYPOINTS_AND_MEMORY_UPDATED",
+    "files":  [
+                  {
+                      "path":  "C:/Users/admin/.codex/AGENTS.md",
+                      "existed":  false,
+                      "backup":  null,
+                      "before_sha256":  null,
+                      "after_sha256":  "09c8ff345d59cd469c2b9f238b34063e1a011a40cfd2ddb6b75f6159132e7e8a"
+                  },
+                  {
+                      "path":  "C:/Users/admin/.codex/memories/SERVER_EXPERIMENT_RULES.md",
+                      "existed":  false,
+                      "backup":  null,
+                      "before_sha256":  null,
+                      "after_sha256":  "d455d282888e9283bf206e97abd91f6506ce484241e5d24dec99eb60bdaf5fbe"
+                  },
+                  {
+                      "path":  "C:/Users/admin/.codex/memories/MEMORY.md",
+                      "existed":  false,
+                      "backup":  null,
+                      "before_sha256":  null,
+                      "after_sha256":  "09c8ff345d59cd469c2b9f238b34063e1a011a40cfd2ddb6b75f6159132e7e8a"
+                  },
+                  {
+                      "path":  "C:/Users/admin/.codex/memories/memory_summary.md",
+                      "existed":  false,
+                      "backup":  null,
+                      "before_sha256":  null,
+                      "after_sha256":  "09c8ff345d59cd469c2b9f238b34063e1a011a40cfd2ddb6b75f6159132e7e8a"
+                  },
+                  {
+                      "path":  "D:/code/Xin/ISRJ_222/AGENTS.md",
+                      "existed":  true,
+                      "backup":  "D:\\code\\Xin\\ISRJ_222\\backups\\server_experiment_memory_20261128\\4_AGENTS.md",
+                      "before_sha256":  "27fa8e0a6bd842357c8cc8d980211da9cb0fc4786e7d1ed12d1ee04516543428",
+                      "after_sha256":  "35a867e33ae546d8a8e27b3e9a121159bf272964e151be88420c805bbb1ad629"
+                  }
+              ]
+}

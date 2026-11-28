@@ -1,0 +1,41 @@
+{
+  "updated_utc": "2026-11-28T09:41:03.940123+00:00",
+  "scope": "Local and server-B shared Codex entrypoints and memory indexes",
+  "memory_interpretation": "Server physical RAM used percentage, calculated from total minus available",
+  "local_files": [
+    {
+      "path": "C:\\Users\\admin\\.codex\\AGENTS.md",
+      "sha256": "1a7c6a5d07587b10112be3178f5b76651eebad7ec6a03e1726d3a0859b619057",
+      "entry_contains_policy": true
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\memories\\SERVER_EXPERIMENT_RULES.md",
+      "sha256": "d455d282888e9283bf206e97abd91f6506ce484241e5d24dec99eb60bdaf5fbe",
+      "entry_contains_policy": true
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\memories\\MEMORY.md",
+      "sha256": "315e668e86679d075293f5da4d5a6bfeb408fdd274fdc3233c5e138484776c08",
+      "entry_contains_policy": true
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\memories\\memory_summary.md",
+      "sha256": "733d45d54a43950e5a65aac2e9a7f9920c39898b186920b725054078c18b6a74",
+      "entry_contains_policy": true
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\AGENTS.md",
+      "sha256": "325eb67d9baf9d6ae29c0504e1b76969f826d57695245a6c257669a95308ac0e",
+      "entry_contains_policy": true
+    },
+    {
+      "path": "G:\\Project Code\\ISRJ_222\\handoff\\SERVER_EXPERIMENT_RULES.md",
+      "sha256": "d455d282888e9283bf206e97abd91f6506ce484241e5d24dec99eb60bdaf5fbe",
+      "entry_contains_policy": true
+    }
+  ],
+  "server_canonical_matches": true,
+  "local_backup_manifest": "backups/server_experiment_memory_20261128/MANIFEST.json",
+  "existing_session_limit": "Agents receive the rule when their entrypoint or memory is next loaded. Existing session contexts were not inspected or individually updated.",
+  "delivery": "Persistent instructions for future experiment scheduling"
+}
